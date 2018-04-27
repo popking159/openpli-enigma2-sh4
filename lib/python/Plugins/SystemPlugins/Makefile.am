@@ -7,9 +7,6 @@ SUBDIRS = SoftwareManager PositionerSetup Satfinder \
 	VideoEnhancement NetworkWizard CableScan \
 	SparkVFDControl SH4OSDAdjustment SH4BoosterControl
 
-if ! ENABLE_MINIMAL
-SUBDIRS += WirelessLan
-endif
 
 if HAVE_TEMPFANCONTROL
 SUBDIRS += TempFanControl
