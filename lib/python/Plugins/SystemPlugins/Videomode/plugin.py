@@ -137,8 +137,6 @@ class VideoSetup(Screen, ConfigListScreen):
 				self.list.append(getConfigListEntry(_("AC3 plus transcoding"), config.av.transcode_ac3plus, _("Configure whether AC3 plus sound tracks should be transcoded to AC3.")))
 			if SystemInfo["CanAACTranscode"]:
 				self.list.append(getConfigListEntry(_("AAC transcoding"), config.av.transcode_aac, _("Configure whether AAC sound tracks should be transcoded.")))
-			if SystemInfo["HDMIAudioSource"]:
-				self.list.append(getConfigListEntry(_("HDMI audio source"), config.av.hdmi_audio_source, _("Choose whether multi channel sound tracks should be convert to PCM or SPDIF.")))
 			if SystemInfo["HasMultichannelPCM"]:
 				self.list.append(getConfigListEntry(_("Multichannel PCM"), config.av.multichannel_pcm, _("Configure whether multi channel PCM sound should be enabled.")))
 			if SystemInfo["HasAutoVolume"] or SystemInfo["HasAutoVolumeLevel"]:
