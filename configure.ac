@@ -381,8 +381,6 @@ lib/python/Plugins/SystemPlugins/WirelessLan/Makefile
 lib/python/Plugins/SystemPlugins/WirelessLan/meta/Makefile
 lib/python/Plugins/SystemPlugins/SparkVFDControl/Makefile
 lib/python/Plugins/SystemPlugins/SparkVFDControl/meta/Makefile
-lib/python/Plugins/SystemPlugins/SH4OSDAdjustment/Makefile
-lib/python/Plugins/SystemPlugins/SH4OSDAdjustment/meta/Makefile
 lib/python/Plugins/SystemPlugins/SH4BoosterControl/Makefile
 lib/python/Plugins/SystemPlugins/SH4BoosterControl/meta/Makefile
 lib/python/Plugins/SystemPlugins/SparkUnionTunerType/Makefile

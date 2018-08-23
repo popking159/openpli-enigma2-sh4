@@ -5,7 +5,7 @@ SUBDIRS = SoftwareManager PositionerSetup Satfinder \
 	DefaultServicesScanner DiseqcTester CommonInterfaceAssignment \
 	CableScan FastScan OSDPositionSetup OSD3DSetup HdmiCEC VideoClippingSetup \
 	VideoEnhancement WirelessLan NetworkWizard \
-	SparkVFDControl SH4OSDAdjustment SH4BoosterControl
+	SparkVFDControl SH4BoosterControl
 
 
 if HAVE_TEMPFANCONTROL
