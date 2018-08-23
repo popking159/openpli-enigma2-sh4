@@ -700,39 +700,9 @@ void ePicLoad::thread()
 
 void ePicLoad::decodePic()
 {
+	eDebug("[ePicLoad] decode picture... %s", m_filepara->file);
+
 	getExif(m_filepara->file, m_filepara->id);
-
-	if (m_filepara->id == F_JPEG)
-	{
-		eDebug("[ePicLoad] hardware decode picture... %s", m_filepara->file);
-		m_filepara->pic_buffer = NULL;
-		FILE *fp;
-
-		if (!(fp = fopen(m_filepara->file, "rb")))
-			return; // software decode won't find the file either...
-
-		if (get_jpeg_img_size(fp, (unsigned int *)&m_filepara->ox, (unsigned int *)&m_filepara->oy) == LIBMMEIMG_SUCCESS)
-		{
-			// to get the best picture quality even if it rotated later
-			float scale = (float)(m_filepara->max_x > m_filepara->max_y ? m_filepara->max_x : m_filepara->max_y) / (m_filepara->ox > m_filepara->oy ? m_filepara->ox : m_filepara->oy);
-			int imx = (int)(m_filepara->ox * scale);
-			int imy = (int)(m_filepara->oy * scale);
-
-			if (decode_jpeg(fp, m_filepara->ox, m_filepara->oy, imx, imy, (char **)&m_filepara->pic_buffer) == LIBMMEIMG_SUCCESS)
-			{
-				m_filepara->ox = imx;
-				m_filepara->oy = imy;
-				fclose(fp);
-				return;
-			}
-		}
-		eDebug("[ePicLoad] hardware decode error");
-		fclose(fp);
-		m_filepara->pic_buffer = NULL;
-	}
-
-	//eDebug("[ePicLoad] decode picture... %s", m_filepara->file);
-
 	switch(m_filepara->id)
 	{
 		case F_PNG:	png_load(m_filepara, m_conf.background);
@@ -812,51 +782,8 @@ void ePicLoad::decodeThumb()
 		}
 	}
 
-	int hw_decoded = 0;
-	if (m_filepara->id == F_JPEG)
+	switch (m_filepara->id)
 	{
-		eDebug("[Picload] hardware decode picture... %s",m_filepara->file);
-		m_filepara->pic_buffer = NULL;
-		FILE *fp;
-
-		if (!(fp = fopen(m_filepara->file, "rb")))
-			return; // software decode won't find the file either...
-		
-		if (get_jpeg_img_size(fp, (unsigned int *)&m_filepara->ox, (unsigned int *)&m_filepara->oy) == LIBMMEIMG_SUCCESS)
-		{
-			int imx, imy;
-			if (m_filepara->ox <= m_filepara->oy)
-			{
-				imy = m_conf.thumbnailsize;
-				imx = (int)( (m_conf.thumbnailsize * ((double)m_filepara->ox)) / ((double)m_filepara->oy) );
-			}
-			else
-			{
-				imx = m_conf.thumbnailsize;
-				imy = (int)( (m_conf.thumbnailsize * ((double)m_filepara->oy)) / ((double)m_filepara->ox) );
-			}
-			
-			if (decode_jpeg(fp, m_filepara->ox, m_filepara->oy, imx, imy, (char **)&m_filepara->pic_buffer) == LIBMMEIMG_SUCCESS)
-			{
-				m_filepara->ox = imx;
-				m_filepara->oy = imy;
-				fclose(fp);
-				hw_decoded = 1;
-			}
-		}
-
-		if (!hw_decoded)
-		{
-			eDebug("hardware decode error");
-		
-			fclose(fp);
-		}
-	}
-
-	if (!hw_decoded)
-	{
-		switch(m_filepara->id)
-		{
 		case F_PNG:	png_load(m_filepara, m_conf.background, true);
 				break;
 		case F_JPEG:	m_filepara->pic_buffer = jpeg_load(m_filepara->file, &m_filepara->ox, &m_filepara->oy, m_filepara->max_x, m_filepara->max_y);
@@ -865,7 +792,6 @@ void ePicLoad::decodeThumb()
 				break;
 		case F_GIF:	gif_load(m_filepara, true);
 				break;
-		}
 	}
 	//eDebug("[ePicLoad] getThumb picture loaded %s", m_filepara->file);
 
@@ -881,26 +807,22 @@ void ePicLoad::decodeThumb()
 				::mkdir(cachedir.c_str(), 0755);
 
 			// Resize for Thumbnail
-			if(!hw_decoded)
+			int imx, imy;
+			if (m_filepara->ox <= m_filepara->oy)
 			{
-			
-				int imx, imy;
-				if (m_filepara->ox <= m_filepara->oy)
-				{
-					imy = m_conf.thumbnailsize;
-					imx = (int)( (m_conf.thumbnailsize * ((double)m_filepara->ox)) / ((double)m_filepara->oy) );
-				}
-				else
-				{
-					imx = m_conf.thumbnailsize;
-					imy = (int)( (m_conf.thumbnailsize * ((double)m_filepara->oy)) / ((double)m_filepara->ox) );
-				}
+				imy = m_conf.thumbnailsize;
+				imx = (int)( (m_conf.thumbnailsize * ((double)m_filepara->ox)) / ((double)m_filepara->oy) );
+			}
+			else
+			{
+				imx = m_conf.thumbnailsize;
+				imy = (int)( (m_conf.thumbnailsize * ((double)m_filepara->oy)) / ((double)m_filepara->ox) );
+			}
 
 			// eDebug("[ePicLoad] getThumb resize from %dx%d to %dx%d", m_filepara->ox, m_filepara->oy, imx, imy);
-				m_filepara->pic_buffer = color_resize(m_filepara->pic_buffer, m_filepara->ox, m_filepara->oy, imx, imy);
-				m_filepara->ox = imx;
-				m_filepara->oy = imy;
-			}
+			m_filepara->pic_buffer = color_resize(m_filepara->pic_buffer, m_filepara->ox, m_filepara->oy, imx, imy);
+			m_filepara->ox = imx;
+			m_filepara->oy = imy;
 
 			if (jpeg_save(cachefile.c_str(), m_filepara->ox, m_filepara->oy, m_filepara->pic_buffer))
 				eDebug("[ePicLoad] getThumb: error saving cachefile");
