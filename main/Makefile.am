@@ -48,7 +48,8 @@ enigma2_LDADD = \
 	@DVBCSA_LIBS@ \
 	@AVAHI_LIBS@ \
 	@LIBDL_LIBS@ \
-	-ltuxtxt32bpp
+	-ltuxtxt32bpp \
+	-lpthread -lresolv -lmmeimage
 
 enigma2_LDFLAGS = -Wl,--export-dynamic
 
