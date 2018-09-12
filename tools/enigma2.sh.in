@@ -4,6 +4,25 @@ prefix=@prefix@
 exec_prefix=@exec_prefix@
 datarootdir=@datarootdir@
 
+# write E2 on fulan vfd display
+echo "-E2-" > /dev/vfd
+echo "if [ $# -eq 1 ]; then
+  if [ "$1" = "-a" ]; then
+    echo "enter standby..."
+	stfbcontrol hd
+	echo on > /proc/stb/avs/0/standby
+	sleep 1
+	fp_control -l 0 1
+	echo "done"
+  elif [ "$1" = "-d" ]; then
+	echo "end standby..."
+       #enable hdmi
+       stfbcontrol he
+       echo off > /proc/stb/avs/0/standby
+       fp_control -l 0 0
+  fi
+fi" > /etc/vdstandby.cfg
+
 if [ -x @bindir@/showiframe ]; then
 	if [ -f @sysconfdir@/enigma2/backdrop.mvi ]; then
 		@bindir@/showiframe @sysconfdir@/enigma2/backdrop.mvi
