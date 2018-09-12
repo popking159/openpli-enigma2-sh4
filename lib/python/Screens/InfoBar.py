@@ -161,6 +161,8 @@ class MoviePlayer(InfoBarBase, InfoBarShowHide, InfoBarMenu, InfoBarSeek, InfoBa
 
 		self["actions"] = HelpableActionMap(self, "MoviePlayerActions",
 			{
+				"InfoButtonPressed": (self.openEventView, _("open Info...")),
+				"InfoButtonPressedLong": (self.showEventInfoPlugins, _("select Info...")),
 				"leavePlayer": (self.leavePlayer, _("leave movie player...")),
 				"leavePlayerOnExit": (self.leavePlayerOnExit, _("leave movie player...")),
 				"channelUp": (self.channelUp, _("when PiPzap enabled zap channel up...")),

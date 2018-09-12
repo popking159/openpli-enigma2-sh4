@@ -5,11 +5,11 @@ import os
 import struct
 import platform
 
-# include/uapi/asm-generic/ioctl.h
+# asm-generic/ioctl.h
 IOC_NRBITS = 8L
 IOC_TYPEBITS = 8L
-IOC_SIZEBITS = 13L if "mips" in platform.machine() else 14L
-IOC_DIRBITS = 3L if "mips" in platform.machine() else 2L
+IOC_SIZEBITS = 14L
+IOC_DIRBITS = 2L
 
 IOC_NRSHIFT = 0L
 IOC_TYPESHIFT = IOC_NRSHIFT+IOC_NRBITS
