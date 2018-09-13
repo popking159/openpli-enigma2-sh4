@@ -224,15 +224,6 @@ if test x"$with_amlogic" = xyes ; then
 	PKG_CHECK_MODULES(DVBCSA, libdvbcsa)
 fi
 
-AC_ARG_ENABLE([sh],
-        [AS_HELP_STRING(--enable-sh,    enable sh patches)],
-        [case "${enableval}" in
-                yes) enable_sh=true ;;
-                no) enable_sh=false ;;
-                *) AC_MSG_ERROR([bad value ${enableval} for --enable-sh]) ;;
-        esac])
-AM_CONDITIONAL([ENABLE_SH], [test x$enable_sh = xtrue])
-
 AC_ARG_WITH(alphablendingacceleration,
 	AC_HELP_STRING([--with-alphablendingacceleration=never/always/auto], [alphablending acceleration strategy: never accelerate / always accelerate / automatically decide when to accelerate (default)]),
 	[[with_alphablendingacceleration=$withval]],
