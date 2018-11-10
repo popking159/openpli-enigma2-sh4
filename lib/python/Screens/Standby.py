@@ -20,6 +20,9 @@ inStandby = None
 class Standby(Screen):
 	def Power(self):
 		print "[Standby] leave standby"
+#+++>
+		open("/proc/stb/hdmi/output", "w").write("on")
+#+++<
 		self.close(True)
 
 	def setMute(self):
@@ -91,6 +94,9 @@ class Standby(Screen):
 			self.avswitch.setInput("SCART")
 		else:
 			self.avswitch.setInput("AUX")
+#+++>
+		open("/proc/stb/hdmi/output", "w").write("off")
+#+++<
 
 		gotoShutdownTime = int(config.usage.standby_to_shutdown_timer.value)
 		if gotoShutdownTime:
