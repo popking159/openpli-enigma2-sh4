@@ -213,7 +213,7 @@ class PluginBrowser(Screen, ProtectedScreen):
 				self.list.append(PluginEntryComponent(plugin[0], self.listWidth))
 				pluginlist.remove(plugin[0])
 		self.list = self.list + [PluginEntryComponent(plugin, self.listWidth) for plugin in pluginlist]
-		if config.usage.menu_show_numbers.value or showHelp:
+		if config.usage.menu_show_numbers.value in ("menu&plugins", "plugins") or showHelp:
 			for x in enumerate(self.list):
 				tmp = list(x[1][1])
 				tmp[7] = "%s %s" % (x[0]+1, tmp[7])
@@ -221,7 +221,7 @@ class PluginBrowser(Screen, ProtectedScreen):
 		self["list"].l.setList(self.list)
 
 	def showHelp(self):
-		if not config.usage.menu_show_numbers.value:
+		if config.usage.menu_show_numbers.value not in ("menu&plugins", "plugins"):
 			self.help = not self.help
 			self.updateList(self.help)
 
@@ -376,9 +376,6 @@ class PluginDownloadBrowser(Screen):
 		self.session.openWithCallback(callback, Console, cmdlist = [self.ipkg_remove + Ipkg.opkgExtraDestinations() + " " + pkgname, "sync"], skin="Console_Pig")
 
 	def doInstall(self, callback, pkgname):
-		if pkgname.startswith('modules-'):
-			pkgname = 'kernel-module-' + pkgname[8:]
-		else:
 			pkgname = self.PLUGIN_PREFIX + pkgname
 		self.session.openWithCallback(callback, Console, cmdlist = [self.ipkg_install + " " + pkgname, "sync"], skin="Console_Pig")
 
@@ -454,10 +451,6 @@ class PluginDownloadBrowser(Screen):
 			for plugin in opkg.enumPlugins(self.PLUGIN_PREFIX):
 				if plugin[0] not in self.installedplugins:
 					pluginlist.append(plugin + (plugin[0][15:],))
-			for plugin in opkg.enumPlugins('kernel-module'):
-				if plugin[0] not in self.installedplugins:
-					pkg = 'modules-'+'-'.join(plugin[0].split('-')[2:])
-					pluginlist.append(plugin + (pkg,))
 			if pluginlist:
 				pluginlist.sort()
 				self.updateList()
