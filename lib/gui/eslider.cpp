@@ -51,15 +51,15 @@ void eSlider::setForegroundColor(const gRGB &color)
 
 void eSlider::setSliderBorderWidth(int pixel)
 {
-	m_sliderborder_width=pixel;
+	m_sliderborder_width = pixel;
 	m_have_sliderborder_width = true;
 	invalidate();
 }
 
 void eSlider::setSliderBorderColor(const gRGB &color)
 {
-	m_sliderborder_color=color;
-	m_have_sliderborder_color=true;
+	m_sliderborder_color = color;
+	m_have_sliderborder_color = true;
 	invalidate();
 }
 

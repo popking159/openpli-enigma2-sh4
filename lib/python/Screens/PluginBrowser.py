@@ -146,7 +146,7 @@ class PluginBrowser(Screen, ProtectedScreen):
 	def run(self):
 		plugin = self["list"].l.getCurrentSelection()[0]
 		plugin(session=self.session)
-		self.help=False
+		self.help = False
 
 	def setDefaultList(self, answer):
 		if answer:
@@ -376,7 +376,7 @@ class PluginDownloadBrowser(Screen):
 		self.session.openWithCallback(callback, Console, cmdlist = [self.ipkg_remove + Ipkg.opkgExtraDestinations() + " " + pkgname, "sync"], skin="Console_Pig")
 
 	def doInstall(self, callback, pkgname):
-			pkgname = self.PLUGIN_PREFIX + pkgname
+		pkgname = self.PLUGIN_PREFIX + pkgname
 		self.session.openWithCallback(callback, Console, cmdlist = [self.ipkg_install + " " + pkgname, "sync"], skin="Console_Pig")
 
 	def runSettingsRemove(self, val):
