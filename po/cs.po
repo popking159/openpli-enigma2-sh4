@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: OpenPLi enigma2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-12-16 20:38+0100\n"
+"POT-Creation-Date: 2018-12-27 17:56+0100\n"
 "PO-Revision-Date: \n"
 "Last-Translator: ims <ims21@users.sourceforge.net>\n"
 "Language-Team: PLi <ims@openpli.org>\n"
@@ -2475,7 +2475,7 @@ msgid "Console"
 msgstr ""
 
 msgid "Constellation & FFT mode"
-msgstr ""
+msgstr "Konstelace & FFT mód"
 
 msgid "Consult your SCR device spec sheet for this information."
 msgstr "Pro tyto informace se podívejte do specifikace SRC zařízení."
@@ -2694,7 +2694,7 @@ msgid "DVB CI Delay"
 msgstr "DVB CI zpoždění"
 
 msgid "DVB Subtitles PID & lang"
-msgstr "DVB titulky PID & jazyk"
+msgstr "DVB titulky - PID & jazyk"
 
 msgid "DVB driver version: "
 msgstr "DVB ovladače: "
@@ -3162,6 +3162,11 @@ msgstr "Chcete opravdu odstranit z disku adresář %s?"
 msgid "Do you really want to remove your bookmark of %s?"
 msgstr "Chcete opravdu smazat Vaši záložku z %s?"
 
+#
+#, python-format
+msgid "Do you really want to stop current event and delete timer %s?"
+msgstr "Opravdu chcete zastavit aktuální událost a smazat časovač \"%s\"?"
+
 msgid "Do you want this?"
 msgstr "Chcete to?"
 
@@ -3404,9 +3409,8 @@ msgstr "Salvador"
 msgid "Electronic Program Guide"
 msgstr "EPG"
 
-#, fuzzy
 msgid "Embedded"
-msgstr "vložený"
+msgstr "Vestavěný"
 
 msgid "Empty slot"
 msgstr "volný slot"
@@ -3823,7 +3827,7 @@ msgid "Extended"
 msgstr "rozšířené"
 
 msgid "Extended PID info"
-msgstr "Rozšířené PID informace"
+msgstr "Rozšířené PID info"
 
 #
 msgid "Extended Software"
@@ -5772,10 +5776,6 @@ msgstr "Nastavení DNS"
 msgid "Nameserver setup"
 msgstr "Nastavení DNS"
 
-#
-msgid "Namespace"
-msgstr ""
-
 msgid "Namespace & Orbital pos."
 msgstr "Namespace & orbitální pozice"
 
@@ -6281,7 +6281,7 @@ msgid "Other"
 msgstr "Další"
 
 msgid "Other Subtitles & lang"
-msgstr "Další titulky a jazyky"
+msgstr "Ostatní titulky a jazyky"
 
 #
 msgid "Output"
@@ -8337,7 +8337,7 @@ msgid "Service"
 msgstr "O programu"
 
 msgid "Service & PIDs"
-msgstr ""
+msgstr "Program a PID"
 
 msgid "Service ID"
 msgstr ""
@@ -8364,13 +8364,13 @@ msgid "Service info - service & Extended PID Info"
 msgstr "Informace o programu - rozšířené PID Info"
 
 msgid "Service info - service & PIDs"
-msgstr "Informace o programu - Service & PIDs"
+msgstr "Informace o programu - program & PID"
 
 msgid "Service info - tuner live values"
-msgstr "Informace o programu - Aktuální hodnoty tuneru"
+msgstr "Informace o programu - aktuální hodnoty tuneru"
 
 msgid "Service info - tuner setting values"
-msgstr "Informace o programu - Hodnoty nastavení tuneru"
+msgstr "Informace o programu - hodnoty nastavení tuneru"
 
 #
 msgid ""
@@ -9576,7 +9576,7 @@ msgstr ""
 "Pro případné korekce můžete kontaktovat autora\n"
 "na výše uvedené adrese.\n"
 "\n"
-"®17.12.2018"
+"®28.12.2018"
 
 #
 msgid "TS file is too large for ISO9660 level 1!"
@@ -9598,7 +9598,7 @@ msgid "TXT PID"
 msgstr ""
 
 msgid "TXT Subtitles page & lang"
-msgstr "TXT titulky stránka a jazyk"
+msgstr "TXT titulky - stránka a jazyk"
 
 #
 msgid "Table of contents for collection"
@@ -12065,7 +12065,7 @@ msgid "education/science/factual topics (general)"
 msgstr "vzdělávání/věda/věcná témata (obecně)"
 
 msgid "embedded"
-msgstr "vložený"
+msgstr "vestavěný"
 
 #
 msgid "empty"

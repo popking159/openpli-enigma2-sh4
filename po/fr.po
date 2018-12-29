@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: enigma2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-12-16 12:35+0100\n"
-"PO-Revision-Date: 2018-12-16 12:59+0100\n"
+"POT-Creation-Date: 2018-12-27 17:56+0100\n"
+"PO-Revision-Date: 2018-12-27 17:58+0100\n"
 "Last-Translator: Pr2\n"
 "Language-Team: french\n"
 "Language: fr\n"
@@ -410,6 +410,10 @@ msgstr[1] "%s mises à jour disponibles"
 #, python-format
 msgid "%s%d min"
 msgstr "%s%d min"
+
+#, python-format
+msgid "%s%d%s"
+msgstr "%s%d%s"
 
 #, python-format
 msgid "%s/%s: %s"
@@ -2759,6 +2763,10 @@ msgstr "Voulez-vous vraiment retirer le répertoire %s du disque?"
 msgid "Do you really want to remove your bookmark of %s?"
 msgstr "Voulez-vous vraiment supprimer votre signet de %s?"
 
+#, python-format
+msgid "Do you really want to stop current event and delete timer %s?"
+msgstr "Voulez-vous vraiment arrêter l’événement en cours et supprimer la programmation %s?"
+
 msgid "Do you want this?"
 msgstr "Êtes-vous d'accord?"
 
@@ -5035,8 +5043,8 @@ msgstr "Paramètres du serveur de nom"
 msgid "Nameserver setup"
 msgstr "Paramètres du serveur de nom"
 
-msgid "Namespace"
-msgstr "Espace de nom"
+msgid "Namespace & Orbital pos."
+msgstr "Espace de nom - pos. orbitale"
 
 msgid "Namibia"
 msgstr "Namibie"
@@ -8292,7 +8300,7 @@ msgstr ""
 "Traduction Française\n"
 "Enigma2 - OpenPLi\n"
 "Support: www.openpli.org\n"
-"Dernière MAJ: 16-12-2018"
+"Dernière MAJ: 27-12-2018"
 
 msgid "TS file is too large for ISO9660 level 1!"
 msgstr "Fichier TS trop grand pour le niveau 1 ISO9660!"

@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: enigma2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-12-11 15:26+0100\n"
+"POT-Creation-Date: 2018-12-27 17:56+0100\n"
 "PO-Revision-Date: 2018-05-02 18:32+0300\n"
 "Last-Translator: Dimitrij <Dima-73@inbox.lv>\n"
 "Language-Team: openPLi Dimitrij\n"
@@ -423,6 +423,10 @@ msgid "%s%d min"
 msgstr "%s%d мин"
 
 #, python-format
+msgid "%s%d%s"
+msgstr "%s%d%s"
+
+#, python-format
 msgid "%s/%s: %s"
 msgstr "%s/%s: %s"
 
@@ -735,6 +739,9 @@ msgstr "ПОЛУЧЕНИЕ TSID/ONID"
 
 msgid "AGC:"
 msgstr "AGC:"
+
+msgid "ASS File"
+msgstr "ASS файл"
 
 msgid "ASS file"
 msgstr "ASS файл"
@@ -1137,6 +1144,13 @@ msgstr "Аудио / видео"
 msgid "Audio PID"
 msgstr "Аудио PID"
 
+#, python-format
+msgid "Audio PID%s, codec & lang"
+msgstr ""
+
+msgid "Audio PID, codec & lang"
+msgstr ""
+
 msgid "Audio auto volume level"
 msgstr "Уровень авто громкости звука"
 
@@ -1321,6 +1335,9 @@ msgstr "Bangladesh"
 
 msgid "Barbados"
 msgstr "Barbados"
+
+msgid "Basic PID info"
+msgstr "Базовая информация PID"
 
 msgid "Basque"
 msgstr "Баскский"
@@ -2363,6 +2380,9 @@ msgstr "DUAL LAYER (двойной слой) DVD"
 msgid "DVB CI Delay"
 msgstr "Задержка DVB CI"
 
+msgid "DVB Subtitles PID & lang"
+msgstr "DVB субтитры PID & язык"
+
 msgid "DVB driver version: "
 msgstr "Версия DVB драйверов: "
 
@@ -2753,6 +2773,10 @@ msgstr "Вы действительно хотите удалить директ
 msgid "Do you really want to remove your bookmark of %s?"
 msgstr "Вы действительно хотите удалить Вашу закладку %s?"
 
+#, fuzzy, python-format
+msgid "Do you really want to stop current event and delete timer %s?"
+msgstr "Вы действительно хотите удалить %s?"
+
 msgid "Do you want this?"
 msgstr "Вы хотите это сделать?"
 
@@ -2956,6 +2980,9 @@ msgstr "El Salvador"
 
 msgid "Electronic Program Guide"
 msgstr "Электронный Программный Гид"
+
+msgid "Embedded"
+msgstr "Встроенные"
 
 msgid "Empty slot"
 msgstr "Пустой слот"
@@ -3322,6 +3349,9 @@ msgstr "Добавить к таймеру сна 15 минут"
 
 msgid "Extended"
 msgstr "Расширенное"
+
+msgid "Extended PID info"
+msgstr "Расширенная информация PID"
 
 msgid "Extended Software"
 msgstr "Расширенное программное обеспечение"
@@ -5027,8 +5057,8 @@ msgstr "Настройки сервера имен (DNS)"
 msgid "Nameserver setup"
 msgstr "Настройка сервера имен (DNS)"
 
-msgid "Namespace"
-msgstr "Пространство имен"
+msgid "Namespace & Orbital pos."
+msgstr ""
 
 msgid "Namibia"
 msgstr "Namibia"
@@ -5464,6 +5494,9 @@ msgstr "Оригинал"
 msgid "Other"
 msgstr "Другая"
 
+msgid "Other Subtitles & lang"
+msgstr "Другие субтитры & язык"
+
 msgid "Output"
 msgstr "Выход"
 
@@ -5490,6 +5523,9 @@ msgstr "PCR PID"
 
 msgid "PDC"
 msgstr "PDC"
+
+msgid "PGS File"
+msgstr "PGS файл"
 
 msgid "PGS file"
 msgstr "PGS файл"
@@ -6634,8 +6670,14 @@ msgstr "SNR:"
 msgid "SPDIF"
 msgstr "SPDIF"
 
+msgid "SRT File"
+msgstr "SRT файл"
+
 msgid "SRT file"
 msgstr "SRT файл"
+
+msgid "SSA File"
+msgstr "SSA файл"
 
 msgid "SSA file"
 msgstr "SSA файл"
@@ -7215,16 +7257,23 @@ msgid "Service info"
 msgstr "Информация о сервисе"
 
 msgid "Service info - ECM Info"
-msgstr "ECM информация"
+msgstr "Информация о сервисе - ECM информация"
+
+#, fuzzy
+msgid "Service info - service & Basic PID Info"
+msgstr "Информация о сервисе - сервис & расширенная информация PID"
+
+msgid "Service info - service & Extended PID Info"
+msgstr "Информация о сервисе - сервис & расширенная информация PID"
 
 msgid "Service info - service & PIDs"
-msgstr "Сервис & PIDs"
+msgstr "Информация о сервисе - сервис PIDs"
 
 msgid "Service info - tuner live values"
-msgstr "Live данные тюнера"
+msgstr "Информация о сервисе - Live данные тюнера"
 
 msgid "Service info - tuner setting values"
-msgstr "Данные из настроек тюнера"
+msgstr "Информация о сервисе - данные из настроек тюнера"
 
 msgid ""
 "Service invalid!\n"
@@ -7499,8 +7548,8 @@ msgstr "Показать последние изменения на гите"
 msgid "Show latest upgrade log"
 msgstr "Показать последний лог обновления"
 
-msgid "Show menu numbers"
-msgstr "Показать номера в меню"
+msgid "Show menu or plugin numbers"
+msgstr "Показать номера меню или плагинов"
 
 msgid "Show menu paths"
 msgstr "Показывать путь к меню"
@@ -8288,6 +8337,9 @@ msgstr "Оповещение физического адреса ТВ"
 msgid "TXT PID"
 msgstr "TXT PID"
 
+msgid "TXT Subtitles page & lang"
+msgstr "TXT страницы субтитров & язык"
+
 msgid "Table of contents for collection"
 msgstr "Содержание коллекции"
 
@@ -8617,8 +8669,8 @@ msgstr "Эта опция позволяет отключить дисплей."
 msgid "This option allows you to show all symbols on the display."
 msgstr "Эта опция позволяет Вам показывать все символы на дисплее."
 
-msgid "This option allows you to show menu number quick links."
-msgstr "Эта опция позволяет показать номер меню, для быстрого перехода на него, через цифровые кнопки."
+msgid "This option allows you to show menu and/or plugin number quick links."
+msgstr "Эта опция позволяет показать номер меню и/или плагина, для быстрого перехода на него, через цифровые кнопки."
 
 msgid "This option allows you to show menu paths."
 msgstr "Эта опция позволяет показать путь к меню."
@@ -9323,6 +9375,9 @@ msgstr "VLAN подключение"
 msgid "VMGM (intro trailer)"
 msgstr "VMGM (трейлер)"
 
+msgid "VOB File"
+msgstr "VOB файл"
+
 msgid "VOB file"
 msgstr "VOB файл"
 
@@ -9667,7 +9722,6 @@ msgstr "Когда эта функция включена, ECM данные бу
 
 msgid "When enabled, EIT data will be included in http streams. This allows a client receiver to show EPG."
 msgstr "Когда эта функция включена, EIT данные будут включены в http стрим. Это позволит оборудованию клиента увидеть даннные EPG."
-
 
 msgid "When enabled, HDMI-CEC is enabled with standard configuration"
 msgstr "Если включено, HDMI-CEC будет включен в стандартной конфигурации."
@@ -10653,6 +10707,15 @@ msgstr "помощь..."
 
 msgid "horizontal"
 msgstr "горизонтальная"
+
+msgid "in menu and plugins"
+msgstr "меню и плагины"
+
+msgid "in menu only"
+msgstr "только меню"
+
+msgid "in plugins only"
+msgstr "только плагины"
 
 msgid "information/education/school program"
 msgstr "информация/образование/школьная программа"

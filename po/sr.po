@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: enigma2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-12-11 15:26+0100\n"
+"POT-Creation-Date: 2018-12-27 17:56+0100\n"
 "PO-Revision-Date: 2011-04-14 00:02+0200\n"
 "Last-Translator: majevica <jovanovic@gmx.ch>\n"
 "Language-Team: veselin & majevica CRNABERZA <jovanovic@gmx.ch>\n"
@@ -436,6 +436,10 @@ msgid "%s%d min"
 msgstr ""
 
 #, python-format
+msgid "%s%d%s"
+msgstr ""
+
+#, python-format
 msgid "%s/%s: %s"
 msgstr ""
 
@@ -790,6 +794,9 @@ msgid "ACQUIRING TSID/ONID"
 msgstr ""
 
 msgid "AGC:"
+msgstr ""
+
+msgid "ASS File"
 msgstr ""
 
 msgid "ASS file"
@@ -1278,6 +1285,13 @@ msgstr ""
 msgid "Audio PID"
 msgstr "Zvučni PID"
 
+#, python-format
+msgid "Audio PID%s, codec & lang"
+msgstr ""
+
+msgid "Audio PID, codec & lang"
+msgstr ""
+
 msgid "Audio auto volume level"
 msgstr ""
 
@@ -1502,6 +1516,9 @@ msgid "Bangladesh"
 msgstr ""
 
 msgid "Barbados"
+msgstr ""
+
+msgid "Basic PID info"
 msgstr ""
 
 msgid "Basque"
@@ -2709,6 +2726,9 @@ msgstr "DVOSLOJNI DVDi "
 msgid "DVB CI Delay"
 msgstr ""
 
+msgid "DVB Subtitles PID & lang"
+msgstr ""
+
 #
 #, fuzzy
 msgid "DVB driver version: "
@@ -3179,6 +3199,11 @@ msgstr "Da li stvarno želite da uklonite direktorijum %s sa diska?"
 msgid "Do you really want to remove your bookmark of %s?"
 msgstr "Da li stvarno želite da uklonite vaše oznake sa %s?"
 
+#
+#, fuzzy, python-format
+msgid "Do you really want to stop current event and delete timer %s?"
+msgstr "Jeste li sigurni da želite obrisati %s?"
+
 msgid "Do you want this?"
 msgstr ""
 
@@ -3424,6 +3449,9 @@ msgstr ""
 #
 msgid "Electronic Program Guide"
 msgstr "Elektronski Programski Vodič"
+
+msgid "Embedded"
+msgstr ""
 
 msgid "Empty slot"
 msgstr ""
@@ -3837,6 +3865,9 @@ msgid "Extend sleeptimer 15 minutes"
 msgstr ""
 
 msgid "Extended"
+msgstr ""
+
+msgid "Extended PID info"
 msgstr ""
 
 #
@@ -5837,8 +5868,8 @@ msgstr "Postavke nejmservera"
 msgid "Nameserver setup"
 msgstr "Postavke nejmservera"
 
-msgid "Namespace"
-msgstr "Prostor za ime"
+msgid "Namespace & Orbital pos."
+msgstr ""
 
 msgid "Namibia"
 msgstr ""
@@ -6353,6 +6384,9 @@ msgstr ""
 msgid "Other"
 msgstr ""
 
+msgid "Other Subtitles & lang"
+msgstr ""
+
 msgid "Output"
 msgstr ""
 
@@ -6380,6 +6414,9 @@ msgid "PCR PID"
 msgstr "PCR PID"
 
 msgid "PDC"
+msgstr ""
+
+msgid "PGS File"
 msgstr ""
 
 msgid "PGS file"
@@ -7762,7 +7799,13 @@ msgstr "SNR:"
 msgid "SPDIF"
 msgstr ""
 
+msgid "SRT File"
+msgstr ""
+
 msgid "SRT file"
+msgstr ""
+
+msgid "SSA File"
 msgstr ""
 
 msgid "SSA file"
@@ -8464,6 +8507,16 @@ msgstr "Info kanala"
 msgid "Service info - ECM Info"
 msgstr "Info kanala"
 
+#
+#, fuzzy
+msgid "Service info - service & Basic PID Info"
+msgstr "Info kanala"
+
+#
+#, fuzzy
+msgid "Service info - service & Extended PID Info"
+msgstr "Info kanala"
+
 msgid "Service info - service & PIDs"
 msgstr ""
 
@@ -8801,7 +8854,7 @@ msgstr ""
 msgid "Show latest upgrade log"
 msgstr ""
 
-msgid "Show menu numbers"
+msgid "Show menu or plugin numbers"
 msgstr ""
 
 msgid "Show menu paths"
@@ -9743,6 +9796,11 @@ msgstr "TXT PID"
 
 #
 #, fuzzy
+msgid "TXT Subtitles page & lang"
+msgstr "Izbor subtitlova"
+
+#
+#, fuzzy
 msgid "Table of contents for collection"
 msgstr "Tabela sadržaja za kolekciju"
 
@@ -10090,7 +10148,7 @@ msgstr ""
 msgid "This option allows you to show all symbols on the display."
 msgstr ""
 
-msgid "This option allows you to show menu number quick links."
+msgid "This option allows you to show menu and/or plugin number quick links."
 msgstr ""
 
 msgid "This option allows you to show menu paths."
@@ -10922,6 +10980,9 @@ msgstr "LAN veza"
 #
 msgid "VMGM (intro trailer)"
 msgstr "VMGM (unutrašnji trejler)"
+
+msgid "VOB File"
+msgstr ""
 
 msgid "VOB file"
 msgstr ""
@@ -12405,6 +12466,21 @@ msgstr "pomoć..."
 #
 msgid "horizontal"
 msgstr "horizontalno"
+
+#
+#, fuzzy
+msgid "in menu and plugins"
+msgstr "Skini dodatke"
+
+#
+#, fuzzy
+msgid "in menu only"
+msgstr "Glavni meni"
+
+#
+#, fuzzy
+msgid "in plugins only"
+msgstr "Ovaj dodatak je instaliran."
 
 msgid "information/education/school program"
 msgstr ""
