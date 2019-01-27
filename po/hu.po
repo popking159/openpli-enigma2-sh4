@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: enigma2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-05 18:53+0100\n"
-"PO-Revision-Date: 2019-01-15 15:59+0100\n"
+"POT-Creation-Date: 2019-01-25 20:37+0100\n"
+"PO-Revision-Date: 2019-01-26 20:42+0100\n"
 "Last-Translator: mcfly82\n"
 "Language-Team: mcfly82 & wysless\n"
 "Language: hu_HU\n"
@@ -11,7 +11,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Poedit 2.2\n"
+"X-Generator: Poedit 2.2.1\n"
 
 msgid ""
 "\n"
@@ -373,6 +373,15 @@ msgstr "%d:%02d"
 #. TRANSLATORS: VFD hour:minute daynum short monthname in strftime() format! See 'man strftime'
 msgid "%k:%M %e/%m"
 msgstr "%k:%M %m.%e"
+
+#, python-format
+msgid ""
+"%s\n"
+"Do you still want to flash image\n"
+"%s?"
+msgstr ""
+"%s\n"
+"Biztos benne, hogy flashelni szeretné a %s image-t?"
 
 #, python-format
 msgid ""
@@ -966,6 +975,9 @@ msgstr "Készenlét alatt is"
 
 msgid "Alternative"
 msgstr "Alternatív"
+
+msgid "Alternative URL for images listed on FlashImage"
+msgstr "Alternatív URL az image listához"
 
 msgid "Alternative numbering mode"
 msgstr "Alternatív számozás"
@@ -1746,6 +1758,9 @@ msgstr "Napló törlése"
 msgid "Clear playlist"
 msgstr "Lejátszási lista törlése"
 
+msgid "Client is streaming from this box!"
+msgstr "Van streamelő kliens erről a boxról!"
+
 msgid "Clone TV screen to LCD"
 msgstr "TV kijelző klónozása LCD kijelzőre"
 
@@ -2123,7 +2138,7 @@ msgid "Configure whether or not an icon should be shown when your motorized dish
 msgstr "Megadja, hogy megjelenjen-e egy ikon a képernyőn, miközben az antenna forgatómotorja dolgozik."
 
 msgid "Configure which access level to use for the configuration menu. Expert level gives access to all items."
-msgstr "Milyen szintű hozzáférése legyen a menürendszernek. A 'Haladó' szint minden menü elemet hozzáférhetővé tesz."
+msgstr "Milyen szintű hozzáférése legyen a menürendszerhez. A 'Szakértő' szint minden menü elemet hozzáférhetővé tesz."
 
 msgid "Configure which color format should be used on the SCART output."
 msgstr "Milyen típusú videó jel jelenjen meg a SCART kimeneten."
@@ -2443,6 +2458,9 @@ msgstr "Idő/Dátum megadása"
 msgid "Debug to file"
 msgstr "Hibakeresés fájlba"
 
+msgid "Deep Standby LED"
+msgstr "Mély készenléti LED"
+
 msgid "Deep standby"
 msgstr "Kikapcsolás"
 
@@ -2679,6 +2697,15 @@ msgstr "4:3 tartalom megjelenítése"
 
 msgid "Display >16:9 content as"
 msgstr "16:9-nél szélesebb tartalom megjelenítése"
+
+msgid "Display EPG as MultiEPG"
+msgstr "Az EPG mutatása mint MultiEPG"
+
+msgid "Display EPG info for current event"
+msgstr "Az aktuális műsor EPG-információ megjelenítése"
+
+msgid "Display EPG list for current channel"
+msgstr "Az aktuális csatorna EPG-jének megjelenítése"
 
 msgid "Display and userinterface"
 msgstr "Képernyő és felhasználói felület"
@@ -3123,6 +3150,9 @@ msgstr "Adja meg a PIN kódot"
 msgid "Enter URL"
 msgstr "Adja meg az URL címet"
 
+msgid "Enter an URL where alternative images could be listed for FlashImage"
+msgstr "Adjon meg egy URL-t, ahonnan alternatív image lista lekérése lehetséges"
+
 msgid "Enter if you are in the east or west hemisphere."
 msgstr "Adja meg, hogy a keleti vagy a nyugati féltekén tartózkodik."
 
@@ -3331,10 +3361,10 @@ msgid "Expand"
 msgstr "Kibővít"
 
 msgid "Expert"
-msgstr "Haladó"
+msgstr "Szakértő"
 
 msgid "Expert settings"
-msgstr "Haladó beállítások"
+msgstr "Szakértő beállítások"
 
 msgid "Extend sleeptimer 15 minutes"
 msgstr "Elalvás időzítése 15 perccel későbbre"
@@ -3591,12 +3621,6 @@ msgstr ""
 
 msgid "Following tasks will be done after you press OK!"
 msgstr "A műveletek az OK gomb lenyomása után lesznek végrehajtva!"
-
-msgid "Force LNB Power"
-msgstr "Fej tápellátás kényszerítése"
-
-msgid "Force ToneBurst"
-msgstr "ToneBurst kényszerítése"
 
 msgid "Force legacy signal stats"
 msgstr "Hagyományos jel-statisztikák kényszerítése"
@@ -3931,6 +3955,9 @@ msgstr "Háttértár"
 
 msgid "Harddisk Setup"
 msgstr "Háttértár beállítások"
+
+msgid "Harddisk is not in sleepmode it could be in use!"
+msgstr "A merevlemez nincs készenlétben! Lehetséges, hogy éppen használatban van."
 
 msgid "Hardware: "
 msgstr "Hardver: "
@@ -5349,9 +5376,6 @@ msgstr "Nincs elég tárhely. Kérem, szabadítson fel némi helyet és próbál
 msgid "Not tested:"
 msgstr "Nincs tesztelve:"
 
-msgid "Not yet implemented!"
-msgstr "Még nincs végrehajtva!"
-
 msgid "Note: when enabled, and you do want standby mode after wake up, set option 'Startup to Standby' as 'No, except Wakeup timer'."
 msgstr "Megjegyzés: ha engedélyezi, és a felébresztés után készenléti módot szeretne, állítsa az 'Indításkor készenléti módba\" lehetőséget erre: 'Nem, kivéve Felébresztés időzítő'."
 
@@ -6309,15 +6333,6 @@ msgstr "Felvétel típusa"
 
 msgid "Recording(s) are in progress or coming up in few seconds!"
 msgstr "Felvétel folyamatban, vagy hamarosan indulni fog!"
-
-#, python-format
-msgid ""
-"Recording(s) are in progress or coming up in few seconds!\n"
-"Do you still want to flash image\n"
-"%s?"
-msgstr ""
-"Felvétel folyamatban, vagy hamarosan indulni fog!\n"
-"Biztosan szeretné flashelni a %s image-t?"
 
 msgid "Recordings"
 msgstr "Felvételek"
@@ -7977,6 +7992,9 @@ msgstr "Készenlét"
 msgid "Standby / restart"
 msgstr "Készenlét / újraindítás"
 
+msgid "Standby LED"
+msgstr "Készenléti LED"
+
 msgid "Standby after current event"
 msgstr "Készenlét az aktuális műsor végén"
 
@@ -7990,9 +8008,6 @@ msgstr "%d. Vent. készenlét feszültség"
 
 msgid "Standby in "
 msgstr "Készenlétbe: "
-
-msgid "StandbyLED"
-msgstr "Készenléti LED"
 
 msgid "Start from the beginning"
 msgstr "Indítsa az elejétől"
@@ -8326,7 +8341,7 @@ msgid "TRANSLATOR_INFO"
 msgstr ""
 "A fordítást készítette:\n"
 "mcfly82 & wysless\n"
-"Utolsó fordítás időpontja: 2019.01.15.\n"
+"Utolsó fordítás időpontja: 2019.01.26.\n"
 "Eredeti fordítás: MediaVox-Team, Robertut\n"
 "A magyar fordítás az OpenPLi projekthez készült.\n"
 "További információ: http://openpli.org"
@@ -9067,6 +9082,9 @@ msgstr "Türkmenisztán"
 
 msgid "Turks and Caicos Islands"
 msgstr "Turks- és Caicos-szigetek"
+
+msgid "Turn on the power LED during deep standby."
+msgstr "A LED jelző fény bekapcsolása készenléti módban."
 
 msgid "Turn on the power LED during standby."
 msgstr "A LED jelző fény bekapcsolása készenléti módban."
