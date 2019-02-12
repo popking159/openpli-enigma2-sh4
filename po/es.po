@@ -393,7 +393,7 @@ msgstr "%d:%02d"
 msgid "%k:%M %e/%m"
 msgstr "%k:%M %e/%m"
 
-#, python-format
+#, fuzzy, python-format
 msgid ""
 "%s\n"
 "Do you still want to flash image\n"
@@ -439,7 +439,7 @@ msgstr[0] "%s actualizaciones disponibles."
 msgstr[1] "%s actualizaciones disponibles."
 
 #
-#, python-format
+#, fuzzy, python-format
 msgid "%s%% Autoinstalling %s"
 msgstr "Instalando"
 
@@ -666,7 +666,7 @@ msgid "<Current movielist location>"
 msgstr "<Localización actual de la lista de películas>"
 
 #
-
+#, fuzzy
 msgid "<Default Skin>"
 msgstr "Parámetros por Defecto"
 
@@ -816,7 +816,7 @@ msgstr "ADQUISICIÓN DE TSID / ONID"
 msgid "AGC:"
 msgstr "AGC:"
 
-
+#, fuzzy
 msgid "ASS File"
 msgstr "ASS file"
 
@@ -1733,7 +1733,7 @@ msgid "Cancelled upon user request"
 msgstr "Cancelado a petición del usuario"
 
 #
-
+#, fuzzy
 msgid "Cannot delete downloaded image"
 msgstr "¿Quiere borrar las programaciones terminadas?"
 
@@ -2738,7 +2738,7 @@ msgid "Debug to file"
 msgstr "fichero de plantilla"
 
 #
-
+#, fuzzy
 msgid "Deep Standby LED"
 msgstr "Modo de espera  profundo"
 
@@ -3013,12 +3013,12 @@ msgstr "Visualizar contenido >16:9"
 msgid "Display EPG as MultiEPG"
 msgstr ""
 
-
+#, fuzzy
 msgid "Display EPG info for current event"
 msgstr "Ahorro de tiempo sólo para el evento actual"
 
 #
-
+#, fuzzy
 msgid "Display EPG list for current channel"
 msgstr "Mostrar EPG para el canal actual …"
 
@@ -3125,7 +3125,7 @@ msgid "Do you really want to remove your bookmark of %s?"
 msgstr "¿Quiere borrar su marcador %s?"
 
 #
-#, python-format
+#, fuzzy, python-format
 msgid "Do you really want to stop current event and delete timer %s?"
 msgstr "¿Seguro que quiere borrar %s?"
 
@@ -3362,7 +3362,7 @@ msgstr "El Salvador"
 msgid "Electronic Program Guide"
 msgstr "Guía de Programación Electrónica"
 
-
+#, fuzzy
 msgid "Embedded"
 msgstr "incrustado"
 
@@ -3386,7 +3386,7 @@ msgstr "Activar 5V para la antena activa"
 msgid "Enable EIT EPG"
 msgstr "Activar EIT EPG"
 
-
+#, fuzzy
 msgid "Enable HDMI-CEC"
 msgstr "Activar EIT EPG"
 
@@ -3772,7 +3772,7 @@ msgstr "Extienda el sleeptimer 15 minutos"
 msgid "Extended"
 msgstr "Extendido"
 
-
+#, fuzzy
 msgid "Extended PID info"
 msgstr "Extendido"
 
@@ -6154,7 +6154,7 @@ msgstr "Original"
 msgid "Other"
 msgstr "Otro"
 
-
+#, fuzzy
 msgid "Other Subtitles & lang"
 msgstr "Configuración de subtítulos"
 
@@ -6186,7 +6186,7 @@ msgstr "PCR PID"
 msgid "PDC"
 msgstr "PDC"
 
-
+#, fuzzy
 msgid "PGS File"
 msgstr "Archivo PGS"
 
@@ -6672,7 +6672,7 @@ msgid "Polish"
 msgstr "Polaco"
 
 #
-
+#, fuzzy
 msgid "Port"
 msgstr "Puerto A"
 
@@ -7504,14 +7504,14 @@ msgstr "SNR:"
 msgid "SPDIF"
 msgstr "SPDIF"
 
-
+#, fuzzy
 msgid "SRT File"
 msgstr "Archivo SRT"
 
 msgid "SRT file"
 msgstr "Archivo SRT"
 
-
+#, fuzzy
 msgid "SSA File"
 msgstr "Archivo SSA"
 
@@ -7994,7 +7994,7 @@ msgstr "Seleccione el canal de la banda de usuario que se asignará a este sinto
 msgid "Select the User Band frequency to be assigned to this tuner. This is the frequency the SCR switch or SCR LNB uses to pass the requested transponder to the tuner."
 msgstr "Seleccione el canal de la banda de usuario que se asignará a este sintonizador. Este es un índice en la tabla de frecuencias que utiliza el interruptor SCR o SCR LNB para pasar el transpondedor solicitado al sintonizador."
 
-
+#, fuzzy
 msgid "Select the User Band to be assigned to this tuner. This is an index into the table of frequencies the SCR switch or SCR LNB uses to pass the requested transponder to the tuner."
 msgstr "Seleccione la banda de usuario que se asignará a este sintonizador. Este es un índice en la tabla de frecuencias que utiliza el interruptor SCR o SCR LNB para pasar el transmisor solicitado al sintonizador."
 
@@ -8160,11 +8160,11 @@ msgstr "Información del servicio"
 msgid "Service info - ECM Info"
 msgstr "Información de servicio - Información de ECM"
 
-
+#, fuzzy
 msgid "Service info - service & Basic PID Info"
 msgstr "Información de servicio - servicio y PIDs"
 
-
+#, fuzzy
 msgid "Service info - service & Extended PID Info"
 msgstr "Información de servicio - servicio y PIDs"
 
@@ -8280,15 +8280,15 @@ msgstr "Establezca la secuencia repetida si su sistema aéreo lo requiere. Norma
 msgid "Set startup service"
 msgstr "Establecer servicio de inicio"
 
-
+#, fuzzy
 msgid "Set the User ID of the OpenWebif from your fallback tuner"
 msgstr "Habilitar el temporizador de importación desde el sintonizador de retroceso"
 
-
+#, fuzzy
 msgid "Set the password of the OpenWebif from your fallback tuner"
 msgstr "Habilitar el temporizador de importación desde el sintonizador de retroceso"
 
-
+#, fuzzy
 msgid "Set the port of the OpenWebif from your fallback tuner"
 msgstr "Habilitar el temporizador de importación desde el sintonizador de retroceso"
 
@@ -8490,7 +8490,7 @@ msgstr "Mostrar los últimos compromisos"
 msgid "Show latest upgrade log"
 msgstr "Mostrar el último registro de actualización"
 
-
+#, fuzzy
 msgid "Show menu or plugin numbers"
 msgstr "Mostrar número del menú"
 
@@ -8964,7 +8964,7 @@ msgstr "Reposo"
 msgid "Standby / restart"
 msgstr "En espera / reinicio"
 
-
+#, fuzzy
 msgid "Standby LED"
 msgstr "StandbyLED"
 
@@ -9380,7 +9380,7 @@ msgstr "Informe de dirección física de TV"
 msgid "TXT PID"
 msgstr "TXT PID"
 
-
+#, fuzzy
 msgid "TXT Subtitles page & lang"
 msgstr "Configuración de subtítulos"
 
@@ -9627,12 +9627,12 @@ msgid "There are currently no outstanding actions."
 msgstr "No hay actualmente ninguna acción en ejecución."
 
 #
-
+#, fuzzy
 msgid "There are no saved playlists to delete!"
 msgstr "Por favor, seleccione una lista de reproducción a borrar..."
 
 #
-
+#, fuzzy
 msgid "There are no saved playlists to load!"
 msgstr "borrar lista de reproducción guardada"
 
@@ -9746,7 +9746,7 @@ msgstr "Esta opción le permite apagar la pantalla."
 msgid "This option allows you to show all symbols on the display."
 msgstr "Esta opción le permite mostrar todos los símbolos en la pantalla."
 
-
+#, fuzzy
 msgid "This option allows you to show menu and/or plugin number quick links."
 msgstr "Esta opción le permite mostrar vínculos rápidos de números de menú."
 
@@ -10189,14 +10189,14 @@ msgstr "Turkmenistan"
 msgid "Turks and Caicos Islands"
 msgstr "Islas Turcas y Caicos"
 
-
+#, fuzzy
 msgid "Turn on the power LED during deep standby."
 msgstr "Encienda el LED de alimentación durante el modo de espera"
 
 msgid "Turn on the power LED during standby."
 msgstr "Encienda el LED de alimentación durante el modo de espera"
 
-
+#, fuzzy
 msgid "Turn on the power LED."
 msgstr "Encienda el LED de alimentación durante el modo de espera"
 
@@ -10507,7 +10507,7 @@ msgid "User - bouquets"
 msgstr "Usuario - bouquets"
 
 #
-
+#, fuzzy
 msgid "User ID"
 msgstr "Modo de usuario"
 
@@ -10554,7 +10554,7 @@ msgstr "Conexión VLAN"
 msgid "VMGM (intro trailer)"
 msgstr "VMGM (trailer intro)"
 
-
+#, fuzzy
 msgid "VOB File"
 msgstr "Archivo VOB"
 
@@ -10925,7 +10925,7 @@ msgstr "Cuando se activa, cuando se selecciona un nuevo canal en la selección d
 msgid "When enabled you can control the volume with the arrow buttons instead of getting the channel selection list"
 msgstr "Cuando está activado, puede controlar el volumen con los botones de flecha en lugar de obtener la lista de selección de canales"
 
-
+#, fuzzy
 msgid "When enabled you can customize the OpenWebIf settings for the fallback tuner"
 msgstr "Cuando está habilitado se importa el temporizador del sintonizador alternativo."
 
@@ -10954,7 +10954,7 @@ msgid "When enabled, EIT data will be included in http streams. This allows a cl
 msgstr "Cuando está activado, se mostrará un mensaje emergente cuando haya finalizado una película y se inicie la siguiente."
 
 #
-
+#, fuzzy
 msgid "When enabled, HDMI-CEC is enabled with standard configuration"
 msgstr "Cuando esté habilitado, utilice DHCP para la configuración IP."
 
@@ -12045,16 +12045,16 @@ msgid "horizontal"
 msgstr "horizontal"
 
 #
-
+#, fuzzy
 msgid "in menu and plugins"
 msgstr "Descargar Plugins"
 
 #
-
+#, fuzzy
 msgid "in menu only"
 msgstr "Menú principal"
 
-
+#, fuzzy
 msgid "in plugins only"
 msgstr "No se han encontrado nuevos complementos"
 

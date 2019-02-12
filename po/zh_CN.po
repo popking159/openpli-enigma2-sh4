@@ -63,7 +63,7 @@ msgstr ""
 "\n"
 "按OK键继续."
 
-
+#, fuzzy
 msgid ""
 "\n"
 "Press OK or Exit to abort!"
@@ -216,7 +216,7 @@ msgid "%H:%M"
 msgstr ""
 
 #. TRANSLATORS: full date representations short dayname daynum monthname long year in strftime() format! See 'man strftime'
-
+#, fuzzy
 msgid "%a %e %B %Y"
 msgstr "%d.%B %Y"
 
@@ -259,7 +259,7 @@ msgid_plural "%d files"
 msgstr[0] "%d file"
 msgstr[1] "%d files"
 
-#, python-format
+#, fuzzy, python-format
 msgid "%d fps"
 msgstr "%d file"
 
@@ -343,11 +343,11 @@ msgstr ""
 msgid "%d.%B %Y"
 msgstr "%d.%B %Y"
 
-#, python-format
+#, fuzzy, python-format
 msgid "%d.%d"
 msgstr "%d.%B %Y"
 
-#, python-format
+#, fuzzy, python-format
 msgid "%d.%d.%d"
 msgstr "%d.%B %Y"
 
@@ -359,7 +359,7 @@ msgstr ""
 msgid "%k:%M %e/%m"
 msgstr ""
 
-#, python-format
+#, fuzzy, python-format
 msgid ""
 "%s\n"
 "Do you still want to flash image\n"
@@ -396,7 +396,7 @@ msgid_plural "%s updated packages available"
 msgstr[0] "%s pembaruan paket tersedia"
 msgstr[1] "%s pembaruan paket-paket tersedia"
 
-#, python-format
+#, fuzzy, python-format
 msgid "%s%% Autoinstalling %s"
 msgstr "正在安装"
 
@@ -438,7 +438,7 @@ msgstr ""
 msgid "(show optional DVD audio menu)"
 msgstr "（显示可选的DVD音频菜单）"
 
-
+#, fuzzy
 msgid "(unknown)"
 msgstr "未知"
 
@@ -593,7 +593,7 @@ msgstr ""
 msgid "<Current movielist location>"
 msgstr "<当前影片列表位置>"
 
-
+#, fuzzy
 msgid "<Default Skin>"
 msgstr "默认设置"
 
@@ -639,7 +639,7 @@ msgid ""
 "your receiver. Shutdown now?"
 msgstr ""
 
-
+#, fuzzy
 msgid "A graphical EPG for all services of a specific bouquet"
 msgstr "图形EPG包含自定义组所有频道"
 
@@ -651,7 +651,7 @@ msgstr ""
 "录制已经开始:\n"
 "%s"
 
-
+#, fuzzy
 msgid "A recording is currently running on the selected tuner. Please select a different tuner or stop the recording and try again."
 msgstr "录制正在进行中. 扫描前请停止录制."
 
@@ -933,7 +933,7 @@ msgstr ""
 msgid "Allow subtitles for hearing impaired"
 msgstr ""
 
-
+#, fuzzy
 msgid "Allow unsupported modes"
 msgstr "不支持"
 
@@ -982,7 +982,7 @@ msgstr ""
 msgid "An empty filename is illegal."
 msgstr "一个空的文件名是非法的."
 
-
+#, fuzzy
 msgid "An error occurred - Please try again later"
 msgstr "更新密码文件发生错误."
 
@@ -1159,11 +1159,11 @@ msgstr ""
 msgid "Audio volume step size"
 msgstr ""
 
-
+#, fuzzy
 msgid "Australia"
 msgstr "意大利语"
 
-
+#, fuzzy
 msgid "Australian"
 msgstr "意大利语"
 
@@ -1219,7 +1219,7 @@ msgstr "自动"
 msgid "Automatic Scan"
 msgstr "自动扫描"
 
-
+#, fuzzy
 msgid "Automatic bookmarks"
 msgstr "自动扫描"
 
@@ -1235,7 +1235,7 @@ msgstr "自动打开外部字幕"
 msgid "Available format variables"
 msgstr "可用的格式变量"
 
-
+#, fuzzy
 msgid "Available locales are:"
 msgstr "可用的格式变量"
 
@@ -1288,7 +1288,7 @@ msgstr "备份失败!!"
 msgid "Backup is running..."
 msgstr "正在备份..."
 
-
+#, fuzzy
 msgid "Backup settings"
 msgstr "备份系统设置"
 
@@ -1298,7 +1298,7 @@ msgstr "备份系统设置"
 msgid "Bahamas"
 msgstr ""
 
-
+#, fuzzy
 msgid "Bahrain"
 msgstr "雨"
 
@@ -1341,7 +1341,7 @@ msgstr "当电影快要结束时"
 msgid "Belarus"
 msgstr ""
 
-
+#, fuzzy
 msgid "Belgian"
 msgstr "挪威语"
 
@@ -1390,7 +1390,7 @@ msgstr "书签"
 msgid "Boost blue"
 msgstr ""
 
-
+#, fuzzy
 msgid "Boost green"
 msgstr "绿色"
 
@@ -1419,11 +1419,11 @@ msgstr ""
 msgid "Buffering %d%%"
 msgstr ""
 
-
+#, fuzzy
 msgid "Build date: "
 msgstr "比特率:"
 
-
+#, fuzzy
 msgid "Bulgaria"
 msgstr "匈牙利语"
 
@@ -1534,7 +1534,7 @@ msgstr ""
 msgid "Cancelled upon user request"
 msgstr ""
 
-
+#, fuzzy
 msgid "Cannot delete downloaded image"
 msgstr "确实要删除定时器?"
 
@@ -1580,7 +1580,7 @@ msgstr ""
 msgid "Chad"
 msgstr ""
 
-
+#, fuzzy
 msgid "Change Language"
 msgstr "语言"
 
@@ -1614,7 +1614,7 @@ msgstr "频道"
 msgid "Channel Info"
 msgstr ""
 
-
+#, fuzzy
 msgid "Channel context menu"
 msgstr "频道列表菜单"
 
@@ -1642,7 +1642,7 @@ msgstr ""
 msgid "Channelnumber, picon and servicename"
 msgstr ""
 
-
+#, fuzzy
 msgid "Channels and EPG"
 msgstr "频道列表菜单"
 
@@ -1653,7 +1653,7 @@ msgstr ""
 msgid "Channels from fallback tuner imported"
 msgstr ""
 
-
+#, fuzzy
 msgid "Channels only"
 msgstr "频道"
 
@@ -1777,7 +1777,7 @@ msgstr "收藏名称"
 msgid "Collection settings"
 msgstr "收藏设置"
 
-
+#, fuzzy
 msgid "Colombia"
 msgstr "色彩"
 
@@ -1820,7 +1820,7 @@ msgstr "复合 (允许混合音轨和宽高比)"
 msgid "Composition of the recording filenames"
 msgstr "录像的文件名构成"
 
-
+#, fuzzy
 msgid "Compress"
 msgstr "按 OK"
 
@@ -2143,7 +2143,7 @@ msgstr "配置本地网络"
 msgid "Configure your network again"
 msgstr "重新配置网络"
 
-
+#, fuzzy
 msgid "Configure your network settings and press OK to scan"
 msgstr "配置你的网络，然后按OK开始扫描"
 
@@ -2171,7 +2171,7 @@ msgstr "连接"
 msgid "Connect to a wireless network"
 msgstr "连接无线网络"
 
-
+#, fuzzy
 msgid "Connected"
 msgstr "已连接"
 
@@ -2274,7 +2274,7 @@ msgstr ""
 msgid "Creating partition"
 msgstr ""
 
-
+#, fuzzy
 msgid "Croatia"
 msgstr "克罗地亚"
 
@@ -2353,7 +2353,7 @@ msgstr ""
 msgid "Czech"
 msgstr "捷克"
 
-
+#, fuzzy
 msgid "Czechia"
 msgstr "捷克"
 
@@ -2384,7 +2384,7 @@ msgstr ""
 msgid "DVB Subtitles PID & lang"
 msgstr ""
 
-
+#, fuzzy
 msgid "DVB driver version: "
 msgstr "新版本:"
 
@@ -2448,7 +2448,7 @@ msgstr "日期/时间输入"
 msgid "Debug to file"
 msgstr ""
 
-
+#, fuzzy
 msgid "Deep Standby LED"
 msgstr "深度休眠"
 
@@ -2545,7 +2545,7 @@ msgstr "删除失败."
 msgid "Delete file"
 msgstr ""
 
-
+#, fuzzy
 msgid "Delete image"
 msgstr "已删除项目"
 
@@ -2570,7 +2570,7 @@ msgstr "删除"
 msgid "Deleted items"
 msgstr "已删除项目"
 
-
+#, fuzzy
 msgid "Denmark"
 msgstr "周末标记:"
 
@@ -2712,23 +2712,23 @@ msgstr ""
 msgid "Display setup"
 msgstr "显示设置"
 
-
+#, fuzzy
 msgid "Djibouti"
 msgstr "关于"
 
-
+#, fuzzy
 msgid "Do a cable service scan now"
 msgstr " 是否开始频道扫描?"
 
-
+#, fuzzy
 msgid "Do a fast service scan now"
 msgstr " 是否开始频道扫描?"
 
-
+#, fuzzy
 msgid "Do a manual service scan now"
 msgstr "是，开始手动扫描"
 
-
+#, fuzzy
 msgid "Do an automatic service scan now"
 msgstr "是，开始自动扫描"
 
@@ -2791,7 +2791,7 @@ msgstr " 是否从磁盘上删除目录%s ?"
 msgid "Do you really want to remove your bookmark of %s?"
 msgstr " 是否删除 %s 书签?"
 
-#, python-format
+#, fuzzy, python-format
 msgid "Do you really want to stop current event and delete timer %s?"
 msgstr " 是否删除 %s?"
 
@@ -2804,13 +2804,13 @@ msgstr ""
 msgid "Do you want to burn this collection to DVD medium?"
 msgstr " 是否烧录这个收藏到DVD光盘?"
 
-#, python-format
+#, fuzzy, python-format
 msgid ""
 "Do you want to flash image\n"
 "%s"
 msgstr " 是否下载映像到 \"%s\"?"
 
-
+#, fuzzy
 msgid "Do you want to install Plugins?"
 msgstr " 是否安装默认的卫星列表？"
 
@@ -2899,14 +2899,14 @@ msgstr "可下载的插件"
 msgid "Downloading"
 msgstr "下载"
 
-
+#, fuzzy
 msgid "Downloading Image"
 msgstr "下载"
 
 msgid "Downloading plugin information. Please wait..."
 msgstr "正在下载插件列表,请稍候..."
 
-
+#, fuzzy
 msgid "Drop unconfigured satellites"
 msgstr "移除选定的卫星"
 
@@ -2919,7 +2919,7 @@ msgstr ""
 msgid "E"
 msgstr "E"
 
-
+#, fuzzy
 msgid "ECM Info"
 msgstr "ECM信息"
 
@@ -2932,7 +2932,7 @@ msgstr "EPG自动语言1"
 msgid "EPG language selection 2"
 msgstr "EPG自动语言2"
 
-
+#, fuzzy
 msgid "EPG only"
 msgstr "仅仅"
 
@@ -2946,7 +2946,7 @@ msgstr ""
 msgid "ERROR - failed to scan (%s)!"
 msgstr "错误 - 扫描 (%s)失败!"
 
-#, python-format
+#, fuzzy, python-format
 msgid "ERROR downloading file %s"
 msgstr "正在下载歌词"
 
@@ -2968,7 +2968,7 @@ msgstr "编辑 DNS"
 msgid "Edit chapters of current title"
 msgstr "编辑章节当前标题"
 
-
+#, fuzzy
 msgid "Edit selection"
 msgstr "定时器选择"
 
@@ -3023,7 +3023,7 @@ msgstr "为有源天线启用5V供电"
 msgid "Enable EIT EPG"
 msgstr "启用EIT EPG"
 
-
+#, fuzzy
 msgid "Enable HDMI-CEC"
 msgstr "启用EIT EPG"
 
@@ -3131,7 +3131,7 @@ msgstr "英语"
 msgid "Enigma (re)starts: %d\n"
 msgstr ""
 
-
+#, fuzzy
 msgid "Enigma version: "
 msgstr "反向:"
 
@@ -3141,7 +3141,7 @@ msgstr ""
 msgid "Enter"
 msgstr ""
 
-
+#, fuzzy
 msgid "Enter IP address"
 msgstr "当前CEC地址"
 
@@ -3208,7 +3208,7 @@ msgstr ""
 msgid "Error"
 msgstr "错误"
 
-#, python-format
+#, fuzzy, python-format
 msgid "Error %s"
 msgstr "错误"
 
@@ -3237,7 +3237,7 @@ msgstr ""
 msgid "Error executing plugin"
 msgstr "执行插件发生错误"
 
-
+#, fuzzy
 msgid "Error stop stream!"
 msgstr "固定流"
 
@@ -3360,7 +3360,7 @@ msgstr ""
 msgid "Expert"
 msgstr "高级"
 
-
+#, fuzzy
 msgid "Expert settings"
 msgstr "编辑设置"
 
@@ -3588,23 +3588,23 @@ msgstr "芬兰"
 msgid "Fixed"
 msgstr ""
 
-
+#, fuzzy
 msgid "Flash Image"
 msgstr "安装失败"
 
-
+#, fuzzy
 msgid "Flash image"
 msgstr "安装失败"
 
-
+#, fuzzy
 msgid "Flashing Image"
 msgstr "安装失败"
 
-
+#, fuzzy
 msgid "Flashing image successful"
 msgstr "成功删除"
 
-#, python-format
+#, fuzzy, python-format
 msgid ""
 "Flashing image was not successful\n"
 "%s"
@@ -3625,14 +3625,14 @@ msgstr "前向音量键"
 msgid "Frame size in full view"
 msgstr "全屏显示时的帧大小"
 
-
+#, fuzzy
 msgid "France"
 msgstr "取消"
 
 msgid "French"
 msgstr "法国"
 
-
+#, fuzzy
 msgid "French Guiana"
 msgstr "法国"
 
@@ -3677,7 +3677,7 @@ msgid "Frontprocessor version: %s"
 msgstr ""
 
 #. TRANSLATORS: (aspect ratio policy: display as fullscreen, even if the content aspect ratio does not match the screen ratio)
-
+#, fuzzy
 msgid "Full screen"
 msgstr "黑屏"
 
@@ -3699,11 +3699,11 @@ msgstr ""
 msgid "G"
 msgstr ""
 
-
+#, fuzzy
 msgid "GStreamer version: "
 msgstr "新版本:"
 
-
+#, fuzzy
 msgid "GUI Settings"
 msgstr "设置"
 
@@ -3741,7 +3741,7 @@ msgstr ""
 msgid "German"
 msgstr "德语"
 
-
+#, fuzzy
 msgid "Germany"
 msgstr "德语"
 
@@ -3832,7 +3832,7 @@ msgstr ""
 msgid "Graphical Multi EPG"
 msgstr "图形 Multi-EPG"
 
-
+#, fuzzy
 msgid "Greece"
 msgstr "希腊语"
 
@@ -3911,7 +3911,7 @@ msgstr ""
 msgid "HDR10"
 msgstr ""
 
-
+#, fuzzy
 msgid "HDR10 support"
 msgstr "不支持"
 
@@ -3924,11 +3924,11 @@ msgstr ""
 msgid "HLG"
 msgstr ""
 
-
+#, fuzzy
 msgid "HLG support"
 msgstr "不支持"
 
-
+#, fuzzy
 msgid "Haiti"
 msgstr "等待"
 
@@ -4043,7 +4043,7 @@ msgstr ""
 msgid "Hotkey zap"
 msgstr ""
 
-
+#, fuzzy
 msgid "How many minutes do you want add to the recording?"
 msgstr "您想录制多少分钟?"
 
@@ -4056,14 +4056,14 @@ msgstr "色相"
 msgid "Hungarian"
 msgstr "匈牙利语"
 
-
+#, fuzzy
 msgid "Hungary"
 msgstr "匈牙利语"
 
 msgid "I"
 msgstr ""
 
-
+#, fuzzy
 msgid "I do not want to perform any service scans"
 msgstr " 是否开始频道扫描?"
 
@@ -4088,7 +4088,7 @@ msgstr "这个ISO文件过大!"
 msgid "ISO path"
 msgstr "ISO路径"
 
-
+#, fuzzy
 msgid "Iceland"
 msgstr "冰岛"
 
@@ -4190,7 +4190,7 @@ msgstr ""
 msgid "Include AIT in http streams"
 msgstr ""
 
-
+#, fuzzy
 msgid "Include CI assignment"
 msgstr "CI选择"
 
@@ -4215,11 +4215,11 @@ msgstr ""
 msgid "India"
 msgstr ""
 
-
+#, fuzzy
 msgid "Indonesia"
 msgstr "完成!"
 
-
+#, fuzzy
 msgid "Indonesian"
 msgstr "完成!"
 
@@ -4274,7 +4274,7 @@ msgstr "正在初始化硬盘..."
 msgid "Input"
 msgstr "输入"
 
-
+#, fuzzy
 msgid "Input "
 msgstr "输入 1"
 
@@ -4375,7 +4375,7 @@ msgstr ""
 msgid "Iraq"
 msgstr ""
 
-
+#, fuzzy
 msgid "Ireland"
 msgstr "冰岛"
 
@@ -4385,7 +4385,7 @@ msgstr ""
 msgid "Is this video mode ok?"
 msgstr ""
 
-
+#, fuzzy
 msgid "Isle of Man"
 msgstr "扫描类型"
 
@@ -4402,7 +4402,7 @@ msgstr ""
 msgid "Italian"
 msgstr "意大利语"
 
-
+#, fuzzy
 msgid "Italy"
 msgstr "意大利语"
 
@@ -4461,7 +4461,7 @@ msgstr ""
 msgid "Kernel version: "
 msgstr ""
 
-
+#, fuzzy
 msgid "Key Events"
 msgstr "事件"
 
@@ -4486,7 +4486,7 @@ msgstr ""
 msgid "Korea (Republic of)"
 msgstr ""
 
-
+#, fuzzy
 msgid "Kuwait"
 msgstr "等待"
 
@@ -4526,7 +4526,7 @@ msgstr ""
 msgid "Latest Commits"
 msgstr ""
 
-
+#, fuzzy
 msgid "Latest upgrade log"
 msgstr "上次升级:"
 
@@ -4633,7 +4633,7 @@ msgstr ""
 msgid "Lists reloaded!"
 msgstr ""
 
-
+#, fuzzy
 msgid "Lithuania"
 msgstr "立陶宛语"
 
@@ -4790,11 +4790,11 @@ msgstr ""
 msgid "Martinique"
 msgstr ""
 
-
+#, fuzzy
 msgid "Mauritania"
 msgstr "立陶宛语"
 
-
+#, fuzzy
 msgid "Mauritius"
 msgstr "喜爱频道"
 
@@ -4844,7 +4844,7 @@ msgstr "消息"
 msgid "Message..."
 msgstr "消息..."
 
-
+#, fuzzy
 msgid "Messages"
 msgstr "消息"
 
@@ -4872,7 +4872,7 @@ msgctxt "Video output mode"
 msgid "Mode"
 msgstr "输出模式"
 
-
+#, fuzzy
 msgid "Model"
 msgstr "模式"
 
@@ -5017,7 +5017,7 @@ msgstr ""
 msgid "Multi-EPG bouquet selection"
 msgstr "Multi-EPG组 选择"
 
-
+#, fuzzy
 msgid "Multiboot"
 msgstr "多星"
 
@@ -5036,7 +5036,7 @@ msgstr "多星"
 msgid "Multisat all select"
 msgstr ""
 
-
+#, fuzzy
 msgid "Multistream"
 msgstr "多星"
 
@@ -5325,14 +5325,14 @@ msgstr ""
 "未找到可用的无线网络连接.\n"
 "请检查无线网络设备并检查无线网卡配置是否正确."
 
-
+#, fuzzy
 msgid "No, I do not want to install plugins"
 msgstr " 是否安装软件包:\n"
 
 msgid "No, but restart from begin"
 msgstr "不，重新开始播放这个视频"
 
-
+#, fuzzy
 msgid "No, do not flash image"
 msgstr "不，什么也不做."
 
@@ -5352,7 +5352,7 @@ msgstr "非线性"
 msgid "Norfolk Island"
 msgstr ""
 
-
+#, fuzzy
 msgid "Normal"
 msgstr "格式化"
 
@@ -5365,7 +5365,7 @@ msgstr "北"
 msgid "Northern Mariana Islands"
 msgstr ""
 
-
+#, fuzzy
 msgid "Norway"
 msgstr "挪威语"
 
@@ -5395,7 +5395,7 @@ msgstr ""
 "没有扫描!\n"
 "请设置您的调谐器，然后再启动频道扫描。."
 
-
+#, fuzzy
 msgid "Nothing to scan! Setup your tuner and try again."
 msgstr ""
 "没有扫描!\n"
@@ -5567,7 +5567,7 @@ msgstr ""
 msgid "PLS Code"
 msgstr ""
 
-
+#, fuzzy
 msgid "PLS Mode"
 msgstr "设置模式"
 
@@ -5638,7 +5638,7 @@ msgstr "电影结束时暂停"
 msgid "Pause playback"
 msgstr ""
 
-
+#, fuzzy
 msgid "Pause/Continue playback"
 msgstr "继续播放"
 
@@ -5694,7 +5694,7 @@ msgstr "播放DVD"
 msgid "Play audio-CD..."
 msgstr ""
 
-
+#, fuzzy
 msgid "Play audiofiles in list mode"
 msgstr "后台播放音频"
 
@@ -5877,11 +5877,11 @@ msgstr ""
 msgid "Please set up tuner J"
 msgstr ""
 
-
+#, fuzzy
 msgid "Please set up tuner Q"
 msgstr "请选择调谐器 B."
 
-
+#, fuzzy
 msgid "Please set up tuner R"
 msgstr "请选择调谐器 B."
 
@@ -5969,7 +5969,7 @@ msgstr "极化"
 msgid "Polish"
 msgstr "波兰语"
 
-
+#, fuzzy
 msgid "Port"
 msgstr "端口A"
 
@@ -5988,7 +5988,7 @@ msgstr "端口 D"
 msgid "Port of fallback remote receiver"
 msgstr ""
 
-
+#, fuzzy
 msgid "Portugal"
 msgstr "葡萄牙语"
 
@@ -6122,7 +6122,7 @@ msgstr ""
 msgid "Press OK to select a provider."
 msgstr ""
 
-
+#, fuzzy
 msgid "Press OK to select a service."
 msgstr "请选择一个子频道..."
 
@@ -6296,7 +6296,7 @@ msgstr "退出字幕快速切换?"
 msgid "Really reboot now?"
 msgstr "立即重启(Reboot)?"
 
-
+#, fuzzy
 msgid "Really restart in debug mode now?"
 msgstr "立即重启(Restart)?"
 
@@ -6386,11 +6386,11 @@ msgstr ""
 msgid "Refresh rate selection."
 msgstr "选择刷新率."
 
-
+#, fuzzy
 msgid "Refreshing image list - Please wait..."
 msgstr "正在搜索可用升级. 请稍候..."
 
-
+#, fuzzy
 msgid "Refusing to move to the same directory"
 msgstr "为新的目录重命名"
 
@@ -6427,7 +6427,7 @@ msgstr ""
 msgid "Remote control type"
 msgstr ""
 
-
+#, fuzzy
 msgid "Remote control type setup"
 msgstr "家长控制设置"
 
@@ -6556,18 +6556,18 @@ msgstr "重新启动"
 msgid "Restart GUI now?"
 msgstr "立即重启Enigma2?"
 
-
+#, fuzzy
 msgid "Restart both"
 msgstr "重新测试"
 
-
+#, fuzzy
 msgid "Restart cardserver"
 msgstr "请等待，正在重启卡片服务."
 
 msgid "Restart enigma"
 msgstr "重启Enigma2"
 
-
+#, fuzzy
 msgid "Restart enigma in debug mode"
 msgstr "重启Enigma2"
 
@@ -6612,11 +6612,11 @@ msgstr "恢复到%s"
 msgid "Resuming playback"
 msgstr "恢复播放"
 
-
+#, fuzzy
 msgid "Retrieving image list - Please wait..."
 msgstr "正在下载插件信息, 请稍候..."
 
-
+#, fuzzy
 msgid "Retrieving image slots - Please wait..."
 msgstr "正在安装... 请稍候..."
 
@@ -6698,7 +6698,7 @@ msgstr ""
 msgid "SCR Unicable"
 msgstr ""
 
-
+#, fuzzy
 msgid "SDR"
 msgstr "信噪比"
 
@@ -6750,7 +6750,7 @@ msgstr ""
 msgid "Saint Vincent and the Grenadines"
 msgstr ""
 
-
+#, fuzzy
 msgid "Same as stream"
 msgstr "停止测试"
 
@@ -6863,13 +6863,13 @@ msgstr ""
 msgid "Scan additional SR"
 msgstr "扫描更多 SR"
 
-#, python-format
+#, fuzzy, python-format
 msgid "Scan completed, %d channel found."
 msgid_plural "Scan completed, %d channels found."
 msgstr[0] "扫描完成，找到%d个频道"
 msgstr[1] "扫描完成，找到%d个频道"
 
-
+#, fuzzy
 msgid "Scan failed!"
 msgstr "扫描失败!"
 
@@ -6879,7 +6879,7 @@ msgstr ""
 msgid "Scan options"
 msgstr ""
 
-
+#, fuzzy
 msgid "Scan state"
 msgstr "扫描状态"
 
@@ -7011,7 +7011,7 @@ msgstr ""
 msgid "Select CAId"
 msgstr ""
 
-
+#, fuzzy
 msgid "Select Card Server"
 msgstr "选择一部电影"
 
@@ -7024,11 +7024,11 @@ msgstr ""
 msgid "Select HDD"
 msgstr "选择硬盘"
 
-
+#, fuzzy
 msgid "Select Image"
 msgstr "选择包"
 
-
+#, fuzzy
 msgid "Select Multiboot"
 msgstr "选择音频模式"
 
@@ -7084,7 +7084,7 @@ msgstr "选择目标位置:"
 msgid "Select destination for:"
 msgstr "目标目录:"
 
-
+#, fuzzy
 msgid "Select directory for logfile"
 msgstr "创建目录%s 失败."
 
@@ -7094,11 +7094,11 @@ msgstr "选择 文件/目录 备份..."
 msgid "Select files/folders to backup"
 msgstr "选择 文件/目录 备份..."
 
-
+#, fuzzy
 msgid "Select function"
 msgstr "选择位置"
 
-
+#, fuzzy
 msgid "Select hard disk"
 msgstr "选择一部电影"
 
@@ -7120,7 +7120,7 @@ msgstr "输入设备"
 msgid "Select interface"
 msgstr "选择接口"
 
-
+#, fuzzy
 msgid "Select locale"
 msgstr "选择Softcam"
 
@@ -7130,7 +7130,7 @@ msgstr ""
 msgid "Select movie"
 msgstr ""
 
-
+#, fuzzy
 msgid "Select path for logfile"
 msgstr "选择一部电影"
 
@@ -7233,7 +7233,7 @@ msgstr "设置视频模式"
 msgid "Select wireless network"
 msgstr "选择无线网络"
 
-
+#, fuzzy
 msgid "Select your ATSC provider."
 msgstr "选择要添加的提供商..."
 
@@ -7309,15 +7309,15 @@ msgstr "频道已添加到选定的自定义组."
 msgid "Service info"
 msgstr ""
 
-
+#, fuzzy
 msgid "Service info - ECM Info"
 msgstr "频道信息"
 
-
+#, fuzzy
 msgid "Service info - service & Basic PID Info"
 msgstr "频道信息"
 
-
+#, fuzzy
 msgid "Service info - service & Extended PID Info"
 msgstr "频道信息"
 
@@ -7411,7 +7411,7 @@ msgstr "将网卡设为默认"
 msgid "Set limits"
 msgstr "设置极限"
 
-
+#, fuzzy
 msgid "Set movielist type."
 msgstr "返回电影列表"
 
@@ -7466,7 +7466,7 @@ msgstr ""
 msgid "Setup"
 msgstr "设置"
 
-
+#, fuzzy
 msgid "Setup hard disk"
 msgstr "硬盘"
 
@@ -7746,7 +7746,7 @@ msgstr ""
 msgid "Signal OK, proceeding"
 msgstr ""
 
-
+#, fuzzy
 msgid "Signal finder"
 msgstr "寻星"
 
@@ -7774,7 +7774,7 @@ msgstr "简易"
 msgid "Simple titleset (compatibility for legacy players)"
 msgstr "简易的标题 (更好的兼容性)"
 
-
+#, fuzzy
 msgid "Singapore"
 msgstr "单个"
 
@@ -7873,7 +7873,7 @@ msgstr ""
 msgid "SoftCam / CI"
 msgstr ""
 
-
+#, fuzzy
 msgid "Softcam Setup"
 msgstr "Softcam 设置"
 
@@ -7972,7 +7972,7 @@ msgstr ""
 msgid "South Georgia and the South Sandwich Islands"
 msgstr ""
 
-
+#, fuzzy
 msgid "South Sudan"
 msgstr "南"
 
@@ -8042,7 +8042,7 @@ msgstr "待机"
 msgid "Standby / restart"
 msgstr ""
 
-
+#, fuzzy
 msgid "Standby LED"
 msgstr "待机"
 
@@ -8123,7 +8123,7 @@ msgstr ""
 msgid "Stop all current recordings"
 msgstr ""
 
-
+#, fuzzy
 msgid "Stop all streams"
 msgstr "停止测试"
 
@@ -8145,14 +8145,14 @@ msgstr "停止当前事件并禁用下一个事件"
 msgid "Stop current event but not coming events"
 msgstr "停止当前事件但不禁用下一个事件"
 
-
+#, fuzzy
 msgid "Stop current stream"
 msgstr "当天"
 
 msgid "Stop entry"
 msgstr ""
 
-
+#, fuzzy
 msgid "Stop play TV"
 msgstr "停止 Camd: "
 
@@ -8282,7 +8282,7 @@ msgstr "周日"
 msgid "Sunday"
 msgstr "星期日"
 
-
+#, fuzzy
 msgid "Suriname"
 msgstr "文件名"
 
@@ -8301,7 +8301,7 @@ msgstr ""
 msgid "Swaziland"
 msgstr ""
 
-
+#, fuzzy
 msgid "Sweden"
 msgstr "瑞典语"
 
@@ -8606,11 +8606,11 @@ msgstr ""
 msgid "There are currently no outstanding actions."
 msgstr ""
 
-
+#, fuzzy
 msgid "There are no saved playlists to delete!"
 msgstr "请选择要删除的播放列表..."
 
-
+#, fuzzy
 msgid "There are no saved playlists to load!"
 msgstr "至少"
 
@@ -8803,7 +8803,7 @@ msgid ""
 "- please check your DHCP, cabling and adapter setup"
 msgstr ""
 
-
+#, fuzzy
 msgid ""
 "This test checks whether your LAN adapter is set up for automatic IP address configuration with DHCP.\n"
 "If you get a \"disabled\" message:\n"
@@ -9006,7 +9006,7 @@ msgstr "传输模式"
 msgid "Transponder"
 msgstr "转发器"
 
-
+#, fuzzy
 msgid "Transport Stream Type"
 msgstr "转发器类型"
 
@@ -9070,7 +9070,7 @@ msgstr ""
 msgid "Tuner slot"
 msgstr ""
 
-
+#, fuzzy
 msgid "Tuner status:"
 msgstr "调谐器状态"
 
@@ -9080,14 +9080,14 @@ msgstr "调谐器类型"
 msgid "Tunisia"
 msgstr ""
 
-
+#, fuzzy
 msgid "Turkey"
 msgstr "土耳其语"
 
 msgid "Turkish"
 msgstr "土耳其语"
 
-
+#, fuzzy
 msgid "Turkmenistan"
 msgstr "土耳其语"
 
@@ -9115,7 +9115,7 @@ msgstr "2"
 msgid "Type"
 msgstr "类型"
 
-
+#, fuzzy
 msgid "Type of LNB/device"
 msgstr "扫描类型"
 
@@ -9146,7 +9146,7 @@ msgstr ""
 msgid "Uganda"
 msgstr ""
 
-
+#, fuzzy
 msgid "Ukraine"
 msgstr "雨"
 
@@ -9165,7 +9165,7 @@ msgstr ""
 msgid "Uncover dashed flickering line for this service"
 msgstr ""
 
-
+#, fuzzy
 msgid "Undefined"
 msgstr "用户定义"
 
@@ -9229,7 +9229,7 @@ msgstr "卸载"
 msgid "Unsupported"
 msgstr "不支持"
 
-
+#, fuzzy
 msgid "Unzipping Image"
 msgstr "下载"
 
@@ -9239,7 +9239,7 @@ msgstr "更新"
 msgid "Update and ask to reboot"
 msgstr ""
 
-
+#, fuzzy
 msgid "Update and reboot"
 msgstr "升级并请求重启"
 
@@ -9384,11 +9384,11 @@ msgstr "按频道类型搜索"
 msgid "User - bouquets"
 msgstr "自定义组"
 
-
+#, fuzzy
 msgid "User ID"
 msgstr "用户定义"
 
-
+#, fuzzy
 msgid "User Mode"
 msgstr "用户定义"
 
@@ -9421,7 +9421,7 @@ msgstr ""
 msgid "VCR scart"
 msgstr "录像机"
 
-
+#, fuzzy
 msgid "VLAN connection"
 msgstr "局域网连接"
 
@@ -9437,7 +9437,7 @@ msgstr ""
 msgid "VU+"
 msgstr ""
 
-
+#, fuzzy
 msgid "Vanuatu"
 msgstr "手动"
 
@@ -9952,7 +9952,7 @@ msgstr ""
 msgid "Without popup"
 msgstr ""
 
-
+#, fuzzy
 msgid "Wizard setup"
 msgstr "视频设置"
 
@@ -10014,7 +10014,7 @@ msgstr ""
 msgid "Yes to all"
 msgstr "所有"
 
-
+#, fuzzy
 msgid "Yes, I do want to install plugins"
 msgstr " 是否安装软件包:\n"
 
@@ -10036,11 +10036,11 @@ msgstr ""
 msgid "Yes, returning to movie list"
 msgstr "是，返回电影列表"
 
-
+#, fuzzy
 msgid "Yes, with backup"
 msgstr "恢复备份"
 
-
+#, fuzzy
 msgid "Yes, without backup"
 msgstr "恢复备份"
 
@@ -10633,7 +10633,7 @@ msgstr "退出网卡设置菜单"
 msgid "experimental film/video"
 msgstr ""
 
-
+#, fuzzy
 msgid "extra wide"
 msgstr "附加字段"
 
@@ -10676,11 +10676,11 @@ msgstr ""
 msgid "football/soccer"
 msgstr ""
 
-
+#, fuzzy
 msgid "force disabled"
 msgstr "不可用"
 
-
+#, fuzzy
 msgid "force enabled"
 msgstr "启用"
 
@@ -10729,15 +10729,15 @@ msgstr "帮助..."
 msgid "horizontal"
 msgstr "水平"
 
-
+#, fuzzy
 msgid "in menu and plugins"
 msgstr "移除插件"
 
-
+#, fuzzy
 msgid "in menu only"
 msgstr "主菜单"
 
-
+#, fuzzy
 msgid "in plugins only"
 msgstr "此插件已安装."
 
@@ -10924,7 +10924,7 @@ msgstr "未设置"
 msgid "not locked"
 msgstr "无信号"
 
-
+#, fuzzy
 msgid "not running"
 msgstr "正在恢复"
 
@@ -10982,7 +10982,7 @@ msgstr ""
 msgid "pass"
 msgstr "通过"
 
-
+#, fuzzy
 msgid "pausing"
 msgstr "暂停"
 
@@ -11106,7 +11106,7 @@ msgstr ""
 msgid "romance"
 msgstr ""
 
-
+#, fuzzy
 msgid "running"
 msgstr "正在运行"
 
@@ -11146,7 +11146,7 @@ msgstr ""
 msgid "service is in bouquet parental protection"
 msgstr ""
 
-
+#, fuzzy
 msgid "service off-air"
 msgstr "频道密码"
 
@@ -11260,7 +11260,7 @@ msgstr "从这里开始剪接"
 msgid "start directory"
 msgstr "开始目录"
 
-
+#, fuzzy
 msgid "starts in a few seconds"
 msgstr "超时(秒)"
 

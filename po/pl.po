@@ -381,7 +381,7 @@ msgstr ""
 msgid "%k:%M %e/%m"
 msgstr ""
 
-#, python-format
+#, fuzzy, python-format
 msgid ""
 "%s\n"
 "Do you still want to flash image\n"
@@ -424,7 +424,7 @@ msgstr[0] " %s zaktualizowany pakiet dostępny"
 msgstr[1] " %s zaktualizowane pakiety dostępne"
 msgstr[2] " %s zaktualizowanych pakietów dostępnych"
 
-#, python-format
+#, fuzzy, python-format
 msgid "%s%% Autoinstalling %s"
 msgstr "Automatyczna instalacja %s"
 
@@ -620,7 +620,7 @@ msgstr ": 0000 - domyślny (wyłączono)"
 msgid "<Current movielist location>"
 msgstr "<Bieżąca lokalizacja nagrań>"
 
-
+#, fuzzy
 msgid "<Default Skin>"
 msgstr "Ustawienia domyślne"
 
@@ -754,7 +754,7 @@ msgstr "UZYSKIWANIE TSID/ONID"
 msgid "AGC:"
 msgstr ""
 
-
+#, fuzzy
 msgid "ASS File"
 msgstr "Plik ASS"
 
@@ -1567,7 +1567,7 @@ msgstr "Cofnij wszystkie zmiany tekstu i wyjdź"
 msgid "Cancelled upon user request"
 msgstr "Anulowano na żądanie użytkownika"
 
-
+#, fuzzy
 msgid "Cannot delete downloaded image"
 msgstr "Usunąć wykonane timery?"
 
@@ -2217,7 +2217,7 @@ msgstr "Konsola"
 msgid "Constellation & FFT mode"
 msgstr "Konstelacja i tryb FFT"
 
-
+#, fuzzy
 msgid "Consult your SCR device spec sheet for this information."
 msgstr "Sprawdź tę informację w specyfikacji twojego urządzenia unicable."
 
@@ -2475,7 +2475,7 @@ msgstr "Czas / Data"
 msgid "Debug to file"
 msgstr "Debug do pliku"
 
-
+#, fuzzy
 msgid "Deep Standby LED"
 msgstr "Głębokie czuwanie"
 
@@ -2719,11 +2719,11 @@ msgstr "Wyświetlaj zawartość >16:9 jako"
 msgid "Display EPG as MultiEPG"
 msgstr ""
 
-
+#, fuzzy
 msgid "Display EPG info for current event"
 msgstr "Zapisz timeshift tylko dla bieżącego wydarzenia"
 
-
+#, fuzzy
 msgid "Display EPG list for current channel"
 msgstr "Pokaż EPG dla aktualnego kanału..."
 
@@ -2817,7 +2817,7 @@ msgstr "Czy na pewno chcesz usunąć katalog %s z dysku?"
 msgid "Do you really want to remove your bookmark of %s?"
 msgstr "Czy na pewno chcesz usunąć zakładkę %s?"
 
-#, python-format
+#, fuzzy, python-format
 msgid "Do you really want to stop current event and delete timer %s?"
 msgstr "Czy na pewno chcesz usunąć %s?"
 
@@ -3025,7 +3025,7 @@ msgstr "Salwador"
 msgid "Electronic Program Guide"
 msgstr "EPG"
 
-
+#, fuzzy
 msgid "Embedded"
 msgstr "wtopione"
 
@@ -3047,7 +3047,7 @@ msgstr "Włącz 5V dla aktywnej anteny"
 msgid "Enable EIT EPG"
 msgstr "Włącz EIT EPG"
 
-
+#, fuzzy
 msgid "Enable HDMI-CEC"
 msgstr "Włącz EIT EPG"
 
@@ -3161,7 +3161,7 @@ msgstr "Wersja enigmy:"
 msgid "Enigma2 skin selector"
 msgstr "Wybór skina"
 
-
+#, fuzzy
 msgid "Enter"
 msgstr "Środek"
 
@@ -3192,7 +3192,7 @@ msgstr "Wprowadź stały kod PIN"
 msgid "Enter pin code"
 msgstr "Wpisz PIN"
 
-
+#, fuzzy
 msgid "Enter text and exit"
 msgstr "Cofnij wszystkie zmiany tekstu i wyjdź"
 
@@ -3401,7 +3401,7 @@ msgstr "Wydłuż sleeptimer o 15 minut"
 msgid "Extended"
 msgstr "Rozszerzone"
 
-
+#, fuzzy
 msgid "Extended PID info"
 msgstr "Rozszerzone"
 
@@ -5487,7 +5487,7 @@ msgstr "Dla prawidłowych ONID, ignoruj częstotliwość podsieci"
 msgid "One"
 msgstr "Jeden"
 
-
+#, fuzzy
 msgid "Only change this setting if you are using a SCR device that has been reprogrammed with a custom programmer. For further information check with the person that reprogrammed the device."
 msgstr "Zmień to ustawienie tylko wtedy, jeżeli używasz urządzenia unicable, które zostało przeprogramowane specjalnym programatorem. Więcej informacji uzyskasz od osoby, która przeprogramowała urządzenie."
 
@@ -5539,7 +5539,7 @@ msgstr "Oryginalny"
 msgid "Other"
 msgstr "Inne"
 
-
+#, fuzzy
 msgid "Other Subtitles & lang"
 msgstr "Ustawienia napisów"
 
@@ -5570,7 +5570,7 @@ msgstr ""
 msgid "PDC"
 msgstr ""
 
-
+#, fuzzy
 msgid "PGS File"
 msgstr "Plik PGS"
 
@@ -5983,7 +5983,7 @@ msgstr "Polaryzacja"
 msgid "Polish"
 msgstr "Polski"
 
-
+#, fuzzy
 msgid "Port"
 msgstr "Port A"
 
@@ -6716,14 +6716,14 @@ msgstr ""
 msgid "SPDIF"
 msgstr ""
 
-
+#, fuzzy
 msgid "SRT File"
 msgstr "Plik SRT"
 
 msgid "SRT file"
 msgstr "Plik SRT"
 
-
+#, fuzzy
 msgid "SSA File"
 msgstr "Plik SSA"
 
@@ -6976,7 +6976,7 @@ msgstr "Wybierz '1.0' dla standardowych committed switches, '1.1' dla uncommitte
 msgid "Select 'A' or 'B' if your aerial system requires this, otherwise select 'none'. If you are unsure select 'none'."
 msgstr "Wybierz 'A' lub 'B' jeżeli twój system antenowy wymaga tego, w innym przypadku wybierz 'brak'. Jeśli nie jesteś pewien wybierz 'brak'."
 
-
+#, fuzzy
 msgid "Select 'FBC SCR' if this tuner will connect to a SCR (Unicable/JESS) device. For all other setups select 'FBC automatic'."
 msgstr "Wybierz 'unicable' jeżeli ten tuner będzie używał urządzenia unicable. Dla wszystkich innych konfiguracji wybierz 'FBC automatyczny'."
 
@@ -6992,7 +6992,7 @@ msgstr "Wybierz 'Polaryzacja'' jeżeli używasz uniwersalnego konwertera, w inny
 msgid "Select 'provider' to scan from the predefined list of cable multiplexes. Select 'bands' to only scan certain parts of the spectrum. Select 'steps' to scan in steps of a particular frequency bandwidth."
 msgstr "Wybierz 'Nadawcy' aby skanować z predefiniowanej listy multipleksów kablowych. Wybierz 'bands' aby skanować tylko pewną część zakresu. Wybierz 'steps' aby skanować krokowo dane pasmo częstotliwości."
 
-
+#, fuzzy
 msgid "Select 'yes' if this tuner is connected to the SCR device through another tuner, otherwise select 'no'."
 msgstr "Wybierz 'Tak' jeżeli tuner jest podłączony do urządzenia unicable przez inną głowicę, w innym przypadku wybierz 'Nie'."
 
@@ -7165,18 +7165,18 @@ msgstr ""
 msgid "Select the character or action under the virtual keyboard cursor"
 msgstr "Wybierz znak lub działanie pod kursorem wirtualnej klawiatury"
 
-
+#, fuzzy
 msgid "Select the manufacturer of your SCR device. If the manufacturer is not listed, set 'SCR' to 'user defined' and enter the device parameters manually according to its spec sheet."
 msgstr "Wybierz producenta twojego urządzenia unicable. Jeśli nie ma go na liście, ustaw 'SCR' na 'zdefiniowany przez użytkownika' i wpisz parametry ręcznie, zgodnie ze specyfikacją urządzenia."
 
-
+#, fuzzy
 msgid "Select the model number of your SCR device. If the model number is not listed, set 'SCR' to 'user defined' and enter the device parameters manually according to its spec sheet."
 msgstr "Wybierz model twojego urządzenia unicable. Jeśli nie ma go na liście, ustaw 'SCR' na 'zdefiniowany przez użytkownika' i wpisz parametry ręcznie, zgodnie ze specyfikacją urządzenia."
 
 msgid "Select the movie path"
 msgstr "Wybierz ścieżkę do filmu"
 
-
+#, fuzzy
 msgid "Select the protocol used by your SCR device. Choices are 'SCR Unicable' (Unicable), or 'SCR JESS' (JESS, also known as Unicable II)."
 msgstr "Wybierz typ twojego urządzenia unicable. Do wyboru masz 'SCR Unicable' (typ unicable I) lub 'SCR JESS' (typ unicable II)."
 
@@ -7204,14 +7204,14 @@ msgstr "Wybierz głowicę, która steruje obrotnicą."
 msgid "Select the tuner that this loopthrough depends on."
 msgstr "Wybierz głowicę, do której podłączono przez przelotkę."
 
-
+#, fuzzy
 msgid "Select the tuner to which the signal cable of the SCR device is connected."
 msgstr "Wybierz głowicę do której podłączony jest przewód sygnałowy z urządzenia unicable."
 
 msgid "Select the type of LNB/device being used (normally 'Universal'). If your LNB type is not available select 'user defined'."
 msgstr "Wybierz typ konwetera/urządzenia którego używasz (standardowo 'Uniwersalny'). Jeśli twój typ konwertera nie jest dostępny, wybierz 'Zdefiniowany przez użytkownika'."
 
-
+#, fuzzy
 msgid "Select the type of Single Cable Reception device you are using."
 msgstr "Wybierz typ urządzenia unicable, którego używasz."
 
@@ -7314,11 +7314,11 @@ msgstr "Parametry kanału"
 msgid "Service info - ECM Info"
 msgstr "Parametry kanału - ECM Info"
 
-
+#, fuzzy
 msgid "Service info - service & Basic PID Info"
 msgstr "Parametry serwisu - kanał i PIDy"
 
-
+#, fuzzy
 msgid "Service info - service & Extended PID Info"
 msgstr "Parametry serwisu - kanał i PIDy"
 
@@ -7424,15 +7424,15 @@ msgstr "Ustaw powtarzanie sekwencji jeśli twój system antenowy tego wymaga. St
 msgid "Set startup service"
 msgstr "Ustaw kanał startowy"
 
-
+#, fuzzy
 msgid "Set the User ID of the OpenWebif from your fallback tuner"
 msgstr "Włącz import timerów z tunera rezerwowego"
 
-
+#, fuzzy
 msgid "Set the password of the OpenWebif from your fallback tuner"
 msgstr "Włącz import timerów z tunera rezerwowego"
 
-
+#, fuzzy
 msgid "Set the port of the OpenWebif from your fallback tuner"
 msgstr "Włącz import timerów z tunera rezerwowego"
 
@@ -7616,7 +7616,7 @@ msgstr "Wyświetl ostatnie commity"
 msgid "Show latest upgrade log"
 msgstr "Ostatni log aktualizacji"
 
-
+#, fuzzy
 msgid "Show menu or plugin numbers"
 msgstr "Wyświetlaj numerację menu"
 
@@ -8043,7 +8043,7 @@ msgstr "Czuwanie"
 msgid "Standby / restart"
 msgstr "Czuwanie / Restart"
 
-
+#, fuzzy
 msgid "Standby LED"
 msgstr "Dioda w trybie czuwania"
 
@@ -8413,7 +8413,7 @@ msgstr "Raportowanie fizycznego adresu TV"
 msgid "TXT PID"
 msgstr ""
 
-
+#, fuzzy
 msgid "TXT Subtitles page & lang"
 msgstr "Ustawienia napisów"
 
@@ -8635,11 +8635,11 @@ msgstr "Dostępnych co najmniej  %s aktualizacji."
 msgid "There are currently no outstanding actions."
 msgstr "Obecnie nie ma zaległych działań."
 
-
+#, fuzzy
 msgid "There are no saved playlists to delete!"
 msgstr "Wybierz playlistę do usunięcia..."
 
-
+#, fuzzy
 msgid "There are no saved playlists to load!"
 msgstr "Usuń zachowaną playlistę"
 
@@ -8752,7 +8752,7 @@ msgstr "Ta opcja pozwala wyłączyć wyświetlacz."
 msgid "This option allows you to show all symbols on the display."
 msgstr "Ta opcja włącza wyświetlanie wszystkich symboli na wyświetlaczu."
 
-
+#, fuzzy
 msgid "This option allows you to show menu and/or plugin number quick links."
 msgstr "Ta opcja włącza wyświetlanie numerowania pozycji menu."
 
@@ -9138,14 +9138,14 @@ msgstr ""
 msgid "Turks and Caicos Islands"
 msgstr "Wyspy Turks i Caicos"
 
-
+#, fuzzy
 msgid "Turn on the power LED during deep standby."
 msgstr "Włączaj diodę zasilania w trybie czuwania"
 
 msgid "Turn on the power LED during standby."
 msgstr "Włączaj diodę zasilania w trybie czuwania"
 
-
+#, fuzzy
 msgid "Turn on the power LED."
 msgstr "Włączaj diodę zasilania w trybie czuwania"
 
@@ -9429,7 +9429,7 @@ msgstr "Używany typ skanowania kanałów"
 msgid "User - bouquets"
 msgstr "Bukiety"
 
-
+#, fuzzy
 msgid "User ID"
 msgstr "Tryb użytkownika"
 
@@ -9471,7 +9471,7 @@ msgstr "Połączenie VLAN"
 msgid "VMGM (intro trailer)"
 msgstr ""
 
-
+#, fuzzy
 msgid "VOB File"
 msgstr "Plik VOB"
 
@@ -9796,7 +9796,7 @@ msgstr "Gdy włączone, jeśli wybierzesz nowy kanał w liście wyboru kanałów
 msgid "When enabled you can control the volume with the arrow buttons instead of getting the channel selection list"
 msgstr "Gdy włączone, strzałki prawa/lewa regulują głośność, a nie otwierają listy wyboru kanałów."
 
-
+#, fuzzy
 msgid "When enabled you can customize the OpenWebIf settings for the fallback tuner"
 msgstr "Gdy włączone, timer ze zdalnego odbiornika jest importowany"
 
@@ -9824,7 +9824,7 @@ msgstr "Gdy włączone, dane ECM będą zawarte w streamach http. To pozwala wyk
 msgid "When enabled, EIT data will be included in http streams. This allows a client receiver to show EPG."
 msgstr "Gdy włączone, dane EIT będą zawarte w streamach http. To pozwala wyświetlić EPG na odbiorniku 'kliencie'."
 
-
+#, fuzzy
 msgid "When enabled, HDMI-CEC is enabled with standard configuration"
 msgstr "Gdy włączone, używa DHCP do konfiguracji IP."
 
@@ -10814,15 +10814,15 @@ msgstr "Pomoc..."
 msgid "horizontal"
 msgstr "Pozioma (H)"
 
-
+#, fuzzy
 msgid "in menu and plugins"
 msgstr "Pobierz wtyczki"
 
-
+#, fuzzy
 msgid "in menu only"
 msgstr "Menu główne"
 
-
+#, fuzzy
 msgid "in plugins only"
 msgstr "Nie znaleziono nowych wtyczek"
 
