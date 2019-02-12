@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: enigma\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-25 20:37+0100\n"
+"POT-Creation-Date: 2019-02-05 11:25+0330\n"
 "PO-Revision-Date: \n"
 "Last-Translator: Frenske <voorzitter@openpli.org>\n"
 "Language-Team: PLiteam <translators@openpli.org>\n"
@@ -228,9 +228,6 @@ msgstr "%A %e %B %Y"
 msgid "%H:%M"
 msgstr "%H:%M"
 
-msgid "%Y-%m-%d %H:%M"
-msgstr "%Y-%m-%d %H:%M"
-
 #. TRANSLATORS: full date representations short dayname daynum monthname long year in strftime() format! See 'man strftime'
 msgid "%a %e %B %Y"
 msgstr "%a %e %B %Y"
@@ -374,7 +371,7 @@ msgstr "%d:%02d"
 msgid "%k:%M %e/%m"
 msgstr "%k:%M %e/%m"
 
-#, fuzzy, python-format
+#, python-format
 msgid ""
 "%s\n"
 "Do you still want to flash image\n"
@@ -416,7 +413,7 @@ msgid_plural "%s updated packages available"
 msgstr[0] "%s nieuw pakket beschikbaar"
 msgstr[1] "%s nieuwe pakketten beschikbaar"
 
-#, fuzzy, python-format
+#, python-format
 msgid "%s%% Autoinstalling %s"
 msgstr "(Auto)Installeert %s"
 
@@ -611,6 +608,10 @@ msgstr ":0000 - standaard (uitgeschakeld)"
 
 msgid "<Current movielist location>"
 msgstr "<Huidige opnamelijstlocatie>"
+
+
+msgid "<Default Skin>"
+msgstr "Standaard instellingen"
 
 msgid "<Default movie location>"
 msgstr "<Standaard opnamelocatie>"
@@ -1559,7 +1560,7 @@ msgstr "Annuleer alle wijzigingen en stop"
 msgid "Cancelled upon user request"
 msgstr "Geannuleerd a.g.v. een verzoek van de gebruiker"
 
-#, fuzzy
+
 msgid "Cannot delete downloaded image"
 msgstr "Wilt u de gebruikte timers echt wissen?"
 
@@ -2627,7 +2628,7 @@ msgstr "Tijd/Datum invoer"
 msgid "Debug to file"
 msgstr "Debug naar bestand"
 
-#, fuzzy
+
 msgid "Deep Standby LED"
 msgstr "Volledig uitschakelen"
 
@@ -2871,11 +2872,11 @@ msgstr "Toon >16:9 materiaal als"
 msgid "Display EPG as MultiEPG"
 msgstr ""
 
-#, fuzzy
+
 msgid "Display EPG info for current event"
 msgstr "Sla de timeshift enkel op voor het lopende programma"
 
-#, fuzzy
+
 msgid "Display EPG list for current channel"
 msgstr "Toon de EPG van de huidige zender"
 
@@ -2969,7 +2970,7 @@ msgstr "Weet u zeker dat u de map %s van de harde schijf wilt wissen?"
 msgid "Do you really want to remove your bookmark of %s?"
 msgstr "De markering %s echt verwijderen?"
 
-#, fuzzy, python-format
+#, python-format
 msgid "Do you really want to stop current event and delete timer %s?"
 msgstr "Wilt u %s echt verwijderen?"
 
@@ -6146,7 +6147,7 @@ msgstr "Polarisatie"
 msgid "Polish"
 msgstr "Pools"
 
-#, fuzzy
+
 msgid "Port"
 msgstr "Poort A"
 
@@ -6191,6 +6192,9 @@ msgstr "Rotorinstellingen"
 
 msgid "Positioner setup log"
 msgstr "Positioner instellingen log"
+
+msgid "Power LED"
+msgstr ""
 
 msgid "Power management. Consult your receiver's manual for more information."
 msgstr "Power management. Raadpleeg de handleiding van uw ontvanger voor meer details."
@@ -7577,15 +7581,15 @@ msgstr "Deze volgorde wordt herhaald als uw ontvangstinrichting dit vereist. Nor
 msgid "Set startup service"
 msgstr "Kies als opstartzender"
 
-#, fuzzy
+
 msgid "Set the User ID of the OpenWebif from your fallback tuner"
 msgstr "Activeer de import van timers van de Fallback tuner"
 
-#, fuzzy
+
 msgid "Set the password of the OpenWebif from your fallback tuner"
 msgstr "Activeer de import van timers van de Fallback tuner"
 
-#, fuzzy
+
 msgid "Set the port of the OpenWebif from your fallback tuner"
 msgstr "Activeer de import van timers van de Fallback tuner"
 
@@ -8198,7 +8202,7 @@ msgstr "Standby"
 msgid "Standby / restart"
 msgstr "Standby / herstart"
 
-#, fuzzy
+
 msgid "Standby LED"
 msgstr "Standby-led"
 
@@ -9310,11 +9314,15 @@ msgstr "Turksmenistan"
 msgid "Turks and Caicos Islands"
 msgstr "Turks- en Caicoseilanden"
 
-#, fuzzy
+
 msgid "Turn on the power LED during deep standby."
 msgstr "Met deze optie bepaalt u of de power led brandt als de ontvanger standby staat."
 
 msgid "Turn on the power LED during standby."
+msgstr "Met deze optie bepaalt u of de power led brandt als de ontvanger standby staat."
+
+
+msgid "Turn on the power LED."
 msgstr "Met deze optie bepaalt u of de power led brandt als de ontvanger standby staat."
 
 msgid "Turning step size"
@@ -9599,7 +9607,7 @@ msgstr "Gebruikte zoekmethode"
 msgid "User - bouquets"
 msgstr "Gebruiker - bouquets"
 
-#, fuzzy
+
 msgid "User ID"
 msgstr "Gebruikersinstellingen"
 
@@ -9967,7 +9975,7 @@ msgstr "Indien geactiveerd, dan zal, indien u een keuze gemaakt heeft, het selec
 msgid "When enabled you can control the volume with the arrow buttons instead of getting the channel selection list"
 msgstr "Indien geactiveerd, dan kunt u het volume bedienen met de pijltjestoetsen, i.p.v. dat u hiermee de zenderlijst opent."
 
-#, fuzzy
+
 msgid "When enabled you can customize the OpenWebIf settings for the fallback tuner"
 msgstr "Indien geactiveerd, dan wordt de timer van de Fallback tuner geimporteerd"
 

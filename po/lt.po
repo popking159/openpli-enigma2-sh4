@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PLi enigma2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-25 20:37+0100\n"
+"POT-Creation-Date: 2019-02-05 11:25+0330\n"
 "PO-Revision-Date: 2019-01-11 19:33+0200\n"
 "Last-Translator: Audronis Grincevicius <adga45@gmail.com>\n"
 "Language-Team: Adga (C) <adga45@gmail.com>\n"
@@ -229,9 +229,6 @@ msgstr "%Y %B %e, %A"
 msgid "%H:%M"
 msgstr "%H:%M"
 
-msgid "%Y-%m-%d %H:%M"
-msgstr "%Y-%m-%d %H:%M"
-
 #. TRANSLATORS: full date representations short dayname daynum monthname long year in strftime() format! See 'man strftime'
 msgid "%a %e %B %Y"
 msgstr "%a %e %B %Y"
@@ -385,7 +382,7 @@ msgstr "%d:%02d"
 msgid "%k:%M %e/%m"
 msgstr "%m/%e %k:%M"
 
-#, fuzzy, python-format
+#, python-format
 msgid ""
 "%s\n"
 "Do you still want to flash image\n"
@@ -623,6 +620,10 @@ msgstr ": 0000 - numatytasis (išjungta)"
 
 msgid "<Current movielist location>"
 msgstr "<Dabartinė filmų sąrašo vieta>"
+
+
+msgid "<Default Skin>"
+msgstr "Numatytosios nuostatos"
 
 msgid "<Default movie location>"
 msgstr "<Numatytoji filmų vieta>"
@@ -2472,7 +2473,7 @@ msgstr "Datos / laiko įvestis"
 msgid "Debug to file"
 msgstr "Sukurti klaidų žurnalo failą"
 
-#, fuzzy
+
 msgid "Deep Standby LED"
 msgstr "Visiškai išjungti"
 
@@ -2716,11 +2717,11 @@ msgstr ">16:9 santykio turinį rodyti, kaip"
 msgid "Display EPG as MultiEPG"
 msgstr ""
 
-#, fuzzy
+
 msgid "Display EPG info for current event"
 msgstr "Išsaugoti laiko poslinkį tik šiam įvykiui"
 
-#, fuzzy
+
 msgid "Display EPG list for current channel"
 msgstr "Rodyti šio kanalo EPG..."
 
@@ -6017,6 +6018,9 @@ msgstr "Pozicionieriaus sąranka"
 msgid "Positioner setup log"
 msgstr "Pozicionieriaus sąrankos žurnalas"
 
+msgid "Power LED"
+msgstr ""
+
 msgid "Power management. Consult your receiver's manual for more information."
 msgstr "Maitinimo valdymas. Daugiau informacijos ieškokite savo imtuvo naudojimo instrukcijoje."
 
@@ -8015,7 +8019,7 @@ msgstr "Budėjimo režimas"
 msgid "Standby / restart"
 msgstr "Išjungimo meniu"
 
-#, fuzzy
+
 msgid "Standby LED"
 msgstr "LED budėjime"
 
@@ -9103,11 +9107,15 @@ msgstr "Turkmenistanas"
 msgid "Turks and Caicos Islands"
 msgstr "Terkso ir Kaikoso salos"
 
-#, fuzzy
+
 msgid "Turn on the power LED during deep standby."
 msgstr "Įjunkite maitinimo LED indikatorių budėjimo režimu metu."
 
 msgid "Turn on the power LED during standby."
+msgstr "Įjunkite maitinimo LED indikatorių budėjimo režimu metu."
+
+
+msgid "Turn on the power LED."
 msgstr "Įjunkite maitinimo LED indikatorių budėjimo režimu metu."
 
 msgid "Turning step size"
