@@ -115,39 +115,54 @@ bool gAccel::hasAlphaBlendingSupport()
 
 int gAccel::blit(gUnmanagedSurface *dst, gUnmanagedSurface *src, const eRect &p, const eRect &area, int flags)
 {
-#ifdef STMFB_ACCEL
-	int src_format = 0;
-	gUnmanagedSurface *surfaceTmp = new gUnmanagedSurface(area.width(), area.height(), dst->bpp);
+	//eDebug( "src: %4d %4d %4d %4d\tdst: %4d %4d %4d %4d\n"
+	//		"area: %4d %4d %4d %4d\tp: %4d %4d %4d %4d\n",
+	//		src->data_phys, src->x, src->y, src->stride,
+	//		dst->data_phys, dst->x, dst->y, dst->stride, 
+	//		area.left(), area.top(), area.width(), area.height(),
+	//		p.x(), p.y(), p.width(), p.height());
 
 	if (src->bpp == 32)
-		src_format = 0;
+	{
+                stmfb_accel_blit(
+                        src->data_phys, src->x, src->y, src->stride, 0,
+                        dst->data_phys, dst->x, dst->y, dst->stride,
+                        area.left(), area.top(), area.width(), area.height(),
+                        p.x(), p.y(), p.width(), p.height());
+		return 0;
+	}
 	else if ((src->bpp == 8) && (dst->bpp == 32))
 	{
-		src_format = 1;
-		if (accelAlloc(surfaceTmp))
+		gUnmanagedSurface tmp;
+		tmp.bpp = 32;
+		tmp.x = area.width();
+		tmp.y = area.height();
+		if (accelAlloc(&tmp))
 			return -1;
 
-		__u8 *srcptr = (__u8*)src->data;
-		__u8 *dstptr = (__u8*)surfaceTmp->data;
-		__u32 pal[256];
+		const uint8_t *srcptr=(uint8_t*)src->data;
+		uint8_t *dstptr=(uint8_t*)tmp.data;
+		uint32_t pal[256];
 
-		for (int i = 0; i < 256; ++i)
 		{
-			if (src->clut.data && (i < src->clut.colors))
-				pal[i] = (src->clut.data[i].a<<24)|(src->clut.data[i].r<<16)|(src->clut.data[i].g<<8)|(src->clut.data[i].b);
-			else
-				pal[i] = 0x010101*i;
-			if ((pal[i]&0xFF000000) >= 0xE0000000)
-				pal[i] = 0xFF000000;
-			pal[i] ^= 0xFF000000;
+			int i = 0;
+			if (src->clut.data)
+				while (i < src->clut.colors)
+				{
+					pal[i] = src->clut.data[i].argb() ^ 0xFF000000;
+					++i;
+				}
+			for(; i != 256; ++i)
+			{
+				pal[i] = (0x010101*i) | 0xFF000000;
+			}
 		}
 		srcptr+=area.left()*src->bypp+area.top()*src->stride;
-
-		for (int y = 0; y < area.height(); y++)
+		for (int y = area.height(); y != 0; --y)
 		{
 			int width=area.width();
 			unsigned char *psrc=(unsigned char*)srcptr;
-			__u32 *pdst=(__u32*)dstptr;
+			uint32_t *pdst=(uint32_t*)dstptr;
 
 			while (width--)
 				*pdst++=pal[*psrc++];
@@ -155,31 +170,16 @@ int gAccel::blit(gUnmanagedSurface *dst, gUnmanagedSurface *src, const eRect &p,
 			srcptr+=src->stride;
 			dstptr+=area.width() * 4;
 		}
-	} else {
-		if (surfaceTmp->data_phys)
-			accelFree(surfaceTmp);
-		return -1;
-	}
-
-	if (surfaceTmp->data_phys)
-	{
 		stmfb_accel_blit(
-			surfaceTmp->data_phys, 0, 0, area.width() * 4, src_format,
+                        tmp.data_phys, 0, 0, area.width() * 4, 1,
 			dst->data_phys, dst->x, dst->y, dst->stride,
 			0, 0, area.width(), area.height(),
 			p.x(), p.y(), p.width(), p.height());
-		accelFree(surfaceTmp);
-	} else {
-		stmfb_accel_blit(
-			src->data_phys, src->x, src->y, src->stride, src_format,
-			dst->data_phys, dst->x, dst->y, dst->stride,
-			area.left(), area.top(), area.width(), area.height(),
-			p.x(), p.y(), p.width(), p.height());
-	}
+                accelFree(&tmp);
 	return 0;
 
 	}
-#endif
+	return -1;
 	return -1;
 }
 
