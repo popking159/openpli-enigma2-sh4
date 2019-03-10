@@ -11,7 +11,7 @@
 #define FP_IOCTL_SET_RTC         0x101
 #define FP_IOCTL_GET_RTC         0x102
 
-#define TIME_UPDATE_INTERVAL (30*60*1000)
+#define TIME_UPDATE_INTERVAL (15*60*1000)
 
 static time_t prev_time;
 

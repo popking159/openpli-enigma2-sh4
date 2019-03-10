@@ -44,12 +44,10 @@ eDVBAudio::eDVBAudio(eDVBDemux *demux, int dev)
 		m_fd_demux = -1;
 	}
 
-#ifndef DREAMBOX
 	if (m_fd >= 0)
 	{
 		::ioctl(m_fd, AUDIO_SELECT_SOURCE, demux ? AUDIO_SOURCE_DEMUX : AUDIO_SOURCE_HDMI);
 	}
-#endif
 }
 
 int eDVBAudio::startPid(int pid, int type)
@@ -131,11 +129,7 @@ int eDVBAudio::startPid(int pid, int type)
 			bypass = 0x40;
 			break;
 		case aDDP:
-#ifdef DREAMBOX
-		bypass = 7;
-#else
 		bypass = 0x22;
-#endif
 		break;
 		}
 
@@ -144,9 +138,6 @@ int eDVBAudio::startPid(int pid, int type)
 			eDebugNoNewLine("failed: %m\n");
 		else
 			eDebugNoNewLine("ok\n");
-#if not defined(__sh__) // this is a hack which only matters for dm drivers
-		freeze();  // why freeze here?!? this is a problem when only a pid change is requested... because of the unfreeze logic in Decoder::setState
-#endif
 		eDebugNoNewLineStart("[eDVBAudio%d] AUDIO_PLAY ", m_dev);
 		if (::ioctl(m_fd, AUDIO_PLAY) < 0)
 			eDebugNoNewLine("failed: %m\n");
@@ -243,7 +234,7 @@ int eDVBAudio::getPTS(pts_t &now)
 
 eDVBAudio::~eDVBAudio()
 {
-	unfreeze();  // why unfreeze here... but not unfreeze video in ~eDVBVideo ?!?
+	//unfreeze();  // why unfreeze here... but not unfreeze video in ~eDVBVideo ?!?
 	if (m_fd >= 0)
 		::close(m_fd);
 	if (m_fd_demux >= 0)
@@ -284,12 +275,10 @@ eDVBVideo::eDVBVideo(eDVBDemux *demux, int dev)
 		m_fd_demux = -1;
 	}
 
-#ifndef DREAMBOX
 	if (m_fd >= 0)
 	{
 		::ioctl(m_fd, VIDEO_SELECT_SOURCE, demux ? VIDEO_SOURCE_DEMUX : VIDEO_SOURCE_HDMI);
 	}
-#endif
 	if (m_close_invalidates_attributes < 0)
 	{
 		/*
@@ -407,9 +396,6 @@ int eDVBVideo::startPid(int pid, int type)
 
 	if (m_fd >= 0)
 	{
-#if not defined(__sh__) // this is a hack which only matters for dm drivers
-		freeze();  // why freeze here?!? this is a problem when only a pid change is requested... because of the unfreeze logic in Decoder::setState
-#endif
 		eDebugNoNewLineStart("[eDVBVideo%d] VIDEO_PLAY ", m_dev);
 		if (::ioctl(m_fd, VIDEO_PLAY) < 0)
 			eDebugNoNewLine("failed: %m\n");

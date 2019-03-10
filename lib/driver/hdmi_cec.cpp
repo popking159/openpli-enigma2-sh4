@@ -126,22 +126,13 @@ eHdmiCEC::eHdmiCEC()
 
 	if (!linuxCEC)
 	{
-#ifdef DREAMBOX
-#define HDMIDEV "/dev/misc/hdmi_cec0"
-#else
 #define HDMIDEV "/dev/hdmi_cec"
-#endif
 
 		hdmiFd = ::open(HDMIDEV, O_RDWR | O_NONBLOCK | O_CLOEXEC);
 		if (hdmiFd >= 0)
 		{
 
-#ifdef DREAMBOX
-			unsigned int val = 0;
-			::ioctl(hdmiFd, 4, &val);
-#else
 			::ioctl(hdmiFd, 0); /* flush old messages */
-#endif
 		}
 	}
 
@@ -171,7 +162,7 @@ eHdmiCEC *eHdmiCEC::getInstance()
 void eHdmiCEC::reportPhysicalAddress()
 {
 	struct cec_message txmessage;
-	txmessage.address = 0x0f; /* broadcast */
+	txmessage.address = (logicalAddress << 4) + (0xf); /* broadcast */
 	txmessage.data[0] = 0x84; /* report address */
 	txmessage.data[1] = physicalAddress[0];
 	txmessage.data[2] = physicalAddress[1];
@@ -185,50 +176,15 @@ void eHdmiCEC::getAddressInfo()
 	if (hdmiFd >= 0)
 	{
 		bool hasdata = false;
-		struct addressinfo addressinfo;
-
-		if (linuxCEC)
+		struct
 		{
-			__u16 phys_addr;
-			struct cec_log_addrs laddrs = {};
-
-			::ioctl(hdmiFd, CEC_ADAP_G_PHYS_ADDR, &phys_addr);
-			addressinfo.physical[0] = (phys_addr >> 8) & 0xff;
-			addressinfo.physical[1] = phys_addr & 0xff;
-
-			::ioctl(hdmiFd, CEC_ADAP_G_LOG_ADDRS, &laddrs);
-			addressinfo.logical = laddrs.log_addr[0];
-
-			switch (laddrs.log_addr_type[0])
-			{
-			case CEC_LOG_ADDR_TYPE_TV:
-				addressinfo.type = CEC_LOG_ADDR_TV;
-				break;
-			case CEC_LOG_ADDR_TYPE_RECORD:
-				addressinfo.type = CEC_LOG_ADDR_RECORD_1;
-				break;
-			case CEC_LOG_ADDR_TYPE_TUNER:
-				addressinfo.type = CEC_LOG_ADDR_TUNER_1;
-				break;
-			case CEC_LOG_ADDR_TYPE_PLAYBACK:
-				addressinfo.type = CEC_LOG_ADDR_PLAYBACK_1;
-				break;
-			case CEC_LOG_ADDR_TYPE_AUDIOSYSTEM:
-				addressinfo.type = CEC_LOG_ADDR_AUDIOSYSTEM;
-				break;
-			case CEC_LOG_ADDR_TYPE_UNREGISTERED:
-			default:
-				addressinfo.type = CEC_LOG_ADDR_UNREGISTERED;
-				break;
-			}
-			hasdata = true;
-		}
-		else
-		{
+			unsigned char logical;
+			unsigned char physical[2];
+			unsigned char type;
+		} addressinfo;
 			if (::ioctl(hdmiFd, 1, &addressinfo) >= 0)
 			{
 				hasdata = true;
-#if DREAMBOX
 				/* we do not get the device type, check the logical address to determine the type */
 				switch (addressinfo.logical)
 				{
@@ -249,8 +205,6 @@ void eHdmiCEC::getAddressInfo()
 					addressinfo.type = 4; /* playback */
 					break;
 				}
-#endif
-			}
 		}
 		if (hasdata)
 		{
@@ -348,14 +302,6 @@ void eHdmiCEC::hdmiEvent(int what)
 		}
 		else
 		{
-#ifdef DREAMBOX
-			if (::ioctl(hdmiFd, 2, &rxmessage) >= 0)
-			{
-				hasdata = true;
-			}
-			unsigned int val = 0;
-			::ioctl(hdmiFd, 4, &val);
-#else
 			if (::read(hdmiFd, &rxmessage, 2) == 2)
 			{
 				if (::read(hdmiFd, &rxmessage.data, rxmessage.length) == rxmessage.length)
@@ -363,7 +309,6 @@ void eHdmiCEC::hdmiEvent(int what)
 					hasdata = true;
 				}
 			}
-#endif
 		}
 		bool hdmicec_enabled = eConfigManager::getConfigBoolValue("config.hdmicec.enabled", false);
 		if (hasdata && hdmicec_enabled)
@@ -540,12 +485,7 @@ void eHdmiCEC::sendMessage(struct cec_message &message)
 		}
 		else
 		{
-#ifdef DREAMBOX
-			message.flag = 1;
-			::ioctl(hdmiFd, 3, &message);
-#else
 			::write(hdmiFd, &message, 2 + message.length);
-#endif
 		}
 	}
 }
