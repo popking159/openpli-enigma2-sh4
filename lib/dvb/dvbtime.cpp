@@ -160,7 +160,7 @@ TDT::TDT(eDVBChannel *chan, int update_count)
 
 int TDT::createTable(unsigned int nr, const uint8_t *data, unsigned int max)
 {
-	if ( data && (data[0] == TID_TDT || data[0] == TID_TOT ))
+	if ( data && (data[0] == 0x70 || data[0] == 0x73 ))
 	{
 		int length = ((data[1] & 0x0F) << 8) | data[2];
 		if ( length >= 5 )
@@ -178,7 +178,6 @@ int TDT::createTable(unsigned int nr, const uint8_t *data, unsigned int max)
 void TDT::start()
 {
 	eDVBTableSpec spec;
-	memset(&spec, 0, sizeof(spec));
 	spec.pid = TimeAndDateSection::PID;
 	spec.tid = TimeAndDateSection::TID;
 	spec.tid_mask = 0xFC;
