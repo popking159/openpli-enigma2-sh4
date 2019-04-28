@@ -5,7 +5,7 @@ from keyids import KEYIDS
 from Components.config import config
 from Components.RcModel import rc_model
 
-keyDescriptions = [{ # for remotes with ID 0 (DMM)
+keyDescriptions = [{
 		KEYIDS["BTN_0"]: ("UP", "fp"),
 		KEYIDS["BTN_1"]: ("DOWN", "fp"),
 		KEYIDS["KEY_OK"]: ("OK", ""),
@@ -47,7 +47,7 @@ keyDescriptions = [{ # for remotes with ID 0 (DMM)
 		KEYIDS["KEY_STOP"]: ("STOP",),
 		KEYIDS["KEY_RECORD"]: ("RECORD",)
 	},
-	{  # for remotes with ID 1 (DMM advanced)
+	{
 		KEYIDS["BTN_0"]: ("UP", "fp"),
 		KEYIDS["BTN_1"]: ("DOWN", "fp"),
 		KEYIDS["KEY_OK"]: ("OK", ""),
@@ -87,12 +87,9 @@ keyDescriptions = [{ # for remotes with ID 0 (DMM)
 		KEYIDS["KEY_9"]: ("9",),
 		KEYIDS["KEY_EXIT"]: ("EXIT",),
 		KEYIDS["KEY_STOP"]: ("TV", "SHIFT"),
-		KEYIDS["KEY_RECORD"]: ("RADIO", "SHIFT"),
-		KEYIDS["KEY_EPG"]: ("EPG",),
-		KEYIDS["KEY_REWIND"]: ("REWIND",),
-		KEYIDS["KEY_FASTFORWARD"]: ("FASTFORWARD",)
+		KEYIDS["KEY_RECORD"]: ("RADIO", "SHIFT")
 	},
-	{ # for remotes with ID 2 (default)
+	{
 		KEYIDS["BTN_0"]: ("UP", "fp"),
 		KEYIDS["BTN_1"]: ("DOWN", "fp"),
 		KEYIDS["KEY_OK"]: ("OK", ""),
