@@ -1154,24 +1154,10 @@ int ePicLoad::getData(ePtr<gPixmap> &result)
 		if (m_filepara->bits == 8) {
 			gRGB bg(m_conf.background);
 			background = surface->clut.findColor(bg);
-
-			if (yoff != 0) {
-				memset(tmp_buffer, background, yoff * surface->stride);
-				memset(tmp_buffer + (yoff + scry) * surface->stride, background,
-					(m_filepara->max_y - scry - yoff) * surface->stride);
-			}
-
-			if (xoff != 0) {
-				#pragma omp parallel for
-				for(int y = yoff; y < scry; ++y) {
-					memset(tmp_buffer + y * surface->stride, background, xoff);
-					memset(tmp_buffer + y * surface->stride + xoff + scrx, background,
-						(m_filepara->max_x - scrx - xoff));
-				}
-                        }
 		}
 		else {
 			background = m_conf.background;
+		}
 		if (yoff != 0) {
 			if (m_filepara->bits == 8)
 			{
@@ -1225,7 +1211,6 @@ int ePicLoad::getData(ePtr<gPixmap> &result)
 				memcpy(tmp_buffer + y*surface->stride + (xoff + scrx) * surface->bypp,
 					tmp_buffer + yoff * surface->stride + (xoff + scrx) * surface->bypp,
 					(m_filepara->max_x - scrx - xoff) * surface->bypp);
-				}
 			}
 		}
 		tmp_buffer += yoff * surface->stride + xoff * surface->bypp;
