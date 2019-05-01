@@ -162,7 +162,7 @@ eHdmiCEC *eHdmiCEC::getInstance()
 void eHdmiCEC::reportPhysicalAddress()
 {
 	struct cec_message txmessage;
-	txmessage.address = (logicalAddress << 4) + (0xf); /* broadcast */
+	txmessage.address = 0x0f; /* broadcast */
 	txmessage.data[0] = 0x84; /* report address */
 	txmessage.data[1] = physicalAddress[0];
 	txmessage.data[2] = physicalAddress[1];
@@ -176,35 +176,50 @@ void eHdmiCEC::getAddressInfo()
 	if (hdmiFd >= 0)
 	{
 		bool hasdata = false;
-		struct
+		struct addressinfo addressinfo;
+
+		if (linuxCEC)
 		{
-			unsigned char logical;
-			unsigned char physical[2];
-			unsigned char type;
-		} addressinfo;
+			__u16 phys_addr;
+			struct cec_log_addrs laddrs = {};
+
+			::ioctl(hdmiFd, CEC_ADAP_G_PHYS_ADDR, &phys_addr);
+			addressinfo.physical[0] = (phys_addr >> 8) & 0xff;
+			addressinfo.physical[1] = phys_addr & 0xff;
+
+			::ioctl(hdmiFd, CEC_ADAP_G_LOG_ADDRS, &laddrs);
+			addressinfo.logical = laddrs.log_addr[0];
+
+			switch (laddrs.log_addr_type[0])
+			{
+			case CEC_LOG_ADDR_TYPE_TV:
+				addressinfo.type = CEC_LOG_ADDR_TV;
+				break;
+			case CEC_LOG_ADDR_TYPE_RECORD:
+				addressinfo.type = CEC_LOG_ADDR_RECORD_1;
+				break;
+			case CEC_LOG_ADDR_TYPE_TUNER:
+				addressinfo.type = CEC_LOG_ADDR_TUNER_1;
+				break;
+			case CEC_LOG_ADDR_TYPE_PLAYBACK:
+				addressinfo.type = CEC_LOG_ADDR_PLAYBACK_1;
+				break;
+			case CEC_LOG_ADDR_TYPE_AUDIOSYSTEM:
+				addressinfo.type = CEC_LOG_ADDR_AUDIOSYSTEM;
+				break;
+			case CEC_LOG_ADDR_TYPE_UNREGISTERED:
+			default:
+				addressinfo.type = CEC_LOG_ADDR_UNREGISTERED;
+				break;
+			}
+			hasdata = true;
+		}
+		else
+		{
 			if (::ioctl(hdmiFd, 1, &addressinfo) >= 0)
 			{
 				hasdata = true;
-				/* we do not get the device type, check the logical address to determine the type */
-				switch (addressinfo.logical)
-				{
-				case 0x1:
-				case 0x2:
-				case 0x9:
-					addressinfo.type = 1; /* recorder */
-					break;
-				case 0x3:
-				case 0x6:
-				case 0x7:
-				case 0xa:
-					addressinfo.type = 3; /* tuner */
-					break;
-				case 0x4:
-				case 0x8:
-				case 0xb:
-					addressinfo.type = 4; /* playback */
-					break;
-				}
+			}
 		}
 		if (hasdata)
 		{
