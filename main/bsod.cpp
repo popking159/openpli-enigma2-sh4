@@ -10,22 +10,20 @@
 #include <lib/base/nconfig.h>
 #include <lib/gdi/gmaindc.h>
 
-#if defined(__MIPSEL__)
-#include <asm/ptrace.h>
-#else
-#warning "no oops support!"
+//#warning "no oops support!"
 #define NO_OOPS_SUPPORT
-#endif
 
 #include "version_info.h"
 
 /************************************************/
 
+#if 0
 static const char *crash_emailaddr =
 #ifndef CRASH_EMAILADDR
 	"the OpenPLi forum";
 #else
 	CRASH_EMAILADDR;
+#endif
 #endif
 
 /* Defined in bsod.cpp */
@@ -172,7 +170,6 @@ void bsodFatal(const char *component)
 			component);
 
 		stringFromFile(f, "stbmodel", "/proc/stb/info/boxtype");
-		stringFromFile(f, "stbmodel", "/proc/stb/info/vumodel");
 		stringFromFile(f, "stbmodel", "/proc/stb/info/model");
 		stringFromFile(f, "kernelcmdline", "/proc/cmdline");
 		stringFromFile(f, "nimsockets", "/proc/bus/nim_sockets");

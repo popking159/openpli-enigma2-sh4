@@ -33,16 +33,16 @@ AC_ARG_ENABLE(spark,
 	[  --enable-spark          enable spark stuff],
 	[AC_DEFINE(ENABLE_SPARK, 1, [enable spark stuff])])
 
-AM_CONDITIONAL(ENABLE_SPARK,test "$enable_spark" = "yes")
+AM_CONDITIONAL(ENABLE_SPARK, test "$enable_spark" = "yes")
 if test "$enable_spark" = "yes"; then
 	AC_DEFINE(ENABLE_SPARK, 1, [enable spark stuff])
 fi
 
 AC_ARG_ENABLE(spark7162,
-	[  --enable-spark7162          enable spark7162 stuff],
+	[  --enable-spark7162      enable spark7162 stuff],
 	[AC_DEFINE(ENABLE_SPARK7162, 1, [enable spark7162 stuff])])
 
-AM_CONDITIONAL(ENABLE_SPARK7162,test "$enable_spark7162" = "yes")
+AM_CONDITIONAL(ENABLE_SPARK7162, test "$enable_spark7162" = "yes")
 if test "$enable_spark7162" = "yes"; then
 	AC_DEFINE(ENABLE_SPARK7162, 1, [enable spark7162 stuff])
 fi
@@ -159,8 +159,8 @@ AM_CONDITIONAL(UPDATE_PO, test "$with_po" = "yes")
 
 AC_ARG_WITH(alsa,
 	AC_HELP_STRING([--with-alsa], [Enable ALSA support]),
-	[[with_alse=$withval]],
-	[[with_alse=no]]
+	[[with_alsa=$withval]],
+	[[with_alsa=no]]
 )
 if test x"$with_alsa" == xyes ; then
 	AC_DEFINE(HAVE_ALSA, 1,[Enables ALSA support])

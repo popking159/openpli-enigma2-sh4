@@ -5,7 +5,7 @@ from keyids import KEYIDS
 from Components.config import config
 from Components.RcModel import rc_model
 
-keyDescriptions = [{
+keyDescriptions = [{ # for remotes with ID 0 (DMM)
 		KEYIDS["BTN_0"]: ("UP", "fp"),
 		KEYIDS["BTN_1"]: ("DOWN", "fp"),
 		KEYIDS["KEY_OK"]: ("OK", ""),
@@ -47,7 +47,7 @@ keyDescriptions = [{
 		KEYIDS["KEY_STOP"]: ("STOP",),
 		KEYIDS["KEY_RECORD"]: ("RECORD",)
 	},
-	{
+	{  # for remotes with ID 1 (DMM advanced)
 		KEYIDS["BTN_0"]: ("UP", "fp"),
 		KEYIDS["BTN_1"]: ("DOWN", "fp"),
 		KEYIDS["KEY_OK"]: ("OK", ""),
@@ -87,9 +87,12 @@ keyDescriptions = [{
 		KEYIDS["KEY_9"]: ("9",),
 		KEYIDS["KEY_EXIT"]: ("EXIT",),
 		KEYIDS["KEY_STOP"]: ("TV", "SHIFT"),
-		KEYIDS["KEY_RECORD"]: ("RADIO", "SHIFT")
+		KEYIDS["KEY_RECORD"]: ("RADIO", "SHIFT"),
+		KEYIDS["KEY_EPG"]: ("EPG",),
+		KEYIDS["KEY_REWIND"]: ("REWIND",),
+		KEYIDS["KEY_FASTFORWARD"]: ("FASTFORWARD",)
 	},
-	{
+	{ # for remotes with ID 2 (default)
 		KEYIDS["BTN_0"]: ("UP", "fp"),
 		KEYIDS["BTN_1"]: ("DOWN", "fp"),
 		KEYIDS["KEY_OK"]: ("OK", ""),
@@ -379,8 +382,8 @@ def getKeyDescription(key):
 			idx = 5
 		elif rctype == 12:	# Kathrein UFS912
 			idx = 6
-#		elif rctype == 13:	# Cuberevo
-#			idx = 7
+		elif rctype == 13:	# CubeRevo Universal
+			idx = 7
 #		elif rctype == 14:	# ...
 #			idx = 8
 		else:
