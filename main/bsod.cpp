@@ -17,13 +17,11 @@
 
 /************************************************/
 
-#if 0
 static const char *crash_emailaddr =
 #ifndef CRASH_EMAILADDR
 	"the OpenPLi forum";
 #else
 	CRASH_EMAILADDR;
-#endif
 #endif
 
 /* Defined in bsod.cpp */
