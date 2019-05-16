@@ -164,6 +164,9 @@ msgstr " (geringer als in jedem auto)"
 msgid " extensions."
 msgstr " Erweiterungen."
 
+msgid " min"
+msgstr " min"
+
 msgid " ms"
 msgstr " ms"
 
@@ -450,7 +453,7 @@ msgid "(not activated)"
 msgstr "(nicht aktiviert)"
 
 msgid "(show optional DVD audio menu)"
-msgstr "(DVD-Tonmenü anzeigen, falls vorh.)"
+msgstr "(optionales DVD Audio Menue anzeigen)"
 
 msgid "(unknown)"
 msgstr "(unbekannte)"
@@ -932,7 +935,7 @@ msgid "Allocate"
 msgstr "Zuweisen"
 
 msgid "Allocate a number to the physical LNB you are configuring. You will be able to select this LNB again for other satellites (e.g. motorised dishes) to save setting up the same LNB multiple times."
-msgstr "Weisen Sie dem physischen LNB, den Sie konfigurieren, eine Nummer zu. Sie können diesen LNB erneut für andere Satelliten (z. B. motorisierte Satelliten) auswählen, um die Einrichtung desselben LNB mehrere Male zu speichern."
+msgstr "Weisen Sie dem LNB, den Sie konfigurieren, eine Nummer zu. Sie können diesen LNB erneut für andere Satelliten (z. B. motorisierte Satelliten) auswählen, um die Einrichtung desselben LNB mehrere Male zu speichern."
 
 msgid "Allocate unused memory index"
 msgstr "Zuordnen ungenutzer Rotor Index-Positionen"
@@ -975,6 +978,12 @@ msgstr "Auch in Standby"
 
 msgid "Alternative"
 msgstr "Alternativen hinzufügen"
+
+msgid "Alternative 1"
+msgstr "Alternative 1 hinzufügen"
+
+msgid "Alternative 2"
+msgstr "Alternative 2 hinzufügen"
 
 msgid "Alternative URL for images listed on FlashImage"
 msgstr ""
@@ -1857,7 +1866,7 @@ msgstr "Konfigurationsmodus: %s"
 msgid "Configuration..."
 msgstr "Konfiguration…"
 
-msgid "Configure DVB-ATSC"
+msgid "Configure ATSC"
 msgstr "Konfiguriere DVB-ATSC"
 
 msgid "Configure DVB-C"
@@ -2272,9 +2281,6 @@ msgstr "Aufnahme wegen in Konflikt stehendem Timer %s fehlgeschlagen"
 #, python-format
 msgid "Could not record due to invalid service %s"
 msgstr "Aufnahme wegen ungültigem Kanal %s fehlgeschlagen"
-
-msgid "Could not some setup the required directories on the media (e.g. USB stick) - Please verify media and try again!"
-msgstr "Es konnten nicht die benötigten Verzeichnisse auf dem Medium erstellt werden - Bitte überprüfen sie das Medium und versuchen sie es nochmal!"
 
 msgid "Country"
 msgstr "Land"
@@ -3187,9 +3193,6 @@ msgstr "Dauerhaften PIN-Code eingeben"
 msgid "Enter pin code"
 msgstr "PIN-Code eingeben"
 
-msgid "Enter text and exit"
-msgstr "Text eingeben und danach beenden"
-
 msgid "Enter the frequency at which you LNB switches between low band and high band. For more information consult the spec sheet of your LNB."
 msgstr "Geben Sie die Frequenz ein, mit der Ihr LNB zwischen Low- und High-Band wechselt. Weitere Informationen finden Sie im Datenblatt Ihres LNB."
 
@@ -3979,9 +3982,6 @@ msgstr "Festplatte"
 msgid "Harddisk Setup"
 msgstr "Festplatten Einstellungen"
 
-msgid "Harddisk is not in sleepmode it could be in use!"
-msgstr "Festtplatte ist nicht im Ruhemodus und könnte noch in Benutzung sein"
-
 msgid "Hardware: "
 msgstr "Hardware: "
 
@@ -4069,12 +4069,6 @@ msgstr "Hotkey-Tastenbelegung"
 msgid "Hotkey zap"
 msgstr "Tastenkombination \"umschalten\""
 
-msgid "Hotswitchable"
-msgstr "Umschaltbar"
-
-msgid "Hotswitchable tuner"
-msgstr "Umschaltbare Tuner-Typen:"
-
 msgid "How many minutes do you want add to the recording?"
 msgstr "Wie viele Minuten wollen Sie der Aufnahme hinzufügen?"
 
@@ -4131,9 +4125,6 @@ msgstr "Wenn aktiviert, zeigt das Display 12 Zeichen statt 8, aber nur in Latein
 
 msgid "If enabled, then there will be displayed icons for new/unseen items too."
 msgstr "Wenn diese Option aktiviert ist, werden auch Symbole für neue / ungesehene Objekte angezeigt."
-
-msgid "If is disabled, then after Copy/Move will not be target directory stored into bookmarks."
-msgstr "Wenn deaktiviert, wird nach dem Kopieren/Verschieben das Zielverzeichnis nicht in den Lesezeichen gespeichert."
 
 msgid "If is enabled and movie playback is finished, then after return to movielist will not be automaticaly start service playback."
 msgstr "Wenn aktiviert und die Filmwiedergabe fertig ist, wird der zuletzt geschaute Sender nach der Rückkehr in die Filmliste  nicht automatisch gestartet."
@@ -4380,9 +4371,6 @@ msgstr "Ungültiges Verzeichnis ausgewählt: %s"
 
 msgid "Invalid location"
 msgstr "Fehlerhafter Ort"
-
-msgid "Invalid reason"
-msgstr "Fehlerhafter Grund"
 
 msgid "Invalid transponder data"
 msgstr "Ungültige Transponderdaten"
@@ -4911,6 +4899,9 @@ msgstr "Modell"
 msgid "Model: "
 msgstr "Modell: "
 
+msgid "Modes"
+msgstr "Modus"
+
 msgid "Modulation"
 msgstr "Modulation"
 
@@ -5307,9 +5298,6 @@ msgstr "Kein Standby"
 
 msgid "No stream clients"
 msgstr "Keine Stream-Clients"
-
-msgid "No suitable sat tuner found!"
-msgstr "Kein verwendbarer Sat Tuner gefunden!"
 
 msgid "No tags are set on these movies."
 msgstr "Keine Tags für diese Filme gesetzt."
@@ -6122,6 +6110,15 @@ msgstr "Drücke '0' zum Umschalten des PiP-Modus"
 msgid "Press 'OK' for attach function."
 msgstr "Drücken Sie OK, um die Auswahl umzuschalten."
 
+msgid "Press 'OK' for attach next function or 'CH+/-' for edit attached."
+msgstr "Drücken Sie OK, um die Auswahl umzuschalten."
+
+msgid "Press 'OK' for remove item or 'CH+/-' for toggle to list of features."
+msgstr ""
+
+msgid "Press 'OK' for remove item or < > for change order or 'CH+/-' for toggle to list of features."
+msgstr ""
+
 msgid "Press INFO on your remote control for additional information."
 msgstr "INFO drücken für zusätzliche Informationen."
 
@@ -6170,6 +6167,12 @@ msgstr "Drücken Sie OK, um die Auswahl umzuschalten."
 
 msgid "Press OK, save and exit..."
 msgstr "Drücke OK zum Speichern und Beenden…"
+
+msgid "Press or select button and then press 'OK' for attach function."
+msgstr "Drücken Sie OK, um die Auswahl umzuschalten."
+
+msgid "Press or select button and then press 'OK' for attach next function or edit attached."
+msgstr ""
 
 msgid "Press yellow to set this interface as default interface."
 msgstr "Drücken Sie Gelb, um diese Schnittstelle als Standard zu setzen."
@@ -6821,6 +6824,9 @@ msgstr "Saudi Arabia"
 msgid "Save"
 msgstr "Speichern"
 
+msgid "Save / Enter text and exit"
+msgstr "Text eingeben und danach beenden"
+
 msgid "Save and exit"
 msgstr "Speichern und beenden"
 
@@ -6995,7 +7001,7 @@ msgstr "Wählen Sie “A” oder “B”, wenn Ihr Antennensystem dies erfordert
 msgid "Select 'FBC SCR' if this tuner will connect to a SCR (Unicable/JESS) device. For all other setups select 'FBC automatic'."
 msgstr "Wählen Sie “FBC SCR”, wenn dieser Tuner ein Unicable/SCR-Gerät verwendet. Für alle anderen Setups wählen Sie “FBC automatisch”."
 
-msgid "Select 'Yes' when you want to configure this tuner for DVB-ATSC"
+msgid "Select 'Yes' when you want to configure this tuner for ATSC"
 msgstr "Wollen Sie die Tuner DVB-ATSC konfigurieren?"
 
 msgid "Select 'Yes' when you want to configure this tuner for DVB-C"
@@ -8371,9 +8377,6 @@ msgstr "Zum vorhergehenden Unterkanal schalten"
 
 msgid "Switch to radio mode"
 msgstr "Wechsel zum Radio Modus"
-
-msgid "Switchable tuner types:"
-msgstr "Umschaltbare Tuner-Typen:"
 
 msgid "Switzerland"
 msgstr "Die Schweiz"
@@ -10691,9 +10694,6 @@ msgstr "Unterhaltung (6-14 Jahre)"
 msgid "epg cache backup"
 msgstr "EPG-Cache Sicherung"
 
-msgid "equal to"
-msgstr "Gleich wie"
-
 msgid "equestrian"
 msgstr "Pferdesport"
 
@@ -10906,9 +10906,6 @@ msgstr "gesperrt"
 
 msgid "long"
 msgstr "lang"
-
-msgid "loopthrough to"
-msgstr "Verbunden mit"
 
 msgid "magazines/reports/documentary"
 msgstr "Magazine/Reportagen/Dokumentationen"
@@ -11212,9 +11209,6 @@ msgstr "Status"
 
 msgid "science fiction/fantasy/horror"
 msgstr "Science-Fiction/Fantasie/Horror"
-
-msgid "second cable of motorized LNB"
-msgstr "Zweites Kabel vom Rotor"
 
 msgid "seconds"
 msgstr "Sekunden"
