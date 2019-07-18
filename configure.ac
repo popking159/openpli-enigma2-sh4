@@ -29,6 +29,16 @@ TUXBOX_APPS_DVB
 AM_CONDITIONAL(HAVE_GIT_DIR, test -d "$srcdir/.git")
 AM_CONDITIONAL(HAVE_FAKE_GIT_DIR, test -f "$srcdir/.git/last_commit_info")
 
+AC_ARG_WITH(sh4,
+	AC_HELP_STRING([--with-sh4], [use SH4]),
+	[[with_sh4=$withval]],
+	[[with_sh4=no]]
+)
+AM_CONDITIONAL(HAVE_SH4, test x"$with_sh4" = xyes)
+if test x"$with_sh4" = xyes ; then
+	AC_DEFINE(HAVE_SH4, 1,[Enables SH4 support])
+fi
+
 AC_ARG_ENABLE(spark,
 	[  --enable-spark          enable spark stuff],
 	[AC_DEFINE(ENABLE_SPARK, 1, [enable spark stuff])])
