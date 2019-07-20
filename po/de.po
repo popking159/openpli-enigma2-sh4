@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: enigma2\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-06-26 23:01+0200\n"
-"PO-Revision-Date: 2019-07-19 23:02+0200\n"
+"PO-Revision-Date: 2019-07-20 12:19+0200\n"
 "Last-Translator: Pike_Bishop <alfredzngr023@gmail.com>\n"
 "Language-Team: Sfteam  angelo2807@hotmail.com\n"
 "Language: de\n"
@@ -1688,10 +1688,7 @@ msgid "Channelnumber and servicename"
 msgstr "Kanalnummer und Sendername"
 
 msgid "Channelnumber, picon and servicename"
-msgstr "Kanalnummer, Picon und Sendername
-
-msgid "Channels"
-msgstr "Kanäle"
+msgstr "Kanalnummer, Picon und Sendername"
 
 msgid "Channels and EPG"
 msgstr "Kanäle und EPG"
@@ -2504,7 +2501,7 @@ msgid "Date/time input"
 msgstr "Zeit/Datum-Eingabe"
 
 msgid "Debug to file"
-msgstr "Debuggen in Datei"
+msgstr "Debuggen zur Datei"
 
 msgid "Deep Standby LED"
 msgstr "Tiefschlaf / Ausschalten"
@@ -2747,7 +2744,7 @@ msgid "Display >16:9 content as"
 msgstr "Inhalt mit einem Bildformate grösser als 16:9 anzeigen als"
 
 msgid "Display EPG as MultiEPG"
-msgstr "Zeige EPG als MultiEPG"
+msgstr "Zeige EPG als MultiEPG an"
 
 msgid "Display EPG info for current event"
 msgstr "Timeshift nur für aktuelle Sendung speichern"
@@ -3017,9 +3014,6 @@ msgstr "Bearbeite DNS"
 
 msgid "Edit chapters of current title"
 msgstr "Kapitel des ausgewählten Titels schneiden"
-
-msgid "Edit menu"
-msgstr "Menue editieren"
 
 msgid "Edit selection"
 msgstr "Auswahl bearbeiten"
@@ -4227,11 +4221,11 @@ msgid "Import channels and/or EPG from remote receiver URL when receiver is boot
 msgstr "Importiert die Kanäle und / oder den EPG der Receiver-URL des Remote-Receivers, beim Booten des Receivers."
 
 msgid "Import channels and/or EPG from remote receiver URL when receiver or enigma2 is restarted"
-msgstr "Importiere Kanäle und / oder EPG von Remote-Receiver-URL, wenn Receiver oder Enigma2 neu gestartet wird."
+msgstr "Mport Kanäle und / oder EPG von Remote-Empfänger-URL, wenn Empfänger oder enigma2 neu gestartet wird"
 
 #, python-format
 msgid "Import from fallback tuner failed, %s"
-msgstr "Import der Kanäle von Fallback-Tuner fehlgeschlagen, %s"
+msgstr "Kanäle von Fallback-Tuner fehlgeschlagen, %s"
 
 msgid "Import from remote receiver URL"
 msgstr "Import der Remote-Receiver-URL"
@@ -4252,7 +4246,7 @@ msgid "Include AIT in http streams"
 msgstr "Integriere AIT in HTTP-Streams"
 
 msgid "Include CI assignment"
-msgstr "CI-Zuweisung berücksichtigen"
+msgstr "CI-Zuordnung enthalten"
 
 msgid "Include ECM in http streams"
 msgstr "Integriere ECM in HTTP-Streams"
@@ -4779,7 +4773,7 @@ msgid "Maintain old EPG data for"
 msgstr "Behalte abgelaufene EPG-Daten (in Minuten)"
 
 msgid "Make it possible to manually initiate the channels import and/or EPG via the extension menu"
-msgstr "Erlaubt es, den Kanal-Import und / oder EPG manuell über das Erweiterungsmenü zu initiieren."
+msgstr "Erlaubt es, den Kanal-Import und / oder EPG manuell über das Erweiterungsmenü zu initiieren"
 
 msgid "Make this mark an 'in' point"
 msgstr "Aus dieser Markierung einen \"innen\"-Punkt machen"
@@ -4936,7 +4930,7 @@ msgid "Model: "
 msgstr "Modell: "
 
 msgid "Modes"
-msgstr "Modus/Modi"
+msgstr "Erlaube nicht unterstützte Modi"
 
 msgid "Modulation"
 msgstr "Modulation"
@@ -5437,10 +5431,10 @@ msgid "Not Defined"
 msgstr "Nicht definiert"
 
 msgid "Not Installed"
-msgstr "Entschuldigung,...ist nicht installiert!"
+msgstr "Entschuldigung, %s ist nicht installiert!"
 
 msgid "Not Required"
-msgstr "Nicht erforderlich"
+msgstr "Ein erforderliches Hilfsprogramm (%s) wurde nicht gefunden."
 
 msgid "Not associated"
 msgstr "Nicht verbunden"
@@ -5530,7 +5524,7 @@ msgid "On end of movie (as menu)"
 msgstr "Am Ende des Films (als Menü)"
 
 msgid "On valid ONIDs, ignore frequency sub network part"
-msgstr "Ignoriere bei gültigen ONIDs die Frequenz vom Sub-Netzwerk Teil."
+msgstr "Ignoriere bei gültigen ONIDs den Frequenzunternetzwerkteil"
 
 msgid "One"
 msgstr "Eins"
@@ -6117,7 +6111,7 @@ msgid "Prefer graphical DVB subtitles"
 msgstr "Bevorzuge DVB-grafische Untertitel"
 
 msgid "Prefer subtitles for hearing impaired"
-msgstr "Bevorzuge Untertitel für Hörgeschädigte"
+msgstr "Bevorzuge Untertitel für Hörgeschädigte."
 
 msgid "Prefer subtitles stored by service"
 msgstr "Bevorzuge gespeicherten Untertitel des Senders"
@@ -8081,17 +8075,13 @@ msgid "Specify the end time until the inactivity sleeptimer should be ignored"
 msgstr "Endzeit bis wann der Inaktivitäts-Ausschalt-Timer ignoriert wird."
 
 msgid "Specify the extra end time until the inactivity sleeptimer should be ignored"
-msgstr ""
-"Extra-Endzeit bis wann der\n"
-"Inaktivitäts-Ausschalt-Timer ignoriert wird."
+msgstr "Extra-Endzeit bis wann der Inaktivitäts-Ausschalt-Timer ignoriert wird"
 
 msgid "Specify the extra start time when the inactivity sleeptimer should be ignored"
-msgstr ""
-"Extra-Startzeit ab wann der\n"
-"Inaktivitäts-Ausschalt-Timer ignoriert wird."
+msgstr "Extra-Startzeit ab wann der Inaktivitäts-Ausschalt-Timer ignoriert wird"
 
 msgid "Specify the start time to ignore the shutdown timer when the receiver is in standby mode"
-msgstr "Startzeit um den Ausschalt-Timer zu ignorieren, wenn sich der Receiver im Standby-Modus befindet."
+msgstr "Startzeit um den Ausschalt-Timer zu ignorieren, wenn Receiver im Standby-Modus."
 
 msgid "Specify the start time when the inactivity sleeptimer should be ignored"
 msgstr "Startzeit ab wann der Inaktivitäts-Ausschalt-Timer ignoriert wird."
@@ -8835,9 +8825,7 @@ msgid "This option allows you to show all symbols on the display."
 msgstr "Mit dieser Option können Sie alle Symbole auf dem Display anzeigen."
 
 msgid "This option allows you to show menu and/or plugin number quick links."
-msgstr ""
-"Mit dieser Option können Sie Menü und / oder\n"
-"Plugin-Einträge mit den Zifferntasten auswählen."
+msgstr "Mit dieser Option können Sie Menü und/oder Plugineinträge mit den Zifferntasten auswählen."
 
 msgid "This option allows you to show menu paths."
 msgstr "Diese Option erlaubt das Anzeigen von Menü-Pfaden."
@@ -9933,7 +9921,7 @@ msgid "When enabled, always descramble receiving http streams. This takes up mor
 msgstr "Wenn aktiviert, dann werden empfangene HTTP-Streams immer entschlüsselt. Dies verbraucht mehr Ressourcen (Demuxer). Aktivieren Sie diese Option nur, wenn es notwendig ist. Individuelle Streams sind immer entschlüsselt, wenn 0x100 zum Servicetyp hinzugefügt wurde, unabhängig von dieser Einstellung."
 
 msgid "When enabled, authentication is required to watch http streams."
-msgstr "Wenn aktiviert, ist eine Authentifizierung erforderlich, um HTTP-Streams zu sehen."
+msgstr "Eine Authentifizierung ist erforderlich, um HTTP-Streams zu sehen, wenn diese Einstellung aktiviert ist."
 
 msgid "When enabled, channel numbering will start at '1' for each bouquet."
 msgstr "Kanalnummerierung beginnt bei '1' für alle Bouquets."
@@ -9948,7 +9936,7 @@ msgid "When enabled, deleted recordings are moved to the trash can, instead of b
 msgstr "Verschiebe Aufnahmen in den Papierkorb bevor sie endgültig entfernt werden."
 
 msgid "When enabled, display the EIT now/next eventdata in infobar. When disabled, display now/next eventdata from the EPG cache instead."
-msgstr "EIT Jetzt / Danach Sendungsdaten in Infoleiste anzeigen. Bei Deaktivierung zeigt Jetzt / Danach die Sendungsdaten des EPG-Caches an."
+msgstr "EIT jetzt/danach Sendungsdaten in Infoleiste anzeigen. Bei Deaktivierung zeigt jetzt/danach Sendungsdaten des EPG Caches an."
 
 msgid "When enabled, encryption info will be shown in the infobar (when supported by the skin)."
 msgstr "Verschlüsselungsinformationen in der Infoleiste anzeigen, wenn vom Skin unterstützt."
@@ -9960,9 +9948,7 @@ msgid "When enabled, external subtitles will be always turned on for playback mo
 msgstr "Falls aktiviert, werden externe Untertitel (sofern vorhanden) beim Abspielen von Filmen immer angezeigt."
 
 msgid "When enabled, graphical DVB subtitles are preferred over teletext subtitles, when both types are available."
-msgstr ""
-"Grafische DVB-Untertitel werden den\n"
-"Teletext-Untertitel vorgezogen, falls beide zur Verfügung stehen."
+msgstr "Grafische DVB-Untertitel werden den Teletext-Untertitel vorgezogen, falls beide zur Verfügung stehen."
 
 msgid "When enabled, graphical DVB subtitles will be centered horizontally."
 msgstr "Grafische DVB-Untertitel horizontal zentrieren."
@@ -9974,7 +9960,7 @@ msgid "When enabled, graphical DVB subtitles will be displayed in yellow, instea
 msgstr "Grafische DVB-Untertitel immer gelb anzeigen, anstatt in ihrer ursprünglichen Farbe."
 
 msgid "When enabled, http streams are descrambled on the server side. The (remote) client receiver does not have to do descrambling. Default on."
-msgstr "Wenn aktiviert, werden HTTP-Streams auf der Server-Seite entschlüsselt. Der Client-Receiver muss die Entschlüsselung nicht selbst durchführen."
+msgstr "Wenn aktiviert, dann werden HTTP-Streams serverseitig entschlüsselt. Der Client-Receiver muss die Entschlüsselung nicht selbst durchführen. "
 
 msgid "When enabled, it is possible to leave the movieplayer with exit."
 msgstr "Falls aktiviert, kann der Movieplayer mit der Exit-Taste geschlossen werden."
@@ -9995,7 +9981,7 @@ msgid "When enabled, show channel numbers in the channel selection screen."
 msgstr "Kanalnummer in Kanalauswahlliste anzeigen."
 
 msgid "When enabled, subtitles for the hearing impaired can be used."
-msgstr "Wenn aktiviert, können Untertitel für Hörgeschädigte benutzt werden."
+msgstr "Bevorzuge Untertitel für Hörgeschädigte."
 
 msgid "When enabled, subtitles for the hearing impaired will be preferred over normal subtitles, when both types are available."
 msgstr "Bevorzuge spezielle Untertitel für Hörgeschädigte wenn solche und normale Untertitel zur Verfügung stehen."
@@ -10004,7 +9990,7 @@ msgid "When enabled, teletext pages will be cached, allowing faster access."
 msgstr "Cachen von Teletext-Seiten um schnellen Zugriff zu erlauben."
 
 msgid "When enabled, teletext subtitles will be displayed at their original position."
-msgstr "Teletext-Untertitel an ihrer ursprünglichen Position anzeigen."
+msgstr "Teletext Untertitel an ihrer ursprünglichen Position anzeigen."
 
 msgid "When enabled, the VCR scart option will be shown on the main menu"
 msgstr "Falls aktiviert, wird die Option VCR-SCART im Hauptmenü angezeigt."
@@ -10064,10 +10050,10 @@ msgid "When selected this allows video modes to be selected even if they are not
 msgstr "Wenn ausgewählt, können Videomodi ausgewählt werden, auch wenn sie nicht als unterstützt gemeldet werden."
 
 msgid "When the content has an aspect ratio of 16:9, choose whether to scale/stretch the picture."
-msgstr "Skalieren / Strecken wenn Inhalt ein Bildformat von 16:9 aufweist."
+msgstr "Skalieren/Strecken wenn Inhalt ein Bildformat von 16:9 aufweist."
 
 msgid "When the content has an aspect ratio of 4:3, choose whether to scale/stretch the picture."
-msgstr "Skalieren / Strecken wenn Inhalt ein Bildformat von 4:3 aufweist."
+msgstr "Skalieren/Strecken wenn Inhalt ein Bildformat von 4:3 aufweist."
 
 msgid "Where to save temporary timeshift recordings?"
 msgstr "Wo wollen Sie temporäre Timeshift Aufnahmen speichern?"
@@ -10642,9 +10628,7 @@ msgid "config menu"
 msgstr "Konfigurationsmenü"
 
 msgid "configure in which resolution pictures are displayed with the picture viewer and movieplayer"
-msgstr ""
-"Konfiguration in welcher Auflösung Bilder im\n"
-"Bildbetrachter (Picture Viewer) und Movie Player angezeigt werden sollen."
+msgstr "Konfiguriere in welcher Auflösung Bilder im Picture Viewer und Movieplayer angezeigt werden sollen."
 
 msgid "confirmed"
 msgstr "Bestätigt"
