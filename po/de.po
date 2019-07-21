@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: enigma2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-06-26 23:01+0200\n"
-"PO-Revision-Date: 2019-07-20 12:19+0200\n"
+"POT-Creation-Date: 2019-07-21 11:54+0430\n"
+"PO-Revision-Date: 2019-07-20 21:55+0200\n"
 "Last-Translator: Pike_Bishop <alfredzngr023@gmail.com>\n"
 "Language-Team: Sfteam  angelo2807@hotmail.com\n"
 "Language: de\n"
@@ -204,7 +204,7 @@ msgstr "%03d MB"
 msgid "%2.1f sec"
 msgstr "%2.1f sec"
 
-#. TRANSLATORS: short time representation hour:minute
+#. TRANSLATORS: default time format hour:minute
 #, python-format
 msgid "%2d:%02d"
 msgstr "%2d:%02d"
@@ -409,7 +409,7 @@ msgstr "%s (%s)\n"
 
 #, python-format
 msgid "%s imported from fallback tuner"
-msgstr "%s Aktivieren Sie den Import-Timer vom Fallback-Tuner"
+msgstr "%s importiert vom Reserve-Tuner"
 
 #. TRANSLATORS: The satellite with name '%s' is no longer used after a configuration change. The user is asked whether or not the satellite should be deleted.
 #, python-format

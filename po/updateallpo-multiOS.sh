@@ -39,7 +39,7 @@
 remote="origin"
 branch="develop"
 python="python"
-localgsed="gsed"
+localgsed="sed"
 xml2po="xml2po.py"
 findoptions=""
 delete=1
@@ -153,13 +153,9 @@ git config core.eol lf
 git config core.autocrlf input
 git config core.safecrlf true
 #
-# Git commands to sync with origin and create the branch MyTranslation to work on.
+# Git commands to sync with origin.
 #
-git reset HEAD --hard
-git checkout -B $branch $remote/$branch
 git pull
-git branch -D MyTranslation
-git checkout -B MyTranslation
 #
 # Retrieve languages from Makefile.am LANGS variable for backward compatibility
 #
@@ -217,3 +213,4 @@ printf "           3) unselect keep original file format\n"
 printf "You only need to do this once in PoEdit.\n\n"
 printf "Please read the translators wiki page:\n"
 printf "\nhttps://wiki.openpli.org/Information_for_Translators\n"
+rm -rf *.mo

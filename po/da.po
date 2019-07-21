@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: enigma2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-02-05 11:25+0330\n"
+"POT-Creation-Date: 2019-07-20 21:28+0430\n"
 "PO-Revision-Date: 2017-01-18 16:38+0100\n"
 "Last-Translator: lupine <a_ecklon@hotmail.com>\n"
 "Language-Team: \n"
@@ -138,6 +138,28 @@ msgstr ""
 "\n"
 "Se, installer og fjern nuværende eller installerede pakker."
 
+#, python-format
+msgid ""
+"\n"
+"optional parameter:\n"
+"%s"
+msgstr ""
+
+msgid " "
+msgstr ""
+
+#, python-format
+msgid " ('%s') finished successefully."
+msgstr ""
+
+#, python-format
+msgid " ('%s') finished with error messages."
+msgstr ""
+
+#, python-format
+msgid " ('%s') finished with error number [%d]."
+msgstr ""
+
 msgid " (0 - all networks)"
 msgstr "(0 - alle netværk)"
 
@@ -170,11 +192,32 @@ msgstr "(højere end rotor andet auto)"
 msgid " (lower than any auto)"
 msgstr "(lavere end andet auto)"
 
+#, python-format
+msgid " - %d elements exist! Overwrite"
+msgstr ""
+
+msgid " - 1 element exist! Overwrite"
+msgstr ""
+
+msgid " - file exist! Overwrite"
+msgstr ""
+
+msgid " - folder exist! Overwrite"
+msgstr ""
+
 msgid " extensions."
 msgstr " filendelser."
 
+#
+#, fuzzy
+msgid " min"
+msgstr "%d min"
+
 msgid " ms"
 msgstr "ms"
+
+msgid " or save the picture additionally to a file"
+msgstr ""
 
 msgid " packages selected."
 msgstr "pakker valgt."
@@ -210,7 +253,7 @@ msgstr ""
 msgid "%2.1f sec"
 msgstr ""
 
-#. TRANSLATORS: short time representation hour:minute
+#. TRANSLATORS: default time format hour:minute
 #, python-format
 msgid "%2d:%02d"
 msgstr "%2d:%02d"
@@ -243,6 +286,10 @@ msgstr "%T:%M"
 #, fuzzy
 msgid "%a %e %B %Y"
 msgstr "%A %e %B %Y"
+
+#, fuzzy
+msgid "%a %e %b  %-H:%M"
+msgstr "%a %e/%m  %-H:%M"
 
 #. TRANSLATORS: short date representation short dayname daynum short monthname in strftime() format! See 'man strftime'
 msgid "%a %e/%m"
@@ -386,10 +433,6 @@ msgstr "%d.%B %Y"
 msgid "%d:%02d"
 msgstr "%2d:%02d"
 
-#. TRANSLATORS: VFD hour:minute daynum short monthname in strftime() format! See 'man strftime'
-msgid "%k:%M %e/%m"
-msgstr "%k:%M %e/%m"
-
 #, fuzzy, python-format
 msgid ""
 "%s\n"
@@ -414,14 +457,50 @@ msgid "%s %s free disk space"
 msgstr "%s %s fri HDD plads"
 
 #
+#, fuzzy, python-format
+msgid "%s ( %s Cards )"
+msgstr "%s (%s)\n"
+
+#
+#, fuzzy, python-format
+msgid "%s (%04o)"
+msgstr "%s (%s)\n"
+
+#
+#, fuzzy, python-format
+msgid "%s (%s)"
+msgstr "%s (%s)\n"
+
+#
 #, python-format
 msgid "%s (%s)\n"
 msgstr "%s (%s)\n"
+
+#
+#, fuzzy, python-format
+msgid "%s (%sB"
+msgstr "%s (%s)\n"
+
+#, python-format
+msgid "%s - extraction errors."
+msgstr ""
+
+#, python-format
+msgid "%s imported from fallback tuner"
+msgstr ""
 
 #. TRANSLATORS: The satellite with name '%s' is no longer used after a configuration change. The user is asked whether or not the satellite should be deleted.
 #, python-format
 msgid "%s is no longer used. Should it be deleted?"
 msgstr "%s er ikke længere brugt. Skal den slettes?"
+
+#, python-format
+msgid "%s is password protected."
+msgstr ""
+
+#, python-format
+msgid "%s successfully extracted."
+msgstr ""
 
 #, python-format
 msgid "%s updated package available"
@@ -439,16 +518,43 @@ msgid "%s%d min"
 msgstr "%s%d min"
 
 #, python-format
-msgid "%s%d%s"
-msgstr ""
-
-#, python-format
 msgid "%s/%s: %s"
+msgstr "%s/%s: %s"
+
+#, fuzzy, python-format
+msgid "%s: %s"
 msgstr "%s/%s: %s"
 
 #, python-format
 msgid "%s:%s"
 msgstr "%s:%s"
+
+#, python-format
+msgid "%sB"
+msgstr ""
+
+#, python-format
+msgid "'%s' not installed and no known package"
+msgstr ""
+
+#, fuzzy
+msgid "( All readers)"
+msgstr "Alle årgange"
+
+#, python-format
+msgid "(%d jobs)"
+msgstr ""
+
+msgid "(1 job)"
+msgstr ""
+
+#
+#, fuzzy
+msgid "(Selectmode)"
+msgstr "Vælg film"
+
+msgid "(Show only reader:"
+msgstr ""
 
 #, fuzzy
 msgid "(VU+ type)"
@@ -572,6 +678,9 @@ msgstr "24"
 msgid "25"
 msgstr "25"
 
+msgid "2678400000"
+msgstr ""
+
 msgid "29.97"
 msgstr "29.97"
 
@@ -582,13 +691,7 @@ msgstr "3"
 msgid "30"
 msgstr "30"
 
-msgid "3D surround"
-msgstr ""
-
-msgid "3D surround softlimiter"
-msgstr ""
-
-msgid "3D surround speaker position"
+msgid "3D Modus"
 msgstr ""
 
 msgid "3d mode"
@@ -598,14 +701,13 @@ msgstr "3d tilstand"
 msgid "4"
 msgstr "4"
 
-msgid "420"
-msgstr "420"
-
 msgid "422"
 msgstr "422"
 
-msgid "444"
-msgstr "444"
+#
+#, fuzzy
+msgid "450 (default)"
+msgstr "standard"
 
 #
 msgid "4:3"
@@ -625,6 +727,11 @@ msgid "50 MB/s"
 msgstr ""
 
 #
+#, fuzzy
+msgid "540 (default)"
+msgstr "standard"
+
+#
 msgid "6"
 msgstr "6"
 
@@ -642,6 +749,9 @@ msgstr ""
 #
 msgid "9"
 msgstr "9"
+
+msgid ": "
+msgstr ""
 
 msgid ": 0000 - default (disabled)"
 msgstr ": 0000 - standard (deaktiveret)"
@@ -670,12 +780,20 @@ msgid "=NO STREAM\n"
 msgstr ""
 
 #
+#, fuzzy
+msgid "?"
+msgstr "??"
+
+#
 msgid "??"
 msgstr "??"
 
 #
 msgid "A"
 msgstr "A"
+
+msgid "A background update check is in progress, please wait a few minutes and try again."
+msgstr ""
 
 #
 #, python-format
@@ -694,6 +812,9 @@ msgid ""
 msgstr ""
 "En konfigurationsfil (%s) er ændret siden installation.\n"
 "Vil du beholde denne version?"
+
+msgid "A file from media is in use!"
+msgstr ""
 
 msgid ""
 "A finished record timer wants to set your\n"
@@ -802,6 +923,9 @@ msgstr ""
 msgid "AGC:"
 msgstr "AGC:"
 
+msgid "APN"
+msgstr ""
+
 #, fuzzy
 msgid "ASS File"
 msgstr "ASS fil"
@@ -828,11 +952,19 @@ msgid "About..."
 msgstr "Om..."
 
 #
+#, fuzzy
+msgid "Accessed:"
+msgstr "Accesspoint:"
+
+#
 msgid "Accesspoint:"
 msgstr "Accesspoint:"
 
 msgid "Activate HbbTV (Redbutton)"
 msgstr "Aktiver HbbTV (Rød knap)"
+
+msgid "Activate Keymap now?"
+msgstr ""
 
 #
 msgid "Activate Picture in Picture"
@@ -842,9 +974,21 @@ msgstr "Aktiver Billed i Billed"
 msgid "Activate current configuration"
 msgstr "Aktiver den aktuelle opsætning"
 
+msgid "Activate left-hand file list as multi-select source"
+msgstr ""
+
+msgid "Activate left-hand file list as source"
+msgstr ""
+
 #
 msgid "Activate network settings"
 msgstr "Aktiver netværks indstilling"
+
+msgid "Activate right-hand file list as multi-select source"
+msgstr ""
+
+msgid "Activate right-hand file list as source"
+msgstr ""
 
 #
 msgid "Activate the configured network settings."
@@ -856,6 +1000,13 @@ msgstr "Aktiver timeshift slut"
 msgid "Activate timeshift end and pause"
 msgstr "Aktiver timeshift slut og pause"
 
+msgid "Active"
+msgstr ""
+
+#, python-format
+msgid "Active Keymap: %s"
+msgstr ""
+
 #
 msgid "Adapter settings"
 msgstr "Adapter indstillinger"
@@ -863,6 +1014,11 @@ msgstr "Adapter indstillinger"
 #
 msgid "Add"
 msgstr "Tilføj"
+
+#
+#, fuzzy
+msgid "Add BISS CaID to service"
+msgstr "Tilføj kanal"
 
 #
 msgid "Add a mark"
@@ -880,6 +1036,10 @@ msgstr "Tilføj en ny titel"
 msgid "Add bookmark"
 msgstr "Tilføj bogmærke"
 
+#, fuzzy
+msgid "Add current folder to bookmarks"
+msgstr "Automatisk Skan"
+
 #
 msgid "Add directory to playlist"
 msgstr "Tilføj mappe til spilleliste"
@@ -891,6 +1051,13 @@ msgstr "Tilføj fil til spilleliste"
 #
 msgid "Add files to playlist"
 msgstr "Tilføj filer til spilleliste"
+
+#, fuzzy
+msgid "Add plugin to Extensions menu*"
+msgstr "Vis udvidelser i menu"
+
+msgid "Add plugin to main menu*"
+msgstr ""
 
 #
 msgid "Add provider"
@@ -911,6 +1078,11 @@ msgstr "Tilføj optagelse (nu)"
 #
 msgid "Add recording (stop after current event)"
 msgstr "Tilføj optagelse (stop efter nuværende program)"
+
+#
+#, fuzzy
+msgid "Add selected folder to bookmarks"
+msgstr "Vælg filer/mapper til backup"
 
 #
 msgid "Add service"
@@ -935,11 +1107,21 @@ msgstr "Tilføj til favoritter"
 msgid "Add/remove change timer for current event"
 msgstr "Tilføj/fjern ændrings timer for nuværende begivenhed."
 
+#
+#, fuzzy
+msgid "Additional PPPD options"
+msgstr "Lyd indstillinger..."
+
 msgid "Additional motor options allow you to enter details from your motor's spec sheet so enigma can work out how long it will take to move the dish from one satellite to another satellite."
 msgstr ""
 
 msgid "Additional motor options allow you to enter details from your motor's spec sheet so enigma can work out how long it will take to move to another satellite."
 msgstr ""
+
+#
+#, fuzzy
+msgid "Address"
+msgstr "IP adresse"
 
 msgid "Adjust 3D settings"
 msgstr "Juster 3D indstillinger"
@@ -1005,7 +1187,16 @@ msgstr "Juster kanal navne."
 msgid "All"
 msgstr "Alle"
 
+#
+#, fuzzy
+msgid "All Services"
+msgstr "Kanaler"
+
 msgid "All ages"
+msgstr "Alle årgange"
+
+#, fuzzy
+msgid "All caps"
 msgstr "Alle årgange"
 
 msgid "All frequency"
@@ -1058,6 +1249,9 @@ msgstr "Tillad tekst for hørehæmmede"
 msgid "Allow unsupported modes"
 msgstr "ikke supporteret"
 
+msgid "Allows you to set a schedule to import the EPG and channels list. The EPG and channels list will always be imported on reboot or GUI restart."
+msgstr ""
+
 #
 msgid "Alpha"
 msgstr "Alpha"
@@ -1079,7 +1273,20 @@ msgstr "Også i standby"
 msgid "Alternative"
 msgstr "Alternativer"
 
+#
+#, fuzzy
+msgid "Alternative 1"
+msgstr "Alternativer"
+
+#
+#, fuzzy
+msgid "Alternative 2"
+msgstr "Alternativer"
+
 msgid "Alternative URL for images listed on FlashImage"
+msgstr ""
+
+msgid "Alternative URLs for DVB-T/C or ATSC"
 msgstr ""
 
 #
@@ -1101,6 +1308,10 @@ msgstr "Inkluder altid ECM i optagelser"
 
 msgid "Always include ECM messages in recordings. This overrides the individual timer settings globally. It allows recordings to be always decrypted afterwards (sometimes called offline decoding), if supported by your receiver. Default: off."
 msgstr "Inkluder altid ECM meddelelser i optagelser. Dette overskrider de individuelle timer indstillinger globalt. Dette tillader at optagelser altid er dekrypteret bagefter (nogen gange kaldt offline  decoding), hvis understøttet af din receiver. Standardindstilling: fra."
+
+#, fuzzy
+msgid "Always off"
+msgstr "Spørg altid"
 
 msgid "American Samoa"
 msgstr ""
@@ -1162,6 +1373,21 @@ msgstr "Er du sikker på du vil fjerne alle terrestrial services?"
 msgid "Are you sure to remove this entry?"
 msgstr "Er du sikker på at dette punkt skal slettes?"
 
+#, fuzzy
+msgid ""
+"Are you sure to save the current configuration and reboot your receiver?\n"
+"\n"
+msgstr "Test netværkskonfiguration på din receiver.\n"
+
+#
+#, fuzzy
+msgid ""
+"Are you sure to save the current configuration?\n"
+"\n"
+msgstr ""
+"Er du sikker på, at du vil aktivere denne netværks opsætning?\n"
+"\n"
+
 #
 msgid ""
 "Are you sure you want to activate this network configuration?\n"
@@ -1177,6 +1403,13 @@ msgid ""
 msgstr ""
 "Bekræft at du vil slette\n"
 "følgende backup:\n"
+
+#
+#, fuzzy
+msgid ""
+"Are you sure you want to delete this:\n"
+" "
+msgstr "Bekræft at du vil afslutte denne hjælper?"
 
 #
 msgid "Are you sure you want to exit this wizard?"
@@ -1235,6 +1468,11 @@ msgid "Ask user"
 msgstr "Spørg bruger"
 
 #
+#, fuzzy
+msgid "Aspect list..."
+msgstr "Underkanal liste..."
+
+#
 msgid "Aspect ratio"
 msgstr "Billed format"
 
@@ -1279,9 +1517,6 @@ msgstr ""
 msgid "Audio PID, codec & lang"
 msgstr ""
 
-msgid "Audio auto volume level"
-msgstr ""
-
 msgid "Audio language selection 1"
 msgstr "Lydsprogs valg 1"
 
@@ -1300,6 +1535,9 @@ msgstr "Lyd indstillinger..."
 
 msgid "Audio plugins"
 msgstr "Audio plugins"
+
+msgid "Audio source"
+msgstr ""
 
 #
 #, python-format
@@ -1365,12 +1603,18 @@ msgstr "Autofokus i gang"
 msgid "Auto language selection"
 msgstr "Auto Sprogvalg"
 
-msgid "Auto play blu-ray file"
-msgstr "Auto play blu-ray fil"
-
 #
 msgid "Auto scart switching"
 msgstr "Autoskift Scart"
+
+#
+#, fuzzy
+msgid "Auto start"
+msgstr "er ved at starte"
+
+#, fuzzy
+msgid "Auto(not available)"
+msgstr "utilgængelig"
 
 #, fuzzy
 msgid "Autoinstalling Completed"
@@ -1399,6 +1643,19 @@ msgstr "Start automatisk tidsforskydning efter"
 
 msgid "Automatically turn on external subtitles"
 msgstr "Tænd automatisk for eksterne undertekster"
+
+msgid "Automatically update Client/Server View?"
+msgstr ""
+
+#
+#, fuzzy
+msgid "Autostart"
+msgstr "er ved at starte"
+
+#
+#, fuzzy
+msgid "Autostart:"
+msgstr "er ved at starte"
 
 #
 msgid "Available format variables"
@@ -1561,12 +1818,21 @@ msgstr "Sort Skærm"
 msgid "Black screen till locked"
 msgstr "Sort Skærm indtil låst"
 
+#, fuzzy
+msgid "Block device"
+msgstr "Ingen kanal."
+
 #
 msgid "Block noise reduction"
 msgstr "Video støjreduktion"
 
 msgid "Blue"
 msgstr "Blå"
+
+#
+#, fuzzy
+msgid "Blue LED brightness"
+msgstr "Lysstyrke"
 
 msgid "Bolivia (Plurinational State of)"
 msgstr ""
@@ -1586,6 +1852,15 @@ msgstr ""
 msgid "Boost green"
 msgstr "grøn"
 
+msgid "Booster Control"
+msgstr ""
+
+msgid "Boot to Android image"
+msgstr ""
+
+msgid "Boot to Recovery menu"
+msgstr ""
+
 #, fuzzy
 msgid "Bosnia and Herzegovina"
 msgstr "Picon og servicenavn"
@@ -1594,6 +1869,9 @@ msgid "Botswana"
 msgstr ""
 
 msgid "Bouvet Island"
+msgstr ""
+
+msgid "Brand: "
 msgstr ""
 
 msgid "Brazil"
@@ -1666,6 +1944,12 @@ msgstr "C"
 msgid "C-Band"
 msgstr "C-Bånd"
 
+msgid "CAID"
+msgstr ""
+
+msgid "CAID:SrvID"
+msgstr ""
+
 msgid "CH"
 msgstr "CH"
 
@@ -1676,12 +1960,45 @@ msgstr "CH%s"
 msgid "CI (Common Interface) Setup"
 msgstr "CI (Common Interface) Setup"
 
+msgid "CI Legacy"
+msgstr ""
+
+#
+#, fuzzy
+msgid "CI Operation Mode"
+msgstr "Konfigurations type"
+
+msgid "CI Plus 1.2"
+msgstr ""
+
+msgid "CI Plus 1.3"
+msgstr ""
+
 #
 msgid "CI assignment"
 msgstr "CI  tildeling"
 
 msgid "CI slot: "
 msgstr "CI port: "
+
+#, fuzzy
+msgid "CIHelper Setup"
+msgstr "HotKey Setup"
+
+msgid "CIHelper for SLOT CI0"
+msgstr ""
+
+msgid "CIHelper for SLOT CI1"
+msgstr ""
+
+msgid "CPU architecture: "
+msgstr ""
+
+msgid "CPU brand: "
+msgstr ""
+
+msgid "CPU priority for script execution"
+msgstr ""
 
 msgid "CPU: "
 msgstr "CPU: "
@@ -1710,6 +2027,9 @@ msgstr "Beregn"
 msgid "Calculate all positions"
 msgstr "Beregn alle positioner"
 
+msgid "Calculate file checksums"
+msgstr ""
+
 msgid "Calculation complete"
 msgstr "Beregning færdig"
 
@@ -1725,7 +2045,35 @@ msgstr ""
 msgid "Can be used for different fps between external subtitles and video."
 msgstr "Kan bliver brugt når der er forskel i fps mellem eksterne undertekster og videoen"
 
+msgid ""
+"Can be used to test defect pixels on TV screen.\n"
+"\n"
+"Available color test screens:\n"
+"\n"
+"red\n"
+"green\n"
+"blue\n"
+"white\n"
+"black\n"
+"cyan\n"
+"magenta\n"
+"yellow\n"
+"\n"
+"Screens change with left/right buttons or use red, green, blue to toggle.\n"
+"Yellow for returning back to this intro"
+msgstr ""
+
+#, python-format
+msgid ""
+"Can not run %s: %s.\n"
+"%s may be in a plugin that is not installed."
+msgstr ""
+
 msgid "Can only find a network drive to store the backup this means after the flash the autorestore will not work. Alternativaly you can mount the network drive after the flash and perform a manufacurer reset to autorestore"
+msgstr ""
+
+#, python-format
+msgid "Can't read link contents: %s"
 msgstr ""
 
 msgid "Canada"
@@ -1737,6 +2085,11 @@ msgstr "Fortryd"
 
 msgid "Cancel any text changes and exit"
 msgstr ""
+
+#
+#, fuzzy
+msgid "Cancel execution?"
+msgstr "Kanal valg"
 
 msgid "Cancelled upon user request"
 msgstr ""
@@ -1772,6 +2125,14 @@ msgstr "Kapacitet:"
 msgid "Card"
 msgstr "Kort"
 
+msgid "Card infos (CCcam-Reader)"
+msgstr ""
+
+#
+#, fuzzy
+msgid "Cards:"
+msgstr "Kort"
+
 msgid "Cascade PiP"
 msgstr "Kaskade BiB"
 
@@ -1780,6 +2141,10 @@ msgstr ""
 
 msgid "Center DVB subtitles"
 msgstr "Centrer DVB undertekster"
+
+#, fuzzy
+msgid "Center text"
+msgstr "centreret"
 
 msgid "Center time-labels and remove date"
 msgstr "Centrer tidsetiketter og fjern dato"
@@ -1790,6 +2155,10 @@ msgstr ""
 msgid "Chad"
 msgstr ""
 
+#, fuzzy
+msgid "Change CPU speed settings"
+msgstr "Ændre gentage og forsinkelse"
+
 #
 #, fuzzy
 msgid "Change Language"
@@ -1798,9 +2167,19 @@ msgstr "Sprog"
 msgid "Change PIN"
 msgstr "Skift PIN"
 
+#, fuzzy
+msgid "Change VFD display settings"
+msgstr "Ændre gentage og forsinkelse"
+
 #
 msgid "Change bouquets in quickzap"
 msgstr "Skifte favoritliste i hurtigzap"
+
+msgid "Change buttons for list navigation"
+msgstr ""
+
+msgid "Change execute permissions (755/644)"
+msgstr ""
 
 msgid "Change recording (add time)"
 msgstr "Tilpas optagelse (tilføj tid)"
@@ -1823,12 +2202,19 @@ msgstr "Skift trin afstand"
 msgid "Change timer"
 msgstr "Ændre timer"
 
+#, fuzzy
+msgid "Change video port"
+msgstr "Ændre timer"
+
 #
 msgid "Channel"
 msgstr "Kanal Info..."
 
 msgid "Channel Info"
 msgstr "Kanal Info"
+
+msgid "Channel button always changes sides"
+msgstr ""
 
 #
 #, fuzzy
@@ -1839,9 +2225,29 @@ msgstr "Kanalliste Menu"
 msgid "Channel list type"
 msgstr "Kanalliste type"
 
+#, fuzzy
+msgid "Channel name in standby clock"
+msgstr "Kanalnummer og picon"
+
+#, fuzzy
+msgid "Channel name in standby off"
+msgstr "Kanalnummer og picon"
+
 #
 msgid "Channel not in services list"
 msgstr "Kanalen er ikke kanal oplistningen"
+
+#, fuzzy
+msgid "Channel number in standby clock"
+msgstr "Kanalnummer og picon"
+
+#, fuzzy
+msgid "Channel number in standby off"
+msgstr "Kanalnummer og picon"
+
+#, fuzzy
+msgid "Channel number/clock in standby clock"
+msgstr "Kanalnummer og picon"
 
 #
 msgid "Channel selection"
@@ -1864,16 +2270,14 @@ msgstr "Kanalnummer og servicenavn"
 msgid "Channelnumber, picon and servicename"
 msgstr "Kanalnummer, picon og servicenavn"
 
+#
+#, fuzzy
+msgid "Channels"
+msgstr "Kanal Info..."
+
 #, fuzzy
 msgid "Channels and EPG"
 msgstr "Kanal Info"
-
-#, python-format
-msgid "Channels from fallback tuner failed %s"
-msgstr ""
-
-msgid "Channels from fallback tuner imported"
-msgstr ""
 
 #, fuzzy
 msgid "Channels only"
@@ -1890,6 +2294,10 @@ msgstr "Kapitel"
 #
 msgid "Chapter:"
 msgstr "Kapitel:"
+
+#, fuzzy
+msgid "Character device"
+msgstr "Nuværende enhed"
 
 #
 msgid "Check"
@@ -1937,6 +2345,9 @@ msgstr "Vælg Tuner"
 msgid "Choose bouquet"
 msgstr "Vælg bouquet"
 
+msgid "Choose the CI protocol operation mode for standard CI or CI Plus."
+msgstr ""
+
 msgid "Choose which tuner to configure."
 msgstr "Vælg hvilken tuner der skal konfigureres"
 
@@ -1976,8 +2387,32 @@ msgstr "Slet log"
 msgid "Clear playlist"
 msgstr "Slet spilleliste"
 
+#, python-format
+msgid "Client Info ( Oscam-Version: %s )"
+msgstr ""
+
 msgid "Client is streaming from this box!"
 msgstr ""
+
+#
+#, fuzzy
+msgid "Client mode"
+msgstr "initialiser modul"
+
+msgid "Client mode sets up this receiver to stream from another receiver. In this mode no local tuners will be available and channel lists, EPG, etc, will come from the remote receiver. All tuner settings will be cleared."
+msgstr ""
+
+#
+#, fuzzy
+msgid "Client tuner configuration"
+msgstr "Tuner opsætning"
+
+msgid "Clients"
+msgstr ""
+
+#, fuzzy
+msgid "Clock always"
+msgstr "altid"
 
 msgid "Clone TV screen to LCD"
 msgstr "Klon TV skærm til LCD"
@@ -2023,7 +2458,17 @@ msgid "Colombia"
 msgstr "Farve format"
 
 #
+#, fuzzy
+msgid "Color"
+msgstr "Farve format"
+
+#
 msgid "Color format"
+msgstr "Farve format"
+
+#
+#, fuzzy
+msgid "Combined"
 msgstr "Farve format"
 
 msgid "Combo"
@@ -2035,6 +2480,16 @@ msgstr "Kommando udføres..."
 
 #
 msgid "Command order"
+msgstr "Kommando rækkefølge"
+
+#
+#, fuzzy
+msgid "Command to run"
+msgstr "Kommando rækkefølge"
+
+#
+#, fuzzy
+msgid "Command type"
 msgstr "Kommando rækkefølge"
 
 msgid "Commit info"
@@ -2091,8 +2546,33 @@ msgid "Configuration mode: %s"
 msgstr "Konfigurations type %s"
 
 #
+#, fuzzy
+msgid "Configuration saved!"
+msgstr "Konfigurations type"
+
+#
 msgid "Configuration..."
 msgstr "Konfiguration..."
+
+#
+#, fuzzy
+msgid "Configure ATSC"
+msgstr "Konfigurerer"
+
+#
+#, fuzzy
+msgid "Configure DVB-C"
+msgstr "Konfigurerer"
+
+#
+#, fuzzy
+msgid "Configure DVB-S"
+msgstr "Konfigurerer"
+
+#
+#, fuzzy
+msgid "Configure DVB-T"
+msgstr "Konfigurerer"
 
 msgid "Configure an additional delay to improve external subtitle synchronisation."
 msgstr "Konfigurer en yderligere forsinkelse for at forbedre ekstern undertekst synkronisation "
@@ -2198,6 +2678,9 @@ msgstr "Konfigurer farven på eksterne undertekster, alternativt (normalt i hvid
 msgid "Configure the color of the teletext subtitles."
 msgstr "Konfigurer farven på TekstTV undertekster."
 
+msgid "Configure the connection speed in kb/s which is used to select the network stream quality, if possible."
+msgstr ""
+
 msgid "Configure the contrast level of the front panel display."
 msgstr "Konfigurer kontrast niveauet på front panel displayet."
 
@@ -2254,6 +2737,11 @@ msgstr "Konfigurer harddisken til at gå i standby efter en specificeret idle ti
 
 msgid "Configure the horizontal alignment of the subtitles."
 msgstr "Konfigurer den horisontale justering af undertekster."
+
+#
+#, fuzzy
+msgid "Configure the infobar fading speed"
+msgstr "Konfigurer slowmotion hastigheder."
 
 msgid "Configure the initial fast forward speed. When you press the fast forward button, winding will start at this speed."
 msgstr "Konfigurer den hastighed spolning starte ved. Når du trykker på spolning fremad knappen vil spolningen starte ved denne hastighed."
@@ -2462,6 +2950,14 @@ msgstr "Forbundet til"
 msgid "Connected transcoding, limit - no PiP!"
 msgstr ""
 
+#
+#, fuzzy
+msgid "Connection speed in kb/s"
+msgstr "Kollektions indstillinger"
+
+msgid "Connection using the supplied FTP parameters failed. Please recheck the details and try again."
+msgstr ""
+
 msgid "Console"
 msgstr "Konsol"
 
@@ -2503,6 +2999,26 @@ msgstr ""
 msgid "Copy"
 msgstr "Kopier"
 
+#, python-format
+msgid "Copy %d elements"
+msgstr ""
+
+msgid "Copy 1 element"
+msgstr ""
+
+#, fuzzy
+msgid "Copy file"
+msgstr "%d fil"
+
+msgid "Copy file/directory to target directory"
+msgstr ""
+
+msgid "Copy files/directories to target directory"
+msgstr ""
+
+msgid "Copy folder"
+msgstr ""
+
 msgid "Costa Rica"
 msgstr ""
 
@@ -2532,9 +3048,6 @@ msgstr "Kunne ikke optage på grund af konfliktende timere %s"
 msgid "Could not record due to invalid service %s"
 msgstr "Kunne ikke optage pga. fejlende kanal %s"
 
-msgid "Could not some setup the required directories on the media (e.g. USB stick) - Please verify media and try again!"
-msgstr ""
-
 #, fuzzy
 msgid "Country"
 msgstr "Monter"
@@ -2546,12 +3059,23 @@ msgstr "Skjul stiplet flimrende linje for denne service"
 msgid "Create DVD-ISO"
 msgstr "Opret DVD-ISO"
 
+#
+#, fuzzy
+msgid "Create directory/folder"
+msgstr "opret mappe"
+
 msgid "Create new folder and exit"
 msgstr "Opret ny folder og afslut"
 
 #, fuzzy
 msgid "Create separate radio userbouquet"
 msgstr "Gendan slettede brugerbouquets"
+
+msgid "Create symlink to file"
+msgstr ""
+
+msgid "Create user-named symbolic link"
+msgstr ""
 
 #
 #, python-format
@@ -2573,7 +3097,26 @@ msgstr "Kroatisk"
 msgid "Croatian"
 msgstr "Kroatisk"
 
+msgid "Cron Manager"
+msgstr ""
+
+#, fuzzy
+msgid "Cron manager"
+msgstr "Ingen resource manager"
+
+#, fuzzy
+msgid "Cron timers"
+msgstr "Ændre timer"
+
+#
+#, fuzzy
+msgid "Cross brightness"
+msgstr "Lysstyrke"
+
 msgid "Cuba"
+msgstr ""
+
+msgid "CuberevoVFD"
 msgstr ""
 
 msgid "Curacao"
@@ -2581,6 +3124,11 @@ msgstr ""
 
 msgid "Current CEC address"
 msgstr "Nuværende CEC Adresse"
+
+#
+#, fuzzy
+msgid "Current Status:"
+msgstr "Nuværende indstillinger:"
 
 msgid "Current device: "
 msgstr "Nuværende enhed"
@@ -2607,6 +3155,11 @@ msgid "Current settings:"
 msgstr "Nuværende indstillinger:"
 
 #
+#, fuzzy
+msgid "Current status:"
+msgstr "Nuværende indstillinger:"
+
+#
 msgid "Current transponder"
 msgstr "Nuværende transponder"
 
@@ -2616,6 +3169,11 @@ msgstr "Nuværende værdi:"
 
 msgid "Currently the commit log cannot be retrieved - please try later again"
 msgstr "Commit logbogen kunne ikke hentes - prøv venligst senere"
+
+#
+#, fuzzy
+msgid "Custom"
+msgstr "Tilpas"
 
 #
 msgid "Custom skip time for '1'/'3' buttons"
@@ -2665,10 +3223,6 @@ msgstr "Tjekkisk"
 #
 msgid "D"
 msgstr "D"
-
-#, fuzzy
-msgid "DAC"
-msgstr "PDC"
 
 #
 msgid "DHCP"
@@ -2727,6 +3281,9 @@ msgstr "DVB-T"
 msgid "DVB-T2"
 msgstr "DVB-T2"
 
+msgid "DVD"
+msgstr ""
+
 msgid "DVD Burn"
 msgstr "DVD Brænding"
 
@@ -2753,12 +3310,26 @@ msgid "DVD titlelist"
 msgstr "DVD titelliste"
 
 #
+#, fuzzy
+msgid "DVDPlayer"
+msgstr "DVD afspiller"
+
+#
+#, fuzzy
+msgid "Daily"
+msgstr "daglig"
+
+#
 msgid "Danish"
 msgstr "Dansk"
 
 #
 msgid "Date"
 msgstr "Dato"
+
+#, fuzzy
+msgid "Date reverse"
+msgstr "omvendt alfabet"
 
 #
 msgid "Date/time input"
@@ -2778,12 +3349,40 @@ msgstr "Deep standby"
 msgid "Deep standby"
 msgstr "Deep standby"
 
+msgid "Deepstby LED brightness"
+msgstr ""
+
 #
 msgid "Default"
 msgstr "Standard"
 
+#
+#, fuzzy
+msgid "Default Folder"
+msgstr "Standard"
+
 msgid "Default Services Scanner"
 msgstr "Standard Services Skanner"
+
+#
+#, fuzzy
+msgid "Default directory sorting"
+msgstr "Standard indstillinger"
+
+#
+#, fuzzy
+msgid "Default file sorting left"
+msgstr "Standardplacering af film"
+
+#
+#, fuzzy
+msgid "Default file sorting right"
+msgstr "Standardplacering af film"
+
+#
+#, fuzzy
+msgid "Default folder"
+msgstr "Standard"
 
 #
 msgid "Default movie location"
@@ -2864,6 +3463,20 @@ msgstr "Forsinkelse i millisekunder mellem rulnings karaktere på display."
 msgid "Delete"
 msgstr "Slet"
 
+#, fuzzy, python-format
+msgid "Delete %d elements"
+msgstr "Slettede elementer"
+
+#
+#, fuzzy
+msgid "Delete 1 element"
+msgstr "Slet punkt"
+
+#
+#, fuzzy
+msgid "Delete current line"
+msgstr "Slet punkt"
+
 #
 msgid "Delete entry"
 msgstr "Slet punkt"
@@ -2874,6 +3487,14 @@ msgstr "Sletning fejlede!"
 
 #
 msgid "Delete file"
+msgstr "Slet fil"
+
+msgid "Delete file or directory (and all its contents)"
+msgstr ""
+
+#
+#, fuzzy
+msgid "Delete folder"
 msgstr "Slet fil"
 
 #, fuzzy
@@ -2892,6 +3513,9 @@ msgid "Delete the character to the left of text buffer cursor"
 msgstr ""
 
 msgid "Delete the character under the text buffer cursor"
+msgstr ""
+
+msgid "Delete the selected files or directories"
 msgstr ""
 
 msgid "Delete timer"
@@ -2925,6 +3549,18 @@ msgstr "Fravælg"
 
 #, fuzzy
 msgid "Destination of fallback remote receiver"
+msgstr "URL af fallback remote receiver"
+
+#, fuzzy
+msgid "Destination of fallback remote receiver for ATSC"
+msgstr "URL af fallback remote receiver"
+
+#, fuzzy
+msgid "Destination of fallback remote receiver for DVB-C"
+msgstr "URL af fallback remote receiver"
+
+#, fuzzy
+msgid "Destination of fallback remote receiver for DVB-T"
 msgstr "URL af fallback remote receiver"
 
 msgid "Details for plugin: "
@@ -2981,6 +3617,9 @@ msgstr "DiSEqC port %s: %s"
 msgid "DiSEqC-tester settings"
 msgstr "DiSEqC-tester instillinger"
 
+msgid "Dial number"
+msgstr ""
+
 msgid "Did you see all eight arrow heads?"
 msgstr "Så du alle otte pilehoveder?"
 
@@ -3028,6 +3667,9 @@ msgstr "Afbryd timer"
 #
 msgid "Disabled"
 msgstr "Afbrudt"
+
+msgid "Dish"
+msgstr ""
 
 msgid "Disk space to reserve for recordings (in GB)"
 msgstr "Plads der skal reseveres til optagelser (I GB)"
@@ -3172,6 +3814,10 @@ msgstr "Vil du virkelig fjerne dit bogmærke af %s?"
 msgid "Do you really want to stop current event and delete timer %s?"
 msgstr "Vil du virkelig slette %s?"
 
+#, fuzzy
+msgid "Do you want change rights?\\n"
+msgstr "Vil du dette?"
+
 msgid "Do you want this?"
 msgstr "Vil du dette?"
 
@@ -3244,7 +3890,14 @@ msgstr "Vil du opdatere din receiver?"
 msgid "Do you want to upgrade the package:\n"
 msgstr "Vil du opgradere pakken:\n"
 
+#, fuzzy
+msgid "Do you want to view or run the script?\n"
+msgstr "Vil du genstarte din receiver?"
+
 msgid "Dolby"
+msgstr ""
+
+msgid "Domain"
 msgstr ""
 
 msgid "Dominica"
@@ -3268,6 +3921,9 @@ msgstr "Zap ikke og deaktiver timer"
 
 msgid "Don't zap and remove timer"
 msgstr "Zap ikke og slet timer"
+
+msgid "Done"
+msgstr ""
 
 #
 #, python-format
@@ -3322,6 +3978,25 @@ msgstr "Ø"
 msgid "ECM Info"
 msgstr "Info"
 
+msgid "ECM Statistics"
+msgstr ""
+
+#
+#, fuzzy
+msgid "ECM Time"
+msgstr "Tid"
+
+msgid "ECM avg"
+msgstr ""
+
+msgid "ECM last"
+msgstr ""
+
+#
+#, fuzzy
+msgid "ECM-Time"
+msgstr "Tid"
+
 msgid "EPG"
 msgstr "EPG"
 
@@ -3371,6 +4046,23 @@ msgstr "Ændre DNS"
 #
 msgid "Edit chapters of current title"
 msgstr "Rediger kapitler i aktuel titel"
+
+#
+#, fuzzy
+msgid "Edit current line"
+msgstr "Rediger kapitler i aktuel titel"
+
+#, fuzzy
+msgid "Edit line "
+msgstr "Rediger timer"
+
+#, fuzzy
+msgid "Edit menu"
+msgstr "Rediger timer"
+
+#, fuzzy
+msgid "Edit position is the line end"
+msgstr "Flyttet til position indeks"
 
 #
 #, fuzzy
@@ -3433,6 +4125,12 @@ msgstr "Aktiver 'neutrino' zap styrings stil"
 msgid "Enable 5V for active antenna"
 msgstr "Aktiver 5V for aktiv antenne"
 
+msgid "Enable CIHelper for SLOT CI0"
+msgstr ""
+
+msgid "Enable CIHelper for SLOT CI1"
+msgstr ""
+
 msgid "Enable EIT EPG"
 msgstr "Aktiver EIT EPG"
 
@@ -3471,6 +4169,16 @@ msgstr "Aktiver auto hurtig skan for %s"
 msgid "Enable bouquet selection in multi-EPG"
 msgstr "Aktiver favoritliste valg i multi-EPG"
 
+#
+#, fuzzy
+msgid "Enable client mode"
+msgstr "åbne flyttetype"
+
+#
+#, fuzzy
+msgid "Enable debug"
+msgstr "Aktiveret"
+
 msgid "Enable fallback remote receiver"
 msgstr "Aktiver fallback remote receiver"
 
@@ -3478,6 +4186,9 @@ msgid "Enable freesat EPG"
 msgstr "Aktiver Freesat EPG"
 
 msgid "Enable import timer from fallback tuner"
+msgstr ""
+
+msgid "Enable infobar fade-out"
 msgstr ""
 
 #
@@ -3553,6 +4264,10 @@ msgstr "Engelsk"
 msgid "Enigma (re)starts: %d\n"
 msgstr "Enigma (gen)starter: %d\n"
 
+#, python-format
+msgid "Enigma debug level: %d\n"
+msgstr ""
+
 #
 #, fuzzy
 msgid "Enigma version: "
@@ -3591,6 +4306,11 @@ msgstr ""
 msgid "Enter main menu..."
 msgstr "Åbne hoved menu..."
 
+#
+#, fuzzy
+msgid "Enter multi-file selection mode"
+msgstr "Luk titel valg"
+
 msgid "Enter persistent PIN code"
 msgstr "Indtast vedvarende PIN kode"
 
@@ -3598,9 +4318,20 @@ msgstr "Indtast vedvarende PIN kode"
 msgid "Enter pin code"
 msgstr "Indtast pinkode"
 
-#, fuzzy
-msgid "Enter text and exit"
-msgstr "Gem og afslut"
+msgid "Enter the FTP password of the host receiver (normally just leave empty)."
+msgstr ""
+
+msgid "Enter the FTP port of the host receiver (normally '21')."
+msgstr ""
+
+msgid "Enter the FTP username of the host receiver (normally 'root')."
+msgstr ""
+
+msgid "Enter the IP address of the host receiver."
+msgstr ""
+
+msgid "Enter the domain of the host receiver. Do not include 'http://' or port number."
+msgstr ""
 
 msgid "Enter the frequency at which you LNB switches between low band and high band. For more information consult the spec sheet of your LNB."
 msgstr ""
@@ -3614,6 +4345,9 @@ msgstr ""
 #
 msgid "Enter the service pin"
 msgstr "Skriv service koden"
+
+msgid "Enter the streaming port of the host receiver (normally '8001')."
+msgstr ""
 
 msgid "Enter your current latitude. This is the number of degrees you are from the equator as a decimal."
 msgstr ""
@@ -3649,6 +4383,13 @@ msgstr "Fejl"
 msgid "Error code"
 msgstr "Fejlkode"
 
+#
+#, fuzzy, python-format
+msgid ""
+"Error creating directory %s:\n"
+"%s"
+msgstr "Oprettelse af mappen %s mislykkedes."
+
 #, python-format
 msgid ""
 "Error during backup settings\n"
@@ -3672,6 +4413,18 @@ msgstr ""
 msgid "Error executing plugin"
 msgstr "Fejl ved kørsel af plugin"
 
+#, python-format
+msgid ""
+"Error linking %s to %s:\n"
+"%s"
+msgstr ""
+
+#, python-format
+msgid ""
+"Error renaming %s to %s:\n"
+"%s"
+msgstr ""
+
 msgid "Error stop stream!"
 msgstr ""
 
@@ -3691,6 +4444,11 @@ msgid "Error while retreiving location of epg.dat on server"
 msgstr ""
 
 #
+#, fuzzy
+msgid "Error..."
+msgstr "Fejl"
+
+#
 #, python-format
 msgid ""
 "Error: %s\n"
@@ -3707,9 +4465,6 @@ msgstr "Estisk"
 #
 msgid "Estonian"
 msgstr "Estisk"
-
-msgid "EtPortal"
-msgstr "EtPortal"
 
 msgid "Ethernet network interface"
 msgstr "Ethernet netværksinterface"
@@ -3735,6 +4490,25 @@ msgstr "Programoversigt menu"
 
 msgid "Events info menu"
 msgstr "Begivenheds info menu"
+
+msgid "Every 12 hours"
+msgstr ""
+
+#, fuzzy
+msgid "Every 2 hours"
+msgstr "Overalt"
+
+#, fuzzy
+msgid "Every 3 hours"
+msgstr "Overalt"
+
+#, fuzzy
+msgid "Every 6 hours"
+msgstr "Overalt"
+
+#, fuzzy
+msgid "Every hour"
+msgstr "Overalt"
 
 msgid "Every known"
 msgstr "Alle kendte"
@@ -3769,6 +4543,9 @@ msgstr "Forlad EPG"
 msgid "Exit editor"
 msgstr "Afslut editor"
 
+msgid "Exit editor and write changes (if any)"
+msgstr ""
+
 msgid "Exit input device selection."
 msgstr "Afslut input enhedsvalg"
 
@@ -3798,6 +4575,9 @@ msgstr "Luk netværksinterfaceliste"
 #
 msgid "Exit network wizard"
 msgstr "Afbryd netværkshjælper"
+
+msgid "Exit picture viewer"
+msgstr ""
 
 #
 msgid "Exit the wizard"
@@ -3883,13 +4663,6 @@ msgstr "Ekstra motor indstilinger"
 msgid "Extra start time to ignore inactivity sleeptimer"
 msgstr "Ekstra starttid til at ignorere inaktiv slumretimer"
 
-msgid "F"
-msgstr "F"
-
-#, fuzzy
-msgid "F1/F3/F4/F4-TURBO"
-msgstr "F1/F3/F4"
-
 msgid "FAILED"
 msgstr ""
 
@@ -3922,8 +4695,20 @@ msgstr "FEC"
 msgid "FEC:"
 msgstr "FEC:"
 
+msgid "FIFO"
+msgstr ""
+
 msgid "FTA"
 msgstr "FTA"
+
+#, fuzzy
+msgid "FTP connection failure"
+msgstr "LAN Forbindelse"
+
+#
+#, fuzzy
+msgid "FTP passive mode"
+msgstr "Transmissions type"
 
 #
 msgid "Factory reset"
@@ -3933,6 +4718,9 @@ msgid ""
 "Factory reset will restore your receiver to its default configuration. All user data including system settings, tuner configuration, bouquets, services and plugins will be DELETED. Recordings and other files stored on HDD and USB media will remain intact. After completion, the system will restart automatically!\n"
 "\n"
 "Do you really want to proceed?"
+msgstr ""
+
+msgid "Fade the infobar when hiding"
 msgstr ""
 
 #
@@ -3964,6 +4752,18 @@ msgid "Fallback remote receiver Port"
 msgstr "Fallback remote receiver URL"
 
 msgid "Fallback remote receiver URL"
+msgstr "Fallback remote receiver URL"
+
+#, fuzzy
+msgid "Fallback remote receiver for ATSC"
+msgstr "Fallback remote receiver URL"
+
+#, fuzzy
+msgid "Fallback remote receiver for DVB-C"
+msgstr "Fallback remote receiver URL"
+
+#, fuzzy
+msgid "Fallback remote receiver for DVB-T"
 msgstr "Fallback remote receiver URL"
 
 #, fuzzy
@@ -4024,8 +4824,73 @@ msgstr "Favoritter"
 msgid "Fiji"
 msgstr ""
 
+#
+#, fuzzy
+msgid "File Commander"
+msgstr "Kommando rækkefølge"
+
+msgid "File Commander - Addon File-Viewer"
+msgstr ""
+
+msgid "File Commander - Addon Mediaplayer"
+msgstr ""
+
+msgid "File Commander - Addon Movieplayer"
+msgstr ""
+
+msgid "File Commander - all Task's completed!"
+msgstr ""
+
+msgid "File Commander - generalised archive handler"
+msgstr ""
+
+msgid "File Commander - gzip Addon"
+msgstr ""
+
+msgid "File Commander - ipk Addon"
+msgstr ""
+
+msgid "File Commander - tar Addon"
+msgstr ""
+
+msgid "File Commander - unrar Addon"
+msgstr ""
+
+msgid "File Commander - unzip Addon"
+msgstr ""
+
+#
+#, fuzzy
+msgid "File Commander context menu"
+msgstr "Kanalliste Menu"
+
+msgid "File Commander menu"
+msgstr ""
+
 msgid "File appears to be busy.\n"
 msgstr "Filen virker optaget.\n"
+
+msgid "File checksums/hashes"
+msgstr ""
+
+#, python-format
+msgid "File not found: %s"
+msgstr ""
+
+msgid ""
+"File oscam.conf/ncam.conf not found.\n"
+"Please enter username/password manually."
+msgstr ""
+
+msgid "File transfer was cancelled by user"
+msgstr ""
+
+#, fuzzy, python-format
+msgid "File write error: '%s'"
+msgstr "med fejl"
+
+msgid "File/Directory Status Information"
+msgstr ""
 
 msgid "Filename"
 msgstr ""
@@ -4033,6 +4898,9 @@ msgstr ""
 #
 msgid "Filesystem check"
 msgstr "Filsystem tjek"
+
+msgid "Filter extension, (*) appears in title"
+msgstr ""
 
 msgid "Final position at"
 msgstr "Slutposition ved"
@@ -4080,6 +4948,11 @@ msgstr "Flash"
 #
 #, fuzzy
 msgid "Flash image"
+msgstr "Flash"
+
+#
+#, fuzzy
+msgid "Flash type: "
 msgstr "Flash"
 
 #
@@ -4193,9 +5066,6 @@ msgstr "Yderligere indstillinger"
 msgid "Further options"
 msgstr "Yderligere muligheder"
 
-msgid "G"
-msgstr "G"
-
 #
 #, fuzzy
 msgid "GStreamer version: "
@@ -4214,6 +5084,15 @@ msgstr ""
 #
 msgid ""
 "GUI needs a restart to apply a new skin\n"
+"Do you want to restart the GUI now?"
+msgstr ""
+"GUI skal genstartes for aktivering af nyt grafisk tema\n"
+"Vil du genstarte GUI nu?"
+
+#
+#, fuzzy
+msgid ""
+"GUI needs a restart to switch modes\n"
 "Do you want to restart the GUI now?"
 msgstr ""
 "GUI skal genstartes for aktivering af nyt grafisk tema\n"
@@ -4266,6 +5145,14 @@ msgstr ""
 msgid "Go down the list"
 msgstr "Gå ned af listen"
 
+msgid "Go to bookmarked folder"
+msgstr ""
+
+#
+#, fuzzy
+msgid "Go to end of file"
+msgstr "Spring til sltuningen af listen"
+
 msgid "Go to first movie or last item"
 msgstr "Gå til første film, eller sidste emne"
 
@@ -4284,11 +5171,20 @@ msgstr "Gå til næste udsendelse"
 msgid "Go to next page of service"
 msgstr "Gå til næste side af kanaler"
 
+#
+#, fuzzy
+msgid "Go to parent directory"
+msgstr "Øvre mappe"
+
 msgid "Go to previous event"
 msgstr "Gå til forrige udsendelse"
 
 msgid "Go to previous page of service"
 msgstr "Gå til forrige side af kanaler"
+
+#, fuzzy
+msgid "Go to start of file"
+msgstr "Gå til næste side af kanaler"
 
 msgid "Go up the list"
 msgstr "Gå op af listen"
@@ -4366,6 +5262,9 @@ msgstr "Grøn"
 msgid "Grenada"
 msgstr ""
 
+msgid "Group:"
+msgstr ""
+
 msgid "Guadeloupe"
 msgstr ""
 
@@ -4390,17 +5289,11 @@ msgstr ""
 msgid "Guyana"
 msgstr ""
 
-msgid "H"
-msgstr "H"
+msgid "H: = Hourly / D: = Daily / W: = Weekly / M: = Monthly"
+msgstr ""
 
 msgid "HD list"
 msgstr "HD Liste"
-
-msgid "HD2400"
-msgstr "HD2400"
-
-msgid "HDMI"
-msgstr ""
 
 msgid "HDMI Colordepth"
 msgstr ""
@@ -4432,10 +5325,6 @@ msgstr ""
 #, fuzzy
 msgid "HDR10 support"
 msgstr "ikke supporteret"
-
-#, fuzzy
-msgid "HDx1/HD1xxx/HD5x0C/VS1x00/et7x00/et8500/et7000mini"
-msgstr "HD1100/HD1200/HD1265/et7x00/et8500/et7000mini"
 
 msgid "HELP"
 msgstr ""
@@ -4477,9 +5366,6 @@ msgstr "Harddisk..."
 msgid "Harddisk Setup"
 msgstr "Harddisk Setup"
 
-msgid "Harddisk is not in sleepmode it could be in use!"
-msgstr ""
-
 msgid "Hardware: "
 msgstr "Hardware:"
 
@@ -4491,6 +5377,9 @@ msgstr "Hebraisk"
 
 msgid "Helps setting up your antenna"
 msgstr "Hjælper med at sætte din antenne op"
+
+msgid "Here you can change the screen positions with the arrow buttons on your remote control!"
+msgstr ""
 
 msgid "Hidden network"
 msgstr "Skjult netværk"
@@ -4549,12 +5438,42 @@ msgstr ""
 msgid "Hong Kong"
 msgstr ""
 
+msgid "Hops"
+msgstr ""
+
 #
 msgid "Horizontal"
 msgstr "Horisontal"
 
 msgid "Horizontal turning speed"
 msgstr "Horisontal drejehastighed"
+
+#
+#, fuzzy
+msgid "Host domain"
+msgstr "afslut"
+
+msgid "Host receiver FTP password"
+msgstr ""
+
+#, fuzzy
+msgid "Host receiver FTP port"
+msgstr "Fallback remote receiver URL"
+
+msgid "Host receiver FTP username"
+msgstr ""
+
+#
+#, fuzzy
+msgid "Host receiver IP address"
+msgstr "IP adresse"
+
+msgid "Host receiver address type"
+msgstr ""
+
+#, fuzzy
+msgid "Host receiver streaming port"
+msgstr "Din modtager genstarter"
 
 msgid "HotKey Setup"
 msgstr "HotKey Setup"
@@ -4570,6 +5489,12 @@ msgstr "Hotkey Setup"
 
 msgid "Hotkey zap"
 msgstr "Hotkey zap"
+
+msgid "Hotplug"
+msgstr ""
+
+msgid "Hourly"
+msgstr ""
 
 #, fuzzy
 msgid "How many minutes do you want add to the recording?"
@@ -4592,15 +5517,18 @@ msgstr "Ungarsk"
 msgid "Hungary"
 msgstr "Ungarsk"
 
-msgid "I"
-msgstr "I"
-
 #
 #, fuzzy
 msgid "I do not want to perform any service scans"
 msgstr "Vil du lave en kanal søgning?"
 
+msgid "I/O priority for script execution"
+msgstr ""
+
 msgid "IDLE"
+msgstr ""
+
+msgid "IGNORE"
 msgstr ""
 
 msgid "INFO"
@@ -4608,6 +5536,10 @@ msgstr ""
 
 msgid "INS"
 msgstr ""
+
+#, fuzzy
+msgid "IP"
+msgstr "I"
 
 #
 msgid "IP address"
@@ -4631,15 +5563,15 @@ msgstr ""
 msgid "Icons"
 msgstr "Ikoner"
 
+msgid "If enabled, bookmarks will be updated with the new location when you move or copy a recording."
+msgstr ""
+
 msgid "If enabled, display shows 12 chars instead 8, but in latin-1/translit only."
 msgstr ""
 
 #, fuzzy
 msgid "If enabled, then there will be displayed icons for new/unseen items too."
 msgstr "Ved aktivering vil infobaren blive vist når en ny begivenhed starter."
-
-msgid "If is disabled, then after Copy/Move will not be target directory stored into bookmarks."
-msgstr ""
 
 msgid "If is enabled and movie playback is finished, then after return to movielist will not be automaticaly start service playback."
 msgstr ""
@@ -4712,7 +5644,8 @@ msgstr ""
 msgid "Import channels and/or EPG from remote receiver URL when receiver or enigma2 is restarted"
 msgstr ""
 
-msgid "Import channels from fallback tuner"
+#, python-format
+msgid "Import from fallback tuner failed, %s"
 msgstr ""
 
 #, fuzzy
@@ -4783,6 +5716,16 @@ msgstr "Infobar"
 msgid "Info bar timeout"
 msgstr "Infobar slukningstid"
 
+#
+#, fuzzy
+msgid "InfoBar"
+msgstr "Infobar"
+
+#
+#, fuzzy
+msgid "Infobar fade-out speed"
+msgstr "Infobar slukningstid"
+
 msgid "Infobar frontend data source"
 msgstr "Infobar datakilde"
 
@@ -4827,6 +5770,9 @@ msgstr "Formatere"
 msgid "Initializing storage device..."
 msgstr "Initialisering lagerenhed"
 
+msgid "Inode:"
+msgstr ""
+
 #
 msgid "Input"
 msgstr "Indgang"
@@ -4845,9 +5791,21 @@ msgstr "Opsætning af enhed"
 msgid "Input devices"
 msgstr "Enheder"
 
+msgid "Insert"
+msgstr ""
+
+#
+#, fuzzy
+msgid "Insert line before current line"
+msgstr "Egenskaber for den aktuelle titel"
+
 #
 msgid "Install"
 msgstr "Installer"
+
+#, python-format
+msgid "Install '%s' and enable this operation"
+msgstr ""
 
 #
 msgid "Install channel list"
@@ -4879,6 +5837,16 @@ msgid "Installing"
 msgstr "Installerer"
 
 #
+#, fuzzy
+msgid "Installing Plugin ..."
+msgstr "Installerer software..."
+
+#
+#, fuzzy
+msgid "Installing service"
+msgstr "Installerer"
+
+#
 msgid "Installing software..."
 msgstr "Installerer software..."
 
@@ -4906,6 +5874,14 @@ msgstr "Intern flash"
 
 msgid "Internal hdd only"
 msgstr "Kun intern harddisk"
+
+#, fuzzy
+msgid "Internet"
+msgstr "Intern"
+
+#, fuzzy
+msgid "Internet connection sharing"
+msgstr "Tjek internet forbindelsen igen"
 
 msgid "Interval between keys when repeating:"
 msgstr "Interval mellem trykgentagelse"
@@ -4966,11 +5942,24 @@ msgstr "Søge type"
 msgid "Israel"
 msgstr ""
 
+msgid "It is not possible to calculate hashes on <List of Storage Devices>"
+msgstr ""
+
+msgid "It is not possible to change the file mode of <List of Storage Devices>"
+msgstr ""
+
+msgid "It is not possible to get the file status of <List of Storage Devices>"
+msgstr ""
+
+#, python-format
+msgid "It is not possible to run '%s' on <List of Storage Devices>"
+msgstr ""
+
 #, fuzzy
 msgid ""
 "It seems you did not see all the eight arrow heads. This means your TV has overscan enabled, and is not configured properly.\n"
 "\n"
-"Please refer to your TV's manual to find how you can disable overscan on your TV. Look for terms like 'Just fit', 'Full width', etc. If you can't find it, ask other users at http://forums.openpli.org.\n"
+"Please refer to your TV's manual to find how you can disable overscan on your TV. Look for terms like 'Just fit', 'Full width', etc. If you can't find it, ask other users at https://forum.openvision.tech\n"
 "\n"
 msgstr ""
 "Det ser ud til at du ikke så alle otte pilehoveder. Dette betyder at dit TV har overscan aktiveret, og ikke konfigureret ordenligt.\n"
@@ -4978,6 +5967,12 @@ msgstr ""
 "Kig i dit TV's manual for at finde ud af, hvordan du deaktiverer overscan på dit TV.  Hvis du ikke kan finde det, kan du spørge andre brugere på  http://forums.openpli.org.\n"
 "\n"
 "\n"
+
+msgid "It's not a genuine Open Vision!"
+msgstr ""
+
+msgid "It's not possible to rename the filesystem root."
+msgstr ""
 
 #
 msgid "Italian"
@@ -4993,9 +5988,6 @@ msgstr "Emner pr side"
 
 msgid "Items per page for list screen"
 msgstr "Emner pr side for listnings skærm"
-
-msgid "J"
-msgstr "J"
 
 msgid "Jamaica"
 msgstr ""
@@ -5069,6 +6061,17 @@ msgstr "Tastatur layout"
 msgid "Keyboard setup"
 msgstr "Tastatur indstilling"
 
+msgid "Keymap"
+msgstr ""
+
+#
+#, fuzzy
+msgid "Keymap selector"
+msgstr "Enigma2 tema vælger"
+
+msgid "Keymaps found: (press green or ok to select)"
+msgstr ""
+
 msgid "Kiribati"
 msgstr ""
 
@@ -5094,8 +6097,40 @@ msgid "LAN connection"
 msgstr "LAN Forbindelse"
 
 #
+#, fuzzy
+msgid "LED Display Setup"
+msgstr "Display indstillinger"
+
+#
+#, fuzzy
+msgid "LED configuration"
+msgstr "Tuner opsætning"
+
+msgid "LED control"
+msgstr ""
+
+msgid "LED control for Fortis HS7110"
+msgstr ""
+
+msgid "LED control for Fortis HS7810A"
+msgstr ""
+
+msgid "LED display"
+msgstr ""
+
+#, fuzzy
+msgid "LED display configuration"
+msgstr "Konfigurer filmliste"
+
+msgid "LED display configuration for Fortis HS7810A"
+msgstr ""
+
+#
 msgid "LNB"
 msgstr "LNB"
+
+msgid "Label"
+msgstr ""
 
 #
 msgid "Language"
@@ -5110,6 +6145,11 @@ msgstr ""
 
 msgid "Large"
 msgstr "Stor"
+
+#
+#, fuzzy
+msgid "Last Req."
+msgstr "Sidste hastighed"
 
 #
 msgid "Last config"
@@ -5145,6 +6185,14 @@ msgstr "Lettisk"
 #
 msgid "Leave DVD player?"
 msgstr "Forlad DVD afspiller?"
+
+msgid "Leave File Commander"
+msgstr ""
+
+#
+#, fuzzy
+msgid "Leave multi-select mode"
+msgstr "Kanal titel modus"
 
 msgid "Leave this set to 'yes' unless you fully understand why you are adjusting it."
 msgstr ""
@@ -5216,6 +6264,11 @@ msgid "Link quality:"
 msgstr "Link kvalitet:"
 
 #
+#, fuzzy
+msgid "Link target:"
+msgstr "Link kvalitet:"
+
+#
 msgid "Link:"
 msgstr "Link:"
 
@@ -5223,11 +6276,21 @@ msgstr "Link:"
 msgid "Linked titles with a DVD menu"
 msgstr "Lænkede titler med en DVD menu"
 
+#
+#, fuzzy
+msgid "Links:"
+msgstr "Link:"
+
 msgid "List available networks"
 msgstr "Tilgængelige netværk"
 
 msgid "List mode"
 msgstr "Listningsmetode"
+
+#
+#, fuzzy
+msgid "List of Storage Devices"
+msgstr "Oplistning af hukommelsesenheder"
 
 #
 msgid "List of storage devices"
@@ -5277,6 +6340,11 @@ msgid "Load unlinked userbouquets"
 msgstr "Indlæs ikke sammenkædet brugerbouquets"
 
 #
+#, fuzzy
+msgid "Loaded"
+msgstr "Indlæs"
+
+#
 msgid "Local network"
 msgstr "Lokalt netværk"
 
@@ -5303,11 +6371,24 @@ msgstr "Lås ratio"
 msgid "Lock:"
 msgstr "Lås:"
 
+msgid "Log"
+msgstr ""
+
 msgid "Log results to /tmp"
 msgstr "Log resultater til /tmp"
 
 msgid "Logfile does not exist anymore"
 msgstr ""
+
+#
+#, fuzzy
+msgid "Logo brightness"
+msgstr "Lysstyrke"
+
+#
+#, fuzzy
+msgid "Logo brightness *"
+msgstr "Lysstyrke"
 
 msgid "Long filenames"
 msgstr "Lange filnavne"
@@ -5333,6 +6414,9 @@ msgstr "Luxemborgsk"
 msgid "Luxembourgish"
 msgstr "Luxemborgsk"
 
+msgid "MENU"
+msgstr ""
+
 #
 msgid "MMC card"
 msgstr "MMC kort"
@@ -5340,6 +6424,12 @@ msgstr "MMC kort"
 #
 msgid "MORE"
 msgstr "MERE"
+
+msgid "MRU"
+msgstr ""
+
+msgid "MTU"
+msgstr ""
 
 msgid "Macao"
 msgstr ""
@@ -5412,6 +6502,9 @@ msgstr "Manuel søgning"
 #
 msgid "Manual transponder"
 msgstr "Manuel transponder"
+
+msgid "Manually import from fallback tuner"
+msgstr ""
 
 #
 msgid "Manufacturer"
@@ -5490,6 +6583,16 @@ msgstr "Menu"
 msgid "Menusort (%s)"
 msgstr "Menusortering (%s)"
 
+#, python-format
+msgid ""
+"Merlin Enigma2 Keymapselector v%s\n"
+"\n"
+"If you experience any problems please contact\n"
+"www.dreambox-tools.info\n"
+"\n"
+"2009-2012 DarkVolli"
+msgstr ""
+
 #
 msgid "Message"
 msgstr "Besked"
@@ -5502,6 +6605,9 @@ msgstr "Besked..."
 #, fuzzy
 msgid "Messages"
 msgstr "Besked"
+
+msgid "Metadata changed:"
+msgstr ""
 
 msgid "Mexico"
 msgstr ""
@@ -5520,6 +6626,11 @@ msgid "Missing "
 msgstr "Mangler"
 
 #
+#, fuzzy
+msgid "Mode"
+msgstr "Modus [ Satellit konfigurations modus]"
+
+#
 msgctxt "Satellite configuration mode"
 msgid "Mode"
 msgstr "Modus [ Satellit konfigurations modus]"
@@ -5529,6 +6640,10 @@ msgctxt "Video output mode"
 msgid "Mode"
 msgstr "Modus [ Video output modus ]"
 
+#, python-format
+msgid "Mode %s (%04o)"
+msgstr ""
+
 #
 #, fuzzy
 msgid "Model"
@@ -5537,6 +6652,28 @@ msgstr "Modus [ Satellit konfigurations modus]"
 #
 msgid "Model: "
 msgstr "Model:"
+
+#, fuzzy
+msgid "Modem configuration"
+msgstr "Beskyt konfiguration"
+
+#
+#, fuzzy
+msgid "Modem settings"
+msgstr "Ændre indstillinger"
+
+#
+#, fuzzy
+msgid "Modem type"
+msgstr "Test type"
+
+#
+#, fuzzy
+msgid "Modes"
+msgstr "Modus [ Satellit konfigurations modus]"
+
+msgid "Modified:"
+msgstr ""
 
 #
 msgid "Modulation"
@@ -5570,6 +6707,11 @@ msgstr ""
 msgid "Montenegro"
 msgstr ""
 
+#
+#, fuzzy
+msgid "Monthly"
+msgstr "måned"
+
 msgid "Montserrat"
 msgstr ""
 
@@ -5592,6 +6734,14 @@ msgstr "Monter"
 msgid "Move"
 msgstr "Flyt"
 
+#, fuzzy, python-format
+msgid "Move %d elements"
+msgstr "Bevægelse"
+
+#, fuzzy
+msgid "Move 1 element"
+msgstr "Bevægelse"
+
 msgid "Move PIP"
 msgstr "Flyt PIP"
 
@@ -5603,9 +6753,36 @@ msgstr "Flytte billede i billede til hoved billede"
 msgid "Move Picture in Picture"
 msgstr "Flytte billed i billed"
 
+#, fuzzy
+msgid "Move down list"
+msgstr "Gå ned af listen"
+
 #
 msgid "Move east"
 msgstr "Drej mod øst"
+
+#
+#, fuzzy
+msgid "Move file"
+msgstr "Drej mod øst"
+
+msgid "Move file/directory to target directory"
+msgstr ""
+
+#
+#, fuzzy
+msgid "Move files/directories to target directory"
+msgstr "Indtast venligst navn på den ny mappe"
+
+#
+#, fuzzy
+msgid "Move folder"
+msgstr "[Flytte type]"
+
+#
+#, fuzzy
+msgid "Move main picture to PiP"
+msgstr "Flytte billede i billede til hoved billede"
 
 msgid "Move the text buffer cursor left"
 msgstr ""
@@ -5634,6 +6811,10 @@ msgstr ""
 msgid "Move to position X"
 msgstr "Flyt til position X"
 
+#, fuzzy
+msgid "Move up list"
+msgstr "Gå op af listen"
+
 #
 msgid "Move west"
 msgstr "Drej mod vest"
@@ -5646,6 +6827,10 @@ msgstr "Flyttet til position indeks"
 
 msgid "Movement"
 msgstr "Bevægelse"
+
+#, fuzzy
+msgid "Movie"
+msgstr "Flytter"
 
 msgid "Movie list configuration"
 msgstr "Konfigurer filmliste"
@@ -5691,6 +6876,11 @@ msgstr "Multi-EPG favoritliste valg"
 
 #
 #, fuzzy
+msgid "MultiType"
+msgstr "Multimedia"
+
+#
+#, fuzzy
 msgid "Multiboot"
 msgstr "Multisat"
 
@@ -5717,12 +6907,24 @@ msgstr "Multisat vælg alle"
 msgid "Multistream"
 msgstr "Multisat"
 
+msgid "Music"
+msgstr ""
+
 msgid "Music/Ballet/Dance"
 msgstr "Musik/Ballet/Dans"
 
 #
 msgid "Mute"
 msgstr "Lyd fra"
+
+#
+#, fuzzy
+msgid "My Extension"
+msgstr "Udvidelser"
+
+#, fuzzy
+msgid "My extension"
+msgstr " filendelser."
 
 msgid "Myanmar"
 msgstr ""
@@ -5752,6 +6954,11 @@ msgstr "NTSC"
 #
 msgid "Name"
 msgstr "Navn"
+
+#
+#, fuzzy
+msgid "Name reverse"
+msgstr "Navneserver"
 
 #
 msgid "Nameserver"
@@ -5861,6 +7068,9 @@ msgstr ""
 msgid "New Zealand"
 msgstr ""
 
+msgid "New folder"
+msgstr ""
+
 msgid "News Current Affairs"
 msgstr "Nyheder Igangværende Begivenheder"
 
@@ -5905,6 +7115,10 @@ msgstr ""
 "Ingen HDD fundet eller\n"
 "HDD ikke initialiseret!."
 
+#, fuzzy
+msgid "No active subservices available."
+msgstr "Ingen opdateringer tilgængelig."
+
 msgid "No age block"
 msgstr "Ingen aldersbegrænsning"
 
@@ -5941,12 +7155,25 @@ msgstr "Ingen program-data fundet, optagelse startet."
 msgid "No fast winding possible yet.. but you can use the number buttons to skip forward/backward!"
 msgstr "Endnu ingen hurtigspoling.. men du kan benytte tal-knapperne til at springe frem/tilbage! "
 
+#
+#, fuzzy
+msgid "No files found."
+msgstr "Ingen fundne netværk"
+
 msgid "No free index available"
 msgstr "Intet frit index tilgængeligt"
 
 #
 msgid "No free tuner!"
 msgstr "Ingen fri tuner!"
+
+msgid "No hash calculations configured"
+msgstr ""
+
+#
+#, fuzzy
+msgid "No images found"
+msgstr "Ingen fundne netværk"
 
 #
 msgid "No network connection available."
@@ -5986,9 +7213,6 @@ msgstr "Ingen standby"
 msgid "No stream clients"
 msgstr "Ingen stream klienter"
 
-msgid "No suitable sat tuner found!"
-msgstr "Ingen brugbar sat tuner fundet"
-
 #
 msgid "No tags are set on these movies."
 msgstr "Ingen etiketter vedhæftet til disse film"
@@ -6021,6 +7245,10 @@ msgstr "Ingen opdateringer tilgængelig."
 
 msgid "No updates available. Please try again later."
 msgstr "Ingen opdateringer tilgængelig. Prøv venligst senere."
+
+#, python-format
+msgid "No viewer installed for this file type: %s"
+msgstr ""
 
 msgid "No wireless networks found! Searching..."
 msgstr "Intet trådløst netværk fundet! Søger..."
@@ -6073,6 +7301,10 @@ msgstr "Nej, aldrig"
 msgid "None"
 msgstr "Ingen"
 
+#, python-format
+msgid "None of the hash programs for the hashes %s are available"
+msgstr ""
+
 #
 #. TRANSLATORS: (aspect ratio policy: display as fullscreen, with stretching the left/right)
 msgid "Nonlinear"
@@ -6085,8 +7317,14 @@ msgstr ""
 msgid "Normal"
 msgstr "normal"
 
+msgid "Normal - Vision image"
+msgstr ""
+
 msgid "Normal mode"
 msgstr "Normal tilstand"
+
+msgid "Normal running frequency"
+msgstr ""
 
 #
 msgid "North"
@@ -6106,6 +7344,18 @@ msgstr "Norsk"
 
 msgid "Not Defined"
 msgstr "Ikke defineret"
+
+#
+#, fuzzy
+msgid "Not Installed"
+msgstr "Installer"
+
+#, fuzzy
+msgid "Not Required"
+msgstr "Ikke defineret"
+
+msgid "Not allowed with folders"
+msgstr ""
 
 msgid "Not associated"
 msgstr "Ikke tilknyttet"
@@ -6147,12 +7397,21 @@ msgstr "Nu [nu/næste: 'nu' begivenheds etiket]"
 msgid "Now playing"
 msgstr "Nu afspilles"
 
+msgid "Now you can change the position of the lower and right side. Press blue button to switch..."
+msgstr ""
+
+msgid "Now you can change the position of the upper and left side. Press blue button to switch..."
+msgstr ""
+
 #
 msgid "Now, use the contrast setting to turn up the brightness of the background as much as possible, but make sure that you can still see the difference between the two brightest levels of shades.If you have done that, press OK."
 msgstr "Nu, kan du bruge Kontrast indstilling og skrue op for Lystyrken på baggrunden, så meget som muligt, men vær sikker på, at du stadig kan se forskel mellem de 2 lyseste skygger. Hvis du har gjort det, tryk OK."
 
 msgid "Number of channels shown in channel selection list"
 msgstr "Antal kanaler vist i kanalliste"
+
+msgid "Number of lines in script messages"
+msgstr ""
 
 msgid "Number of repeating text on display."
 msgstr "Antal af gentaget tekst på display"
@@ -6170,6 +7429,9 @@ msgstr "ONID"
 msgid "OSD 3D setup"
 msgstr "OSD 3D setup"
 
+msgid "OSD Adjustment"
+msgstr ""
+
 msgid "OSD name request"
 msgstr "OSD navne forespørgsel"
 
@@ -6179,6 +7441,9 @@ msgstr "OSD indstilling"
 
 msgid "OSD transparency"
 msgstr "OSD gennemsigtighed"
+
+msgid "OScam Info"
+msgstr ""
 
 msgid "OVR"
 msgstr ""
@@ -6199,6 +7464,10 @@ msgstr ""
 #
 msgid "On"
 msgstr "Til"
+
+#, fuzzy
+msgid "On device:"
+msgstr "Enheder"
 
 msgid "On end of movie"
 msgstr "Ved slutningen af film"
@@ -6236,6 +7505,26 @@ msgstr "Kun ved opstart"
 msgid "Only select 'yes' if you are using a multiswich that requires a DiSEqC Port-A command signal. For all other setups select 'no'."
 msgstr ""
 
+#, fuzzy
+msgid "Open Vision module: "
+msgstr "Python version: "
+
+msgid "Open Vision revision: "
+msgstr ""
+
+#, fuzzy
+msgid "Open Vision version: "
+msgstr "Python version: "
+
+#, fuzzy
+msgid "Open channel list"
+msgstr "Ingen kanalliste"
+
+#
+#, fuzzy
+msgid "Open current transponder"
+msgstr "Nuværende transponder"
+
 msgid "Open select location"
 msgstr "Åben valgte placering"
 
@@ -6246,12 +7535,19 @@ msgstr "Åben valgte placering som timer navn"
 msgid "Open service list"
 msgstr "Åben kanalliste"
 
+#, fuzzy
+msgid "Open settings/actions menu"
+msgstr "Vis udvidelser i menu"
+
 msgid "Open setup tuner "
 msgstr "Åben setup tuner"
 
 #
 msgid "Open the movie list"
 msgstr "Åben filmlisten"
+
+msgid "Open with File Commander"
+msgstr ""
 
 msgid "Options disable timer"
 msgstr "Muligheder deaktiver timer"
@@ -6264,6 +7560,34 @@ msgstr ""
 
 msgid "Original"
 msgstr "Original"
+
+#, fuzzy
+msgid "Oscam Config info"
+msgstr "Tuner Konfiguration"
+
+#
+#, fuzzy
+msgid "Oscam ECM info"
+msgstr "Info"
+
+#, fuzzy
+msgid "Oscam Info - Configuration"
+msgstr "Tuner Konfiguration"
+
+msgid "Oscam Info - Main Menu"
+msgstr ""
+
+#, fuzzy
+msgid "Oscam Info Config Screen"
+msgstr "Tuner Konfiguration"
+
+#, fuzzy
+msgid "Oscam Info Main Menu"
+msgstr "Tuner Konfiguration"
+
+#, python-format
+msgid "Oscam Log ( Oscam-Version: %s )"
+msgstr ""
 
 msgid "Other"
 msgstr "Anden"
@@ -6287,6 +7611,9 @@ msgstr "Overskriv konfigurationsfilerne under softwareopdateringen?"
 msgid "Overwrite configuration files?"
 msgstr "Overskriv konfigurations filer"
 
+msgid "Owner:"
+msgstr ""
+
 #
 msgid "PAL"
 msgstr "PAL"
@@ -6308,9 +7635,16 @@ msgstr "PGS fil"
 msgid "PGS file"
 msgstr "PGS fil"
 
+#, fuzzy
+msgid "PID"
+msgstr "PDC"
+
 #
 msgid "PIN code needed"
 msgstr "PIN kode nødvendig"
+
+msgid "PLAY"
+msgstr ""
 
 msgid "PLP ID"
 msgstr "PLP ID"
@@ -6322,6 +7656,9 @@ msgstr ""
 #, fuzzy
 msgid "PLS Mode"
 msgstr "Modus [ Satellit konfigurations modus]"
+
+msgid "PLUGINS"
+msgstr ""
 
 msgid "PMT PID"
 msgstr "PMT PID"
@@ -6343,6 +7680,15 @@ msgstr "Pakke kontrol"
 #
 msgid "Packet manager"
 msgstr "Pakkestyring"
+
+#, fuzzy
+msgid "Page down list"
+msgstr "Gå ned af listen"
+
+#
+#, fuzzy
+msgid "Page up list"
+msgstr "Gem spilleliste"
 
 msgid "Pakistan"
 msgstr ""
@@ -6371,6 +7717,11 @@ msgid "Paraguay"
 msgstr ""
 
 #
+#, fuzzy
+msgid "Parent Directory"
+msgstr "Øvre mappe"
+
+#
 msgid "Parent directory"
 msgstr "Øvre mappe"
 
@@ -6387,6 +7738,12 @@ msgid "Parental control setup"
 msgstr "Forældrekontrol opsætning"
 
 msgid "Password"
+msgstr ""
+
+msgid "Password (httpwd)"
+msgstr ""
+
+msgid "Path to save not exist: '/tmp/'"
 msgstr ""
 
 #
@@ -6418,6 +7775,9 @@ msgstr "Slet alle optagelser i papirkurven permanent?"
 msgid "Permanently remove all deleted items"
 msgstr "Fjerne alle slettede filer permanent"
 
+msgid "Permissions:"
+msgstr ""
+
 msgid "Persian"
 msgstr "Persisk"
 
@@ -6442,6 +7802,11 @@ msgid "Picture player"
 msgstr "Billed fremviser"
 
 #
+#, fuzzy
+msgid "Pictures"
+msgstr "Billed fremviser"
+
+#
 #. TRANSLATORS: (aspect ratio policy: black bars on left/right) in doubt, keep english term.
 msgid "Pillarbox"
 msgstr "Sort stribe i top, bund og i siderne af billede."
@@ -6453,12 +7818,20 @@ msgstr "Pilot"
 msgid "Pitcairn"
 msgstr ""
 
+msgid "Pixels\n"
+msgstr ""
+
 #
 msgid "Play"
 msgstr "Afspil"
 
 #
 msgid "Play DVD"
+msgstr "Afspil DVD"
+
+#
+#, fuzzy
+msgid "Play DVDs"
 msgstr "Afspil DVD"
 
 #
@@ -6474,6 +7847,11 @@ msgstr "Afspil medie filer"
 
 #
 msgid "Play entry"
+msgstr "Afspil punkt"
+
+#
+#, fuzzy
+msgid "Play folder"
 msgstr "Afspil punkt"
 
 #
@@ -6505,6 +7883,20 @@ msgid "Play recorded movies..."
 msgstr "Afspil optagede film..."
 
 #
+#, fuzzy
+msgid "Play title"
+msgstr "Tilføj titel"
+
+msgid "Play with exteplayer"
+msgstr ""
+
+msgid "Play with gstreamer"
+msgstr ""
+
+msgid "Play/view/edit/install/extract/run file or enter directory"
+msgstr ""
+
+#
 msgid "Please add titles to the compilation."
 msgstr "Tilføj titler til kompileringen"
 
@@ -6513,7 +7905,17 @@ msgid "Please change recording endtime"
 msgstr "Venligst skift optagelses sluttid"
 
 #
+#, fuzzy
+msgid "Please choose CCcam-Reader"
+msgstr "Vælg venligst en udvidelse..."
+
+#
 msgid "Please choose an extension..."
+msgstr "Vælg venligst en udvidelse..."
+
+#
+#, fuzzy
+msgid "Please choose reader"
 msgstr "Vælg venligst en udvidelse..."
 
 #
@@ -6563,10 +7965,19 @@ msgstr "Skriv venligst filnavn (tom = brug nuværende dato)"
 msgid "Please enter name of the new directory"
 msgstr "Indtast venligst navn på den ny mappe"
 
+#
+#, fuzzy
+msgid "Please enter name of the new symlink"
+msgstr "Indtast venligst navn på den ny mappe"
+
 msgid "Please enter new description:"
 msgstr "Indtast ny beskrivelse: "
 
 msgid "Please enter new name:"
+msgstr "Indtast nyt navn:"
+
+#, fuzzy
+msgid "Please enter password"
 msgstr "Indtast nyt navn:"
 
 #
@@ -6575,6 +7986,16 @@ msgstr "Indtast venligst korrekt pin kode"
 
 msgid "Please enter the new PIN code"
 msgstr "Indtast ny PIN kode"
+
+#
+#, fuzzy
+msgid "Please enter the new directory name"
+msgstr "Indtast venligst navn på den ny mappe"
+
+#
+#, fuzzy
+msgid "Please enter the new file name"
+msgstr "Indtast venligst nyt filnavn"
 
 msgid "Please enter the old PIN code"
 msgstr "Indtast den gamle pin kode"
@@ -6603,6 +8024,11 @@ msgid "Please select a playlist..."
 msgstr "Vælg venligst en spilleliste..."
 
 #
+#, fuzzy
+msgid "Please select a resolution..."
+msgstr "Vælg venligst en underkanal..."
+
+#
 msgid "Please select a sub service..."
 msgstr "Vælg venligst en underkanal..."
 
@@ -6612,6 +8038,16 @@ msgstr "Vælg en underkanal til at optagelse..."
 
 #
 msgid "Please select a subservice..."
+msgstr "Vælg venligst en underkanal..."
+
+#
+#, fuzzy
+msgid "Please select an 3D modus..."
+msgstr "Vælg venligst en underkanal..."
+
+#
+#, fuzzy
+msgid "Please select an aspect ratio..."
 msgstr "Vælg venligst en underkanal..."
 
 #
@@ -6694,6 +8130,11 @@ msgstr "Venligst indstil tuner A"
 msgid "Please set up tuner R"
 msgstr "Venligst indstil tuner A"
 
+#
+#, fuzzy
+msgid "Please set your time zone"
+msgstr "Venligst indstil tuner A"
+
 msgid "Please setup the following basic configs!"
 msgstr ""
 
@@ -6748,6 +8189,11 @@ msgstr "Vent venligst, mens dit netværk genstartes..."
 
 #
 #, fuzzy
+msgid "Please wait, Loading image."
+msgstr "Vent venligst... Henter liste..."
+
+#
+#, fuzzy
 msgid "Please wait, restarting cardserver."
 msgstr "Vent venligst (opdaterer pakker)"
 
@@ -6783,6 +8229,9 @@ msgstr "Aktivitetsinformation for plugin styring"
 #
 msgid "Plugin manager help"
 msgstr "Hjælp til plugin styring"
+
+msgid "Plugin to set settings for modem connection."
+msgstr ""
 
 #
 msgid "Plugins"
@@ -6858,6 +8307,10 @@ msgstr "Motor Opsætning"
 msgid "Positioner setup log"
 msgstr ""
 
+#, fuzzy
+msgid "Power"
+msgstr "PowerMenu"
+
 msgid "Power LED"
 msgstr ""
 
@@ -6876,6 +8329,10 @@ msgstr ""
 
 msgid "PowerMenu"
 msgstr "PowerMenu"
+
+#, fuzzy
+msgid "Predefined"
+msgstr "udefineret"
 
 #
 msgid "Predefined transponder"
@@ -6935,6 +8392,20 @@ msgstr "Forbereder... Vent venligst"
 
 msgid "Press '0' to toggle PiP mode"
 msgstr "Tryk '0' for at skifte BiB modus."
+
+#
+#, fuzzy
+msgid "Press 'OK' for attach function."
+msgstr "Tryk på OK for at slå valget til eller fra."
+
+msgid "Press 'OK' for attach next function or 'CH+/-' for edit attached."
+msgstr ""
+
+msgid "Press 'OK' for remove item or 'CH+/-' for toggle to list of features."
+msgstr ""
+
+msgid "Press 'OK' for remove item or < > for change order or 'CH+/-' for toggle to list of features."
+msgstr ""
 
 msgid "Press INFO on your remote control for additional information."
 msgstr "Tryk Info for yderligere information"
@@ -6997,6 +8468,12 @@ msgstr "Tryk på OK for at slå valget til eller fra."
 msgid "Press OK, save and exit..."
 msgstr "Tryk OK, gem og afslut..."
 
+msgid "Press or select button and then press 'OK' for attach function."
+msgstr ""
+
+msgid "Press or select button and then press 'OK' for attach next function or edit attached."
+msgstr ""
+
 #
 msgid "Press yellow to set this interface as default interface."
 msgstr "Tryk på gul for at vælge dette interface som standard interface."
@@ -7033,6 +8510,30 @@ msgstr "Prioritet"
 #
 msgid "Process"
 msgstr "Bearbejdning"
+
+#, python-format
+msgid ""
+"Program '%s' is installed.\n"
+"The package containing this program isn't known, so it can't be uninstalled."
+msgstr ""
+
+#, python-format
+msgid ""
+"Program '%s' needs to be installed to run the '%s' action.\n"
+"Uninstall the '%s' package to uninstall the program?"
+msgstr ""
+
+#, python-format
+msgid ""
+"Program '%s' needs to be installed to run this action.\n"
+"Install the '%s' package to install the program?"
+msgstr ""
+
+#, python-format
+msgid ""
+"Program '%s' not installed.\n"
+"The package containing this program isn't known."
+msgstr ""
 
 msgid "Progress"
 msgstr "Fremskridt"
@@ -7090,12 +8591,20 @@ msgstr "Beskyt standby menu"
 msgid "Protect timer menu"
 msgstr "Beskyt timer menu"
 
+msgid "Protocol"
+msgstr ""
+
 #
 msgid "Provider"
 msgstr "Udbyder"
 
 #
 msgid "Providers"
+msgstr "Udbydere"
+
+#
+#, fuzzy
+msgid "Providers: "
 msgstr "Udbydere"
 
 msgid "Puerto Rico"
@@ -7128,8 +8637,10 @@ msgstr "Kvik"
 msgid "Quick zap"
 msgstr "Hurtigzap"
 
-msgid "REC"
-msgstr "REC"
+#
+#, fuzzy
+msgid "RC command set"
+msgstr "Kommando rækkefølge"
 
 #
 msgid "RF output"
@@ -7157,6 +8668,23 @@ msgstr "Bedømmelse defineret af afsender - %d"
 
 msgid "Rating undefined"
 msgstr "Bedømmelse ikke angivet"
+
+msgid "Read Userdata from oscam.conf/ncam.conf"
+msgstr ""
+
+msgid "Reader"
+msgstr ""
+
+msgid "Reader Statistics"
+msgstr ""
+
+#, python-format
+msgid "Ready to install \"%s\" ?"
+msgstr ""
+
+#, python-format
+msgid "Ready to remove \"%s\" ?"
+msgstr ""
 
 #
 msgid "Really close without saving settings?"
@@ -7201,8 +8729,10 @@ msgstr "Opdater boksen og genstart nu?"
 msgid "Reboot"
 msgstr "Genstart"
 
-msgid "Rec"
-msgstr "Optag"
+#
+#, fuzzy
+msgid "Rec LED brightness"
+msgstr "Lysstyrke"
 
 msgid "Recall to previous service"
 msgstr ""
@@ -7213,6 +8743,11 @@ msgstr "Modtagelses indstillinger"
 
 #
 msgid "Record"
+msgstr "Optage"
+
+#
+#, fuzzy
+msgid "Record only"
 msgstr "Optage"
 
 #
@@ -7253,6 +8788,11 @@ msgstr "Optaggelser"
 msgid "Recordings always have priority"
 msgstr "Optagelser har altid prioritet"
 
+#
+#, fuzzy
+msgid "Records"
+msgstr "Optage"
+
 msgid "Red"
 msgstr "Rød"
 
@@ -7281,8 +8821,8 @@ msgstr "Opdateringsrate vælger."
 
 #
 #, fuzzy
-msgid "Refreshing image list - Please wait..."
-msgstr "Søger efter tilgængelige opdateringer. Vent venligst..."
+msgid "Refresh screen"
+msgstr "Opdateringshastighed"
 
 #
 #, fuzzy
@@ -7294,6 +8834,11 @@ msgstr "Opfat dyb standby som standby"
 
 msgid "Region"
 msgstr "Region"
+
+#
+#, fuzzy
+msgid "Regular file"
+msgstr "skabelon fil"
 
 msgid "Relative"
 msgstr "Relativ"
@@ -7337,6 +8882,10 @@ msgstr "Fjernelse er lykkedes."
 msgid "Remove"
 msgstr "Fjern"
 
+#, fuzzy
+msgid "Remove Confirmation"
+msgstr "Sleeptimer konfiguration"
+
 #
 msgid "Remove a mark"
 msgstr "Fjerne et mærke"
@@ -7355,6 +8904,9 @@ msgstr "Fjern bogmærke"
 msgid "Remove completed timers after (days)"
 msgstr "Tøm færdiggjorte timere efter (dage)"
 
+msgid "Remove current folder from bookmarks"
+msgstr ""
+
 #
 msgid "Remove currently selected title"
 msgstr "Fjerne nuværende valgte titel"
@@ -7365,6 +8917,9 @@ msgstr "Tøm elementer fra papirkurven efter (dage)"
 #
 msgid "Remove plugins"
 msgstr "Fjerne plugins"
+
+msgid "Remove selected folder from bookmarks"
+msgstr ""
 
 msgid "Remove this logfile"
 msgstr ""
@@ -7385,15 +8940,29 @@ msgstr "Fjernelsen af mappen %s mislykkedes. (Måske ikke tom.)"
 msgid "Removing partition table"
 msgstr "Fjerner partitionstabel"
 
+#, fuzzy
+msgid "Removing service"
+msgstr "Ingen kanal."
+
 #
 msgid "Rename"
 msgstr "Omdøb"
+
+#
+#, fuzzy
+msgid "Rename file/directory"
+msgstr "opret mappe"
 
 msgid "Rename name and description for new events"
 msgstr "Omdøb navn og beskrivelse for nye begivenheder"
 
 msgid "Repeat"
 msgstr "Gentag"
+
+#
+#, fuzzy
+msgid "Repeat how often"
+msgstr "Gentagelses type"
 
 msgid "Repeat leave standby messages"
 msgstr ""
@@ -7465,6 +9034,9 @@ msgstr "Gendan indstilling af videoforbedring til systemets standard?"
 msgid "Reset video enhancement settings to your last configuration?"
 msgstr "Gendan indstilling af videoforbedring til din seneste opsætning?"
 
+msgid "Reshare"
+msgstr ""
+
 #
 msgid "Resolution"
 msgstr "Opløsning"
@@ -7491,6 +9063,10 @@ msgstr "Genstart Enigma2"
 
 #, fuzzy
 msgid "Restart enigma in debug mode"
+msgstr "Genstart Enigma2"
+
+#, fuzzy
+msgid "Restart enigma in standard mode"
 msgstr "Genstart Enigma2"
 
 #
@@ -7570,8 +9146,16 @@ msgstr ""
 msgid "Reverse bouquet buttons"
 msgstr "Spejlvend favoritliste knapper"
 
+#, fuzzy
+msgid "Reverse left file sorting"
+msgstr "Spejlvend liste"
+
 msgid "Reverse list"
 msgstr "Spejlvend liste"
+
+#, fuzzy
+msgid "Reverse right file sorting"
+msgstr "Aldrig dekrypter under optagelse"
 
 #
 msgid "Rewind speeds"
@@ -7617,6 +9201,32 @@ msgid "Round start time on"
 msgstr "start tid på"
 
 #
+#, fuzzy, python-format
+msgid "Run '%s' command"
+msgstr "Kommando rækkefølge"
+
+msgid "Run how often ?"
+msgstr ""
+
+msgid "Run script"
+msgstr ""
+
+#
+#, fuzzy
+msgid "Run script in background"
+msgstr "%d job kører i baggrunden!"
+
+msgid "Run script with optional parameter"
+msgstr ""
+
+msgid "Run script with optional parameter in background"
+msgstr ""
+
+#, fuzzy
+msgid "Running"
+msgstr "Advarsel"
+
+#
 msgid "Russian"
 msgstr "Russisk"
 
@@ -7630,6 +9240,9 @@ msgstr ""
 #
 msgid "S-Video"
 msgstr "S-Video"
+
+msgid "SCAN"
+msgstr ""
 
 msgid "SCPC optimized search range"
 msgstr "SCPC optimeret søgerækkevide"
@@ -7647,6 +9260,20 @@ msgstr ""
 #, fuzzy
 msgid "SDR"
 msgstr "SNR"
+
+msgid "SETUP"
+msgstr ""
+
+msgid "SH4"
+msgstr ""
+
+msgid "SH4 Booster Control"
+msgstr ""
+
+#
+#, fuzzy
+msgid "SH4 OSD Position setup"
+msgstr "Motor Opsætning"
 
 #
 msgid "SINGLE LAYER DVD"
@@ -7680,6 +9307,11 @@ msgstr "SSA fil"
 #
 msgid "SSID:"
 msgstr "SSID:"
+
+#
+#, fuzzy
+msgid "STMicroelectronics"
+msgstr "Timer valg"
 
 msgid "Saint Barthelemy"
 msgstr ""
@@ -7765,6 +9397,10 @@ msgstr ""
 msgid "Save"
 msgstr "Gem"
 
+#, fuzzy
+msgid "Save / Enter text and exit"
+msgstr "Gem og afslut"
+
 msgid "Save and exit"
 msgstr "Gem og afslut"
 
@@ -7777,11 +9413,25 @@ msgstr "Gem og stop timeshift"
 msgid "Save changes"
 msgstr "Gem ændringer"
 
+#, fuzzy
+msgid "Save left folder on exit"
+msgstr "Opret ny folder og afslut"
+
 #
 msgid "Save playlist"
 msgstr "Gem spilleliste"
 
+#, fuzzy
+msgid "Save right folder on exit"
+msgstr "Opret ny folder og afslut"
+
 msgid "Save settings and EPG data"
+msgstr ""
+
+#, python-format
+msgid ""
+"Save the commands and the output to a file?\n"
+"('%s')"
 msgstr ""
 
 msgid "Save timeshift and zap"
@@ -7862,6 +9512,10 @@ msgstr "Søge trådløse netværk"
 msgid "Scan your network for wireless access points and connect to them using your selected wireless device.\n"
 msgstr "Gennemsøg dit netværk for trådløse access punkter og forbind til dem med den valgte trådløse enhed.\n"
 
+#, fuzzy
+msgid "Scanning"
+msgstr "Søger"
+
 #, python-format
 msgid "Scanning %s..."
 msgstr "Søger %s..."
@@ -7889,11 +9543,35 @@ msgstr "Søger"
 msgid "Scans default lamedbs sorted by satellite with a connected dish positioner"
 msgstr "Søge standard lamedbs sorteret efter satellit med tilsluttet parabol motor"
 
+msgid "Schedule EPG and channel list import"
+msgstr ""
+
+#, python-format
+msgid "Script '%s' must have read permission to be able to run it"
+msgstr ""
+
 msgid "Scroll delay"
 msgstr "Scroll forsinkelse"
 
+#
+#, fuzzy
+msgid "Scroll long strings"
+msgstr "Kollektions indstillinger"
+
+#, fuzzy
+msgid "Scroll pause"
+msgstr "Scroll gentagelser"
+
 msgid "Scroll repeats"
 msgstr "Scroll gentagelser"
+
+#, fuzzy
+msgid "Scroll text"
+msgstr "Scroll gentagelser"
+
+#, fuzzy
+msgid "Search"
+msgstr "Søger"
 
 #
 msgid "Search east"
@@ -7960,6 +9638,18 @@ msgstr ""
 msgid "Select 'FBC SCR' if this tuner will connect to a SCR (Unicable/JESS) device. For all other setups select 'FBC automatic'."
 msgstr ""
 
+msgid "Select 'Yes' when you want to configure this tuner for ATSC"
+msgstr ""
+
+msgid "Select 'Yes' when you want to configure this tuner for DVB-C"
+msgstr ""
+
+msgid "Select 'Yes' when you want to configure this tuner for DVB-S"
+msgstr ""
+
+msgid "Select 'Yes' when you want to configure this tuner for DVB-T"
+msgstr ""
+
 msgid "Select 'band' if using a 'universal' LNB, otherwise consult your LNB spec sheet."
 msgstr ""
 
@@ -7991,6 +9681,9 @@ msgid "Select 'yes' to include the %s band in your search."
 msgstr ""
 
 msgid "Select 'yes' to only send the DiSEqC command when changing from one satellite to another, or select 'no' for the DiSEqC command to be resent on every zap."
+msgstr ""
+
+msgid "Select (source list) or enter directory (target list)"
 msgstr ""
 
 #
@@ -8038,6 +9731,11 @@ msgid "Select a network adapter"
 msgstr "Vælg en netværks adapter"
 
 #
+#, fuzzy
+msgid "Select a path"
+msgstr "Vælg en tuner"
+
+#
 msgid "Select a skin"
 msgstr "Vælg et grafisk tema"
 
@@ -8070,6 +9768,9 @@ msgstr "Vælg backup filer"
 #
 msgid "Select backup location"
 msgstr "Vælg backup placering"
+
+msgid "Select between entering an IP address or a domain."
+msgstr ""
 
 msgid "Select channel"
 msgstr "Vælg kanal"
@@ -8125,10 +9826,6 @@ msgstr "Vælg enhed."
 msgid "Select interface"
 msgstr "Vælg interface"
 
-#, fuzzy
-msgid "Select locale"
-msgstr "Vælg lokation"
-
 msgid "Select location"
 msgstr "Vælg lokation"
 
@@ -8161,6 +9858,9 @@ msgstr ""
 
 msgid "Select sort method:"
 msgstr "Vælg sorteringsmetode:"
+
+msgid "Select spark7162 dvb-t/c tuner mode"
+msgstr ""
 
 #
 msgid "Select target folder"
@@ -8230,6 +9930,9 @@ msgstr ""
 msgid "Select the virtual keyboard shifted character set"
 msgstr ""
 
+msgid "Select the virtual keyboard shifted character set for the next character only"
+msgstr ""
+
 #
 msgid "Select upgrade source"
 msgstr "Vælg opgraderingskilde"
@@ -8259,6 +9962,14 @@ msgstr "Vælg et skin"
 
 msgid "Select your country. If not available select 'all'."
 msgstr ""
+
+#, fuzzy
+msgid "Select your keymap"
+msgstr "Vælg et skin"
+
+#, fuzzy
+msgid "Select your personal settings:"
+msgstr "Vælg sorteringsmetode:"
 
 msgid "Select your provider and region. If not present in this list you will need to select one of the other 'service scan types'."
 msgstr ""
@@ -8314,6 +10025,24 @@ msgstr "Serbisk"
 #
 msgid "Serbian"
 msgstr "Serbisk"
+
+#, fuzzy
+msgid "Serv.Name"
+msgstr "Servicenavn"
+
+#, python-format
+msgid "Server Info ( Oscam-Version: %s )"
+msgstr ""
+
+#
+#, fuzzy
+msgid "Server:"
+msgstr "Kanal info"
+
+#
+#, fuzzy
+msgid "Servers"
+msgstr "Kanaler"
 
 #
 msgid "Service"
@@ -8386,10 +10115,6 @@ msgid "Service scan"
 msgstr "Kanal søgning"
 
 #
-msgid "Service searching"
-msgstr "Kanal søgning"
-
-#
 msgid "Service title mode"
 msgstr "Kanal titel modus"
 
@@ -8422,6 +10147,12 @@ msgstr "Konfigurer opførslen når en film er startet."
 msgid "Set all hotkey to default?"
 msgstr "Gendan alle hotkeys til standardindstilling"
 
+msgid "Set alternative fallback tuners for DVB-T/C or ATSC"
+msgstr ""
+
+msgid "Set archive mode (644)"
+msgstr ""
+
 msgid "Set blocktimes by weekday"
 msgstr ""
 
@@ -8435,6 +10166,13 @@ msgstr "Indstil standardindstillinger?"
 msgid "Set end time"
 msgstr "Sæt slut tid"
 
+msgid "Set executable mode (755)"
+msgstr ""
+
+#, fuzzy
+msgid "Set fan"
+msgstr "Sæt standard"
+
 msgid "Set fixed"
 msgstr "Sæt fast"
 
@@ -8447,6 +10185,10 @@ msgstr ""
 #
 msgid "Set interface as default Interface"
 msgstr "Sætter interfacet om standard interface"
+
+#, fuzzy
+msgid "Set led"
+msgstr "Sæt fast"
 
 msgid "Set limits"
 msgstr "Sæt grænser"
@@ -8471,6 +10213,13 @@ msgid "Set the password of the OpenWebif from your fallback tuner"
 msgstr ""
 
 msgid "Set the port of the OpenWebif from your fallback tuner"
+msgstr ""
+
+#, fuzzy
+msgid "Set the repeat interval of the schedule."
+msgstr "Konfigurer skærmens opdateringshastighed."
+
+msgid "Set the time of day to perform the import."
 msgstr ""
 
 #
@@ -8507,6 +10256,11 @@ msgid "Settings can be different for each directory separately (for non removeab
 msgstr ""
 
 #
+#, fuzzy
+msgid "Settings..."
+msgstr "Indstillings menu"
+
+#
 msgid "Setup"
 msgstr "Indstillinger"
 
@@ -8539,18 +10293,39 @@ msgstr "Skarphed"
 msgid "Shellscript"
 msgstr "Shellscript"
 
+msgid "Shift"
+msgstr ""
+
 msgid "Short filenames"
 msgstr "Korte filnavne"
+
+msgid "Should the FTP connection to the remote receiver be established in passive mode (normally 'no')?"
+msgstr ""
 
 #, fuzzy
 msgid "Show"
 msgstr "Vis PIP"
+
+#, python-format
+msgid ""
+"Show '%s' as picture%s?\n"
+"The current service must be interrupted!"
+msgstr ""
+
+#
+#, fuzzy
+msgid "Show /tmp/ecm.info"
+msgstr "Vis info"
 
 msgid "Show Audioselection"
 msgstr "Vis Audioselection"
 
 msgid "Show CI messages"
 msgstr "Vis CI meddelelser"
+
+#, fuzzy
+msgid "Show Clients"
+msgstr "Vis film"
 
 msgid "Show EIT now/next in infobar"
 msgstr "Vis EIT nu/næste i Infobar"
@@ -8563,17 +10338,36 @@ msgstr "Vis EPG for nuværende kanal..."
 msgid "Show EPG..."
 msgstr "Vis EPG..."
 
+#
+#, fuzzy
+msgid "Show Ethernet activity"
+msgstr "Vis alternativer"
+
 msgid "Show Games show"
 msgstr "Vis Spil show"
 
 msgid "Show InfoBar"
 msgstr "Vis InfoBar"
 
+#
+#, fuzzy
+msgid "Show Log"
+msgstr "Vis info"
+
 msgid "Show PIP"
 msgstr "Vis PIP"
 
+msgid "Show Readers/Proxies"
+msgstr ""
+
 msgid "Show SNR percentage instead of dB value"
 msgstr "Vis SNR procent i stedet for dB værdi"
+
+msgid "Show Script completed message"
+msgstr ""
+
+msgid "Show Task's completed message"
+msgstr ""
 
 msgid "Show True/False as graphical switch"
 msgstr ""
@@ -8587,6 +10381,13 @@ msgstr "Vis WLAN Status"
 
 msgid "Show animation while busy"
 msgstr "Vis animation når optaget"
+
+msgid "Show as Picture (press any key to close)"
+msgstr ""
+
+#, python-format
+msgid "Show as Picture and save as file ('%s')"
+msgstr ""
 
 msgid "Show background behind subtitles"
 msgstr "Vis baggrund bag undertekster"
@@ -8603,8 +10404,24 @@ msgstr "Vis optaget indicator når system er optaget."
 msgid "Show channel numbers in channel selection"
 msgstr "Vis kanalnumre i kanalvælger"
 
+#, fuzzy
+msgid "Show clock"
+msgstr "Vis spalter"
+
 msgid "Show columns"
 msgstr "Vis spalter"
+
+msgid "Show contents of ipk file"
+msgstr ""
+
+msgid "Show contents of rar file"
+msgstr ""
+
+msgid "Show contents of tar or compressed tar file"
+msgstr ""
+
+msgid "Show contents of zip file"
+msgstr ""
 
 msgid "Show crypto icons"
 msgstr "Vis krypto ikoner"
@@ -8614,6 +10431,10 @@ msgstr "Vis krypteringsinfo i infobar"
 
 msgid "Show detailed event info"
 msgstr "Vi detaljeret programinfo"
+
+#, fuzzy
+msgid "Show directories first"
+msgstr "Vis favoritliste"
 
 #
 msgid "Show event details"
@@ -8640,11 +10461,22 @@ msgstr "Se udvidelser..."
 msgid "Show favourites list"
 msgstr "Vis favoritliste"
 
+msgid "Show green LED on VFD"
+msgstr ""
+
 msgid "Show help"
 msgstr "Vis hjælp"
 
 msgid "Show icon for new/unseen items"
 msgstr "Vis ikon for nye/usete kanaler"
+
+#, fuzzy
+msgid "Show icons"
+msgstr "Vis spalter"
+
+#, fuzzy
+msgid "Show image information"
+msgstr "Softwarehåndterings information"
 
 msgid "Show in extensions menu"
 msgstr "Vis udvidelser i menu"
@@ -8695,6 +10527,9 @@ msgstr "Vis film"
 msgid "Show multi channel EPG"
 msgstr "Vis multi kanal EPG"
 
+msgid "Show next picture"
+msgstr ""
+
 msgid "Show notification when import channels and/or EPG from remote receiver URL did not complete"
 msgstr ""
 
@@ -8705,6 +10540,22 @@ msgid "Show notification when import channels was not successful"
 msgstr ""
 
 msgid "Show notification when import channels was successful"
+msgstr ""
+
+msgid "Show on LED display"
+msgstr ""
+
+msgid "Show on LED display in standby"
+msgstr ""
+
+#, fuzzy
+msgid "Show on VFD"
+msgstr "Vis spalter"
+
+msgid "Show on VFD display"
+msgstr ""
+
+msgid "Show on VFD display in standby"
 msgstr ""
 
 msgid "Show packages to be upgraded"
@@ -8723,11 +10574,18 @@ msgstr "Vis motor bevægelse"
 msgid "Show positioner position"
 msgstr "Vis positioners position"
 
+#, fuzzy
+msgid "Show previous picture"
+msgstr "Skift til forrige bouquet"
+
 msgid "Show record clock icons"
 msgstr "Vis optagelses ur ikoner"
 
 msgid "Show record indicator"
 msgstr "Vis optagelsesindikator"
+
+msgid "Show red LED on VFD"
+msgstr ""
 
 msgid "Show screensaver"
 msgstr "Vis screensaver"
@@ -8769,6 +10627,10 @@ msgstr "Vis underteksts selektion"
 msgid "Show symbols on display"
 msgstr ""
 
+#, fuzzy
+msgid "Show task list"
+msgstr "Vis serviceliste"
+
 #
 msgid "Show the radio player..."
 msgstr "Vis radio afspilleren..."
@@ -8776,6 +10638,13 @@ msgstr "Vis radio afspilleren..."
 #
 msgid "Show the tv player..."
 msgstr "Vis TV afspiller..."
+
+msgid "Show this plugin in plugin menu"
+msgstr ""
+
+#, fuzzy
+msgid "Show unknown extension as text"
+msgstr "Vis udvidelser i menu"
 
 msgid "Show vertical timelines"
 msgstr "Vis vertikale tidslinje"
@@ -8806,6 +10675,10 @@ msgstr "Luk ned"
 
 msgid "Shutdown when in Standby"
 msgstr "Luk ned når standby er aktiv"
+
+#, fuzzy
+msgid "Side by Side"
+msgstr "Side om side"
 
 msgid "Side by side"
 msgstr "Side om side"
@@ -8881,6 +10754,17 @@ msgstr "Breddegrad"
 msgid "Site longitude"
 msgstr "Længdegrad"
 
+msgid "Size"
+msgstr ""
+
+#
+#, fuzzy
+msgid "Size reverse"
+msgstr "Kanaler"
+
+msgid "Size:"
+msgstr ""
+
 #
 msgid "Skin"
 msgstr "Grafisk tema"
@@ -8898,6 +10782,11 @@ msgstr "Spring tomme kanaler over"
 
 msgid "Skip internet connection check (disables automatic package installation)"
 msgstr "Spring internet tjek over (slår automatisk pakke installation fra)"
+
+#
+#, fuzzy
+msgid "Skip selection"
+msgstr "EPG valg"
 
 #
 msgid "Sleep timer"
@@ -8952,6 +10841,10 @@ msgstr "Slowmotion hastigheder"
 msgid "Small"
 msgstr "Lille"
 
+#, fuzzy
+msgid "Small - Lite image"
+msgstr "Slet timer"
+
 #
 msgid "Small progress"
 msgstr "Små fremskridt"
@@ -8964,6 +10857,14 @@ msgstr ""
 
 msgid "Social/Political/Economics"
 msgstr "Social/Politik/Økonomi"
+
+#
+#, fuzzy
+msgid "Socket"
+msgstr "låst "
+
+msgid "SocketMMI"
+msgstr ""
 
 msgid "SoftCam / CI"
 msgstr "SoftCam / CI"
@@ -9005,6 +10906,14 @@ msgstr ""
 #
 msgid "Some plugins are not available:\n"
 msgstr "Nogle plugins er ikke tilstede:\n"
+
+msgid "Sorry CIHelper Config is Missing"
+msgstr ""
+
+msgid ""
+"Sorry!\n"
+"Picture in Picture is not available in HD channels!"
+msgstr ""
 
 #
 #, python-format
@@ -9065,6 +10974,12 @@ msgstr "Sorter plugin liste til default?"
 msgid "Sort time"
 msgstr "Sorter tid"
 
+msgid "Sorting left files by name, date or size"
+msgstr ""
+
+msgid "Sorting right files by name, date or size"
+msgstr ""
+
 #
 msgid "Sound"
 msgstr "Lyd"
@@ -9097,6 +11012,17 @@ msgstr ""
 #
 msgid "Spanish"
 msgstr "Spansk"
+
+#
+#, fuzzy
+msgid "Spark LED Display Setup"
+msgstr "Display indstillinger"
+
+msgid "Spark7162 select tuner mode"
+msgstr ""
+
+msgid "SparkUnionTunerType config"
+msgstr ""
 
 #, fuzzy
 msgid "Special 1"
@@ -9136,6 +11062,12 @@ msgstr "Angiv tidsramme hvor inaktivitets sleeptimeren skal ignoreres"
 msgid "Specify timeframe to ignore the shutdown in standby"
 msgstr "Angiv tidsramme hvor nedluknings timeren skal ignoreres når receiveren er i standby."
 
+msgid "Speed"
+msgstr ""
+
+msgid "Speed up the performance"
+msgstr ""
+
 #
 msgid "Split preview mode"
 msgstr "Opdel forhåndsvisningstilstand"
@@ -9171,6 +11103,10 @@ msgstr "StandbyLED"
 msgid "Standby after current event"
 msgstr "Standby efter nuværende begivenhed"
 
+#, fuzzy
+msgid "Standby brightness"
+msgstr "Standby om"
+
 #
 #, python-format
 msgid "Standby fan %d PWM"
@@ -9183,6 +11119,28 @@ msgstr "Standby blæser %d spænding (V)"
 
 msgid "Standby in "
 msgstr "Standby om"
+
+#, fuzzy
+msgid "Standby only"
+msgstr "Standby om"
+
+#, fuzzy
+msgid "Standby saver frequency"
+msgstr "Standby efter nuværende begivenhed"
+
+#
+#, fuzzy
+msgid "Start"
+msgstr "Start test"
+
+#
+#, fuzzy
+msgid "Start Boot Frequency"
+msgstr "Frekvens"
+
+#, fuzzy
+msgid "Start boot frequency"
+msgstr "Alle frekvenser"
 
 #
 msgid "Start from the beginning"
@@ -9222,6 +11180,9 @@ msgstr "Start tidsforskydning"
 msgid "Start with list screen"
 msgstr "Start ved liste skærm"
 
+msgid "Start/stop slide show"
+msgstr ""
+
 #
 msgid "Starting on"
 msgstr "Starter på"
@@ -9231,6 +11192,14 @@ msgstr "Start set top boxen i standby"
 
 msgid "Startup to Standby"
 msgstr "Startup i standby"
+
+msgid "Status"
+msgstr ""
+
+#
+#, fuzzy
+msgid "Stby LED brightness"
+msgstr "Lysstyrke"
 
 #
 msgid "Step east"
@@ -9338,6 +11307,11 @@ msgstr "Stop tidsforskydning?"
 msgid "Stopped"
 msgstr "Stoppet"
 
+#
+#, fuzzy
+msgid "Storage devices"
+msgstr "Oplistning af hukommelsesenheder"
+
 msgid "Store at index"
 msgstr "Gem ved indeks"
 
@@ -9354,6 +11328,14 @@ msgstr "Stream"
 
 msgid "Stream request"
 msgstr "Stream forspørgsel"
+
+#, fuzzy
+msgid "Stream-tv"
+msgstr "Stream"
+
+#, fuzzy
+msgid "Streaming"
+msgstr "Stream"
 
 msgid "Streaming clients info"
 msgstr "Streamklient info"
@@ -9525,10 +11507,6 @@ msgstr "Skift til forrige underkanal"
 msgid "Switch to radio mode"
 msgstr "Skift til radio mode"
 
-#
-msgid "Switchable tuner types:"
-msgstr "Udskiftelige tuner typer"
-
 msgid "Switzerland"
 msgstr ""
 
@@ -9540,6 +11518,12 @@ msgstr "Symbol rate & FEC"
 
 msgid "Symbol rate:"
 msgstr "Symbol rate:"
+
+msgid "Symbolic link"
+msgstr ""
+
+msgid "Symlink to "
+msgstr ""
 
 msgid "Sync failure moving back to origin !"
 msgstr "Synkronationsfejl, går tilbage!"
@@ -9553,6 +11537,17 @@ msgstr "System"
 
 msgid "System & Modulation"
 msgstr "System & Modulation"
+
+#, fuzzy
+msgid "T2MI PID"
+msgstr "PMT PID"
+
+msgid "T2MI PLP"
+msgstr ""
+
+#, fuzzy
+msgid "T2MI PLP ID"
+msgstr "PLP ID"
 
 msgid "T2MI RAW Mode"
 msgstr ""
@@ -9571,9 +11566,6 @@ msgstr "TS filen er for stor til ISO9660 level 1!"
 
 msgid "TSID"
 msgstr "TSID"
-
-msgid "TUNER:"
-msgstr "TUNER:"
 
 msgid "TUNING"
 msgstr ""
@@ -9602,6 +11594,11 @@ msgstr ""
 msgid "Tanzania, United Republic of"
 msgstr ""
 
+#
+#, fuzzy
+msgid "Task list"
+msgstr "sortlist"
+
 msgid "Teletext subtitle color"
 msgstr "TekstTV undertekst farve"
 
@@ -9612,6 +11609,11 @@ msgstr "Kontrol af temperatur og blæser"
 #
 msgid "Terrestrial"
 msgstr "DVB T"
+
+#
+#, fuzzy
+msgid "Test"
+msgstr "Test modus"
 
 #
 msgid "Test DiSEqC settings"
@@ -9668,6 +11670,9 @@ msgstr "%d minutter tilbage af nuværende begivenhed."
 msgid "The DVD standard doesn't support H.264 (HDTV) video streams. Do you want to create a special format data DVD (which will not play in stand-alone DVD players) instead?"
 msgstr "DVD standarden understøtter ikke H.264 (HDTV) video streams. Vil du lave en speciel DVD med et andet data format (som ikke kan afspilles in en særskilt DVD afspiller) i stedet?"
 
+msgid "The Image Viewer component of the File Commander requires the PicturePlayer extension. Install PicturePlayer to enable this operation."
+msgstr ""
+
 msgid "The PIN code has been changed successfully."
 msgstr "PIN koden er ændret med succes."
 
@@ -9676,6 +11681,9 @@ msgstr "PIN koden er succesfuldt blevet gemt."
 
 msgid "The PIN codes you entered are different."
 msgstr "PIN koderne du tastede er ikke ens."
+
+msgid "The authors are NOT RESPONSIBLE"
+msgstr ""
 
 #, fuzzy, python-format
 msgid ""
@@ -9697,6 +11705,14 @@ msgstr ""
 #
 msgid "The following files were found..."
 msgstr "Følgende filer fandtes..."
+
+msgid ""
+"The function has been interrupted.\n"
+"Don't press any key until the picture from mvi-file is displayed!"
+msgstr ""
+
+msgid "The hash of a directory can't be calculated."
+msgstr ""
 
 #
 msgid ""
@@ -9863,21 +11879,22 @@ msgstr ""
 "For en normal bruger er dette ikke relevant.\n"
 "Gå ikke i panik når du ser værdier blive vist, som du synes ser mistænkelig ud!"
 
-msgid "This is a multitype tuner. Available options depend on the hardware. Cable and terrestrial cannot be configured at the same time. If you want to use as cable + satellite or terrestrial + satellite, configure cable/terrestrial first and then save. Re-open and configure again as satellite."
+msgid "This is a multitype tuner. Available options depend on the hardware."
 msgstr ""
 
 msgid "This is the order in which DiSEqC commands are sent to the aerial system. The order must correspond exactly with the order the physical devices are arranged along the signal cable (starting from the receiver end)."
 msgstr ""
+
+#
+#, fuzzy
+msgid "This line is not editable!"
+msgstr "Dette plugin er ikke installeret"
 
 msgid "This option allows to reduce the block-noise in the picture. Obviously this is at the cost of the picture's sharpness."
 msgstr ""
 
 msgid "This option allows to set the level of dynamic contrast of the picture."
 msgstr ""
-
-#, fuzzy
-msgid "This option allows you can to set the auto volume level."
-msgstr "Denne mulighed tillader dig at vise menuernes sti"
 
 msgid "This option allows you enable smoothing filter to control the dithering process."
 msgstr ""
@@ -9902,10 +11919,6 @@ msgid "This option allows you to boost the green tones in the picture."
 msgstr "Denne mulighed tillader dig at vise menuernes sti"
 
 #, fuzzy
-msgid "This option allows you to change the virtuell loadspeaker position."
-msgstr "Denne mulighed tillader dig at konfigurer Colorspace fra Auto til RGB"
-
-#, fuzzy
 msgid "This option allows you to configure the Colordepth for UHD"
 msgstr "Denne mulighed tillader dig at konfigurer Colorspace fra Auto til RGB"
 
@@ -9920,18 +11933,6 @@ msgstr "Denne mulighed tillader dig at konfigurer Colorspace fra Auto til RGB"
 #, fuzzy
 msgid "This option allows you to configure the HDR type."
 msgstr "Denne mulighed tillader dig at konfigurer Colorspace fra Auto til RGB"
-
-#, fuzzy
-msgid "This option allows you to disable or change the virtuell loadspeaker position."
-msgstr "Denne mulighed tillader dig at konfigurer Colorspace fra Auto til RGB"
-
-#, fuzzy
-msgid "This option allows you to enable 3D surround softlimiter."
-msgstr "Denne mulighed tillader dig at vise menuernes sti"
-
-#, fuzzy
-msgid "This option allows you to enable 3D surround sound."
-msgstr "Denne mulighed tillader dig at vise menuernes sti"
 
 #, fuzzy
 msgid "This option allows you to enable or disable the 10 bit color mode"
@@ -9949,7 +11950,8 @@ msgstr "Denne mulighed tillader dig at konfigurer Colorspace fra Auto til RGB"
 msgid "This option allows you to force the HLG modes for UHD"
 msgstr "Denne mulighed tillader dig at konfigurer Colorspace fra Auto til RGB"
 
-msgid "This option allows you to hide and sort menu entries. When selecting user you can change order and hide menu items via the blue button"
+#, fuzzy
+msgid "This option allows you to hide and sort menu entries. When selecting user you can change order and hide menu items via the blue button. With the user defined hidden the blue button is not shown in the menus"
 msgstr "Denne mulighed tillader dig at skjule og sortere menu indlæg. Når du vælger bruger kan du ændre rækkefølgen og gemme menugenstande via den blå knap"
 
 msgid "This option allows you to power off the display."
@@ -10117,8 +12119,23 @@ msgstr "Torsdag"
 msgid "Time"
 msgstr "Tid"
 
+#, fuzzy
+msgid "Time for Slideshow"
+msgstr "Timer oversigt"
+
+msgid "Time import should start"
+msgstr ""
+
+#
+#, fuzzy
+msgid "Time mode"
+msgstr "Tone modus"
+
 msgid "Time scale"
 msgstr "Tidsskala"
+
+msgid "Time to execute command or script"
+msgstr ""
 
 #
 msgid "Timer"
@@ -10168,6 +12185,11 @@ msgstr "Timer valg..."
 #
 msgid "Timer type"
 msgstr "Timer type"
+
+#
+#, fuzzy
+msgid "Timers"
+msgstr "Timer"
 
 #
 msgid "Timeshift"
@@ -10272,8 +12294,18 @@ msgstr "Toneburst A/B"
 msgid "Tonga"
 msgstr ""
 
+#, fuzzy
+msgid "Top and Bottom"
+msgstr "Top og bund"
+
 msgid "Top and bottom"
 msgstr "Top og bund"
+
+msgid "TopfieldVFD"
+msgstr ""
+
+msgid "Total"
+msgstr ""
 
 #, python-format
 msgid "Total clients streaming: %d (%s)"
@@ -10389,6 +12421,10 @@ msgstr "Tuner status"
 msgid "Tuner type"
 msgstr "Tuner type"
 
+#, fuzzy
+msgid "Tuners & scanning"
+msgstr "fejl under skan"
+
 msgid "Tunisia"
 msgstr ""
 
@@ -10443,6 +12479,17 @@ msgstr "Søge type"
 msgid "Type of scan"
 msgstr "Søge type"
 
+#
+#, fuzzy
+msgid "Type:"
+msgstr "Type"
+
+msgid "Typematic delay"
+msgstr ""
+
+msgid "Typematic rate"
+msgstr ""
+
 msgid "UNKNOWN"
 msgstr ""
 
@@ -10477,6 +12524,9 @@ msgid "Ukrainian"
 msgstr "Ukrainsk"
 
 msgid "Unable to backup settings as the AutoBackup plugin is missing, do you want to continue?"
+msgstr ""
+
+msgid "Unable to create the required directories on the media (e.g. USB stick or Harddisk) - Please verify media and try again!"
 msgstr ""
 
 msgid ""
@@ -10532,6 +12582,20 @@ msgstr "Forsinkelse efter sidste DiSEqC kommando"
 msgid "Uninstall"
 msgstr "Afinstaller"
 
+#, python-format
+msgid "Uninstall '%s' package and disable '%s'"
+msgstr ""
+
+#
+#, fuzzy
+msgid "UnionTunerType"
+msgstr "Tuner type"
+
+#
+#, fuzzy
+msgid "UnionTunerType config"
+msgstr "Tuner opsætning"
+
 msgid "United Arab Emirates"
 msgstr ""
 
@@ -10554,11 +12618,30 @@ msgstr "Universal LNB"
 msgid "Unknown"
 msgstr "Ukendt"
 
+#, fuzzy, python-format
+msgid "Unknown group: %d"
+msgstr "ukendt fejl"
+
+#
+#, fuzzy, python-format
+msgid "Unknown user: %d"
+msgstr "ukendt kanal"
+
+msgid "Unknown, multiboot situation!"
+msgstr ""
+
 msgid "Unmark service as dedicated 3D service"
 msgstr "Fjern dedikeret 3D service markering for denne service"
 
 msgid "Unmount"
 msgstr "Afmonter"
+
+#, python-format
+msgid "Unpack to %s"
+msgstr ""
+
+msgid "Unpack to current folder"
+msgstr ""
 
 #
 msgid "Unsupported"
@@ -10572,6 +12655,9 @@ msgstr "Henter"
 #
 msgid "Update"
 msgstr "Opdater"
+
+msgid "Update Date/Time"
+msgstr ""
 
 msgid "Update and ask to reboot"
 msgstr "Opdater og spørg om genstart"
@@ -10603,6 +12689,11 @@ msgid "Update has completed."
 msgstr "Opdatering er færdiggjort."
 
 #
+#, fuzzy
+msgid "Update interval (in seconds)"
+msgstr "Slideshow interval (sek.)"
+
+#
 msgid "Updatefeed not available."
 msgstr "Opdateringsservice er ikke tilgengælig."
 
@@ -10616,6 +12707,11 @@ msgstr "Opdaterer"
 
 msgid "Upper case"
 msgstr ""
+
+#
+#, fuzzy
+msgid "Uppercase letters only"
+msgstr "Opdater kun kanallisten"
 
 msgid "Uruguay"
 msgstr ""
@@ -10727,6 +12823,11 @@ msgstr "Brug disse indstillinger?"
 msgid "Use this video enhancement settings?"
 msgstr "Anvend denne opsætning af videoforbedring?"
 
+#
+#, fuzzy
+msgid "Use transponder time"
+msgstr "vis transponer info"
+
 msgid "Use trash can in movielist"
 msgstr "Brug papirkurv i filmliste"
 
@@ -10758,6 +12859,14 @@ msgstr "Brugerdefineret transponder"
 msgid "User interface"
 msgstr "Bruger interface"
 
+#
+#, fuzzy
+msgid "Username"
+msgstr "Omdøb"
+
+msgid "Username (httpuser)"
+msgstr ""
+
 #, python-format
 msgid "Using LNB %d"
 msgstr "Bruger LNB %d"
@@ -10779,6 +12888,44 @@ msgstr ""
 msgid "VCR scart"
 msgstr "Scart / Video"
 
+#
+#, fuzzy
+msgid "VFD brightness"
+msgstr "Lysstyrke"
+
+msgid "VFD configuration for Fortis FS9000/9200"
+msgstr ""
+
+msgid "VFD configuration for Fortis HS8200"
+msgstr ""
+
+#
+#, fuzzy
+msgid "VFD display"
+msgstr "DVD afspiller"
+
+#, fuzzy
+msgid "VFD display configuration"
+msgstr "Konfigurer filmliste"
+
+msgid "VFD display configuration for Fortis HS742X"
+msgstr ""
+
+msgid "VFD display configuration for Fortis HS9510"
+msgstr ""
+
+msgid "VFD-Icons for Fortis FS9000/9200"
+msgstr ""
+
+msgid "VFD-Icons for Fortis HS7420 & HS7429"
+msgstr ""
+
+msgid "VFD-Icons for Fortis HS8200"
+msgstr ""
+
+msgid "VFD-Icons for Fortis HS9510"
+msgstr ""
+
 #, fuzzy
 msgid "VLAN connection"
 msgstr "LAN Forbindelse"
@@ -10793,9 +12940,6 @@ msgstr "VOB fil"
 
 msgid "VOB file"
 msgstr "VOB fil"
-
-msgid "VU+"
-msgstr "VU+"
 
 #, fuzzy
 msgid "Vanuatu"
@@ -10936,6 +13080,13 @@ msgstr "Vis oplistning af tilgængelige software udvidelser"
 msgid "View list of available system extensions"
 msgstr "Vis oplistning af tilgængelige systemudvidelser"
 
+msgid "View or edit file (if size < 1MB)"
+msgstr ""
+
+#, python-format
+msgid "View or edit this %s script"
+msgstr ""
+
 #
 msgid "View photos..."
 msgstr "Vis fotos..."
@@ -10985,6 +13136,9 @@ msgstr "Lydstyrke op"
 #
 msgid "W"
 msgstr "V"
+
+msgid "WARNING!"
+msgstr ""
 
 #
 msgid "WEP"
@@ -11081,6 +13235,11 @@ msgstr "Onsdag"
 msgid "Weekday"
 msgstr "Ugedag"
 
+#
+#, fuzzy
+msgid "Weekly"
+msgstr "ugentlig"
+
 msgid "Weighted position"
 msgstr "Vægtet position"
 
@@ -11135,6 +13294,17 @@ msgstr "Vest grænse opsætning"
 
 msgid "Western Sahara"
 msgstr ""
+
+msgid "What date of month ?"
+msgstr ""
+
+msgid "What day of week ?"
+msgstr ""
+
+#
+#, fuzzy
+msgid "What do you want to play?\n"
+msgstr "Vil du afspille DVD'en i drevet?"
 
 msgid "What type of service scan do you want?"
 msgstr ""
@@ -11427,6 +13597,9 @@ msgstr "JA"
 msgid "YPbPr"
 msgstr "Komponent"
 
+msgid "YUV"
+msgstr ""
+
 #
 msgid "Year"
 msgstr "År"
@@ -11546,6 +13719,14 @@ msgstr ""
 msgid "You can set sorting type for items in movielist."
 msgstr "Indlæs længden af film i filmlisten"
 
+#, python-format
+msgid "You can't usefully run '%s' on '%s'."
+msgstr ""
+
+#, python-format
+msgid "You can't usefully run '%s' on a directory."
+msgstr ""
+
 #
 msgid "You cannot delete this!"
 msgstr "Dette kan ikke slettes!"
@@ -11599,6 +13780,9 @@ msgstr ""
 "din frontprocessor bliver opdateret\n"
 "Vent venligst til din modtager genstarter\n"
 "Dette kan tage nogle minutter"
+
+msgid "Your hardware can detect CI mode itself or works only in legacy mode."
+msgstr ""
 
 #
 msgid ""
@@ -11733,21 +13917,8 @@ msgstr ""
 msgid "Zapped to timer service %s!"
 msgstr "Gå til første kanal"
 
-#, fuzzy
-msgid "Zgemma H.S/H.2S/H.2H/H5/H7"
-msgstr "Zgemma H.S/H.2S/H.2H/H5"
-
-msgid "Zgemma H9/i55 Plus"
-msgstr ""
-
-msgid "Zgemma Star S/2S/H1/H2"
-msgstr "Zgemma Star S/2S/H1/H2"
-
 msgid "Zimbabwe"
 msgstr ""
-
-msgid "[REC]"
-msgstr "[REC]"
 
 msgid "[a]"
 msgstr ""
@@ -11887,6 +14058,9 @@ msgstr "kunst/kultur (uden musik)"
 msgid "arts/culture magazine"
 msgstr "kunst/kultur magasin"
 
+msgid "atevio7500"
+msgstr ""
+
 msgid "athletics"
 msgstr "atletik"
 
@@ -11932,6 +14106,9 @@ msgstr "sort & hvid"
 msgid "blacklist"
 msgstr "sortlist"
 
+msgid "blank"
+msgstr ""
+
 #
 msgid "blue"
 msgstr "blå"
@@ -11946,6 +14123,16 @@ msgstr "udsendelse/presse"
 msgid "by date"
 msgstr "efter dato"
 
+#
+#, fuzzy
+msgid "cable"
+msgstr "Kabel"
+
+#
+#, fuzzy
+msgid "cancel"
+msgstr "Fortryd"
+
 msgid "cartoon/puppets"
 msgstr "tegnefilm/dukker"
 
@@ -11957,6 +14144,22 @@ msgstr "centreret"
 
 msgid "centered, wrapped"
 msgstr "centreret, pakket"
+
+#, fuzzy
+msgid "change sides"
+msgstr "Ændre timer"
+
+#, fuzzy
+msgid "channel name"
+msgstr "Kanal Info"
+
+#, fuzzy
+msgid "channel number"
+msgstr "Kanalnummer og picon"
+
+#, fuzzy
+msgid "channel number and name"
+msgstr "Kanalnummer og servicenavn"
 
 #
 msgid "chapters"
@@ -11994,11 +14197,23 @@ msgstr "bekræftet"
 msgid "connected"
 msgstr "tilsluttet"
 
+#
+#, fuzzy
+msgid "continuous"
+msgstr "Fortsæt"
+
 msgid "controlled by HDMI"
 msgstr ""
 
 msgid "cooking"
 msgstr "madlavning"
+
+#, fuzzy
+msgid "copy file"
+msgstr "%d fil"
+
+msgid "copy folder"
+msgstr ""
 
 #
 msgid "copy to bouquets"
@@ -12008,13 +14223,29 @@ msgstr "kopier til favoritlister"
 msgid "create directory"
 msgstr "opret mappe"
 
+msgid "create symlink ..."
+msgstr ""
+
+msgid "cuberevo"
+msgstr ""
+
 #
 msgid "daily"
 msgstr "daglig"
 
 #
+#, fuzzy
+msgid "date"
+msgstr "Opdater"
+
+#
 msgid "day"
 msgstr "dag"
+
+#
+#, fuzzy
+msgid "day and date"
+msgstr "efter dato"
 
 #
 msgid "default"
@@ -12134,10 +14365,6 @@ msgstr "entertainment (6-14 year old)"
 msgid "epg cache backup"
 msgstr "epg cache backup"
 
-#
-msgid "equal to"
-msgstr "svarende til"
-
 msgid "equestrian"
 msgstr "dressur"
 
@@ -12147,23 +14374,12 @@ msgstr "fejl ved start af skanning"
 msgid "error while scanning"
 msgstr "fejl under skan"
 
-msgid "et4000"
-msgstr "et4000"
-
-msgid "et5000/6000"
-msgstr "et5000/6000"
-
-msgid "et8000/et10000"
-msgstr "et8000/et10000"
-
-msgid "et9000/et9100"
-msgstr "et9000/et9100"
-
-msgid "et9200/9500/6500"
-msgstr "et9200/9500/6500"
-
 msgid "execute cuts (requires MovieCut plugin)"
 msgstr "Udfør klip (kræver MovieCut plugin)"
+
+#, fuzzy
+msgid "exit "
+msgstr "Forlad EPG"
 
 #
 msgid "exit DVD player or return to file browser"
@@ -12179,9 +14395,6 @@ msgstr "luk netværksadapter opsætningsmenu"
 
 msgid "experimental film/video"
 msgstr "eksperimentel film/video "
-
-msgid "extra wide"
-msgstr ""
 
 msgid "failed"
 msgstr "fejlet"
@@ -12225,6 +14438,9 @@ msgstr "folk/traditionel musik"
 msgid "football/soccer"
 msgstr "amr. fodbold/fodbold"
 
+msgid "for DATA LOSS OR DAMAGE !!!"
+msgstr ""
+
 #
 #, fuzzy
 msgid "force disabled"
@@ -12248,6 +14464,16 @@ msgstr "ledig"
 
 msgid "from"
 msgstr "fra"
+
+#, fuzzy
+msgid "from dir"
+msgstr "fra"
+
+msgid "fs9000VFD display"
+msgstr ""
+
+msgid "fs9000VFD-Icons"
+msgstr ""
 
 msgid "further education"
 msgstr "yderligere uddannelse"
@@ -12277,6 +14503,9 @@ msgstr "grøn"
 msgid "handicraft"
 msgstr "gør-det-selv"
 
+msgid "has been CHANGED! Do you want to save it?"
+msgstr ""
+
 msgid "height"
 msgstr "højde"
 
@@ -12284,9 +14513,48 @@ msgstr "højde"
 msgid "help..."
 msgstr "hjælp..."
 
+msgid "hide"
+msgstr ""
+
+msgid "hl101"
+msgstr ""
+
 #
 msgid "horizontal"
 msgstr "horisontal"
+
+msgid "hs7110"
+msgstr ""
+
+msgid "hs7110VFD control"
+msgstr ""
+
+msgid "hs7110VFD display"
+msgstr ""
+
+msgid "hs742xVFD display"
+msgstr ""
+
+msgid "hs742xVFD-Icons"
+msgstr ""
+
+msgid "hs7810aVFD display"
+msgstr ""
+
+msgid "hs7810aVFD-Icons"
+msgstr ""
+
+msgid "hs8200VFD display"
+msgstr ""
+
+msgid "hs8200VFD-Icons"
+msgstr ""
+
+msgid "hs9510VFD display"
+msgstr ""
+
+msgid "hs9510VFD-Icons"
+msgstr ""
 
 #
 #, fuzzy
@@ -12317,6 +14585,15 @@ msgstr "initier moduler"
 msgid "insert mark here"
 msgstr "indsæt mærke her"
 
+msgid "install/unpack ipk Files"
+msgstr ""
+
+#, python-format
+msgid ""
+"installed keymap \"%s\"\n"
+"activate now keymap \"%s\"?"
+msgstr ""
+
 msgid "invalid type"
 msgstr "forkert type"
 
@@ -12340,6 +14617,9 @@ msgstr "sprog"
 #
 msgid "leave movie player..."
 msgstr "forlad film afspiller..."
+
+msgid "leddisplay.png"
+msgstr ""
 
 #
 msgid "left"
@@ -12374,6 +14654,10 @@ msgstr "normal listestil"
 msgid "list style single line"
 msgstr "enkelt linie listestil"
 
+#, fuzzy
+msgid "listens to hotplug events"
+msgstr "Juster begivenheder."
+
 msgid "literature"
 msgstr "litteratur"
 
@@ -12387,12 +14671,11 @@ msgstr "låst "
 msgid "long"
 msgstr ""
 
-#
-msgid "loopthrough to"
-msgstr "gennemløb til"
-
 msgid "magazines/reports/documentary"
 msgstr "magasiner/reporter/dokumentar"
+
+msgid "manage local Files"
+msgstr ""
 
 #
 msgid "manual"
@@ -12435,6 +14718,16 @@ msgid "move down to next entry"
 msgstr "flyrt ned til næste indtastning"
 
 #
+#, fuzzy
+msgid "move file"
+msgstr "Fjerne titel"
+
+#
+#, fuzzy
+msgid "move folder"
+msgstr "[Flytte type]"
+
+#
 msgid "move up to first entry"
 msgstr "flyt op til første indtastning"
 
@@ -12457,6 +14750,14 @@ msgstr "musik/ballet/dans"
 
 msgid "musical/opera"
 msgstr "musical/opera"
+
+#
+#, fuzzy
+msgid "n/A"
+msgstr "Ikke tilgængelig"
+
+msgid "n/a"
+msgstr ""
 
 msgid "nature/animals/environment"
 msgstr "natur/dyr/omverdenen"
@@ -12531,8 +14832,16 @@ msgid "not_tested"
 msgstr "Ikke_testet"
 
 #
+#, fuzzy
+msgid "nothing"
+msgstr "Gør intet"
+
+#
 msgid "nothing connected"
 msgstr "Intet tilsluttet"
+
+msgid "octagon1008"
+msgstr ""
 
 #
 msgid "of a DUAL layer medium used."
@@ -12570,6 +14879,9 @@ msgstr "kun fra dyb standby"
 msgid "only from standby"
 msgstr "kun fra standby"
 
+msgid "open Info..."
+msgstr ""
+
 #
 msgid "open nameserver configuration"
 msgstr "åbn navneserver opsætning"
@@ -12581,6 +14893,14 @@ msgid "original language"
 msgstr "original sprog"
 
 #
+#, fuzzy
+msgid "oscam webif disabled"
+msgstr "slukket"
+
+msgid "partial"
+msgstr ""
+
+#
 msgid "pass"
 msgstr "OK"
 
@@ -12590,11 +14910,20 @@ msgstr ""
 msgid "performing arts"
 msgstr "udøvende kunst"
 
+msgid "play Files"
+msgstr ""
+
 msgid "play as picture in picture"
 msgstr "afspil som Billede i Billede"
 
+msgid "play file when add in empty playlist"
+msgstr ""
+
 msgid "play in mainwindow"
 msgstr "afspil i hovedvindue"
+
+msgid "play/show Files"
+msgstr ""
 
 #
 msgid "please press OK when ready"
@@ -12612,6 +14941,9 @@ msgstr "før-skole børneprogram"
 
 msgid "purge deleted userbouquets"
 msgstr "Fjern slettede brugerbouquets"
+
+msgid "python"
+msgstr ""
 
 msgid "receiver software because updates are available."
 msgstr "receiver software fordi opdateringer er tilgægelige"
@@ -12731,6 +15063,9 @@ msgstr "romantik"
 msgid "running"
 msgstr "Advarsel"
 
+msgid "save"
+msgstr ""
+
 #
 msgid "save last directory on exit"
 msgstr "gem seneste mappe ved afbrydelse"
@@ -12746,9 +15081,11 @@ msgstr "søge status"
 msgid "science fiction/fantasy/horror"
 msgstr "science fiction/fantasy/gys"
 
-#
-msgid "second cable of motorized LNB"
-msgstr "sekundært kabel fra motor LNB"
+msgid "script 'sterr':"
+msgstr ""
+
+msgid "script 'stout':"
+msgstr ""
 
 #
 msgid "seconds"
@@ -12759,8 +15096,17 @@ msgid "select"
 msgstr "vælg"
 
 #
+#, fuzzy
+msgid "select "
+msgstr "vælg"
+
+#
 msgid "select CAId's"
 msgstr "vælg CAId's"
+
+#, fuzzy
+msgid "select Info..."
+msgstr "Timer valg..."
 
 #
 msgid "select menu entry"
@@ -12781,6 +15127,13 @@ msgstr "Alle services udbyder"
 
 msgid "set as startup service"
 msgstr "Sæt som startkanal"
+
+#, fuzzy
+msgid "set default"
+msgstr "Sæt standard"
+
+msgid "shell"
+msgstr ""
 
 #
 msgid "show DVD main menu"
@@ -12833,6 +15186,14 @@ msgid "skip forward"
 msgstr "drop fremad"
 
 #, python-format
+msgid "slot%s - %s"
+msgstr ""
+
+#, python-format
+msgid "slot%s - %s (current image)"
+msgstr ""
+
+#, python-format
 msgid "slot%s - %s (current image) with, backup"
 msgstr ""
 
@@ -12875,6 +15236,9 @@ msgstr "social/spirituel science"
 
 msgid "sorting of playlists"
 msgstr "sortering af spilleliste"
+
+msgid "spark"
+msgstr ""
 
 msgid "special events"
 msgstr "special begivenheder"
@@ -12953,6 +15317,14 @@ msgstr "skabelon fil"
 msgid "tennis/squash"
 msgstr "tennis/squash"
 
+#
+#, fuzzy
+msgid "terrestrial"
+msgstr "DVB T"
+
+msgid "tf7700"
+msgstr ""
+
 msgid "this bouquet is protected by a parental control pin"
 msgstr "denne bouquet er beskyttet af forældrekontrol pin"
 
@@ -12963,6 +15335,24 @@ msgstr "denne optagelse"
 #
 msgid "this service is protected by a parental control pin"
 msgstr "denne service er beskyttet af forældre kontrol "
+
+#
+#, fuzzy
+msgid "time"
+msgstr "Stop tid"
+
+msgid "time (with seconds)"
+msgstr ""
+
+msgid "time (without seconds)"
+msgstr ""
+
+#, fuzzy
+msgid "time and date"
+msgstr "Ja og gem"
+
+msgid "to dir"
+msgstr ""
 
 #
 msgid "toggle time, chapter, audio, subtitle info"
@@ -12980,6 +15370,9 @@ msgstr "rigtig"
 #, fuzzy
 msgid "type"
 msgstr "DVB type"
+
+msgid "ufs912"
+msgstr ""
 
 msgid "unavailable"
 msgstr "utilgængelig"
@@ -13002,6 +15395,21 @@ msgstr "ukendt fejl"
 msgid "unknown service"
 msgstr "ukendt kanal"
 
+msgid "unpack Rar Files"
+msgstr ""
+
+msgid "unpack archives"
+msgstr ""
+
+msgid "unpack gzip Files"
+msgstr ""
+
+msgid "unpack tar/compressed tar Files"
+msgstr ""
+
+msgid "unpack zip Files"
+msgstr ""
+
 msgid "unpublished"
 msgstr "ikke udgivet"
 
@@ -13012,8 +15420,17 @@ msgstr "ikke muligt at teste"
 msgid "until standby/restart"
 msgstr "indtil standby/genstart"
 
+#, fuzzy
+msgid "update bookmarks"
+msgstr "Automatisk Skan"
+
 #
 msgid "user defined"
+msgstr "brugerdefineret"
+
+#
+#, fuzzy
+msgid "user defined hidden"
 msgstr "brugerdefineret"
 
 msgid "variety show"
@@ -13022,6 +15439,9 @@ msgstr "variety show"
 #
 msgid "vertical"
 msgstr "vertikal"
+
+msgid "vfddisplay.png"
+msgstr ""
 
 #
 msgid "wait for ci..."
@@ -13054,9 +15474,6 @@ msgstr "når BiBzap er aktiveret zap en kanal op"
 msgid "white"
 msgstr "hvid"
 
-msgid "wide"
-msgstr ""
-
 msgid "width"
 msgstr "bredde"
 
@@ -13084,12 +15501,13 @@ msgstr "med tunernavn"
 msgid "with_errors"
 msgstr "med_fejl"
 
+#, fuzzy
+msgid "without"
+msgstr "med tekst"
+
 #
 msgid "working"
 msgstr "fungerer"
-
-msgid "xp1000"
-msgstr "xp1000"
 
 #
 msgid "yellow"
@@ -13103,6 +15521,9 @@ msgstr "ja"
 msgid "yes (keep feeds)"
 msgstr "ja (behold feeds)"
 
+msgid "yuv"
+msgstr ""
+
 #
 msgid "zap"
 msgstr "zap"
@@ -13113,6 +15534,3 @@ msgstr "zap og skift"
 #
 msgid "zapped"
 msgstr "zapped"
-
-msgid "®"
-msgstr "®"
