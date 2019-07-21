@@ -30,9 +30,6 @@ QUIT_IMAGE_RESTORE = 43
 class Standby(Screen):
 	def Power(self):
 		print "[Standby] leave standby"
-#+++>
-		open("/proc/stb/hdmi/output", "w").write("on")
-#+++<
 		self.close(True)
 
 	def setMute(self):
@@ -104,9 +101,6 @@ class Standby(Screen):
 			self.avswitch.setInput("SCART")
 		else:
 			self.avswitch.setInput("AUX")
-#+++>
-		open("/proc/stb/hdmi/output", "w").write("off")
-#+++<
 
 		gotoShutdownTime = int(config.usage.standby_to_shutdown_timer.value)
 		if gotoShutdownTime:
@@ -211,7 +205,7 @@ from Components.Task import job_manager
 class QuitMainloopScreen(Screen):
 	def __init__(self, session, retvalue=QUIT_SHUTDOWN):
 		self.skin = """<screen name="QuitMainloopScreen" position="fill" flags="wfNoBorder">
-				<ePixmap pixmap="skin_default/icons/input_info.png" position="c-27,c-60" size="53,53" alphatest="on" />
+				<ePixmap pixmap="icons/input_info.png" position="c-27,c-60" size="53,53" alphatest="on" />
 				<widget name="text" position="center,c+5" size="720,100" font="Regular;22" halign="center" />
 			</screen>"""
 		Screen.__init__(self, session)

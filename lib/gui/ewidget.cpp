@@ -106,9 +106,7 @@ void eWidget::invalidate(const gRegion &region)
 	res.moveBy(abspos);
 //	eDebug("[eWidget] region to invalidate:");
 //	dumpRegion(res);
-	if (root && root->m_desktop){
-		root->m_desktop->invalidate(res, this, target_layer);
-	}
+	root->m_desktop->invalidate(res, this, target_layer);
 }
 
 void eWidget::show()
@@ -142,13 +140,11 @@ void eWidget::show()
 		abspos += root->position();
 	}
 
-	if (root && root->m_desktop){
-		root->m_desktop->recalcClipRegions(root);
+	root->m_desktop->recalcClipRegions(root);
 
-		gRegion abs = m_visible_with_childs;
-		abs.moveBy(abspos);
-		root->m_desktop->invalidate(abs, this, target_layer);
-	}
+	gRegion abs = m_visible_with_childs;
+	abs.moveBy(abspos);
+	root->m_desktop->invalidate(abs, this, target_layer);
 }
 
 void eWidget::hide()
@@ -178,13 +174,11 @@ void eWidget::hide()
 	}
 	ASSERT(root->m_desktop);
 
-        if (root && root->m_desktop){
-		gRegion abs = m_visible_with_childs;
-		abs.moveBy(abspos);
+	gRegion abs = m_visible_with_childs;
+	abs.moveBy(abspos);
 
-		root->m_desktop->recalcClipRegions(root);
-		root->m_desktop->invalidate(abs);
-	}
+	root->m_desktop->recalcClipRegions(root);
+	root->m_desktop->invalidate(abs);
 }
 
 void eWidget::raise()
