@@ -11,7 +11,7 @@
 class iFilePushScatterGather
 {
 public:
-	virtual void getNextSourceSpan(off_t current_offset, size_t bytes_read, off_t &start, size_t &size, int blocksize)=0;
+	virtual void getNextSourceSpan(off_t current_offset, size_t bytes_read, off_t &start, size_t &size, int blocksize, int &sof)=0;
 	virtual ~iFilePushScatterGather() {}
 #if defined(__sh__)
 	//Changes in this file are cause e2 doesnt tell the player to play reverse
@@ -27,6 +27,8 @@ public:
 	~eFilePushThread();
 	void thread();
 	void stop();
+// our own thread to prioritise and split the files
+	void start(int sourcefd, int destfd, const char *filename);
 	void start(ePtr<iTsSource> &source, int destfd);
 
 	void pause();
@@ -50,6 +52,7 @@ private:
 	int m_fd_dest;
 	int m_send_pvr_commit;
 	int m_stream_mode;
+	int m_sof;
 	int m_blocksize;
 	size_t m_buffersize;
 	unsigned char* m_buffer;

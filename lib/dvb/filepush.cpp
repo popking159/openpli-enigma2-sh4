@@ -66,14 +66,13 @@ void eFilePushThread::thread()
 	size_t bytes_read = 0;
 	off_t current_span_offset = 0;
 	size_t current_span_remaining = 0;
-#if defined(__sh__)
+	m_sof = 0;
+
 // opens video device for the reverse playback workaround
 // Changes in this file are cause e2 doesnt tell the player to play reverse
 	int fd_video = open("/dev/dvb/adapter0/video0", O_RDONLY);
 // Fix to ensure that event evtEOF is called at end of playbackl part 1/3
 	bool already_empty = false;
-#endif
-
 	while (!m_stop)
 	{
 		if (m_sg && !current_span_remaining)
@@ -90,7 +89,7 @@ void eFilePushThread::thread()
 				int rc = ioctl(fd_video, VIDEO_DISCONTINUITY, (void*)param);
 			}
 #endif
-			m_sg->getNextSourceSpan(m_current_position, bytes_read, current_span_offset, current_span_remaining, m_blocksize);
+			m_sg->getNextSourceSpan(m_current_position, bytes_read, current_span_offset, current_span_remaining, m_blocksize, m_sof);
 			ASSERT(!(current_span_remaining % m_blocksize));
 			m_current_position = current_span_offset;
 			bytes_read = 0;
@@ -105,7 +104,7 @@ void eFilePushThread::thread()
 			/* align to blocksize */
 		maxread -= maxread % m_blocksize;
 
-		if (maxread)
+		if (maxread && !m_sof)
 		{
 #ifdef SHOW_WRITE_TIME
 			struct timeval starttime;
@@ -144,7 +143,7 @@ void eFilePushThread::thread()
 		if (d)
 			buf_end -= d;
 
-		if (buf_end == 0)
+		if (buf_end == 0 || m_sof == 1)
 		{
 				/* on EOF, try COMMITting once. */
 			if (m_send_pvr_commit)
@@ -163,7 +162,7 @@ void eFilePushThread::thread()
 						}
 						else
 						{
-							already_empty = true;
+							already_empty=true;
 							continue;
 						}
 #else
@@ -188,7 +187,10 @@ void eFilePushThread::thread()
 				   over and over until somebody responds.
 
 				   in stream_mode, think of evtEOF as "buffer underrun occurred". */
-			sendEvent(evtEOF);
+			if (m_sof == 0)
+				sendEvent(evtEOF);
+			else
+				sendEvent(evtUser); // start of file event
 
 			if (m_stream_mode)
 			{
@@ -210,6 +212,10 @@ void eFilePushThread::thread()
 			filterRecordData(m_buffer, buf_end);
 			while ((buf_start != buf_end) && !m_stop)
 			{
+				struct pollfd pfd;
+                                pfd.fd = m_fd_dest;
+                                pfd.events = POLLOUT;
+                                if (0 == poll(&pfd, 1, 250)) continue;
 				int w = write(m_fd_dest, m_buffer + buf_start, buf_end - buf_start);
 
 				if (w <= 0)
@@ -235,9 +241,10 @@ void eFilePushThread::thread()
 			already_empty = false;
 #endif
 			m_current_position += buf_end;
-			bytes_read += buf_end;
-			if (m_sg)
+			if (m_sg) {
 				current_span_remaining -= buf_end;
+				bytes_read += buf_end;
+			}
 		}
 	}
 #if defined(__sh__) // closes video device for the reverse playback workaround
