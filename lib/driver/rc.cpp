@@ -162,8 +162,6 @@ bool eRCInputEventDriver::hasCap(unsigned char *caps, int bit)
 
 bool eRCInputEventDriver::isKeyboard()
 {
-	if (m_remote_control)
-		return false;
 	if (getDeviceName().find("RC") != std::string::npos)
 		return false;
 
@@ -173,8 +171,6 @@ bool eRCInputEventDriver::isKeyboard()
 
 bool eRCInputEventDriver::isPointerDevice()
 {
-	if (m_remote_control)
-		return false;
 	return hasCap(evCaps, EV_REL) || hasCap(evCaps, EV_ABS);
 }
 
