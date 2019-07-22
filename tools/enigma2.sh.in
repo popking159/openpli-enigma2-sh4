@@ -39,12 +39,7 @@ else
 	DEBUG_LVL=$ENIGMA_DEBUG_LVL
 fi
 
-#check for sundtek tuner helper lib
-if [ -e /opt/lib/libmediaclient.so ]; then
-	LIBS="/opt/lib/libmediaclient.so @libdir@/libopen.so.0.0.0"
-else
-	LIBS="@libdir@/libopen.so.0.0.0"
-fi
+LIBS=@libdir@/libopen.so.0.0.0
 
 # enigma main loop
 while : ; do

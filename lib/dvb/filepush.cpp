@@ -68,11 +68,14 @@ void eFilePushThread::thread()
 	size_t current_span_remaining = 0;
 	m_sof = 0;
 
+#if defined(__sh__)
 // opens video device for the reverse playback workaround
 // Changes in this file are cause e2 doesnt tell the player to play reverse
 	int fd_video = open("/dev/dvb/adapter0/video0", O_RDONLY);
 // Fix to ensure that event evtEOF is called at end of playbackl part 1/3
 	bool already_empty = false;
+#endif
+
 	while (!m_stop)
 	{
 		if (m_sg && !current_span_remaining)
@@ -212,10 +215,6 @@ void eFilePushThread::thread()
 			filterRecordData(m_buffer, buf_end);
 			while ((buf_start != buf_end) && !m_stop)
 			{
-				struct pollfd pfd;
-                                pfd.fd = m_fd_dest;
-                                pfd.events = POLLOUT;
-                                if (0 == poll(&pfd, 1, 250)) continue;
 				int w = write(m_fd_dest, m_buffer + buf_start, buf_end - buf_start);
 
 				if (w <= 0)
@@ -241,10 +240,9 @@ void eFilePushThread::thread()
 			already_empty = false;
 #endif
 			m_current_position += buf_end;
-			if (m_sg) {
+			bytes_read += buf_end;
+			if (m_sg)
 				current_span_remaining -= buf_end;
-				bytes_read += buf_end;
-			}
 		}
 	}
 #if defined(__sh__) // closes video device for the reverse playback workaround

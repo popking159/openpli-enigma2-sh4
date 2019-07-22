@@ -18,9 +18,9 @@ findoptions=""
 #
 # Script only run with gsed but on some distro normal sed is already gsed so checking it.
 #
-sed --version 2> /dev/null | grep -q "GNU"
+gsed --version 2> /dev/null | grep -q "GNU"
 if [ $? -eq 0 ]; then
-	localgsed="sed"
+	localgsed="gsed"
 else
 	"$localgsed" --version | grep -q "GNU"
 	if [ $? -eq 0 ]; then
@@ -77,4 +77,5 @@ done
 rm enigma2-py.pot enigma2-xml.pot enigma2.pot
 IFS=$OLDIFS
 printf "Po files update/creation from script finished!\n"
-find -name "*.mo" -type f | xargs -L1 rm -rf
+
+

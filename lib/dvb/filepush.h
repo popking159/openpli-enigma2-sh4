@@ -27,8 +27,6 @@ public:
 	~eFilePushThread();
 	void thread();
 	void stop();
-// our own thread to prioritise and split the files
-	void start(int sourcefd, int destfd, const char *filename);
 	void start(ePtr<iTsSource> &source, int destfd);
 
 	void pause();

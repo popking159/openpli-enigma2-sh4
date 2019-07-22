@@ -164,6 +164,9 @@ bool eRCInputEventDriver::isKeyboard()
 {
 	if (m_remote_control)
 		return false;
+	if (getDeviceName().find("RC") != std::string::npos)
+		return false;
+
 	/* check whether the input device has KEY_A, in which case we assume it is a keyboard */
 	return hasCap(keyCaps, KEY_A);
 }
