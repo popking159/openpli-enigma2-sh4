@@ -36,7 +36,9 @@ eFilePushThread::eFilePushThread(int blocksize, size_t buffersize):
 eFilePushThread::~eFilePushThread()
 {
 	stop(); /* eThread is borked, always call stop() from d'tor */
-	free(m_buffer);
+	if (m_buffer) {
+		free(m_buffer);
+	}
 }
 
 static void signal_handler(int x)
@@ -158,7 +160,7 @@ void eFilePushThread::thread()
 				{
 					case 0:
 						eDebug("[eFilePushThread] wait for driver eof timeout");
-#if defined(__sh__) // Fix to ensure that event evtEOF is called at end of playbackl part 2/3
+// Fix to ensure that event evtEOF is called at end of playbackl part 2/3
 						if (already_empty)
 						{
 							break;
@@ -168,9 +170,6 @@ void eFilePushThread::thread()
 							already_empty=true;
 							continue;
 						}
-#else
-						continue;
-#endif
 					case 1:
 						eDebug("[eFilePushThread] wait for driver eof ok");
 						break;
@@ -215,6 +214,10 @@ void eFilePushThread::thread()
 			filterRecordData(m_buffer, buf_end);
 			while ((buf_start != buf_end) && !m_stop)
 			{
+				struct pollfd pfd;
+                                pfd.fd = m_fd_dest;
+                                pfd.events = POLLOUT;
+                                if (0 == poll(&pfd, 1, 250)) continue;
 				int w = write(m_fd_dest, m_buffer + buf_start, buf_end - buf_start);
 
 				if (w <= 0)
@@ -236,18 +239,17 @@ void eFilePushThread::thread()
 			}
 
 			eofcount = 0;
-#if defined(__sh__) // Fix to ensure that event evtEOF is called at end of playbackl part 3/3
-			already_empty = false;
-#endif
-			m_current_position += buf_end;
-			bytes_read += buf_end;
-			if (m_sg)
+// Fix to ensure that event evtEOF is called at end of playbackl part 3/3
+			already_empty=false;
+			m_current_position+=buf_end;
+			if (m_sg) {
 				current_span_remaining -= buf_end;
+				bytes_read += buf_end;
+			}
 		}
 	}
-#if defined(__sh__) // closes video device for the reverse playback workaround
+// closes video device for the reverse playback workaround
 	close(fd_video);
-#endif
 	sendEvent(evtStopped);
 
 	{ /* mutex lock scope */
