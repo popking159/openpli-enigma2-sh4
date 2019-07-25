@@ -5,9 +5,9 @@
 #include <linux/fb.h>
 #include <sys/mman.h>
 #include <sys/ioctl.h>
-#if defined(__sh__)
 #include <linux/stmfb.h>
-#endif
+
+
 #include <lib/base/ebase.h>
 
 static int fb_fd;
@@ -35,7 +35,6 @@ void stmfb_accel_blit(
 		int src_x, int src_y, int width, int height,
 		int dst_x, int dst_y, int dwidth, int dheight)
 {
-#if defined(__sh__)
 	STMFBIO_BLT_DATA bltData;
 	memset(&bltData, 0, sizeof(STMFBIO_BLT_DATA));
 
@@ -60,12 +59,11 @@ void stmfb_accel_blit(
 	{
 		eDebug("Error ioctl FBIO_BLIT");
 	}
-#endif
 }
 
 void stmfb_accel_fill(
 		int dst_addr, int dst_width, int dst_height, int dst_stride,
 		int x, int y, int width, int height,
 		unsigned long color)
-{
+{	
 }
