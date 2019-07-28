@@ -72,9 +72,10 @@ fbClass::fbClass(const char *fb)
 	// The first 1920x1080x4 bytes are reserved
 	// After that we can take 1280x720x4 bytes for our virtual framebuffer
 	available -= 1920*1080*4;
-	eDebug("%dk usable video mem", available/1024);
+	eDebug("[fb] %s: %dk video mem", fb, available/1024);
 	lfb=(unsigned char*)mmap(0, available, PROT_WRITE|PROT_READ, MAP_SHARED, fbFd, 1920*1080*4);
 #else
+	eDebug("[fb] %dk video mem", available/1024);
 	lfb=(unsigned char*)mmap(0, available, PROT_WRITE|PROT_READ, MAP_SHARED, fbFd, 0);
 #endif
 	if (!lfb)
@@ -268,7 +269,7 @@ void fbClass::blit()
 		bltData.dst_bottom = yResSc + bottomDiff;
 		if (ioctl(fbFd, STMFBIO_BLT, &bltData ) < 0)
 		{
-			perror("STMFBIO_BLT");
+			eDebug("[fb] STMFBIO_BLT %m");
 		}
 		bltData.dst_top    = 0 + topDiff;
 		bltData.dst_left   = xResSc/2 + leftDiff/2;
@@ -276,7 +277,7 @@ void fbClass::blit()
 		bltData.dst_bottom = yResSc + bottomDiff;
 		if (ioctl(fbFd, STMFBIO_BLT, &bltData ) < 0)
 		{
-			perror("STMFBIO_BLT");
+			eDebug("[fb] STMFBIO_BLT %m");
 		}
 	}
 	else if (strncmp(buf,"tab",3)==0)
@@ -287,7 +288,7 @@ void fbClass::blit()
 		bltData.dst_bottom = yResSc/2 + bottomDiff/2;
 		if (ioctl(fbFd, STMFBIO_BLT, &bltData ) < 0)
 		{
-			perror("STMFBIO_BLT");
+			eDebug("[fb] STMFBIO_BLT %m");
 		}
 		bltData.dst_top    = yResSc/2 + topDiff/2;
 		bltData.dst_left   = 0 + leftDiff;
@@ -295,7 +296,7 @@ void fbClass::blit()
 		bltData.dst_bottom = yResSc + bottomDiff/2;
 		if (ioctl(fbFd, STMFBIO_BLT, &bltData ) < 0)
 		{
-			perror("STMFBIO_BLT");
+			eDebug("[fb] STMFBIO_BLT %m");
 		}
 	}
 	else
@@ -306,14 +307,14 @@ void fbClass::blit()
 		bltData.dst_bottom = yResSc + bottomDiff;
 		if (ioctl(fbFd, STMFBIO_BLT, &bltData ) < 0)
 		{
-			perror("STMFBIO_BLT");
+			eDebug("[fb] STMFBIO_BLT %m");
 		}
 	
 	}
 
 	if (ioctl(fbFd, STMFBIO_SYNC_BLITTER) < 0)
 	{
-		perror("STMFBIO_SYNC_BLITTER");
+		eDebug("[fb] STMFBIO_SYNC_BLITTER %m");
 	}
 #else
 	if (m_manual_blit == 1) {
@@ -364,21 +365,18 @@ int fbClass::lock()
 #if defined(__sh__)
 	outcfg.outputid = STMFBIO_OUTPUTID_MAIN;
 	if (ioctl( fbFd, STMFBIO_GET_OUTPUT_CONFIG, &outcfg ) < 0)
-		perror("STMFBIO_GET_OUTPUT_CONFIG\n");
+		eDebug("[fb] STMFBIO_GET_OUTPUT_CONFIG %m");
 
 	outinfo.outputid = STMFBIO_OUTPUTID_MAIN;
 	if (ioctl( fbFd, STMFBIO_GET_OUTPUTINFO, &outinfo ) < 0)
-		perror("STMFBIO_GET_OUTPUTINFO\n");
-
-	//if (ioctl( fbFd, STMFBIO_GET_VAR_SCREENINFO_EX, &infoex ) < 0)
-	//	printf("ERROR\n");
+		eDebug("[fb] STMFBIO_GET_OUTPUTINFO %m");
 
 	planemode.layerid = 0;
 	if (ioctl( fbFd, STMFBIO_GET_PLANEMODE, &planemode ) < 0)
-		perror("STMFBIO_GET_PLANEMODE\n");
+		eDebug("[fb] STMFBIO_GET_PLANEMODE %m");
 
 	if (ioctl( fbFd, STMFBIO_GET_VAR_SCREENINFO_EX, &infoex ) < 0)
-		perror("STMFBIO_GET_VAR_SCREENINFO_EX\n");
+		eDebug("[fb] STMFBIO_GET_VAR_SCREENINFO_EX %m");
 #endif
 	return fbFd;
 }
@@ -392,26 +390,24 @@ void fbClass::unlock()
 		enableManualBlit();
 #endif
 	locked=0;
-
 #if defined(__sh__)
 	if (ioctl( fbFd, STMFBIO_SET_VAR_SCREENINFO_EX, &infoex ) < 0)
-		perror("STMFBIO_SET_VAR_SCREENINFO_EX\n");
+		eDebug("[fb] STMFBIO_SET_VAR_SCREENINFO_EX %m");
 
 	if (ioctl( fbFd, STMFBIO_SET_PLANEMODE, &planemode ) < 0)
-		perror("STMFBIO_SET_PLANEMODE\n");
+		eDebug("[fb] STMFBIO_SET_PLANEMODE %m");
 
 	if (ioctl( fbFd, STMFBIO_SET_VAR_SCREENINFO_EX, &infoex ) < 0)
-		perror("STMFBIO_SET_VAR_SCREENINFO_EX\n");
+		eDebug("[fb] STMFBIO_SET_VAR_SCREENINFO_EX %m");
 
 	if (ioctl( fbFd, STMFBIO_SET_OUTPUTINFO, &outinfo ) < 0)
-		perror("STMFBIO_SET_OUTPUTINFO\n");
+		eDebug("[fb] STMFBIO_SET_OUTPUTINFO %m");
 
 	if (ioctl( fbFd, STMFBIO_SET_OUTPUT_CONFIG, &outcfg ) < 0)
-		perror("STMFBIO_SET_OUTPUT_CONFIG\n");
+		eDebug("[fb] STMFBIO_SET_OUTPUT_CONFIG %m");
 
 	memset(lfb, 0, stride*yRes);
 #endif
-
 	SetMode(xRes, yRes, bpp);
 	PutCMAP();
 }
