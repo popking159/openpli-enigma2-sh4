@@ -32,14 +32,12 @@ eDVBAudio::eDVBAudio(eDVBDemux *demux, int dev)
 	m_fd = ::open(filename, O_RDWR | O_CLOEXEC);
 	if (m_fd < 0)
 		eWarning("[eDVBAudio] %s: %m", filename);
-	eDebug("[eDVBAudio] Audio Device: %s", filename);
 	if (demux)
 	{
 		sprintf(filename, "/dev/dvb/adapter%d/demux%d", demux->adapter, demux->demux);
 		m_fd_demux = ::open(filename, O_RDWR | O_CLOEXEC);
 		if (m_fd_demux < 0)
 			eWarning("[eDVBAudio] %s: %m", filename);
-		eDebug("[eDVBAudio] demux device: %s", filename);
 	}
 	else
 	{
@@ -76,8 +74,7 @@ int eDVBAudio::startPid(int pid, int type)
 			pes.pes_type = DMX_PES_AUDIO3;
 			break;
 		}
-// increases zapping speed
-		pes.flags    = DMX_IMMEDIATE_START;
+		pes.flags    = 0;
 		eDebugNoNewLineStart("[eDVBAudio%d] DMX_SET_PES_FILTER pid=0x%04x ", m_dev, pid);
 		if (::ioctl(m_fd_demux, DMX_SET_PES_FILTER, &pes) < 0)
 		{
@@ -85,7 +82,13 @@ int eDVBAudio::startPid(int pid, int type)
 			return -errno;
 		}
 		eDebugNoNewLine("ok\n");
-// already startet cause of DMX_IMMEDIATE_START
+		eDebugNoNewLineStart("[eDVBAudio%d] DEMUX_START ", m_dev);
+		if (::ioctl(m_fd_demux, DMX_START) < 0)
+		{
+			eDebugNoNewLine("failed: %m\n");
+			return -errno;
+		}
+		eDebugNoNewLine("ok\n");
 	}
 
 	if (m_fd >= 0)
@@ -364,8 +367,7 @@ int eDVBVideo::startPid(int pid, int type)
 			pes.pes_type = DMX_PES_VIDEO3;
 			break;
 		}
-// increases zapping speed
-		pes.flags    = DMX_IMMEDIATE_START;
+		pes.flags    = 0;
 		eDebugNoNewLineStart("[eDVBVideo%d] DMX_SET_PES_FILTER pid=0x%04x ", m_dev, pid);
 		if (::ioctl(m_fd_demux, DMX_SET_PES_FILTER, &pes) < 0)
 		{
@@ -373,7 +375,13 @@ int eDVBVideo::startPid(int pid, int type)
 			return -errno;
 		}
 		eDebugNoNewLine("ok\n");
-// already startet cause of DMX_IMMEDIATE_START
+		eDebugNoNewLineStart("[eDVBVideo%d] DEMUX_START ", m_dev);
+		if (::ioctl(m_fd_demux, DMX_START) < 0)
+		{
+			eDebugNoNewLine("failed: %m\n");
+			return -errno;
+		}
+		eDebugNoNewLine("ok\n");
 	}
 
 	if (m_fd >= 0)
@@ -697,8 +705,7 @@ int eDVBPCR::startPid(int pid)
 		pes.pes_type = DMX_PES_PCR3;
 		break;
 	}
-// increases zapping speed
-	pes.flags    = DMX_IMMEDIATE_START;
+	pes.flags    = 0;
 	eDebugNoNewLineStart("[eDVBPCR%d] DMX_SET_PES_FILTER pid=0x%04x ", m_dev, pid);
 	if (::ioctl(m_fd_demux, DMX_SET_PES_FILTER, &pes) < 0)
 	{
@@ -706,7 +713,13 @@ int eDVBPCR::startPid(int pid)
 		return -errno;
 	}
 	eDebugNoNewLine("ok\n");
-// already startet cause of DMX_IMMEDIATE_START
+	eDebugNoNewLineStart("[eDVBPCR%d] DEMUX_START ", m_dev);
+	if (::ioctl(m_fd_demux, DMX_START) < 0)
+	{
+		eDebugNoNewLine("failed: %m\n");
+		return -errno;
+	}
+	eDebugNoNewLine("ok\n");
 	return 0;
 }
 
@@ -762,8 +775,7 @@ int eDVBTText::startPid(int pid)
 		pes.pes_type = DMX_PES_TELETEXT3;
 		break;
 	}
-// increases zapping speed
-	pes.flags    = DMX_IMMEDIATE_START;
+	pes.flags    = 0;
 
 	eDebugNoNewLineStart("[eDVBText%d] DMX_SET_PES_FILTER pid=0x%04x ", m_dev, pid);
 	if (::ioctl(m_fd_demux, DMX_SET_PES_FILTER, &pes) < 0)
@@ -772,7 +784,13 @@ int eDVBTText::startPid(int pid)
 		return -errno;
 	}
 	eDebugNoNewLine("ok\n");
-// already startet cause of DMX_IMMEDIATE_START
+	eDebugNoNewLineStart("[eDVBText%d] DEMUX_START ", m_dev);
+	if (::ioctl(m_fd_demux, DMX_START) < 0)
+	{
+		eDebugNoNewLine("failed: %m\n");
+		return -errno;
+	}
+	eDebugNoNewLine("ok\n");
 	return 0;
 }
 
@@ -909,23 +927,12 @@ int eTSMPEGDecoder::setState()
 		int *s = state_table[m_state];
 		if (changed & (changeState|changeVideo) && m_video)
 		{
-// see comment below
+			m_video->setSlowMotion(s[1]);
+			m_video->setFastForward(s[2]);
 			if (s[0])
 				m_video->unfreeze();
 			else
 				m_video->freeze();
-// the VIDEO_CONTINUE would reset the FASTFORWARD  command so we
-// execute the FASTFORWARD after the VIDEO_CONTINUE
-			if (s[1])
-			{
-				m_video->setFastForward(s[2]);
-				m_video->setSlowMotion(s[1]);
-			}
-			else
-			{
-				m_video->setSlowMotion(s[1]);
-				m_video->setFastForward(s[2]);
-			}
 		}
 		if (changed & (changeState|changeAudio) && m_audio)
 		{
@@ -1226,23 +1233,34 @@ RESULT eTSMPEGDecoder::showSinglePic(const char *filename)
 		{
 			struct stat s;
 			fstat(f, &s);
-// our driver has a different behaviour for iframes
+#if defined(__sh__) // our driver has a different behaviour for iframes
 			if (m_video_clip_fd >= 0)
 				finishShowSinglePic();
+#endif
 			if (m_video_clip_fd == -1)
 				m_video_clip_fd = open("/dev/dvb/adapter0/video0", O_WRONLY);
 			if (m_video_clip_fd >= 0)
 			{
 				bool seq_end_avail = false;
 				size_t pos=0;
-				static const unsigned char pes_header[] = { 0x00, 0x00, 0x01, 0xE0, 0x00, 0x00, 0x80, 0x80, 0x05, 0x21, 0x00, 0x01, 0x00, 0x01 };
-				static const unsigned char seq_end[] = { 0x00, 0x00, 0x01, 0xB7 };
+				unsigned char pes_header[] = { 0x00, 0x00, 0x01, 0xE0, 0x00, 0x00, 0x80, 0x80, 0x05, 0x21, 0x00, 0x01, 0x00, 0x01 };
+				unsigned char seq_end[] = { 0x00, 0x00, 0x01, 0xB7 };
 				unsigned char iframe[s.st_size];
 				unsigned char stuffing[8192];
-				memset(stuffing, 0, sizeof stuffing);
+				int streamtype;
+				memset(stuffing, 0, sizeof(stuffing));
 				read(f, iframe, s.st_size);
+				if (iframe[0] == 0x00 && iframe[1] == 0x00 && iframe[2] == 0x00 && iframe[3] == 0x01 && (iframe[4] & 0x0f) == 0x07)
+					streamtype = VIDEO_STREAMTYPE_MPEG4_H264;
+				else
+					streamtype = VIDEO_STREAMTYPE_MPEG2;
+
 				if (ioctl(m_video_clip_fd, VIDEO_SELECT_SOURCE, VIDEO_SOURCE_MEMORY) < 0)
-					eDebug("[eTSMPEGDecoder] VIDEO_SELECT_SOURCE MEMORY failed: %m"); 
+					eDebug("[eTSMPEGDecoder] VIDEO_SELECT_SOURCE MEMORY failed: %m");
+#if not defined(__sh__)
+				if (ioctl(m_video_clip_fd, VIDEO_SET_STREAMTYPE, streamtype) < 0)
+					eDebug("[eTSMPEGDecoder] VIDEO_SET_STREAMTYPE failed: %m");
+#endif
 				if (ioctl(m_video_clip_fd, VIDEO_PLAY) < 0)
 					eDebug("[eTSMPEGDecoder] VIDEO_PLAY failed: %m");
 				if (ioctl(m_video_clip_fd, VIDEO_CONTINUE) < 0)
@@ -1258,7 +1276,8 @@ RESULT eTSMPEGDecoder::showSinglePic(const char *filename)
 				writeAll(m_video_clip_fd, iframe, s.st_size);
 				if (!seq_end_avail)
 					write(m_video_clip_fd, seq_end, sizeof(seq_end));
-				writeAll(m_video_clip_fd, stuffing, sizeof stuffing);
+				writeAll(m_video_clip_fd, stuffing, 8192);
+				m_showSinglePicTimer->start(150, true);
 			}
 			close(f);
 		}
