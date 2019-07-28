@@ -1408,18 +1408,18 @@ void eDVBCISlot::data(int what)
 
 	if (what & eSocketNotifier::Read)
 	{
-		eDebugCI("eSocketNotifier::Read\n");
+		eDebugCI("[CI] eSocketNotifier::Read\n");
 		status = eDataReady;
 		len = ::read(fd, data, len);
 	}
 	else if (what & eSocketNotifier::Write)
 	{
-		eDebugCI("eSocketNotifier::Write\n");
+		eDebugCI("[CI] eSocketNotifier::Write\n");
 		status = eDataWrite;
 	}
 	else if (what & eSocketNotifier::Priority)
 	{
-		eDebugCI("eSocketNotifier::Priority\n");
+		eDebugCI("[CI] eSocketNotifier::Priority\n");
 		status = eDataStatusChanged;
 	}
 
@@ -1432,11 +1432,11 @@ void eDVBCISlot::data(int what)
 				info.num = getSlotID();
 
 				if (ioctl(fd, CA_GET_SLOT_INFO, &info) < 0)
-					printf("IOCTL CA_GET_SLOT_INFO failed for slot %d\n", getSlotID());
+					eDebug("[CI] IOCTL CA_GET_SLOT_INFO failed for slot %d\n", getSlotID());
 
 				if (info.flags & CA_CI_MODULE_READY)
 				{
-					printf("1. cam status changed ->cam now present\n");
+					eDebug("[CI] 1. cam status changed ->cam now present\n");
 					state = stateInserted;
 					mmi_active = false;
 					tx_time.tv_sec = 0;
@@ -1456,10 +1456,10 @@ void eDVBCISlot::data(int what)
 		{
 			if (status == eDataReady)
 			{
-				eDebugCI("received data - len %d\n", len);
+				eDebugCI("[CI] received data - len %d\n", len);
 				//int s_id = data[0];
 				//int c_id = data[1];
-				//printf("%d: s_id = %d, c_id = %d\n", slot->slot, s_id, c_id);
+				//eDebug("[CI] %d: s_id = %d, c_id = %d\n", slot->slot, s_id, c_id);
 				d = data;
 				/* taken from the dvb-apps */
 				int data_length = len - 2;
@@ -1471,17 +1471,17 @@ void eDVBCISlot::data(int what)
 					int length_field_len;
 					if ((length_field_len = asn_1_decode(&asn_data_length, d + 1, data_length - 1)) < 0)
 					{
-						printf("Received data with invalid asn from module on slot %02x\n", getSlotID());
+						eDebug("[CI] Received data with invalid asn from module on slot %02x\n", getSlotID());
 						break;
 					}
 
 					if ((asn_data_length < 1) || (asn_data_length > (data_length - (1 + length_field_len))))
 					{
-						printf("Received data with invalid length from module on slot %02x\n", getSlotID());
+						eDebug("[CI] Received data with invalid length from module on slot %02x\n", getSlotID());
 						break;
 					}
 					connection_id = d[1 + length_field_len];
-					//printf("Setting connection_id from received data to %d\n", slot->connection_id);
+					//eDebug("[CI] Setting connection_id from received data to %d\n", slot->connection_id);
 					d += 1 + length_field_len + 1;
 					data_length -= (1 + length_field_len + 1);
 					asn_data_length--;
@@ -1505,7 +1505,7 @@ void eDVBCISlot::data(int what)
 					}
 					else
 					{
-						printf("r = %d, %m\n", res);
+						eDebug("[CI] r = %d, %m\n", res);
 					}
 				}
 				/* the spec say's that we _must_ poll the connection
@@ -1521,11 +1521,11 @@ void eDVBCISlot::data(int what)
 			{
 				info.num = getSlotID();
 				if (ioctl(fd, CA_GET_SLOT_INFO, &info) < 0)
-					printf("IOCTL CA_GET_SLOT_INFO failed for slot %d\n", getSlotID());
+					eDebug("[CI] IOCTL CA_GET_SLOT_INFO failed for slot %d\n", getSlotID());
 
 				if (info.flags & CA_CI_MODULE_READY)
 				{
-					printf("2. cam status changed ->cam now present\n");
+					eDebug("[CI] 2. cam status changed ->cam now present\n");
 					mmi_active = false;
 					state = stateInvalid;
 					application_manager = 0;
@@ -1535,7 +1535,7 @@ void eDVBCISlot::data(int what)
 				}
 				else if (!(info.flags & CA_CI_MODULE_READY))
 				{
-					printf("cam status changed ->cam now _not_ present\n");
+					eDebug("[CI] cam status changed ->cam now _not_ present\n");
 					eDVBCISession::deleteSessions(this);
 					mmi_active = false;
 					state = stateInvalid;
@@ -1554,7 +1554,7 @@ void eDVBCISlot::data(int what)
 		}
 		break;
 		default:
-			printf("unknown state %d\n", state);
+			eDebug("[CI] unknown state %d\n", state);
 		break;
 	}
 	notifier->setRequested(eSocketNotifier::Read | eSocketNotifier::Priority | eSocketNotifier::Write);
@@ -1669,7 +1669,7 @@ int eDVBCISlot::reset()
 
 #ifdef __sh__
 	if (ioctl(fd, CA_RESET, getSlotID()) < 0)
-		eDebug("IOCTL CA_RESET failed for slot %d\n", slotid);
+		eDebug("[CI] IOCTL CA_RESET failed for slot %d\n", slotid);
 #else
 	ioctl(fd, 0);
 #endif

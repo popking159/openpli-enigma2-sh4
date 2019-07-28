@@ -138,6 +138,7 @@ public:
 	int getNumOfServices() { return running_services.size(); }
 	int setSource(const std::string &source);
 	int setClockRate(int);
+	static std::string getTunerLetter(int tuner_no) { return std::string(1, char(65 + tuner_no)); }
 #ifdef __sh__
 	bool checkQueueSize();
 	void thread();
@@ -149,7 +150,6 @@ public:
 	struct timeval tx_time;
 	struct timespec last_poll_time;
 #endif
-	static std::string getTunerLetter(int tuner_no) { return std::string(1, char(65 + tuner_no)); }
 };
 
 struct CIPmtHandler
