@@ -701,6 +701,8 @@ void ePicLoad::thread()
 
 void ePicLoad::decodePic()
 {
+	eDebug("[ePicLoad] decode picture... %s", m_filepara->file);
+
 	getExif(m_filepara->file, m_filepara->id);
 
 	if (m_filepara->id == F_JPEG)
