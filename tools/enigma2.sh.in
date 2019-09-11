@@ -39,6 +39,12 @@ else
 	DEBUG_LVL=$ENIGMA_DEBUG_LVL
 fi
 
+# check if media/net directory exists
+[ -d /media/net ] || mkdir /media/net
+
+# check if picon_spark directory exists
+[ -d /media/spark/picon ] || ln -s /media/spark/picon /picon
+
 LIBS=@libdir@/libopen.so.0.0.0
 
 # enigma main loop
