@@ -39,9 +39,6 @@ else
 	DEBUG_LVL=$ENIGMA_DEBUG_LVL
 fi
 
-# check if media/net directory exists
-[ -d /media/net ] || mkdir /media/net
-
 LIBS=@libdir@/libopen.so.0.0.0
 
 # enigma main loop
