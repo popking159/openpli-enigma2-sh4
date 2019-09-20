@@ -101,10 +101,10 @@ class OverscanWizard(Screen, ConfigListScreen):
 				"you may also miss parts of the user interface, for example volume bars and more.\n\n"
 				"You can now try to resize and change the position of the user interface until you see the eight arrow heads.\n\n"
 				"When done press OK.\n\n"))
-			self.dst_left = ConfigSlider(default = config.plugins.OSDPositionSetup.dst_left.value, increment = 1, limits = (0, 150))
-			self.dst_right = ConfigSlider(default = config.plugins.OSDPositionSetup.dst_right.value + 150, increment = 1, limits = (0, 150))
-			self.dst_top = ConfigSlider(default = config.plugins.OSDPositionSetup.dst_top.value, increment = 1, limits = (0, 150))
-			self.dst_bottom = ConfigSlider(default = config.plugins.OSDPositionSetup.dst_bottom.value + 150, increment = 1, limits = (0, 150))
+			self.dst_left = ConfigSlider(default = config.plugins.OSDPositionSetup.dst_left.value, increment = 1, limits = (0, 720))
+			self.dst_right = ConfigSlider(default = config.plugins.OSDPositionSetup.dst_left.value + config.plugins.OSDPositionSetup.dst_width.value, increment = 1, limits = (0, 720))
+			self.dst_top = ConfigSlider(default = config.plugins.OSDPositionSetup.dst_top.value, increment = 1, limits = (0, 576))
+			self.dst_bottom = ConfigSlider(default = config.plugins.OSDPositionSetup.dst_top.value + config.plugins.OSDPositionSetup.dst_height.value, increment = 1, limits = (0, 576))
 			self.list.append(getConfigListEntry(_("left"), self.dst_left))
 			self.list.append(getConfigListEntry(_("right"), self.dst_right))
 			self.list.append(getConfigListEntry(_("top"), self.dst_top))
@@ -181,14 +181,14 @@ class OverscanWizard(Screen, ConfigListScreen):
 			if self.yes_no.value:
 				if self.save_new_position:
 					config.plugins.OSDPositionSetup.dst_left.value = self.dst_left.value
-					config.plugins.OSDPositionSetup.dst_right.value = self.dst_right.value - 150
+					config.plugins.OSDPositionSetup.dst_width.value = self.dst_right.value - self.dst_left.value
 					config.plugins.OSDPositionSetup.dst_top.value = self.dst_top.value
-					config.plugins.OSDPositionSetup.dst_bottom.value = self.dst_bottom.value -150
+					config.plugins.OSDPositionSetup.dst_height.value = self.dst_bottom.value - self.dst_top.value
 				else:
 					config.plugins.OSDPositionSetup.dst_left.value = 0
-					config.plugins.OSDPositionSetup.dst_right.value = 0
+					config.plugins.OSDPositionSetup.dst_width.value = 720
 					config.plugins.OSDPositionSetup.dst_top.value = 0
-					config.plugins.OSDPositionSetup.dst_bottom.value = 0
+					config.plugins.OSDPositionSetup.dst_height.value = 576
 				config.misc.do_overscanwizard.value = False
 				config.save()
 				setConfiguredPosition()
@@ -198,8 +198,12 @@ class OverscanWizard(Screen, ConfigListScreen):
 		self.setScreen()
 
 	def setPreviewPosition(self):
+		if self.dst_left.value > self.dst_right.value:
+			self.dst_left.value = self.dst_right.value
+		if self.dst_top.value > self.dst_bottom.value:
+			self.dst_top.value = self.dst_bottom.value
 		self["config"].l.setList(self.list)
-		setPosition(int(self.dst_left.value), int(self.dst_right.value) -150, int(self.dst_top.value), int(self.dst_bottom.value)- 150)
+		setPosition(int(self.dst_left.value), int(self.dst_right.value) - int(self.dst_left.value), int(self.dst_top.value), int(self.dst_bottom.value) - int(self.dst_top.value))
 
 	def keyCancel(self):
 		self.step = self.step in (2, 5) and 1 or self.step in (3, 4) and 2

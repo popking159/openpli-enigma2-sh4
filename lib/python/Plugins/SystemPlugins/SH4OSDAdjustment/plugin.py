@@ -3,6 +3,7 @@ from Components.ActionMap import ActionMap
 from Components.config import config, ConfigSubsection, ConfigInteger
 from Components.Label import Label
 from Components.Sources.StaticText import StaticText
+from Plugins.Plugin import PluginDescriptor
 from enigma import getDesktop, fbClass
 from os import path as os_path
 config.OSDAdjustment = ConfigSubsection()
@@ -11,6 +12,7 @@ config.OSDAdjustment.bottom = ConfigInteger(default=0)
 config.OSDAdjustment.left = ConfigInteger(default=0)
 config.OSDAdjustment.right = ConfigInteger(default=0)
 config.OSDAdjustment.settuxtxt2conf = ConfigInteger(default=0)
+from __init__ import _
 
 class Screen_adjust(Screen):
     if getDesktop(0).size().width() == 1280:
@@ -330,10 +332,13 @@ def main(session, **kwargs):
 
 
 def menu(menuid, **kwargs):
-    return menuid == "video" and [(_("OSD Position setup"), main, "sd_position_setup", 0)] or []
+    if menuid == 'video':
+        return [(_('OSD Position setup'),
+          main,
+          'OSD Position setup',
+          11)]
+    return []
 
 
 def Plugins(**kwargs):
-    from Plugins.Plugin import PluginDescriptor
-    return [PluginDescriptor(name = _("OSD Position setup"), description = "", where = PluginDescriptor.WHERE_SESSIONSTART, fnc = sessionstart),
-            PluginDescriptor(name = _("OSD Position setup"), description = _("Wizard to arrange the overscan"), where = PluginDescriptor.WHERE_MENU, fnc = menu)]
+    return [PluginDescriptor(where=PluginDescriptor.WHERE_SESSIONSTART, fnc=sessionstart), PluginDescriptor(name='OSD Position setup', description=_('change the OSD screen size'), where=PluginDescriptor.WHERE_MENU, fnc=menu)]
