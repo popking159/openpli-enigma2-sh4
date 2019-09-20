@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: OpenPLI Enigma2 Official Greek Translation\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-08-02 10:56+0200\n"
+"POT-Creation-Date: 2019-09-07 13:00+0200\n"
 "PO-Revision-Date: \n"
 "Last-Translator: MCelliotG <mcelliotg@gmail.com>\n"
 "Language-Team: MCelliotG <mcelliotg@gmail.com>\n"
@@ -936,9 +936,8 @@ msgstr "Όλοι οι δορυφόροι 4 (USALS)"
 msgid "All services provider"
 msgstr "Πάροχος όλων των υπηρεσιών"
 
-#, fuzzy
 msgid "All slots"
-msgstr "Επιλογή θέσης"
+msgstr "Όλες οι θέσεις"
 
 msgid "Allocate"
 msgstr "Κατανομή"
@@ -998,7 +997,7 @@ msgid "Alternative URL for images listed on FlashImage"
 msgstr "Εναλλακτική URL για images προς φλασάρισμα"
 
 msgid "Alternative URLs for DVB-T/C or ATSC"
-msgstr ""
+msgstr "Εναλλακτικές διευθύνσεις URL για DVB-T/C ή ATSC"
 
 msgid "Alternative numbering mode"
 msgstr "Εναλλακτική λειτουργία αρίθμησης"
@@ -1433,10 +1432,10 @@ msgid "Boost green"
 msgstr "Ενίσχυση του πράσινου"
 
 msgid "Boot to Android image"
-msgstr ""
+msgstr "Εκκίνηση σε image Android"
 
 msgid "Boot to Recovery menu"
-msgstr ""
+msgstr "Εκκίνηση στο μενού αποκατάστασης"
 
 msgid "Bosnia and Herzegovina"
 msgstr "Βοσνία Ερζεγοβίνη"
@@ -1714,9 +1713,8 @@ msgstr "Αριθμός καναλιού και όνομα υπηρεσίας"
 msgid "Channelnumber, picon and servicename"
 msgstr "Αριθμός καναλιού, λογότυπο και όνομα υπηρεσίας"
 
-#, fuzzy
 msgid "Channels"
-msgstr "Κανάλι"
+msgstr "Κανάλια"
 
 msgid "Channels and EPG"
 msgstr "Κανάλια και EPG"
@@ -2668,17 +2666,14 @@ msgstr "Αποεπιλογή"
 msgid "Destination of fallback remote receiver"
 msgstr "Διεύθυνση του εφεδρικού απομακρυσμένου δέκτη"
 
-#, fuzzy
 msgid "Destination of fallback remote receiver for ATSC"
-msgstr "Διεύθυνση του εφεδρικού απομακρυσμένου δέκτη"
+msgstr "Προορισμός απομακρυσμένου εφεδρικού δέκτη για ATSC"
 
-#, fuzzy
 msgid "Destination of fallback remote receiver for DVB-C"
-msgstr "Διεύθυνση του εφεδρικού απομακρυσμένου δέκτη"
+msgstr "Προορισμός απομακρυσμένου εφεδρικού δέκτη για DVB-C"
 
-#, fuzzy
 msgid "Destination of fallback remote receiver for DVB-T"
-msgstr "Διεύθυνση του εφεδρικού απομακρυσμένου δέκτη"
+msgstr "Προορισμός απομακρυσμένου εφεδρικού δέκτη για DVB-T"
 
 msgid "Details for plugin: "
 msgstr "Λεπτομέρειες για το πρόσθετο: "
@@ -3055,9 +3050,8 @@ msgstr "Επεξεργασία DNS"
 msgid "Edit chapters of current title"
 msgstr "Επεξεργασία κεφαλαίων του τρέχοντα τίτλου"
 
-#, fuzzy
 msgid "Edit menu"
-msgstr "Επεξεργασία χρονοδιακόπτη"
+msgstr "Μενού επεξεργασίας"
 
 msgid "Edit selection"
 msgstr "Επεξεργασία επιλογής"
@@ -3128,9 +3122,8 @@ msgstr "Ενεργοποίηση OK ως προεπισκόπηση στην ε�
 msgid "Enable OK for channel selection"
 msgstr "Ενεργοποίηση ΟΚ για επιλογή καναλιών"
 
-#, fuzzy
 msgid "Enable OpenTV EPG"
-msgstr "Ενεργοποίηση EIT EPG"
+msgstr "Ενεργοποίηση OpenTV EPG"
 
 msgid "Enable ViaSat EPG"
 msgstr "Ενεργοποίηση ViaSat EPG"
@@ -3606,23 +3599,24 @@ msgstr "Θύρα του εφεδρικού απομακρυσμένου δέκτ
 msgid "Fallback remote receiver URL"
 msgstr "Εφεδρική απομακρυσμένη URL δέκτη"
 
-#, fuzzy
 msgid "Fallback remote receiver for ATSC"
-msgstr "Θύρα του εφεδρικού απομακρυσμένου δέκτη"
+msgstr "Εφεδρικός απομακρυσμένος δέκτης για ATSC"
 
-#, fuzzy
 msgid "Fallback remote receiver for DVB-C"
-msgstr "Θύρα του εφεδρικού απομακρυσμένου δέκτη"
+msgstr "Εφεδρικός απομακρυσμένος δέκτης για DVB-C"
 
-#, fuzzy
 msgid "Fallback remote receiver for DVB-T"
-msgstr "Θύρα του εφεδρικού απομακρυσμένου δέκτη"
+msgstr "Εφεδρικός απομακρυσμένος δέκτης για DVB-T"
 
 msgid "Fallback remote receiver setup"
 msgstr "Ρυθμίσεις απομακρυσμένου εφεδρικού δέκτη"
 
 msgid "Fallback tuner setup"
 msgstr "Ρυθμίσεις εφεδρικού tuner"
+
+#, fuzzy
+msgid "False"
+msgstr "ψευδές"
 
 #, python-format
 msgid "Fan %d"
@@ -7510,7 +7504,7 @@ msgid "Set all hotkey to default?"
 msgstr "Επαναφορά όλων των hotkey στις προεπιλογές;"
 
 msgid "Set alternative fallback tuners for DVB-T/C or ATSC"
-msgstr ""
+msgstr "Ορισμός εναλλακτικών εφεδρικών tuner για DVB-T/C ή ATSC"
 
 msgid "Set blocktimes by weekday"
 msgstr "Ορισμός χρονοπλαισίων ανά"
@@ -8795,12 +8789,12 @@ msgstr "Αυτό το πεδίο επιτρέπει την αναζήτηση ε
 
 msgid ""
 "This info is for developers only.\n"
-"For normal users it is not relevant.\n"
-"Please don't panic if you see values displayed looking suspicious!"
+"For a normal users it is not relevant.\n"
+"Don't panic please when you see values being displayed that you think look suspicious!"
 msgstr ""
-"Πληροφορίες μόνο για προγραμματιστές.\n"
+"Πληροφορία μόνο για προγραμματιστές.\n"
 "Δεν αφορά κοινούς χρήστες.\n"
-"Παρακαλούμε μην πανικοβληθείτε αν οι απεικονιζόμενες τιμές φαίνονται ύποπτες!"
+"Παρακαλούμε μη πανικοβάλλεστε όταν βλέπετε να απεικονίζονται τιμές που σας φαίνονται ύποπτες!"
 
 msgid "This is a multitype tuner. Available options depend on the hardware."
 msgstr "Αυτό είναι ένα tuner πολλαπλών τύπων. Οι διαθέσιμες επιλογές εξαρτώνται από το υλικό."
@@ -8871,9 +8865,8 @@ msgstr "Αυτή η επιλογή επιτρέπει την αναγκαστι�
 msgid "This option allows you to force the HLG modes for UHD"
 msgstr "Αυτή η επιλογή επιτρέπει την αναγκαστική ενεργοποίηση των λειτουργιών HGL για UHD"
 
-#, fuzzy
 msgid "This option allows you to hide and sort menu entries. When selecting user you can change order and hide menu items via the blue button. With the user defined hidden the blue button is not shown in the menus"
-msgstr "Αυτή η επιλογή επιτρέπει την απόκρυψη και την ταξινόμηση των στοιχείων των μενού. Κατά την επιλογή από το χρήστη, μπορείτε να αλλάξετε τη σειρά και να αποκρύψετε τα στοιχεία των μενού μέσω του μπλε πλήκτρου"
+msgstr "Αυτή η επιλογή επιτρέπει την απόκρυψη και την ταξινόμηση των στοιχείων των μενού. Κατά την επιλογή από το χρήστη, μπορείτε να αλλάξετε τη σειρά και να αποκρύψετε τα στοιχεία των μενού μέσω του μπλε πλήκτρου. Με τα ορισμένα από το χρήστη κρυφά, το μπλε πλήκτρο δεν θα είναι ορατό στα μενού"
 
 msgid "This option allows you to power off the display."
 msgstr "Αυτή η επιλογή επιτρέπει την απενεργοποίηση της οθόνης πρόσοψης."
@@ -9197,6 +9190,9 @@ msgstr "Τρινιντάντ και Τομπάγκο"
 msgid "Troubleshoot"
 msgstr "Αντιμετώπιση προβλημάτων"
 
+msgid "True"
+msgstr ""
+
 msgid "Try to find used transponders in cable network.. please wait..."
 msgstr "Αναζήτηση χρησιμοποιούμενων αναμεταδοτών στο καλωδιακό δίκτυο... Παρακαλώ περιμένετε..."
 
@@ -9482,9 +9478,8 @@ msgstr "Χρήση πληροφοριών MHW όταν είναι διαθέσι
 msgid "Use Netmed EPG information when it is available."
 msgstr "Χρήση πληροφοριών Netmed EPG όταν είναι διαθέσιμες."
 
-#, fuzzy
 msgid "Use OpenTV EPG information when it is available."
-msgstr "Χρήση πληροφοριών EIT EPG όταν είναι διαθέσιμες."
+msgstr "Χρήση πληροφοριών OpenTV EPG όταν είναι διαθέσιμες."
 
 msgid "Use TV remote control"
 msgstr "Χρήση τηλεχειριστηρίου TV"
@@ -11571,9 +11566,8 @@ msgstr "ενημέρωση σελιδοδεικτών"
 msgid "user defined"
 msgstr "ορισμένο από το χρήστη"
 
-#, fuzzy
 msgid "user defined hidden"
-msgstr "ορισμένο από το χρήστη"
+msgstr "ορισμένα από το χρήστη κρυφά"
 
 msgid "variety show"
 msgstr "βαριετέ"

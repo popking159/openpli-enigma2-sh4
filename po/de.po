@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: enigma2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-08-02 10:56+0200\n"
+"POT-Creation-Date: 2019-09-07 13:00+0200\n"
 "PO-Revision-Date: 2019-07-24 20:23+0200\n"
 "Last-Translator: Pike_Bishop <alfredzngr023@gmail.com>\n"
 "Language-Team: Sfteam  angelo2807@hotmail.com\n"
@@ -3622,6 +3622,10 @@ msgstr "Reserve-Receiver Einstellungen"
 
 msgid "Fallback tuner setup"
 msgstr "Reserve-Tuner-Einstellung"
+
+#, fuzzy
+msgid "False"
+msgstr "Nein"
 
 #, python-format
 msgid "Fan %d"
@@ -8804,8 +8808,8 @@ msgstr "This field allows you to search an additional symbol rate up to %s."
 
 msgid ""
 "This info is for developers only.\n"
-"For normal users it is not relevant.\n"
-"Please don't panic if you see values displayed looking suspicious!"
+"For a normal users it is not relevant.\n"
+"Don't panic please when you see values being displayed that you think look suspicious!"
 msgstr ""
 "Diese Information richtet sich nur an Entwickler.\n"
 "Sie ist für den normalen Benutzer nicht relevant.\n"
@@ -9206,6 +9210,9 @@ msgstr "Trinidad and Tobago"
 
 msgid "Troubleshoot"
 msgstr "Fehlersuche"
+
+msgid "True"
+msgstr ""
 
 msgid "Try to find used transponders in cable network.. please wait..."
 msgstr "Suche benutzte Transponder im Kabel Netzwerk.. bitte warten…"

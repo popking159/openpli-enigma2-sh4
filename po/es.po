@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: enigma2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-08-02 10:56+0200\n"
+"POT-Creation-Date: 2019-09-07 13:00+0200\n"
 "PO-Revision-Date: 2019-05-15 22:50+0200\n"
 "Last-Translator: Jose Juan <jzapater@gmail.com>\n"
 "Language-Team: ANGELODOS  angelo2807@hotmail.com\n"
@@ -4017,6 +4017,10 @@ msgstr "Configuración del receptor remoto de retroceso"
 
 msgid "Fallback tuner setup"
 msgstr "Configuración del sintonizador de respaldo"
+
+#, fuzzy
+msgid "False"
+msgstr "false"
 
 #
 #, python-format
@@ -9831,8 +9835,8 @@ msgstr "Este campo le permite buscar una tasa de símbolo adicional hasta% s."
 
 msgid ""
 "This info is for developers only.\n"
-"For normal users it is not relevant.\n"
-"Please don't panic if you see values displayed looking suspicious!"
+"For a normal users it is not relevant.\n"
+"Don't panic please when you see values being displayed that you think look suspicious!"
 msgstr ""
 "Esta información es sólo para desarrolladores.\n"
 "Para un usuario normal no es relevante.\n"
@@ -10278,6 +10282,9 @@ msgstr "Trinidad y Tobago"
 
 msgid "Troubleshoot"
 msgstr "Solucionar problemas"
+
+msgid "True"
+msgstr ""
 
 #
 msgid "Try to find used transponders in cable network.. please wait..."

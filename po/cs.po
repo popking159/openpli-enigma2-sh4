@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: OpenPLi enigma2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-08-02 10:56+0200\n"
+"POT-Creation-Date: 2019-09-07 13:00+0200\n"
 "PO-Revision-Date: \n"
 "Last-Translator: ims <ims21@users.sourceforge.net>\n"
 "Language-Team: PLi <ims@openpli.org>\n"
@@ -4137,6 +4137,11 @@ msgstr "Záložní přijímač"
 
 msgid "Fallback tuner setup"
 msgstr "Nastavení záložního tuneru"
+
+#
+#, fuzzy
+msgid "False"
+msgstr "Ne"
 
 #
 #, python-format
@@ -10116,8 +10121,8 @@ msgstr "Umožňuje vyhledat další symbol rate až do %s."
 
 msgid ""
 "This info is for developers only.\n"
-"For normal users it is not relevant.\n"
-"Please don't panic if you see values displayed looking suspicious!"
+"For a normal users it is not relevant.\n"
+"Don't panic please when you see values being displayed that you think look suspicious!"
 msgstr ""
 "Tyto informace jsou určeny pro tvůrce software.\n"
 "Pro běžné uživatele nejsou důležité.\n"
@@ -10566,6 +10571,9 @@ msgstr "Trinidad a Tobago"
 
 msgid "Troubleshoot"
 msgstr "Řešení problémů"
+
+msgid "True"
+msgstr ""
 
 #
 msgid "Try to find used transponders in cable network.. please wait..."
