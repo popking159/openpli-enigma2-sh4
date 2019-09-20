@@ -8,8 +8,9 @@ inherit gitpkgv externalsrc
 S = "${FILE_DIRNAME}"
 WORKDIR = "${S}/build"
 
-PV = "Follow_OE+git"
-PKGV = "Follow_OE+git${GITPKGV}"
+PV = "2.7+git"
+PKGV = "2.7+git${GITPKGV}"
+PR = "r26"
 
 FILES_${PN} += "${datadir}/keymaps"
 FILES_${PN}-meta = "${datadir}/meta"
