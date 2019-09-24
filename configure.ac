@@ -1,4 +1,4 @@
-AC_INIT([enigma2],[7],[forum@openpli.org])
+AC_INIT([enigma2],[4],[forum@openpli.org])
 AM_INIT_AUTOMAKE([dist-bzip2 no-define tar-pax -Wno-portability])
 AC_CONFIG_HEADERS([enigma2_config.h])
 
@@ -202,6 +202,15 @@ AC_ARG_WITH(lcddev,
 if test x"$with_lcddev" != xno ; then
 	AC_DEFINE_UNQUOTED(LCD_DEV, "$withval", [Defines which device to use for lcd (e.g. /dev/fb1)])
 fi
+
+AC_ARG_ENABLE([sh],
+        [AS_HELP_STRING(--enable-sh,    enable sh patches)],
+        [case "${enableval}" in
+                yes) enable_sh=true ;;
+                no) enable_sh=false ;;
+                *) AC_MSG_ERROR([bad value ${enableval} for --enable-sh]) ;;
+        esac])
+AM_CONDITIONAL([ENABLE_SH], [test x$enable_sh = xtrue])
 
 AC_ARG_WITH(alphablendingacceleration,
 	AC_HELP_STRING([--with-alphablendingacceleration=never/always/auto], [alphablending acceleration strategy: never accelerate / always accelerate / automatically decide when to accelerate (default)]),
