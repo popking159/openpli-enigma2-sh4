@@ -36,6 +36,26 @@ class GetImagelist():
 				self.imagelist[self.slot] =  { 'imagename': "%s (%s)" % (open("/tmp/testmount/etc/issue").readlines()[-2].capitalize().strip()[:-6], datetime.datetime.fromtimestamp(os.stat("/tmp/testmount/usr/share/bootlogo.mvi").st_mtime).strftime('%Y-%m-%d'))}
 			else:
 				self.imagelist[self.slot] = { 'imagename': _("Empty slot")}
+			def getImagename(target):
+				from datetime import datetime
+				date = datetime.fromtimestamp(os.stat(os.path.join(target, "/var/lib/opkg/status")).st_mtime).strftime('%Y-%m-%d')
+				if date.startswith("1970"):
+					try:
+						date = datetime.fromtimestamp(os.stat(os.path.join(target, "usr/share/bootlogo.mvi")).st_mtime).strftime('%Y-%m-%d')
+					except:
+						pass
+					date = max(date, datetime.fromtimestamp(os.stat(os.path.join(target, "usr/bin/enigma2")).st_mtime).strftime('%Y-%m-%d'))
+				return "%s (%s)" % (open(os.path.join(target, "/etc/issue")).readlines()[-2].capitalize().strip()[:-6], date)
+			if SystemInfo["HasRootSubdir"]:
+				if os.path.isfile("/tmp/testmount/linuxrootfs%s/usr/bin/enigma2" % self.slot):
+					self.imagelist[self.slot] = { 'imagename': getImagename("/tmp/testmount/linuxrootfs%s" % self.slot) }
+				else:
+					self.imagelist[self.slot] = { 'imagename': _("Empty slot")}
+			else:
+				if os.path.isfile("/tmp/testmount/usr/bin/enigma2"):
+					self.imagelist[self.slot] = { 'imagename': getImagename("/tmp/testmount") }
+				else:
+					self.imagelist[self.slot] = { 'imagename': _("Empty slot")}
 			self.phase = self.UNMOUNT
 			self.run()
 		elif self.slot < self.numberofslots:
