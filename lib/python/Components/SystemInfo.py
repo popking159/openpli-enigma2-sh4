@@ -2,7 +2,7 @@ from enigma import eDVBResourceManager, Misc_Options, eDVBCIInterfaces, eGetEnig
 from Tools.Directories import fileExists, fileCheck, pathExists, fileHas
 from Tools.HardwareInfo import HardwareInfo
 
-import os
+import os, re
 
 SystemInfo = {}
 
@@ -21,6 +21,10 @@ def countFrontpanelLEDs():
 def hassoftcaminstalled():
 	from Tools.camcontrol import CamControl
 	return len(CamControl('softcam').getList()) > 1
+
+# parse the boot commandline
+cmdline = open("/proc/cmdline", "r").read()
+cmdline = {k:v.strip('"') for k,v in re.findall(r'(\S+)=(".*?"|\S+)', cmdline)}
 
 SystemInfo["InDebugMode"] = eGetEnigmaDebugLvl() >= 4
 SystemInfo["CommonInterface"] = eDVBCIInterfaces.getInstance().getNumOfSlots()
@@ -72,7 +76,7 @@ SystemInfo["HasBypassEdidChecking"] = fileCheck("/proc/stb/hdmi/bypass_edid_chec
 SystemInfo["HasColorspace"] = fileCheck("/proc/stb/video/hdmi_colorspace")
 SystemInfo["HasColorspaceSimple"] = SystemInfo["HasColorspace"] and HardwareInfo().get_device_model() in "vusolo4k"
 SystemInfo["HasMultichannelPCM"] = fileCheck("/proc/stb/audio/multichannel_pcm")
-SystemInfo["HasMMC"] = fileExists("/proc/cmdline") and "root=/dev/mmcblk" in open("/proc/cmdline", "r").read()
+SystemInfo["HasMMC"] = "root" in cmdline and cmdline["root"].startswith('/dev/mmcblk')
 SystemInfo["HasTranscoding"] = pathExists("/proc/stb/encoder/0") or fileCheck("/dev/bcm_enc0")
 SystemInfo["HasH265Encoder"] = fileHas("/proc/stb/encoder/0/vcodec_choices", "h265")
 SystemInfo["CanNotDoSimultaneousTranscodeAndPIP"] = HardwareInfo().get_device_model() in "vusolo4k"
@@ -100,8 +104,13 @@ SystemInfo["canFlashWithOfgwrite"] = not(HardwareInfo().get_device_model().start
 SystemInfo["HasRootSubdir"] = fileHas("/proc/cmdline", "rootsubdir=")
 SystemInfo["canMultiBoot"] = HardwareInfo().get_device_model() in ('hd51', 'h7', 'vs1500', 'e4hd') and (1, 4, "mmcblk0", False) or HardwareInfo().get_device_model() in ('gbue4k', 'gbquad4k') and (3, 3, "mmcblk0", True) or HardwareInfo().get_device_model() in ('osmio4k') and (1, 4, "mmcblk1", True)
 SystemInfo["canMode12"] = HardwareInfo().get_device_model() in ("hd51", "vs1500") and '192M' or HardwareInfo().get_device_model() in ("h7") and '200M'
+SystemInfo["HasRootSubdir"] = "rootsubdir" in cmdline
+SystemInfo["canMultiBoot"] = SystemInfo["HasRootSubdir"] and (1, 4, "mmcblk0", False) or "_4.boxmode" in cmdline and (1, 4, "mmcblk0", False) or HardwareInfo().get_device_model() in ('gbue4k', 'gbquad4k') and (3, 3, "mmcblk0", True) or HardwareInfo().get_device_model() in ('e4hd') and (1, 4, "mmcblk0", False) or HardwareInfo().get_device_model() in ('osmio4k', 'osmio4kplus') and (1, 4, "mmcblk1", True)
+SystemInfo["canMode12"] = ("_4.boxmode" in cmdline and (cmdline['_4.boxmode'] == "1" or cmdline['_4.boxmode'] == "12")) and "192M"
+SystemInfo["canFlashWithOfgwrite"] = not(HardwareInfo().get_device_model().startswith("dm"))
 SystemInfo["HDRSupport"] = fileExists("/proc/stb/hdmi/hlg_support_choices") and fileCheck("/proc/stb/hdmi/hlg_support")
 SystemInfo["CanDownmixAC3"] = fileHas("/proc/stb/audio/ac3_choices", "downmix")
 SystemInfo["CanDownmixDTS"] = fileHas("/proc/stb/audio/dts_choices", "downmix")
 SystemInfo["CanDownmixAAC"] = fileHas("/proc/stb/audio/aac_choices", "downmix")
 SystemInfo["HDMIAudioSource"] = fileCheck("/proc/stb/hdmi/audio_source")
+SystemInfo["BootDevice"] = ("root" in cmdline and cmdline['root'].startswith('/dev/')) and cmdline['root'][5:]
