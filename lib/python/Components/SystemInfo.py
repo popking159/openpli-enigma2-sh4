@@ -25,6 +25,7 @@ def hassoftcaminstalled():
 # parse the boot commandline
 cmdline = open("/proc/cmdline", "r").read()
 cmdline = {k:v.strip('"') for k,v in re.findall(r'(\S+)=(".*?"|\S+)', cmdline)}
+model = HardwareInfo().get_device_model()
 
 SystemInfo["InDebugMode"] = eGetEnigmaDebugLvl() >= 4
 SystemInfo["CommonInterface"] = eDVBCIInterfaces.getInstance().getNumOfSlots()
@@ -43,8 +44,8 @@ SystemInfo["NumFrontpanelLEDs"] = countFrontpanelLEDs()
 SystemInfo["FrontpanelDisplay"] = fileExists("/dev/dbox/oled0") or fileExists("/dev/dbox/lcd0")
 SystemInfo["LCDsymbol_circle_recording"] = fileCheck("/proc/stb/lcd/symbol_circle")
 SystemInfo["LCDsymbol_timeshift"] = fileCheck("/proc/stb/lcd/symbol_timeshift")
-SystemInfo["LCDshow_symbols"] = (HardwareInfo().get_device_model().startswith("et9") or HardwareInfo().get_device_model() in ("hd51", "vs1500")) and fileCheck("/proc/stb/lcd/show_symbols")
-SystemInfo["LCDsymbol_hdd"] = HardwareInfo().get_device_model() in ("hd51", "vs1500") and fileCheck("/proc/stb/lcd/symbol_hdd")
+SystemInfo["LCDshow_symbols"] = (model.startswith("et9") or model in ("hd51", "vs1500")) and fileCheck("/proc/stb/lcd/show_symbols")
+SystemInfo["LCDsymbol_hdd"] = model in ("hd51", "vs1500") and fileCheck("/proc/stb/lcd/symbol_hdd")
 SystemInfo["FrontpanelDisplayGrayscale"] = fileExists("/dev/dbox/oled0")
 SystemInfo["DeepstandbySupport"] = True
 SystemInfo["Fan"] = fileCheck("/proc/stb/fp/fan")
@@ -53,16 +54,16 @@ SystemInfo["PowerLED"] = fileCheck("/proc/stb/power/powerled")
 SystemInfo["StandbyLED"] = fileCheck("/proc/stb/power/standbyled")
 SystemInfo["SuspendLED"] = fileCheck("/proc/stb/power/suspendled")
 SystemInfo["Display"] = SystemInfo["FrontpanelDisplay"] or SystemInfo["StandbyLED"]
-SystemInfo["PowerOffDisplay"] = HardwareInfo().get_device_model() not in "formuler1" and fileCheck("/proc/stb/power/vfd") or fileCheck("/proc/stb/lcd/vfd")
-SystemInfo["WakeOnLAN"] = not HardwareInfo().get_device_model().startswith("et8000") and fileCheck("/proc/stb/power/wol") or fileCheck("/proc/stb/fp/wol")
-SystemInfo["HasExternalPIP"] = not (HardwareInfo().get_device_model().startswith("et9") or HardwareInfo().get_device_model() in ('e4hd',)) and fileCheck("/proc/stb/vmpeg/1/external")
+SystemInfo["PowerOffDisplay"] = model not in "formuler1" and fileCheck("/proc/stb/power/vfd") or fileCheck("/proc/stb/lcd/vfd")
+SystemInfo["WakeOnLAN"] = not model.startswith("et8000") and fileCheck("/proc/stb/power/wol") or fileCheck("/proc/stb/fp/wol")
+SystemInfo["HasExternalPIP"] = not (model.startswith("et9") or model in ('e4hd',)) and fileCheck("/proc/stb/vmpeg/1/external")
 SystemInfo["VideoDestinationConfigurable"] = fileExists("/proc/stb/vmpeg/0/dst_left")
 SystemInfo["hasPIPVisibleProc"] = fileCheck("/proc/stb/vmpeg/1/visible")
-SystemInfo["MaxPIPSize"] = HardwareInfo().get_device_model() in ('hd51', 'h7', 'vs1500', 'e4hd') and (360, 288) or (540, 432)
-SystemInfo["VFD_scroll_repeats"] = not HardwareInfo().get_device_model().startswith("et8500") and fileCheck("/proc/stb/lcd/scroll_repeats")
-SystemInfo["VFD_scroll_delay"] = not HardwareInfo().get_device_model().startswith("et8500") and fileCheck("/proc/stb/lcd/scroll_delay")
-SystemInfo["VFD_initial_scroll_delay"] = not HardwareInfo().get_device_model().startswith("et8500") and fileCheck("/proc/stb/lcd/initial_scroll_delay")
-SystemInfo["VFD_final_scroll_delay"] = not HardwareInfo().get_device_model().startswith("et8500") and fileCheck("/proc/stb/lcd/final_scroll_delay")
+SystemInfo["MaxPIPSize"] = model in ('hd51', 'h7', 'vs1500', 'e4hd') and (360, 288) or (540, 432)
+SystemInfo["VFD_scroll_repeats"] = not model.startswith("et8500") and fileCheck("/proc/stb/lcd/scroll_repeats")
+SystemInfo["VFD_scroll_delay"] = not model.startswith("et8500") and fileCheck("/proc/stb/lcd/scroll_delay")
+SystemInfo["VFD_initial_scroll_delay"] = not model.startswith("et8500") and fileCheck("/proc/stb/lcd/initial_scroll_delay")
+SystemInfo["VFD_final_scroll_delay"] = not model.startswith("et8500") and fileCheck("/proc/stb/lcd/final_scroll_delay")
 SystemInfo["LcdLiveTV"] = fileCheck("/proc/stb/fb/sd_detach") or fileCheck("/proc/stb/lcd/live_enable")
 SystemInfo["LcdLiveTVMode"] = fileCheck("/proc/stb/lcd/mode")
 SystemInfo["LcdLiveDecoder"] = fileCheck("/proc/stb/lcd/live_decoder")
@@ -74,14 +75,14 @@ SystemInfo["RcTypeChangable"] = not(HardwareInfo().get_device_model().startswith
 SystemInfo["HasFullHDSkinSupport"] = True # HardwareInfo().get_device_model() not in ("et4000", "et5000", "sh1", "hd500c", "hd1100", "xp1000", "lc")
 SystemInfo["HasBypassEdidChecking"] = fileCheck("/proc/stb/hdmi/bypass_edid_checking")
 SystemInfo["HasColorspace"] = fileCheck("/proc/stb/video/hdmi_colorspace")
-SystemInfo["HasColorspaceSimple"] = SystemInfo["HasColorspace"] and HardwareInfo().get_device_model() in "vusolo4k"
+SystemInfo["HasColorspaceSimple"] = SystemInfo["HasColorspace"] and model in "vusolo4k"
 SystemInfo["HasMultichannelPCM"] = fileCheck("/proc/stb/audio/multichannel_pcm")
 SystemInfo["HasMMC"] = "root" in cmdline and cmdline["root"].startswith('/dev/mmcblk')
 SystemInfo["HasTranscoding"] = pathExists("/proc/stb/encoder/0") or fileCheck("/dev/bcm_enc0")
 SystemInfo["HasH265Encoder"] = fileHas("/proc/stb/encoder/0/vcodec_choices", "h265")
-SystemInfo["CanNotDoSimultaneousTranscodeAndPIP"] = HardwareInfo().get_device_model() in "vusolo4k"
+SystemInfo["CanNotDoSimultaneousTranscodeAndPIP"] = model in "vusolo4k"
 SystemInfo["HasColordepth"] = fileCheck("/proc/stb/video/hdmi_colordepth")
-SystemInfo["HasFrontDisplayPicon"] = HardwareInfo().get_device_model() in ("vusolo4k", "et8500")
+SystemInfo["HasFrontDisplayPicon"] = model in ("vusolo4k", "et8500")
 SystemInfo["Has24hz"] = fileCheck("/proc/stb/video/videomode_24hz")
 SystemInfo["Has2160p"] = False
 SystemInfo["HasHDMIpreemphasis"] = fileCheck("/proc/stb/hdmi/preemphasis")
@@ -105,9 +106,9 @@ SystemInfo["HasRootSubdir"] = fileHas("/proc/cmdline", "rootsubdir=")
 SystemInfo["canMultiBoot"] = HardwareInfo().get_device_model() in ('hd51', 'h7', 'vs1500', 'e4hd') and (1, 4, "mmcblk0", False) or HardwareInfo().get_device_model() in ('gbue4k', 'gbquad4k') and (3, 3, "mmcblk0", True) or HardwareInfo().get_device_model() in ('osmio4k') and (1, 4, "mmcblk1", True)
 SystemInfo["canMode12"] = HardwareInfo().get_device_model() in ("hd51", "vs1500") and '192M' or HardwareInfo().get_device_model() in ("h7") and '200M'
 SystemInfo["HasRootSubdir"] = "rootsubdir" in cmdline
-SystemInfo["canMultiBoot"] = SystemInfo["HasRootSubdir"] and (1, 4, "mmcblk0", False) or "_4.boxmode" in cmdline and (1, 4, "mmcblk0", False) or HardwareInfo().get_device_model() in ('gbue4k', 'gbquad4k') and (3, 3, "mmcblk0", True) or HardwareInfo().get_device_model() in ('e4hd') and (1, 4, "mmcblk0", False) or HardwareInfo().get_device_model() in ('osmio4k', 'osmio4kplus') and (1, 4, "mmcblk1", True)
-SystemInfo["canMode12"] = ("_4.boxmode" in cmdline and (cmdline['_4.boxmode'] == "1" or cmdline['_4.boxmode'] == "12")) and "192M"
-SystemInfo["canFlashWithOfgwrite"] = not(HardwareInfo().get_device_model().startswith("dm"))
+SystemInfo["canMultiBoot"] = SystemInfo["HasRootSubdir"] and (1, 4, "mmcblk0", False) or "%s_4.boxmode" % model in cmdline and (1, 4, "mmcblk0", False) or model in ('gbue4k', 'gbquad4k') and (3, 3, "mmcblk0", True) or model in ('e4hd') and (1, 4, "mmcblk0", False) or model in ('osmio4k', 'osmio4kplus') and (1, 4, "mmcblk1", True)
+SystemInfo["canMode12"] = "%s_4.boxmode" % model in cmdline and cmdline["%s_4.boxmode" % model] in ("1","12") and "192M"
+SystemInfo["canFlashWithOfgwrite"] = not(model.startswith("dm"))
 SystemInfo["HDRSupport"] = fileExists("/proc/stb/hdmi/hlg_support_choices") and fileCheck("/proc/stb/hdmi/hlg_support")
 SystemInfo["CanDownmixAC3"] = fileHas("/proc/stb/audio/ac3_choices", "downmix")
 SystemInfo["CanDownmixDTS"] = fileHas("/proc/stb/audio/dts_choices", "downmix")
