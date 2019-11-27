@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: enigma2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-09-07 13:00+0200\n"
+"POT-Creation-Date: 2019-11-18 18:59+0100\n"
 "PO-Revision-Date: 2007-08-14 10:23+0200\n"
 "Last-Translator: Oriol Pellicer <oriol@elsud.org>\n"
 "Language-Team: \n"
@@ -22,33 +22,12 @@ msgstr ""
 #
 msgid ""
 "\n"
-"Advanced options and settings."
-msgstr ""
-
-#
-msgid ""
-"\n"
 "After pressing OK, please wait!"
-msgstr ""
-
-msgid "Backup your receiver settings."
 msgstr ""
 
 msgid ""
 "\n"
 "Conflict detection disabled!"
-msgstr ""
-
-#
-msgid ""
-"\n"
-"Edit the update source address."
-msgstr ""
-
-msgid "Manage extensions or plugins for your receiver."
-msgstr ""
-
-msgid "Online update of your receiver software."
 msgstr ""
 
 #
@@ -69,36 +48,10 @@ msgid ""
 "Recording in progress."
 msgstr ""
 
-#
-msgid ""
-"\n"
-"Restore your backups by date."
-msgstr ""
-
-msgid "Restore your receiver settings."
-msgstr ""
-
-#
-msgid "Scan for local extensions and install them."
-msgstr ""
-
-#
-msgid ""
-"\n"
-"Select your backup device.\n"
-"Current device: "
-msgstr ""
-
 #, python-format
 msgid ""
 "\n"
 "Timer '%s' disabled!"
-msgstr ""
-
-#
-msgid ""
-"\n"
-"View, install and remove available or installed packages."
 msgstr ""
 
 msgid " (0 - all networks)"
@@ -163,6 +116,14 @@ msgstr ""
 
 #, python-format
 msgid "%.0f kB"
+msgstr ""
+
+#, python-format
+msgid "%.1f°E"
+msgstr ""
+
+#, python-format
+msgid "%.1f°W"
 msgstr ""
 
 #, python-format
@@ -857,6 +818,11 @@ msgstr "Afegir una marca"
 
 #
 #, fuzzy
+msgid "Add bouquet"
+msgstr "afegir llista"
+
+#
+#, fuzzy
 msgid "Add directory to playlist"
 msgstr "afegir el directori a la llista"
 
@@ -901,6 +867,11 @@ msgid "Add service"
 msgstr "Canal"
 
 #
+#, fuzzy
+msgid "Add services to this bouquet?"
+msgstr "afegir el canal a la llista"
+
+#
 msgid "Add timer"
 msgstr "Gravar"
 
@@ -936,6 +907,10 @@ msgid "Advanced"
 msgstr ""
 
 msgid "Advanced options"
+msgstr ""
+
+#
+msgid "Advanced options and settings."
 msgstr ""
 
 #
@@ -1139,6 +1114,9 @@ msgid "Arabic"
 msgstr "Àrab"
 
 msgid "Are you sure to purge all deleted userbouquets?"
+msgstr ""
+
+msgid "Are you sure to reboot to"
 msgstr ""
 
 #, python-format
@@ -1448,6 +1426,9 @@ msgstr "Sí, fes un backup de la configuració!"
 
 #
 msgid "Backup system settings"
+msgstr ""
+
+msgid "Backup your receiver settings."
 msgstr ""
 
 msgid "Bahamas"
@@ -2552,6 +2533,10 @@ msgstr ""
 msgid "Create DVD-ISO"
 msgstr ""
 
+#
+msgid "Create directory"
+msgstr ""
+
 msgid "Create new folder and exit"
 msgstr ""
 
@@ -3253,15 +3238,15 @@ msgid "Do you want to select a different skin?"
 msgstr ""
 
 #
+msgid "Do you want to update the package:\n"
+msgstr ""
+
+#
 #, fuzzy, python-format
 msgid "Do you want to update your receiver to %s?"
 msgstr "Vols restaurar la configuració?"
 
 msgid "Do you want to update your receiver?"
-msgstr ""
-
-#
-msgid "Do you want to update the package:\n"
 msgstr ""
 
 msgid "Dolby"
@@ -3414,6 +3399,10 @@ msgstr ""
 msgid "Edit the network configuration of your receiver.\n"
 msgstr ""
 
+#
+msgid "Edit the update source address."
+msgstr ""
+
 msgid "Edit timer"
 msgstr ""
 
@@ -3422,7 +3411,7 @@ msgid "Edit title"
 msgstr ""
 
 #
-msgid "Edit update source url."
+msgid "Edit update source url"
 msgstr ""
 
 msgid "Education/Science/..."
@@ -4342,9 +4331,6 @@ msgstr ""
 msgid "Goto 0"
 msgstr "Anar a 0"
 
-msgid "Goto:"
-msgstr ""
-
 msgid "Goto X"
 msgstr ""
 
@@ -4373,6 +4359,9 @@ msgstr ""
 msgid "Goto specific date/time"
 msgstr ""
 
+msgid "Goto:"
+msgstr ""
+
 msgid "GotoX calibration"
 msgstr ""
 
@@ -4391,9 +4380,6 @@ msgstr "Grec"
 #
 msgid "Greek"
 msgstr "Grec"
-
-msgid "Greek (Modern)"
-msgstr ""
 
 msgid "Green"
 msgstr ""
@@ -4667,6 +4653,9 @@ msgstr ""
 msgid "Icons"
 msgstr ""
 
+msgid "If disabled, underline characters in file and directory names are not shown and are replaced with spaces."
+msgstr ""
+
 msgid "If enabled, bookmarks will be updated with the new location when you move or copy a recording."
 msgstr ""
 
@@ -4890,10 +4879,6 @@ msgid "Install channel list"
 msgstr "canal següent en l'històric"
 
 msgid "Install extensions"
-msgstr ""
-
-#
-msgid "Install extensions."
 msgstr ""
 
 #
@@ -5421,6 +5406,9 @@ msgstr ""
 
 #
 msgid "Manage extensions"
+msgstr ""
+
+msgid "Manage extensions or plugins for your receiver."
 msgstr ""
 
 #
@@ -6166,9 +6154,6 @@ msgstr "Noruec"
 msgid "Norwegian"
 msgstr "Noruec"
 
-msgid "Not defined"
-msgstr ""
-
 #
 #, fuzzy
 msgid "Not Installed"
@@ -6178,6 +6163,9 @@ msgid "Not Required"
 msgstr ""
 
 msgid "Not associated"
+msgstr ""
+
+msgid "Not defined"
 msgstr ""
 
 #, python-format
@@ -6261,9 +6249,6 @@ msgstr "Desactivat"
 msgid "Offline decode delay (ms)"
 msgstr ""
 
-msgid "Ok"
-msgstr ""
-
 msgid "Oman"
 msgstr ""
 
@@ -6283,6 +6268,9 @@ msgstr ""
 #
 msgid "One"
 msgstr "Un"
+
+msgid "Online update of your receiver software."
+msgstr ""
 
 msgid "Only change this setting if you are using a SCR device that has been reprogrammed with a custom programmer. For further information check with the person that reprogrammed the device."
 msgstr ""
@@ -7123,9 +7111,6 @@ msgstr ""
 msgid "Prime time"
 msgstr ""
 
-msgid "PrimeTime"
-msgstr ""
-
 #
 msgid "Priority"
 msgstr ""
@@ -7451,6 +7436,10 @@ msgstr ""
 msgid "Remove currently selected title"
 msgstr "Esborra el títol seleccionat"
 
+#
+msgid "Remove directory"
+msgstr ""
+
 msgid "Remove items from trash can after (days)"
 msgstr ""
 
@@ -7490,6 +7479,10 @@ msgid "Repeat"
 msgstr ""
 
 msgid "Repeat leave standby messages"
+msgstr ""
+
+#
+msgid "Repeat playlist"
 msgstr ""
 
 #
@@ -7615,6 +7608,13 @@ msgstr ""
 
 #
 msgid "Restore system settings"
+msgstr ""
+
+#
+msgid "Restore your backups by date."
+msgstr ""
+
+msgid "Restore your receiver settings."
 msgstr ""
 
 #
@@ -7871,9 +7871,17 @@ msgid "Save changes"
 msgstr ""
 
 #
+msgid "Save last directory on exit"
+msgstr ""
+
+#
 #, fuzzy
 msgid "Save playlist"
 msgstr "grava llista"
+
+#
+msgid "Save playlist on exit"
+msgstr ""
 
 msgid "Save settings and EPG data"
 msgstr ""
@@ -7944,6 +7952,10 @@ msgstr "Ha fallat la sintonització!"
 #, fuzzy
 msgid "Scan files..."
 msgstr "Arxius gravats..."
+
+#
+msgid "Scan for local extensions and install them."
+msgstr ""
 
 msgid "Scan options"
 msgstr ""
@@ -8366,7 +8378,7 @@ msgid "Select update source"
 msgstr "Seleccionar una pel·lícula"
 
 #
-msgid "Select update source to edit."
+msgid "Select update source to edit"
 msgstr ""
 
 #
@@ -8387,6 +8399,12 @@ msgid "Select your ATSC provider."
 msgstr "Seleccionar una pel·lícula"
 
 msgid "Select your Skin"
+msgstr ""
+
+#
+msgid ""
+"Select your backup device.\n"
+"Current device: "
 msgstr ""
 
 msgid "Select your country. If not available select 'all'."
@@ -8811,6 +8829,9 @@ msgstr ""
 msgid "Show latest update log"
 msgstr ""
 
+msgid "Show media player on main menu"
+msgstr ""
+
 msgid "Show menu or plugin numbers"
 msgstr ""
 
@@ -8909,6 +8930,9 @@ msgstr "Reproductor de ràdio..."
 #
 msgid "Show the tv player..."
 msgstr "Mostrar el reproductor de tv..."
+
+msgid "Show underline characters in filenames"
+msgstr ""
 
 msgid "Show vertical timelines"
 msgstr ""
@@ -9196,6 +9220,9 @@ msgstr ""
 msgid "Sort time"
 msgstr "sense timeout"
 
+msgid "Sorting of playlists"
+msgstr ""
+
 #
 msgid "Sound"
 msgstr "So"
@@ -9313,6 +9340,10 @@ msgid "Standby fan %d voltage"
 msgstr ""
 
 msgid "Standby in "
+msgstr ""
+
+#
+msgid "Start directory"
 msgstr ""
 
 #
@@ -9625,6 +9656,10 @@ msgid "Switch channel up"
 msgstr ""
 
 msgid "Switch to TV mode"
+msgstr ""
+
+#
+msgid "Switch to bookmarks"
 msgstr ""
 
 #
@@ -9976,8 +10011,8 @@ msgstr ""
 
 msgid ""
 "This info is for developers only.\n"
-"For a normal users it is not relevant.\n"
-"Don't panic please when you see values being displayed that you think look suspicious!"
+"For normal users it is not relevant.\n"
+"Please don't panic if you see values displayed looking suspicious!"
 msgstr ""
 
 msgid "This is a multitype tuner. Available options depend on the hardware."
@@ -10670,6 +10705,11 @@ msgstr ""
 
 #
 #, fuzzy
+msgid "Update bookmarks"
+msgstr "Recerca automàtica"
+
+#
+#, fuzzy
 msgid "Update channel list only"
 msgstr "canal següent en l'històric"
 
@@ -10693,12 +10733,12 @@ msgid "Updatefeed not available."
 msgstr ""
 
 #
-msgid "Updating software catalog"
-msgstr ""
-
-#
 msgid "Updating"
 msgstr "Actualitzant"
+
+#
+msgid "Updating software catalog"
+msgstr ""
 
 msgid "Upper case"
 msgstr ""
@@ -11036,6 +11076,10 @@ msgid "View teletext..."
 msgstr "Veure teletext..."
 
 msgid "View video CD..."
+msgstr ""
+
+#
+msgid "View, install and remove available or installed packages."
 msgstr ""
 
 msgid "Virgin Islands (British)"
@@ -11829,16 +11873,15 @@ msgstr "per a començar"
 msgid "activate network adapter configuration"
 msgstr ""
 
+msgid "active"
+msgstr ""
+
 msgid "actual time only"
 msgstr ""
 
 #
 msgid "add alternatives"
 msgstr "afegir alternatives"
-
-#
-msgid "add bookmark"
-msgstr ""
 
 #
 msgid "add bouquet"
@@ -12034,10 +12077,6 @@ msgstr ""
 #
 msgid "copy to bouquets"
 msgstr "copiar a les llistes"
-
-#
-msgid "Create directory"
-msgstr ""
 
 #
 msgid "daily"
@@ -12673,18 +12712,10 @@ msgstr "esborrar totes les marques trobades"
 msgid "remove before this position"
 msgstr "esborra abans d'aquesta posició"
 
-#
-msgid "remove bookmark"
-msgstr ""
-
 msgid "remove bouquet from parental protection"
 msgstr ""
 
 msgid "remove cable services"
-msgstr ""
-
-#
-msgid "Remove directory"
 msgstr ""
 
 #
@@ -12711,10 +12742,6 @@ msgid "remove this mark"
 msgstr "esborrar aquesta marca"
 
 msgid "rename entry"
-msgstr ""
-
-#
-msgid "Repeat playlist"
 msgstr ""
 
 #
@@ -12754,14 +12781,6 @@ msgid "running"
 msgstr ""
 
 #
-msgid "Save last directory on exit"
-msgstr ""
-
-#
-msgid "Save playlist on exit"
-msgstr ""
-
-#
 msgid "scan state"
 msgstr "estat de la recerca"
 
@@ -12771,10 +12790,6 @@ msgstr ""
 #
 msgid "seconds"
 msgstr "segons"
-
-#
-msgid "select"
-msgstr ""
 
 #
 msgid "select CAId's"
@@ -12815,9 +12830,6 @@ msgstr "mostrar alternatives"
 #
 msgid "show event details"
 msgstr "mostrar detalls del programa"
-
-msgid "Show media player on main menu"
-msgstr ""
 
 msgid "show softwaremanager in setup menu"
 msgstr ""
@@ -12900,9 +12912,6 @@ msgstr ""
 msgid "social/spiritual science"
 msgstr ""
 
-msgid "Sorting of playlists"
-msgstr ""
-
 msgid "special events"
 msgstr ""
 
@@ -12923,10 +12932,6 @@ msgstr ""
 msgid "start cut here"
 msgstr "començar tall aquí"
 
-#
-msgid "Start directory"
-msgstr ""
-
 msgid "starts in a few seconds"
 msgstr ""
 
@@ -12941,10 +12946,6 @@ msgid "stop using as startup service"
 msgstr ""
 
 msgid "successful"
-msgstr ""
-
-#
-msgid "Switch to bookmarks"
 msgstr ""
 
 #
@@ -13034,11 +13035,6 @@ msgstr ""
 #
 msgid "until standby/restart"
 msgstr ""
-
-#
-#, fuzzy
-msgid "Update bookmarks"
-msgstr "Recerca automàtica"
 
 #
 msgid "user defined"
@@ -13135,6 +13131,9 @@ msgstr "si"
 #
 msgid "yes (keep feeds)"
 msgstr "si (mantenir feeds)"
+
+msgid "yes, but not in multi selections"
+msgstr ""
 
 #
 msgid "zap"

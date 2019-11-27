@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: enigma2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-09-07 13:00+0200\n"
+"POT-Creation-Date: 2019-11-18 18:59+0100\n"
 "PO-Revision-Date: 2014-12-15 19:38-0000\n"
 "Last-Translator: Phenom <phenomxy@gmail.com>\n"
 "Language-Team: Muaitai <muaitai@gmail.com>\n"
@@ -18,40 +18,15 @@ msgstr ""
 #
 msgid ""
 "\n"
-"Advanced options and settings."
-msgstr ""
-"\n"
-"Definições e opções avançadas."
-
-#
-msgid ""
-"\n"
 "After pressing OK, please wait!"
 msgstr ""
 "\n"
 "Depois de pressionar OK, aguarde por favor!"
 
-msgid "Backup your receiver settings."
-msgstr "Backup das definições do receptor."
-
 msgid ""
 "\n"
 "Conflict detection disabled!"
 msgstr ""
-
-#
-msgid ""
-"\n"
-"Edit the update source address."
-msgstr ""
-"\n"
-"Editar o endereço da fonte de actualização."
-
-msgid "Manage extensions or plugins for your receiver."
-msgstr "Gestão das extensões e Plugins do seu receptor."
-
-msgid "Online update of your receiver software."
-msgstr "Actualização online do software do receptor."
 
 #
 msgid ""
@@ -73,44 +48,11 @@ msgid ""
 "Recording in progress."
 msgstr ""
 
-#
-msgid ""
-"\n"
-"Restore your backups by date."
-msgstr ""
-"\n"
-"Restaurar Backups por data."
-
-msgid "Restore your receiver settings."
-msgstr "Restaurar as definições do receptor."
-
-#
-msgid "Scan for local extensions and install them."
-msgstr "Procurar extensões locais e instalá-las."
-
-#
-msgid ""
-"\n"
-"Select your backup device.\n"
-"Current device: "
-msgstr ""
-"\n"
-"Selecione o dispositivo para Backup.\n"
-"Dispositivo actual: "
-
 #, python-format
 msgid ""
 "\n"
 "Timer '%s' disabled!"
 msgstr ""
-
-#
-msgid ""
-"\n"
-"View, install and remove available or installed packages."
-msgstr ""
-"\n"
-"Ver, instalar e remover pacotes instalados ou disponíveis."
 
 msgid " (0 - all networks)"
 msgstr ""
@@ -174,6 +116,14 @@ msgstr ""
 
 #, python-format
 msgid "%.0f kB"
+msgstr ""
+
+#, python-format
+msgid "%.1f°E"
+msgstr ""
+
+#, python-format
+msgid "%.1f°W"
 msgstr ""
 
 #, python-format
@@ -862,6 +812,11 @@ msgstr "Adicionar marcador"
 
 #
 #, fuzzy
+msgid "Add bouquet"
+msgstr "adicionar Bouquet"
+
+#
+#, fuzzy
 msgid "Add directory to playlist"
 msgstr "Adicionar directório à Lista de Reprodução"
 
@@ -906,6 +861,11 @@ msgid "Add service"
 msgstr "Adicionar canal"
 
 #
+#, fuzzy
+msgid "Add services to this bouquet?"
+msgstr "adicionar canal ao Bouquet"
+
+#
 msgid "Add timer"
 msgstr "Adicionar agendamento"
 
@@ -944,6 +904,10 @@ msgstr "Avançado"
 #, fuzzy
 msgid "Advanced options"
 msgstr "Opções avançadas"
+
+#
+msgid "Advanced options and settings."
+msgstr "Definições e opções avançadas."
 
 #
 msgid "Advanced restore"
@@ -1164,6 +1128,10 @@ msgstr "Árabe"
 
 msgid "Are you sure to purge all deleted userbouquets?"
 msgstr ""
+
+#, fuzzy
+msgid "Are you sure to reboot to"
+msgstr "Tem a certeza que deseja remover esta entrada?"
 
 #, python-format
 msgid "Are you sure to remove all %d.%d%s%s services?"
@@ -1498,6 +1466,9 @@ msgstr "Efectuar Backup das configurações do sistema"
 #
 msgid "Backup system settings"
 msgstr "Efectuar Backup das configurações do sistema"
+
+msgid "Backup your receiver settings."
+msgstr "Backup das definições do receptor."
 
 msgid "Bahamas"
 msgstr ""
@@ -2633,6 +2604,10 @@ msgstr ""
 msgid "Create DVD-ISO"
 msgstr "Criar DVD-ISO"
 
+#
+msgid "Create directory"
+msgstr "Criar directório"
+
 msgid "Create new folder and exit"
 msgstr ""
 
@@ -3348,16 +3323,16 @@ msgstr "Deseja continuar a reprodução?"
 msgid "Do you want to select a different skin?"
 msgstr ""
 
+#
+msgid "Do you want to update the package:\n"
+msgstr "Deseja actualizar o pacote:\n"
+
 #, fuzzy, python-format
 msgid "Do you want to update your receiver to %s?"
 msgstr "Deseja actualizar o receptor para %s ?"
 
 msgid "Do you want to update your receiver?"
 msgstr "Deseja actualizar o receptor?"
-
-#
-msgid "Do you want to update the package:\n"
-msgstr "Deseja actualizar o pacote:\n"
 
 msgid "Dolby"
 msgstr ""
@@ -3510,6 +3485,10 @@ msgstr "Edite as configurações do servidor de DNS do receptor.\n"
 msgid "Edit the network configuration of your receiver.\n"
 msgstr "Edite as configurações de rede do receptor.\n"
 
+#
+msgid "Edit the update source address."
+msgstr "Editar o endereço da fonte de actualização."
+
 msgid "Edit timer"
 msgstr ""
 
@@ -3518,8 +3497,8 @@ msgid "Edit title"
 msgstr "Editar o título"
 
 #
-msgid "Edit update source url."
-msgstr "Editar o URL da fonte de actualização."
+msgid "Edit update source url"
+msgstr "Editar o URL da fonte de actualização"
 
 msgid "Education/Science/..."
 msgstr "Educação/Ciência/..."
@@ -4450,9 +4429,6 @@ msgstr "Ir para"
 msgid "Goto 0"
 msgstr "Ir para 0"
 
-msgid "Goto:"
-msgstr "Ir para:"
-
 msgid "Goto X"
 msgstr "Ir para X"
 
@@ -4481,6 +4457,9 @@ msgstr ""
 msgid "Goto specific date/time"
 msgstr "Ir para uma data/hora específica"
 
+msgid "Goto:"
+msgstr "Ir para:"
+
 msgid "GotoX calibration"
 msgstr "Ir para a calibração X"
 
@@ -4499,9 +4478,6 @@ msgstr "Grego"
 #
 msgid "Greek"
 msgstr "Grego"
-
-msgid "Greek (Modern)"
-msgstr ""
 
 msgid "Green"
 msgstr ""
@@ -4778,6 +4754,9 @@ msgstr ""
 msgid "Icons"
 msgstr "Ícones"
 
+msgid "If disabled, underline characters in file and directory names are not shown and are replaced with spaces."
+msgstr ""
+
 msgid "If enabled, bookmarks will be updated with the new location when you move or copy a recording."
 msgstr ""
 
@@ -5006,10 +4985,6 @@ msgstr "Instalar Lista de Canais"
 
 msgid "Install extensions"
 msgstr "Instalar extensões"
-
-#
-msgid "Install extensions."
-msgstr "Instalar extensões."
 
 #
 msgid "Install local extension"
@@ -5562,6 +5537,9 @@ msgstr ""
 #
 msgid "Manage extensions"
 msgstr "Gerir extensões"
+
+msgid "Manage extensions or plugins for your receiver."
+msgstr "Gestão das extensões e Plugins do seu receptor."
 
 #
 msgid "Manage your receiver's software"
@@ -6318,9 +6296,6 @@ msgstr "Norueguês"
 msgid "Norwegian"
 msgstr "Norueguês"
 
-msgid "Not defined"
-msgstr ""
-
 #
 #, fuzzy
 msgid "Not Installed"
@@ -6332,6 +6307,9 @@ msgstr ""
 #, fuzzy
 msgid "Not associated"
 msgstr "Não associado"
+
+msgid "Not defined"
+msgstr ""
 
 #
 #, fuzzy, python-format
@@ -6415,9 +6393,6 @@ msgstr "Desligado"
 msgid "Offline decode delay (ms)"
 msgstr "Atraso da descodificação offline (ms)"
 
-msgid "Ok"
-msgstr "OK"
-
 msgid "Oman"
 msgstr ""
 
@@ -6437,6 +6412,9 @@ msgstr ""
 #
 msgid "One"
 msgstr "Um"
+
+msgid "Online update of your receiver software."
+msgstr "Actualização online do software do receptor."
 
 msgid "Only change this setting if you are using a SCR device that has been reprogrammed with a custom programmer. For further information check with the person that reprogrammed the device."
 msgstr ""
@@ -7306,9 +7284,6 @@ msgstr "DNS Primário"
 msgid "Prime time"
 msgstr ""
 
-msgid "PrimeTime"
-msgstr ""
-
 #
 msgid "Priority"
 msgstr "Prioridade"
@@ -7649,6 +7624,10 @@ msgstr "Remover agendamentos completos após (dias)"
 msgid "Remove currently selected title"
 msgstr "Remover o título seleccionado"
 
+#
+msgid "Remove directory"
+msgstr "Apagar directório"
+
 #, fuzzy
 msgid "Remove items from trash can after (days)"
 msgstr "Remover itens da reciclagem após (dias)"
@@ -7689,6 +7668,10 @@ msgstr "Repetir"
 
 msgid "Repeat leave standby messages"
 msgstr ""
+
+#
+msgid "Repeat playlist"
+msgstr "Repetir Lista de Reprodução"
 
 #
 #, fuzzy
@@ -7818,6 +7801,13 @@ msgstr "Restauro de Backups"
 #
 msgid "Restore system settings"
 msgstr "Restaurar configurações do sistema"
+
+#
+msgid "Restore your backups by date."
+msgstr "Restaurar Backups por data."
+
+msgid "Restore your receiver settings."
+msgstr "Restaurar as definições do receptor."
 
 #
 #, fuzzy
@@ -8079,9 +8069,17 @@ msgid "Save changes"
 msgstr ""
 
 #
+msgid "Save last directory on exit"
+msgstr "Memorizar último directório ao sair"
+
+#
 #, fuzzy
 msgid "Save playlist"
 msgstr "Guardar Lista de Reprodução"
+
+#
+msgid "Save playlist on exit"
+msgstr "Memorizar Lista de Reprodução ao sair"
 
 msgid "Save settings and EPG data"
 msgstr ""
@@ -8150,6 +8148,10 @@ msgstr "Pesquisa falhou!"
 #, fuzzy
 msgid "Scan files..."
 msgstr "Pesquisar ficheiros..."
+
+#
+msgid "Scan for local extensions and install them."
+msgstr "Procurar extensões locais e instalá-las."
 
 msgid "Scan options"
 msgstr ""
@@ -8571,8 +8573,8 @@ msgid "Select update source"
 msgstr "Seleccionar fonte de actualizações"
 
 #
-msgid "Select update source to edit."
-msgstr "Seleccionar fonte de actualizações para editar."
+msgid "Select update source to edit"
+msgstr "Seleccionar fonte de actualizações para editar"
 
 #
 msgid "Select video input with up/down buttons"
@@ -8593,6 +8595,14 @@ msgstr "Seleccionar operador para adicionar..."
 
 msgid "Select your Skin"
 msgstr ""
+
+#
+msgid ""
+"Select your backup device.\n"
+"Current device: "
+msgstr ""
+"Selecione o dispositivo para Backup.\n"
+"Dispositivo actual: "
 
 msgid "Select your country. If not available select 'all'."
 msgstr ""
@@ -9036,6 +9046,9 @@ msgstr ""
 msgid "Show latest update log"
 msgstr ""
 
+msgid "Show media player on main menu"
+msgstr "Mostrar leitor multimédia no menu principal"
+
 msgid "Show menu or plugin numbers"
 msgstr ""
 
@@ -9140,6 +9153,11 @@ msgstr "Mostrar rádio..."
 #
 msgid "Show the tv player..."
 msgstr "Mostrar TV..."
+
+#
+#, fuzzy
+msgid "Show underline characters in filenames"
+msgstr "Limite de caracteres para o nome das gravações"
 
 msgid "Show vertical timelines"
 msgstr ""
@@ -9442,6 +9460,9 @@ msgstr ""
 msgid "Sort time"
 msgstr "Ordenar por tempo"
 
+msgid "Sorting of playlists"
+msgstr "Ordenação de listas de reprodução"
+
 #
 msgid "Sound"
 msgstr "Som"
@@ -9563,6 +9584,10 @@ msgstr "Tensão do ventilador em Standby %d"
 
 msgid "Standby in "
 msgstr "Standby em "
+
+#
+msgid "Start directory"
+msgstr "Directório inicial"
 
 #
 msgid "Start from the beginning"
@@ -9878,6 +9903,10 @@ msgstr ""
 
 msgid "Switch to TV mode"
 msgstr ""
+
+#
+msgid "Switch to bookmarks"
+msgstr "Mudar para favoritos"
 
 #
 #, fuzzy
@@ -10264,8 +10293,8 @@ msgstr ""
 
 msgid ""
 "This info is for developers only.\n"
-"For a normal users it is not relevant.\n"
-"Don't panic please when you see values being displayed that you think look suspicious!"
+"For normal users it is not relevant.\n"
+"Please don't panic if you see values displayed looking suspicious!"
 msgstr ""
 
 msgid "This is a multitype tuner. Available options depend on the hardware."
@@ -10992,6 +11021,11 @@ msgstr "Actualizar e reiniciar (recomendado)"
 
 #
 #, fuzzy
+msgid "Update bookmarks"
+msgstr "Pesquisa automática"
+
+#
+#, fuzzy
 msgid "Update channel list only"
 msgstr "Actualizar apenas Lista de Canais"
 
@@ -11015,12 +11049,12 @@ msgid "Updatefeed not available."
 msgstr "Servidor de actualizações não disponível"
 
 #
-msgid "Updating software catalog"
-msgstr "A actualizar o catalogo de software"
-
-#
 msgid "Updating"
 msgstr "A actualizar"
+
+#
+msgid "Updating software catalog"
+msgstr "A actualizar o catalogo de software"
 
 msgid "Upper case"
 msgstr ""
@@ -11377,6 +11411,10 @@ msgstr "Ver teletexto..."
 #, fuzzy
 msgid "View video CD..."
 msgstr "Ver CD de vídeo..."
+
+#
+msgid "View, install and remove available or installed packages."
+msgstr "Ver, instalar e remover pacotes instalados ou disponíveis."
 
 msgid "Virgin Islands (British)"
 msgstr ""
@@ -12232,16 +12270,16 @@ msgstr "prestes a iniciar"
 msgid "activate network adapter configuration"
 msgstr "activar configuração do adaptador de rede"
 
+#, fuzzy
+msgid "active"
+msgstr "Relativo"
+
 msgid "actual time only"
 msgstr ""
 
 #
 msgid "add alternatives"
 msgstr "adicionar alternativas"
-
-#
-msgid "add bookmark"
-msgstr "adicionar marcador"
 
 #
 msgid "add bouquet"
@@ -12441,10 +12479,6 @@ msgstr "cozinhar"
 #
 msgid "copy to bouquets"
 msgstr "copiar para bouquets"
-
-#
-msgid "Create directory"
-msgstr "Criar directório"
 
 #
 msgid "daily"
@@ -13087,19 +13121,11 @@ msgstr "remover todas as novas flags"
 msgid "remove before this position"
 msgstr "remover antes desta posição"
 
-#
-msgid "remove bookmark"
-msgstr "apagar marcador"
-
 msgid "remove bouquet from parental protection"
 msgstr ""
 
 msgid "remove cable services"
 msgstr ""
-
-#
-msgid "Remove directory"
-msgstr "Apagar directório"
 
 #
 msgid "remove entry"
@@ -13126,10 +13152,6 @@ msgstr "remover este marcador"
 
 msgid "rename entry"
 msgstr "renomear entrada"
-
-#
-msgid "Repeat playlist"
-msgstr "Repetir Lista de Reprodução"
 
 #
 msgid "repeated"
@@ -13169,14 +13191,6 @@ msgid "running"
 msgstr "jardinagem"
 
 #
-msgid "Save last directory on exit"
-msgstr "Memorizar último directório ao sair"
-
-#
-msgid "Save playlist on exit"
-msgstr "Memorizar Lista de Reprodução ao sair"
-
-#
 msgid "scan state"
 msgstr "estado da pesquisa"
 
@@ -13186,10 +13200,6 @@ msgstr "ciência ficção/fantasia/terror"
 #
 msgid "seconds"
 msgstr "segundos"
-
-#
-msgid "select"
-msgstr "seleccionar"
 
 #
 msgid "select CAId's"
@@ -13230,9 +13240,6 @@ msgstr "ver alternativas"
 #
 msgid "show event details"
 msgstr "mostrar detalhes do programa"
-
-msgid "Show media player on main menu"
-msgstr "Mostrar leitor multimédia no menu principal"
 
 msgid "show softwaremanager in setup menu"
 msgstr "mostrar Gestor de Software no menu de configurações"
@@ -13316,9 +13323,6 @@ msgstr "social/política/economia"
 msgid "social/spiritual science"
 msgstr "social/ciência espiritual"
 
-msgid "Sorting of playlists"
-msgstr "Ordenação de listas de reprodução"
-
 msgid "special events"
 msgstr "programas especiais"
 
@@ -13339,10 +13343,6 @@ msgstr "standard"
 msgid "start cut here"
 msgstr "iniciar o corte aqui"
 
-#
-msgid "Start directory"
-msgstr "Directório inicial"
-
 #, fuzzy
 msgid "starts in a few seconds"
 msgstr "Iniciar desencriptação offline"
@@ -13359,10 +13359,6 @@ msgstr "deixar de usar como canal inicial"
 
 msgid "successful"
 msgstr ""
-
-#
-msgid "Switch to bookmarks"
-msgstr "Mudar para favoritos"
 
 #
 msgid "switch to the next angle"
@@ -13450,11 +13446,6 @@ msgstr ""
 #
 msgid "until standby/restart"
 msgstr "até Standby/reiniciar"
-
-#
-#, fuzzy
-msgid "Update bookmarks"
-msgstr "Pesquisa automática"
 
 #
 msgid "user defined"
@@ -13551,6 +13542,9 @@ msgstr "sim"
 #
 msgid "yes (keep feeds)"
 msgstr "sim (mantenha os feeds)"
+
+msgid "yes, but not in multi selections"
+msgstr ""
 
 #
 msgid "zap"

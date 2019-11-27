@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: enigma2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-09-07 13:00+0200\n"
+"POT-Creation-Date: 2019-11-18 18:59+0100\n"
 "PO-Revision-Date: 2019-06-27 16:02+0200\n"
 "Last-Translator: Andrej Tobola <andrej.tobola@gmail.com>\n"
 "Language-Team: \n"
@@ -16,20 +16,10 @@ msgstr ""
 
 msgid ""
 "\n"
-"Advanced options and settings."
-msgstr ""
-"\n"
-"Rozšírené možnosti a nastavenia."
-
-msgid ""
-"\n"
 "After pressing OK, please wait!"
 msgstr ""
 "\n"
 "Po stlačení tlačidla OK počkajte!"
-
-msgid "Backup your receiver settings."
-msgstr "Záloha nastavení prijímača."
 
 msgid ""
 "\n"
@@ -37,19 +27,6 @@ msgid ""
 msgstr ""
 "\n"
 "Zisťovanie konfliktov zakázané!"
-
-msgid ""
-"\n"
-"Edit the update source address."
-msgstr ""
-"\n"
-"Upraviť adresu zdroja aktualizácií."
-
-msgid "Manage extensions or plugins for your receiver."
-msgstr "Správa rozšírení alebo doplnkov prijímača."
-
-msgid "Online update of your receiver software."
-msgstr "Online aktualizácia softvéru prijímača."
 
 msgid ""
 "\n"
@@ -72,28 +49,6 @@ msgstr ""
 "\n"
 "Nahráva sa."
 
-msgid ""
-"\n"
-"Restore your backups by date."
-msgstr ""
-"\n"
-"Obnoviť zo zálohy podľa dátumu."
-
-msgid "Restore your receiver settings."
-msgstr "Obnova nastavení prijímača."
-
-msgid "Scan for local extensions and install them."
-msgstr "Prehľadať miestne balíčky a nainštalovať ich."
-
-msgid ""
-"\n"
-"Select your backup device.\n"
-"Current device: "
-msgstr ""
-"\n"
-"Zvoľte zariadenie pre zálohovanie.\n"
-"Aktuálne zariadenie: "
-
 #, python-format
 msgid ""
 "\n"
@@ -101,13 +56,6 @@ msgid ""
 msgstr ""
 "\n"
 "Časovač '%s' zakázaný!"
-
-msgid ""
-"\n"
-"View, install and remove available or installed packages."
-msgstr ""
-"\n"
-"Prezrieť, nainštalovať a odstrániť dostupné alebo nainštalované balíčky."
 
 msgid " (0 - all networks)"
 msgstr " (0 - všetky siete)"
@@ -167,6 +115,14 @@ msgstr "%.0f MB"
 #, python-format
 msgid "%.0f kB"
 msgstr "%.0f kB"
+
+#, python-format
+msgid "%.1f°E"
+msgstr ""
+
+#, python-format
+msgid "%.1f°W"
+msgstr ""
 
 #, python-format
 msgid "%.2f GB"
@@ -803,6 +759,10 @@ msgstr "Pridať nový titul"
 msgid "Add bookmark"
 msgstr "Pridať záložku"
 
+#, fuzzy
+msgid "Add bouquet"
+msgstr "pridať prehľad"
+
 msgid "Add directory to playlist"
 msgstr "Pridať adresár do zoznamu prehrávok"
 
@@ -829,6 +789,10 @@ msgstr "Pridať nahrávanie (zastaviť po aktuálnom programe)"
 
 msgid "Add service"
 msgstr "Pridať stanicu"
+
+#, fuzzy
+msgid "Add services to this bouquet?"
+msgstr "pridať stanicu do prehľadu"
 
 msgid "Add timer"
 msgstr "Pridať časovač"
@@ -862,6 +826,9 @@ msgstr "Pokročilé"
 
 msgid "Advanced options"
 msgstr "Rozšírené voľby"
+
+msgid "Advanced options and settings."
+msgstr "Rozšírené možnosti a nastavenia."
 
 msgid "Advanced restore"
 msgstr "Rozšírené obnovenie"
@@ -1049,6 +1016,10 @@ msgstr "Arabčina"
 
 msgid "Are you sure to purge all deleted userbouquets?"
 msgstr "Naozaj chcete natrvalo odstrániť všetky zmazané zoznamy staníc?"
+
+#, fuzzy
+msgid "Are you sure to reboot to"
+msgstr "Naozaj chcete odstrániť túto položku?"
 
 #, python-format
 msgid "Are you sure to remove all %d.%d%s%s services?"
@@ -1330,6 +1301,9 @@ msgstr "Záloha nastavení"
 
 msgid "Backup system settings"
 msgstr "Zálohovať nastavenia systému"
+
+msgid "Backup your receiver settings."
+msgstr "Záloha nastavení prijímača."
 
 msgid "Bahamas"
 msgstr "Bahamy"
@@ -1716,8 +1690,9 @@ msgstr "Kanál"
 msgid "Channels and EPG"
 msgstr "Stanice a EPG"
 
+#, fuzzy
 msgid "Channels only"
-msgstr "Len stanice"
+msgstr "Kanál"
 
 msgid "Chap."
 msgstr "Kap."
@@ -2330,6 +2305,9 @@ msgstr "Zakryť čiarkovaný blikajúci riadok pre túto stanicu"
 msgid "Create DVD-ISO"
 msgstr "Vytvoriť disk DVD-ISO"
 
+msgid "Create directory"
+msgstr "Vytvoriť adresár"
+
 msgid "Create new folder and exit"
 msgstr "Vytvoriť nový priečinok a exit"
 
@@ -2930,15 +2908,15 @@ msgstr "Chcete pokračovať v prehrávaní?"
 msgid "Do you want to select a different skin?"
 msgstr "Chcete zvoliť iný vzhľad?"
 
+msgid "Do you want to update the package:\n"
+msgstr "Chcete aktualizovať balíček:\n"
+
 #, python-format
 msgid "Do you want to update your receiver to %s?"
 msgstr "Chcete aktualizovať Váš prijímač na %s?"
 
 msgid "Do you want to update your receiver?"
 msgstr "Chcete aktualizovať Váš prijímač?"
-
-msgid "Do you want to update the package:\n"
-msgstr "Chcete aktualizovať balíček:\n"
 
 msgid "Dolby"
 msgstr "Dolby"
@@ -3017,7 +2995,7 @@ msgid "EPG language selection 2"
 msgstr "Voľba sekundárneho jazyka EPG"
 
 msgid "EPG only"
-msgstr "Len EPG"
+msgstr ""
 
 msgid "EPG selection"
 msgstr "Výber EPG"
@@ -3067,14 +3045,17 @@ msgstr "Upraviť DNS nastavenie prijímača.\n"
 msgid "Edit the network configuration of your receiver.\n"
 msgstr "Upraviť nastavenie siete Vášho prijímača.\n"
 
+msgid "Edit the update source address."
+msgstr "Upraviť adresu zdroja aktualizácií."
+
 msgid "Edit timer"
 msgstr "Úpraviť časovač"
 
 msgid "Edit title"
 msgstr "Upraviť titul"
 
-msgid "Edit update source url."
-msgstr "Upraviť URL zdroja aktualizácie."
+msgid "Edit update source url"
+msgstr "Upraviť URL zdroja aktualizácie"
 
 msgid "Education/Science/..."
 msgstr "Vzdelávanie/veda /..."
@@ -3909,9 +3890,6 @@ msgstr "Otočiť na"
 msgid "Goto 0"
 msgstr "Otočiť na 0"
 
-msgid "Goto:"
-msgstr "Prejsť na:"
-
 msgid "Goto X"
 msgstr "Otočiť na X"
 
@@ -3939,6 +3917,9 @@ msgstr "Prejsť na hlavný vysielací čas"
 msgid "Goto specific date/time"
 msgstr "Prejsť na konkrétny dátum/čas"
 
+msgid "Goto:"
+msgstr "Prejsť na:"
+
 msgid "GotoX calibration"
 msgstr "Kalibrácia Otočiť na X"
 
@@ -3953,9 +3934,6 @@ msgstr "Grécko"
 
 msgid "Greek"
 msgstr "Gréčtina"
-
-msgid "Greek (Modern)"
-msgstr "Gréčtina (moderná)"
 
 msgid "Green"
 msgstr "Zelené"
@@ -4203,6 +4181,9 @@ msgstr "Island"
 msgid "Icons"
 msgstr "Ikony"
 
+msgid "If disabled, underline characters in file and directory names are not shown and are replaced with spaces."
+msgstr ""
+
 msgid "If enabled, bookmarks will be updated with the new location when you move or copy a recording."
 msgstr "Ak je povolené, záložky budú aktualizované v novom umiestnení keď presuniete alebo skopírujete nahrávku."
 
@@ -4277,6 +4258,7 @@ msgstr "Image: "
 msgid "Import channels and/or EPG from remote receiver URL also when the receiver is getting out of standby"
 msgstr "Importovať stanice a/alebo EPG z URL adresy vzdialeného prijímača aj v prípade, že sa prijímač prebudí z pohotovostného režimu."
 
+#, fuzzy
 msgid "Import channels and/or EPG from remote receiver URL when receiver is booted"
 msgstr "Importovať stanice a/alebo EPG z URL adresy vzdialeného prijímača v prípade štartu prijímača"
 
@@ -4406,9 +4388,6 @@ msgstr "Inštalovať zoznam staníc"
 
 msgid "Install extensions"
 msgstr "Inštalovať rozšírenia"
-
-msgid "Install extensions."
-msgstr "Inštalovať rozšírenia."
 
 msgid "Install local extension"
 msgstr "Inštalovať miestne rozšírenie"
@@ -4862,6 +4841,9 @@ msgstr "Malta"
 
 msgid "Manage extensions"
 msgstr "Spravovať rozšírenia"
+
+msgid "Manage extensions or plugins for your receiver."
+msgstr "Správa rozšírení alebo doplnkov prijímača."
 
 msgid "Manage your receiver's software"
 msgstr "Spravovať softvér Vášho prijímača"
@@ -5486,9 +5468,6 @@ msgstr "Nórsko"
 msgid "Norwegian"
 msgstr "Nórčina"
 
-msgid "Not defined"
-msgstr "Nedefinované"
-
 msgid "Not Installed"
 msgstr "Nie je inštalované"
 
@@ -5497,6 +5476,9 @@ msgstr "Nie je vyžadované"
 
 msgid "Not associated"
 msgstr "Nepriradené"
+
+msgid "Not defined"
+msgstr "Nedefinované"
 
 #, python-format
 msgid "Not enough disk space. Please free up some disk space and try again. (%d MB required, %d MB available)"
@@ -5567,9 +5549,6 @@ msgstr "Vypnúť"
 msgid "Offline decode delay (ms)"
 msgstr "Oneskorenie offline dekódovania (ms)"
 
-msgid "Ok"
-msgstr "Ok"
-
 msgid "Oman"
 msgstr "Omán"
 
@@ -5587,6 +5566,9 @@ msgstr "Pre platné ONIDy, ignorovať frekvenciu sub network part"
 
 msgid "One"
 msgstr "Jeden"
+
+msgid "Online update of your receiver software."
+msgstr "Online aktualizácia softvéru prijímača."
 
 msgid "Only change this setting if you are using a SCR device that has been reprogrammed with a custom programmer. For further information check with the person that reprogrammed the device."
 msgstr "Toto nastavenie zmeňte iba v prípade, že používate SCR zariadenie, ktoré bolo preprogramované špeciálnym programátorom. Pre ďalšie informácie konzultujte s osobou, ktorá preprogramovala zariadenie."
@@ -6299,9 +6281,6 @@ msgstr "Primárny DNS"
 msgid "Prime time"
 msgstr "Hlavný vysielací čas"
 
-msgid "PrimeTime"
-msgstr "Hlavný vysielací čas"
-
 msgid "Priority"
 msgstr "Priorita"
 
@@ -6584,6 +6563,9 @@ msgstr "Odstrániť dokončené časovače (dni)"
 msgid "Remove currently selected title"
 msgstr "Odstrániť aktuálne zvolený titul"
 
+msgid "Remove directory"
+msgstr "Odstrániť adresár"
+
 msgid "Remove items from trash can after (days)"
 msgstr "Odstránenie položiek z koša po (dni)"
 
@@ -6617,6 +6599,9 @@ msgstr "Opakovať"
 
 msgid "Repeat leave standby messages"
 msgstr "Opakovať správu pohotovostného režimu"
+
+msgid "Repeat playlist"
+msgstr "Zopakovať zoznam prehrávok"
 
 msgid "Repeat type"
 msgstr "Druh opakovania"
@@ -6718,6 +6703,12 @@ msgstr "Obnoviť zálohy"
 
 msgid "Restore system settings"
 msgstr "Obnoviť nastavenia systému"
+
+msgid "Restore your backups by date."
+msgstr "Obnoviť zo zálohy podľa dátumu."
+
+msgid "Restore your receiver settings."
+msgstr "Obnova nastavení prijímača."
 
 msgid "Restoring..."
 msgstr "Obnovujem..."
@@ -6940,8 +6931,14 @@ msgstr "Uložiť a ukončiť časový posun"
 msgid "Save changes"
 msgstr "Uložiť zmeny"
 
+msgid "Save last directory on exit"
+msgstr "Pri ukončení uložiť posledný adresár"
+
 msgid "Save playlist"
 msgstr "Uložiť zoznam prehrávok"
+
+msgid "Save playlist on exit"
+msgstr "Pri ukončení uložiť zoznam prehrávok"
 
 msgid "Save settings and EPG data"
 msgstr "Uložiť nastavenia a EPG údaje"
@@ -7001,6 +6998,9 @@ msgstr "Vyhľadávanie zlyhalo!"
 
 msgid "Scan files..."
 msgstr "Vyhľadať súbory..."
+
+msgid "Scan for local extensions and install them."
+msgstr "Prehľadať miestne balíčky a nainštalovať ich."
 
 msgid "Scan options"
 msgstr "Možnosti vyhľadávania"
@@ -7355,8 +7355,8 @@ msgstr "Vyberte znakovú sadu virtuálnej klávesnice po stlačení klávesy Shi
 msgid "Select update source"
 msgstr "Zvoľte zdroj aktualizácie"
 
-msgid "Select update source to edit."
-msgstr "Zvoľte zdroj aktualizácie, ktorý chcete upraviť."
+msgid "Select update source to edit"
+msgstr "Zvoľte zdroj aktualizácie, ktorý chcete upraviť"
 
 msgid "Select video input with up/down buttons"
 msgstr "Tlačidlami nahor a nadol zvoľte vstup obrazu"
@@ -7372,6 +7372,13 @@ msgstr "Vyberte vášho ATSC poskytovateľa."
 
 msgid "Select your Skin"
 msgstr "Zvoľte vzhľad"
+
+msgid ""
+"Select your backup device.\n"
+"Current device: "
+msgstr ""
+"Zvoľte zariadenie pre zálohovanie.\n"
+"Aktuálne zariadenie: "
 
 msgid "Select your country. If not available select 'all'."
 msgstr "Vyberte vašu krajinu. Ak nie je dostupné, vyberte 'všetky'."
@@ -7745,6 +7752,9 @@ msgstr "Zobraziť posledné zmeny"
 msgid "Show latest update log"
 msgstr "Zobraziť protokol z poslednej aktualizácie"
 
+msgid "Show media player on main menu"
+msgstr "Zobrazovať prehrávač médií v hlavnom menu"
+
 msgid "Show menu or plugin numbers"
 msgstr "Zobraziť čísla menu alebo doplnkov"
 
@@ -7840,6 +7850,10 @@ msgstr "Prehrávanie rádia..."
 
 msgid "Show the tv player..."
 msgstr "Prehrávanie TV..."
+
+#, fuzzy
+msgid "Show underline characters in filenames"
+msgstr "Obmedziť sadu znakov pre názvy súborov nahrávok"
 
 msgid "Show vertical timelines"
 msgstr "Zobraziť zvislé časové osi"
@@ -8087,6 +8101,9 @@ msgstr "Vykonať predvolené zoradenie zoznamu modulov?"
 msgid "Sort time"
 msgstr "Triediť podľa času"
 
+msgid "Sorting of playlists"
+msgstr "Usporiadanie playlistov"
+
 msgid "Sound"
 msgstr "Zvuk"
 
@@ -8190,6 +8207,9 @@ msgstr "Pohotovosť, napätie ventilátora %d"
 
 msgid "Standby in "
 msgstr "Pohotovostný režim za "
+
+msgid "Start directory"
+msgstr "Počiatočný adresár"
 
 msgid "Start from the beginning"
 msgstr "Spustiť od začiatku"
@@ -8454,6 +8474,9 @@ msgstr "Prepnúť kanál dopredu"
 
 msgid "Switch to TV mode"
 msgstr "Prepnúť na mód TV"
+
+msgid "Switch to bookmarks"
+msgstr "Prepnúť na záložky"
 
 msgid "Switch to filelist"
 msgstr "Prepnúť na zoznam súborov"
@@ -9428,6 +9451,9 @@ msgstr "Aktualizovať a reštartovať"
 msgid "Update and reboot (recommended)"
 msgstr "Aktualizovať a reštartovať (odporúčané)"
 
+msgid "Update bookmarks"
+msgstr "Aktualizovať záložky"
+
 msgid "Update channel list only"
 msgstr "Aktualizovať len zoznam kanálov"
 
@@ -9450,11 +9476,11 @@ msgstr "Aktualizácia bola dokončená."
 msgid "Updatefeed not available."
 msgstr "Zdroj aktualizácií nie je k dispozícií."
 
-msgid "Updating software catalog"
-msgstr "Aktualizácia katalógu softvéru"
-
 msgid "Updating"
 msgstr "Aktualizujem"
+
+msgid "Updating software catalog"
+msgstr "Aktualizácia katalógu softvéru"
 
 msgid "Upper case"
 msgstr "Veľké písmená"
@@ -9740,6 +9766,9 @@ msgstr "Zobraziť teletext..."
 
 msgid "View video CD..."
 msgstr "Zobraziť video CD..."
+
+msgid "View, install and remove available or installed packages."
+msgstr "Prezrieť, nainštalovať a odstrániť dostupné alebo nainštalované balíčky."
 
 msgid "Virgin Islands (British)"
 msgstr "Panenské ostrovy (Britské)"
@@ -10526,14 +10555,15 @@ msgstr "hneď začne"
 msgid "activate network adapter configuration"
 msgstr "aktivovať konfiguráciu sieťového adaptéra"
 
+#, fuzzy
+msgid "active"
+msgstr "Relatívne"
+
 msgid "actual time only"
 msgstr "iba aktuálny čas"
 
 msgid "add alternatives"
 msgstr "pridať alternatívy"
-
-msgid "add bookmark"
-msgstr "pridať záložku"
 
 msgid "add bouquet"
 msgstr "pridať prehľad"
@@ -10706,9 +10736,6 @@ msgstr "varenie"
 
 msgid "copy to bouquets"
 msgstr "skopírovať do prehľadov"
-
-msgid "Create directory"
-msgstr "Vytvoriť adresár"
 
 msgid "daily"
 msgstr "denne"
@@ -11253,17 +11280,11 @@ msgstr "odstrániť všetky značky pre novonájdené"
 msgid "remove before this position"
 msgstr "odstrániť pred touto pozíciou"
 
-msgid "remove bookmark"
-msgstr "odstrániť záložku"
-
 msgid "remove bouquet from parental protection"
 msgstr "odobrať zoznam staníc z rodičovskej kontroly"
 
 msgid "remove cable services"
 msgstr "odtrániť stanice káblovej TV"
-
-msgid "Remove directory"
-msgstr "Odstrániť adresár"
 
 msgid "remove entry"
 msgstr "odstrániť položku"
@@ -11285,9 +11306,6 @@ msgstr "odstrániť túto značku"
 
 msgid "rename entry"
 msgstr "premenovať položku"
-
-msgid "Repeat playlist"
-msgstr "Zopakovať zoznam prehrávok"
 
 msgid "repeated"
 msgstr "opakované"
@@ -11322,12 +11340,6 @@ msgstr "romantika"
 msgid "running"
 msgstr "Prebieha"
 
-msgid "Save last directory on exit"
-msgstr "Pri ukončení uložiť posledný adresár"
-
-msgid "Save playlist on exit"
-msgstr "Pri ukončení uložiť zoznam prehrávok"
-
 msgid "scan state"
 msgstr "stav vyhľadávania"
 
@@ -11336,9 +11348,6 @@ msgstr "sci-fi/fantasy/horor"
 
 msgid "seconds"
 msgstr "sekúnd"
-
-msgid "select"
-msgstr "zvoliť"
 
 msgid "select CAId's"
 msgstr "zvoliť CAIdy"
@@ -11372,9 +11381,6 @@ msgstr "zobraziť alternatívy"
 
 msgid "show event details"
 msgstr "zobraziť detaily o programe"
-
-msgid "Show media player on main menu"
-msgstr "Zobrazovať prehrávač médií v hlavnom menu"
 
 msgid "show softwaremanager in setup menu"
 msgstr "zobraziť manažér softvéru v menu nastavení"
@@ -11452,9 +11458,6 @@ msgstr "sociálne/politické problémy/ekonómia (všeobecne)"
 msgid "social/spiritual science"
 msgstr "sociálne/duchovnej vedy"
 
-msgid "Sorting of playlists"
-msgstr "Usporiadanie playlistov"
-
 msgid "special events"
 msgstr "špeciálne podujatia"
 
@@ -11473,9 +11476,6 @@ msgstr "štandardné"
 msgid "start cut here"
 msgstr "začiatok strihu tu"
 
-msgid "Start directory"
-msgstr "Počiatočný adresár"
-
 msgid "starts in a few seconds"
 msgstr "začne o pár sekúnd"
 
@@ -11490,9 +11490,6 @@ msgstr "nepoužívať ako stanicu po spustení"
 
 msgid "successful"
 msgstr "úspešný"
-
-msgid "Switch to bookmarks"
-msgstr "Prepnúť na záložky"
 
 msgid "switch to the next angle"
 msgstr "prepnúť na nasledujúci uhol kamery"
@@ -11568,9 +11565,6 @@ msgstr "neskúšateľné"
 
 msgid "until standby/restart"
 msgstr "do vypnutia alebo reštartu"
-
-msgid "Update bookmarks"
-msgstr "Aktualizovať záložky"
 
 msgid "user defined"
 msgstr "užívateľsky definované"
@@ -11657,6 +11651,9 @@ msgstr "áno"
 
 msgid "yes (keep feeds)"
 msgstr "áno (zachovať feedy)"
+
+msgid "yes, but not in multi selections"
+msgstr ""
 
 msgid "zap"
 msgstr "prepnúť"

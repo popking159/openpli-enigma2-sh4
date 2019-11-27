@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: tuxbox-enigma 0.0.1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-09-07 13:00+0200\n"
+"POT-Creation-Date: 2019-11-18 18:59+0100\n"
 "PO-Revision-Date: 2016-06-17 12:13+0800\n"
 "Last-Translator: nx111 <gdzdz@163.com>\n"
 "Language-Team: NEWBOLT\n"
@@ -17,37 +17,14 @@ msgstr ""
 
 msgid ""
 "\n"
-"Advanced options and settings."
-msgstr ""
-"\n"
-"高级选项和设置."
-
-msgid ""
-"\n"
 "After pressing OK, please wait!"
 msgstr ""
 "\n"
 "按OK键确定后, 请稍等!"
 
-msgid "Backup your receiver settings."
-msgstr ""
-
 msgid ""
 "\n"
 "Conflict detection disabled!"
-msgstr ""
-
-msgid ""
-"\n"
-"Edit the update source address."
-msgstr ""
-"\n"
-"编辑升级源地址。"
-
-msgid "Manage extensions or plugins for your receiver."
-msgstr ""
-
-msgid "Online update of your receiver software."
 msgstr ""
 
 msgid ""
@@ -68,40 +45,11 @@ msgid ""
 "Recording in progress."
 msgstr ""
 
-msgid ""
-"\n"
-"Restore your backups by date."
-msgstr ""
-"\n"
-"按日期恢复您的备份"
-
-msgid "Restore your receiver settings."
-msgstr ""
-
-msgid "Scan for local extensions and install them."
-msgstr "扫描本地扩展并安装."
-
-msgid ""
-"\n"
-"Select your backup device.\n"
-"Current device: "
-msgstr ""
-"\n"
-"选择备份设备.\n"
-"目前的设备:"
-
 #, python-format
 msgid ""
 "\n"
 "Timer '%s' disabled!"
 msgstr ""
-
-msgid ""
-"\n"
-"View, install and remove available or installed packages."
-msgstr ""
-"\n"
-"查看, 安装和删除已安装的软件包。"
 
 msgid " (0 - all networks)"
 msgstr ""
@@ -161,6 +109,14 @@ msgstr ""
 
 #, python-format
 msgid "%.0f kB"
+msgstr ""
+
+#, python-format
+msgid "%.1f°E"
+msgstr ""
+
+#, python-format
+msgid "%.1f°W"
 msgstr ""
 
 #, python-format
@@ -778,6 +734,10 @@ msgstr "增加一个新标题"
 msgid "Add bookmark"
 msgstr "添加书签"
 
+#, fuzzy
+msgid "Add bouquet"
+msgstr "增加自定义组"
+
 msgid "Add directory to playlist"
 msgstr "添加目录到播放列表"
 
@@ -804,6 +764,10 @@ msgstr ""
 
 msgid "Add service"
 msgstr "添加频道"
+
+#, fuzzy
+msgid "Add services to this bouquet?"
+msgstr "添加频道到自定义组"
 
 msgid "Add timer"
 msgstr "添加定时器"
@@ -837,6 +801,9 @@ msgstr "高级"
 
 msgid "Advanced options"
 msgstr "高级设置"
+
+msgid "Advanced options and settings."
+msgstr "高级选项和设置."
 
 msgid "Advanced restore"
 msgstr "高级恢复"
@@ -1026,6 +993,9 @@ msgid "Arabic"
 msgstr "阿拉伯语"
 
 msgid "Are you sure to purge all deleted userbouquets?"
+msgstr ""
+
+msgid "Are you sure to reboot to"
 msgstr ""
 
 #, python-format
@@ -1303,6 +1273,9 @@ msgstr "备份系统设置"
 
 msgid "Backup system settings"
 msgstr "备份系统设置"
+
+msgid "Backup your receiver settings."
+msgstr ""
 
 msgid "Bahamas"
 msgstr ""
@@ -2305,6 +2278,9 @@ msgstr ""
 msgid "Create DVD-ISO"
 msgstr "创建DVD-ISO"
 
+msgid "Create directory"
+msgstr "创建目录"
+
 msgid "Create new folder and exit"
 msgstr ""
 
@@ -2907,15 +2883,15 @@ msgstr " 是否继续上次播放?"
 msgid "Do you want to select a different skin?"
 msgstr ""
 
+msgid "Do you want to update the package:\n"
+msgstr " 是否升级软件包:\n"
+
 #, python-format
 msgid "Do you want to update your receiver to %s?"
 msgstr ""
 
 msgid "Do you want to update your receiver?"
 msgstr ""
-
-msgid "Do you want to update the package:\n"
-msgstr " 是否升级软件包:\n"
 
 msgid "Dolby"
 msgstr ""
@@ -2995,9 +2971,8 @@ msgstr "EPG自动语言1"
 msgid "EPG language selection 2"
 msgstr "EPG自动语言2"
 
-#, fuzzy
 msgid "EPG only"
-msgstr "仅仅"
+msgstr ""
 
 msgid "EPG selection"
 msgstr ""
@@ -3048,14 +3023,17 @@ msgstr ""
 msgid "Edit the network configuration of your receiver.\n"
 msgstr ""
 
+msgid "Edit the update source address."
+msgstr "编辑升级源地址。"
+
 msgid "Edit timer"
 msgstr ""
 
 msgid "Edit title"
 msgstr "修改标题"
 
-msgid "Edit update source url."
-msgstr "修改升级源地址."
+msgid "Edit update source url"
+msgstr "修改升级源地址"
 
 msgid "Education/Science/..."
 msgstr ""
@@ -3877,9 +3855,6 @@ msgstr ""
 msgid "Goto 0"
 msgstr "转到 0"
 
-msgid "Goto:"
-msgstr ""
-
 msgid "Goto X"
 msgstr ""
 
@@ -3907,6 +3882,9 @@ msgstr ""
 msgid "Goto specific date/time"
 msgstr ""
 
+msgid "Goto:"
+msgstr ""
+
 msgid "GotoX calibration"
 msgstr ""
 
@@ -3922,9 +3900,6 @@ msgstr "希腊语"
 
 msgid "Greek"
 msgstr "希腊语"
-
-msgid "Greek (Modern)"
-msgstr ""
 
 msgid "Green"
 msgstr ""
@@ -4179,6 +4154,9 @@ msgstr "冰岛"
 msgid "Icons"
 msgstr "图标"
 
+msgid "If disabled, underline characters in file and directory names are not shown and are replaced with spaces."
+msgstr ""
+
 msgid "If enabled, bookmarks will be updated with the new location when you move or copy a recording."
 msgstr ""
 
@@ -4380,9 +4358,6 @@ msgstr ""
 
 msgid "Install extensions"
 msgstr ""
-
-msgid "Install extensions."
-msgstr "安装本地扩展"
 
 msgid "Install local extension"
 msgstr "安装本地扩展"
@@ -4838,6 +4813,9 @@ msgstr ""
 
 msgid "Manage extensions"
 msgstr "管理扩展"
+
+msgid "Manage extensions or plugins for your receiver."
+msgstr ""
 
 msgid "Manage your receiver's software"
 msgstr "管理Dreambox软件."
@@ -5477,9 +5455,6 @@ msgstr "挪威语"
 msgid "Norwegian"
 msgstr "挪威语"
 
-msgid "Not defined"
-msgstr ""
-
 #, fuzzy
 msgid "Not Installed"
 msgstr "安装"
@@ -5488,6 +5463,9 @@ msgid "Not Required"
 msgstr ""
 
 msgid "Not associated"
+msgstr ""
+
+msgid "Not defined"
 msgstr ""
 
 #, python-format
@@ -5562,9 +5540,6 @@ msgstr "关闭"
 msgid "Offline decode delay (ms)"
 msgstr ""
 
-msgid "Ok"
-msgstr "确定"
-
 msgid "Oman"
 msgstr ""
 
@@ -5582,6 +5557,9 @@ msgstr ""
 
 msgid "One"
 msgstr "1"
+
+msgid "Online update of your receiver software."
+msgstr ""
 
 msgid "Only change this setting if you are using a SCR device that has been reprogrammed with a custom programmer. For further information check with the person that reprogrammed the device."
 msgstr ""
@@ -6305,9 +6283,6 @@ msgstr "主 DNS"
 msgid "Prime time"
 msgstr ""
 
-msgid "PrimeTime"
-msgstr ""
-
 msgid "Priority"
 msgstr "次序"
 
@@ -6593,6 +6568,9 @@ msgstr ""
 msgid "Remove currently selected title"
 msgstr "移除当前选择的标题"
 
+msgid "Remove directory"
+msgstr "移除目录"
+
 msgid "Remove items from trash can after (days)"
 msgstr ""
 
@@ -6626,6 +6604,9 @@ msgstr "重复"
 
 msgid "Repeat leave standby messages"
 msgstr ""
+
+msgid "Repeat playlist"
+msgstr "重复播放列表"
 
 msgid "Repeat type"
 msgstr ""
@@ -6733,6 +6714,12 @@ msgstr "恢复备份"
 
 msgid "Restore system settings"
 msgstr "恢复系统设置"
+
+msgid "Restore your backups by date."
+msgstr "按日期恢复您的备份"
+
+msgid "Restore your receiver settings."
+msgstr ""
 
 msgid "Restoring..."
 msgstr ""
@@ -6959,8 +6946,14 @@ msgstr ""
 msgid "Save changes"
 msgstr ""
 
+msgid "Save last directory on exit"
+msgstr "退出时保存目录"
+
 msgid "Save playlist"
 msgstr ""
+
+msgid "Save playlist on exit"
+msgstr "退出时保存播放列表"
 
 msgid "Save settings and EPG data"
 msgstr ""
@@ -7020,6 +7013,9 @@ msgstr "扫描失败!"
 
 msgid "Scan files..."
 msgstr ""
+
+msgid "Scan for local extensions and install them."
+msgstr "扫描本地扩展并安装."
 
 msgid "Scan options"
 msgstr ""
@@ -7381,8 +7377,8 @@ msgstr ""
 msgid "Select update source"
 msgstr ""
 
-msgid "Select update source to edit."
-msgstr "选泽升级源进行编辑."
+msgid "Select update source to edit"
+msgstr "选泽升级源进行编辑"
 
 msgid "Select video input with up/down buttons"
 msgstr "用上下键选择视频"
@@ -7399,6 +7395,13 @@ msgstr "选择要添加的提供商..."
 
 msgid "Select your Skin"
 msgstr ""
+
+msgid ""
+"Select your backup device.\n"
+"Current device: "
+msgstr ""
+"选择备份设备.\n"
+"目前的设备:"
 
 msgid "Select your country. If not available select 'all'."
 msgstr ""
@@ -7777,6 +7780,9 @@ msgstr ""
 msgid "Show latest update log"
 msgstr ""
 
+msgid "Show media player on main menu"
+msgstr ""
+
 msgid "Show menu or plugin numbers"
 msgstr ""
 
@@ -7872,6 +7878,9 @@ msgstr "广播回放模式下..."
 
 msgid "Show the tv player..."
 msgstr "电视回放模式下..."
+
+msgid "Show underline characters in filenames"
+msgstr ""
 
 msgid "Show vertical timelines"
 msgstr ""
@@ -8120,6 +8129,9 @@ msgstr ""
 msgid "Sort time"
 msgstr ""
 
+msgid "Sorting of playlists"
+msgstr "播放列表排序"
+
 msgid "Sound"
 msgstr "声音"
 
@@ -8225,6 +8237,9 @@ msgstr ""
 
 msgid "Standby in "
 msgstr ""
+
+msgid "Start directory"
+msgstr "开始目录"
 
 msgid "Start from the beginning"
 msgstr "重头开始"
@@ -8494,6 +8509,12 @@ msgstr ""
 
 msgid "Switch to TV mode"
 msgstr ""
+
+msgid "Switch to bookmarks"
+msgstr "切换到书签"
+
+msgid "Switch to filelist"
+msgstr "切换到文件列表"
 
 msgid "Switch to next bouquet"
 msgstr ""
@@ -8805,8 +8826,8 @@ msgstr ""
 
 msgid ""
 "This info is for developers only.\n"
-"For a normal users it is not relevant.\n"
-"Don't panic please when you see values being displayed that you think look suspicious!"
+"For normal users it is not relevant.\n"
+"Please don't panic if you see values displayed looking suspicious!"
 msgstr ""
 
 msgid "This is a multitype tuner. Available options depend on the hardware."
@@ -9424,6 +9445,10 @@ msgstr "升级并请求重启"
 msgid "Update and reboot (recommended)"
 msgstr ""
 
+#, fuzzy
+msgid "Update bookmarks"
+msgstr "自动扫描"
+
 msgid "Update channel list only"
 msgstr ""
 
@@ -9445,11 +9470,11 @@ msgstr ""
 msgid "Updatefeed not available."
 msgstr "更新资源无效"
 
-msgid "Updating software catalog"
-msgstr ""
-
 msgid "Updating"
 msgstr "升级"
+
+msgid "Updating software catalog"
+msgstr ""
 
 msgid "Upper case"
 msgstr ""
@@ -9740,6 +9765,9 @@ msgstr "查看图文电视..."
 
 msgid "View video CD..."
 msgstr ""
+
+msgid "View, install and remove available or installed packages."
+msgstr "查看, 安装和删除已安装的软件包。"
 
 msgid "Virgin Islands (British)"
 msgstr ""
@@ -10483,14 +10511,14 @@ msgstr "立即开始"
 msgid "activate network adapter configuration"
 msgstr "激活网卡配置"
 
+msgid "active"
+msgstr ""
+
 msgid "actual time only"
 msgstr ""
 
 msgid "add alternatives"
 msgstr "增加项目"
-
-msgid "add bookmark"
-msgstr "增加书签"
 
 msgid "add bouquet"
 msgstr "增加自定义组"
@@ -10663,9 +10691,6 @@ msgstr ""
 
 msgid "copy to bouquets"
 msgstr "复制到自定义组"
-
-msgid "Create directory"
-msgstr "创建目录"
 
 msgid "daily"
 msgstr "每天"
@@ -11218,17 +11243,11 @@ msgstr "移除所有新发现标记"
 msgid "remove before this position"
 msgstr "移除这个位置之前的"
 
-msgid "remove bookmark"
-msgstr "移除书签"
-
 msgid "remove bouquet from parental protection"
 msgstr ""
 
 msgid "remove cable services"
 msgstr ""
-
-msgid "Remove directory"
-msgstr "移除目录"
 
 msgid "remove entry"
 msgstr "移除项目"
@@ -11250,9 +11269,6 @@ msgstr "移除这个标记"
 
 msgid "rename entry"
 msgstr ""
-
-msgid "Repeat playlist"
-msgstr "重复播放列表"
 
 msgid "repeated"
 msgstr "重复"
@@ -11288,12 +11304,6 @@ msgstr ""
 msgid "running"
 msgstr "正在运行"
 
-msgid "Save last directory on exit"
-msgstr "退出时保存目录"
-
-msgid "Save playlist on exit"
-msgstr "退出时保存播放列表"
-
 msgid "scan state"
 msgstr "扫描状态"
 
@@ -11302,9 +11312,6 @@ msgstr ""
 
 msgid "seconds"
 msgstr "秒"
-
-msgid "select"
-msgstr "选择"
 
 msgid "select CAId's"
 msgstr "选择CAID"
@@ -11339,9 +11346,6 @@ msgstr "显示选项"
 
 msgid "show event details"
 msgstr "显示事件详细内容"
-
-msgid "Show media player on main menu"
-msgstr ""
 
 msgid "show softwaremanager in setup menu"
 msgstr ""
@@ -11419,9 +11423,6 @@ msgstr ""
 msgid "social/spiritual science"
 msgstr ""
 
-msgid "Sorting of playlists"
-msgstr "播放列表排序"
-
 msgid "special events"
 msgstr ""
 
@@ -11440,9 +11441,6 @@ msgstr "标准"
 msgid "start cut here"
 msgstr "从这里开始剪接"
 
-msgid "Start directory"
-msgstr "开始目录"
-
 #, fuzzy
 msgid "starts in a few seconds"
 msgstr "超时(秒)"
@@ -11458,12 +11456,6 @@ msgstr "停止用作启动频道"
 
 msgid "successful"
 msgstr ""
-
-msgid "Switch to bookmarks"
-msgstr "切换到书签"
-
-msgid "Switch to filelist"
-msgstr "切换到文件列表"
 
 msgid "switch to the next angle"
 msgstr "切换到下一个角度"
@@ -11539,10 +11531,6 @@ msgstr ""
 
 msgid "until standby/restart"
 msgstr "直到待机/重启"
-
-#, fuzzy
-msgid "Update bookmarks"
-msgstr "自动扫描"
 
 msgid "user defined"
 msgstr "用户定义"
@@ -11628,6 +11616,9 @@ msgstr "是"
 
 msgid "yes (keep feeds)"
 msgstr "是 (保留)"
+
+msgid "yes, but not in multi selections"
+msgstr ""
 
 msgid "zap"
 msgstr "开关"

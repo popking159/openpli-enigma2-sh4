@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: enigma2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-09-07 13:00+0200\n"
+"POT-Creation-Date: 2019-11-18 18:59+0100\n"
 "PO-Revision-Date: 2008-12-29 16:22+0100\n"
 "Last-Translator: gerrit <gerrit@nedlinux.nl>\n"
 "Language-Team: gerrit <fy@li.org>\n"
@@ -23,33 +23,12 @@ msgstr ""
 #
 msgid ""
 "\n"
-"Advanced options and settings."
-msgstr ""
-
-#
-msgid ""
-"\n"
 "After pressing OK, please wait!"
-msgstr ""
-
-msgid "Backup your receiver settings."
 msgstr ""
 
 msgid ""
 "\n"
 "Conflict detection disabled!"
-msgstr ""
-
-#
-msgid ""
-"\n"
-"Edit the update source address."
-msgstr ""
-
-msgid "Manage extensions or plugins for your receiver."
-msgstr ""
-
-msgid "Online update of your receiver software."
 msgstr ""
 
 #
@@ -70,36 +49,10 @@ msgid ""
 "Recording in progress."
 msgstr ""
 
-#
-msgid ""
-"\n"
-"Restore your backups by date."
-msgstr ""
-
-msgid "Restore your receiver settings."
-msgstr ""
-
-#
-msgid "Scan for local extensions and install them."
-msgstr ""
-
-#
-msgid ""
-"\n"
-"Select your backup device.\n"
-"Current device: "
-msgstr ""
-
 #, python-format
 msgid ""
 "\n"
 "Timer '%s' disabled!"
-msgstr ""
-
-#
-msgid ""
-"\n"
-"View, install and remove available or installed packages."
 msgstr ""
 
 msgid " (0 - all networks)"
@@ -164,6 +117,14 @@ msgstr ""
 
 #, python-format
 msgid "%.0f kB"
+msgstr ""
+
+#, python-format
+msgid "%.1f°E"
+msgstr ""
+
+#, python-format
+msgid "%.1f°W"
 msgstr ""
 
 #, python-format
@@ -863,6 +824,11 @@ msgstr "boekmerk tafoegje"
 
 #
 #, fuzzy
+msgid "Add bouquet"
+msgstr "boeket tafoegje"
+
+#
+#, fuzzy
 msgid "Add directory to playlist"
 msgstr "map oan ofspiellyst tafoegje"
 
@@ -907,6 +873,11 @@ msgid "Add service"
 msgstr "Kanaal ynfo"
 
 #
+#, fuzzy
+msgid "Add services to this bouquet?"
+msgstr "kanaal tafoegje oan bouquet"
+
+#
 msgid "Add timer"
 msgstr "In tiidsbarren tafoegje"
 
@@ -945,6 +916,10 @@ msgstr ""
 #, fuzzy
 msgid "Advanced options"
 msgstr "Afansjearre Fideo Ynstellingen"
+
+#
+msgid "Advanced options and settings."
+msgstr ""
 
 #
 msgid "Advanced restore"
@@ -1151,6 +1126,9 @@ msgid "Arabic"
 msgstr "Arabysk"
 
 msgid "Are you sure to purge all deleted userbouquets?"
+msgstr ""
+
+msgid "Are you sure to reboot to"
 msgstr ""
 
 #, python-format
@@ -1472,6 +1450,9 @@ msgstr "Ja, myn ynstellingen extra bewarje"
 
 #
 msgid "Backup system settings"
+msgstr ""
+
+msgid "Backup your receiver settings."
 msgstr ""
 
 msgid "Bahamas"
@@ -2599,6 +2580,10 @@ msgstr ""
 msgid "Create DVD-ISO"
 msgstr "Meitsje DVD-ISO"
 
+#
+msgid "Create directory"
+msgstr "Map meitsje"
+
 msgid "Create new folder and exit"
 msgstr ""
 
@@ -3312,15 +3297,15 @@ msgid "Do you want to select a different skin?"
 msgstr ""
 
 #
+msgid "Do you want to update the package:\n"
+msgstr ""
+
+#
 #, fuzzy, python-format
 msgid "Do you want to update your receiver to %s?"
 msgstr "Wolle jo jo ynstellingen wêrom sette ?"
 
 msgid "Do you want to update your receiver?"
-msgstr ""
-
-#
-msgid "Do you want to update the package:\n"
 msgstr ""
 
 msgid "Dolby"
@@ -3477,6 +3462,10 @@ msgstr "nammeserver ynstellingen ferlitte"
 msgid "Edit the network configuration of your receiver.\n"
 msgstr ""
 
+#
+msgid "Edit the update source address."
+msgstr ""
+
 msgid "Edit timer"
 msgstr ""
 
@@ -3485,7 +3474,7 @@ msgid "Edit title"
 msgstr "Bewukje titel"
 
 #
-msgid "Edit update source url."
+msgid "Edit update source url"
 msgstr ""
 
 msgid "Education/Science/..."
@@ -4420,9 +4409,6 @@ msgstr ""
 msgid "Goto 0"
 msgstr "Gjin nei 0"
 
-msgid "Goto:"
-msgstr ""
-
 msgid "Goto X"
 msgstr ""
 
@@ -4451,6 +4437,9 @@ msgstr ""
 msgid "Goto specific date/time"
 msgstr ""
 
+msgid "Goto:"
+msgstr ""
+
 msgid "GotoX calibration"
 msgstr ""
 
@@ -4469,9 +4458,6 @@ msgstr "Gryks"
 #
 msgid "Greek"
 msgstr "Gryks"
-
-msgid "Greek (Modern)"
-msgstr ""
 
 msgid "Green"
 msgstr ""
@@ -4745,6 +4731,9 @@ msgstr ""
 msgid "Icons"
 msgstr ""
 
+msgid "If disabled, underline characters in file and directory names are not shown and are replaced with spaces."
+msgstr ""
+
 msgid "If enabled, bookmarks will be updated with the new location when you move or copy a recording."
 msgstr ""
 
@@ -4974,10 +4963,6 @@ msgid "Install channel list"
 msgstr "set folgende kanaal in skiednis"
 
 msgid "Install extensions"
-msgstr ""
-
-#
-msgid "Install extensions."
 msgstr ""
 
 #
@@ -5521,6 +5506,9 @@ msgstr ""
 
 #
 msgid "Manage extensions"
+msgstr ""
+
+msgid "Manage extensions or plugins for your receiver."
 msgstr ""
 
 #
@@ -6273,9 +6261,6 @@ msgstr "Noarsk"
 msgid "Norwegian"
 msgstr "Noarsk"
 
-msgid "Not defined"
-msgstr ""
-
 #
 #, fuzzy
 msgid "Not Installed"
@@ -6285,6 +6270,9 @@ msgid "Not Required"
 msgstr ""
 
 msgid "Not associated"
+msgstr ""
+
+msgid "Not defined"
 msgstr ""
 
 #
@@ -6369,9 +6357,6 @@ msgstr "Ut"
 msgid "Offline decode delay (ms)"
 msgstr ""
 
-msgid "Ok"
-msgstr ""
-
 msgid "Oman"
 msgstr ""
 
@@ -6391,6 +6376,9 @@ msgstr ""
 #
 msgid "One"
 msgstr "Ien"
+
+msgid "Online update of your receiver software."
+msgstr ""
 
 msgid "Only change this setting if you are using a SCR device that has been reprogrammed with a custom programmer. For further information check with the person that reprogrammed the device."
 msgstr ""
@@ -7244,9 +7232,6 @@ msgstr "Eerste DNS"
 msgid "Prime time"
 msgstr ""
 
-msgid "PrimeTime"
-msgstr ""
-
 #
 msgid "Priority"
 msgstr ""
@@ -7581,6 +7566,10 @@ msgstr ""
 msgid "Remove currently selected title"
 msgstr "Ferwiderje it selektearre bestan"
 
+#
+msgid "Remove directory"
+msgstr "Map ferwiderje"
+
 msgid "Remove items from trash can after (days)"
 msgstr ""
 
@@ -7621,6 +7610,10 @@ msgstr ""
 
 msgid "Repeat leave standby messages"
 msgstr ""
+
+#
+msgid "Repeat playlist"
+msgstr "ôfspyllyst opnei spylje"
 
 #
 #, fuzzy
@@ -7745,6 +7738,13 @@ msgstr ""
 
 #
 msgid "Restore system settings"
+msgstr ""
+
+#
+msgid "Restore your backups by date."
+msgstr ""
+
+msgid "Restore your receiver settings."
 msgstr ""
 
 #
@@ -8005,9 +8005,17 @@ msgid "Save changes"
 msgstr ""
 
 #
+msgid "Save last directory on exit"
+msgstr "Lêste map opslaan by ôfsluten"
+
+#
 #, fuzzy
 msgid "Save playlist"
 msgstr "ofspiellyst opslaan"
+
+#
+msgid "Save playlist on exit"
+msgstr "Ofspiellyst opslaan by ôfsluten"
 
 msgid "Save settings and EPG data"
 msgstr ""
@@ -8078,6 +8086,10 @@ msgstr "Ofstimme mislearre !"
 #, fuzzy
 msgid "Scan files..."
 msgstr "Opnâme bestannen..."
+
+#
+msgid "Scan for local extensions and install them."
+msgstr ""
 
 msgid "Scan options"
 msgstr ""
@@ -8502,7 +8514,7 @@ msgid "Select update source"
 msgstr "Kies fideo moadus"
 
 #
-msgid "Select update source to edit."
+msgid "Select update source to edit"
 msgstr ""
 
 #
@@ -8523,6 +8535,12 @@ msgid "Select your ATSC provider."
 msgstr "Kies in film"
 
 msgid "Select your Skin"
+msgstr ""
+
+#
+msgid ""
+"Select your backup device.\n"
+"Current device: "
 msgstr ""
 
 msgid "Select your country. If not available select 'all'."
@@ -8962,6 +8980,9 @@ msgstr ""
 msgid "Show latest update log"
 msgstr ""
 
+msgid "Show media player on main menu"
+msgstr ""
+
 msgid "Show menu or plugin numbers"
 msgstr ""
 
@@ -9062,6 +9083,9 @@ msgstr "Radio spieler sjen litte..."
 #
 msgid "Show the tv player..."
 msgstr "TV Spieler sjen litte..."
+
+msgid "Show underline characters in filenames"
+msgstr ""
 
 msgid "Show vertical timelines"
 msgstr ""
@@ -9354,6 +9378,9 @@ msgstr ""
 msgid "Sort time"
 msgstr "Sorteer op Tiid"
 
+msgid "Sorting of playlists"
+msgstr ""
+
 #
 msgid "Sound"
 msgstr "Lûd"
@@ -9472,6 +9499,10 @@ msgstr ""
 
 msgid "Standby in "
 msgstr ""
+
+#
+msgid "Start directory"
+msgstr "Start map"
 
 #
 msgid "Start from the beginning"
@@ -9788,6 +9819,10 @@ msgstr ""
 
 msgid "Switch to TV mode"
 msgstr ""
+
+#
+msgid "Switch to bookmarks"
+msgstr "Skeakelje nei boekmerkers"
 
 #
 #, fuzzy
@@ -10158,8 +10193,8 @@ msgstr ""
 
 msgid ""
 "This info is for developers only.\n"
-"For a normal users it is not relevant.\n"
-"Don't panic please when you see values being displayed that you think look suspicious!"
+"For normal users it is not relevant.\n"
+"Please don't panic if you see values displayed looking suspicious!"
 msgstr ""
 
 msgid "This is a multitype tuner. Available options depend on the hardware."
@@ -10879,6 +10914,11 @@ msgstr ""
 
 #
 #, fuzzy
+msgid "Update bookmarks"
+msgstr "Automatysk sykjen"
+
+#
+#, fuzzy
 msgid "Update channel list only"
 msgstr "set folgende kanaal in skiednis"
 
@@ -10902,12 +10942,12 @@ msgid "Updatefeed not available."
 msgstr ""
 
 #
-msgid "Updating software catalog"
-msgstr ""
-
-#
 msgid "Updating"
 msgstr "An it bywurkjen"
+
+#
+msgid "Updating software catalog"
+msgstr ""
 
 msgid "Upper case"
 msgstr ""
@@ -11259,6 +11299,10 @@ msgid "View teletext..."
 msgstr "tiletekst toane..."
 
 msgid "View video CD..."
+msgstr ""
+
+#
+msgid "View, install and remove available or installed packages."
 msgstr ""
 
 msgid "Virgin Islands (British)"
@@ -12073,16 +12117,15 @@ msgstr "op it punt om te starten"
 msgid "activate network adapter configuration"
 msgstr ""
 
+msgid "active"
+msgstr ""
+
 msgid "actual time only"
 msgstr ""
 
 #
 msgid "add alternatives"
 msgstr "alernatief tafoegje"
-
-#
-msgid "add bookmark"
-msgstr "boekmerk tafoegje"
 
 #
 msgid "add bouquet"
@@ -12282,10 +12325,6 @@ msgstr ""
 #
 msgid "copy to bouquets"
 msgstr "kopieer nei boeketten"
-
-#
-msgid "Create directory"
-msgstr "Map meitsje"
 
 #
 msgid "daily"
@@ -12926,19 +12965,11 @@ msgstr "ferwiderje nij fûn flaggen"
 msgid "remove before this position"
 msgstr "foar dizze posysje alles ferwiderje"
 
-#
-msgid "remove bookmark"
-msgstr "boekmerk ferwiderje"
-
 msgid "remove bouquet from parental protection"
 msgstr ""
 
 msgid "remove cable services"
 msgstr ""
-
-#
-msgid "Remove directory"
-msgstr "Map ferwiderje"
 
 #
 msgid "remove entry"
@@ -12965,10 +12996,6 @@ msgstr "ferwiderje punt"
 
 msgid "rename entry"
 msgstr ""
-
-#
-msgid "Repeat playlist"
-msgstr "ôfspyllyst opnei spylje"
 
 #
 msgid "repeated"
@@ -13007,14 +13034,6 @@ msgid "running"
 msgstr ""
 
 #
-msgid "Save last directory on exit"
-msgstr "Lêste map opslaan by ôfsluten"
-
-#
-msgid "Save playlist on exit"
-msgstr "Ofspiellyst opslaan by ôfsluten"
-
-#
 msgid "scan state"
 msgstr "sykjen status"
 
@@ -13024,10 +13043,6 @@ msgstr ""
 #
 msgid "seconds"
 msgstr "seconden"
-
-#
-msgid "select"
-msgstr "kies"
 
 #
 msgid "select CAId's"
@@ -13068,9 +13083,6 @@ msgstr "alternatieven sjen litte"
 #
 msgid "show event details"
 msgstr "EPG details sjen litte"
-
-msgid "Show media player on main menu"
-msgstr ""
 
 msgid "show softwaremanager in setup menu"
 msgstr ""
@@ -13153,9 +13165,6 @@ msgstr ""
 msgid "social/spiritual science"
 msgstr ""
 
-msgid "Sorting of playlists"
-msgstr ""
-
 msgid "special events"
 msgstr ""
 
@@ -13176,10 +13185,6 @@ msgstr "standert"
 msgid "start cut here"
 msgstr "start stik hjirre"
 
-#
-msgid "Start directory"
-msgstr "Start map"
-
 msgid "starts in a few seconds"
 msgstr ""
 
@@ -13195,10 +13200,6 @@ msgstr ""
 
 msgid "successful"
 msgstr ""
-
-#
-msgid "Switch to bookmarks"
-msgstr "Skeakelje nei boekmerkers"
 
 #
 msgid "switch to the next angle"
@@ -13287,11 +13288,6 @@ msgstr ""
 #
 msgid "until standby/restart"
 msgstr ""
-
-#
-#, fuzzy
-msgid "Update bookmarks"
-msgstr "Automatysk sykjen"
 
 #
 msgid "user defined"
@@ -13388,6 +13384,9 @@ msgstr "ja"
 #
 msgid "yes (keep feeds)"
 msgstr "ja (feeds hâlde)"
+
+msgid "yes, but not in multi selections"
+msgstr ""
 
 #
 msgid "zap"

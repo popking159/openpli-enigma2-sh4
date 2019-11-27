@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: enigma2 Kurdish translation\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-09-07 13:00+0200\n"
+"POT-Creation-Date: 2019-11-18 18:59+0100\n"
 "PO-Revision-Date: 2013-04-22 04:29+0330\n"
 "Last-Translator: dimili21\n"
 "Language-Team: \n"
@@ -22,38 +22,15 @@ msgstr ""
 
 msgid ""
 "\n"
-"Advanced options and settings."
-msgstr ""
-"\n"
-"Ayaré Zéde "
-
-msgid ""
-"\n"
 "After pressing OK, please wait!"
 msgstr ""
 "\n"
 "Pay Ok bine bisekin!"
 
-msgid "Backup your receiver settings."
-msgstr "yedeka bigre..."
-
 msgid ""
 "\n"
 "Conflict detection disabled!"
 msgstr ""
-
-msgid ""
-"\n"
-"Edit the update source address."
-msgstr ""
-"\n"
-"Update ra Eyaran Çékin"
-
-msgid "Manage extensions or plugins for your receiver."
-msgstr "Manage extensions or plugins for your receiver."
-
-msgid "Online update of your receiver software."
-msgstr "Zindi Update bikin."
 
 msgid ""
 "\n"
@@ -73,40 +50,11 @@ msgid ""
 "Recording in progress."
 msgstr ""
 
-msgid ""
-"\n"
-"Restore your backups by date."
-msgstr ""
-"\n"
-"backup xwu restore bikin"
-
-msgid "Restore your receiver settings."
-msgstr "Risiver restore bikin."
-
-msgid "Scan for local extensions and install them."
-msgstr "Giradiye mehali bigeri."
-
-msgid ""
-"\n"
-"Select your backup device.\n"
-"Current device: "
-msgstr ""
-"\n"
-"Select your backup device.\n"
-"Current device: "
-
 #, python-format
 msgid ""
 "\n"
 "Timer '%s' disabled!"
 msgstr ""
-
-msgid ""
-"\n"
-"View, install and remove available or installed packages."
-msgstr ""
-"\n"
-"View, install and remove available or installed packages."
 
 msgid " (0 - all networks)"
 msgstr ""
@@ -166,6 +114,14 @@ msgstr ""
 
 #, python-format
 msgid "%.0f kB"
+msgstr ""
+
+#, python-format
+msgid "%.1f°E"
+msgstr ""
+
+#, python-format
+msgid "%.1f°W"
 msgstr ""
 
 #, python-format
@@ -792,6 +748,10 @@ msgstr "Navé Seroki"
 msgid "Add bookmark"
 msgstr "Léke bookmark"
 
+#, fuzzy
+msgid "Add bouquet"
+msgstr "add bouquet"
+
 msgid "Add directory to playlist"
 msgstr "Listeya Xebatéra dosya léke"
 
@@ -818,6 +778,10 @@ msgstr "Add recording (stop after current event)"
 
 msgid "Add service"
 msgstr "Hizmeté Nu girédi"
+
+#, fuzzy
+msgid "Add services to this bouquet?"
+msgstr "add service to bouquet"
 
 msgid "Add timer"
 msgstr "Add timer"
@@ -851,6 +815,9 @@ msgstr ""
 
 msgid "Advanced options"
 msgstr "Seçeneké Zéde"
+
+msgid "Advanced options and settings."
+msgstr "Ayaré Zéde "
 
 msgid "Advanced restore"
 msgstr "Advanced restore"
@@ -1041,6 +1008,9 @@ msgid "Arabic"
 msgstr "Arabi"
 
 msgid "Are you sure to purge all deleted userbouquets?"
+msgstr ""
+
+msgid "Are you sure to reboot to"
 msgstr ""
 
 #, python-format
@@ -1328,6 +1298,9 @@ msgstr "Eyari Backup system"
 
 msgid "Backup system settings"
 msgstr "Eyari Backup system"
+
+msgid "Backup your receiver settings."
+msgstr "yedeka bigre..."
 
 msgid "Bahamas"
 msgstr ""
@@ -2332,6 +2305,9 @@ msgstr ""
 msgid "Create DVD-ISO"
 msgstr "Create DVD-ISO"
 
+msgid "Create directory"
+msgstr "Create directory"
+
 msgid "Create new folder and exit"
 msgstr ""
 
@@ -2940,15 +2916,15 @@ msgstr "Do you want to resume this playback?"
 msgid "Do you want to select a different skin?"
 msgstr ""
 
+msgid "Do you want to update the package:\n"
+msgstr "Do you want to update the package:\n"
+
 #, python-format
 msgid "Do you want to update your receiver to %s?"
 msgstr "Do you want to update your receiver to %s?"
 
 msgid "Do you want to update your receiver?"
 msgstr "Do you want to update your receiver?"
-
-msgid "Do you want to update the package:\n"
-msgstr "Do you want to update the package:\n"
 
 msgid "Dolby"
 msgstr ""
@@ -3080,14 +3056,17 @@ msgstr "Edit the nameserver configuration of your receiver.\n"
 msgid "Edit the network configuration of your receiver.\n"
 msgstr "Edit the network configuration of your receiver.\n"
 
+msgid "Edit the update source address."
+msgstr "Update ra Eyaran Çékin"
+
 msgid "Edit timer"
 msgstr ""
 
 msgid "Edit title"
 msgstr "Edit title"
 
-msgid "Edit update source url."
-msgstr "Edit update source url."
+msgid "Edit update source url"
+msgstr "Edit update source url"
 
 msgid "Education/Science/..."
 msgstr "Education/Science/..."
@@ -3913,9 +3892,6 @@ msgstr "Goto"
 msgid "Goto 0"
 msgstr "Goto 0"
 
-msgid "Goto:"
-msgstr "Goto:"
-
 msgid "Goto X"
 msgstr "Goto X"
 
@@ -3943,6 +3919,9 @@ msgstr ""
 msgid "Goto specific date/time"
 msgstr ""
 
+msgid "Goto:"
+msgstr "Goto:"
+
 msgid "GotoX calibration"
 msgstr "GotoX calibration"
 
@@ -3958,9 +3937,6 @@ msgstr "Greek"
 
 msgid "Greek"
 msgstr "Greek"
-
-msgid "Greek (Modern)"
-msgstr ""
 
 msgid "Green"
 msgstr ""
@@ -4214,6 +4190,9 @@ msgstr ""
 msgid "Icons"
 msgstr "Icons"
 
+msgid "If disabled, underline characters in file and directory names are not shown and are replaced with spaces."
+msgstr ""
+
 msgid "If enabled, bookmarks will be updated with the new location when you move or copy a recording."
 msgstr ""
 
@@ -4418,9 +4397,6 @@ msgstr "Install channel list"
 
 msgid "Install extensions"
 msgstr ""
-
-msgid "Install extensions."
-msgstr "Install extensions."
 
 msgid "Install local extension"
 msgstr "Install local extension"
@@ -4878,6 +4854,9 @@ msgstr ""
 
 msgid "Manage extensions"
 msgstr "Manage extensions"
+
+msgid "Manage extensions or plugins for your receiver."
+msgstr "Manage extensions or plugins for your receiver."
 
 msgid "Manage your receiver's software"
 msgstr "Manage your receiver's software"
@@ -5518,9 +5497,6 @@ msgstr "Norwegian"
 msgid "Norwegian"
 msgstr "Norwegian"
 
-msgid "Not defined"
-msgstr ""
-
 #, fuzzy
 msgid "Not Installed"
 msgstr "Install"
@@ -5530,6 +5506,9 @@ msgstr ""
 
 msgid "Not associated"
 msgstr "Not associated"
+
+msgid "Not defined"
+msgstr ""
 
 #, python-format
 msgid "Not enough disk space. Please free up some disk space and try again. (%d MB required, %d MB available)"
@@ -5603,9 +5582,6 @@ msgstr "Off"
 msgid "Offline decode delay (ms)"
 msgstr "Offline decode delay (ms)"
 
-msgid "Ok"
-msgstr "Ok"
-
 msgid "Oman"
 msgstr ""
 
@@ -5623,6 +5599,9 @@ msgstr ""
 
 msgid "One"
 msgstr "One"
+
+msgid "Online update of your receiver software."
+msgstr "Zindi Update bikin."
 
 msgid "Only change this setting if you are using a SCR device that has been reprogrammed with a custom programmer. For further information check with the person that reprogrammed the device."
 msgstr ""
@@ -6349,9 +6328,6 @@ msgstr "Primary DNS"
 msgid "Prime time"
 msgstr ""
 
-msgid "PrimeTime"
-msgstr ""
-
 msgid "Priority"
 msgstr "Priority"
 
@@ -6637,6 +6613,9 @@ msgstr "Remove completed timers after (days)"
 msgid "Remove currently selected title"
 msgstr "Remove currently selected title"
 
+msgid "Remove directory"
+msgstr "Remove directory"
+
 msgid "Remove items from trash can after (days)"
 msgstr "Remove items from trash can after (days)"
 
@@ -6670,6 +6649,9 @@ msgstr ""
 
 msgid "Repeat leave standby messages"
 msgstr ""
+
+msgid "Repeat playlist"
+msgstr "Repeat playlist"
 
 msgid "Repeat type"
 msgstr "Repeat type"
@@ -6777,6 +6759,12 @@ msgstr "Restore backups"
 
 msgid "Restore system settings"
 msgstr "Restore system settings"
+
+msgid "Restore your backups by date."
+msgstr "backup xwu restore bikin"
+
+msgid "Restore your receiver settings."
+msgstr "Risiver restore bikin."
 
 msgid "Restoring..."
 msgstr "Restoring..."
@@ -7004,8 +6992,14 @@ msgstr ""
 msgid "Save changes"
 msgstr ""
 
+msgid "Save last directory on exit"
+msgstr "Save last directory on exit"
+
 msgid "Save playlist"
 msgstr "Save playlist"
+
+msgid "Save playlist on exit"
+msgstr "Save playlist on exit"
 
 msgid "Save settings and EPG data"
 msgstr ""
@@ -7065,6 +7059,9 @@ msgstr "Scanning failed!"
 
 msgid "Scan files..."
 msgstr "Scan files..."
+
+msgid "Scan for local extensions and install them."
+msgstr "Giradiye mehali bigeri."
 
 msgid "Scan options"
 msgstr ""
@@ -7427,8 +7424,8 @@ msgstr ""
 msgid "Select update source"
 msgstr "Select update source"
 
-msgid "Select update source to edit."
-msgstr "Select update source to edit."
+msgid "Select update source to edit"
+msgstr "Select update source to edit"
 
 msgid "Select video input with up/down buttons"
 msgstr "Select video input with up/down buttons"
@@ -7445,6 +7442,13 @@ msgstr "Select provider to add..."
 
 msgid "Select your Skin"
 msgstr ""
+
+msgid ""
+"Select your backup device.\n"
+"Current device: "
+msgstr ""
+"Select your backup device.\n"
+"Current device: "
 
 msgid "Select your country. If not available select 'all'."
 msgstr ""
@@ -7826,6 +7830,9 @@ msgstr ""
 msgid "Show latest update log"
 msgstr ""
 
+msgid "Show media player on main menu"
+msgstr "Show media player on main menu"
+
 msgid "Show menu or plugin numbers"
 msgstr ""
 
@@ -7922,6 +7929,10 @@ msgstr "Show the radio player..."
 
 msgid "Show the tv player..."
 msgstr "Show the tv player..."
+
+#, fuzzy
+msgid "Show underline characters in filenames"
+msgstr "Limit character set for recording filenames"
 
 msgid "Show vertical timelines"
 msgstr ""
@@ -8175,6 +8186,9 @@ msgstr ""
 msgid "Sort time"
 msgstr "Sort time"
 
+msgid "Sorting of playlists"
+msgstr "Sorting of playlists"
+
 msgid "Sound"
 msgstr "Sound"
 
@@ -8282,6 +8296,9 @@ msgstr "Standby fan %d voltage"
 
 msgid "Standby in "
 msgstr ""
+
+msgid "Start directory"
+msgstr "Start directory"
 
 msgid "Start from the beginning"
 msgstr "Start from the beginning"
@@ -8550,6 +8567,9 @@ msgstr ""
 
 msgid "Switch to TV mode"
 msgstr ""
+
+msgid "Switch to bookmarks"
+msgstr "Switch to bookmarks"
 
 msgid "Switch to filelist"
 msgstr "Switch to filelist"
@@ -8880,8 +8900,8 @@ msgstr ""
 
 msgid ""
 "This info is for developers only.\n"
-"For a normal users it is not relevant.\n"
-"Don't panic please when you see values being displayed that you think look suspicious!"
+"For normal users it is not relevant.\n"
+"Please don't panic if you see values displayed looking suspicious!"
 msgstr ""
 
 msgid "This is a multitype tuner. Available options depend on the hardware."
@@ -9515,6 +9535,10 @@ msgstr "Update and ask to reboot"
 msgid "Update and reboot (recommended)"
 msgstr "Update and reboot (recommended)"
 
+#, fuzzy
+msgid "Update bookmarks"
+msgstr "Automatic Légerin"
+
 msgid "Update channel list only"
 msgstr "Update channel list only"
 
@@ -9536,11 +9560,11 @@ msgstr "Update has completed."
 msgid "Updatefeed not available."
 msgstr "Updatefeed not available."
 
-msgid "Updating software catalog"
-msgstr "Updating software catalog"
-
 msgid "Updating"
 msgstr "Updating"
+
+msgid "Updating software catalog"
+msgstr "Updating software catalog"
 
 msgid "Upper case"
 msgstr ""
@@ -9833,6 +9857,9 @@ msgstr "View teletext..."
 
 msgid "View video CD..."
 msgstr "View video CD..."
+
+msgid "View, install and remove available or installed packages."
+msgstr "View, install and remove available or installed packages."
 
 msgid "Virgin Islands (British)"
 msgstr ""
@@ -10613,14 +10640,15 @@ msgstr "about to start"
 msgid "activate network adapter configuration"
 msgstr "activate network adapter configuration"
 
+#, fuzzy
+msgid "active"
+msgstr "Relative"
+
 msgid "actual time only"
 msgstr ""
 
 msgid "add alternatives"
 msgstr "add alternatives"
-
-msgid "add bookmark"
-msgstr "add bookmark"
 
 msgid "add bouquet"
 msgstr "add bouquet"
@@ -10793,9 +10821,6 @@ msgstr "cooking"
 
 msgid "copy to bouquets"
 msgstr "copy to bouquets"
-
-msgid "Create directory"
-msgstr "Create directory"
 
 msgid "daily"
 msgstr "daily"
@@ -11346,17 +11371,11 @@ msgstr "remove all new found flags"
 msgid "remove before this position"
 msgstr "remove before this position"
 
-msgid "remove bookmark"
-msgstr "remove bookmark"
-
 msgid "remove bouquet from parental protection"
 msgstr ""
 
 msgid "remove cable services"
 msgstr ""
-
-msgid "Remove directory"
-msgstr "Remove directory"
 
 msgid "remove entry"
 msgstr "remove entry"
@@ -11378,9 +11397,6 @@ msgstr "remove this mark"
 
 msgid "rename entry"
 msgstr ""
-
-msgid "Repeat playlist"
-msgstr "Repeat playlist"
 
 msgid "repeated"
 msgstr "repeated"
@@ -11416,12 +11432,6 @@ msgstr "romance"
 msgid "running"
 msgstr "gardening"
 
-msgid "Save last directory on exit"
-msgstr "Save last directory on exit"
-
-msgid "Save playlist on exit"
-msgstr "Save playlist on exit"
-
 msgid "scan state"
 msgstr "scan state"
 
@@ -11430,9 +11440,6 @@ msgstr "science fiction/fantasy/horror"
 
 msgid "seconds"
 msgstr "seconds"
-
-msgid "select"
-msgstr "select"
 
 msgid "select CAId's"
 msgstr "select CAId's"
@@ -11467,9 +11474,6 @@ msgstr "show alternatives"
 
 msgid "show event details"
 msgstr "show event details"
-
-msgid "Show media player on main menu"
-msgstr "Show media player on main menu"
 
 msgid "show softwaremanager in setup menu"
 msgstr "show softwaremanager in setup menu"
@@ -11547,9 +11551,6 @@ msgstr "social/political issues/economics (general)"
 msgid "social/spiritual science"
 msgstr "social/spiritual science"
 
-msgid "Sorting of playlists"
-msgstr "Sorting of playlists"
-
 msgid "special events"
 msgstr "special events"
 
@@ -11568,9 +11569,6 @@ msgstr "standard"
 msgid "start cut here"
 msgstr "start cut here"
 
-msgid "Start directory"
-msgstr "Start directory"
-
 #, fuzzy
 msgid "starts in a few seconds"
 msgstr "Start offline decode"
@@ -11586,9 +11584,6 @@ msgstr "stop using as startup service"
 
 msgid "successful"
 msgstr ""
-
-msgid "Switch to bookmarks"
-msgstr "Switch to bookmarks"
 
 msgid "switch to the next angle"
 msgstr "switch to the next angle"
@@ -11665,10 +11660,6 @@ msgstr ""
 
 msgid "until standby/restart"
 msgstr "until standby/restart"
-
-#, fuzzy
-msgid "Update bookmarks"
-msgstr "Automatic Légerin"
 
 msgid "user defined"
 msgstr "user defined"
@@ -11754,6 +11745,9 @@ msgstr "yes"
 
 msgid "yes (keep feeds)"
 msgstr "yes (keep feeds)"
+
+msgid "yes, but not in multi selections"
+msgstr ""
 
 msgid "zap"
 msgstr "zap"

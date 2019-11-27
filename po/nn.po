@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: enigma2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-09-07 13:00+0200\n"
+"POT-Creation-Date: 2019-11-18 18:59+0100\n"
 "PO-Revision-Date: 2013-10-23 19:15+0100\n"
 "Last-Translator: andy1 <dmmm8000pvr@gmail.com>\n"
 "Language-Team: none\n"
@@ -17,13 +17,6 @@ msgstr ""
 "X-Generator: Poedit 1.5.7\n"
 "X-Poedit-Bookmarks: -1,-1,-1,-1,-1,31,1959,-1,-1,-1\n"
 
-msgid ""
-"\n"
-"Advanced options and settings."
-msgstr ""
-"\n"
-"Utvidede alternativer og innstillinger."
-
 #
 msgid ""
 "\n"
@@ -32,26 +25,10 @@ msgstr ""
 "\n"
 "Etter å ha trykket OK, vennligst vent!"
 
-msgid "Backup your receiver settings."
-msgstr "Ta sikkerhetskopi av mottakerinnstillinger."
-
 msgid ""
 "\n"
 "Conflict detection disabled!"
 msgstr ""
-
-msgid ""
-"\n"
-"Edit the update source address."
-msgstr ""
-"\n"
-"Endre oppdateringsadresse."
-
-msgid "Manage extensions or plugins for your receiver."
-msgstr "Administrere programvare utvidelser til mottakeren."
-
-msgid "Online update of your receiver software."
-msgstr "Online oppdatering av din mottaker."
 
 #
 msgid ""
@@ -72,41 +49,11 @@ msgid ""
 "Recording in progress."
 msgstr ""
 
-msgid ""
-"\n"
-"Restore your backups by date."
-msgstr ""
-"\n"
-"Gjenopprette sikkerhetskopier etter dato."
-
-msgid "Restore your receiver settings."
-msgstr "Gjenopprette mottakeren."
-
-msgid "Scan for local extensions and install them."
-msgstr "Søke etter og installere lokale utvidelser."
-
-#
-msgid ""
-"\n"
-"Select your backup device.\n"
-"Current device: "
-msgstr ""
-"\n"
-"Velg din sikkerhetskopi.\n"
-"Nåværende kopi:"
-
 #, python-format
 msgid ""
 "\n"
 "Timer '%s' disabled!"
 msgstr ""
-
-msgid ""
-"\n"
-"View, install and remove available or installed packages."
-msgstr ""
-"\n"
-"Se gjennom, installere/ avinstallere programpakker."
 
 msgid " (0 - all networks)"
 msgstr ""
@@ -167,6 +114,14 @@ msgstr ""
 
 #, python-format
 msgid "%.0f kB"
+msgstr ""
+
+#, python-format
+msgid "%.1f°E"
+msgstr ""
+
+#, python-format
+msgid "%.1f°W"
 msgstr ""
 
 #, python-format
@@ -845,6 +800,11 @@ msgstr "Legge til nytt navn"
 msgid "Add bookmark"
 msgstr "Legge til bokmerke"
 
+#
+#, fuzzy
+msgid "Add bouquet"
+msgstr "legge til kanalliste"
+
 msgid "Add directory to playlist"
 msgstr "Legge til katalog i spilliste"
 
@@ -877,6 +837,10 @@ msgstr "Legge til opptak (stop etter nåværende program)"
 #
 msgid "Add service"
 msgstr "Legge til kanal"
+
+#, fuzzy
+msgid "Add services to this bouquet?"
+msgstr "legge til kanal i kanalliste"
 
 #
 msgid "Add timer"
@@ -914,6 +878,9 @@ msgstr ""
 
 msgid "Advanced options"
 msgstr "Alternativer"
+
+msgid "Advanced options and settings."
+msgstr "Utvidede alternativer og innstillinger."
 
 msgid "Advanced restore"
 msgstr "Velg sikkerhetskopi etter dato"
@@ -1118,6 +1085,9 @@ msgid "Arabic"
 msgstr "Arabisk"
 
 msgid "Are you sure to purge all deleted userbouquets?"
+msgstr ""
+
+msgid "Are you sure to reboot to"
 msgstr ""
 
 #, python-format
@@ -1431,6 +1401,9 @@ msgstr "Sikkerhetskopier system innstillinger"
 #
 msgid "Backup system settings"
 msgstr "Sikkerhetskopier system innstillinger"
+
+msgid "Backup your receiver settings."
+msgstr "Ta sikkerhetskopi av mottakerinnstillinger."
 
 msgid "Bahamas"
 msgstr ""
@@ -2521,6 +2494,9 @@ msgstr ""
 msgid "Create DVD-ISO"
 msgstr "Lag DVD-ISO"
 
+msgid "Create directory"
+msgstr "Opprette katalog"
+
 msgid "Create new folder and exit"
 msgstr ""
 
@@ -3200,16 +3176,16 @@ msgid "Do you want to select a different skin?"
 msgstr ""
 
 #
+msgid "Do you want to update the package:\n"
+msgstr "Vil du oppdatere pakken:\n"
+
+#
 #, python-format
 msgid "Do you want to update your receiver to %s?"
 msgstr "Vil du oppdatere mottaker til %s?"
 
 msgid "Do you want to update your receiver?"
 msgstr "Vil du oppdatere din mottaker?"
-
-#
-msgid "Do you want to update the package:\n"
-msgstr "Vil du oppdatere pakken:\n"
 
 msgid "Dolby"
 msgstr ""
@@ -3356,14 +3332,17 @@ msgstr "Endre mottakerens navneserverinnstilling.\n"
 msgid "Edit the network configuration of your receiver.\n"
 msgstr "Endre mottakerens nettverksinnstilling.\n"
 
+msgid "Edit the update source address."
+msgstr "Endre oppdateringsadresse."
+
 msgid "Edit timer"
 msgstr ""
 
 msgid "Edit title"
 msgstr "Endre navn"
 
-msgid "Edit update source url."
-msgstr "Endre oppdateringens internettadresse."
+msgid "Edit update source url"
+msgstr "Endre oppdateringens internettadresse"
 
 msgid "Education/Science/..."
 msgstr "utdanning/vitenskap/..."
@@ -4266,9 +4245,6 @@ msgstr "Valg"
 msgid "Goto 0"
 msgstr "Gå til 0"
 
-msgid "Goto:"
-msgstr "Gå til:"
-
 msgid "Goto X"
 msgstr "Gå til X"
 
@@ -4297,6 +4273,9 @@ msgstr ""
 msgid "Goto specific date/time"
 msgstr ""
 
+msgid "Goto:"
+msgstr "Gå til:"
+
 msgid "GotoX calibration"
 msgstr "Gå til X kalibrering"
 
@@ -4315,9 +4294,6 @@ msgstr "Gresk"
 #
 msgid "Greek"
 msgstr "Gresk"
-
-msgid "Greek (Modern)"
-msgstr ""
 
 msgid "Green"
 msgstr ""
@@ -4584,6 +4560,9 @@ msgstr ""
 msgid "Icons"
 msgstr "Varsler"
 
+msgid "If disabled, underline characters in file and directory names are not shown and are replaced with spaces."
+msgstr ""
+
 msgid "If enabled, bookmarks will be updated with the new location when you move or copy a recording."
 msgstr ""
 
@@ -4807,10 +4786,6 @@ msgstr "Installere kanalliste"
 
 msgid "Install extensions"
 msgstr ""
-
-#
-msgid "Install extensions."
-msgstr "Installere utvidelser."
 
 #
 msgid "Install local extension"
@@ -5329,6 +5304,9 @@ msgstr ""
 #
 msgid "Manage extensions"
 msgstr "Administrer utvidelser"
+
+msgid "Manage extensions or plugins for your receiver."
+msgstr "Administrere programvare utvidelser til mottakeren."
 
 #
 msgid "Manage your receiver's software"
@@ -6048,9 +6026,6 @@ msgstr "Norsk"
 msgid "Norwegian"
 msgstr "Norsk"
 
-msgid "Not defined"
-msgstr ""
-
 #
 #, fuzzy
 msgid "Not Installed"
@@ -6061,6 +6036,9 @@ msgstr ""
 
 msgid "Not associated"
 msgstr "Ikke tilknyttet"
+
+msgid "Not defined"
+msgstr ""
 
 #, python-format
 msgid "Not enough disk space. Please free up some disk space and try again. (%d MB required, %d MB available)"
@@ -6138,9 +6116,6 @@ msgstr "Av"
 msgid "Offline decode delay (ms)"
 msgstr "Frakoblet dekodingsforsinkelse (ms)"
 
-msgid "Ok"
-msgstr ""
-
 msgid "Oman"
 msgstr ""
 
@@ -6160,6 +6135,9 @@ msgstr ""
 #
 msgid "One"
 msgstr "En"
+
+msgid "Online update of your receiver software."
+msgstr "Online oppdatering av din mottaker."
 
 msgid "Only change this setting if you are using a SCR device that has been reprogrammed with a custom programmer. For further information check with the person that reprogrammed the device."
 msgstr ""
@@ -6954,9 +6932,6 @@ msgstr "Primær DNS"
 msgid "Prime time"
 msgstr ""
 
-msgid "PrimeTime"
-msgstr ""
-
 #
 msgid "Priority"
 msgstr "Prioritet"
@@ -7269,6 +7244,9 @@ msgstr "Slette fullførte tidtakere etter (dager)"
 msgid "Remove currently selected title"
 msgstr "Slette den valgte tittelen"
 
+msgid "Remove directory"
+msgstr "Slette katalog"
+
 msgid "Remove items from trash can after (days)"
 msgstr "Tøm papirkurven etter (dager)"
 
@@ -7307,6 +7285,10 @@ msgstr "Gjenta"
 
 msgid "Repeat leave standby messages"
 msgstr ""
+
+#
+msgid "Repeat playlist"
+msgstr "Gjenta spilliste"
 
 #
 msgid "Repeat type"
@@ -7427,6 +7409,12 @@ msgstr "Gjenopprette sikkerhetskopier"
 #
 msgid "Restore system settings"
 msgstr "Gjenopprette systeminnstillinger"
+
+msgid "Restore your backups by date."
+msgstr "Gjenopprette sikkerhetskopier etter dato."
+
+msgid "Restore your receiver settings."
+msgstr "Gjenopprette mottakeren."
 
 #
 msgid "Restoring..."
@@ -7673,8 +7661,14 @@ msgstr ""
 msgid "Save changes"
 msgstr ""
 
+msgid "Save last directory on exit"
+msgstr "Lagre siste katalog ved avslutning"
+
 msgid "Save playlist"
 msgstr "Lagre spilliste"
+
+msgid "Save playlist on exit"
+msgstr "Lagre spilliste ved avslutning"
 
 msgid "Save settings and EPG data"
 msgstr ""
@@ -7737,6 +7731,9 @@ msgstr "Søket feilet!"
 
 msgid "Scan files..."
 msgstr "Søker filer..."
+
+msgid "Scan for local extensions and install them."
+msgstr "Søke etter og installere lokale utvidelser."
 
 msgid "Scan options"
 msgstr ""
@@ -8124,8 +8121,8 @@ msgstr ""
 msgid "Select update source"
 msgstr "Velg oppdateringssted"
 
-msgid "Select update source to edit."
-msgstr "Velg og endre oppdateringssted."
+msgid "Select update source to edit"
+msgstr "Velg og endre oppdateringssted"
 
 msgid "Select video input with up/down buttons"
 msgstr "Velg videoinngang med opp/ned tastene"
@@ -8145,6 +8142,14 @@ msgstr "Velg leverandør å legge til..."
 
 msgid "Select your Skin"
 msgstr ""
+
+#
+msgid ""
+"Select your backup device.\n"
+"Current device: "
+msgstr ""
+"Velg din sikkerhetskopi.\n"
+"Nåværende kopi:"
 
 msgid "Select your country. If not available select 'all'."
 msgstr ""
@@ -8550,6 +8555,9 @@ msgstr ""
 msgid "Show latest update log"
 msgstr ""
 
+msgid "Show media player on main menu"
+msgstr "Vis mediespiller på hovedmeny"
+
 msgid "Show menu or plugin numbers"
 msgstr ""
 
@@ -8651,6 +8659,10 @@ msgstr "Vis radiospilleren"
 #
 msgid "Show the tv player..."
 msgstr "Vis TV spilleren..."
+
+#, fuzzy
+msgid "Show underline characters in filenames"
+msgstr "Begrense antall tegn på opptaksnavn"
 
 msgid "Show vertical timelines"
 msgstr ""
@@ -8930,6 +8942,9 @@ msgstr ""
 msgid "Sort time"
 msgstr "Sortere tid"
 
+msgid "Sorting of playlists"
+msgstr "Sortering av spillister"
+
 #
 msgid "Sound"
 msgstr "Lyd"
@@ -9045,6 +9060,9 @@ msgstr "Standby vifte %d spenning"
 
 msgid "Standby in "
 msgstr "Slå av om"
+
+msgid "Start directory"
+msgstr "Start katalog"
 
 #
 msgid "Start from the beginning"
@@ -9342,6 +9360,9 @@ msgstr ""
 
 msgid "Switch to TV mode"
 msgstr ""
+
+msgid "Switch to bookmarks"
+msgstr "Gå til bokmerker"
 
 #
 msgid "Switch to filelist"
@@ -9700,8 +9721,8 @@ msgstr ""
 
 msgid ""
 "This info is for developers only.\n"
-"For a normal users it is not relevant.\n"
-"Don't panic please when you see values being displayed that you think look suspicious!"
+"For normal users it is not relevant.\n"
+"Please don't panic if you see values displayed looking suspicious!"
 msgstr ""
 
 msgid "This is a multitype tuner. Available options depend on the hardware."
@@ -10401,6 +10422,10 @@ msgstr "Oppdater og start på nytt manuelt"
 msgid "Update and reboot (recommended)"
 msgstr "Oppdater og start på nytt automatisk (anbefalt)"
 
+#, fuzzy
+msgid "Update bookmarks"
+msgstr "Automatisk søk"
+
 #
 msgid "Update channel list only"
 msgstr "Oppdater kun kanallisten"
@@ -10424,12 +10449,12 @@ msgid "Updatefeed not available."
 msgstr "Oppdateringsstedet er ikke tilgjengelig."
 
 #
-msgid "Updating software catalog"
-msgstr "Oppdaterer programvare katalog"
-
-#
 msgid "Updating"
 msgstr "Oppdaterer"
+
+#
+msgid "Updating software catalog"
+msgstr "Oppdaterer programvare katalog"
 
 msgid "Upper case"
 msgstr ""
@@ -10748,6 +10773,9 @@ msgstr "Se tekst-TV..."
 
 msgid "View video CD..."
 msgstr "Se video CD..."
+
+msgid "View, install and remove available or installed packages."
+msgstr "Se gjennom, installere/ avinstallere programpakker."
 
 msgid "Virgin Islands (British)"
 msgstr ""
@@ -11575,16 +11603,16 @@ msgstr "starter opp"
 msgid "activate network adapter configuration"
 msgstr "aktiver nettverksinnstilling"
 
+#, fuzzy
+msgid "active"
+msgstr "Forhold"
+
 msgid "actual time only"
 msgstr ""
 
 #
 msgid "add alternatives"
 msgstr "legge til alternativer"
-
-#
-msgid "add bookmark"
-msgstr "legge til bokmerker"
 
 #
 msgid "add bouquet"
@@ -11779,9 +11807,6 @@ msgstr "matlaging"
 #
 msgid "copy to bouquets"
 msgstr "kopiere til kanallister"
-
-msgid "Create directory"
-msgstr "Opprette katalog"
 
 #
 msgid "daily"
@@ -12412,17 +12437,11 @@ msgstr "slette nye flagg"
 msgid "remove before this position"
 msgstr "fjerne før denne posisjonen"
 
-msgid "remove bookmark"
-msgstr "slette bokmerke"
-
 msgid "remove bouquet from parental protection"
 msgstr ""
 
 msgid "remove cable services"
 msgstr ""
-
-msgid "Remove directory"
-msgstr "Slette katalog"
 
 msgid "remove entry"
 msgstr "fjerne denne"
@@ -12444,10 +12463,6 @@ msgstr "slett markøren"
 
 msgid "rename entry"
 msgstr "endre navn i oppføringen"
-
-#
-msgid "Repeat playlist"
-msgstr "Gjenta spilliste"
 
 #
 msgid "repeated"
@@ -12486,12 +12501,6 @@ msgstr "romantikk"
 msgid "running"
 msgstr "hagearbeid"
 
-msgid "Save last directory on exit"
-msgstr "Lagre siste katalog ved avslutning"
-
-msgid "Save playlist on exit"
-msgstr "Lagre spilliste ved avslutning"
-
 msgid "scan state"
 msgstr "søkestatus"
 
@@ -12501,10 +12510,6 @@ msgstr "science fiction/fantasi/skrekk"
 #
 msgid "seconds"
 msgstr "sekunder"
-
-#
-msgid "select"
-msgstr "velg"
 
 #
 msgid "select CAId's"
@@ -12544,9 +12549,6 @@ msgstr "vis alternativer"
 #
 msgid "show event details"
 msgstr "vis programdetaljer"
-
-msgid "Show media player on main menu"
-msgstr "Vis mediespiller på hovedmeny"
 
 msgid "show softwaremanager in setup menu"
 msgstr "vis programvareoppsett"
@@ -12628,9 +12630,6 @@ msgstr "sosial/politiske spørsmål/økonomi (generelt)"
 msgid "social/spiritual science"
 msgstr "sosial/åndsvitenskap"
 
-msgid "Sorting of playlists"
-msgstr "Sortering av spillister"
-
 msgid "special events"
 msgstr "spesial program"
 
@@ -12651,9 +12650,6 @@ msgstr "standard"
 msgid "start cut here"
 msgstr "start klipp her"
 
-msgid "Start directory"
-msgstr "Start katalog"
-
 #, fuzzy
 msgid "starts in a few seconds"
 msgstr "Starte offline dekoding"
@@ -12670,9 +12666,6 @@ msgstr "slutt og bruke som oppstarttjeneste"
 
 msgid "successful"
 msgstr ""
-
-msgid "Switch to bookmarks"
-msgstr "Gå til bokmerker"
 
 msgid "switch to the next angle"
 msgstr "gå til neste posisjon"
@@ -12754,10 +12747,6 @@ msgstr ""
 
 msgid "until standby/restart"
 msgstr "til slår av/starter på nytt"
-
-#, fuzzy
-msgid "Update bookmarks"
-msgstr "Automatisk søk"
 
 #
 msgid "user defined"
@@ -12854,6 +12843,9 @@ msgstr "ja"
 #
 msgid "yes (keep feeds)"
 msgstr "ja (behold feeder)"
+
+msgid "yes, but not in multi selections"
+msgstr ""
 
 #
 msgid "zap"

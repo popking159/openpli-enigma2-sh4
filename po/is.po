@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: enigma2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-09-07 13:00+0200\n"
+"POT-Creation-Date: 2019-11-18 18:59+0100\n"
 "PO-Revision-Date: 2011-05-07 12:23+0200\n"
 "Last-Translator: Baldur <bsveinsson@gmail.com>\n"
 "Language-Team: Polar Team/LT Team <baddi@oreind.is>\n"
@@ -20,37 +20,14 @@ msgstr ""
 
 msgid ""
 "\n"
-"Advanced options and settings."
-msgstr ""
-"\n"
-"Auka sérfræði stillingar."
-
-msgid ""
-"\n"
 "After pressing OK, please wait!"
 msgstr ""
 "\n"
 "Bíðið eftir að hafa ýtt á OK!"
 
-msgid "Backup your receiver settings."
-msgstr ""
-
 msgid ""
 "\n"
 "Conflict detection disabled!"
-msgstr ""
-
-msgid ""
-"\n"
-"Edit the update source address."
-msgstr ""
-"\n"
-"Breyta veffangi uppfærslu uppruna."
-
-msgid "Manage extensions or plugins for your receiver."
-msgstr ""
-
-msgid "Online update of your receiver software."
 msgstr ""
 
 #
@@ -73,43 +50,11 @@ msgid ""
 "Recording in progress."
 msgstr ""
 
-#
-msgid ""
-"\n"
-"Restore your backups by date."
-msgstr ""
-"\n"
-"Setja inn stilligar eftir dagsetningu."
-
-msgid "Restore your receiver settings."
-msgstr ""
-
-msgid "Scan for local extensions and install them."
-msgstr "Leita að viðbótum á móttakara og setja þær upp."
-
-#
-msgid ""
-"\n"
-"Select your backup device.\n"
-"Current device: "
-msgstr ""
-"\n"
-"Veldu afritunar tæki.\n"
-"Núverandi tæki:"
-
 #, python-format
 msgid ""
 "\n"
 "Timer '%s' disabled!"
 msgstr ""
-
-#
-msgid ""
-"\n"
-"View, install and remove available or installed packages."
-msgstr ""
-"\n"
-"Skoða, setja inn og taka út hugbúnaðar pakka."
 
 msgid " (0 - all networks)"
 msgstr ""
@@ -172,6 +117,14 @@ msgstr ""
 
 #, python-format
 msgid "%.0f kB"
+msgstr ""
+
+#, python-format
+msgid "%.1f°E"
+msgstr ""
+
+#, python-format
+msgid "%.1f°W"
 msgstr ""
 
 #, python-format
@@ -863,6 +816,11 @@ msgstr "bæta við bókamerki"
 
 #
 #, fuzzy
+msgid "Add bouquet"
+msgstr "bæta rásavendi við"
+
+#
+#, fuzzy
 msgid "Add directory to playlist"
 msgstr "bæta möppu við spilunarlista"
 
@@ -906,6 +864,11 @@ msgstr "bæta við upptöku (stoppa eftir núverandi atriði)"
 msgid "Add service"
 msgstr "bæta við rás"
 
+#
+#, fuzzy
+msgid "Add services to this bouquet?"
+msgstr "bæta rás við fléttu"
+
 msgid "Add timer"
 msgstr "Taka upp"
 
@@ -939,6 +902,9 @@ msgstr ""
 #, fuzzy
 msgid "Advanced options"
 msgstr "Sérfræði stillingar"
+
+msgid "Advanced options and settings."
+msgstr "Auka sérfræði stillingar."
 
 msgid "Advanced restore"
 msgstr "Sérfræði innsetning afrita"
@@ -1140,6 +1106,9 @@ msgid "Arabic"
 msgstr "Arabíska"
 
 msgid "Are you sure to purge all deleted userbouquets?"
+msgstr ""
+
+msgid "Are you sure to reboot to"
 msgstr ""
 
 #, python-format
@@ -1443,6 +1412,9 @@ msgstr "Afrita kerfis stillingar"
 
 msgid "Backup system settings"
 msgstr "Afrita kerfis stillingar"
+
+msgid "Backup your receiver settings."
+msgstr ""
 
 msgid "Bahamas"
 msgstr ""
@@ -2489,6 +2461,10 @@ msgstr ""
 msgid "Create DVD-ISO"
 msgstr "Búa til DVD-ISO"
 
+#
+msgid "Create directory"
+msgstr "Búa til möppu"
+
 msgid "Create new folder and exit"
 msgstr ""
 
@@ -3184,16 +3160,16 @@ msgstr "Viltu halda áfram að spila þetta?"
 msgid "Do you want to select a different skin?"
 msgstr ""
 
+#
+msgid "Do you want to update the package:\n"
+msgstr "Viltu uppfæra pakkann:\n"
+
 #, fuzzy, python-format
 msgid "Do you want to update your receiver to %s?"
 msgstr "Viltu hlaða niður stýrikerfinu á %s ?"
 
 msgid "Do you want to update your receiver?"
 msgstr ""
-
-#
-msgid "Do you want to update the package:\n"
-msgstr "Viltu uppfæra pakkann:\n"
 
 msgid "Dolby"
 msgstr ""
@@ -3342,6 +3318,9 @@ msgstr "fara úr nafnaþjóns stillingum"
 msgid "Edit the network configuration of your receiver.\n"
 msgstr ""
 
+msgid "Edit the update source address."
+msgstr "Breyta veffangi uppfærslu uppruna."
+
 msgid "Edit timer"
 msgstr ""
 
@@ -3349,8 +3328,8 @@ msgstr ""
 msgid "Edit title"
 msgstr "Breyta titili"
 
-msgid "Edit update source url."
-msgstr "Breyta uppfærslu uppruna slóð."
+msgid "Edit update source url"
+msgstr "Breyta uppfærslu uppruna slóð"
 
 msgid "Education/Science/..."
 msgstr ""
@@ -4268,9 +4247,6 @@ msgstr ""
 msgid "Goto 0"
 msgstr "Fara á 0"
 
-msgid "Goto:"
-msgstr ""
-
 msgid "Goto X"
 msgstr ""
 
@@ -4299,6 +4275,9 @@ msgstr ""
 msgid "Goto specific date/time"
 msgstr ""
 
+msgid "Goto:"
+msgstr ""
+
 msgid "GotoX calibration"
 msgstr ""
 
@@ -4317,9 +4296,6 @@ msgstr "Gríska"
 #
 msgid "Greek"
 msgstr "Gríska"
-
-msgid "Greek (Modern)"
-msgstr ""
 
 msgid "Green"
 msgstr ""
@@ -4595,6 +4571,9 @@ msgstr ""
 msgid "Icons"
 msgstr ""
 
+msgid "If disabled, underline characters in file and directory names are not shown and are replaced with spaces."
+msgstr ""
+
 msgid "If enabled, bookmarks will be updated with the new location when you move or copy a recording."
 msgstr ""
 
@@ -4819,9 +4798,6 @@ msgstr "næsta rás í sögu"
 
 msgid "Install extensions"
 msgstr ""
-
-msgid "Install extensions."
-msgstr "Setja inn viðbót."
 
 msgid "Install local extension"
 msgstr "Setja inn viðbót af boxi"
@@ -5368,6 +5344,9 @@ msgstr ""
 
 msgid "Manage extensions"
 msgstr "Sýsla með íforrit"
+
+msgid "Manage extensions or plugins for your receiver."
+msgstr ""
 
 #
 msgid "Manage your receiver's software"
@@ -6120,9 +6099,6 @@ msgstr "Norska"
 msgid "Norwegian"
 msgstr "Norska"
 
-msgid "Not defined"
-msgstr ""
-
 #
 #, fuzzy
 msgid "Not Installed"
@@ -6134,6 +6110,9 @@ msgstr ""
 #, fuzzy
 msgid "Not associated"
 msgstr "Ekki tengt"
+
+msgid "Not defined"
+msgstr ""
 
 #
 #, fuzzy, python-format
@@ -6217,9 +6196,6 @@ msgstr "Af"
 msgid "Offline decode delay (ms)"
 msgstr ""
 
-msgid "Ok"
-msgstr ""
-
 msgid "Oman"
 msgstr ""
 
@@ -6239,6 +6215,9 @@ msgstr ""
 #
 msgid "One"
 msgstr "Einn"
+
+msgid "Online update of your receiver software."
+msgstr ""
 
 msgid "Only change this setting if you are using a SCR device that has been reprogrammed with a custom programmer. For further information check with the person that reprogrammed the device."
 msgstr ""
@@ -7084,9 +7063,6 @@ msgstr "Aðal DNS"
 msgid "Prime time"
 msgstr ""
 
-msgid "PrimeTime"
-msgstr ""
-
 #
 msgid "Priority"
 msgstr "Forgangur"
@@ -7422,6 +7398,10 @@ msgstr ""
 msgid "Remove currently selected title"
 msgstr "Taka út þegar valinn titil"
 
+#
+msgid "Remove directory"
+msgstr "Eyða möppu"
+
 msgid "Remove items from trash can after (days)"
 msgstr ""
 
@@ -7461,6 +7441,10 @@ msgstr ""
 
 msgid "Repeat leave standby messages"
 msgstr ""
+
+#
+msgid "Repeat playlist"
+msgstr "Endurtaka spilunarlista"
 
 #
 #, fuzzy
@@ -7584,6 +7568,13 @@ msgstr "Setja inn afrit"
 #
 msgid "Restore system settings"
 msgstr "Setja inn kerfis stillingar"
+
+#
+msgid "Restore your backups by date."
+msgstr "Setja inn stilligar eftir dagsetningu."
+
+msgid "Restore your receiver settings."
+msgstr ""
 
 #
 #, fuzzy
@@ -7837,9 +7828,17 @@ msgid "Save changes"
 msgstr ""
 
 #
+msgid "Save last directory on exit"
+msgstr "Vista síðustu möppu þegar hætt er"
+
+#
 #, fuzzy
 msgid "Save playlist"
 msgstr "vista spilunarlista"
+
+#
+msgid "Save playlist on exit"
+msgstr "Vista spilunarlista þegar hætt er"
 
 msgid "Save settings and EPG data"
 msgstr ""
@@ -7910,6 +7909,9 @@ msgstr "Tókst ekki að stilla inn!"
 #, fuzzy
 msgid "Scan files..."
 msgstr "Leita að skrám..."
+
+msgid "Scan for local extensions and install them."
+msgstr "Leita að viðbótum á móttakara og setja þær upp."
 
 msgid "Scan options"
 msgstr ""
@@ -8325,8 +8327,8 @@ msgid "Select update source"
 msgstr "Veldu upphafs slóð til að breyta."
 
 #
-msgid "Select update source to edit."
-msgstr "Veldu upphafs slóð til að breyta."
+msgid "Select update source to edit"
+msgstr "Veldu upphafs slóð til að breyta"
 
 #
 msgid "Select video input with up/down buttons"
@@ -8347,6 +8349,14 @@ msgstr "Veldu sendanda til að bæta við..."
 
 msgid "Select your Skin"
 msgstr ""
+
+#
+msgid ""
+"Select your backup device.\n"
+"Current device: "
+msgstr ""
+"Veldu afritunar tæki.\n"
+"Núverandi tæki:"
 
 msgid "Select your country. If not available select 'all'."
 msgstr ""
@@ -8784,6 +8794,9 @@ msgstr ""
 msgid "Show latest update log"
 msgstr ""
 
+msgid "Show media player on main menu"
+msgstr ""
+
 msgid "Show menu or plugin numbers"
 msgstr ""
 
@@ -8884,6 +8897,11 @@ msgstr "Sýna útvarpsspilara..."
 
 msgid "Show the tv player..."
 msgstr "Sýna sjónvarpsspilara..."
+
+#
+#, fuzzy
+msgid "Show underline characters in filenames"
+msgstr "Takmarkað stafa úrval fyrir skráar nöfn á upptökum"
 
 msgid "Show vertical timelines"
 msgstr ""
@@ -9187,6 +9205,9 @@ msgstr ""
 msgid "Sort time"
 msgstr "Raða Tíma"
 
+msgid "Sorting of playlists"
+msgstr ""
+
 #
 msgid "Sound"
 msgstr "Hljóð"
@@ -9305,6 +9326,10 @@ msgstr "%d Volt á viftu í biðstöðu "
 
 msgid "Standby in "
 msgstr ""
+
+#
+msgid "Start directory"
+msgstr "Byrjunar mappa"
 
 #
 msgid "Start from the beginning"
@@ -9621,6 +9646,10 @@ msgstr ""
 
 msgid "Switch to TV mode"
 msgstr ""
+
+#
+msgid "Switch to bookmarks"
+msgstr "Fara á bókamerki"
 
 #
 #, fuzzy
@@ -10002,8 +10031,8 @@ msgstr ""
 
 msgid ""
 "This info is for developers only.\n"
-"For a normal users it is not relevant.\n"
-"Don't panic please when you see values being displayed that you think look suspicious!"
+"For normal users it is not relevant.\n"
+"Please don't panic if you see values displayed looking suspicious!"
 msgstr ""
 
 msgid "This is a multitype tuner. Available options depend on the hardware."
@@ -10708,6 +10737,10 @@ msgstr ""
 msgid "Update and reboot (recommended)"
 msgstr ""
 
+#, fuzzy
+msgid "Update bookmarks"
+msgstr "Sjálfvirk leit"
+
 #
 #, fuzzy
 msgid "Update channel list only"
@@ -10731,12 +10764,12 @@ msgstr ""
 msgid "Updatefeed not available."
 msgstr "Uppfærslur á fæðirásum ekki tiltækar."
 
-msgid "Updating software catalog"
-msgstr "Uppfæri efnisyfirlit hugbúnaðar"
-
 #
 msgid "Updating"
 msgstr "Uppfæri"
+
+msgid "Updating software catalog"
+msgstr "Uppfæri efnisyfirlit hugbúnaðar"
 
 msgid "Upper case"
 msgstr ""
@@ -11087,6 +11120,10 @@ msgstr "Skoða textavarp..."
 #, fuzzy
 msgid "View video CD..."
 msgstr "Skoða Video CD..."
+
+#
+msgid "View, install and remove available or installed packages."
+msgstr "Skoða, setja inn og taka út hugbúnaðar pakka."
 
 msgid "Virgin Islands (British)"
 msgstr ""
@@ -11903,16 +11940,15 @@ msgstr "er að byrja"
 msgid "activate network adapter configuration"
 msgstr "virkja stillingar netkorts"
 
+msgid "active"
+msgstr ""
+
 msgid "actual time only"
 msgstr ""
 
 #
 msgid "add alternatives"
 msgstr "bæta við valkosti"
-
-#
-msgid "add bookmark"
-msgstr "bæta við bókamerki"
 
 #
 msgid "add bouquet"
@@ -12110,10 +12146,6 @@ msgstr ""
 #
 msgid "copy to bouquets"
 msgstr "afrita til rásavanda"
-
-#
-msgid "Create directory"
-msgstr "Búa til möppu"
 
 #
 msgid "daily"
@@ -12752,19 +12784,11 @@ msgstr "eyða öllum merkingum um nýfundna rás"
 msgid "remove before this position"
 msgstr "eyða fyrir framan þetta"
 
-#
-msgid "remove bookmark"
-msgstr "eyða bókamerki"
-
 msgid "remove bouquet from parental protection"
 msgstr ""
 
 msgid "remove cable services"
 msgstr ""
-
-#
-msgid "Remove directory"
-msgstr "Eyða möppu"
 
 #
 msgid "remove entry"
@@ -12791,10 +12815,6 @@ msgstr "taka út þetta merki"
 
 msgid "rename entry"
 msgstr ""
-
-#
-msgid "Repeat playlist"
-msgstr "Endurtaka spilunarlista"
 
 #
 msgid "repeated"
@@ -12833,14 +12853,6 @@ msgid "running"
 msgstr ""
 
 #
-msgid "Save last directory on exit"
-msgstr "Vista síðustu möppu þegar hætt er"
-
-#
-msgid "Save playlist on exit"
-msgstr "Vista spilunarlista þegar hætt er"
-
-#
 msgid "scan state"
 msgstr "leitar staða"
 
@@ -12850,10 +12862,6 @@ msgstr ""
 #
 msgid "seconds"
 msgstr "sekúndur"
-
-#
-msgid "select"
-msgstr "veldu"
 
 #
 msgid "select CAId's"
@@ -12893,9 +12901,6 @@ msgstr "súna valkosti"
 #
 msgid "show event details"
 msgstr "sýna atriði nánar"
-
-msgid "Show media player on main menu"
-msgstr ""
 
 msgid "show softwaremanager in setup menu"
 msgstr ""
@@ -12977,9 +12982,6 @@ msgstr ""
 msgid "social/spiritual science"
 msgstr ""
 
-msgid "Sorting of playlists"
-msgstr ""
-
 msgid "special events"
 msgstr ""
 
@@ -12999,10 +13001,6 @@ msgstr "venjulegt"
 msgid "start cut here"
 msgstr "byrja klippingu hér"
 
-#
-msgid "Start directory"
-msgstr "Byrjunar mappa"
-
 msgid "starts in a few seconds"
 msgstr ""
 
@@ -13018,10 +13016,6 @@ msgstr ""
 
 msgid "successful"
 msgstr ""
-
-#
-msgid "Switch to bookmarks"
-msgstr "Fara á bókamerki"
 
 #
 msgid "switch to the next angle"
@@ -13110,10 +13104,6 @@ msgstr ""
 
 msgid "until standby/restart"
 msgstr "bíða til biðstöðu/endurræsingu"
-
-#, fuzzy
-msgid "Update bookmarks"
-msgstr "Sjálfvirk leit"
 
 #
 msgid "user defined"
@@ -13210,6 +13200,9 @@ msgstr "já"
 #
 msgid "yes (keep feeds)"
 msgstr "já (halda fæðirásum)"
+
+msgid "yes, but not in multi selections"
+msgstr ""
 
 #
 msgid "zap"

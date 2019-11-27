@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: enigma\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-09-12 20:23+0200\n"
+"POT-Creation-Date: 2019-11-18 18:59+0100\n"
 "PO-Revision-Date: \n"
 "Last-Translator: Frenske <voorzitter@openpli.org>\n"
 "Language-Team: PLiteam <translators@openpli.org>\n"
@@ -11,14 +11,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Poedit 2.2.3\n"
-
-msgid ""
-"\n"
-"Advanced options and settings."
-msgstr ""
-"\n"
-"Geavanceerde opties en instellingen."
+"X-Generator: Poedit 2.2.4\n"
 
 msgid ""
 "\n"
@@ -27,28 +20,12 @@ msgstr ""
 "\n"
 "Na indrukken van Ok, een moment geduld aub!"
 
-msgid "Backup your receiver settings."
-msgstr "Backup de ontvangerinstellingen."
-
 msgid ""
 "\n"
 "Conflict detection disabled!"
 msgstr ""
 "\n"
 "Detectie van conflicten is uitgeschakeld!"
-
-msgid ""
-"\n"
-"Edit the update source address."
-msgstr ""
-"\n"
-"Wijzig het bronadres voor de update."
-
-msgid "Manage extensions or plugins for your receiver."
-msgstr "Beheer applicaties of plugins voor uw ontvanger."
-
-msgid "Online update of your receiver software."
-msgstr "Online update van de ontvangersoftware."
 
 msgid ""
 "\n"
@@ -71,28 +48,6 @@ msgstr ""
 "\n"
 "Actieve opname."
 
-msgid ""
-"\n"
-"Restore your backups by date."
-msgstr ""
-"\n"
-"Zet een backup van een bepaalde datum terug."
-
-msgid "Restore your receiver settings."
-msgstr "Herstel de ontvangerinstellingen."
-
-msgid "Scan for local extensions and install them."
-msgstr "Zoek naar lokale applicaties en installeer deze."
-
-msgid ""
-"\n"
-"Select your backup device.\n"
-"Current device: "
-msgstr ""
-"\n"
-"Kies een apparaat voor de backup.\n"
-"Huidig apparaat: "
-
 #, python-format
 msgid ""
 "\n"
@@ -100,13 +55,6 @@ msgid ""
 msgstr ""
 "\n"
 "Timer '%s' uitgeschakeld!"
-
-msgid ""
-"\n"
-"View, install and remove available or installed packages."
-msgstr ""
-"\n"
-"Bekijk, installeer en verwijder beschikbare of geïnstalleerde pakketten."
 
 msgid " (0 - all networks)"
 msgstr " (0 - alle netwerken)"
@@ -166,6 +114,14 @@ msgstr "%.0f MB"
 #, python-format
 msgid "%.0f kB"
 msgstr "%.0f kB"
+
+#, python-format
+msgid "%.1f°E"
+msgstr "%.1f°O"
+
+#, python-format
+msgid "%.1f°W"
+msgstr "%.1f°W"
 
 #, python-format
 msgid "%.2f GB"
@@ -638,7 +594,7 @@ msgid ""
 "receiver to standby. Do that now?"
 msgstr ""
 "Een opname die gereed is wil de ontvanger\n"
-"in standby zetten. Akkoord?"
+"in stand-by zetten. Akkoord?"
 
 msgid ""
 "A finished record timer wants to shut down\n"
@@ -695,7 +651,7 @@ msgid ""
 "receiver to standby. Do that now?"
 msgstr ""
 "Een slaaptimer wil de ontvanger\n"
-"in standby zetten. Akkoord?"
+"in stand-by zetten. Akkoord?"
 
 msgid ""
 "A sleep timer wants to shut down\n"
@@ -792,6 +748,10 @@ msgstr "Voeg een nieuwe titel toe"
 msgid "Add bookmark"
 msgstr "Maak markeerpunt"
 
+#, fuzzy
+msgid "Add bouquet"
+msgstr "Voeg een bouquet toe"
+
 msgid "Add directory to playlist"
 msgstr "Voeg de map aan de afspeellijst toe"
 
@@ -818,6 +778,10 @@ msgstr "Voeg een opname toe (stop na huidige uitzending)"
 
 msgid "Add service"
 msgstr "Voeg een zender toe"
+
+#, fuzzy
+msgid "Add services to this bouquet?"
+msgstr "Deze zender toevoegen aan een bouquet"
 
 msgid "Add timer"
 msgstr "Timer toevoegen"
@@ -851,6 +815,9 @@ msgstr "Geavanceerd"
 
 msgid "Advanced options"
 msgstr "Geavanceerde opties"
+
+msgid "Advanced options and settings."
+msgstr "Geavanceerde opties en instellingen."
 
 msgid "Advanced restore"
 msgstr "Geavanceerd herstellen"
@@ -952,16 +919,16 @@ msgid "Alpha"
 msgstr "Transparantie"
 
 msgid "Also import at reboot/restart enigma2"
-msgstr "Importeer ook na een reboot/herstart van enigma2"
+msgstr "Importeer ook bij een herstart van de ontvanger of Enigma"
 
 msgid "Also import from the extension menu"
 msgstr "Maak de import ook mogelijk via het applicatie-menu"
 
 msgid "Also import when box is leaving standby"
-msgstr "Importeer ook indien de box vanuit standby opstart"
+msgstr "Importeer ook indien de ontvanger vanuit stand-by opstart"
 
 msgid "Also on standby"
-msgstr "Tevens bij standby"
+msgstr "Tevens bij stand-by"
 
 msgid "Alternative"
 msgstr "Alternatieven"
@@ -1012,7 +979,7 @@ msgid "An unknown error occurred!"
 msgstr "Er heeft zich een onbekende fout voorgedaan!"
 
 msgid "And will put your receiver in standby over "
-msgstr "En zet je ontvanger in standby na "
+msgstr "En zet je ontvanger in stand-by na "
 
 msgid "Andorra"
 msgstr "Andorra"
@@ -1037,6 +1004,9 @@ msgstr "Arabisch"
 
 msgid "Are you sure to purge all deleted userbouquets?"
 msgstr "Wilt u de gewiste bouquetten definitief verwijderen?"
+
+msgid "Are you sure to reboot to"
+msgstr "Wilt u zeker herstarten naar"
 
 #, python-format
 msgid "Are you sure to remove all %d.%d%s%s services?"
@@ -1318,6 +1288,9 @@ msgstr "Backup de instellingen"
 msgid "Backup system settings"
 msgstr "Backup uw instellingen"
 
+msgid "Backup your receiver settings."
+msgstr "Backup de ontvangerinstellingen."
+
 msgid "Bahamas"
 msgstr "Bahamas"
 
@@ -1418,7 +1391,7 @@ msgid "Boot to Android image"
 msgstr "Start op met Android"
 
 msgid "Boot to Recovery menu"
-msgstr "Start op met het revovery-menu"
+msgstr "Start op met het recovery menu"
 
 msgid "Bosnia and Herzegovina"
 msgstr "Bosnië Herzegovina"
@@ -1708,8 +1681,9 @@ msgstr "Zenders"
 msgid "Channels and EPG"
 msgstr "Zenders + EPG"
 
+#, fuzzy
 msgid "Channels only"
-msgstr "Alléén de zenders"
+msgstr "Zenders"
 
 msgid "Chap."
 msgstr "Hfdst."
@@ -2059,7 +2033,7 @@ msgstr ""
 "U kunt hier een waarde kiezen van 1- 5 mm. De standaardwaarde is 3 mm."
 
 msgid "Configure the brightness level of the front panel display during standby."
-msgstr "Met deze optie stelt u traploos de helderheid van het display in tijdens standby."
+msgstr "Met deze optie stelt u traploos de helderheid van het display in tijdens ."
 
 msgid "Configure the brightness level of the front panel display."
 msgstr "Met deze optie stelt u traploos de helderheid van het display in."
@@ -2083,7 +2057,7 @@ msgid "Configure the cursor behaviour in the channel selection list. When openin
 msgstr "Met deze optie stelt u het gedrag van de cursor in de zenderlijst in. U kunt na drukken van pijl up/down op de huidige zender blijven of alvast een volgende/vorige zender kiezen. Ook kunt en het gedrag van de B+/B- toetsen omkeren."
 
 msgid "Configure the duration in hours the receiver should go to standby when the receiver is not controlled."
-msgstr "Stel de tijdsduur (in uren en lopende activiteit) in waarna de STB wordt afgesloten of naar standby gaat, indien de ontvanger niet wordt bediend."
+msgstr "Stel de tijdsduur (in uren en lopende activiteit) in waarna de STB wordt afgesloten of naar stand-by gaat, indien de ontvanger niet wordt bediend."
 
 msgid "Configure the duration in minutes for the screensaver."
 msgstr ""
@@ -2095,7 +2069,7 @@ msgid "Configure the duration in minutes for the sleeptimer. Select this entry a
 msgstr "Stel de tijd in voor de sleeptimer. Selecteer deze invoer en druk op 'Ok' of de groene toets om de sleeptimer te starten/stoppen."
 
 msgid "Configure the duration when the receiver should go to shut down in case the receiver is in standby mode."
-msgstr "Configureer na hoeveel tijd de ontvanger volledig moet afsluiten in het geval dat deze in standby staat."
+msgstr "Configureer na hoeveel tijd de ontvanger volledig moet afsluiten in het geval dat deze in stand-by staat."
 
 msgid "Configure the first audio language (highest priority)."
 msgstr "Stel de eerste audio taal in (hoogste prioriteit)."
@@ -2490,6 +2464,9 @@ msgstr "Verberg voor deze zender de flikkerende lijn bovenin het beeld"
 msgid "Create DVD-ISO"
 msgstr "DVD-ISO maken"
 
+msgid "Create directory"
+msgstr "Map aanmaken"
+
 msgid "Create new folder and exit"
 msgstr "Maak een nieuwe map en ga terug"
 
@@ -2566,7 +2543,7 @@ msgid "Customize"
 msgstr "Diverse instellingen"
 
 msgid "Customize OpenWebIF settings for fallback tuner"
-msgstr "Pas de instellingen van de fallback tuner aan in de OpenWebif"
+msgstr "Pas de instellingen van de Fallback tuner aan in de OpenWebif"
 
 msgid "Customize channel list cursor behavior"
 msgstr "Pas het gedrag van de cursor aan"
@@ -2683,7 +2660,7 @@ msgid "Debug to file"
 msgstr "Debug naar bestand"
 
 msgid "Deep Standby LED"
-msgstr "Deep standby LED"
+msgstr "Deep stand-by LED"
 
 msgid "Deep standby"
 msgstr "Volledig uitschakelen"
@@ -2836,7 +2813,7 @@ msgid "Details for plugin: "
 msgstr "Plugin details:"
 
 msgid "Detect next boxes before standby"
-msgstr "Detecteer andere hardware voordat de box naar standby gaat"
+msgstr "Detecteer andere hardware voordat de box naar stand-by gaat"
 
 msgid "Detected HDD:"
 msgstr "Gedetecteerde harde schijf:"
@@ -3097,15 +3074,15 @@ msgstr "Wilt u het afspelen vervolgen?"
 msgid "Do you want to select a different skin?"
 msgstr "Wilt u een andere skin instellen?"
 
+msgid "Do you want to update the package:\n"
+msgstr "Wilt u een dit pakket opwaarderen:\n"
+
 #, python-format
 msgid "Do you want to update your receiver to %s?"
 msgstr "Wilt u uw ontvanger updaten naar %s?"
 
 msgid "Do you want to update your receiver?"
 msgstr "Wilt u de ontvanger updaten?"
-
-msgid "Do you want to update the package:\n"
-msgstr "Wilt u een dit pakket opwaarderen:\n"
 
 msgid "Dolby"
 msgstr "Dolby"
@@ -3153,7 +3130,7 @@ msgid "Downloading"
 msgstr "Bezig met downloaden"
 
 msgid "Downloading Image"
-msgstr "De image wordt gedownload"
+msgstr "Het image wordt gedownload"
 
 msgid "Downloading plugin information. Please wait..."
 msgstr "Applicatie informatie ophalen. Een ogenblik aub..."
@@ -3183,7 +3160,7 @@ msgid "EPG language selection 2"
 msgstr "Tweede taalkeuze t.b.v. de EPG weergave"
 
 msgid "EPG only"
-msgstr "Alléén de EPG"
+msgstr ""
 
 msgid "EPG selection"
 msgstr "EPG selectie"
@@ -3236,14 +3213,17 @@ msgstr ""
 "Pas de netwerk-configuratie aan.\n"
 "\n"
 
+msgid "Edit the update source address."
+msgstr "Wijzig het bronadres voor de update."
+
 msgid "Edit timer"
 msgstr "Wijzig timer"
 
 msgid "Edit title"
 msgstr "Wijzig titel"
 
-msgid "Edit update source url."
-msgstr "Update url bewerken."
+msgid "Edit update source url"
+msgstr "Update url bewerken"
 
 msgid "Education/Science/..."
 msgstr "Educatief/Wetenschappelijk /..."
@@ -3382,7 +3362,7 @@ msgid "End time to ignore inactivity sleeptimer"
 msgstr "Extra uitloop om de inactiviteit sleeptimer te negeren"
 
 msgid "End time to ignore shutdown in standby"
-msgstr "Eind tijd om in standby gaan te negeren"
+msgstr "Eind tijd om in stand-by gaan te negeren"
 
 msgid "English"
 msgstr "Engels"
@@ -3883,7 +3863,7 @@ msgid "Flash image"
 msgstr "Image flashen"
 
 msgid "Flashing Image"
-msgstr "De image wordt geflasht"
+msgstr "Het image wordt geflasht"
 
 msgid "Flashing image successful"
 msgstr "Het flashen van de image is gelukt."
@@ -4077,9 +4057,6 @@ msgstr "Ga naar"
 msgid "Goto 0"
 msgstr "Ga naar 0 positie"
 
-msgid "Goto:"
-msgstr "Ga naar:"
-
 msgid "Goto X"
 msgstr "Goto X"
 
@@ -4107,6 +4084,9 @@ msgstr "Toon primetime/huidig"
 msgid "Goto specific date/time"
 msgstr "Ga naar een specifieke datum/tijd"
 
+msgid "Goto:"
+msgstr "Ga naar:"
+
 msgid "GotoX calibration"
 msgstr "GotoX calibratie"
 
@@ -4121,9 +4101,6 @@ msgstr "Griekenland"
 
 msgid "Greek"
 msgstr "Grieks"
-
-msgid "Greek (Modern)"
-msgstr "Grieks (modern)"
 
 msgid "Green"
 msgstr "Groen"
@@ -4213,7 +4190,7 @@ msgid "Haiti"
 msgstr "Haiti"
 
 msgid "Handle standby from TV"
-msgstr "Reageer als de TV naar standby gaat"
+msgstr "Reageer als de TV naar stand-by gaat"
 
 msgid "Handle wakeup from TV"
 msgstr "Reageer als de TV aangezet wordt"
@@ -4371,6 +4348,9 @@ msgstr "Ijsland"
 msgid "Icons"
 msgstr "Iconen"
 
+msgid "If disabled, underline characters in file and directory names are not shown and are replaced with spaces."
+msgstr ""
+
 msgid "If enabled, bookmarks will be updated with the new location when you move or copy a recording."
 msgstr "Indien geactiveerd dan zullen de markeringen ook geactualiseerd worden in de nieuwe locatie na verplaatsen of kopiëren van een opname."
 
@@ -4447,13 +4427,14 @@ msgid "Image: "
 msgstr "Image: "
 
 msgid "Import channels and/or EPG from remote receiver URL also when the receiver is getting out of standby"
-msgstr "Indien geactiveerd, dan importeert u de zenders en/of de EPG vanaf de de externe ontvanger als de ontvanger uit standby komt?"
+msgstr "Indien geactiveerd, dan importeert u de zenders en/of de EPG vanaf de externe ontvanger als deze uit stand-by komt?"
 
+#, fuzzy
 msgid "Import channels and/or EPG from remote receiver URL when receiver is booted"
 msgstr ""
-"Met deze optie geeft u aan wat u wilt importeren vanaf de externe ontvanger na een herstart.\n"
+"Indien geactiveerd, dan importeert u zenders van een externe ontvanger indien uw ontvanger opstart.\n"
 "\n"
-"U kunt kiezen uit niets, alléén de zenders, zenders + EPG of alléén de EPG."
+"Na activatie van deze functie kunt u nadere details instellen."
 
 msgid "Import channels and/or EPG from remote receiver URL when receiver or enigma2 is restarted"
 msgstr "Indien geactiveerd, dan importeert u de zenders en/of de EPG vanaf de de externe ontvanger als de ontvanger of enigma2 is herstart."
@@ -4463,7 +4444,7 @@ msgid "Import from fallback tuner failed, %s"
 msgstr "Import vanaf de Fallback tuner mislukt, %s"
 
 msgid "Import from remote receiver URL"
-msgstr "Importeer div. data vanaf een externe ontvanger"
+msgstr "Importeer data vanaf een externe ontvanger"
 
 msgid "Import remote receiver URL"
 msgstr "Locatie van de externe ontvanger"
@@ -4581,9 +4562,6 @@ msgstr "Plaats een zenderlijst"
 
 msgid "Install extensions"
 msgstr "Installeer applicaties"
-
-msgid "Install extensions."
-msgstr "Installeer applicaties."
 
 msgid "Install local extension"
 msgstr "Installeer plugins lokaal"
@@ -5035,6 +5013,9 @@ msgstr "Malta"
 
 msgid "Manage extensions"
 msgstr "Beheer applicaties"
+
+msgid "Manage extensions or plugins for your receiver."
+msgstr "Beheer applicaties of plugins voor uw ontvanger."
 
 msgid "Manage your receiver's software"
 msgstr "Beheer de software van uw ontvanger"
@@ -5561,7 +5542,7 @@ msgid "No services/providers selected"
 msgstr "Geen zender/provider gekozen"
 
 msgid "No standby"
-msgstr "Geen standby"
+msgstr "Geen stand-by"
 
 msgid "No stream clients"
 msgstr "Er zijn geen streamende clients."
@@ -5661,9 +5642,6 @@ msgstr "Noorwegen"
 msgid "Norwegian"
 msgstr "Noors"
 
-msgid "Not defined"
-msgstr "Niet vestgelegd"
-
 msgid "Not Installed"
 msgstr "Niet geïnstalleerd"
 
@@ -5673,6 +5651,9 @@ msgstr "Niet noodzakelijk"
 msgid "Not associated"
 msgstr "Geen verband"
 
+msgid "Not defined"
+msgstr "Niet vestgelegd"
+
 #, python-format
 msgid "Not enough disk space. Please free up some disk space and try again. (%d MB required, %d MB available)"
 msgstr "Onvoldoende schijfruimte. Maak ruimte vrij en probeer het opnieuw (%d MB noodzakelijk, %d MB beschikbaar)"
@@ -5681,7 +5662,7 @@ msgid "Not tested:"
 msgstr "Niet getest:"
 
 msgid "Note: when enabled, and you do want standby mode after wake up, set option 'Startup to Standby' as 'No, except Wakeup timer'."
-msgstr "Nota: indien ingeschakeld en u wilt vanuit 'wake up'naar standby, stelt u dan de optie 'opstarten naar standby' in op 'nee, uitgezonderd wakeup timer'."
+msgstr "Let op: Indien u deze optie activeert en u wilt de ontvanger vanuit 'ontwaken' in stand-by zetten, stelt u dan de optie 'opstarten naar stand-by' in op 'nee, uitgezonderd wakeup timer'."
 
 msgid ""
 "Nothing to scan!\n"
@@ -5747,9 +5728,6 @@ msgstr "Uit"
 msgid "Offline decode delay (ms)"
 msgstr "Vertraging in ms voor het achteraf decoderen"
 
-msgid "Ok"
-msgstr "Ok"
-
 msgid "Oman"
 msgstr "Oman"
 
@@ -5767,6 +5745,9 @@ msgstr "Indien geactiveerd, dan wordt het frequentie sub-netwerk deel op correct
 
 msgid "One"
 msgstr "Een"
+
+msgid "Online update of your receiver software."
+msgstr "Online update van de ontvangersoftware."
 
 msgid "Only change this setting if you are using a SCR device that has been reprogrammed with a custom programmer. For further information check with the person that reprogrammed the device."
 msgstr "Wijzig deze waarde enkel als u Unicable apparatuur gebruikt die her geprogrammeerd is met een daarvoor geëigende programmer. Voor aanvullende informatie raadpleeg de monteur die e.e.a. geprogrammeerd heeft."
@@ -6504,9 +6485,6 @@ msgstr "Primaire DNS:"
 msgid "Prime time"
 msgstr "Prime time"
 
-msgid "PrimeTime"
-msgstr "PrimeTime"
-
 msgid "Priority"
 msgstr "Prioriteit"
 
@@ -6562,7 +6540,7 @@ msgid "Protect software update screen"
 msgstr "Beveilig het software update menu"
 
 msgid "Protect standby menu"
-msgstr "Beveilig standby menu"
+msgstr "Beveilig stand-by menu"
 
 msgid "Protect timer menu"
 msgstr "Beveilig timer menu"
@@ -6577,10 +6555,10 @@ msgid "Puerto Rico"
 msgstr "Puerto Rico"
 
 msgid "Put TV in standby"
-msgstr "Zet de TV in standby"
+msgstr "Zet de TV in stand-by"
 
 msgid "Put receiver in standby"
-msgstr "Schakel de ontvanger naar standby"
+msgstr "Schakel de ontvanger naar "
 
 msgid "Python frontend for /tmp/mmi.socket"
 msgstr "Python frontend voor /tmp/mmi.socket"
@@ -6730,7 +6708,7 @@ msgid "Refusing to move to the same directory"
 msgstr "Verplaatsen naar dezelfde doelmap wordt niet geaccepteerd."
 
 msgid "Regard deep standby as standby"
-msgstr "Beschouw de diepe standby als normale standby"
+msgstr "Beschouw de diepe stand-by als normale stand-by"
 
 msgid "Region"
 msgstr "Regio"
@@ -6789,6 +6767,9 @@ msgstr "Verwijder de afgeronde timers na ... dagen"
 msgid "Remove currently selected title"
 msgstr "Verwijder de huidig geselecteerde titel"
 
+msgid "Remove directory"
+msgstr "Map verwijderen"
+
 msgid "Remove items from trash can after (days)"
 msgstr "Verwijder de opnames uit de prullenbak na ... dagen"
 
@@ -6821,7 +6802,10 @@ msgid "Repeat"
 msgstr "Herhaal"
 
 msgid "Repeat leave standby messages"
-msgstr "Herhaal 'blijf standby' voor andere hardware"
+msgstr "Herhaal 'blijf stand-by' voor andere hardware"
+
+msgid "Repeat playlist"
+msgstr "Herhaal afspeellijst"
 
 msgid "Repeat type"
 msgstr "Herhaal type"
@@ -6929,6 +6913,12 @@ msgstr "Backups terugzetten"
 
 msgid "Restore system settings"
 msgstr "Herstel uw instellingen"
+
+msgid "Restore your backups by date."
+msgstr "Zet een backup van een bepaalde datum terug."
+
+msgid "Restore your receiver settings."
+msgstr "Herstel de ontvangerinstellingen."
 
 msgid "Restoring..."
 msgstr "Herstellen..."
@@ -7151,8 +7141,14 @@ msgstr "Sla de timeshift op en beëindig deze"
 msgid "Save changes"
 msgstr "Wijzigingen opslaan"
 
+msgid "Save last directory on exit"
+msgstr "Bewaar laatste map bij het beëindigen"
+
 msgid "Save playlist"
 msgstr "Sla de afspeellijst op"
+
+msgid "Save playlist on exit"
+msgstr "Bewaar afspeellijst bij het beëindigen"
 
 msgid "Save settings and EPG data"
 msgstr "Sla de instellingen plus EPG data op"
@@ -7211,6 +7207,9 @@ msgstr "Zoeken mislukt!"
 
 msgid "Scan files..."
 msgstr "Zoek bestanden..."
+
+msgid "Scan for local extensions and install them."
+msgstr "Zoek naar lokale applicaties en installeer deze."
 
 msgid "Scan options"
 msgstr "Scan opties"
@@ -7563,8 +7562,8 @@ msgstr "Kies enkel voor het volgende teken de variabele tekenset op het virtuele
 msgid "Select update source"
 msgstr "Kies de bron om te updaten"
 
-msgid "Select update source to edit."
-msgstr "Kies de te wijzigen updatefeed."
+msgid "Select update source to edit"
+msgstr "Kies de te wijzigen updatefeed"
 
 msgid "Select video input with up/down buttons"
 msgstr "Selecteer video-ingang met de omhoog/omlaag toetsen"
@@ -7580,6 +7579,13 @@ msgstr "Kies uw ATSC aanbieder."
 
 msgid "Select your Skin"
 msgstr "Kies de skin"
+
+msgid ""
+"Select your backup device.\n"
+"Current device: "
+msgstr ""
+"Kies een apparaat voor de backup.\n"
+"Huidig apparaat: "
 
 msgid "Select your country. If not available select 'all'."
 msgstr "Kies uw land. Indien niet beschikbaar kies 'alle'."
@@ -7765,13 +7771,13 @@ msgid "Set startup service"
 msgstr "Kies als opstartzender"
 
 msgid "Set the User ID of the OpenWebif from your fallback tuner"
-msgstr "Voer het gebruikers ID van de OpenWebif in vanaf uw fallback tuner."
+msgstr "Voer het gebruikers ID van de OpenWebif in vanaf uw Fallback tuner."
 
 msgid "Set the password of the OpenWebif from your fallback tuner"
-msgstr "Stel het wachtwoord van de OpenWebif in vanaf je fallback tuner"
+msgstr "Stel het wachtwoord van de OpenWebif in vanaf je Fallback tuner"
 
 msgid "Set the port of the OpenWebif from your fallback tuner"
-msgstr "Stel de poort van de OpenWebif in vanaf de fallback tuner."
+msgstr "Stel de poort van de OpenWebif in vanaf de Fallback tuner."
 
 msgid "Set the type of the progress indication in the channel selection screen."
 msgstr ""
@@ -7959,6 +7965,9 @@ msgstr "Toon de laatste commits"
 msgid "Show latest update log"
 msgstr "Toon het laatste update log"
 
+msgid "Show media player on main menu"
+msgstr "Mediaplayer op hoofdmenu tonen"
+
 msgid "Show menu or plugin numbers"
 msgstr "Toon telnummers in menu en plugins overzichten"
 
@@ -7984,10 +7993,10 @@ msgid "Show notification when import channels and/or EPG from remote receiver UR
 msgstr "Indien geactiveerd, dan wordt er een melding weergegeven indien de import van zenders en/of EPG vanaf de externe ontvanger geslaagd is."
 
 msgid "Show notification when import channels was not successful"
-msgstr "Toon een melding indien de import is mislukt"
+msgstr "Toon een melding indien de import niet geslaagd is"
 
 msgid "Show notification when import channels was successful"
-msgstr "Toon een melding indien de import is gelukt"
+msgstr "Toon een melding indien de import geslaagd is"
 
 msgid "Show packages to be updated"
 msgstr "Toon de te updaten pakketten"
@@ -8055,6 +8064,10 @@ msgstr "Radio weergave modus..."
 msgid "Show the tv player..."
 msgstr "TV weergave modus..."
 
+#, fuzzy
+msgid "Show underline characters in filenames"
+msgstr "Beperk de tekenset voor de namen van de opnames"
+
 msgid "Show vertical timelines"
 msgstr "Toon de verticale tijdlijnen"
 
@@ -8080,7 +8093,7 @@ msgid "Shutdown"
 msgstr "Afsluiten"
 
 msgid "Shutdown when in Standby"
-msgstr "Sluit volledig af indien in standby"
+msgstr "Sluit volledig af indien in stand-by"
 
 msgid "Side by side"
 msgstr "Naast elkaar"
@@ -8301,6 +8314,9 @@ msgstr "Sorteer de plugins in de standaard volgorde?"
 msgid "Sort time"
 msgstr "Sorteertijd"
 
+msgid "Sorting of playlists"
+msgstr "Sorteren van afspeellijsten"
+
 msgid "Sound"
 msgstr "Geluid"
 
@@ -8341,7 +8357,7 @@ msgid "Specify if you want to set the blocktimes separately by weekday"
 msgstr "Specificeer hoe u de week-bloktijden per dag wilt instellen"
 
 msgid "Specify the end time to ignore the shutdown timer when the receiver is in standby mode"
-msgstr "Specificeer de eind tijd wanneer de uitschakeltimer genegeerd moet worden wanneer de ontvanger in standby is."
+msgstr "Specificeer de eind tijd wanneer de uitschakeltimer genegeerd moet worden wanneer de ontvanger in stand-by is."
 
 msgid "Specify the end time until the inactivity sleeptimer should be ignored"
 msgstr "Selecteer het eind tijdstip vanaf wanneer de sleeptimer moet worden genegeerd"
@@ -8353,7 +8369,7 @@ msgid "Specify the extra start time when the inactivity sleeptimer should be ign
 msgstr "Bepaal het tijdstip vanaf welk moment de 'inactiviteitsleeptimer' genegeerd moet worden"
 
 msgid "Specify the start time to ignore the shutdown timer when the receiver is in standby mode"
-msgstr "Bepaal het tijdstip vanaf welk moment de uitschakeltimer genegeerd moet worden, wanneer de ontvanger in standby is."
+msgstr "Bepaal het tijdstip vanaf welk moment de uitschakeltimer genegeerd moet worden, wanneer de ontvanger in stand-by is."
 
 msgid "Specify the start time when the inactivity sleeptimer should be ignored"
 msgstr "Bepaal het tijdstip vanaf welk moment de 'inactiviteitsleeptimer' genegeerd moet worden"
@@ -8362,7 +8378,7 @@ msgid "Specify timeframe to ignore inactivity sleeptimer"
 msgstr "Bepaal de periode waar de inactiviteitsleeptimer genegeerd wordt"
 
 msgid "Specify timeframe to ignore the shutdown in standby"
-msgstr "Bepaal de periode om 'naar standby' te gaan te negeren"
+msgstr "Bepaal de periode om 'naar ' te gaan te negeren"
 
 msgid "Split preview mode"
 msgstr "Splits preview-modus"
@@ -8383,27 +8399,30 @@ msgid "Standart list"
 msgstr "Standaard lijst"
 
 msgid "Standby"
-msgstr "Standby"
+msgstr "Stand-by"
 
 msgid "Standby / restart"
-msgstr "Standby / herstart"
+msgstr "Stand-by / herstart"
 
 msgid "Standby LED"
-msgstr "Standby LED"
+msgstr "Stand-by LED"
 
 msgid "Standby after current event"
-msgstr "Standby na de huidige actie"
+msgstr "Stand-by na de huidige actie"
 
 #, python-format
 msgid "Standby fan %d PWM"
-msgstr "Standby ventilator %d PWM"
+msgstr "Stand-by ventilator %d PWM"
 
 #, python-format
 msgid "Standby fan %d voltage"
-msgstr "Standby ventilator %d spanning"
+msgstr "Stand-by ventilator %d spanning"
 
 msgid "Standby in "
-msgstr "Standby na "
+msgstr "Stand-by na "
+
+msgid "Start directory"
+msgstr "Start map"
 
 msgid "Start from the beginning"
 msgstr "Start vanaf het begin"
@@ -8430,7 +8449,7 @@ msgid "Start time to ignore inactivity sleeptimer"
 msgstr "Extra begintijd om de inactiviteits sleeptimer te negeren"
 
 msgid "Start time to ignore shutdown in standby"
-msgstr "Start tijd om in standby gaan te negeren"
+msgstr "Start tijd om in stand-by gaan te negeren"
 
 msgid "Start timeshift"
 msgstr "Start de timeshift"
@@ -8443,12 +8462,12 @@ msgstr "Start op"
 
 msgid "Startup the set top box in standby"
 msgstr ""
-"Indien geactiveerd, dan zal de ontvanger direct na een herstart naar standby gaan.\n"
+"Indien geactiveerd, dan zal de ontvanger direct na een herstart naar stand-by gaan.\n"
 "\n"
-"Enkel praktisch als er geregeld stroomuitval is en HDMI-CEC geactiveerd is omdat anders mogelijk beide apparaten 'aan' blijven zonder toezicht."
+"Dit is enkel praktisch als er (geregeld) stroomuitval is en HDMI-CEC geactiveerd is, omdat anders mogelijk beide apparaten 'aan' blijven zonder toezicht."
 
 msgid "Startup to Standby"
-msgstr "Opstarten en ga naar direct naar standby"
+msgstr "Opstarten en ga naar direct naar stand-by"
 
 msgid "Step east"
 msgstr "Stap > oost"
@@ -8672,6 +8691,9 @@ msgstr "Schakel een zender verder"
 msgid "Switch to TV mode"
 msgstr "Schakel naar de TV modus"
 
+msgid "Switch to bookmarks"
+msgstr "Ga naar markeerpunten"
+
 msgid "Switch to filelist"
 msgstr "Ga naar de bestandenlijst"
 
@@ -8745,7 +8767,7 @@ msgstr "T2MI RAW Modus"
 msgid "TRANSLATOR_INFO"
 msgstr ""
 "Deze vertaling wordt u aangeboden door het OpenPLi team.\n"
-"Deze laatste vertaling dateert van 15 september 2019.\n"
+"Deze laatste vertaling dateert van 11 November 2019.\n"
 "Voor aanvullingen en opmerkingen stuurt u een mail naar\n"
 "translators@openpli.org."
 
@@ -9511,13 +9533,13 @@ msgid "Turks and Caicos Islands"
 msgstr "Turks- en Caicoseilanden"
 
 msgid "Turn on the power LED during deep standby."
-msgstr "Met deze optie bepaalt u of de power led brandt als de ontvanger stand-by staat."
+msgstr "Met deze optie bepaalt u of de power led brandt als de ontvanger in deep stand-by staat."
 
 msgid "Turn on the power LED during standby."
-msgstr "Met deze optie bepaalt u of de power led brandt als de ontvanger standby staat."
+msgstr "Met deze optie bepaalt u of de power led brandt als de ontvanger stand-by staat."
 
 msgid "Turn on the power LED."
-msgstr "Met deze optie schakelt u of de power led aan of uit indien de ontvanger in standby staat."
+msgstr "Met deze optie schakelt u of de power led aan of uit indien de ontvanger in  staat."
 
 msgid "Turning step size"
 msgstr "Stap voor stap draaien"
@@ -9649,7 +9671,7 @@ msgid "Unsupported"
 msgstr "Niet ondersteund"
 
 msgid "Unzipping Image"
-msgstr "De image wordt uitgepakt"
+msgstr "Het image wordt uitgepakt"
 
 msgid "Update"
 msgstr "Update"
@@ -9662,6 +9684,9 @@ msgstr "Update en herstart"
 
 msgid "Update and reboot (recommended)"
 msgstr "Update en herstart (aanbevolen)"
+
+msgid "Update bookmarks"
+msgstr "Actualiseer de bladwijzers"
 
 msgid "Update channel list only"
 msgstr "Alleen de zenderlijst updaten"
@@ -9684,11 +9709,11 @@ msgstr "De update is gereed."
 msgid "Updatefeed not available."
 msgstr "Updatefeed niet beschikbaar."
 
-msgid "Updating software catalog"
-msgstr "Software catalogus wordt geüpdatet"
-
 msgid "Updating"
 msgstr "Bezig met update"
+
+msgid "Updating software catalog"
+msgstr "Software catalogus wordt geüpdatet"
 
 msgid "Upper case"
 msgstr "Hoofdletters"
@@ -9987,6 +10012,9 @@ msgstr "Teletekst weergeven..."
 msgid "View video CD..."
 msgstr "Bekijk Video CD..."
 
+msgid "View, install and remove available or installed packages."
+msgstr "Bekijk, installeer en verwijder beschikbare of geïnstalleerde pakketten."
+
 msgid "Virgin Islands (British)"
 msgstr "Virgin eilanden (Engels)"
 
@@ -10051,13 +10079,13 @@ msgid "Wakeup"
 msgstr "Actief worden"
 
 msgid "Wakeup TV from standby"
-msgstr "Activeer de TV vanuit standby"
+msgstr "Activeer de TV vanuit stand-by"
 
 msgid "Wakeup receiver for start timer"
-msgstr "Haal de ontvanger uit standby om een timeropname te starten"
+msgstr "Haal de ontvanger uit  om een timeropname te starten"
 
 msgid "Wakeup receiver from standby"
-msgstr "Activeer de ontvanger vanuit standby"
+msgstr "Activeer de ontvanger vanuit stand-by"
 
 msgid "Wakeup signal from TV"
 msgstr "Activeer het signaal van TV met "
@@ -10178,7 +10206,7 @@ msgid "When enabled the left, right, CH+/-, B+/-, P+/- buttons will follow the '
 msgstr "Indien geactiveerd, dan werken de links, rechts, CH +/-, B +/-, P +/- toetsen in de 'neutrino stijl' in plaats van de 'enigma2 stijl'."
 
 msgid "When enabled the set top box is able to wakeup on LAN"
-msgstr "Indien geactiveerd, dan is de ontvanger in staat om gebruik te maken van de 'WOL functie'. Hiermee kunt u via het netwerk contact met de ontvanger maken, waarna deze zal opstarten vanuit 'deep standby'."
+msgstr "Indien geactiveerd, dan is de ontvanger in staat om gebruik te maken van de 'WOL functie'. Hiermee kunt u via het netwerk contact met de ontvanger maken, waarna deze zal opstarten vanuit 'deep '."
 
 msgid "When enabled the timer from the fallback tuner is imported"
 msgstr "Indien geactiveerd, dan wordt de timer van de Fallback tuner geimporteerd"
@@ -10190,10 +10218,10 @@ msgid "When enabled you can control the volume with the arrow buttons instead of
 msgstr "Indien geactiveerd, dan kunt u het volume bedienen met de pijltjestoetsen, i.p.v. dat u hiermee de zenderlijst opent."
 
 msgid "When enabled you can customize the OpenWebIf settings for the fallback tuner"
-msgstr "Indien geactiveerd, dan kunt u de Fallback instellingen in de Webinterface wijzigen."
+msgstr "Indien geactiveerd, dan kunt u de instellingen van de Fallback tuner aanpassen in de Webinterface."
 
 msgid "When enabled you can specify a timeframe to ignore the shutdown timer when the receiver is in standby mode"
-msgstr "Indien geactiveerd dan kan een tijdsruimte worden gespecificeerd waarbinnen de uitschakel timer wordt genegeerd wanneer de tuner al in standby is."
+msgstr "Indien geactiveerd dan kan een tijdsruimte worden gespecificeerd waarbinnen de uitschakel timer wordt genegeerd wanneer de ontvanger al in stand-by staat."
 
 msgid "When enabled you can specify a timeframe when the inactivity sleeptimer is ignored. Not the detection is disabled during this timeframe but the inactivity timeout is disabled"
 msgstr "U kunt een periode opgeven waarin de inactiviteits sleeptimer wordt genegeerd. De detectie wordt niet uitgeschakeld maar de inactiviteits timeout wordt uitgeschakeld."
@@ -10503,10 +10531,10 @@ msgid "Yes, delete this movie and return to movie list"
 msgstr "Ja, verwijder deze opname en keer terug naar het opnameoverzicht"
 
 msgid "Yes, only from deep standby"
-msgstr "Ja, enkel vanuit 'deep standby'"
+msgstr "Ja, enkel vanuit 'deep '"
 
 msgid "Yes, only from standby"
-msgstr "Ja, enkel vanuit standby"
+msgstr "Ja, enkel vanuit stand-by"
 
 msgid "Yes, returning to movie list"
 msgstr "Ja, terug naar de opname lijst"
@@ -10686,10 +10714,10 @@ msgid "Your receiver might be unusable now. Please consult the manual for furthe
 msgstr "Uw ontvanger kan nu onbruikbaar zijn. Leest u eerst de handleiding voor extra informatie voordat u de ontvanger herstart."
 
 msgid "Your receiver will got to stand by due to the sleeptimer."
-msgstr "Uw ontvanger wordt door de sleeptimer in standby geschakeld."
+msgstr "Uw ontvanger wordt door de sleeptimer in  geschakeld."
 
 msgid "Your receiver will got to standby due to inactivity."
-msgstr "Uw ontvanger wordt vanwege inactiviteit, naar standby geschakeld."
+msgstr "Uw ontvanger wordt vanwege inactiviteit, naar stand-by geschakeld."
 
 msgid "Your receiver will restart after pressing OK on your remote control."
 msgstr "De ontvanger zal herstarten nadat u op Ok gedrukt heeft."
@@ -10806,14 +10834,14 @@ msgstr "start zodadelijk"
 msgid "activate network adapter configuration"
 msgstr "Start de netwerkadapter configuratie"
 
+msgid "active"
+msgstr "actief"
+
 msgid "actual time only"
 msgstr "enkel de actuele tijd"
 
 msgid "add alternatives"
 msgstr "Voeg alternatieven toe"
-
-msgid "add bookmark"
-msgstr "Markering toevoegen"
 
 msgid "add bouquet"
 msgstr "Voeg een bouquet toe"
@@ -10990,9 +11018,6 @@ msgstr "Kookprogramma"
 
 msgid "copy to bouquets"
 msgstr "Kopieer naar bouquetten"
-
-msgid "Create directory"
-msgstr "Map aanmaken"
 
 msgid "daily"
 msgstr "dagelijks"
@@ -11211,7 +11236,7 @@ msgid "go to deep standby"
 msgstr "uitschakelen"
 
 msgid "go to standby"
-msgstr "standby"
+msgstr "ga naar stand-by"
 
 msgid "grab this frame as bitmap"
 msgstr "Maak van dit beeld een screenshot"
@@ -11463,10 +11488,10 @@ msgid "once"
 msgstr "éénmalig"
 
 msgid "only from deep standby"
-msgstr "enkel vanuit 'deep standby'"
+msgstr "enkel vanuit 'deep stand-by '"
 
 msgid "only from standby"
-msgstr "enkel vanuit 'standby'"
+msgstr "alléén vanuit stand-by"
 
 msgid "open nameserver configuration"
 msgstr "Open nameserver-configuratie"
@@ -11537,17 +11562,11 @@ msgstr "verwijder alle 'nieuw gevonden' markeringen"
 msgid "remove before this position"
 msgstr "Verwijder voor deze positie"
 
-msgid "remove bookmark"
-msgstr "Markeerpunt verwijderen"
-
 msgid "remove bouquet from parental protection"
 msgstr "verwijder bouquet uit het kinderslot"
 
 msgid "remove cable services"
 msgstr "verwijder kabelkanalen"
-
-msgid "Remove directory"
-msgstr "Map verwijderen"
 
 msgid "remove entry"
 msgstr "Verwijder het huidige item"
@@ -11569,9 +11588,6 @@ msgstr "verwijder deze markering"
 
 msgid "rename entry"
 msgstr "Wijzig de naam van het huidige item"
-
-msgid "Repeat playlist"
-msgstr "Herhaal afspeellijst"
 
 msgid "repeated"
 msgstr "herhalen"
@@ -11606,12 +11622,6 @@ msgstr "Romantiek"
 msgid "running"
 msgstr "actief"
 
-msgid "Save last directory on exit"
-msgstr "Bewaar laatste map bij het beëindigen"
-
-msgid "Save playlist on exit"
-msgstr "Bewaar afspeellijst bij het beëindigen"
-
 msgid "scan state"
 msgstr "zoekstatus"
 
@@ -11620,9 +11630,6 @@ msgstr "Science Fiction/Fantasie/Horror"
 
 msgid "seconds"
 msgstr "seconden"
-
-msgid "select"
-msgstr "selecteer"
 
 msgid "select CAId's"
 msgstr "Selecteer CAId's"
@@ -11657,9 +11664,6 @@ msgstr "Alternatieven weergeven"
 
 msgid "show event details"
 msgstr "EPG details weergeven"
-
-msgid "Show media player on main menu"
-msgstr "Mediaplayer op hoofdmenu tonen"
 
 msgid "show softwaremanager in setup menu"
 msgstr "Softwaremanager zichtbaar in setup menu"
@@ -11737,9 +11741,6 @@ msgstr "Sociaal/Politiek/Economisch (Algemeen)"
 msgid "social/spiritual science"
 msgstr "Sociale/Geestelijke wetenschap"
 
-msgid "Sorting of playlists"
-msgstr "Sorteren van afspeellijsten"
-
 msgid "special events"
 msgstr "speciale gebeurtenissen"
 
@@ -11758,9 +11759,6 @@ msgstr "Standaard"
 msgid "start cut here"
 msgstr "Start knippen hier"
 
-msgid "Start directory"
-msgstr "Start map"
-
 msgid "starts in a few seconds"
 msgstr "start over enkele seconden"
 
@@ -11775,9 +11773,6 @@ msgstr "stop met het gebruiken als opstartzender"
 
 msgid "successful"
 msgstr "gelukt"
-
-msgid "Switch to bookmarks"
-msgstr "Ga naar markeerpunten"
 
 msgid "switch to the next angle"
 msgstr "schakel naar de volgende hoek"
@@ -11852,13 +11847,7 @@ msgid "untestable"
 msgstr "niet te testen"
 
 msgid "until standby/restart"
-msgstr "tot standby/herstart"
-
-msgid "Update bookmarks"
-msgstr "Actualiseer de bladwijzers"
-
-msgid "used"
-msgstr "gebruikte"
+msgstr "tot stand-by / herstart"
 
 msgid "user defined"
 msgstr "Door gebruiker bepaald"

@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: enigma2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-09-07 13:00+0200\n"
+"POT-Creation-Date: 2019-11-18 18:59+0100\n"
 "PO-Revision-Date: 2018-12-17 02:51+0200\n"
 "Last-Translator: Hazem <moustafagamal@hotmail.com>\n"
 "Language-Team: Arabic <moustafagamal@hotmail.com>\n"
@@ -18,20 +18,10 @@ msgstr ""
 
 msgid ""
 "\n"
-"Advanced options and settings."
-msgstr ""
-"\n"
-"إعدادات وخيارات متقدمة."
-
-msgid ""
-"\n"
 "After pressing OK, please wait!"
 msgstr ""
 "\n"
 "بعد الضغط على موافق ، يرجى الانتظار!"
-
-msgid "Backup your receiver settings."
-msgstr "نسخ احتياطي لإعدادات جهازك."
 
 msgid ""
 "\n"
@@ -39,20 +29,6 @@ msgid ""
 msgstr ""
 "\n"
 "تم تعطيل الكشف عن التعارض!"
-
-#
-msgid ""
-"\n"
-"Edit the update source address."
-msgstr ""
-"\n"
-"تحرير عنوان مصدر الترقية."
-
-msgid "Manage extensions or plugins for your receiver."
-msgstr "إدارة الملحقات أو الإضافات لجهازك."
-
-msgid "Online update of your receiver software."
-msgstr "تحديث النظام عبر الإنترنت."
 
 #
 msgid ""
@@ -77,30 +53,6 @@ msgstr ""
 "\n"
 "جاري التسجيل."
 
-#
-msgid ""
-"\n"
-"Restore your backups by date."
-msgstr ""
-"\n"
-"استعادة نسخة احتياطية حسب التاريخ."
-
-msgid "Restore your receiver settings."
-msgstr "إستعادة إعدادات جهاز الاستقبال."
-
-#
-msgid "Scan for local extensions and install them."
-msgstr "بحث عن ملحقات مخزنة محليا وتثبيتها."
-
-msgid ""
-"\n"
-"Select your backup device.\n"
-"Current device: "
-msgstr ""
-"\n"
-"إختر قرص النسخة الإحتياطية.\n"
-"القرص الحالي: "
-
 #, python-format
 msgid ""
 "\n"
@@ -108,13 +60,6 @@ msgid ""
 msgstr ""
 "\n"
 "المؤقت '%s' معطل!"
-
-msgid ""
-"\n"
-"View, install and remove available or installed packages."
-msgstr ""
-"\n"
-"عرض، تثبيت و حذف الحزم المتاحة أو المثبتة ."
 
 msgid " (0 - all networks)"
 msgstr " (0 - كل الشبكات)"
@@ -177,6 +122,14 @@ msgstr ""
 
 #, python-format
 msgid "%.0f kB"
+msgstr ""
+
+#, python-format
+msgid "%.1f°E"
+msgstr ""
+
+#, python-format
+msgid "%.1f°W"
 msgstr ""
 
 #, python-format
@@ -869,6 +822,10 @@ msgstr "إضافة عنوان جديد"
 msgid "Add bookmark"
 msgstr "إضافة إشارة مرجعية"
 
+#, fuzzy
+msgid "Add bouquet"
+msgstr "إضافة باقة"
+
 msgid "Add directory to playlist"
 msgstr "إضافة دليل لقائمة التشغيل"
 
@@ -895,6 +852,11 @@ msgstr "                                                                   أض�
 
 msgid "Add service"
 msgstr "إضافة قناة"
+
+#
+#, fuzzy
+msgid "Add services to this bouquet?"
+msgstr "إضافة القناة إلى باقة"
 
 #
 msgid "Add timer"
@@ -932,6 +894,9 @@ msgstr "متقدم"
 #
 msgid "Advanced options"
 msgstr "خيارات متقدمة"
+
+msgid "Advanced options and settings."
+msgstr "إعدادات وخيارات متقدمة."
 
 #
 msgid "Advanced restore"
@@ -1132,6 +1097,9 @@ msgid "Arabic"
 msgstr "عـربى"
 
 msgid "Are you sure to purge all deleted userbouquets?"
+msgstr ""
+
+msgid "Are you sure to reboot to"
 msgstr ""
 
 #, python-format
@@ -1426,6 +1394,9 @@ msgstr "اعدادت النسخ الإحتياطي"
 
 msgid "Backup system settings"
 msgstr "عمل نسخة احتياطية لاعدادات النظام"
+
+msgid "Backup your receiver settings."
+msgstr "نسخ احتياطي لإعدادات جهازك."
 
 msgid "Bahamas"
 msgstr ""
@@ -1828,8 +1799,9 @@ msgid "Channels and EPG"
 msgstr "القنوات و EPG"
 
 #
+#, fuzzy
 msgid "Channels only"
-msgstr "قنوات فقط"
+msgstr "قناة"
 
 msgid "Chap."
 msgstr "فصل."
@@ -2456,6 +2428,9 @@ msgstr ""
 #
 msgid "Create DVD-ISO"
 msgstr "إنشاء DVD-ISO"
+
+msgid "Create directory"
+msgstr "إنشاء دليل"
 
 msgid "Create new folder and exit"
 msgstr ""
@@ -3084,15 +3059,15 @@ msgstr "هل تريد إستئناف هذا العرض؟"
 msgid "Do you want to select a different skin?"
 msgstr ""
 
+msgid "Do you want to update the package:\n"
+msgstr "هل تريد ترقية الحزمة: \n"
+
 #, python-format
 msgid "Do you want to update your receiver to %s?"
 msgstr "هل تريد تحديث جهاز الاستقبال إلى %s؟"
 
 msgid "Do you want to update your receiver?"
 msgstr "هل تريد تحديث جهاز الاستقبال؟"
-
-msgid "Do you want to update the package:\n"
-msgstr "هل تريد ترقية الحزمة: \n"
 
 msgid "Dolby"
 msgstr ""
@@ -3237,6 +3212,10 @@ msgstr "تحرير تهيئة خادم DNS لجهاز الاستقبال الخ�
 msgid "Edit the network configuration of your receiver.\n"
 msgstr ""
 
+#
+msgid "Edit the update source address."
+msgstr "تحرير عنوان مصدر الترقية."
+
 msgid "Edit timer"
 msgstr ""
 
@@ -3244,8 +3223,8 @@ msgid "Edit title"
 msgstr "تحرير العنوان"
 
 #
-msgid "Edit update source url."
-msgstr "تحرير عنوان مصدر الترقية."
+msgid "Edit update source url"
+msgstr "تحرير عنوان مصدر الترقية"
 
 msgid "Education/Science/..."
 msgstr ""
@@ -4118,9 +4097,6 @@ msgstr ""
 msgid "Goto 0"
 msgstr "الذهاب الى 0"
 
-msgid "Goto:"
-msgstr ""
-
 msgid "Goto X"
 msgstr ""
 
@@ -4148,6 +4124,9 @@ msgstr ""
 msgid "Goto specific date/time"
 msgstr ""
 
+msgid "Goto:"
+msgstr ""
+
 msgid "GotoX calibration"
 msgstr ""
 
@@ -4163,9 +4142,6 @@ msgstr "اليونان"
 
 msgid "Greek"
 msgstr "يوناني"
-
-msgid "Greek (Modern)"
-msgstr "يوناني (مطور)"
 
 msgid "Green"
 msgstr "أخضر"
@@ -4421,6 +4397,9 @@ msgstr ""
 msgid "Icons"
 msgstr ""
 
+msgid "If disabled, underline characters in file and directory names are not shown and are replaced with spaces."
+msgstr ""
+
 msgid "If enabled, bookmarks will be updated with the new location when you move or copy a recording."
 msgstr ""
 
@@ -4638,9 +4617,6 @@ msgstr "تثبيت قائمة قنوات"
 
 msgid "Install extensions"
 msgstr "تثبيت ملحقات"
-
-msgid "Install extensions."
-msgstr "تثبيت ملحقات."
 
 msgid "Install local extension"
 msgstr "تثبيت ملحقات مخزنة محليا"
@@ -5155,6 +5131,9 @@ msgstr "مالطة"
 #
 msgid "Manage extensions"
 msgstr "إدارة الملحقات"
+
+msgid "Manage extensions or plugins for your receiver."
+msgstr "إدارة الملحقات أو الإضافات لجهازك."
 
 #
 msgid "Manage your receiver's software"
@@ -5858,9 +5837,6 @@ msgstr "نرويجى"
 msgid "Norwegian"
 msgstr "نرويجى"
 
-msgid "Not defined"
-msgstr "غير محددة"
-
 #
 #, fuzzy
 msgid "Not Installed"
@@ -5872,6 +5848,9 @@ msgstr "غير محددة"
 
 msgid "Not associated"
 msgstr ""
+
+msgid "Not defined"
+msgstr "غير محددة"
 
 #
 #, python-format
@@ -5948,9 +5927,6 @@ msgstr "لا يعمل"
 msgid "Offline decode delay (ms)"
 msgstr ""
 
-msgid "Ok"
-msgstr ""
-
 msgid "Oman"
 msgstr ""
 
@@ -5970,6 +5946,9 @@ msgstr ""
 #
 msgid "One"
 msgstr "واحد"
+
+msgid "Online update of your receiver software."
+msgstr "تحديث النظام عبر الإنترنت."
 
 msgid "Only change this setting if you are using a SCR device that has been reprogrammed with a custom programmer. For further information check with the person that reprogrammed the device."
 msgstr ""
@@ -6742,9 +6721,6 @@ msgstr ""
 msgid "Prime time"
 msgstr ""
 
-msgid "PrimeTime"
-msgstr ""
-
 msgid "Priority"
 msgstr "أولوية"
 
@@ -7040,6 +7016,9 @@ msgstr ""
 msgid "Remove currently selected title"
 msgstr "حذف العنوان الحالى المختيار"
 
+msgid "Remove directory"
+msgstr "حذف الدليل"
+
 msgid "Remove items from trash can after (days)"
 msgstr ""
 
@@ -7074,6 +7053,9 @@ msgstr ""
 
 msgid "Repeat leave standby messages"
 msgstr ""
+
+msgid "Repeat playlist"
+msgstr "إعادة قائمة الاغانى"
 
 #, fuzzy
 msgid "Repeat type"
@@ -7183,6 +7165,13 @@ msgstr "استعادة نسخ احتياطية"
 
 msgid "Restore system settings"
 msgstr "إستعادة إعدادات النظام"
+
+#
+msgid "Restore your backups by date."
+msgstr "استعادة نسخة احتياطية حسب التاريخ."
+
+msgid "Restore your receiver settings."
+msgstr "إستعادة إعدادات جهاز الاستقبال."
 
 #, fuzzy
 msgid "Restoring..."
@@ -7428,9 +7417,15 @@ msgstr ""
 msgid "Save changes"
 msgstr ""
 
+msgid "Save last directory on exit"
+msgstr "حفظ الدليل عند خروج"
+
 #, fuzzy
 msgid "Save playlist"
 msgstr "حفظ قائمة العرض"
+
+msgid "Save playlist on exit"
+msgstr "حفظ قائمة العرض عند خروج"
 
 msgid "Save settings and EPG data"
 msgstr ""
@@ -7500,6 +7495,10 @@ msgstr "فشل التوليف"
 #, fuzzy
 msgid "Scan files..."
 msgstr "فحص الملفات..."
+
+#
+msgid "Scan for local extensions and install them."
+msgstr "بحث عن ملحقات مخزنة محليا وتثبيتها."
 
 msgid "Scan options"
 msgstr ""
@@ -7884,7 +7883,7 @@ msgstr ""
 msgid "Select update source"
 msgstr "أختيار مصدر الترقيه المراد تحريره"
 
-msgid "Select update source to edit."
+msgid "Select update source to edit"
 msgstr "أختيار مصدر الترقيه المراد تحريره"
 
 #
@@ -7903,6 +7902,13 @@ msgstr "أختيار مزود ليتم إضافته..."
 
 msgid "Select your Skin"
 msgstr "إختر السمة الخاصة بك"
+
+msgid ""
+"Select your backup device.\n"
+"Current device: "
+msgstr ""
+"إختر قرص النسخة الإحتياطية.\n"
+"القرص الحالي: "
 
 msgid "Select your country. If not available select 'all'."
 msgstr ""
@@ -8308,6 +8314,9 @@ msgstr ""
 msgid "Show latest update log"
 msgstr ""
 
+msgid "Show media player on main menu"
+msgstr ""
+
 msgid "Show menu or plugin numbers"
 msgstr ""
 
@@ -8409,6 +8418,10 @@ msgstr "إظهار مشغل الراديو..."
 #
 msgid "Show the tv player..."
 msgstr "إظهار مشغل التليفزيون"
+
+#, fuzzy
+msgid "Show underline characters in filenames"
+msgstr "حروف محدوده لاسماء ملفات التسجيل"
 
 msgid "Show vertical timelines"
 msgstr ""
@@ -8686,6 +8699,9 @@ msgstr ""
 msgid "Sort time"
 msgstr "تصنيف الوقت"
 
+msgid "Sorting of playlists"
+msgstr ""
+
 #
 msgid "Sound"
 msgstr "صـوت"
@@ -8797,6 +8813,9 @@ msgstr "مروحه %d فولتيه"
 
 msgid "Standby in "
 msgstr ""
+
+msgid "Start directory"
+msgstr "دليل البداية"
 
 #
 msgid "Start from the beginning"
@@ -9094,6 +9113,10 @@ msgstr ""
 
 msgid "Switch to TV mode"
 msgstr ""
+
+#
+msgid "Switch to bookmarks"
+msgstr "الانتقال الى المرجعيات"
 
 msgid "Switch to filelist"
 msgstr "إنتقال الى قائمة الملفات"
@@ -9458,8 +9481,8 @@ msgstr ""
 
 msgid ""
 "This info is for developers only.\n"
-"For a normal users it is not relevant.\n"
-"Don't panic please when you see values being displayed that you think look suspicious!"
+"For normal users it is not relevant.\n"
+"Please don't panic if you see values displayed looking suspicious!"
 msgstr ""
 
 msgid "This is a multitype tuner. Available options depend on the hardware."
@@ -10136,6 +10159,11 @@ msgstr "تحديث وإعادة التشغيل"
 msgid "Update and reboot (recommended)"
 msgstr "تحديث وإعادة التشغيل (يوصى به)"
 
+#
+#, fuzzy
+msgid "Update bookmarks"
+msgstr "بحث آلـى"
+
 msgid "Update channel list only"
 msgstr "تحديث ملف القنوات فقط"
 
@@ -10163,12 +10191,12 @@ msgid "Updatefeed not available."
 msgstr "تغذية التحديث غير متاحه"
 
 #
-msgid "Updating software catalog"
-msgstr "جارى تحديث فهرس النظام"
-
-#
 msgid "Updating"
 msgstr "جارى الترقيه"
+
+#
+msgid "Updating software catalog"
+msgstr "جارى تحديث فهرس النظام"
 
 msgid "Upper case"
 msgstr ""
@@ -10484,6 +10512,9 @@ msgstr ""
 #, fuzzy
 msgid "View video CD..."
 msgstr "مشاهدة فيديو سى دى"
+
+msgid "View, install and remove available or installed packages."
+msgstr "عرض، تثبيت و حذف الحزم المتاحة أو المثبتة ."
 
 msgid "Virgin Islands (British)"
 msgstr ""
@@ -11275,14 +11306,14 @@ msgstr "على وشك البدأ"
 msgid "activate network adapter configuration"
 msgstr "تنشيط إعدادات محول الشبكة"
 
+msgid "active"
+msgstr ""
+
 msgid "actual time only"
 msgstr ""
 
 msgid "add alternatives"
 msgstr "إضافة بدائل"
-
-msgid "add bookmark"
-msgstr "إضافة علامة مرجعية"
 
 msgid "add bouquet"
 msgstr "إضافة باقة"
@@ -11463,9 +11494,6 @@ msgstr ""
 
 msgid "copy to bouquets"
 msgstr "نسخ الى الباقات"
-
-msgid "Create directory"
-msgstr "إنشاء دليل"
 
 #
 msgid "daily"
@@ -12044,18 +12072,11 @@ msgstr "أحذف كل علامات وجد حديثا"
 msgid "remove before this position"
 msgstr "حذف قبل هذا المكان"
 
-#
-msgid "remove bookmark"
-msgstr "حذف المرجعيه"
-
 msgid "remove bouquet from parental protection"
 msgstr ""
 
 msgid "remove cable services"
 msgstr ""
-
-msgid "Remove directory"
-msgstr "حذف الدليل"
 
 msgid "remove entry"
 msgstr "حذف"
@@ -12078,9 +12099,6 @@ msgstr "حذف هذه العلامة"
 
 msgid "rename entry"
 msgstr ""
-
-msgid "Repeat playlist"
-msgstr "إعادة قائمة الاغانى"
 
 #
 msgid "repeated"
@@ -12116,12 +12134,6 @@ msgstr ""
 msgid "running"
 msgstr ""
 
-msgid "Save last directory on exit"
-msgstr "حفظ الدليل عند خروج"
-
-msgid "Save playlist on exit"
-msgstr "حفظ قائمة العرض عند خروج"
-
 #
 msgid "scan state"
 msgstr "حاله البحث"
@@ -12131,9 +12143,6 @@ msgstr ""
 
 msgid "seconds"
 msgstr "ثوانى"
-
-msgid "select"
-msgstr "إختيار"
 
 #
 msgid "select CAId's"
@@ -12171,9 +12180,6 @@ msgstr "إظهار البدائل"
 
 msgid "show event details"
 msgstr "إظهار تفاصيل الحدث"
-
-msgid "Show media player on main menu"
-msgstr ""
 
 msgid "show softwaremanager in setup menu"
 msgstr ""
@@ -12251,9 +12257,6 @@ msgstr ""
 msgid "social/spiritual science"
 msgstr ""
 
-msgid "Sorting of playlists"
-msgstr ""
-
 msgid "special events"
 msgstr ""
 
@@ -12272,9 +12275,6 @@ msgstr "قياسى"
 msgid "start cut here"
 msgstr "أبدأ القطع هنا"
 
-msgid "Start directory"
-msgstr "دليل البداية"
-
 msgid "starts in a few seconds"
 msgstr ""
 
@@ -12289,10 +12289,6 @@ msgstr ""
 
 msgid "successful"
 msgstr ""
-
-#
-msgid "Switch to bookmarks"
-msgstr "الانتقال الى المرجعيات"
 
 msgid "switch to the next angle"
 msgstr "الانتقال الى الزاوية التالية"
@@ -12372,11 +12368,6 @@ msgstr ""
 #
 msgid "until standby/restart"
 msgstr "حتى وضع الاستعداد/إعادة التشغيل"
-
-#
-#, fuzzy
-msgid "Update bookmarks"
-msgstr "بحث آلـى"
 
 #
 msgid "user defined"
@@ -12474,6 +12465,9 @@ msgstr "نعـم"
 #
 msgid "yes (keep feeds)"
 msgstr "نعم (تجاهل الفيدات)"
+
+msgid "yes, but not in multi selections"
+msgstr ""
 
 msgid "zap"
 msgstr "إنتقال"

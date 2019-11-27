@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: tuxbox-enigma 0.0.1-En-Th\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-09-07 13:00+0200\n"
+"POT-Creation-Date: 2019-11-18 18:59+0100\n"
 "PO-Revision-Date: 2010-04-08 18:13+0700\n"
 "Last-Translator: Tony - Thaidreambox\n"
 "Language-Team: Tony @ Thai Dreambox <tonyboyth@gmail.com>\n"
@@ -21,37 +21,14 @@ msgstr ""
 
 msgid ""
 "\n"
-"Advanced options and settings."
-msgstr ""
-"\n"
-"ตั้งค่าขั้นสูง"
-
-msgid ""
-"\n"
 "After pressing OK, please wait!"
 msgstr ""
 "\n"
 "กดปุ่ม OK แล้วรอสักครู่"
 
-msgid "Backup your receiver settings."
-msgstr ""
-
 msgid ""
 "\n"
 "Conflict detection disabled!"
-msgstr ""
-
-msgid ""
-"\n"
-"Edit the update source address."
-msgstr ""
-"\n"
-"แก้ไขที่อยู่เพื่อโหลดส่วนปรับปรุง"
-
-msgid "Manage extensions or plugins for your receiver."
-msgstr ""
-
-msgid "Online update of your receiver software."
 msgstr ""
 
 msgid ""
@@ -72,40 +49,11 @@ msgid ""
 "Recording in progress."
 msgstr ""
 
-msgid ""
-"\n"
-"Restore your backups by date."
-msgstr ""
-"\n"
-"นำสำรองกลับมาใช้ตามวันที่"
-
-msgid "Restore your receiver settings."
-msgstr ""
-
-msgid "Scan for local extensions and install them."
-msgstr ""
-
-msgid ""
-"\n"
-"Select your backup device.\n"
-"Current device: "
-msgstr ""
-"\n"
-"เลือกอุปกรณ์\n"
-"อุปกรณ์ปัจจุบันคือ: "
-
 #, python-format
 msgid ""
 "\n"
 "Timer '%s' disabled!"
 msgstr ""
-
-msgid ""
-"\n"
-"View, install and remove available or installed packages."
-msgstr ""
-"\n"
-"ตรวจดู ติดตั้งหรือลบส่วนประกอบ"
 
 msgid " (0 - all networks)"
 msgstr ""
@@ -165,6 +113,14 @@ msgstr ""
 
 #, python-format
 msgid "%.0f kB"
+msgstr ""
+
+#, python-format
+msgid "%.1f°E"
+msgstr ""
+
+#, python-format
+msgid "%.1f°W"
 msgstr ""
 
 #, python-format
@@ -786,6 +742,10 @@ msgid "Add bookmark"
 msgstr "เพิ่มบุ๊คมาร์ค"
 
 #, fuzzy
+msgid "Add bouquet"
+msgstr "เพิ่มกลุ่มรายการ"
+
+#, fuzzy
 msgid "Add directory to playlist"
 msgstr "เพิ่มทั้งโฟล์เดอร์เข้าสารบัญ"
 
@@ -821,6 +781,10 @@ msgstr "บันทึกรายการ (หยุดเมื่อจบ�
 msgid "Add service"
 msgstr "เพิ่มบริการ"
 
+#, fuzzy
+msgid "Add services to this bouquet?"
+msgstr "เพิ่มบริการเข้าสู่กลุ่มรายการ"
+
 msgid "Add timer"
 msgstr "เพิ่มลงตารางเวลา"
 
@@ -854,6 +818,9 @@ msgstr ""
 #, fuzzy
 msgid "Advanced options"
 msgstr "ตัวเลือกขั้นสูง"
+
+msgid "Advanced options and settings."
+msgstr "ตั้งค่าขั้นสูง"
 
 msgid "Advanced restore"
 msgstr "นำข้อมูลกลับมาใช้แบบขั้นสูง"
@@ -1049,6 +1016,9 @@ msgid "Arabic"
 msgstr "ภาษาอาหรับ"
 
 msgid "Are you sure to purge all deleted userbouquets?"
+msgstr ""
+
+msgid "Are you sure to reboot to"
 msgstr ""
 
 #, python-format
@@ -1343,6 +1313,9 @@ msgstr "ตั้งค่าสำรองข้อมูลระบบ"
 
 msgid "Backup system settings"
 msgstr "ตั้งค่าสำรองข้อมูลระบบ"
+
+msgid "Backup your receiver settings."
+msgstr ""
 
 msgid "Bahamas"
 msgstr ""
@@ -2371,6 +2344,9 @@ msgstr ""
 msgid "Create DVD-ISO"
 msgstr "สร้างแผ่นดีวีดีแบบ ISO"
 
+msgid "Create directory"
+msgstr "สร้างโฟล์เดอร์"
+
 msgid "Create new folder and exit"
 msgstr ""
 
@@ -2998,15 +2974,15 @@ msgstr "ต้องการเล่นต่อจากที่เดิม
 msgid "Do you want to select a different skin?"
 msgstr ""
 
+msgid "Do you want to update the package:\n"
+msgstr "ยืนยันจะปรับปรุงส่วนประกอบนี้:\n"
+
 #, fuzzy, python-format
 msgid "Do you want to update your receiver to %s?"
 msgstr "ท่านต้องการที่จะนำการตั้งค่าต่างๆ กลับมาใช้หรือไม่?"
 
 msgid "Do you want to update your receiver?"
 msgstr ""
-
-msgid "Do you want to update the package:\n"
-msgstr "ยืนยันจะปรับปรุงส่วนประกอบนี้:\n"
 
 msgid "Dolby"
 msgstr ""
@@ -3141,13 +3117,16 @@ msgstr "ออกจากการตั้งค่า Nameserver"
 msgid "Edit the network configuration of your receiver.\n"
 msgstr ""
 
+msgid "Edit the update source address."
+msgstr "แก้ไขที่อยู่เพื่อโหลดส่วนปรับปรุง"
+
 msgid "Edit timer"
 msgstr ""
 
 msgid "Edit title"
 msgstr "แก้ไขชื่อเรื่อง"
 
-msgid "Edit update source url."
+msgid "Edit update source url"
 msgstr "แก้ไข URL ของเซอร์พเวอร์เพื่อปรับปรุง"
 
 msgid "Education/Science/..."
@@ -3991,9 +3970,6 @@ msgstr ""
 msgid "Goto 0"
 msgstr "ไปยัง 0"
 
-msgid "Goto:"
-msgstr ""
-
 msgid "Goto X"
 msgstr ""
 
@@ -4021,6 +3997,9 @@ msgstr ""
 msgid "Goto specific date/time"
 msgstr ""
 
+msgid "Goto:"
+msgstr ""
+
 msgid "GotoX calibration"
 msgstr ""
 
@@ -4036,9 +4015,6 @@ msgstr "ภาษากรีก"
 
 msgid "Greek"
 msgstr "ภาษากรีก"
-
-msgid "Greek (Modern)"
-msgstr ""
 
 msgid "Green"
 msgstr ""
@@ -4296,6 +4272,9 @@ msgstr ""
 msgid "Icons"
 msgstr ""
 
+msgid "If disabled, underline characters in file and directory names are not shown and are replaced with spaces."
+msgstr ""
+
 msgid "If enabled, bookmarks will be updated with the new location when you move or copy a recording."
 msgstr ""
 
@@ -4505,9 +4484,6 @@ msgstr "รายการต่อไปในหน่วยความจำ
 
 msgid "Install extensions"
 msgstr ""
-
-msgid "Install extensions."
-msgstr "ติดตั้งส่วนเพิ่มเติม"
 
 msgid "Install local extension"
 msgstr "ติดตั้งส่วนเพิ่มเติมจากในเครื่อง"
@@ -4991,6 +4967,9 @@ msgid "Malta"
 msgstr ""
 
 msgid "Manage extensions"
+msgstr ""
+
+msgid "Manage extensions or plugins for your receiver."
 msgstr ""
 
 msgid "Manage your receiver's software"
@@ -5649,9 +5628,6 @@ msgstr "ภาษานอร์เว"
 msgid "Norwegian"
 msgstr "ภาษานอร์เว"
 
-msgid "Not defined"
-msgstr ""
-
 #, fuzzy
 msgid "Not Installed"
 msgstr "ติดตั้ง"
@@ -5660,6 +5636,9 @@ msgid "Not Required"
 msgstr ""
 
 msgid "Not associated"
+msgstr ""
+
+msgid "Not defined"
 msgstr ""
 
 #, fuzzy, python-format
@@ -5736,9 +5715,6 @@ msgstr "ปิด"
 msgid "Offline decode delay (ms)"
 msgstr ""
 
-msgid "Ok"
-msgstr ""
-
 msgid "Oman"
 msgstr ""
 
@@ -5756,6 +5732,9 @@ msgstr ""
 
 msgid "One"
 msgstr "หนึ่ง"
+
+msgid "Online update of your receiver software."
+msgstr ""
 
 msgid "Only change this setting if you are using a SCR device that has been reprogrammed with a custom programmer. For further information check with the person that reprogrammed the device."
 msgstr ""
@@ -6505,9 +6484,6 @@ msgstr "DNS หลัก"
 msgid "Prime time"
 msgstr ""
 
-msgid "PrimeTime"
-msgstr ""
-
 msgid "Priority"
 msgstr "สำคัญ"
 
@@ -6801,6 +6777,9 @@ msgstr ""
 msgid "Remove currently selected title"
 msgstr "ลบเชื่อเรื่องที่เลือกออก"
 
+msgid "Remove directory"
+msgstr "ลบโฟล์เดอร์ออก"
+
 msgid "Remove items from trash can after (days)"
 msgstr ""
 
@@ -6835,6 +6814,9 @@ msgstr ""
 
 msgid "Repeat leave standby messages"
 msgstr ""
+
+msgid "Repeat playlist"
+msgstr "กลับไปที่สารบัญ"
 
 #, fuzzy
 msgid "Repeat type"
@@ -6940,6 +6922,12 @@ msgstr "นำสำรองกลับมาใช้"
 
 msgid "Restore system settings"
 msgstr "นำสำรองการตั้งค่าต่างๆ กลับมาใช้"
+
+msgid "Restore your backups by date."
+msgstr "นำสำรองกลับมาใช้ตามวันที่"
+
+msgid "Restore your receiver settings."
+msgstr ""
 
 #, fuzzy
 msgid "Restoring..."
@@ -7169,9 +7157,15 @@ msgstr ""
 msgid "Save changes"
 msgstr ""
 
+msgid "Save last directory on exit"
+msgstr "บันทึกโฟล์เดอร์ปัจจุบันเมื่อออก"
+
 #, fuzzy
 msgid "Save playlist"
 msgstr "บันทึกสารบัญรายการ"
+
+msgid "Save playlist on exit"
+msgstr "บันทึกสารบัญเมื่อออก"
 
 msgid "Save settings and EPG data"
 msgstr ""
@@ -7233,6 +7227,9 @@ msgstr "ปรับค่าล้มเหลว!"
 #, fuzzy
 msgid "Scan files..."
 msgstr "ค้นหาไฟล์..."
+
+msgid "Scan for local extensions and install them."
+msgstr ""
 
 msgid "Scan options"
 msgstr ""
@@ -7612,7 +7609,7 @@ msgstr ""
 msgid "Select update source"
 msgstr "เลือกที่มาเพื่อปรับปรุง"
 
-msgid "Select update source to edit."
+msgid "Select update source to edit"
 msgstr "เลือกที่มาเพื่อปรับปรุง"
 
 msgid "Select video input with up/down buttons"
@@ -7630,6 +7627,13 @@ msgstr "เลือกผู้ให้บริการที่ต้อง
 
 msgid "Select your Skin"
 msgstr ""
+
+msgid ""
+"Select your backup device.\n"
+"Current device: "
+msgstr ""
+"เลือกอุปกรณ์\n"
+"อุปกรณ์ปัจจุบันคือ: "
 
 msgid "Select your country. If not available select 'all'."
 msgstr ""
@@ -8027,6 +8031,9 @@ msgstr ""
 msgid "Show latest update log"
 msgstr ""
 
+msgid "Show media player on main menu"
+msgstr ""
+
 msgid "Show menu or plugin numbers"
 msgstr ""
 
@@ -8124,6 +8131,10 @@ msgstr "แสดงเครื่องเล่นวิทยุ..."
 
 msgid "Show the tv player..."
 msgstr "แสดงเครื่องเล่นโทรทัศน์..."
+
+#, fuzzy
+msgid "Show underline characters in filenames"
+msgstr "จำกัดความยาวของไฟล์"
 
 msgid "Show vertical timelines"
 msgstr ""
@@ -8390,6 +8401,9 @@ msgstr ""
 msgid "Sort time"
 msgstr "จัดเรียงเวลา"
 
+msgid "Sorting of playlists"
+msgstr ""
+
 msgid "Sound"
 msgstr "เสียง"
 
@@ -8498,6 +8512,9 @@ msgstr ""
 
 msgid "Standby in "
 msgstr ""
+
+msgid "Start directory"
+msgstr "โฟล์เดอร์เริ่มต้น"
 
 msgid "Start from the beginning"
 msgstr "เริ่มตั้งแต่ต้น"
@@ -8777,6 +8794,9 @@ msgstr ""
 
 msgid "Switch to TV mode"
 msgstr ""
+
+msgid "Switch to bookmarks"
+msgstr "เข้าสู่บุ๊คมาร์ค"
 
 #, fuzzy
 msgid "Switch to filelist"
@@ -9108,8 +9128,8 @@ msgstr ""
 
 msgid ""
 "This info is for developers only.\n"
-"For a normal users it is not relevant.\n"
-"Don't panic please when you see values being displayed that you think look suspicious!"
+"For normal users it is not relevant.\n"
+"Please don't panic if you see values displayed looking suspicious!"
 msgstr ""
 
 msgid "This is a multitype tuner. Available options depend on the hardware."
@@ -9752,6 +9772,10 @@ msgid "Update and reboot (recommended)"
 msgstr ""
 
 #, fuzzy
+msgid "Update bookmarks"
+msgstr "ค้นหาอัตโนมัติ"
+
+#, fuzzy
 msgid "Update channel list only"
 msgstr "รายการต่อไปในหน่วยความจำ"
 
@@ -9773,11 +9797,11 @@ msgstr ""
 msgid "Updatefeed not available."
 msgstr ""
 
-msgid "Updating software catalog"
-msgstr ""
-
 msgid "Updating"
 msgstr "กำลังอัพเกรด"
+
+msgid "Updating software catalog"
+msgstr ""
 
 msgid "Upper case"
 msgstr ""
@@ -10084,6 +10108,9 @@ msgstr "อ่านเทเลเท็กซ์..."
 #, fuzzy
 msgid "View video CD..."
 msgstr "ดูวีซีดี"
+
+msgid "View, install and remove available or installed packages."
+msgstr "ตรวจดู ติดตั้งหรือลบส่วนประกอบ"
 
 msgid "Virgin Islands (British)"
 msgstr ""
@@ -10843,14 +10870,14 @@ msgstr "กำลังจะเริ่ม"
 msgid "activate network adapter configuration"
 msgstr ""
 
+msgid "active"
+msgstr ""
+
 msgid "actual time only"
 msgstr ""
 
 msgid "add alternatives"
 msgstr "เพิ่มทางเลือกอื่น"
-
-msgid "add bookmark"
-msgstr "เพิ่มบุ๊คมาร์ค"
 
 msgid "add bouquet"
 msgstr "เพิ่มกลุ่มรายการ"
@@ -11026,9 +11053,6 @@ msgstr ""
 
 msgid "copy to bouquets"
 msgstr "คัดลอกเข้าสู่กลุ่มรายการ"
-
-msgid "Create directory"
-msgstr "สร้างโฟล์เดอร์"
 
 msgid "daily"
 msgstr "รายวัน"
@@ -11582,17 +11606,11 @@ msgstr "ลบเครื่องหมาย\"ใหม่\" ออกทั�
 msgid "remove before this position"
 msgstr "ลบก่อนหน้าตำแหน่งนี้ออก"
 
-msgid "remove bookmark"
-msgstr "ลบบุ๊คมาร์ค"
-
 msgid "remove bouquet from parental protection"
 msgstr ""
 
 msgid "remove cable services"
 msgstr ""
-
-msgid "Remove directory"
-msgstr "ลบโฟล์เดอร์ออก"
 
 msgid "remove entry"
 msgstr "ลบรายการนี้ออก"
@@ -11614,9 +11632,6 @@ msgstr "ลบรายการนี้ออก"
 
 msgid "rename entry"
 msgstr ""
-
-msgid "Repeat playlist"
-msgstr "กลับไปที่สารบัญ"
 
 msgid "repeated"
 msgstr "เล่นซ้ำ"
@@ -11651,12 +11666,6 @@ msgstr ""
 msgid "running"
 msgstr ""
 
-msgid "Save last directory on exit"
-msgstr "บันทึกโฟล์เดอร์ปัจจุบันเมื่อออก"
-
-msgid "Save playlist on exit"
-msgstr "บันทึกสารบัญเมื่อออก"
-
 msgid "scan state"
 msgstr "สถานะการค้นหา"
 
@@ -11665,9 +11674,6 @@ msgstr ""
 
 msgid "seconds"
 msgstr "วินาที"
-
-msgid "select"
-msgstr "เลือก"
 
 msgid "select CAId's"
 msgstr "เลือก CAId's"
@@ -11702,9 +11708,6 @@ msgstr "แสดงทางเลือกอื่น"
 
 msgid "show event details"
 msgstr "แสดงรายละเอียดรายการ"
-
-msgid "Show media player on main menu"
-msgstr ""
 
 msgid "show softwaremanager in setup menu"
 msgstr ""
@@ -11782,9 +11785,6 @@ msgstr ""
 msgid "social/spiritual science"
 msgstr ""
 
-msgid "Sorting of playlists"
-msgstr ""
-
 msgid "special events"
 msgstr ""
 
@@ -11803,9 +11803,6 @@ msgstr "มาตรฐาน"
 msgid "start cut here"
 msgstr "ตัดตรงนี้"
 
-msgid "Start directory"
-msgstr "โฟล์เดอร์เริ่มต้น"
-
 msgid "starts in a few seconds"
 msgstr ""
 
@@ -11820,9 +11817,6 @@ msgstr ""
 
 msgid "successful"
 msgstr ""
-
-msgid "Switch to bookmarks"
-msgstr "เข้าสู่บุ๊คมาร์ค"
 
 msgid "switch to the next angle"
 msgstr "เลือกมุมมองอันต่อไป"
@@ -11899,10 +11893,6 @@ msgstr ""
 
 msgid "until standby/restart"
 msgstr ""
-
-#, fuzzy
-msgid "Update bookmarks"
-msgstr "ค้นหาอัตโนมัติ"
 
 msgid "user defined"
 msgstr "ผู้ใช้ระบุ"
@@ -11988,6 +11978,9 @@ msgstr "ใช่"
 
 msgid "yes (keep feeds)"
 msgstr "ใช่ (เก็บฟีดนี้ไว้)"
+
+msgid "yes, but not in multi selections"
+msgstr ""
 
 msgid "zap"
 msgstr "เปลี่ยนช่อง"

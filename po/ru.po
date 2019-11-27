@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: enigma2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-09-07 13:00+0200\n"
+"POT-Creation-Date: 2019-11-18 18:59+0100\n"
 "PO-Revision-Date: 2019-07-25 17:52+0300\n"
 "Last-Translator: Dimitrij <Dima-73@inbox.lv>\n"
 "Language-Team: openPLi Dimitrij\n"
@@ -15,20 +15,10 @@ msgstr ""
 
 msgid ""
 "\n"
-"Advanced options and settings."
-msgstr ""
-"\n"
-"Дополнительные опции и настройки."
-
-msgid ""
-"\n"
 "After pressing OK, please wait!"
 msgstr ""
 "\n"
 "После нажатия кнопки ОК, пожалуйста, подождите!"
-
-msgid "Backup your receiver settings."
-msgstr "Бэкап настроек Вашего ресивера."
 
 msgid ""
 "\n"
@@ -36,19 +26,6 @@ msgid ""
 msgstr ""
 "\n"
 "Обнаружение конфликтов отключено!"
-
-msgid ""
-"\n"
-"Edit the update source address."
-msgstr ""
-"\n"
-"Редактировать адрес источника обновления."
-
-msgid "Manage extensions or plugins for your receiver."
-msgstr "Управление дополнениями или плагинами Вашего ресивера."
-
-msgid "Online update of your receiver software."
-msgstr "Онлайн обновление ПО Вашего ресивера."
 
 msgid ""
 "\n"
@@ -71,28 +48,6 @@ msgstr ""
 "\n"
 "Запись в процессе."
 
-msgid ""
-"\n"
-"Restore your backups by date."
-msgstr ""
-"\n"
-"Восстановить Ваши бэкапы по дате."
-
-msgid "Restore your receiver settings."
-msgstr "Восстановить настройки Вашего ресивера."
-
-msgid "Scan for local extensions and install them."
-msgstr "Сканирование для локальных дополнений и установка их."
-
-msgid ""
-"\n"
-"Select your backup device.\n"
-"Current device: "
-msgstr ""
-"\n"
-"Выберите устройство для Вашего бэкапа.\n"
-"Текущее устройство: "
-
 #, python-format
 msgid ""
 "\n"
@@ -100,13 +55,6 @@ msgid ""
 msgstr ""
 "\n"
 "Таймер '%s' отключен!"
-
-msgid ""
-"\n"
-"View, install and remove available or installed packages."
-msgstr ""
-"\n"
-"Просмотр, установка и удаление доступных или установленных пакетов."
 
 msgid " (0 - all networks)"
 msgstr " (0 - все сети)"
@@ -166,6 +114,14 @@ msgstr "%.0f MB"
 #, python-format
 msgid "%.0f kB"
 msgstr "%.0f kB"
+
+#, python-format
+msgid "%.1f°E"
+msgstr "%.1f°E"
+
+#, python-format
+msgid "%.1f°W"
+msgstr "%.1f°W"
 
 #, python-format
 msgid "%.2f GB"
@@ -642,7 +598,7 @@ msgstr ""
 "Сохранить вашу версию?"
 
 msgid "A file from media is in use!"
-msgstr ""
+msgstr "Медиа файл используется!"
 
 msgid ""
 "A finished record timer wants to set your\n"
@@ -803,6 +759,9 @@ msgstr "Добавить новое название"
 msgid "Add bookmark"
 msgstr "Добавить закладку"
 
+msgid "Add bouquet"
+msgstr "Добавить букет"
+
 msgid "Add directory to playlist"
 msgstr "добавить папку к списку воспроизведения"
 
@@ -829,6 +788,9 @@ msgstr "Добавить запись (стоп после текущего со
 
 msgid "Add service"
 msgstr "Добавить сервис"
+
+msgid "Add services to this bouquet?"
+msgstr "Добавить сервисы из этого букета?"
 
 msgid "Add timer"
 msgstr "Добавить таймер"
@@ -862,6 +824,9 @@ msgstr "Расширенный"
 
 msgid "Advanced options"
 msgstr "Расширенные опции"
+
+msgid "Advanced options and settings."
+msgstr "Дополнительные опции и настройки."
 
 msgid "Advanced restore"
 msgstr "Расширенное восстановление"
@@ -1048,6 +1013,9 @@ msgstr "Арабский"
 
 msgid "Are you sure to purge all deleted userbouquets?"
 msgstr "Вы действительно хотите очистить все удаленные пользовательские букеты?"
+
+msgid "Are you sure to reboot to"
+msgstr "Вы действительно хотите выполнить перезагрузку ресивера?"
 
 #, python-format
 msgid "Are you sure to remove all %d.%d%s%s services?"
@@ -1329,6 +1297,9 @@ msgstr "Настройки бекапа"
 msgid "Backup system settings"
 msgstr "Бэкап системных настроек"
 
+msgid "Backup your receiver settings."
+msgstr "Бэкап настроек Вашего ресивера."
+
 msgid "Bahamas"
 msgstr "Bahamas"
 
@@ -1571,6 +1542,21 @@ msgid ""
 "Screens change with left/right buttons or use red, green, blue to toggle.\n"
 "Yellow for returning back to this intro"
 msgstr ""
+"Может использоваться для проверки дефектных пикселей на экране ТВ.\n"
+"\n"
+"Доступны цветовые тестовые экраны:\n"
+"\n"
+"красный\n"
+"зеленый\n"
+"синий\n"
+"белый\n"
+"черный\n"
+"бирюзовый\n"
+"magenta\n"
+"пурпурно-красный\n"
+"\n"
+"Экраны меняются с помощью кнопок влево/вправо или используйте красный, зеленый, синий для переключения.\n"
+"Желтый для возвращения к этому вступлению."
 
 msgid "Can only find a network drive to store the backup this means after the flash the autorestore will not work. Alternativaly you can mount the network drive after the flash and perform a manufacurer reset to autorestore"
 msgstr "Можно только найти сетевой диск для хранения резервной копии, это означает, что после прошивки автообновление не будет работать. Альтернативно вы можете смонтировать сетевой диск после прошивки и выполнить автоматическое восстановление."
@@ -1699,7 +1685,7 @@ msgid "Channels and EPG"
 msgstr "каналы и EPG"
 
 msgid "Channels only"
-msgstr "только каналы"
+msgstr "Каналы только"
 
 msgid "Chap."
 msgstr "Глава."
@@ -2312,6 +2298,9 @@ msgstr "скрыть мигающую строку для этого серви�
 msgid "Create DVD-ISO"
 msgstr "Создать DVD-ISO"
 
+msgid "Create directory"
+msgstr "Создать директорию"
+
 msgid "Create new folder and exit"
 msgstr "Создать новую папку и выйти"
 
@@ -2909,15 +2898,15 @@ msgstr "Вы хотите продолжить это воспроизведен
 msgid "Do you want to select a different skin?"
 msgstr "Вы действительно хотите выбрать другой скин?"
 
+msgid "Do you want to update the package:\n"
+msgstr "Вы хотите обновить пакеты:\n"
+
 #, python-format
 msgid "Do you want to update your receiver to %s?"
 msgstr "Вы хотите обновить Ваш ресивер от %s?"
 
 msgid "Do you want to update your receiver?"
 msgstr "Вы хотите обновить ваш ресивер?"
-
-msgid "Do you want to update the package:\n"
-msgstr "Вы хотите обновить пакеты:\n"
 
 msgid "Dolby"
 msgstr "Dolby"
@@ -2996,7 +2985,7 @@ msgid "EPG language selection 2"
 msgstr "Выбор языка EPG 2"
 
 msgid "EPG only"
-msgstr "только EPG"
+msgstr "EPG только"
 
 msgid "EPG selection"
 msgstr "Выбор EPG"
@@ -3045,13 +3034,16 @@ msgstr "Редактировать конфигурацию сервера им�
 msgid "Edit the network configuration of your receiver.\n"
 msgstr "Редактировать конфигурацию сети Вашего ресивера.\n"
 
+msgid "Edit the update source address."
+msgstr "Редактировать адрес источника обновления."
+
 msgid "Edit timer"
 msgstr "Редактировать таймер"
 
 msgid "Edit title"
 msgstr "Редактировать название"
 
-msgid "Edit update source url."
+msgid "Edit update source url"
 msgstr "Редактировать URL-адрес источника обновления"
 
 msgid "Education/Science/..."
@@ -3102,9 +3094,8 @@ msgstr "Включить ОК как превью, в списке выбора 
 msgid "Enable OK for channel selection"
 msgstr "Включить OK для списка выбора каналов"
 
-#, fuzzy
 msgid "Enable OpenTV EPG"
-msgstr "Включить EIT EPG"
+msgstr "Включить OpenTV EPG"
 
 msgid "Enable ViaSat EPG"
 msgstr "Включить ViaSat EPG"
@@ -3595,7 +3586,6 @@ msgstr "Настройки удаленного резервного ресив�
 msgid "Fallback tuner setup"
 msgstr "Настройки удаленного резервного ресивера"
 
-#, fuzzy
 msgid "False"
 msgstr "нет"
 
@@ -3884,9 +3874,6 @@ msgstr "Переход"
 msgid "Goto 0"
 msgstr "Переход на позицию 0"
 
-msgid "Goto:"
-msgstr "Куда:"
-
 msgid "Goto X"
 msgstr "Переход на позицию Х"
 
@@ -3914,6 +3901,9 @@ msgstr "Переход прайм-тайм/сейчас"
 msgid "Goto specific date/time"
 msgstr "Переход на конкретную дату/время"
 
+msgid "Goto:"
+msgstr "Куда:"
+
 msgid "GotoX calibration"
 msgstr "Калибровка позиции Х"
 
@@ -3928,9 +3918,6 @@ msgstr "Greece"
 
 msgid "Greek"
 msgstr "Греческий"
-
-msgid "Greek (Modern)"
-msgstr "Greek (Modern)"
 
 msgid "Green"
 msgstr "Зеленая"
@@ -4178,6 +4165,9 @@ msgstr "Iceland"
 msgid "Icons"
 msgstr "Иконка"
 
+msgid "If disabled, underline characters in file and directory names are not shown and are replaced with spaces."
+msgstr "Если отключено, то символы подчеркивания в именах файлов и каталогов не отображаются и заменяются пробелами."
+
 msgid "If enabled, bookmarks will be updated with the new location when you move or copy a recording."
 msgstr "Если включено, закладки будут обновляться в соответствии с новым местоположением при перемещении или копировании записи."
 
@@ -4253,7 +4243,7 @@ msgid "Import channels and/or EPG from remote receiver URL also when the receive
 msgstr "Импортировать каналы/EPG при выходе из режима ожидания"
 
 msgid "Import channels and/or EPG from remote receiver URL when receiver is booted"
-msgstr "Импортировать каналы /EPG при загрузке ресивера"
+msgstr "Импортировать каналы и/или EPG из удаленного ресивера при загрузке ресивера"
 
 msgid "Import channels and/or EPG from remote receiver URL when receiver or enigma2 is restarted"
 msgstr "Импортировать каналы/EPG после рестарта enigma2"
@@ -4383,9 +4373,6 @@ msgstr "Инсталлировать список каналов"
 
 msgid "Install extensions"
 msgstr "Инсталлировать дополнения"
-
-msgid "Install extensions."
-msgstr "Инсталлировать дополнения."
 
 msgid "Install local extension"
 msgstr "Инсталляция локальных пакетов"
@@ -4837,6 +4824,9 @@ msgstr "Malta"
 
 msgid "Manage extensions"
 msgstr "Менеджер дополнений"
+
+msgid "Manage extensions or plugins for your receiver."
+msgstr "Управление дополнениями или плагинами Вашего ресивера."
 
 msgid "Manage your receiver's software"
 msgstr "Менеджер ПО Вашего ресивера"
@@ -5461,9 +5451,6 @@ msgstr "Norway"
 msgid "Norwegian"
 msgstr "Норвежский"
 
-msgid "Not defined"
-msgstr "Не определено"
-
 msgid "Not Installed"
 msgstr "Не инсталлировано"
 
@@ -5472,6 +5459,9 @@ msgstr "Не требуется"
 
 msgid "Not associated"
 msgstr "Нет ассоциаций"
+
+msgid "Not defined"
+msgstr "Не определено"
 
 #, python-format
 msgid "Not enough disk space. Please free up some disk space and try again. (%d MB required, %d MB available)"
@@ -5544,9 +5534,6 @@ msgstr "Выкл."
 msgid "Offline decode delay (ms)"
 msgstr "Задержка отложенного декодирования (мс)"
 
-msgid "Ok"
-msgstr "Ок"
-
 msgid "Oman"
 msgstr "Oman"
 
@@ -5564,6 +5551,9 @@ msgstr "При валидных ONID, игнорировать частотну�
 
 msgid "One"
 msgstr "Один"
+
+msgid "Online update of your receiver software."
+msgstr "Онлайн обновление ПО Вашего ресивера."
 
 msgid "Only change this setting if you are using a SCR device that has been reprogrammed with a custom programmer. For further information check with the person that reprogrammed the device."
 msgstr "Измените этот параметр только в том случае, если Вы используете устройство SCR, которое было перепрограммировано с помощью специального программиста. Для получения дополнительной информации обратитесь к человеку, который перепрограммировал устройство."
@@ -5778,7 +5768,7 @@ msgid "Pitcairn"
 msgstr "Pitcairn"
 
 msgid "Pixels\n"
-msgstr ""
+msgstr "Пиксель\n"
 
 msgid "Play"
 msgstr "Воспроизвести"
@@ -6276,9 +6266,6 @@ msgstr "Первичный DNS"
 msgid "Prime time"
 msgstr "Прайм-тайм"
 
-msgid "PrimeTime"
-msgstr "Прайм-тайм"
-
 msgid "Priority"
 msgstr "Приоритет LNB"
 
@@ -6561,6 +6548,9 @@ msgstr "Удаление завершенных таймеров через (в 
 msgid "Remove currently selected title"
 msgstr "Удалить выбранный заголовок"
 
+msgid "Remove directory"
+msgstr "Удалить директорию"
+
 msgid "Remove items from trash can after (days)"
 msgstr "Удалять файлы из корзины через (в днях)"
 
@@ -6594,6 +6584,9 @@ msgstr "Повтор"
 
 msgid "Repeat leave standby messages"
 msgstr "Повтор команд выхода из режима ожидания"
+
+msgid "Repeat playlist"
+msgstr "Повторить плейлист"
 
 msgid "Repeat type"
 msgstr "Тип повтора"
@@ -6699,6 +6692,12 @@ msgstr "Востановление бэкапов"
 
 msgid "Restore system settings"
 msgstr "Восстановить системные настройки"
+
+msgid "Restore your backups by date."
+msgstr "Восстановить Ваши бэкапы по дате."
+
+msgid "Restore your receiver settings."
+msgstr "Восстановить настройки Вашего ресивера."
 
 msgid "Restoring..."
 msgstr "Востановление..."
@@ -6921,8 +6920,14 @@ msgstr "Сохранить и остановить таймшифт"
 msgid "Save changes"
 msgstr "Сохранить изменения"
 
+msgid "Save last directory on exit"
+msgstr "Сохранить последний каталог при выходе"
+
 msgid "Save playlist"
 msgstr "Сохранить плейлист"
+
+msgid "Save playlist on exit"
+msgstr "Сохранить плейлист при выходе"
 
 msgid "Save settings and EPG data"
 msgstr "Сохранить настройки и данные EPG"
@@ -6982,6 +6987,9 @@ msgstr "Ошибка сканирования!"
 
 msgid "Scan files..."
 msgstr "Сканировать файлы..."
+
+msgid "Scan for local extensions and install them."
+msgstr "Сканирование для локальных дополнений и установка их."
 
 msgid "Scan options"
 msgstr "Параметры сканирования"
@@ -7336,8 +7344,8 @@ msgstr "Выберите набор символов со сдвигом вир�
 msgid "Select update source"
 msgstr "Выбор источника обновления"
 
-msgid "Select update source to edit."
-msgstr "Выбор источника обновления для редактирования."
+msgid "Select update source to edit"
+msgstr "Выбор источника обновления для редактирования"
 
 msgid "Select video input with up/down buttons"
 msgstr "Выберите видеовход кнопками вверх/вниз"
@@ -7353,6 +7361,13 @@ msgstr "Выбор Вашего ATSC провайдера."
 
 msgid "Select your Skin"
 msgstr "Выбор Вашего скина"
+
+msgid ""
+"Select your backup device.\n"
+"Current device: "
+msgstr ""
+"Выберите устройство для Вашего бэкапа.\n"
+"Текущее устройство: "
 
 msgid "Select your country. If not available select 'all'."
 msgstr "Выбор Вашего региона. Если Ваша страна не доступна, то измените на 'все'."
@@ -7726,6 +7741,9 @@ msgstr "Показать последние изменения на гите"
 msgid "Show latest update log"
 msgstr "Показать последний лог обновления"
 
+msgid "Show media player on main menu"
+msgstr "Показать медиаплеер в главном меню"
+
 msgid "Show menu or plugin numbers"
 msgstr "Показать номера меню или плагинов"
 
@@ -7821,6 +7839,9 @@ msgstr "Показать радио плеер..."
 
 msgid "Show the tv player..."
 msgstr "Показать тв плеер..."
+
+msgid "Show underline characters in filenames"
+msgstr "Показывать символы подчеркивания в именах файлов записей"
 
 msgid "Show vertical timelines"
 msgstr "Показать вертикальные сроки"
@@ -8068,6 +8089,9 @@ msgstr "Сортировать список плагинов по умолчан
 msgid "Sort time"
 msgstr "По времени"
 
+msgid "Sorting of playlists"
+msgstr "Сортировка плейлистов"
+
 msgid "Sound"
 msgstr "Звук"
 
@@ -8171,6 +8195,9 @@ msgstr "Режим ожидания - напряжение вентилятор�
 
 msgid "Standby in "
 msgstr "Режим ожидания через "
+
+msgid "Start directory"
+msgstr "Начальный каталог"
 
 msgid "Start from the beginning"
 msgstr "Начать с самого начала"
@@ -8435,6 +8462,9 @@ msgstr "Сменить канал вверх"
 
 msgid "Switch to TV mode"
 msgstr "Перейти к режиму ТВ"
+
+msgid "Switch to bookmarks"
+msgstr "Перейти на закладки"
 
 msgid "Switch to filelist"
 msgstr "переключить на список файлов"
@@ -9176,7 +9206,7 @@ msgid "Troubleshoot"
 msgstr "Решение проблем (просмотр)"
 
 msgid "True"
-msgstr ""
+msgstr "да"
 
 msgid "Try to find used transponders in cable network.. please wait..."
 msgstr "Пытаемся найти транспондеры, используемые в кабельной сети... пожалуйста, подождите..."
@@ -9403,6 +9433,9 @@ msgstr "Обновить и перезагрузить"
 msgid "Update and reboot (recommended)"
 msgstr "Обновить и перезагрузить (рекомендуется)"
 
+msgid "Update bookmarks"
+msgstr "Обновить закладки"
+
 msgid "Update channel list only"
 msgstr "Обновить только список каналов"
 
@@ -9425,11 +9458,11 @@ msgstr "Обновление завершено."
 msgid "Updatefeed not available."
 msgstr "Обновления с фида не доступны."
 
-msgid "Updating software catalog"
-msgstr "Обновление каталога ПО"
-
 msgid "Updating"
 msgstr "Обновление"
+
+msgid "Updating software catalog"
+msgstr "Обновление каталога ПО"
 
 msgid "Upper case"
 msgstr "Верхний регистр"
@@ -9464,9 +9497,8 @@ msgstr "Использовать информацию MHW EPG (Canal+), если
 msgid "Use Netmed EPG information when it is available."
 msgstr "Использовать информацию Netmed EPG (провайдеры 13E), если она доступна."
 
-#, fuzzy
 msgid "Use OpenTV EPG information when it is available."
-msgstr "Использовать информацию EIT EPG (сейчас/далее), если она доступна."
+msgstr "Использовать информацию OpenTV EPG), если она доступна."
 
 msgid "Use TV remote control"
 msgstr "Использовать пульт ТВ для управления"
@@ -9717,6 +9749,9 @@ msgstr "Просмотр телетекста..."
 
 msgid "View video CD..."
 msgstr "Просмотр CD видео..."
+
+msgid "View, install and remove available or installed packages."
+msgstr "Просмотр, установка и удаление доступных или установленных пакетов."
 
 msgid "Virgin Islands (British)"
 msgstr "Virgin Islands (British)"
@@ -10502,14 +10537,14 @@ msgstr "стартует"
 msgid "activate network adapter configuration"
 msgstr "активировать конфигурацию сетевого адаптера"
 
+msgid "active"
+msgstr "активно"
+
 msgid "actual time only"
 msgstr "только фактическое время"
 
 msgid "add alternatives"
 msgstr "добавить альтернативу"
-
-msgid "add bookmark"
-msgstr "добавить закладку"
 
 msgid "add bouquet"
 msgstr "добавить букет"
@@ -10682,9 +10717,6 @@ msgstr "приготовление"
 
 msgid "copy to bouquets"
 msgstr "копировать в пакет"
-
-msgid "Create directory"
-msgstr "Создать директорию"
 
 msgid "daily"
 msgstr "ежедневно"
@@ -11229,17 +11261,11 @@ msgstr "удалить все флаги - новые найденные"
 msgid "remove before this position"
 msgstr "удалить перед этой позицией"
 
-msgid "remove bookmark"
-msgstr "удалить закладку"
-
 msgid "remove bouquet from parental protection"
 msgstr "удалить букет из родительского контроля"
 
 msgid "remove cable services"
 msgstr "удалить кабельные сервисы"
-
-msgid "Remove directory"
-msgstr "Удалить директорию"
 
 msgid "remove entry"
 msgstr "удалить выбранное"
@@ -11261,9 +11287,6 @@ msgstr "удалить эту метку"
 
 msgid "rename entry"
 msgstr "переименовать выбранное"
-
-msgid "Repeat playlist"
-msgstr "Повторить плейлист"
 
 msgid "repeated"
 msgstr "повторный"
@@ -11298,12 +11321,6 @@ msgstr "романс"
 msgid "running"
 msgstr "запущено"
 
-msgid "Save last directory on exit"
-msgstr "Сохранить последний каталог при выходе"
-
-msgid "Save playlist on exit"
-msgstr "Сохранить плейлист при выходе"
-
 msgid "scan state"
 msgstr "состояние поиска"
 
@@ -11312,9 +11329,6 @@ msgstr "научная фантастика/фэнтези/ужасы"
 
 msgid "seconds"
 msgstr "секунд"
-
-msgid "select"
-msgstr "выбрать"
 
 msgid "select CAId's"
 msgstr "выбрать CAId's"
@@ -11348,9 +11362,6 @@ msgstr "показать альтернативу"
 
 msgid "show event details"
 msgstr "показать детали события"
-
-msgid "Show media player on main menu"
-msgstr "Показать медиаплеер в главном меню"
 
 msgid "show softwaremanager in setup menu"
 msgstr "показать менеджер ПО в меню настроек"
@@ -11428,9 +11439,6 @@ msgstr "социальные/политические вопросы/эконо�
 msgid "social/spiritual science"
 msgstr "социальная/духовная наука"
 
-msgid "Sorting of playlists"
-msgstr "Сортировка плейлистов"
-
 msgid "special events"
 msgstr "специальное событие"
 
@@ -11449,9 +11457,6 @@ msgstr "стандарт"
 msgid "start cut here"
 msgstr "начало сокращения здесь"
 
-msgid "Start directory"
-msgstr "Начальный каталог"
-
 msgid "starts in a few seconds"
 msgstr "Старт через пять секунд"
 
@@ -11466,9 +11471,6 @@ msgstr "отмена сервиса как стартового при загр�
 
 msgid "successful"
 msgstr "успешно"
-
-msgid "Switch to bookmarks"
-msgstr "Перейти на закладки"
 
 msgid "switch to the next angle"
 msgstr "перейти в следующей угол"
@@ -11544,9 +11546,6 @@ msgstr "непроверяема"
 
 msgid "until standby/restart"
 msgstr "до режима ожидания/перезагрузки"
-
-msgid "Update bookmarks"
-msgstr "Обновить закладки"
 
 msgid "user defined"
 msgstr "пользовательский вариант"
@@ -11632,6 +11631,9 @@ msgstr "да"
 
 msgid "yes (keep feeds)"
 msgstr "да (сохранить feeds сервисы)"
+
+msgid "yes, but not in multi selections"
+msgstr "да, но только в да/нет (без множеств. выбора)"
 
 msgid "zap"
 msgstr "перейти"
