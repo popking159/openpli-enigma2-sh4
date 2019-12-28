@@ -1,5 +1,11 @@
 SUBDIRS = countries fonts extensions keymaps skin_default skin_fallback_1080 rc_models hw_info
 
+if HAVE_TEXTLCD
+DISPLAYTYPE = text
+else
+DISPLAYTYPE = display
+endif
+
 dist_pkgdata_DATA = \
 	encoding.conf \
 	keymap.xml \
@@ -12,6 +18,7 @@ dist_pkgdata_DATA = \
 	skin_default.xml \
 	skin_subtitles.xml \
 	skin.xml \
+	skin_$(DISPLAYTYPE).xml \
 	startwizard.xml \
 	freesat.t1 \
 	freesat.t2 \
@@ -35,6 +42,9 @@ skin_display_spark.xml: $(srcdir)/skin_display_default.xml
 
 skin_text_spark.xml: $(srcdir)/skin_text_default.xml
 	test -f $(srcdir)/skin_text_$(BOXTYPE).xml && cp $(srcdir)/skin_text_$(BOXTYPE).xml skin_text.xml || cp $(srcdir)/skin_text_$(TEXTSKIN).xml skin_text.xml
+# Use box-specific XML if it exists, otherwise get the default
+skin_$(DISPLAYTYPE).xml: $(srcdir)/skin_$(DISPLAYTYPE)_default.xml
+	cp $(srcdir)/skin_$(DISPLAYTYPE)_$(BOXTYPE).xml $@ 2>/dev/null || cp $(srcdir)/skin_$(DISPLAYTYPE)_default.xml $@
 
 iso-639-3.pck: $(srcdir)/iso-639-3.tab
 	python $(srcdir)/convert-iso-639-3.py $< $@
