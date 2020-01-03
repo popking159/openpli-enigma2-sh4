@@ -31,17 +31,6 @@ dist_pkgdata_DATA = \
 	otv_06180000_1000_0011.dict \
 	otv_06400000_00a9_0003.dict
 
-if HAVE_TEXTLCD
-dist_pkgdata_DATA += skin_text_spark.xml
-else
-dist_pkgdata_DATA += skin_display_spark.xml
-endif
-
-skin_display_spark.xml: $(srcdir)/skin_display_default.xml
-	test -f $(srcdir)/skin_display_$(BOXTYPE).xml && cp $(srcdir)/skin_display_$(BOXTYPE).xml skin_display.xml || cp $(srcdir)/skin_display_default.xml skin_display.xml
-
-skin_text_spark.xml: $(srcdir)/skin_text_default.xml
-	test -f $(srcdir)/skin_text_$(BOXTYPE).xml && cp $(srcdir)/skin_text_$(BOXTYPE).xml skin_text.xml || cp $(srcdir)/skin_text_$(TEXTSKIN).xml skin_text.xml
 # Use box-specific XML if it exists, otherwise get the default
 # TEXTSKIN is either "default" or "7segment"
 # TODO: Missing dependency on optional "skin_$(DISPLAYTYPE)_$(BOXTYPE).xml"
