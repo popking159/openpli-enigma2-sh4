@@ -1,5 +1,5 @@
 from enigma import eDVBResourceManager, Misc_Options, eDVBCIInterfaces, eGetEnigmaDebugLvl
-from Tools.Directories import fileExists, fileCheck, pathExists, fileHas
+from Tools.Directories import fileExists, fileCheck, pathExists, fileHas, resolveFilename, SCOPE_PLUGINS
 from Tools.HardwareInfo import HardwareInfo
 
 import os, re
