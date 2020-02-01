@@ -1,8 +1,8 @@
 from enigma import eDVBResourceManager, Misc_Options, eDVBCIInterfaces, eGetEnigmaDebugLvl
+from Components.Console import Console
 from Tools.Directories import fileExists, fileCheck, pathExists, fileHas, resolveFilename, SCOPE_PLUGINS
 from Tools.HardwareInfo import HardwareInfo
-
-import os, re
+import os, re, glob
 
 SystemInfo = {}
 
@@ -21,6 +21,47 @@ def countFrontpanelLEDs():
 def hassoftcaminstalled():
 	from Tools.camcontrol import CamControl
 	return len(CamControl('softcam').getList()) > 1
+
+def getBootdevice():
+	dev = ("root" in cmdline and cmdline['root'].startswith('/dev/')) and cmdline['root'][5:]
+	while dev and not fileExists('/sys/block/' + dev):
+	    dev = dev[:-1]
+	return dev
+
+def getMultibootStartupDevice():
+	for device in ('/dev/block/by-name/bootoptions', '/dev/block/by-name/bootoptions', "mmcblk1sp1" if model in ('osmio4k', 'osmio4kplus', 'osmini4k') else "mmcblk0sp1"):
+		if os.path.islink(device):
+			return device
+
+def getparam(line, param):
+	return line.rsplit('%s=' % param, 1)[1].split(' ', 1)[0]
+
+def getMultibootslots():
+	TMP_MOUNT = '/tmp/bootcheck'
+	bootslots = {}
+	if not os.path.isdir(TMP_MOUNT):
+		os.mkdir(TMP_MOUNT)
+	if SystemInfo["MultibootStartupDevice"]:
+		Console().ePopen('mount %s %s' % (SystemInfo["MultibootStartupDevice"], TMP_MOUNT))
+		for file in glob.glob('%s/STARTUP_*' % TMP_MOUNT):
+			slotnumber = file.rsplit('_', 3 if 'BOXMODE' in file else 1)[1]
+			if slotnumber.isdigit() and slotnumber not in bootslots:
+				slot = {}
+				for line in open(file).readlines():
+					if 'root=' in line:
+						device = getparam(line, 'root')
+						if os.path.exists(device):
+							slot['device'] = device
+							slot['startupfile'] = os.path.basename(file).split('_BOXMODE')[0]
+							if 'rootsubdir' in line:
+								slot['rootsubdir'] = getparam(line, 'rootsubdir')
+						break
+				if slot:
+					bootslots[int(slotnumber)] = slot
+		Console().ePopen('umount %s' % TMP_MOUNT)
+		if not os.path.ismount(TMP_MOUNT):
+			os.rmdir(TMP_MOUNT)
+	return bootslots
 
 # parse the boot commandline
 cmdline = open("/proc/cmdline", "r").read()
@@ -114,8 +155,4 @@ SystemInfo["CanDownmixAC3"] = fileHas("/proc/stb/audio/ac3_choices", "downmix")
 SystemInfo["CanDownmixDTS"] = fileHas("/proc/stb/audio/dts_choices", "downmix")
 SystemInfo["CanDownmixAAC"] = fileHas("/proc/stb/audio/aac_choices", "downmix")
 SystemInfo["HDMIAudioSource"] = fileCheck("/proc/stb/hdmi/audio_source")
-
-dev = ("root" in cmdline and cmdline['root'].startswith('/dev/')) and cmdline['root'][5:]
-while dev and not fileExists('/sys/block/' + dev):
-    dev = dev[:-1]
-SystemInfo["BootDevice"] = dev
+SystemInfo["BootDevice"] = getBootdevice()
