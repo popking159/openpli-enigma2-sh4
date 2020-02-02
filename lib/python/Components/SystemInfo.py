@@ -2,9 +2,11 @@ from enigma import eDVBResourceManager, Misc_Options, eDVBCIInterfaces, eGetEnig
 from Components.Console import Console
 from Tools.Directories import fileExists, fileCheck, pathExists, fileHas, resolveFilename, SCOPE_PLUGINS
 from Tools.HardwareInfo import HardwareInfo
-import os, re, glob
+import os, re
 
 SystemInfo = {}
+
+from Tools.Multiboot import getMultibootStartupDevice, getMultibootslots
 
 def getNumVideoDecoders():
 	number_of_video_decoders = 0
@@ -27,41 +29,6 @@ def getBootdevice():
 	while dev and not fileExists('/sys/block/' + dev):
 	    dev = dev[:-1]
 	return dev
-
-def getMultibootStartupDevice():
-	for device in ('/dev/block/by-name/bootoptions', '/dev/block/by-name/bootoptions', "/dev/mmcblk1p1" if model in ('osmio4k', 'osmio4kplus', 'osmini4k') else "/dev/mmcblk0p1"):
-		if os.path.exists(device):
-			return device
-
-def getparam(line, param):
-	return line.rsplit('%s=' % param, 1)[1].split(' ', 1)[0]
-
-def getMultibootslots():
-	bootslots = {}
-	if SystemInfo["MultibootStartupDevice"]:
-		TMP_MOUNT = '/tmp/bootcheck'
-		if not os.path.isdir(TMP_MOUNT):
-			os.mkdir(TMP_MOUNT)
-		Console().ePopen('mount %s %s' % (SystemInfo["MultibootStartupDevice"], TMP_MOUNT))
-		for file in glob.glob('%s/STARTUP_*' % TMP_MOUNT):
-			slotnumber = file.rsplit('_', 3 if 'BOXMODE' in file else 1)[1]
-			if slotnumber.isdigit() and slotnumber not in bootslots:
-				slot = {}
-				for line in open(file).readlines():
-					if 'root=' in line:
-						device = getparam(line, 'root')
-						if os.path.exists(device):
-							slot['device'] = device
-							slot['startupfile'] = os.path.basename(file).split('_BOXMODE')[0]
-							if 'rootsubdir' in line:
-								slot['rootsubdir'] = getparam(line, 'rootsubdir')
-						break
-				if slot:
-					bootslots[int(slotnumber)] = slot
-		Console().ePopen('umount %s' % TMP_MOUNT)
-		if not os.path.ismount(TMP_MOUNT):
-			os.rmdir(TMP_MOUNT)
-	return bootslots
 
 # parse the boot commandline
 cmdline = open("/proc/cmdline", "r").read()
@@ -140,14 +107,14 @@ SystemInfo["Has3DSurround"] = fileExists("/proc/stb/audio/3d_surround_choices") 
 SystemInfo["Has3DSpeaker"] = fileExists("/proc/stb/audio/3d_surround_speaker_position_choices") and fileCheck("/proc/stb/audio/3d_surround_speaker_position")
 SystemInfo["Has3DSurroundSpeaker"] = fileExists("/proc/stb/audio/3dsurround_choices") and fileCheck("/proc/stb/audio/3dsurround")
 SystemInfo["Has3DSurroundSoftLimiter"] = fileExists("/proc/stb/audio/3dsurround_softlimiter_choices") and fileCheck("/proc/stb/audio/3dsurround_softlimiter")
-SystemInfo["hasXcoreVFD"] = HardwareInfo().get_device_model() in ('osmega','spycat4k','spycat4kmini','spycat4kcombo') and fileCheck("/sys/module/brcmstb_%s/parameters/pt6302_cgram" % HardwareInfo().get_device_model())
-SystemInfo["HasOfflineDecoding"] = HardwareInfo().get_device_model() not in ('osmini', 'osminiplus', 'et7000mini', 'et11000', 'mbmicro', 'mbtwinplus', 'mbmicrov2', 'et7000', 'et8500')
 SystemInfo["canFlashWithOfgwrite"] = not(HardwareInfo().get_device_model().startswith("dm") or HardwareInfo().get_device_model() in ("hd60", "hd61"))
 SystemInfo["HasRootSubdir"] = fileHas("/proc/cmdline", "rootsubdir=")
-SystemInfo["canMultiBoot"] = HardwareInfo().get_device_model() in ('hd51', 'h7', 'vs1500', 'e4hd') and (1, 4, "mmcblk0", False) or HardwareInfo().get_device_model() in ('gbue4k', 'gbquad4k') and (3, 3, "mmcblk0", True) or HardwareInfo().get_device_model() in ('osmio4k') and (1, 4, "mmcblk1", True)
 SystemInfo["canMode12"] = HardwareInfo().get_device_model() in ("hd51", "vs1500") and '192M' or HardwareInfo().get_device_model() in ("h7") and '200M'
 SystemInfo["HasRootSubdir"] = "rootsubdir" in cmdline
-SystemInfo["canMultiBoot"] = SystemInfo["HasRootSubdir"] and (1, 4, "mmcblk0", False) or "%s_4.boxmode" % model in cmdline and (1, 4, "mmcblk0", False) or model in ('gbue4k', 'gbquad4k') and (3, 3, "mmcblk0", True) or model in ('e4hd') and (1, 4, "mmcblk0", False) or model in ('osmio4k', 'osmio4kplus') and (1, 4, "mmcblk1", True)
+SystemInfo["hasXcoreVFD"] = model in ('osmega','spycat4k','spycat4kmini','spycat4kcombo') and fileCheck("/sys/module/brcmstb_%s/parameters/pt6302_cgram" % model)
+SystemInfo["HasOfflineDecoding"] = model not in ('osmini', 'osminiplus', 'et7000mini', 'et11000', 'mbmicro', 'mbtwinplus', 'mbmicrov2', 'et7000', 'et8500')
+SystemInfo["MultibootStartupDevice"] = getMultibootStartupDevice(model)
+SystemInfo["canMultiBoot"] = getMultibootslots()
 SystemInfo["canMode12"] = "%s_4.boxmode" % model in cmdline and cmdline["%s_4.boxmode" % model] in ("1","12") and "192M"
 SystemInfo["canFlashWithOfgwrite"] = not(model.startswith("dm"))
 SystemInfo["HDRSupport"] = fileExists("/proc/stb/hdmi/hlg_support_choices") and fileCheck("/proc/stb/hdmi/hlg_support")
