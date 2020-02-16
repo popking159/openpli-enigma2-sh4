@@ -1,6 +1,6 @@
 installdir = $(pkglibdir)/python/Plugins/Extensions/spark7162VFD
 
-SUBDIRS = locale meta
+SUBDIRS = meta
 
 install_PYTHON = \
 	__init__.py \

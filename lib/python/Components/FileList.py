@@ -1,6 +1,6 @@
 import os
 import re
-from MenuList import MenuList
+from Components.MenuList import MenuList
 from Components.Harddisk import harddiskmanager
 from Tools.Directories import SCOPE_CURRENT_SKIN, resolveFilename, fileExists
 from enigma import RT_HALIGN_LEFT, eListboxPythonMultiContent, eServiceReference, eServiceCenter, gFont
@@ -34,6 +34,7 @@ EXTENSIONS = {
 		"bmp": "picture",
 		"jpeg": "picture",
 		"jpe": "picture",
+		"svg": "picture",
 		"mpg": "movie",
 		"vob": "movie",
 		"m4v": "movie",
@@ -51,6 +52,7 @@ EXTENSIONS = {
 		"mpeg": "movie",
 		"mpe": "movie",
 		"rm": "movie",
+		"webm": "movie",
 		"rmvb": "movie",
 		"ogm": "movie",
 		"ogv": "movie",

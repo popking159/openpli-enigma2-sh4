@@ -40,8 +40,9 @@
  * 20150316 Audioniek       Spark7162 circle spin on init removed.
  * 20160101 Audioniek       Fortis HS7420 and HS7429 added.
  * 20170313 Audioniek       Kathrein UFS910/912 added.
- * 20190311 Ghani           Cuberevo all models added
- *                          display length in stead of always 14.
+ * 20190317 Audioniek       Several CubeRevo's added.
+ * 20190518 Audioniek       vitamin_hd5000 added.
+ * 20200214 Audioniek       Add Fortis 4G models.
  *
  ****************************************************************************/
 #include <stdarg.h>
@@ -100,13 +101,16 @@ struct vfd_ioctl_data
 #elif defined (ENABLE_HS7810A) \
    || defined (ENABLE_HS7819) \
    || defined (ENABLE_HS7119) \
+   || defined (ENABLE_FOREVER_NANOSMART) \
+   || defined (ENABLE_FOREVER_2424HD) \
    || defined (ENABLE_SPARK) \
-   || defined (ENABLE_CUBEREVO_MINI_FTA) \
    || defined (ENABLE_CUBEREVO_250HD)
 	#define VFDLENGTH 4
 #elif defined (ENABLE_OCTAGON1008) \
    || defined (ENABLE_HS7420) \
    || defined (ENABLE_HS7429) \
+   || defined (ENABLE_FOREVER_3434HD) \
+   || defined (ENABLE_FOREVER_9898HD) \
    || defined (ENABLE_SPARK7162)
 	#define VFDLENGTH 8
 #elif defined (ENABLE_VITAMIN_HD5000)
@@ -161,7 +165,7 @@ evfd::evfd()
 	vfd_type = 12;
 #elif defined (ENABLE_CUBEREVO)
 	vfd_type = 13;
-#elif defined (ENABLE_CUBEREVO_MINI_FTA) || defined (ENABLE_CUBEREVO_250HD)
+#elif defined (ENABLE_CUBEREVO_250HD)
 	vfd_type = 14;
 #elif defined (ENABLE_CUBEREVO_MINI) \
    || defined (ENABLE_CUBEREVO_MINI2) \
@@ -172,6 +176,12 @@ evfd::evfd()
 	vfd_type = 16;
 #elif defined (ENABLE_VITAMIN_HD5000)
 	vfd_type = 17;
+#elif defined (ENABLE_FOREVER_NANOSMART) \
+   || defined (ENABLE_FOREVER_2424HD)
+	vfd_type = 18;
+#elif defined (ENABLE_FOREVER_3434HD) \
+   || defined (ENABLE_FOREVER_9898HD)
+	vfd_type = 19;
 #else
 	vfd_type = -1;
 #endif
@@ -299,7 +309,7 @@ void * start_loop (void *arg)
 
 	return NULL;
 }
-#else  //next code for boxes other than Topfield TF7700HDPVR
+#else  //next code for boxes other than Topfield TF7700
 
 void * start_loop (void *arg)
 {
@@ -311,8 +321,6 @@ void * start_loop (void *arg)
 		char str[] = "SPARK ENIGMA2";
 	#elif defined (ENABLE_CUBEREVO)
 		char str[] = "CubeRevo Enigma2";
-	#elif defined (ENABLE_CUBEREVO_MINI_FTA)
-		char str[] = "CubeRevo 200HD Enigma2";
 	#elif defined (ENABLE_CUBEREVO_250HD)
 		char str[] = "CubeRevo 250HD Enigma2";
 	#elif defined (ENABLE_CUBEREVO_MINI)
@@ -339,6 +347,14 @@ void * start_loop (void *arg)
 		char str[] = "HS7429 Enigma2";
 	#elif defined (ENABLE_HS7819)
 		char str[] = "7819 Enigma2";
+	#elif defined (ENABLE_FOREVER_3434HD)
+		char str[] = "FOREVER Enigma2";
+	#elif defined (ENABLE_FOREVER_NANOSMART)
+		char str[] = "FOREVER Enigma2";
+	#elif defined (ENABLE_FOREVER_9898HD)
+		char str[] = "FOREVER Enigma2";
+	#elif defined (ENABLE_FOREVER_2424HD)
+		char str[] = "FOREVER Enigma2";
 	#elif defined (ENABLE_UFS910)
 		char str[] = "UFS910 Enigma2";
 	#elif defined (ENABLE_UFS912)
@@ -361,7 +377,6 @@ void * start_loop (void *arg)
 	 && !defined (ENABLE_CUBEREVO) \
 	 && !defined (ENABLE_CUBEREVO_MINI) \
 	 && !defined (ENABLE_CUBEREVO_MINI2) \
-	 && !defined (ENABLE_CUBEREVO_MINI_FTA) \
 	 && !defined (ENABLE_CUBEREVO_250HD) \
 	 && !defined (ENABLE_CUBEREVO_2000HD) \
 	 && !defined (ENABLE_CUBEREVO_3000HD) \
@@ -374,6 +389,10 @@ void * start_loop (void *arg)
 	 && !defined (ENABLE_HS7429) \
 	 && !defined (ENABLE_HS7810A) \
 	 && !defined (ENABLE_HS7819) \
+	 && !defined (ENABLE_FOREVER_3434HD) \
+	 && !defined (ENABLE_FOREVER_NANOSMART) \
+	 && !defined (ENABLE_FOREVER_9898HD) \
+	 && !defined (ENABLE_FOREVER_2424HD) \
 	 && !defined (ENABLE_VITAMIN_HD5000)
 	/* Others cycle their icons */
 	for (int vloop = 0; vloop < 128; vloop++)
@@ -381,7 +400,7 @@ void * start_loop (void *arg)
 		if (vloop%2 == 1)
 		{
 			vfd.vfd_set_icon((((vloop%32)/2)%16), ICON_OFF, true);
-			usleep(1000);
+			usleep(2000);
 			vfd.vfd_set_icon(((((vloop%32)/2)%16)+1), ICON_ON, true);
 		}
 	}
@@ -452,10 +471,11 @@ void * start_loop (void *arg)
 	#if !defined (ENABLE_FORTIS_HDBOX) \
 	 && !defined (ENABLE_OCTAGON1008) \
 	 && !defined (ENABLE_ATEVIO7500) \
+	 && !defined (ENABLE_FOREVER_3434HD) \
+	 && !defined (ENABLE_FOREVER_9898HD) \
 	 && !defined (ENABLE_CUBEREVO) \
 	 && !defined (ENABLE_CUBEREVO_MINI) \
 	 && !defined (ENABLE_CUBEREVO_MINI2) \
-	 && !defined (ENABLE_CUBEREVO_MINI_FTA) \
 	 && !defined (ENABLE_CUBEREVO_250HD) \
 	 && !defined (ENABLE_CUBEREVO_2000HD) \
 	 && !defined (ENABLE_CUBEREVO_3000HD) \
@@ -479,7 +499,6 @@ void * start_loop (void *arg)
  || defined (ENABLE_CUBEREVO) \
  || defined (ENABLE_CUBEREVO_MINI) \
  || defined (ENABLE_CUBEREVO_MINI2) \
- || defined (ENABLE_CUBEREVO_MINI_FTA) \
  || defined (ENABLE_CUBEREVO_250HD) \
  || defined (ENABLE_CUBEREVO_2000HD) \
  || defined (ENABLE_CUBEREVO_3000HD) \
@@ -491,6 +510,10 @@ void * start_loop (void *arg)
  || defined (ENABLE_HS7119) \
  || defined (ENABLE_HS7810A) \
  || defined (ENABLE_HS7819) \
+ || defined (ENABLE_FOREVER_3434HD) \
+ || defined (ENABLE_FOREVER_NANOSMART) \
+ || defined (ENABLE_FOREVER_9898HD) \
+ || defined (ENABLE_FOREVER_2424HD) \
  || defined (ENABLE_VITAMIN_HD5000)
 void evfd::vfd_write_string_scrollText(char* text)
 {
@@ -503,29 +526,29 @@ static void *vfd_write_string_scrollText1(void *arg)
 {
 	pthread_setcanceltype(PTHREAD_CANCEL_ASYNCHRONOUS, NULL);
 	bool scoll_loop = true;
-	char out[VFDLENGTH+1];
+	char out[VFDLENGTH + 1];
 	int i, len;
 	evfd vfd;
 	len = strlen((char *) g_str);
-	memset(out, ' ', VFDLENGTH+1);
+	memset(out, ' ', VFDLENGTH + 1);
 	while (scoll_loop && (len > VFDLENGTH))
 	{
 		if (blocked)
 		{
-			usleep(250000); //0.25s pause between scroll loops?
+			usleep(750000); //0.75s pause between scroll loops?
 		}
 		else
 		{
 			scoll_loop = false;
 		}
-		for (i = 0; i <= (len-VFDLENGTH); i++) //scroll part 1: write full string scrolling and wait 0.25s between scrolls
+		for (i = 0; i <= (len-VFDLENGTH); i++) //scroll part 1: write full string scrolling and wait 0.75s between scrolls
 		{
 			if (blocked)
 			{
 				memset(out, ' ', VFDLENGTH); //fill buffer with spaces
 				memcpy(out, g_str+i, VFDLENGTH); ///then put string in
 				vfd.vfd_write_string(out, true);  //print string on VFD
-				usleep(250000); //0.25 sec character delay
+				usleep(750000); //0.75 sec character delay
 			}
 			else
 			{
@@ -540,7 +563,7 @@ static void *vfd_write_string_scrollText1(void *arg)
 				memset(out, ' ', VFDLENGTH); //fill buffer with spaces
 				memcpy(out, g_str+len+i-VFDLENGTH, VFDLENGTH-i); // copy string shifted 1 character
 				vfd.vfd_write_string(out, true);
-				usleep(250000); //0.25 sec character delay
+				usleep(750000); //0.75 sec character delay
 			}
 			else
 			{
@@ -591,7 +614,7 @@ void evfd::vfd_write_string(char *str, bool force)
 {
 	int ws = 0;
 	int i = strlen(str);
-	if (VFD_CENTER)
+	if (VFD_CENTER == true)
 	{
 		if (i < VFDLENGTH)
 		{
@@ -611,7 +634,7 @@ void evfd::vfd_write_string(char *str, bool force)
 	struct vfd_ioctl_data data;
 
 	memset(data.data, ' ', VFDLENGTH);
-	if (VFD_CENTER)
+	if (VFD_CENTER == true)
 	{
 		memcpy(data.data + ws, str, VFDLENGTH - ws);
 	}
@@ -620,7 +643,7 @@ void evfd::vfd_write_string(char *str, bool force)
 		memcpy(data.data, str, i);
 	}
 	data.start = 0;
-	if (VFD_CENTER)
+	if (VFD_CENTER == true)
 	{
 		data.length = i + ws <= VFDLENGTH ? i + ws : VFDLENGTH;
 	}
@@ -632,7 +655,6 @@ void evfd::vfd_write_string(char *str, bool force)
 	write(file_vfd,data.data,data.length);
 	close (file_vfd);
 }
-
 #else
 
 void evfd::vfd_write_string(char *str)
@@ -691,7 +713,7 @@ void evfd::vfd_write_string_scrollText(char *text)
 			memset(out, ' ', 63);
 			memcpy(out, text + len +i - 63, 63 - i);
 			vfd_write_string(out);
-			usleep(200000);
+			usleep(750000);
 		}
 		memcpy(out, text, VFDLENGTH); //final: display first VFDLENGTH chars after scrolling
 		vfd_write_string(out);
@@ -764,11 +786,18 @@ void evfd::vfd_clear_icons()
 		for (id = 1; id < 29; id++)
 	#elif defined (ENABLE_ATEVIO7500)
 		for (id = 1; id < 23; id++);
-	#elif defined (ENABLE_UFS912) || defined (ENABLE_UFS913)
+	#elif defined (ENABLE_FOREVER_3434HD) \
+	   || defined (ENABLE_FOREVER_9898HD)
+		for (id = 1; id < 5; id++);
+	#elif defined (ENABLE_UFS912) \
+	   || defined (ENABLE_UFS913)
 		for (id = 1; id < 16; id++)
 	#elif defined (ENABLE_CUBEREVO)
 		for (id = 1; id < 28; id++)
-	#elif defined (ENABLE_CUBEREVO_MINI) || defined (ENABLE_CUBEREVO_MINI2) || defined (ENABLE_CUBEREVO_2000HD) || defined (ENABLE_CUBEREVO_3000HD)
+	#elif defined (ENABLE_CUBEREVO_MINI) \
+	   || defined (ENABLE_CUBEREVO_MINI2) \
+	   || defined (ENABLE_CUBEREVO_2000HD) \
+	   || defined (ENABLE_CUBEREVO_3000HD)
 		for (id = 1; id < 7; id++)
 	#elif defined (ENABLE_VITAMIN_HD5000)
 		for (id = 1; id < 17; id++)
@@ -820,11 +849,6 @@ void evfd::vfd_set_light(bool onoff)
 void evfd::vfd_set_fan(bool onoff)
 {
 #if defined (ENABLE_CUBEREVO) \
- || defined (ENABLE_CUBEREVO_250HD) \
- || defined (ENABLE_CUBEREVO_MINI) \
- || defined (ENABLE_CUBEREVO_MINI2) \
- || defined (ENABLE_CUBEREVO_2000HD) \
- || defined (ENABLE_CUBEREVO_3000HD) \
  || defined (ENABLE_CUBEREVO_9500HD)
 	struct vfd_ioctl_data data;
 

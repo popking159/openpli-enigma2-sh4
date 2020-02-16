@@ -31,10 +31,10 @@ class RcModel:
 		elif self.model in self.RcModels.keys():
 			remote = self.RcModels[self.model]
 		else:
-			remote = 'dmm'	# default. Assume files for dmm exists
+			remote = "spark"
 		f = resolveFilename(SCOPE_SKIN, 'rc_models/' + remote + '.' + ext)
 		if not os.path.exists(f):
-			f = resolveFilename(SCOPE_SKIN, 'rc_models/dmm.' + ext)
+			f = resolveFilename(SCOPE_SKIN, 'rc_models/spark.' + ext)
 		return f
 
 	def getRcImg(self):
