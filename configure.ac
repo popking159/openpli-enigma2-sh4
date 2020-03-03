@@ -224,6 +224,26 @@ elif test x"$with_alphablendingacceleration" = xalways ; then
 	AC_DEFINE_UNQUOTED(FORCE_ALPHABLENDING_ACCELERATION, 1, [Accelerate alphablending blits])
 fi
 
+AC_ARG_WITH(graphlcd,
+	AC_HELP_STRING([--with-graphlcd], [use GraphLCD color display, yes or no]),
+	[[withgraphlcd=$withval]],
+	[[withgraphlcd=no]]
+)
+if test x"$withgraphlcd" != xno ; then
+	AC_DEFINE(HAVE_GRAPHLCD, 1,[Define when using a GraphLCD color display device])
+fi
+AM_CONDITIONAL(HAVE_GRAPHLCD, test x"$withgraphlcd" != xno)
+
+AC_ARG_WITH(lcd4linux,
+	AC_HELP_STRING([--with-lcd4linux], [use LCD4Linux color display, yes or no]),
+	[[withlcd4linux=$withval]],
+	[[withlcd4linux=no]]
+)
+if test x"$withlcd4linux" != xno ; then
+	AC_DEFINE(HAVE_LCD4LINUX, 1,[Define when using a LCD4Linux color display device])
+fi
+AM_CONDITIONAL(HAVE_LCD4LINUX, test x"$withlcd4linux" != xno)
+ 
 AC_ARG_WITH(accelerationthreshold,
 	AC_HELP_STRING([--with-accelerationthreshold=n], [use acceleration threshold of n bytes]),
 	[[with_accelerationthreshold=$withval]],
@@ -357,8 +377,18 @@ lib/python/Plugins/SystemPlugins/Videomode/Makefile
 lib/python/Plugins/SystemPlugins/Videomode/meta/Makefile
 lib/python/Plugins/SystemPlugins/WirelessLan/Makefile
 lib/python/Plugins/SystemPlugins/WirelessLan/meta/Makefile
-lib/python/Plugins/SystemPlugins/SparkVFDControl/Makefile
-lib/python/Plugins/SystemPlugins/SparkVFDControl/meta/Makefile
+lib/python/Plugins/Extensions/sparkVFD/Makefile
+lib/python/Plugins/Extensions/sparkVFD/meta/Makefile
+lib/python/Plugins/Extensions/sparkVFD/locale/Makefile
+lib/python/Plugins/Extensions/sparkVFD/locale/nl/Makefile
+lib/python/Plugins/Extensions/sparkVFD/locale/nl/LC_MESSAGES/Makefile
+lib/python/Plugins/Extensions/spark7162VFD/Makefile
+lib/python/Plugins/Extensions/spark7162VFD/meta/Makefile
+lib/python/Plugins/Extensions/spark7162VFD/locale/Makefile
+lib/python/Plugins/Extensions/spark7162VFD/locale/nl/Makefile
+lib/python/Plugins/Extensions/spark7162VFD/locale/nl/LC_MESSAGES/Makefile
+lib/python/Plugins/SystemPlugins/VFD-Icons/Makefile
+lib/python/Plugins/SystemPlugins/VFD-Icons/meta/Makefile
 lib/python/Plugins/SystemPlugins/SH4OSDAdjustment/Makefile
 lib/python/Plugins/SystemPlugins/SH4OSDAdjustment/meta/Makefile
 lib/python/Plugins/SystemPlugins/SH4BoosterControl/Makefile
