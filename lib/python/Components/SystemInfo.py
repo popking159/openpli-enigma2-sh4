@@ -1,6 +1,6 @@
 from enigma import eDVBResourceManager, Misc_Options, eDVBCIInterfaces, eGetEnigmaDebugLvl
 from Components.Console import Console
-from Tools.Directories import fileExists, fileCheck, pathExists, fileHas, resolveFilename, SCOPE_PLUGINS
+from Tools.Directories import SCOPE_PLUGINS, fileCheck, fileExists, fileHas, pathExists, resolveFilename
 from Tools.HardwareInfo import HardwareInfo
 import os, re
 
@@ -11,7 +11,7 @@ from Tools.Multiboot import getMultibootStartupDevice, getMultibootslots  # This
 # Parse the boot commandline.
 #
 with open("/proc/cmdline", "r") as fd:
-    cmdline = fd.read()
+	cmdline = fd.read()
 cmdline = {k: v.strip('"') for k, v in re.findall(r'(\S+)=(".*?"|\S+)', cmdline)}
 
 def getNumVideoDecoders():
