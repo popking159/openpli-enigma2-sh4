@@ -239,6 +239,7 @@ int main(int argc, char **argv)
 #else
 	dsk_lcd.setStyleID(my_lcd_dc->size().width() == 96 ? 2 : 1);
 #endif
+	dsk_lcd.setStyleID(1);
 
 /*	if (double_buffer)
 	{

@@ -5,7 +5,6 @@ import time
 from Components.ServiceEventTracker import ServiceEventTracker, InfoBarBase
 
 class VFDIcons:
-
     def __init__(self, session):
         self.session = session
         self.service = None
