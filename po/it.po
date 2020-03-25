@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: OpenPLi-enigma2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-01-31 14:53+0200\n"
+"POT-Creation-Date: 2020-03-22 22:37+0100\n"
 "PO-Revision-Date: 2018-05-22 13:54+0200\n"
 "Last-Translator: Gringo <openpli@tiscali.it>\n"
 "Language-Team: www.linsat.net <spaeleus@croci.org>\n"
@@ -1374,11 +1374,11 @@ msgstr "Basco"
 msgid "Begin time"
 msgstr "Ora inizio"
 
-msgid "Behavior of 'pause and ok' when paused"
-msgstr "Azione del tasto 'Pausa e OK' durante lo stato di pausa"
-
 msgid "Behavior of '0' button in PiP mode"
 msgstr "Funzione del tasto 0 in modalità PIP"
+
+msgid "Behavior of 'pause and ok' when paused"
+msgstr "Azione del tasto 'Pausa e OK' durante lo stato di pausa"
 
 msgid "Behavior when a movie is started"
 msgstr "Azione all'avvio della riproduzione video"
@@ -1448,6 +1448,10 @@ msgstr "Avvia l'immagine Android"
 
 msgid "Boot to Recovery menu"
 msgstr "Avvia il menù Recovery"
+
+#, fuzzy
+msgid "Bootup time"
+msgstr "Ordine per orario"
 
 msgid "Bosnia and Herzegovina"
 msgstr "Bosnia Erzegovina"
@@ -3061,7 +3065,7 @@ msgstr "ERRORE - Ricerca non riuscita (%s)!"
 
 #, python-format
 msgid "ERROR downloading file %s"
-msgstr "ERRORE scaricamento file %s"
+msgstr ""
 
 msgid "East"
 msgstr "Est"
@@ -3345,9 +3349,9 @@ msgstr "Eritrea"
 msgid "Error"
 msgstr "Errore"
 
-#, python-format
+#, fuzzy, python-format
 msgid "Error %s"
-msgstr "Errore %s"
+msgstr "Errore"
 
 msgid "Error code"
 msgstr "Codice errore"
@@ -3382,10 +3386,13 @@ msgid "Error stop stream!"
 msgstr "Errore di interruzione nel flusso!"
 
 msgid "Error when writing epg.dat on server"
-msgstr "Errore durante la scrittura di epg.data sul server"
+msgstr ""
 
+#, fuzzy
 msgid "Error while retreiving epg.dat from server"
-msgstr "Errore durante il recupero di epg.data dal server"
+msgstr ""
+"Errore durante il recupero delle informazioni del timer di fallback\n"
+"%s"
 
 #, python-format
 msgid ""
@@ -3395,8 +3402,11 @@ msgstr ""
 "Errore durante il recupero delle informazioni del timer di fallback\n"
 "%s"
 
+#, fuzzy
 msgid "Error while retreiving location of epg.dat on server"
-msgstr "Errore durante il recupero della posizione di epg.data sul server"
+msgstr ""
+"Errore durante il recupero delle informazioni del timer di fallback\n"
+"%s"
 
 #, python-format
 msgid ""
@@ -3550,6 +3560,10 @@ msgstr "Colorazione dei dialoghi nei sottotitoli esterni"
 
 msgid "External subtitle switch fonts"
 msgstr "Caratteri sostitutivi per i sottotitoli esterni"
+
+#, fuzzy
+msgid "Externally powered"
+msgstr "Archiviazione esterna %s"
 
 msgid "Extra end time to ignore inactivity sleeptimer"
 msgstr "Orario finale aggiuntivo per ignorare il timer di spegnimento per inutilizzo"
@@ -5200,8 +5214,9 @@ msgstr "Abilitare la selezione bouquet nella Multi EPG"
 msgid "MultiType"
 msgstr "Multi tipo"
 
-msgid "Multiboot"
-msgstr "Multiboot"
+#, fuzzy
+msgid "Multiboot image selector"
+msgstr "Selezionare tutti i Multisat"
 
 msgid "Multichannel PCM"
 msgstr "Multicanale PCM"
@@ -5407,7 +5422,7 @@ msgid "No displayable files on this medium found!"
 msgstr "Questo supporto non contiene file riproducibili!"
 
 msgid "No epg.dat file found server"
-msgstr "Nessun file epg.data trovato nel server"
+msgstr ""
 
 msgid "No event info found, recording indefinitely."
 msgstr "Nessuna informazione disponibile sull'evento, registrazione illimitata in corso."
@@ -5689,6 +5704,15 @@ msgstr "Accedere alla configurazione del sintonizzatore "
 
 msgid "Open the movie list"
 msgstr "Aprire l'elenco dei video"
+
+msgid "Operating LED status in deep standby mode"
+msgstr ""
+
+msgid "Operating LED status in standby mode"
+msgstr ""
+
+msgid "Operating LED status while running."
+msgstr ""
 
 msgid "Opkg"
 msgstr ""
@@ -7310,12 +7334,6 @@ msgstr "Selezionare \"DiSEqC veloce\" se l'impianto lo supporta. Nel dubbio sele
 msgid "Select HDD"
 msgstr "Selezionare il disco rigido"
 
-msgid "Select Image"
-msgstr "Selezionare l'immagine"
-
-msgid "Select Multiboot"
-msgstr "Selezionare il Multiboot"
-
 msgid "Select Softcam"
 msgstr "Selezionare la SoftCam"
 
@@ -7473,6 +7491,10 @@ msgstr "Selezionare il satellite che si desidera configurare. Dopo aver impostat
 msgid "Select the satellite your dish receives from. If you are unsure select 'automatic' and the receiver will attempt to determine this for you."
 msgstr "Selezionare il satellite dal quale la parabola riceve il segnale. Nel dubbio selezionare \"Automatico\" e il ricevitore tenterà di individuarlo da solo."
 
+#, fuzzy
+msgid "Select the time zone within the area or region."
+msgstr "Selezionare la risoluzione orizzontale:"
+
 msgid "Select the tuner that controls the motorised dish."
 msgstr "Selezionare il sintonizzatore che controlla la parabola motorizzata."
 
@@ -7509,6 +7531,9 @@ msgstr "Selezionare l'ingresso video con i tasti Su/Giù"
 msgid "Select video mode"
 msgstr "Selezionare la modalità video"
 
+msgid "Select whether your SCR device is externally powered."
+msgstr ""
+
 msgid "Select wireless network"
 msgstr "Selezionare una rete wireless"
 
@@ -7533,6 +7558,10 @@ msgstr "Selezionare il provider e premere OK per avviare la ricerca"
 
 msgid "Select your region. If not available change 'Country' to 'all' and select one of the default alternatives."
 msgstr "Selezionare la regione. Se non è presente modificare il \"Paese\" in \"Tutti\" e selezionare una delle alternative predefinite."
+
+#, fuzzy
+msgid "Select your time zone area or region."
+msgstr "Selezionare la risoluzione orizzontale:"
 
 msgid "Selecting satellites 1 (USALS)"
 msgstr "Selezionare i satelliti 1 (USALS)"
@@ -8629,6 +8658,16 @@ msgstr "Passare al canale precedente"
 msgid "Switch channel up"
 msgstr "Passare al canale successivo"
 
+msgid "Switch off the display during Standby Mode"
+msgstr ""
+
+msgid "Switch off the display during Suspend Mode"
+msgstr ""
+
+#, fuzzy
+msgid "Switch off the display during operation."
+msgstr "Mostrare l'elenco delle estensioni disponibili per lo schermo e l'interfaccia utente."
+
 msgid "Switch to TV mode"
 msgstr "Passare alla modalità TV"
 
@@ -9220,6 +9259,14 @@ msgstr "Orario"
 
 msgid "Time scale"
 msgstr "Scala del tempo"
+
+#, fuzzy
+msgid "Time zone"
+msgstr "Fuso orario"
+
+#, fuzzy
+msgid "Time zone area"
+msgstr "Fuso orario"
 
 msgid "Timer"
 msgstr "Timer"
@@ -10362,6 +10409,20 @@ msgstr "Con gli errori:"
 
 msgid "With popup"
 msgstr "Con un popup"
+
+#, fuzzy
+msgid "With this option you can switch off the display during operation."
+msgstr "Questa opzione consente di spegnere il display."
+
+msgid "With this option you can switch off the display in Deep Standby Mode."
+msgstr ""
+
+#, fuzzy
+msgid "With this option you can switch off the display in Standby Mode."
+msgstr "Questa opzione consente di spegnere il display."
+
+msgid "With this option you can switch the LED color or deactivate the LED."
+msgstr ""
 
 msgid "Without popup"
 msgstr "Senza un popup"
@@ -11652,6 +11713,9 @@ msgstr "Varietà"
 
 msgid "vertical"
 msgstr "Verticale"
+
+msgid "violet"
+msgstr ""
 
 msgid "wait for ci..."
 msgstr "In attesa della CI..."

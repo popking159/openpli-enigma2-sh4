@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: tuxbox-enigma 0.0.1-En-Th\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-01-31 14:53+0200\n"
+"POT-Creation-Date: 2020-03-22 22:37+0100\n"
 "PO-Revision-Date: 2010-04-08 18:13+0700\n"
 "Last-Translator: Tony - Thaidreambox\n"
 "Language-Team: Tony @ Thai Dreambox <tonyboyth@gmail.com>\n"
@@ -1392,11 +1392,11 @@ msgstr ""
 msgid "Begin time"
 msgstr "เวลาเริ่ม"
 
-msgid "Behavior of 'pause and ok' when paused"
-msgstr ""
-
 msgid "Behavior of '0' button in PiP mode"
 msgstr "เมื่อกด 0 ใน PiP ให้"
+
+msgid "Behavior of 'pause and ok' when paused"
+msgstr ""
 
 msgid "Behavior when a movie is started"
 msgstr "เมื่อภาพยนต์เริ่มเล่นให้"
@@ -1468,6 +1468,10 @@ msgstr ""
 
 msgid "Boot to Recovery menu"
 msgstr ""
+
+#, fuzzy
+msgid "Bootup time"
+msgstr "จัดเรียงเวลา"
 
 msgid "Bosnia and Herzegovina"
 msgstr ""
@@ -3659,6 +3663,9 @@ msgstr ""
 msgid "External subtitle switch fonts"
 msgstr ""
 
+msgid "Externally powered"
+msgstr ""
+
 msgid "Extra end time to ignore inactivity sleeptimer"
 msgstr ""
 
@@ -5379,8 +5386,8 @@ msgid "MultiType"
 msgstr "มัลติมีเดีย"
 
 #, fuzzy
-msgid "Multiboot"
-msgstr "Multisat"
+msgid "Multiboot image selector"
+msgstr "เลือกซับไตเติ้ล"
 
 msgid "Multichannel PCM"
 msgstr ""
@@ -5892,6 +5899,15 @@ msgstr ""
 #, fuzzy
 msgid "Open the movie list"
 msgstr "กลับไปยังสารบัญภาพยนต์"
+
+msgid "Operating LED status in deep standby mode"
+msgstr ""
+
+msgid "Operating LED status in standby mode"
+msgstr ""
+
+msgid "Operating LED status while running."
+msgstr ""
 
 msgid "Opkg"
 msgstr ""
@@ -7581,14 +7597,6 @@ msgid "Select HDD"
 msgstr "เลือกฮาร์ดดิสก์ (HDD)"
 
 #, fuzzy
-msgid "Select Image"
-msgstr "เลือกภาพยนต์"
-
-#, fuzzy
-msgid "Select Multiboot"
-msgstr "เลือกช่องเสียง"
-
-#, fuzzy
 msgid "Select Softcam"
 msgstr "เลือกภาพยนต์"
 
@@ -7760,6 +7768,9 @@ msgstr ""
 msgid "Select the satellite your dish receives from. If you are unsure select 'automatic' and the receiver will attempt to determine this for you."
 msgstr ""
 
+msgid "Select the time zone within the area or region."
+msgstr ""
+
 msgid "Select the tuner that controls the motorised dish."
 msgstr ""
 
@@ -7797,6 +7808,9 @@ msgstr "เลือกช่องต่อสัญญาณวิดีโอ
 msgid "Select video mode"
 msgstr "เลือกโหมดวีดีโอ"
 
+msgid "Select whether your SCR device is externally powered."
+msgstr ""
+
 msgid "Select wireless network"
 msgstr "เลือกเครือข่ายไร้สาย"
 
@@ -7821,6 +7835,9 @@ msgid "Select your provider, and press OK to start the scan"
 msgstr ""
 
 msgid "Select your region. If not available change 'Country' to 'all' and select one of the default alternatives."
+msgstr ""
+
+msgid "Select your time zone area or region."
 msgstr ""
 
 msgid "Selecting satellites 1 (USALS)"
@@ -8984,6 +9001,16 @@ msgstr ""
 msgid "Switch channel up"
 msgstr ""
 
+msgid "Switch off the display during Standby Mode"
+msgstr ""
+
+msgid "Switch off the display during Suspend Mode"
+msgstr ""
+
+#, fuzzy
+msgid "Switch off the display during operation."
+msgstr "แสดงรายการส่วนเพิ่มเติมสำหรับส่วนติดต่อผู้ใช้"
+
 msgid "Switch to TV mode"
 msgstr ""
 
@@ -9551,6 +9578,14 @@ msgstr "เวลา"
 #, fuzzy
 msgid "Time scale"
 msgstr "เลือกการตั้งเวลา"
+
+#, fuzzy
+msgid "Time zone"
+msgstr "เส้นแบ่งเวลา"
+
+#, fuzzy
+msgid "Time zone area"
+msgstr "เส้นแบ่งเวลา"
 
 msgid "Timer"
 msgstr "ตั้งเวลา"
@@ -10721,6 +10756,18 @@ msgid "With errors:"
 msgstr ""
 
 msgid "With popup"
+msgstr ""
+
+msgid "With this option you can switch off the display during operation."
+msgstr ""
+
+msgid "With this option you can switch off the display in Deep Standby Mode."
+msgstr ""
+
+msgid "With this option you can switch off the display in Standby Mode."
+msgstr ""
+
+msgid "With this option you can switch the LED color or deactivate the LED."
 msgstr ""
 
 msgid "Without popup"
@@ -11999,6 +12046,9 @@ msgstr ""
 
 msgid "vertical"
 msgstr "แนวตั้ง (V)"
+
+msgid "violet"
+msgstr ""
 
 msgid "wait for ci..."
 msgstr "รอ CI"

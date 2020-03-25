@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: enigma2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-01-31 14:53+0200\n"
+"POT-Creation-Date: 2020-03-22 22:37+0100\n"
 "PO-Revision-Date: 2013-10-20 19:13-0300\n"
 "Last-Translator: Diogo <pingflood@gmail.com>\n"
 "Language-Team: Traduzido por Frank Viana <franksrviana@gmail.com>\n"
@@ -1370,11 +1370,11 @@ msgstr "Basco"
 msgid "Begin time"
 msgstr "Hora de início"
 
-msgid "Behavior of 'pause and ok' when paused"
-msgstr ""
-
 msgid "Behavior of '0' button in PiP mode"
 msgstr "Comportamento do botão 0 no modo PiP"
+
+msgid "Behavior of 'pause and ok' when paused"
+msgstr ""
 
 msgid "Behavior when a movie is started"
 msgstr "Comportamento ao iniciar um vídeo"
@@ -1446,6 +1446,10 @@ msgstr ""
 
 msgid "Boot to Recovery menu"
 msgstr ""
+
+#, fuzzy
+msgid "Bootup time"
+msgstr "Cronológico"
 
 msgid "Bosnia and Herzegovina"
 msgstr ""
@@ -3581,6 +3585,9 @@ msgstr ""
 msgid "External subtitle switch fonts"
 msgstr ""
 
+msgid "Externally powered"
+msgstr ""
+
 msgid "Extra end time to ignore inactivity sleeptimer"
 msgstr ""
 
@@ -5247,8 +5254,8 @@ msgid "MultiType"
 msgstr "Multimídia"
 
 #, fuzzy
-msgid "Multiboot"
-msgstr "Múltiplos satélites"
+msgid "Multiboot image selector"
+msgstr "Idioma de mídia"
 
 msgid "Multichannel PCM"
 msgstr ""
@@ -5747,6 +5754,15 @@ msgstr ""
 
 msgid "Open the movie list"
 msgstr "Abrir lista de vídeos"
+
+msgid "Operating LED status in deep standby mode"
+msgstr ""
+
+msgid "Operating LED status in standby mode"
+msgstr ""
+
+msgid "Operating LED status while running."
+msgstr ""
 
 msgid "Opkg"
 msgstr ""
@@ -7399,14 +7415,6 @@ msgid "Select HDD"
 msgstr "Selecione o disco rígido"
 
 #, fuzzy
-msgid "Select Image"
-msgstr "Selecione um vídeo"
-
-#, fuzzy
-msgid "Select Multiboot"
-msgstr "Trilha de áudio"
-
-#, fuzzy
 msgid "Select Softcam"
 msgstr "Selecione um vídeo"
 
@@ -7568,6 +7576,9 @@ msgstr ""
 msgid "Select the satellite your dish receives from. If you are unsure select 'automatic' and the receiver will attempt to determine this for you."
 msgstr ""
 
+msgid "Select the time zone within the area or region."
+msgstr ""
+
 msgid "Select the tuner that controls the motorised dish."
 msgstr ""
 
@@ -7604,6 +7615,9 @@ msgstr "Selecione a entrada de vídeo com os botões de cima/baixo"
 msgid "Select video mode"
 msgstr "Selecione o modo de vídeo"
 
+msgid "Select whether your SCR device is externally powered."
+msgstr ""
+
 msgid "Select wireless network"
 msgstr "Selecione a rede sem fio"
 
@@ -7628,6 +7642,9 @@ msgid "Select your provider, and press OK to start the scan"
 msgstr "Selecione a operadora e pressione OK para buscar."
 
 msgid "Select your region. If not available change 'Country' to 'all' and select one of the default alternatives."
+msgstr ""
+
+msgid "Select your time zone area or region."
 msgstr ""
 
 msgid "Selecting satellites 1 (USALS)"
@@ -8749,6 +8766,16 @@ msgstr ""
 msgid "Switch channel up"
 msgstr ""
 
+msgid "Switch off the display during Standby Mode"
+msgstr ""
+
+msgid "Switch off the display during Suspend Mode"
+msgstr ""
+
+#, fuzzy
+msgid "Switch off the display during operation."
+msgstr "Ver extensões de tela e interface do usuário disponíveis."
+
 msgid "Switch to TV mode"
 msgstr ""
 
@@ -9311,6 +9338,14 @@ msgstr "Hora"
 
 msgid "Time scale"
 msgstr "Escala de tempo"
+
+#, fuzzy
+msgid "Time zone"
+msgstr "Fuso horário"
+
+#, fuzzy
+msgid "Time zone area"
+msgstr "Fuso horário"
 
 msgid "Timer"
 msgstr "Temporizador"
@@ -10469,6 +10504,18 @@ msgstr ""
 
 msgid "With popup"
 msgstr "Com popup"
+
+msgid "With this option you can switch off the display during operation."
+msgstr ""
+
+msgid "With this option you can switch off the display in Deep Standby Mode."
+msgstr ""
+
+msgid "With this option you can switch off the display in Standby Mode."
+msgstr ""
+
+msgid "With this option you can switch the LED color or deactivate the LED."
+msgstr ""
 
 msgid "Without popup"
 msgstr "Sem popup"
@@ -11761,6 +11808,9 @@ msgstr "Show de variedades"
 
 msgid "vertical"
 msgstr "Vertical"
+
+msgid "violet"
+msgstr ""
 
 msgid "wait for ci..."
 msgstr "Aguardando CI..."

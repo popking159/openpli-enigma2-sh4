@@ -1,6 +1,6 @@
 from enigma import eDVBResourceManager, Misc_Options, eDVBCIInterfaces, eGetEnigmaDebugLvl
 from Components.Console import Console
-from Tools.Directories import fileExists, fileCheck, pathExists, fileHas, resolveFilename, SCOPE_PLUGINS
+from Tools.Directories import SCOPE_PLUGINS, fileCheck, fileExists, fileHas, pathExists, resolveFilename
 from Tools.HardwareInfo import HardwareInfo
 import os, re
 
@@ -10,9 +10,8 @@ from Tools.Multiboot import getMultibootStartupDevice, getMultibootslots  # This
 
 # Parse the boot commandline.
 #
-fd = open("/proc/cmdline", "r")
-cmdline = fd.read()
-fd.close()
+with open("/proc/cmdline", "r") as fd:
+	cmdline = fd.read()
 cmdline = {k: v.strip('"') for k, v in re.findall(r'(\S+)=(".*?"|\S+)', cmdline)}
 
 def getNumVideoDecoders():
@@ -65,6 +64,12 @@ SystemInfo["PowerLED"] = fileCheck("/proc/stb/power/powerled")
 SystemInfo["StandbyLED"] = fileCheck("/proc/stb/power/standbyled")
 SystemInfo["SuspendLED"] = fileCheck("/proc/stb/power/suspendled")
 SystemInfo["Display"] = SystemInfo["FrontpanelDisplay"] or SystemInfo["StandbyLED"]
+SystemInfo["LedPowerColor"] = fileCheck("/proc/stb/fp/ledpowercolor")
+SystemInfo["LedStandbyColor"] = fileCheck("/proc/stb/fp/ledstandbycolor")
+SystemInfo["LedSuspendColor"] = fileCheck("/proc/stb/fp/ledsuspendledcolor")
+SystemInfo["Power4x7On"] = fileCheck("/proc/stb/fp/power4x7on")
+SystemInfo["Power4x7Standby"] = fileCheck("/proc/stb/fp/power4x7standby")
+SystemInfo["Power4x7Suspend"] = fileCheck("/proc/stb/fp/power4x7suspend")
 SystemInfo["PowerOffDisplay"] = model not in "formuler1" and fileCheck("/proc/stb/power/vfd") or fileCheck("/proc/stb/lcd/vfd")
 SystemInfo["WakeOnLAN"] = not model.startswith("et8000") and fileCheck("/proc/stb/power/wol") or fileCheck("/proc/stb/fp/wol")
 SystemInfo["HasExternalPIP"] = not (model.startswith("et9") or model in ("e4hd",)) and fileCheck("/proc/stb/vmpeg/1/external")
@@ -121,4 +126,4 @@ SystemInfo["CanDownmixDTS"] = fileHas("/proc/stb/audio/dts_choices", "downmix")
 SystemInfo["CanDownmixAAC"] = fileHas("/proc/stb/audio/aac_choices", "downmix")
 SystemInfo["HDMIAudioSource"] = fileCheck("/proc/stb/hdmi/audio_source")
 SystemInfo["BootDevice"] = getBootdevice()
-SystemInfo["LnbPowerAlwaysOn"] = HardwareInfo().get_device_model() in ('vusolo4k', 'vuduo4k', 'vuultimo4k')
+SystemInfo["LnbPowerAlwaysOn"] = HardwareInfo().get_device_model() in ("vusolo4k", "vuduo4k", "vuultimo4k", "vuuno4k", "vuuno4kse")

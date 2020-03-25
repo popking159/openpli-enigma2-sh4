@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Project Slovenia\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-01-31 14:53+0200\n"
+"POT-Creation-Date: 2020-03-22 22:37+0100\n"
 "PO-Revision-Date: 2015-08-30 09:00+0200\n"
 "Last-Translator: Taykun345 <support@satnigmo.com>\n"
 "Language-Team: Satnigmo <support@satnigmo.com>\n"
@@ -1588,12 +1588,12 @@ msgid "Begin time"
 msgstr "Začetek"
 
 #
-msgid "Behavior of 'pause and ok' when paused"
-msgstr "Obnašanje tipk \"premor\" in \"premor\" ob pavzi"
-
-#
 msgid "Behavior of '0' button in PiP mode"
 msgstr "Odziv tipke \"0\" v načinu \"Slika v sliki\""
+
+#
+msgid "Behavior of 'pause and ok' when paused"
+msgstr "Obnašanje tipk \"premor\" in \"premor\" ob pavzi"
 
 #
 msgid "Behavior when a movie is started"
@@ -1674,6 +1674,11 @@ msgstr ""
 
 msgid "Boot to Recovery menu"
 msgstr ""
+
+#
+#, fuzzy
+msgid "Bootup time"
+msgstr "Čas urejanja"
 
 msgid "Bosnia and Herzegovina"
 msgstr ""
@@ -4121,6 +4126,10 @@ msgstr "Barva dialogov pri zunanjih podnapisih"
 msgid "External subtitle switch fonts"
 msgstr ""
 
+#, fuzzy
+msgid "Externally powered"
+msgstr "Zunanja naprava za shranjevanje %s"
+
 msgid "Extra end time to ignore inactivity sleeptimer"
 msgstr "Dodatni konec časa za ignoriranje časovnika neaktivnosti"
 
@@ -6021,7 +6030,7 @@ msgstr "Multimedija"
 
 #
 #, fuzzy
-msgid "Multiboot"
+msgid "Multiboot image selector"
 msgstr "Multisat"
 
 msgid "Multichannel PCM"
@@ -6599,6 +6608,15 @@ msgstr ""
 #
 msgid "Open the movie list"
 msgstr "Odprtje seznama posnetkov"
+
+msgid "Operating LED status in deep standby mode"
+msgstr ""
+
+msgid "Operating LED status in standby mode"
+msgstr ""
+
+msgid "Operating LED status while running."
+msgstr ""
 
 msgid "Opkg"
 msgstr ""
@@ -8539,16 +8557,6 @@ msgstr "Izberite trdi disk"
 
 #
 #, fuzzy
-msgid "Select Image"
-msgstr "Izberite posnetek"
-
-#
-#, fuzzy
-msgid "Select Multiboot"
-msgstr "Izberi dogodek"
-
-#
-#, fuzzy
 msgid "Select Softcam"
 msgstr "Izberi vse"
 
@@ -8742,6 +8750,11 @@ msgstr ""
 msgid "Select the satellite your dish receives from. If you are unsure select 'automatic' and the receiver will attempt to determine this for you."
 msgstr ""
 
+#
+#, fuzzy
+msgid "Select the time zone within the area or region."
+msgstr "Izbor načina razvrščanja:"
+
 msgid "Select the tuner that controls the motorised dish."
 msgstr ""
 
@@ -8782,6 +8795,9 @@ msgstr "Z gor in dol tipkami izberite video vhod"
 msgid "Select video mode"
 msgstr "Izberite video način"
 
+msgid "Select whether your SCR device is externally powered."
+msgstr ""
+
 #
 msgid "Select wireless network"
 msgstr "Izberite brezžično omrežje"
@@ -8810,6 +8826,11 @@ msgstr "Izberite vašega operaterja in za začetek iskanja pritisnite OK!"
 
 msgid "Select your region. If not available change 'Country' to 'all' and select one of the default alternatives."
 msgstr ""
+
+#
+#, fuzzy
+msgid "Select your time zone area or region."
+msgstr "Izbor načina razvrščanja:"
 
 #
 msgid "Selecting satellites 1 (USALS)"
@@ -10108,6 +10129,17 @@ msgstr "Preklop na prejšnji kanal"
 msgid "Switch channel up"
 msgstr "Preklop na naslednji kanal"
 
+msgid "Switch off the display during Standby Mode"
+msgstr ""
+
+msgid "Switch off the display during Suspend Mode"
+msgstr ""
+
+#
+#, fuzzy
+msgid "Switch off the display during operation."
+msgstr "Ogled seznama obstoječih Display in UserInterface vtičnikov."
+
 msgid "Switch to TV mode"
 msgstr "Preklop v način TV"
 
@@ -10726,6 +10758,16 @@ msgstr "Čas"
 #
 msgid "Time scale"
 msgstr "Izbira časovnika"
+
+#
+#, fuzzy
+msgid "Time zone"
+msgstr "Časovni pas"
+
+#
+#, fuzzy
+msgid "Time zone area"
+msgstr "Časovni pas"
 
 #
 msgid "Timer"
@@ -12033,6 +12075,18 @@ msgstr ""
 
 msgid "With popup"
 msgstr "Z obvestilom"
+
+msgid "With this option you can switch off the display during operation."
+msgstr ""
+
+msgid "With this option you can switch off the display in Deep Standby Mode."
+msgstr ""
+
+msgid "With this option you can switch off the display in Standby Mode."
+msgstr ""
+
+msgid "With this option you can switch the LED color or deactivate the LED."
+msgstr ""
 
 msgid "Without popup"
 msgstr "Brez obvestila"
@@ -13502,6 +13556,9 @@ msgstr ""
 #
 msgid "vertical"
 msgstr "Vertikalna"
+
+msgid "violet"
+msgstr ""
 
 #
 msgid "wait for ci..."

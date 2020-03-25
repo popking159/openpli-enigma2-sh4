@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Openpli\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-01-31 14:53+0200\n"
+"POT-Creation-Date: 2020-03-22 22:37+0100\n"
 "PO-Revision-Date: 2019-04-03 06:49+0300\n"
 "Last-Translator: \n"
 "Language-Team: Raivo, Henkka, eesatfan, rimas, zeros\\n faas, sateks, valgekotkas, tigekala, rootsikunn\\n kain, i70, mustkass, pelmeen, Scott\\n <digi-tv.ee>\n"
@@ -1373,11 +1373,11 @@ msgstr "Baski"
 msgid "Begin time"
 msgstr "Algusaeg"
 
-msgid "Behavior of 'pause and ok' when paused"
-msgstr "'pausi ja OK' tegevus kui pilt on peatatud"
-
 msgid "Behavior of '0' button in PiP mode"
 msgstr "0-nupu funktsioon PiP-režiimis"
+
+msgid "Behavior of 'pause and ok' when paused"
+msgstr "'pausi ja OK' tegevus kui pilt on peatatud"
 
 msgid "Behavior when a movie is started"
 msgstr "Tegevus taasesituse algamisel"
@@ -1447,6 +1447,10 @@ msgstr ""
 
 msgid "Boot to Recovery menu"
 msgstr ""
+
+#, fuzzy
+msgid "Bootup time"
+msgstr "Aja järgi"
 
 msgid "Bosnia and Herzegovina"
 msgstr "Bosnia ja Hertsegoviina"
@@ -3362,9 +3366,9 @@ msgstr "Eritrea"
 msgid "Error"
 msgstr "Viga"
 
-#, python-format
+#, fuzzy, python-format
 msgid "Error %s"
-msgstr "Viga %s"
+msgstr "Viga"
 
 msgid "Error code"
 msgstr "Veakood"
@@ -3566,6 +3570,10 @@ msgstr "Väliste subtiitrite dialoogi värvimine"
 
 msgid "External subtitle switch fonts"
 msgstr "Väliste subtiitrite kirjatüübi vahetamine"
+
+#, fuzzy
+msgid "Externally powered"
+msgstr "Väline salvestusseade %s"
 
 msgid "Extra end time to ignore inactivity sleeptimer"
 msgstr "Lisatud lõpu aeg tegevusetuse unetaimeri vältimiseks"
@@ -5222,8 +5230,9 @@ msgstr "Lemmiknimekirjade valik kanalite saatekavas"
 msgid "MultiType"
 msgstr "Multimeedia"
 
-msgid "Multiboot"
-msgstr "Multiboot"
+#, fuzzy
+msgid "Multiboot image selector"
+msgstr "Paljude satelliitide valik"
 
 msgid "Multichannel PCM"
 msgstr "Mitme kanali PCM"
@@ -5716,6 +5725,15 @@ msgstr "Ava tuuneri seadistamine "
 
 msgid "Open the movie list"
 msgstr "Ava filmilist"
+
+msgid "Operating LED status in deep standby mode"
+msgstr ""
+
+msgid "Operating LED status in standby mode"
+msgstr ""
+
+msgid "Operating LED status while running."
+msgstr ""
 
 msgid "Opkg"
 msgstr ""
@@ -7354,12 +7372,6 @@ msgstr "Vali kiire DiSEqC, kui antennisüsteem seda toetab. Kui pole kindel, val
 msgid "Select HDD"
 msgstr "Vali kõvaketas"
 
-msgid "Select Image"
-msgstr "Vali tarkvara"
-
-msgid "Select Multiboot"
-msgstr "Vali Multiboot"
-
 msgid "Select Softcam"
 msgstr "Vali softcam"
 
@@ -7520,6 +7532,10 @@ msgstr "Vali seadistatav satelliit. Kui see satelliit on seadistatud, saab valid
 msgid "Select the satellite your dish receives from. If you are unsure select 'automatic' and the receiver will attempt to determine this for you."
 msgstr "Vali vastuvõetav satelliit. Kui pole kindel, vali 'automaatne' ja vastuvõtja üritab selle ise tuvastada."
 
+#, fuzzy
+msgid "Select the time zone within the area or region."
+msgstr "Vali horisontaalne resolutsioon:"
+
 msgid "Select the tuner that controls the motorised dish."
 msgstr "Vali tuuner, mis juhib ajamiga antenni."
 
@@ -7558,6 +7574,9 @@ msgstr "Vali video sisend"
 msgid "Select video mode"
 msgstr "Vali video töörežiim"
 
+msgid "Select whether your SCR device is externally powered."
+msgstr ""
+
 msgid "Select wireless network"
 msgstr "Vali WiFi võrk"
 
@@ -7582,6 +7601,10 @@ msgstr "Vali teenusepakkuja ja vajuta otsingu alustamiseks OK"
 
 msgid "Select your region. If not available change 'Country' to 'all' and select one of the default alternatives."
 msgstr "Määra regioon. Kui see pole saadaval, muuda riigi asemel 'Kõik' ja vali üks alternatiividest."
+
+#, fuzzy
+msgid "Select your time zone area or region."
+msgstr "Vali horisontaalne resolutsioon:"
 
 msgid "Selecting satellites 1 (USALS)"
 msgstr "Satelliitide valimine 1 (USALS)"
@@ -8685,6 +8708,16 @@ msgstr "Lülita kanal alla"
 msgid "Switch channel up"
 msgstr "Lülita kanal üles"
 
+msgid "Switch off the display during Standby Mode"
+msgstr ""
+
+msgid "Switch off the display during Suspend Mode"
+msgstr ""
+
+#, fuzzy
+msgid "Switch off the display during operation."
+msgstr "Vaata saadaolevate kasutajaliidese laienduste nimekirja."
+
 msgid "Switch to TV mode"
 msgstr "Lülita TV peale"
 
@@ -9284,6 +9317,14 @@ msgstr "Aeg"
 
 msgid "Time scale"
 msgstr "Ajaskaala"
+
+#, fuzzy
+msgid "Time zone"
+msgstr "Ajavöönd"
+
+#, fuzzy
+msgid "Time zone area"
+msgstr "Ajavöönd"
 
 msgid "Timer"
 msgstr "Taimer"
@@ -10439,6 +10480,20 @@ msgstr "Vigadega:"
 
 msgid "With popup"
 msgstr "Hüpikaknaga"
+
+#, fuzzy
+msgid "With this option you can switch off the display during operation."
+msgstr "See valik lubab näidiku välja lülitada."
+
+msgid "With this option you can switch off the display in Deep Standby Mode."
+msgstr ""
+
+#, fuzzy
+msgid "With this option you can switch off the display in Standby Mode."
+msgstr "See valik lubab näidiku välja lülitada."
+
+msgid "With this option you can switch the LED color or deactivate the LED."
+msgstr ""
 
 msgid "Without popup"
 msgstr "Ilma hüpikaknata"
@@ -11736,6 +11791,9 @@ msgstr "mitmekesine show"
 
 msgid "vertical"
 msgstr "vertikaal"
+
+msgid "violet"
+msgstr ""
 
 msgid "wait for ci..."
 msgstr "ci ootel..."

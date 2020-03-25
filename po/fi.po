@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: enigma2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-01-31 14:53+0200\n"
+"POT-Creation-Date: 2020-03-22 22:37+0100\n"
 "PO-Revision-Date: 2019-02-13 20:52+0200\n"
 "Last-Translator: jamu\n"
 "Language-Team: BoxFreak/jamu\n"
@@ -1506,12 +1506,12 @@ msgstr "Baski"
 msgid "Begin time"
 msgstr "Aloitusaika"
 
-msgid "Behavior of 'pause and ok' when paused"
-msgstr "Pause- ja OK-näppäimien toiminta"
-
 #
 msgid "Behavior of '0' button in PiP mode"
 msgstr "0-näppäimen toiminta PiP-tilassa"
+
+msgid "Behavior of 'pause and ok' when paused"
+msgstr "Pause- ja OK-näppäimien toiminta"
 
 #
 msgid "Behavior when a movie is started"
@@ -1588,6 +1588,11 @@ msgstr ""
 
 msgid "Boot to Recovery menu"
 msgstr ""
+
+#
+#, fuzzy
+msgid "Bootup time"
+msgstr "Aikajärj."
 
 msgid "Bosnia and Herzegovina"
 msgstr "Bosnia ja Herzegovina"
@@ -3715,9 +3720,9 @@ msgid "Error"
 msgstr "Virhe"
 
 #
-#, python-format
+#, fuzzy, python-format
 msgid "Error %s"
-msgstr "Virhe %s"
+msgstr "Virhe"
 
 msgid "Error code"
 msgstr "Virhekoodi"
@@ -3929,6 +3934,10 @@ msgstr "Ulkoisen tekstityksen dialogin väritys"
 
 msgid "External subtitle switch fonts"
 msgstr "Ulkoisen tekstityksen fontin vaihtelu"
+
+#, fuzzy
+msgid "Externally powered"
+msgstr "Ulkoine tallenusväline %s"
 
 msgid "Extra end time to ignore inactivity sleeptimer"
 msgstr "Lisäaikavälin lopetusaika"
@@ -5780,8 +5789,9 @@ msgid "MultiType"
 msgstr "Multimedia"
 
 #
-msgid "Multiboot"
-msgstr ""
+#, fuzzy
+msgid "Multiboot image selector"
+msgstr "Kaikki satelliitit"
 
 msgid "Multichannel PCM"
 msgstr "PCM-monikanavaääni"
@@ -6356,6 +6366,15 @@ msgstr "Avaa viritinasetukset"
 
 msgid "Open the movie list"
 msgstr "Avaa tallenneluettelo"
+
+msgid "Operating LED status in deep standby mode"
+msgstr ""
+
+msgid "Operating LED status in standby mode"
+msgstr ""
+
+msgid "Operating LED status while running."
+msgstr ""
 
 msgid "Opkg"
 msgstr ""
@@ -8222,14 +8241,6 @@ msgid "Select HDD"
 msgstr "Valitse kiintolevy"
 
 #
-msgid "Select Image"
-msgstr "Valitse ohjelmistokuva"
-
-#
-msgid "Select Multiboot"
-msgstr "Valitse multiboot"
-
-#
 msgid "Select Softcam"
 msgstr "Valitse softcam"
 
@@ -8414,6 +8425,9 @@ msgstr ""
 msgid "Select the satellite your dish receives from. If you are unsure select 'automatic' and the receiver will attempt to determine this for you."
 msgstr ""
 
+msgid "Select the time zone within the area or region."
+msgstr ""
+
 msgid "Select the tuner that controls the motorised dish."
 msgstr "Valitse viritin joka ohjaa moottoroitua lautasta."
 
@@ -8454,6 +8468,9 @@ msgstr "Valitse video-sisäänmeno ylös/alas-näppäimillä"
 msgid "Select video mode"
 msgstr "Valitse video-tila"
 
+msgid "Select whether your SCR device is externally powered."
+msgstr ""
+
 #
 msgid "Select wireless network"
 msgstr "Valitse WLAN-verkko"
@@ -8480,6 +8497,9 @@ msgstr "Valitse palveluntarjoaja ja aloita haku OK-näppäimellä"
 
 msgid "Select your region. If not available change 'Country' to 'all' and select one of the default alternatives."
 msgstr "Valitse käytettävä alue. Jos sopivaa ei löydy, vaihda maaksi 'Kaikki' ja valitse jokin oletusvaihtoehdoista."
+
+msgid "Select your time zone area or region."
+msgstr ""
 
 #
 msgid "Selecting satellites 1 (USALS)"
@@ -9723,6 +9743,16 @@ msgstr ""
 msgid "Switch channel up"
 msgstr ""
 
+msgid "Switch off the display during Standby Mode"
+msgstr ""
+
+msgid "Switch off the display during Suspend Mode"
+msgstr ""
+
+#, fuzzy
+msgid "Switch off the display during operation."
+msgstr "Näytä saatavilla olevat näyttö- ja käyttöliittymälaajennukset."
+
 #
 msgid "Switch to TV mode"
 msgstr "Vaihda TV-tilaan"
@@ -10349,6 +10379,16 @@ msgstr "Aika-asetukset"
 #
 msgid "Time scale"
 msgstr "Aika-asteikko"
+
+#
+#, fuzzy
+msgid "Time zone"
+msgstr "Aikavyöhyke"
+
+#
+#, fuzzy
+msgid "Time zone area"
+msgstr "Aikavyöhyke"
 
 msgid "Timer"
 msgstr "Ajastukset"
@@ -11613,6 +11653,18 @@ msgstr ""
 
 msgid "With popup"
 msgstr "Ilmoitusikkunalla"
+
+msgid "With this option you can switch off the display during operation."
+msgstr ""
+
+msgid "With this option you can switch off the display in Deep Standby Mode."
+msgstr ""
+
+msgid "With this option you can switch off the display in Standby Mode."
+msgstr ""
+
+msgid "With this option you can switch the LED color or deactivate the LED."
+msgstr ""
 
 msgid "Without popup"
 msgstr "Ilman ilmoitusikkunaa"
@@ -13059,6 +13111,9 @@ msgstr "varietee"
 #
 msgid "vertical"
 msgstr "Vertikaali"
+
+msgid "violet"
+msgstr ""
 
 #
 msgid "wait for ci..."

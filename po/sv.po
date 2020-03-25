@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: enigma2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-01-31 14:53+0200\n"
+"POT-Creation-Date: 2020-03-22 22:37+0100\n"
 "PO-Revision-Date: 2017-03-05 13:24+0100\n"
 "Last-Translator: Magnus Nilsson <mag_nilsson@hotmail.com>\n"
 "Language-Team: \n"
@@ -1541,12 +1541,12 @@ msgstr "Baskiska"
 msgid "Begin time"
 msgstr "Starttid"
 
-msgid "Behavior of 'pause and ok' when paused"
-msgstr "Beteende av 'paus och OK' vid pausad"
-
 #
 msgid "Behavior of '0' button in PiP mode"
 msgstr "Beteende av '0' knappen i BiB-läge"
+
+msgid "Behavior of 'pause and ok' when paused"
+msgstr "Beteende av 'paus och OK' vid pausad"
 
 #
 msgid "Behavior when a movie is started"
@@ -1626,6 +1626,11 @@ msgstr ""
 
 msgid "Boot to Recovery menu"
 msgstr ""
+
+#
+#, fuzzy
+msgid "Bootup time"
+msgstr "Sortera tid"
 
 #, fuzzy
 msgid "Bosnia and Herzegovina"
@@ -4026,6 +4031,10 @@ msgstr "Extern undertextfärg"
 msgid "External subtitle switch fonts"
 msgstr "Extrena växlingsbara undertextfonter"
 
+#, fuzzy
+msgid "Externally powered"
+msgstr "Extern lagring %s"
+
 msgid "Extra end time to ignore inactivity sleeptimer"
 msgstr "Extra sluttid för att ignorera inaktiv insomningstimer"
 
@@ -5903,10 +5912,9 @@ msgstr "Multi-EPG favoritlistsval"
 msgid "MultiType"
 msgstr "Multimedia"
 
-#
 #, fuzzy
-msgid "Multiboot"
-msgstr "Multisat"
+msgid "Multiboot image selector"
+msgstr "Alla Multisat val"
 
 msgid "Multichannel PCM"
 msgstr "Multikanal PCM"
@@ -6473,6 +6481,15 @@ msgstr "Öppna inställning för tuner"
 #
 msgid "Open the movie list"
 msgstr "Öppna filmlistan"
+
+msgid "Operating LED status in deep standby mode"
+msgstr ""
+
+msgid "Operating LED status in standby mode"
+msgstr ""
+
+msgid "Operating LED status while running."
+msgstr ""
 
 msgid "Opkg"
 msgstr ""
@@ -8367,15 +8384,6 @@ msgstr ""
 msgid "Select HDD"
 msgstr "Välj HDD"
 
-#
-#, fuzzy
-msgid "Select Image"
-msgstr "Välj en film"
-
-#, fuzzy
-msgid "Select Multiboot"
-msgstr "Välj plats"
-
 #, fuzzy
 msgid "Select Softcam"
 msgstr "Välj plats"
@@ -8560,6 +8568,10 @@ msgstr ""
 msgid "Select the satellite your dish receives from. If you are unsure select 'automatic' and the receiver will attempt to determine this for you."
 msgstr ""
 
+#, fuzzy
+msgid "Select the time zone within the area or region."
+msgstr "Välj sorteringsmetod :"
+
 msgid "Select the tuner that controls the motorised dish."
 msgstr ""
 
@@ -8600,6 +8612,9 @@ msgstr "Välj videoingång med upp / ner knapparna"
 msgid "Select video mode"
 msgstr "Välj videoläge"
 
+msgid "Select whether your SCR device is externally powered."
+msgstr ""
+
 #
 msgid "Select wireless network"
 msgstr "Välj trådlöst nätverk"
@@ -8627,6 +8642,10 @@ msgstr "Välj din operatör och tryck OK för att starta sökningen"
 
 msgid "Select your region. If not available change 'Country' to 'all' and select one of the default alternatives."
 msgstr ""
+
+#, fuzzy
+msgid "Select your time zone area or region."
+msgstr "Välj sorteringsmetod :"
 
 msgid "Selecting satellites 1 (USALS)"
 msgstr "Väljer satelliter 1 (USALS)"
@@ -9875,6 +9894,17 @@ msgstr "Växla kanal ner"
 msgid "Switch channel up"
 msgstr "Växla kanal upp"
 
+msgid "Switch off the display during Standby Mode"
+msgstr ""
+
+msgid "Switch off the display during Suspend Mode"
+msgstr ""
+
+#
+#, fuzzy
+msgid "Switch off the display during operation."
+msgstr "Visa lista över tillgängliga Display och Användargränssnittutökningar."
+
 msgid "Switch to TV mode"
 msgstr "Växla till TV läge"
 
@@ -10535,6 +10565,16 @@ msgstr "Tid"
 
 msgid "Time scale"
 msgstr "Tidskala"
+
+#
+#, fuzzy
+msgid "Time zone"
+msgstr "Tidszon"
+
+#
+#, fuzzy
+msgid "Time zone area"
+msgstr "Tidszon"
 
 #
 msgid "Timer"
@@ -11832,6 +11872,20 @@ msgstr "Med fel :"
 
 msgid "With popup"
 msgstr "Med popup"
+
+#, fuzzy
+msgid "With this option you can switch off the display during operation."
+msgstr "Detta val tillåter dig att stänga av displayen."
+
+msgid "With this option you can switch off the display in Deep Standby Mode."
+msgstr ""
+
+#, fuzzy
+msgid "With this option you can switch off the display in Standby Mode."
+msgstr "Detta val tillåter dig att stänga av displayen."
+
+msgid "With this option you can switch the LED color or deactivate the LED."
+msgstr ""
 
 msgid "Without popup"
 msgstr "Utan popup"
@@ -13305,6 +13359,9 @@ msgstr "variteuppvisning"
 #
 msgid "vertical"
 msgstr "vertikal"
+
+msgid "violet"
+msgstr ""
 
 #
 msgid "wait for ci..."

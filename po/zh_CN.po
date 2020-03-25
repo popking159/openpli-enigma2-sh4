@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: tuxbox-enigma 0.0.1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-01-31 14:53+0200\n"
+"POT-Creation-Date: 2020-03-22 22:37+0100\n"
 "PO-Revision-Date: 2016-06-17 12:13+0800\n"
 "Last-Translator: nx111 <gdzdz@163.com>\n"
 "Language-Team: NEWBOLT\n"
@@ -1351,11 +1351,11 @@ msgstr ""
 msgid "Begin time"
 msgstr "开始时间"
 
-msgid "Behavior of 'pause and ok' when paused"
-msgstr ""
-
 msgid "Behavior of '0' button in PiP mode"
 msgstr "按 0 键启用画中画模式"
+
+msgid "Behavior of 'pause and ok' when paused"
+msgstr ""
 
 msgid "Behavior when a movie is started"
 msgstr "当电影开始时"
@@ -1426,6 +1426,9 @@ msgid "Boot to Android image"
 msgstr ""
 
 msgid "Boot to Recovery menu"
+msgstr ""
+
+msgid "Bootup time"
 msgstr ""
 
 msgid "Bosnia and Herzegovina"
@@ -3060,9 +3063,9 @@ msgstr ""
 msgid "ERROR - failed to scan (%s)!"
 msgstr "错误 - 扫描 (%s)失败!"
 
-#, fuzzy, python-format
+#, python-format
 msgid "ERROR downloading file %s"
-msgstr "正在下载歌词"
+msgstr ""
 
 msgid "East"
 msgstr "东"
@@ -3549,6 +3552,9 @@ msgid "External subtitle dialog colorisation"
 msgstr ""
 
 msgid "External subtitle switch fonts"
+msgstr ""
+
+msgid "Externally powered"
 msgstr ""
 
 msgid "Extra end time to ignore inactivity sleeptimer"
@@ -5213,8 +5219,8 @@ msgid "MultiType"
 msgstr "多媒体"
 
 #, fuzzy
-msgid "Multiboot"
-msgstr "多星"
+msgid "Multiboot image selector"
+msgstr "自动语言选择"
 
 msgid "Multichannel PCM"
 msgstr ""
@@ -5712,6 +5718,15 @@ msgid "Open setup tuner "
 msgstr ""
 
 msgid "Open the movie list"
+msgstr ""
+
+msgid "Operating LED status in deep standby mode"
+msgstr ""
+
+msgid "Operating LED status in standby mode"
+msgstr ""
+
+msgid "Operating LED status while running."
 msgstr ""
 
 msgid "Opkg"
@@ -7359,14 +7374,6 @@ msgstr ""
 msgid "Select HDD"
 msgstr "选择硬盘"
 
-#, fuzzy
-msgid "Select Image"
-msgstr "选择包"
-
-#, fuzzy
-msgid "Select Multiboot"
-msgstr "选择音频模式"
-
 msgid "Select Softcam"
 msgstr "选择Softcam"
 
@@ -7528,6 +7535,9 @@ msgstr ""
 msgid "Select the satellite your dish receives from. If you are unsure select 'automatic' and the receiver will attempt to determine this for you."
 msgstr ""
 
+msgid "Select the time zone within the area or region."
+msgstr ""
+
 msgid "Select the tuner that controls the motorised dish."
 msgstr ""
 
@@ -7564,6 +7574,9 @@ msgstr "用上下键选择视频"
 msgid "Select video mode"
 msgstr "设置视频模式"
 
+msgid "Select whether your SCR device is externally powered."
+msgstr ""
+
 msgid "Select wireless network"
 msgstr "选择无线网络"
 
@@ -7588,6 +7601,9 @@ msgid "Select your provider, and press OK to start the scan"
 msgstr "选择供应商，按OK开始扫描"
 
 msgid "Select your region. If not available change 'Country' to 'all' and select one of the default alternatives."
+msgstr ""
+
+msgid "Select your time zone area or region."
 msgstr ""
 
 msgid "Selecting satellites 1 (USALS)"
@@ -8698,6 +8714,15 @@ msgstr ""
 msgid "Switch channel up"
 msgstr ""
 
+msgid "Switch off the display during Standby Mode"
+msgstr ""
+
+msgid "Switch off the display during Suspend Mode"
+msgstr ""
+
+msgid "Switch off the display during operation."
+msgstr ""
+
 msgid "Switch to TV mode"
 msgstr ""
 
@@ -9231,6 +9256,14 @@ msgstr "时间"
 
 msgid "Time scale"
 msgstr ""
+
+#, fuzzy
+msgid "Time zone"
+msgstr "时区"
+
+#, fuzzy
+msgid "Time zone area"
+msgstr "时区"
 
 msgid "Timer"
 msgstr "定时器"
@@ -10362,6 +10395,18 @@ msgid "With errors:"
 msgstr ""
 
 msgid "With popup"
+msgstr ""
+
+msgid "With this option you can switch off the display during operation."
+msgstr ""
+
+msgid "With this option you can switch off the display in Deep Standby Mode."
+msgstr ""
+
+msgid "With this option you can switch off the display in Standby Mode."
+msgstr ""
+
+msgid "With this option you can switch the LED color or deactivate the LED."
 msgstr ""
 
 msgid "Without popup"
@@ -11636,6 +11681,9 @@ msgstr ""
 
 msgid "vertical"
 msgstr "垂直"
+
+msgid "violet"
+msgstr ""
 
 msgid "wait for ci..."
 msgstr "等待CI..."

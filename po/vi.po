@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: enigma 2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-01-31 14:53+0200\n"
+"POT-Creation-Date: 2020-03-22 22:37+0100\n"
 "PO-Revision-Date: 2019-11-19 08:58+0700\n"
 "Last-Translator: krong\n"
 "Language-Team: none\n"
@@ -1363,11 +1363,11 @@ msgstr "Basque"
 msgid "Begin time"
 msgstr "Thời gian bắt đầu"
 
-msgid "Behavior of 'pause and ok' when paused"
-msgstr "Hành vi của 'tạm dừng và ok' khi tạm dừng"
-
 msgid "Behavior of '0' button in PiP mode"
 msgstr "Hành vi của phím 0 trong chế độ PiP"
+
+msgid "Behavior of 'pause and ok' when paused"
+msgstr "Hành vi của 'tạm dừng và ok' khi tạm dừng"
 
 msgid "Behavior when a movie is started"
 msgstr "Hành vi khi một bộ phim được bắt đầu"
@@ -1437,6 +1437,10 @@ msgstr "Khởi động hình ảnh Android"
 
 msgid "Boot to Recovery menu"
 msgstr "Menu khởi động vào Recovery"
+
+#, fuzzy
+msgid "Bootup time"
+msgstr "Sắp xếp thời gian"
 
 msgid "Bosnia and Herzegovina"
 msgstr "Bosnia và Herzegovina"
@@ -3065,7 +3069,7 @@ msgstr "ERROR - failed to scan (%s)!"
 
 #, python-format
 msgid "ERROR downloading file %s"
-msgstr "Tải xuống tệp LRI%s"
+msgstr ""
 
 msgid "East"
 msgstr "Đông"
@@ -3349,9 +3353,9 @@ msgstr "Eritrea"
 msgid "Error"
 msgstr "Lỗi"
 
-#, python-format
+#, fuzzy, python-format
 msgid "Error %s"
-msgstr "Lỗi%s"
+msgstr "Lỗi"
 
 msgid "Error code"
 msgstr "Mã lỗi"
@@ -3386,10 +3390,13 @@ msgid "Error stop stream!"
 msgstr "Lỗi dừng luồng!"
 
 msgid "Error when writing epg.dat on server"
-msgstr "Lỗi khi viết epg.dat trên máy chủ"
+msgstr ""
 
+#, fuzzy
 msgid "Error while retreiving epg.dat from server"
-msgstr "Lỗi khi truy xuất epg.data từ máy chủ"
+msgstr ""
+"Lỗi trong khi truy xuất thông tin hẹn giờ dự phòng\n"
+"%s"
 
 #, python-format
 msgid ""
@@ -3399,8 +3406,11 @@ msgstr ""
 "Lỗi trong khi truy xuất thông tin hẹn giờ dự phòng\n"
 "%s"
 
+#, fuzzy
 msgid "Error while retreiving location of epg.dat on server"
-msgstr "Lỗi trong khi truy xuất vị trí của epg.data trên máy chủ"
+msgstr ""
+"Lỗi trong khi truy xuất thông tin hẹn giờ dự phòng\n"
+"%s"
 
 #, python-format
 msgid ""
@@ -3554,6 +3564,10 @@ msgstr "Màu sắc hộp thoại phụ đề bên ngoài"
 
 msgid "External subtitle switch fonts"
 msgstr "Phông chữ chuyển đổi phụ đề bên ngoài"
+
+#, fuzzy
+msgid "Externally powered"
+msgstr "Bộ nhớ ngoài%s"
 
 msgid "Extra end time to ignore inactivity sleeptimer"
 msgstr "Thêm thời gian kết thúc để bỏ qua sleeptimer không hoạt động"
@@ -5203,8 +5217,9 @@ msgstr "Lựa chọn bó hoa đa EPG"
 msgid "MultiType"
 msgstr "Đa loại"
 
-msgid "Multiboot"
-msgstr "Đa khởi động"
+#, fuzzy
+msgid "Multiboot image selector"
+msgstr "Nhiều lựa chọn tất cả"
 
 msgid "Multichannel PCM"
 msgstr "PCM đa kênh"
@@ -5410,7 +5425,7 @@ msgid "No displayable files on this medium found!"
 msgstr "Không tìm thấy tập tin nào trên phương tiện này!"
 
 msgid "No epg.dat file found server"
-msgstr "Không tìm thấy tập tin epg.dat"
+msgstr ""
 
 msgid "No event info found, recording indefinitely."
 msgstr "Không tìm thấy thông tin sự kiện, ghi lại vô thời hạn."
@@ -5692,6 +5707,15 @@ msgstr "Mở bộ chỉnh cài đặt "
 
 msgid "Open the movie list"
 msgstr "Mở danh sách phim"
+
+msgid "Operating LED status in deep standby mode"
+msgstr ""
+
+msgid "Operating LED status in standby mode"
+msgstr ""
+
+msgid "Operating LED status while running."
+msgstr ""
 
 msgid "Opkg"
 msgstr ""
@@ -7313,12 +7337,6 @@ msgstr "Chọn Fast DiSEqC nếu hệ thống trên không của bạn hỗ tr�
 msgid "Select HDD"
 msgstr "Chọn ổ cứng"
 
-msgid "Select Image"
-msgstr "Chọn ảnh"
-
-msgid "Select Multiboot"
-msgstr "Chọn đa khởi động"
-
 msgid "Select Softcam"
 msgstr "Chọn Softcam"
 
@@ -7476,6 +7494,10 @@ msgstr "Chọn vệ tinh bạn muốn cấu hình. Khi vệ tinh đó được �
 msgid "Select the satellite your dish receives from. If you are unsure select 'automatic' and the receiver will attempt to determine this for you."
 msgstr "Chọn vệ tinh mà món ăn của bạn nhận được từ. Nếu bạn không chắc chắn, hãy chọn 'tự động' và người nhận sẽ cố gắng xác định điều này cho bạn."
 
+#, fuzzy
+msgid "Select the time zone within the area or region."
+msgstr "Chọn độ phân giải ngang:"
+
 msgid "Select the tuner that controls the motorised dish."
 msgstr "Chọn bộ chỉnh điều khiển đĩa cơ giới."
 
@@ -7512,6 +7534,9 @@ msgstr "Chọn đầu vào video với các nút lên / xuống"
 msgid "Select video mode"
 msgstr "Chọn chế độ video"
 
+msgid "Select whether your SCR device is externally powered."
+msgstr ""
+
 msgid "Select wireless network"
 msgstr "Chọn mạng không dây"
 
@@ -7536,6 +7561,10 @@ msgstr "Chọn nhà cung cấp của bạn và nhấn OK để bắt đầu qué
 
 msgid "Select your region. If not available change 'Country' to 'all' and select one of the default alternatives."
 msgstr "Chọn vùng của bạn. Nếu không có sẵn, hãy thay đổi 'Quốc gia' thành 'tất cả' và chọn một trong các lựa chọn thay thế mặc định."
+
+#, fuzzy
+msgid "Select your time zone area or region."
+msgstr "Chọn độ phân giải ngang:"
 
 msgid "Selecting satellites 1 (USALS)"
 msgstr "Chọn vệ tinh 1 (USALS)"
@@ -8632,6 +8661,16 @@ msgstr "Chuyển kênh xuống"
 msgid "Switch channel up"
 msgstr "Chuyển kênh lên"
 
+msgid "Switch off the display during Standby Mode"
+msgstr ""
+
+msgid "Switch off the display during Suspend Mode"
+msgstr ""
+
+#, fuzzy
+msgid "Switch off the display during operation."
+msgstr "Xem danh sách các phần mở rộng hiển thị và giao diện người dùng."
+
 msgid "Switch to TV mode"
 msgstr "Chuyển sang chế độ TV"
 
@@ -9208,6 +9247,14 @@ msgstr "Thời gian"
 
 msgid "Time scale"
 msgstr "Quy mô thời gian"
+
+#, fuzzy
+msgid "Time zone"
+msgstr "Múi giờ"
+
+#, fuzzy
+msgid "Time zone area"
+msgstr "Múi giờ"
 
 msgid "Timer"
 msgstr "Hẹn giờ"
@@ -10346,6 +10393,20 @@ msgstr "Có lỗi:"
 
 msgid "With popup"
 msgstr "Với cửa sổ bật lên"
+
+#, fuzzy
+msgid "With this option you can switch off the display during operation."
+msgstr "Tùy chọn này cho phép bạn tắt nguồn màn hình."
+
+msgid "With this option you can switch off the display in Deep Standby Mode."
+msgstr ""
+
+#, fuzzy
+msgid "With this option you can switch off the display in Standby Mode."
+msgstr "Tùy chọn này cho phép bạn tắt nguồn màn hình."
+
+msgid "With this option you can switch the LED color or deactivate the LED."
+msgstr ""
 
 msgid "Without popup"
 msgstr "Không có cửa sổ bật lên"
@@ -11635,6 +11696,9 @@ msgstr "chương trình tạp kỹ"
 
 msgid "vertical"
 msgstr "theo chiều dọc"
+
+msgid "violet"
+msgstr ""
 
 msgid "wait for ci..."
 msgstr "chờ tôi ..."

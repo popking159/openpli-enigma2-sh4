@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: enigma2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-01-31 14:53+0200\n"
+"POT-Creation-Date: 2020-03-22 22:37+0100\n"
 "PO-Revision-Date: 2013-10-23 19:15+0100\n"
 "Last-Translator: andy1 <dmmm8000pvr@gmail.com>\n"
 "Language-Team: none\n"
@@ -1486,12 +1486,12 @@ msgstr "Baskisk"
 msgid "Begin time"
 msgstr "Starttid"
 
-msgid "Behavior of 'pause and ok' when paused"
-msgstr ""
-
 #
 msgid "Behavior of '0' button in PiP mode"
 msgstr "Innstilling for 0 knapp i PiP (bilde i bilde modus)"
+
+msgid "Behavior of 'pause and ok' when paused"
+msgstr ""
 
 msgid "Behavior when a movie is started"
 msgstr "Innstilling når en film startes"
@@ -1568,6 +1568,11 @@ msgstr ""
 
 msgid "Boot to Recovery menu"
 msgstr ""
+
+#
+#, fuzzy
+msgid "Bootup time"
+msgstr "Sortere tid"
 
 msgid "Bosnia and Herzegovina"
 msgstr ""
@@ -3920,6 +3925,9 @@ msgstr ""
 msgid "External subtitle switch fonts"
 msgstr ""
 
+msgid "Externally powered"
+msgstr ""
+
 msgid "Extra end time to ignore inactivity sleeptimer"
 msgstr ""
 
@@ -5744,10 +5752,9 @@ msgstr "Fullstendig EPG kanallisteutvalg"
 msgid "MultiType"
 msgstr "Type"
 
-#
 #, fuzzy
-msgid "Multiboot"
-msgstr "Multisat"
+msgid "Multiboot image selector"
+msgstr "Språkvalg innstilling"
 
 msgid "Multichannel PCM"
 msgstr ""
@@ -6306,6 +6313,15 @@ msgstr ""
 
 msgid "Open the movie list"
 msgstr "Åpne spillisten"
+
+msgid "Operating LED status in deep standby mode"
+msgstr ""
+
+msgid "Operating LED status in standby mode"
+msgstr ""
+
+msgid "Operating LED status while running."
+msgstr ""
 
 msgid "Opkg"
 msgstr ""
@@ -8103,15 +8119,6 @@ msgid "Select HDD"
 msgstr "Velg hdd/ssd"
 
 #, fuzzy
-msgid "Select Image"
-msgstr "Velg opptak"
-
-#
-#, fuzzy
-msgid "Select Multiboot"
-msgstr "Velg lydspor"
-
-#, fuzzy
 msgid "Select Softcam"
 msgstr "Velg en film"
 
@@ -8286,6 +8293,9 @@ msgstr ""
 msgid "Select the satellite your dish receives from. If you are unsure select 'automatic' and the receiver will attempt to determine this for you."
 msgstr ""
 
+msgid "Select the time zone within the area or region."
+msgstr ""
+
 msgid "Select the tuner that controls the motorised dish."
 msgstr ""
 
@@ -8323,6 +8333,9 @@ msgstr "Velg videoinngang med opp/ned tastene"
 msgid "Select video mode"
 msgstr "Velg video modus"
 
+msgid "Select whether your SCR device is externally powered."
+msgstr ""
+
 #
 msgid "Select wireless network"
 msgstr "Velg trådløst nettverk"
@@ -8350,6 +8363,9 @@ msgid "Select your provider, and press OK to start the scan"
 msgstr "Velg leverandør og trykk OK for å starte søk"
 
 msgid "Select your region. If not available change 'Country' to 'all' and select one of the default alternatives."
+msgstr ""
+
+msgid "Select your time zone area or region."
 msgstr ""
 
 msgid "Selecting satellites 1 (USALS)"
@@ -9564,6 +9580,16 @@ msgstr ""
 msgid "Switch channel up"
 msgstr ""
 
+msgid "Switch off the display during Standby Mode"
+msgstr ""
+
+msgid "Switch off the display during Suspend Mode"
+msgstr ""
+
+#, fuzzy
+msgid "Switch off the display during operation."
+msgstr "Vis en liste over alle brukergrensesnitt og skjermvalg"
+
 msgid "Switch to TV mode"
 msgstr ""
 
@@ -10170,6 +10196,16 @@ msgstr "Tid"
 #
 msgid "Time scale"
 msgstr "Tids måler"
+
+#
+#, fuzzy
+msgid "Time zone"
+msgstr "Tidssone"
+
+#
+#, fuzzy
+msgid "Time zone area"
+msgstr "Tidssone"
 
 #
 msgid "Timer"
@@ -11423,6 +11459,18 @@ msgstr ""
 
 msgid "With popup"
 msgstr "Med varsel"
+
+msgid "With this option you can switch off the display during operation."
+msgstr ""
+
+msgid "With this option you can switch off the display in Deep Standby Mode."
+msgstr ""
+
+msgid "With this option you can switch off the display in Standby Mode."
+msgstr ""
+
+msgid "With this option you can switch the LED color or deactivate the LED."
+msgstr ""
 
 msgid "Without popup"
 msgstr "Uten varsel"
@@ -12858,6 +12906,9 @@ msgstr "varieté show"
 #
 msgid "vertical"
 msgstr "vertikal"
+
+msgid "violet"
+msgstr ""
 
 #
 msgid "wait for ci..."

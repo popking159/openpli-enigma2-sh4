@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: enigma2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-01-31 14:53+0200\n"
+"POT-Creation-Date: 2020-03-22 22:37+0100\n"
 "PO-Revision-Date: 2011-04-14 00:02+0200\n"
 "Last-Translator: majevica <jovanovic@gmx.ch>\n"
 "Language-Team: veselin & majevica CRNABERZA <jovanovic@gmx.ch>\n"
@@ -1580,12 +1580,12 @@ msgstr ""
 msgid "Begin time"
 msgstr "Početno vreme"
 
-msgid "Behavior of 'pause and ok' when paused"
-msgstr ""
-
 #
 msgid "Behavior of '0' button in PiP mode"
 msgstr "Uloga tipke 0 u SuS-modu"
+
+msgid "Behavior of 'pause and ok' when paused"
+msgstr ""
 
 #
 msgid "Behavior when a movie is started"
@@ -1665,6 +1665,11 @@ msgstr ""
 
 msgid "Boot to Recovery menu"
 msgstr ""
+
+#
+#, fuzzy
+msgid "Bootup time"
+msgstr "Vreme sortiranja"
 
 msgid "Bosnia and Herzegovina"
 msgstr ""
@@ -4134,6 +4139,9 @@ msgstr ""
 msgid "External subtitle switch fonts"
 msgstr ""
 
+msgid "Externally powered"
+msgstr ""
+
 msgid "Extra end time to ignore inactivity sleeptimer"
 msgstr ""
 
@@ -6061,10 +6069,9 @@ msgstr "Multi EPG izbor buketa"
 msgid "MultiType"
 msgstr "Multimedija"
 
-#
 #, fuzzy
-msgid "Multiboot"
-msgstr "Multisat"
+msgid "Multiboot image selector"
+msgstr "Multi EPG izbor buketa"
 
 msgid "Multichannel PCM"
 msgstr ""
@@ -6653,6 +6660,15 @@ msgstr ""
 #, fuzzy
 msgid "Open the movie list"
 msgstr "Vratite se na listu filmova"
+
+msgid "Operating LED status in deep standby mode"
+msgstr ""
+
+msgid "Operating LED status in standby mode"
+msgstr ""
+
+msgid "Operating LED status while running."
+msgstr ""
 
 msgid "Opkg"
 msgstr ""
@@ -8596,16 +8612,6 @@ msgstr "Odaberi hard disk"
 
 #
 #, fuzzy
-msgid "Select Image"
-msgstr "Odaberi film"
-
-#
-#, fuzzy
-msgid "Select Multiboot"
-msgstr "Odaberite zvučni zapis"
-
-#
-#, fuzzy
 msgid "Select Softcam"
 msgstr "Odaberi film"
 
@@ -8799,6 +8805,9 @@ msgstr ""
 msgid "Select the satellite your dish receives from. If you are unsure select 'automatic' and the receiver will attempt to determine this for you."
 msgstr ""
 
+msgid "Select the time zone within the area or region."
+msgstr ""
+
 msgid "Select the tuner that controls the motorised dish."
 msgstr ""
 
@@ -8840,6 +8849,9 @@ msgstr "Izaberi video ulaz sa UP/DOWN tipkama"
 msgid "Select video mode"
 msgstr "Izaberi video mod"
 
+msgid "Select whether your SCR device is externally powered."
+msgstr ""
+
 #
 msgid "Select wireless network"
 msgstr "Izaberite bežičnu mrežu"
@@ -8867,6 +8879,9 @@ msgid "Select your provider, and press OK to start the scan"
 msgstr ""
 
 msgid "Select your region. If not available change 'Country' to 'all' and select one of the default alternatives."
+msgstr ""
+
+msgid "Select your time zone area or region."
 msgstr ""
 
 msgid "Selecting satellites 1 (USALS)"
@@ -10175,6 +10190,17 @@ msgstr ""
 msgid "Switch channel up"
 msgstr ""
 
+msgid "Switch off the display during Standby Mode"
+msgstr ""
+
+msgid "Switch off the display during Suspend Mode"
+msgstr ""
+
+#
+#, fuzzy
+msgid "Switch off the display during operation."
+msgstr "Vidi listu mogućih proširenja za displej i korisnički interfejs"
+
 msgid "Switch to TV mode"
 msgstr ""
 
@@ -10810,6 +10836,16 @@ msgstr "Vreme"
 #, fuzzy
 msgid "Time scale"
 msgstr "Izbor tajmera "
+
+#
+#, fuzzy
+msgid "Time zone"
+msgstr "Vremenska zona"
+
+#
+#, fuzzy
+msgid "Time zone area"
+msgstr "Vremenska zona"
 
 #
 msgid "Timer"
@@ -12121,6 +12157,18 @@ msgid "With errors:"
 msgstr ""
 
 msgid "With popup"
+msgstr ""
+
+msgid "With this option you can switch off the display during operation."
+msgstr ""
+
+msgid "With this option you can switch off the display in Deep Standby Mode."
+msgstr ""
+
+msgid "With this option you can switch off the display in Standby Mode."
+msgstr ""
+
+msgid "With this option you can switch the LED color or deactivate the LED."
 msgstr ""
 
 msgid "Without popup"
@@ -13571,6 +13619,9 @@ msgstr ""
 #
 msgid "vertical"
 msgstr "vertikalno"
+
+msgid "violet"
+msgstr ""
 
 #
 msgid "wait for ci..."

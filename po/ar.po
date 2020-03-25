@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: enigma2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-01-31 14:53+0200\n"
+"POT-Creation-Date: 2020-03-22 22:37+0100\n"
 "PO-Revision-Date: 2018-12-17 02:51+0200\n"
 "Last-Translator: Hazem <moustafagamal@hotmail.com>\n"
 "Language-Team: Arabic <moustafagamal@hotmail.com>\n"
@@ -1477,11 +1477,11 @@ msgstr ""
 msgid "Begin time"
 msgstr "وقت البدأ"
 
-msgid "Behavior of 'pause and ok' when paused"
-msgstr ""
-
 msgid "Behavior of '0' button in PiP mode"
 msgstr "سلوك الذر 0 فى وضعية صوره داخل صوره"
+
+msgid "Behavior of 'pause and ok' when paused"
+msgstr ""
 
 #
 msgid "Behavior when a movie is started"
@@ -1558,6 +1558,11 @@ msgstr ""
 
 msgid "Boot to Recovery menu"
 msgstr ""
+
+#
+#, fuzzy
+msgid "Bootup time"
+msgstr "تصنيف الوقت"
 
 msgid "Bosnia and Herzegovina"
 msgstr "البوسنة والهرسك"
@@ -3771,6 +3776,9 @@ msgstr ""
 msgid "External subtitle switch fonts"
 msgstr ""
 
+msgid "Externally powered"
+msgstr ""
+
 msgid "Extra end time to ignore inactivity sleeptimer"
 msgstr ""
 
@@ -5571,10 +5579,9 @@ msgstr ""
 msgid "MultiType"
 msgstr "وسائط متعدده"
 
-#
 #, fuzzy
-msgid "Multiboot"
-msgstr "عدة أقمار"
+msgid "Multiboot image selector"
+msgstr "اختيار اللغة التلقائي"
 
 msgid "Multichannel PCM"
 msgstr ""
@@ -6114,6 +6121,15 @@ msgstr ""
 #, fuzzy
 msgid "Open the movie list"
 msgstr "العودة الى قائمة الأفلام"
+
+msgid "Operating LED status in deep standby mode"
+msgstr ""
+
+msgid "Operating LED status in standby mode"
+msgstr ""
+
+msgid "Operating LED status while running."
+msgstr ""
 
 msgid "Opkg"
 msgstr ""
@@ -7867,13 +7883,6 @@ msgid "Select HDD"
 msgstr "اختيار القرص الصلب"
 
 #
-msgid "Select Image"
-msgstr "اختيار الصورة"
-
-msgid "Select Multiboot"
-msgstr "اختيار الإقلاع المتعدد"
-
-#
 msgid "Select Softcam"
 msgstr "اختيار سوفتكام"
 
@@ -8044,6 +8053,9 @@ msgstr ""
 msgid "Select the satellite your dish receives from. If you are unsure select 'automatic' and the receiver will attempt to determine this for you."
 msgstr ""
 
+msgid "Select the time zone within the area or region."
+msgstr ""
+
 msgid "Select the tuner that controls the motorised dish."
 msgstr ""
 
@@ -8082,6 +8094,9 @@ msgstr "أختيار مدخل الفيديو بأزرار أعلى/أسفا"
 msgid "Select video mode"
 msgstr "أختيار اسلوب الفيديو"
 
+msgid "Select whether your SCR device is externally powered."
+msgstr ""
+
 msgid "Select wireless network"
 msgstr "اختيار الشبكة اللاسلكية"
 
@@ -8106,6 +8121,9 @@ msgid "Select your provider, and press OK to start the scan"
 msgstr ""
 
 msgid "Select your region. If not available change 'Country' to 'all' and select one of the default alternatives."
+msgstr ""
+
+msgid "Select your time zone area or region."
 msgstr ""
 
 msgid "Selecting satellites 1 (USALS)"
@@ -9312,6 +9330,16 @@ msgstr ""
 msgid "Switch channel up"
 msgstr ""
 
+msgid "Switch off the display during Standby Mode"
+msgstr ""
+
+msgid "Switch off the display during Suspend Mode"
+msgstr ""
+
+#, fuzzy
+msgid "Switch off the display during operation."
+msgstr "عرض قائمة بملحقات(إضافات) العرض وواجهة المستخدم المتاحة"
+
 msgid "Switch to TV mode"
 msgstr ""
 
@@ -9915,6 +9943,16 @@ msgstr "وقت"
 #, fuzzy
 msgid "Time scale"
 msgstr "إختيار المؤقت"
+
+#
+#, fuzzy
+msgid "Time zone"
+msgstr "منطقه الوقت"
+
+#
+#, fuzzy
+msgid "Time zone area"
+msgstr "منطقه الوقت"
 
 #
 msgid "Timer"
@@ -11142,6 +11180,18 @@ msgid "With errors:"
 msgstr ""
 
 msgid "With popup"
+msgstr ""
+
+msgid "With this option you can switch off the display during operation."
+msgstr ""
+
+msgid "With this option you can switch off the display in Deep Standby Mode."
+msgstr ""
+
+msgid "With this option you can switch off the display in Standby Mode."
+msgstr ""
+
+msgid "With this option you can switch the LED color or deactivate the LED."
 msgstr ""
 
 msgid "Without popup"
@@ -12477,6 +12527,9 @@ msgstr ""
 #
 msgid "vertical"
 msgstr "رأسى"
+
+msgid "violet"
+msgstr ""
 
 #
 msgid "wait for ci..."

@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: enigma2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-01-31 14:53+0200\n"
+"POT-Creation-Date: 2020-03-22 22:37+0100\n"
 "PO-Revision-Date: \n"
 "Last-Translator: Budiarno Pedode\n"
 "Language-Team: \n"
@@ -1389,11 +1389,11 @@ msgstr "Lapisan"
 msgid "Begin time"
 msgstr "Waktu mulai"
 
-msgid "Behavior of 'pause and ok' when paused"
-msgstr "Fungsi tombol 'pause dan ok' saat posisi jeda"
-
 msgid "Behavior of '0' button in PiP mode"
 msgstr "Fungsi tombol 0 pada mode PiP"
+
+msgid "Behavior of 'pause and ok' when paused"
+msgstr "Fungsi tombol 'pause dan ok' saat posisi jeda"
 
 msgid "Behavior when a movie is started"
 msgstr "Ketika film dimulai lakukan"
@@ -1465,6 +1465,10 @@ msgstr ""
 
 msgid "Boot to Recovery menu"
 msgstr ""
+
+#, fuzzy
+msgid "Bootup time"
+msgstr "Pilah waktu"
 
 msgid "Bosnia and Herzegovina"
 msgstr ""
@@ -3122,7 +3126,7 @@ msgstr "Kesalahan - gagal melacak (%s)!"
 
 #, python-format
 msgid "ERROR downloading file %s"
-msgstr "Pengunduhan berkas %s error"
+msgstr ""
 
 msgid "East"
 msgstr "Timur"
@@ -3416,7 +3420,7 @@ msgstr "Kesalahan"
 
 #, fuzzy, python-format
 msgid "Error %s"
-msgstr "Kesalahan %s"
+msgstr "Kesalahan"
 
 msgid "Error code"
 msgstr "Kode kesalahan"
@@ -3451,10 +3455,13 @@ msgid "Error stop stream!"
 msgstr "Kesalahan, hentikan stream!"
 
 msgid "Error when writing epg.dat on server"
-msgstr "Kesalahan saat menulis epg.dat pada server"
+msgstr ""
 
+#, fuzzy
 msgid "Error while retreiving epg.dat from server"
-msgstr "Kesalahan ketika mengambil epg.dat dari server"
+msgstr ""
+"Kesalahan ketika mengambil informasi pewaktu mundur\n"
+"%s"
 
 #, python-format
 msgid ""
@@ -3464,8 +3471,11 @@ msgstr ""
 "Kesalahan ketika mengambil informasi pewaktu mundur\n"
 "%s"
 
+#, fuzzy
 msgid "Error while retreiving location of epg.dat on server"
-msgstr "Kesalahan ketika mengambil lokasi epg.dat pada server"
+msgstr ""
+"Kesalahan ketika mengambil informasi pewaktu mundur\n"
+"%s"
 
 #, python-format
 msgid ""
@@ -3622,6 +3632,10 @@ msgstr "Pewarnaan dialog pada terjemahan dari luar"
 
 msgid "External subtitle switch fonts"
 msgstr "Pertukaran jenis huruf terjemahan dari luar"
+
+#, fuzzy
+msgid "Externally powered"
+msgstr "Ruang penyimpanan Luar %s"
 
 msgid "Extra end time to ignore inactivity sleeptimer"
 msgstr "Batas waktu tambahan untuk mengabaikan pewaktu tidur yg tidak aktif"
@@ -5325,8 +5339,8 @@ msgid "MultiType"
 msgstr "Multimedia"
 
 #, fuzzy
-msgid "Multiboot"
-msgstr "Bootbanyak"
+msgid "Multiboot image selector"
+msgstr "Banyak satelit dipilih semua"
 
 msgid "Multichannel PCM"
 msgstr "Kanal multi PCM"
@@ -5534,7 +5548,7 @@ msgid "No displayable files on this medium found!"
 msgstr "Tidak ditemukan file yang bisa dilihat pada medium ini!"
 
 msgid "No epg.dat file found server"
-msgstr "Tidak ditemukan epg.dat pada server"
+msgstr ""
 
 msgid "No event info found, recording indefinitely."
 msgstr "Info acara tidak ditemukan, merekam tanpa batas waktu."
@@ -5826,6 +5840,15 @@ msgstr "Buka pengaturan penala"
 
 msgid "Open the movie list"
 msgstr "Buka daftar film"
+
+msgid "Operating LED status in deep standby mode"
+msgstr ""
+
+msgid "Operating LED status in standby mode"
+msgstr ""
+
+msgid "Operating LED status while running."
+msgstr ""
 
 msgid "Opkg"
 msgstr ""
@@ -7483,14 +7506,6 @@ msgid "Select HDD"
 msgstr "Pilih HDD"
 
 #, fuzzy
-msgid "Select Image"
-msgstr "Pilih Image"
-
-#, fuzzy
-msgid "Select Multiboot"
-msgstr "Pilih Multiboot"
-
-#, fuzzy
 msgid "Select Softcam"
 msgstr "Pilih Softcam"
 
@@ -7652,6 +7667,10 @@ msgstr "Pilih satelit yg ingin anda setel. Setelah satelit tsb disetel, anda bis
 msgid "Select the satellite your dish receives from. If you are unsure select 'automatic' and the receiver will attempt to determine this for you."
 msgstr "Pilih satelit yg diterima parabola anda. Jika anda tidak yakin, pilih 'otomatis' dan Rx akan mencoba menentukannya untuk anda."
 
+#, fuzzy
+msgid "Select the time zone within the area or region."
+msgstr "Pilih resolusi horizontal:"
+
 msgid "Select the tuner that controls the motorised dish."
 msgstr "Pilih penala yang mengatur parabola bergerak."
 
@@ -7689,6 +7708,9 @@ msgstr "Pilih input video dengan tombol up/down"
 msgid "Select video mode"
 msgstr "Pilih mode video"
 
+msgid "Select whether your SCR device is externally powered."
+msgstr ""
+
 msgid "Select wireless network"
 msgstr "Pilih jaringan nirkabel"
 
@@ -7714,6 +7736,10 @@ msgstr "Pilih provider anda, dan tekan OK untuk mulai pelacakan"
 
 msgid "Select your region. If not available change 'Country' to 'all' and select one of the default alternatives."
 msgstr "Pilih wilayah anda. Jika tidak tersedia, ganti 'Negara' ke 'semua' dan pilih satu dari alternatif bawaan."
+
+#, fuzzy
+msgid "Select your time zone area or region."
+msgstr "Pilih resolusi horizontal:"
 
 msgid "Selecting satellites 1 (USALS)"
 msgstr "Memilih satelit 1 (USALS)"
@@ -8834,6 +8860,16 @@ msgstr "Ganti kanal bawah"
 msgid "Switch channel up"
 msgstr "Ganti kanal atas"
 
+msgid "Switch off the display during Standby Mode"
+msgstr ""
+
+msgid "Switch off the display during Suspend Mode"
+msgstr ""
+
+#, fuzzy
+msgid "Switch off the display during operation."
+msgstr "Tinjau daftar ketersedaan ekstensi penampil dan antarmuka pengguna."
+
 msgid "Switch to TV mode"
 msgstr "Beralih ke mode TV"
 
@@ -9421,6 +9457,14 @@ msgstr "Waktu"
 
 msgid "Time scale"
 msgstr "Rentang waktu"
+
+#, fuzzy
+msgid "Time zone"
+msgstr "Zona Waktu"
+
+#, fuzzy
+msgid "Time zone area"
+msgstr "Zona Waktu"
 
 msgid "Timer"
 msgstr "Pewaktu"
@@ -10584,6 +10628,20 @@ msgstr "Dengan kesalahan:"
 
 msgid "With popup"
 msgstr "Dengan popup"
+
+#, fuzzy
+msgid "With this option you can switch off the display during operation."
+msgstr "Pilihan ini memungkinkan anda untuk mematikan layar."
+
+msgid "With this option you can switch off the display in Deep Standby Mode."
+msgstr ""
+
+#, fuzzy
+msgid "With this option you can switch off the display in Standby Mode."
+msgstr "Pilihan ini memungkinkan anda untuk mematikan layar."
+
+msgid "With this option you can switch the LED color or deactivate the LED."
+msgstr ""
 
 msgid "Without popup"
 msgstr "Tanpa popup"
@@ -11894,6 +11952,9 @@ msgstr "variety show"
 
 msgid "vertical"
 msgstr "vertical"
+
+msgid "violet"
+msgstr ""
 
 msgid "wait for ci..."
 msgstr "mengunggu ci..."

@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: enigma2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-01-31 14:53+0200\n"
+"POT-Creation-Date: 2020-03-22 22:37+0100\n"
 "PO-Revision-Date: 2020-02-10 12:49+0100\n"
 "Last-Translator: Andrej Tobola <andrej.tobola@gmail.com>\n"
 "Language-Team: \n"
@@ -1373,11 +1373,11 @@ msgstr "Baskicky"
 msgid "Begin time"
 msgstr "Čas začiatku"
 
-msgid "Behavior of 'pause and ok' when paused"
-msgstr "Funkcia tlačidiel Pauza a OK počas pauzy"
-
 msgid "Behavior of '0' button in PiP mode"
 msgstr "Funkcia tlačidla 0 v režime Obraz v obraze (PiP)"
+
+msgid "Behavior of 'pause and ok' when paused"
+msgstr "Funkcia tlačidiel Pauza a OK počas pauzy"
 
 msgid "Behavior when a movie is started"
 msgstr "Činnosť po spustení filmu"
@@ -1447,6 +1447,10 @@ msgstr "Štart do Android image"
 
 msgid "Boot to Recovery menu"
 msgstr "Štart do Recovery menu"
+
+#, fuzzy
+msgid "Bootup time"
+msgstr "Triediť podľa času"
 
 msgid "Bosnia and Herzegovina"
 msgstr "Bosna a Hercegovina"
@@ -3072,7 +3076,7 @@ msgstr "CHYBA - zlyhalo vyhľadávanie (%s)!"
 
 #, python-format
 msgid "ERROR downloading file %s"
-msgstr "Chyba sťahovania súboru %s"
+msgstr ""
 
 msgid "East"
 msgstr "Východne"
@@ -3356,9 +3360,9 @@ msgstr "Eritrea"
 msgid "Error"
 msgstr "Chyba"
 
-#, python-format
+#, fuzzy, python-format
 msgid "Error %s"
-msgstr "Chyba %s"
+msgstr "Chyba"
 
 msgid "Error code"
 msgstr "Kód chyby"
@@ -3393,10 +3397,13 @@ msgid "Error stop stream!"
 msgstr "Chyba zastavenia streamu!"
 
 msgid "Error when writing epg.dat on server"
-msgstr "Chyba počas zápisu epg.dat na server"
+msgstr ""
 
+#, fuzzy
 msgid "Error while retreiving epg.dat from server"
-msgstr "Chyba počas čítania epg.dat zo serveru"
+msgstr ""
+"Chyba počas načítania informácie záložného časovača\n"
+"%s"
 
 #, python-format
 msgid ""
@@ -3406,8 +3413,11 @@ msgstr ""
 "Chyba počas načítania informácie záložného časovača\n"
 "%s"
 
+#, fuzzy
 msgid "Error while retreiving location of epg.dat on server"
-msgstr "Chyba počas získavania umistnenia epg.dat na serveri"
+msgstr ""
+"Chyba počas načítania informácie záložného časovača\n"
+"%s"
 
 #, python-format
 msgid ""
@@ -3561,6 +3571,10 @@ msgstr "Farba dialógov externých titulkov"
 
 msgid "External subtitle switch fonts"
 msgstr "Prepnúť fonty externých titulkov"
+
+#, fuzzy
+msgid "Externally powered"
+msgstr "Externé dátové úložisko %s"
 
 msgid "Extra end time to ignore inactivity sleeptimer"
 msgstr "Zadajte extra časový rámec ignorovania nečinnosti časovača prechodu do pohotovostného režimu"
@@ -5208,8 +5222,9 @@ msgstr "Výber prehľadu pre Multi-EPG"
 msgid "MultiType"
 msgstr "MultiTyp"
 
-msgid "Multiboot"
-msgstr "Multiboot"
+#, fuzzy
+msgid "Multiboot image selector"
+msgstr "Zvoliť všetky satelity"
 
 msgid "Multichannel PCM"
 msgstr "Multikanál PCM"
@@ -5415,7 +5430,7 @@ msgid "No displayable files on this medium found!"
 msgstr "Na tomto médiu sa nenašli žiadne zobraziteľné súbory!"
 
 msgid "No epg.dat file found server"
-msgstr "Na serveri nenájdený epg.dat"
+msgstr ""
 
 msgid "No event info found, recording indefinitely."
 msgstr "Žiadne informácie z EPG, spúšťam nekonečné nahrávanie."
@@ -5697,6 +5712,15 @@ msgstr "Otvoriť nastavenia tunera "
 
 msgid "Open the movie list"
 msgstr "Otvoriť zoznam filmov"
+
+msgid "Operating LED status in deep standby mode"
+msgstr ""
+
+msgid "Operating LED status in standby mode"
+msgstr ""
+
+msgid "Operating LED status while running."
+msgstr ""
 
 msgid "Opkg"
 msgstr "Opkg"
@@ -7316,12 +7340,6 @@ msgstr "Vyberte 'Rýchly DiSEqC' ak to podporuje váš anténny systém. Ak si n
 msgid "Select HDD"
 msgstr "Zvoľte pevný disk"
 
-msgid "Select Image"
-msgstr "Vybrať image"
-
-msgid "Select Multiboot"
-msgstr "Zvoliť Multiboot"
-
 msgid "Select Softcam"
 msgstr "Voľba Softcamu"
 
@@ -7479,6 +7497,10 @@ msgstr "Vyberte satelit, ktorý chcete nastaviť. Po tom, čo bude tento satelit
 msgid "Select the satellite your dish receives from. If you are unsure select 'automatic' and the receiver will attempt to determine this for you."
 msgstr "Vyberte satelit, ktorý sa prijíma z vašej paraboly. Ak si nie ste istý, vyberte voľbu 'automaticky', prijímač sa to pokúsi zistiť za vás."
 
+#, fuzzy
+msgid "Select the time zone within the area or region."
+msgstr "Voľba horizontálneho rozlíšenia:"
+
 msgid "Select the tuner that controls the motorised dish."
 msgstr "Vyberte tuner, ktorý ovláda motorizovanú parabolu."
 
@@ -7515,6 +7537,9 @@ msgstr "Tlačidlami nahor a nadol zvoľte vstup obrazu"
 msgid "Select video mode"
 msgstr "Zvoľte režim obrazu"
 
+msgid "Select whether your SCR device is externally powered."
+msgstr ""
+
 msgid "Select wireless network"
 msgstr "Zvoľte bezdrôtovú sieť"
 
@@ -7539,6 +7564,10 @@ msgstr "Vyberte poskytovateľa a stlačte OK pre spustenie skenovania"
 
 msgid "Select your region. If not available change 'Country' to 'all' and select one of the default alternatives."
 msgstr "Vyberte váš región. Ak nie je dostupný, zmeňte krajinu na 'všetky' a zvolte jeden z predvolených alternatív."
+
+#, fuzzy
+msgid "Select your time zone area or region."
+msgstr "Voľba horizontálneho rozlíšenia:"
 
 msgid "Selecting satellites 1 (USALS)"
 msgstr "Výber satelitov 1 (USALS)"
@@ -8634,6 +8663,16 @@ msgstr "Prepnúť kanál dozadu"
 msgid "Switch channel up"
 msgstr "Prepnúť kanál dopredu"
 
+msgid "Switch off the display during Standby Mode"
+msgstr ""
+
+msgid "Switch off the display during Suspend Mode"
+msgstr ""
+
+#, fuzzy
+msgid "Switch off the display during operation."
+msgstr "Zobraziť zoznam dostupných rozšírení zobrazenia a užívateľského rozhrania."
+
 msgid "Switch to TV mode"
 msgstr "Prepnúť na mód TV"
 
@@ -9213,6 +9252,14 @@ msgstr "Čas"
 
 msgid "Time scale"
 msgstr "Časová mierka"
+
+#, fuzzy
+msgid "Time zone"
+msgstr "Časové pásmo"
+
+#, fuzzy
+msgid "Time zone area"
+msgstr "Časové pásmo"
 
 msgid "Timer"
 msgstr "Časovač"
@@ -10349,6 +10396,20 @@ msgstr "S chybami:"
 
 msgid "With popup"
 msgstr "S vyskakovacím oknom"
+
+#, fuzzy
+msgid "With this option you can switch off the display during operation."
+msgstr "Táto voľba umožňuje vypnutie obrazovky."
+
+msgid "With this option you can switch off the display in Deep Standby Mode."
+msgstr ""
+
+#, fuzzy
+msgid "With this option you can switch off the display in Standby Mode."
+msgstr "Táto voľba umožňuje vypnutie obrazovky."
+
+msgid "With this option you can switch the LED color or deactivate the LED."
+msgstr ""
 
 msgid "Without popup"
 msgstr "Bez vyskakovacieho okna"
@@ -11636,6 +11697,9 @@ msgstr "varieté"
 
 msgid "vertical"
 msgstr "vertikálna"
+
+msgid "violet"
+msgstr ""
 
 msgid "wait for ci..."
 msgstr "čakať na ci..."

@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: tuxbox-enigma 0.0.1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-01-31 14:53+0200\n"
+"POT-Creation-Date: 2020-03-22 22:37+0100\n"
 "PO-Revision-Date: 2012-03-08 10:40+0330\n"
 "Last-Translator: \n"
 "Language-Team: Arabic <moustafagamal@hotmail.com>\n"
@@ -1466,11 +1466,11 @@ msgstr ""
 msgid "Begin time"
 msgstr "Begin time"
 
-msgid "Behavior of 'pause and ok' when paused"
-msgstr ""
-
 msgid "Behavior of '0' button in PiP mode"
 msgstr "פעולת מקש ה - 0 במצב תמונה בתוך תמונה"
+
+msgid "Behavior of 'pause and ok' when paused"
+msgstr ""
 
 #
 msgid "Behavior when a movie is started"
@@ -1548,6 +1548,11 @@ msgstr ""
 
 msgid "Boot to Recovery menu"
 msgstr ""
+
+#
+#, fuzzy
+msgid "Bootup time"
+msgstr "Sort Time"
 
 msgid "Bosnia and Herzegovina"
 msgstr ""
@@ -3814,6 +3819,9 @@ msgstr ""
 msgid "External subtitle switch fonts"
 msgstr ""
 
+msgid "Externally powered"
+msgstr ""
+
 msgid "Extra end time to ignore inactivity sleeptimer"
 msgstr ""
 
@@ -5635,8 +5643,8 @@ msgstr "מולטימדיה"
 
 #
 #, fuzzy
-msgid "Multiboot"
-msgstr "Multisat"
+msgid "Multiboot image selector"
+msgstr "בחירת תרגום"
 
 msgid "Multichannel PCM"
 msgstr ""
@@ -6184,6 +6192,15 @@ msgstr ""
 #, fuzzy
 msgid "Open the movie list"
 msgstr "חזור לרשימת הסרטים"
+
+msgid "Operating LED status in deep standby mode"
+msgstr ""
+
+msgid "Operating LED status in standby mode"
+msgstr ""
+
+msgid "Operating LED status while running."
+msgstr ""
 
 msgid "Opkg"
 msgstr ""
@@ -7957,15 +7974,6 @@ msgstr "Select HDD"
 
 #
 #, fuzzy
-msgid "Select Image"
-msgstr "Select a movie"
-
-#, fuzzy
-msgid "Select Multiboot"
-msgstr "Select audio track"
-
-#
-#, fuzzy
 msgid "Select Softcam"
 msgstr "Select a movie"
 
@@ -8146,6 +8154,9 @@ msgstr ""
 msgid "Select the satellite your dish receives from. If you are unsure select 'automatic' and the receiver will attempt to determine this for you."
 msgstr ""
 
+msgid "Select the time zone within the area or region."
+msgstr ""
+
 msgid "Select the tuner that controls the motorised dish."
 msgstr ""
 
@@ -8184,6 +8195,9 @@ msgstr "Select video input with up/down buttons"
 msgid "Select video mode"
 msgstr "Select video mode"
 
+msgid "Select whether your SCR device is externally powered."
+msgstr ""
+
 msgid "Select wireless network"
 msgstr "בחר רשת אלחוטית"
 
@@ -8208,6 +8222,9 @@ msgid "Select your provider, and press OK to start the scan"
 msgstr ""
 
 msgid "Select your region. If not available change 'Country' to 'all' and select one of the default alternatives."
+msgstr ""
+
+msgid "Select your time zone area or region."
 msgstr ""
 
 msgid "Selecting satellites 1 (USALS)"
@@ -9451,6 +9468,16 @@ msgstr ""
 msgid "Switch channel up"
 msgstr ""
 
+msgid "Switch off the display during Standby Mode"
+msgstr ""
+
+msgid "Switch off the display during Suspend Mode"
+msgstr ""
+
+#, fuzzy
+msgid "Switch off the display during operation."
+msgstr "View list of available Display and Userinterface extensions."
+
 msgid "Switch to TV mode"
 msgstr ""
 
@@ -10045,6 +10072,16 @@ msgstr "זמן"
 #, fuzzy
 msgid "Time scale"
 msgstr "בחירת טיימר"
+
+#
+#, fuzzy
+msgid "Time zone"
+msgstr "איזור זמן"
+
+#
+#, fuzzy
+msgid "Time zone area"
+msgstr "איזור זמן"
 
 #
 msgid "Timer"
@@ -11286,6 +11323,18 @@ msgid "With errors:"
 msgstr ""
 
 msgid "With popup"
+msgstr ""
+
+msgid "With this option you can switch off the display during operation."
+msgstr ""
+
+msgid "With this option you can switch off the display in Deep Standby Mode."
+msgstr ""
+
+msgid "With this option you can switch off the display in Standby Mode."
+msgstr ""
+
+msgid "With this option you can switch the LED color or deactivate the LED."
 msgstr ""
 
 msgid "Without popup"
@@ -12620,6 +12669,9 @@ msgstr ""
 #
 msgid "vertical"
 msgstr "vertical"
+
+msgid "violet"
+msgstr ""
 
 #
 msgid "wait for ci..."

@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PLi enigma2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-02-01 14:29+0100\n"
-"PO-Revision-Date: 2020-02-02 22:39+0200\n"
+"POT-Creation-Date: 2020-03-22 22:41+0100\n"
+"PO-Revision-Date: 2020-03-23 00:18+0200\n"
 "Last-Translator: Audronis Grincevicius <adga45@gmail.com>\n"
 "Language-Team: Adga (C) <adga45@gmail.com>\n"
 "Language: lt_LT\n"
@@ -12,7 +12,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Poedit-SourceCharset: UTF-8\n"
 "Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
-"X-Generator: Poedit 2.2.4\n"
+"X-Generator: Poedit 2.3\n"
 
 msgid ""
 "\n"
@@ -1374,11 +1374,11 @@ msgstr "Baskų"
 msgid "Begin time"
 msgstr "Pradžios laikas"
 
-msgid "Behavior of 'pause and ok' when paused"
-msgstr "'Pause' ir 'Ok' mygtukų elgsena pauzės metu"
-
 msgid "Behavior of '0' button in PiP mode"
 msgstr "'0' mygtuko elgsena PiP režime"
+
+msgid "Behavior of 'pause and ok' when paused"
+msgstr "'Pause' ir 'Ok' mygtukų elgsena pauzės metu"
 
 msgid "Behavior when a movie is started"
 msgstr "Elgsena, kai filmas prasidėjęs"
@@ -1448,6 +1448,9 @@ msgstr "Įdiegti Android atvaizdą"
 
 msgid "Boot to Recovery menu"
 msgstr "Paleisti atkūrimo meniu"
+
+msgid "Bootup time"
+msgstr "Įkrovimo laikas"
 
 msgid "Bosnia and Herzegovina"
 msgstr "Bosnija ir Hercogovina"
@@ -3565,6 +3568,9 @@ msgstr "Išorinių subtitrų dialogų spalvinimas"
 msgid "External subtitle switch fonts"
 msgstr "Išorinių subtitrų perjungiami šriftai"
 
+msgid "Externally powered"
+msgstr "Išoriškai maitinama"
+
 msgid "Extra end time to ignore inactivity sleeptimer"
 msgstr "Papildomo laiko miego laikmačio neaktyvumo ignoravimui pabaiga"
 
@@ -5206,10 +5212,10 @@ msgid "Multi-EPG bouquet selection"
 msgstr "Daugiakanalio EPG paketo pasirinkimas"
 
 msgid "MultiType"
-msgstr "Multi tipas"
+msgstr "Daugiafunkcinis tipas"
 
-msgid "Multiboot"
-msgstr "Daugiafunkcinė įkrova"
+msgid "Multiboot image selector"
+msgstr "Daugiafunkcinės įkrovos atvaizdo pasirinkimas"
 
 msgid "Multichannel PCM"
 msgstr "Daugiakanalis PCM"
@@ -5697,6 +5703,15 @@ msgstr "Atidaryti imtuvo konfigūravimą "
 
 msgid "Open the movie list"
 msgstr "Atidaryti filmų sąrašą"
+
+msgid "Operating LED status in deep standby mode"
+msgstr "LED būsenos veikimas gilaus laukimo režimu"
+
+msgid "Operating LED status in standby mode"
+msgstr "LED būsenos veikimas laukimo režimu"
+
+msgid "Operating LED status while running."
+msgstr "LED būsena veikimo metu."
 
 msgid "Opkg"
 msgstr "Opkg"
@@ -7318,12 +7333,6 @@ msgstr "Pasirinkite greitą DiSEqC, jei jūsų sistema palaiko tai. Jei jūs ne�
 msgid "Select HDD"
 msgstr "Pasirinkite HDD"
 
-msgid "Select Image"
-msgstr "Pasirinkite atvaizdą"
-
-msgid "Select Multiboot"
-msgstr "Pasirinktinis atvaizdų įkėlimas"
-
 msgid "Select Softcam"
 msgstr "Pasirinkite emuliatorių"
 
@@ -7481,6 +7490,9 @@ msgstr "Pasirinkite palydovą, kurį norite konfigūruoti. Kai šis palydovas bu
 msgid "Select the satellite your dish receives from. If you are unsure select 'automatic' and the receiver will attempt to determine this for you."
 msgstr "Pasirinkite palydovą, kurį jūsų antena gauna. Jei nesate tikri, pasirinkite 'automatinis' ir imtuvas bandys tai nustatyti pats."
 
+msgid "Select the time zone within the area or region."
+msgstr "Pasirinkite laiko juostą, toje teritorijoje arba regione."
+
 msgid "Select the tuner that controls the motorised dish."
 msgstr "Pasirinkite imtuvą, kuris kontroliuoja motorizuotą anteną."
 
@@ -7517,6 +7529,9 @@ msgstr "Pasirinkite vaizdo įvestį su mygtukais aukštyn/žemyn"
 msgid "Select video mode"
 msgstr "Pasirinkite vaizdo režimą"
 
+msgid "Select whether your SCR device is externally powered."
+msgstr "Pasirinkite, ar jūsų SCR įrenginys yra išoriškai maitinamas."
+
 msgid "Select wireless network"
 msgstr "Pasirinkite belaidį tinklą"
 
@@ -7541,6 +7556,9 @@ msgstr "Pasirinkite tiekėją ir paieškai pradėti, spauskite OK"
 
 msgid "Select your region. If not available change 'Country' to 'all' and select one of the default alternatives."
 msgstr "Pasirinkite savo regioną. Jei negalima, pakeiskite 'Šalis' į 'visos' ir pasirinkite vieną iš numatytųjų alternatyvų."
+
+msgid "Select your time zone area or region."
+msgstr "Pasirinkite laiko juostos teritoriją arba regioną."
 
 msgid "Selecting satellites 1 (USALS)"
 msgstr "Pasirenkami palydovai 1 (USALS)"
@@ -8638,6 +8656,15 @@ msgstr "Perjungti kanalą žemyn"
 msgid "Switch channel up"
 msgstr "Perjungti kanalą aukštyn"
 
+msgid "Switch off the display during Standby Mode"
+msgstr "Budėjimo režime išjunkite ekraną"
+
+msgid "Switch off the display during Suspend Mode"
+msgstr "Laukimo režime išjunkite ekraną"
+
+msgid "Switch off the display during operation."
+msgstr "Veikimo metu išjunkite ekraną."
+
 msgid "Switch to TV mode"
 msgstr "Perjungti į TV režimą"
 
@@ -8717,7 +8744,7 @@ msgstr "T2MI RAW režimas"
 msgid "TRANSLATOR_INFO"
 msgstr ""
 "P&C Adga, adga45@gmail.com\n"
-"Pasvalys, 2020-02-02 versija"
+"Pasvalys, 2020-03-23 versija"
 
 msgid "TS file is too large for ISO9660 level 1!"
 msgstr "TS failas per didelis 1 lygio ISO9660!"
@@ -9216,6 +9243,12 @@ msgstr "Laikas"
 
 msgid "Time scale"
 msgstr "Laiko skalė"
+
+msgid "Time zone"
+msgstr "Laiko juosta"
+
+msgid "Time zone area"
+msgstr "Laiko juostos teritorija"
 
 msgid "Timer"
 msgstr "Laikmatis"
@@ -10354,6 +10387,18 @@ msgstr "Su klaidomis:"
 
 msgid "With popup"
 msgstr "Su iškylančiu pranešimu"
+
+msgid "With this option you can switch off the display during operation."
+msgstr "Naudodami šią parinktį, galite išjungti ekraną veikimo metu."
+
+msgid "With this option you can switch off the display in Deep Standby Mode."
+msgstr "Naudodami šią parinktį galite išjungti ekraną gilaus budėjimo režime."
+
+msgid "With this option you can switch off the display in Standby Mode."
+msgstr "Naudodami šią parinktį galite išjungti ekraną budėjimo režime."
+
+msgid "With this option you can switch the LED color or deactivate the LED."
+msgstr "Naudodami šią parinktį galite įjungti LED spalvą arba išjungti LED."
 
 msgid "Without popup"
 msgstr "Be iškylančio pranešimo"
@@ -11644,6 +11689,9 @@ msgstr "įvairūs šou"
 msgid "vertical"
 msgstr "vertikali"
 
+msgid "violet"
+msgstr "violetinė"
+
 msgid "wait for ci..."
 msgstr "laukite CI atsako..."
 
@@ -11728,6 +11776,21 @@ msgstr "perjungta"
 
 msgid "®"
 msgstr "®"
+
+#~ msgid "Could not locate epg file on fallback tuner"
+#~ msgstr "Nepavyko rasti epg failo atsarginiame imtuve"
+
+#~ msgid "No settings files to download on fallback tuner"
+#~ msgstr "Negalima atsisiųsti nustatymų failų naudojant atsarginį imtuvą"
+
+#~ msgid "Multiboot"
+#~ msgstr "Daugiafunkcinė įkrova"
+
+#~ msgid "Select Image"
+#~ msgstr "Pasirinkite atvaizdą"
+
+#~ msgid "Select Multiboot"
+#~ msgstr "Pasirinktinis atvaizdų įkėlimas"
 
 #~ msgid "About..."
 #~ msgstr "Apie..."
