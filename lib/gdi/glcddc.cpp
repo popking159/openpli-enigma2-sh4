@@ -81,6 +81,7 @@ void gLCDDC::exec(const gOpcode *o)
 {
 	switch (o->opcode)
 	{
+#ifndef NO_LCD
 	case gOpcode::setPalette:
 	{
 		gDC::exec(o);
