@@ -323,6 +323,7 @@ if test `echo "$BOXTYPE" | cut -b 1-2` == "dm"; then
 	AC_DEFINE(DREAMBOX, 1, [Dreambox hardware])
 	AC_DEFINE(KEY_PLAY_ACTUALLY_IS_KEY_PLAYPAUSE, 1,[define when rc sends a KEY_PLAY event for its KEY_PLAYPAUSE key])
 fi
+AM_CONDITIONAL(NO_LCD, test x"$withnolcd" != xno)
 
 AC_ARG_WITH(textlcd,
 	AC_HELP_STRING([--with-textlcd], [use ascii based lcd, yes or no]),
@@ -340,6 +341,26 @@ AC_ARG_WITH(7segment,
 	[[TEXTSKIN="default"]]
 )
 AC_SUBST(TEXTSKIN)
+
+AC_ARG_WITH(graphlcd,
+	AC_HELP_STRING([--with-graphlcd], [use GraphLCD color display, yes or no]),
+	[[withgraphlcd=$withval]],
+	[[withgraphlcd=no]]
+)
+if test x"$withgraphlcd" != xno ; then
+	AC_DEFINE(HAVE_GRAPHLCD, 1,[Define when using a GraphLCD color display device])
+fi
+AM_CONDITIONAL(HAVE_GRAPHLCD, test x"$withgraphlcd" != xno)
+
+AC_ARG_WITH(lcd,
+	AC_HELP_STRING([--with-lcd], [use LCD display, yes or no]),
+	[[withlcd=$withval]],
+	[[withlcd=no]]
+)
+if ! test x"$withlcd" != xno ; then
+	AC_DEFINE(NO_LCD, 1,[Define when not using a LCD display device])
+fi
+AM_CONDITIONAL(NO_LCD, test x"$withlcd" != xno)
 
 AC_ARG_WITH(libsdl,
 	AS_HELP_STRING([--with-libsdl],[use libsdl, yes or no]),
@@ -444,26 +465,6 @@ if test x"$with_alphablendingacceleration" = xnever ; then
 elif test x"$with_alphablendingacceleration" = xalways ; then
 	AC_DEFINE_UNQUOTED(FORCE_ALPHABLENDING_ACCELERATION, 1, [Accelerate alphablending blits])
 fi
-
-AC_ARG_WITH(graphlcd,
-	AC_HELP_STRING([--with-graphlcd], [use GraphLCD color display, yes or no]),
-	[[withgraphlcd=$withval]],
-	[[withgraphlcd=no]]
-)
-if test x"$withgraphlcd" != xno ; then
-	AC_DEFINE(HAVE_GRAPHLCD, 1,[Define when using a GraphLCD color display device])
-fi
-AM_CONDITIONAL(HAVE_GRAPHLCD, test x"$withgraphlcd" != xno)
-
-AC_ARG_WITH(lcd4linux,
-	AC_HELP_STRING([--with-lcd4linux], [use LCD4Linux color display, yes or no]),
-	[[withlcd4linux=$withval]],
-	[[withlcd4linux=no]]
-)
-if test x"$withlcd4linux" != xno ; then
-	AC_DEFINE(HAVE_LCD4LINUX, 1,[Define when using a LCD4Linux color display device])
-fi
-AM_CONDITIONAL(HAVE_LCD4LINUX, test x"$withlcd4linux" != xno)
 
 AC_ARG_WITH(accelerationthreshold,
 	AC_HELP_STRING([--with-accelerationthreshold=n], [use acceleration threshold of n bytes]),
