@@ -591,7 +591,7 @@ void evfd::vfd_write_string(char *str, bool force)
 {
 	int ws = 0;
 	int i = strlen(str);
-	if (VFD_CENTER == true)
+	if (VFD_CENTER)
 	{
 		if (i < VFDLENGTH)
 		{
@@ -611,7 +611,7 @@ void evfd::vfd_write_string(char *str, bool force)
 	struct vfd_ioctl_data data;
 
 	memset(data.data, ' ', VFDLENGTH);
-	if (VFD_CENTER == true)
+	if (VFD_CENTER)
 	{
 		memcpy(data.data + ws, str, VFDLENGTH - ws);
 	}
@@ -620,7 +620,7 @@ void evfd::vfd_write_string(char *str, bool force)
 		memcpy(data.data, str, i);
 	}
 	data.start = 0;
-	if (VFD_CENTER == true)
+	if (VFD_CENTER)
 	{
 		data.length = i + ws <= VFDLENGTH ? i + ws : VFDLENGTH;
 	}
