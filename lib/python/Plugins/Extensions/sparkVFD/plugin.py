@@ -22,7 +22,7 @@ lang = language.getLanguage()
 environ['LANGUAGE'] = lang[:2]
 gettext.bindtextdomain('enigma2', resolveFilename(SCOPE_LANGUAGE))
 gettext.textdomain('enigma2')
-gettext.bindtextdomain('VFD-Icons', '%s%s' % (resolveFilename(SCOPE_PLUGINS), 'SystemPlugins/VFD-Icons/locale/'))
+gettext.bindtextdomain('VFD-Icons', '%s%s' % (resolveFilename(SCOPE_PLUGINS)))
 
 def _(txt):
 	t = gettext.dgettext('VFD-Icons', txt)
