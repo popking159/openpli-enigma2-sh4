@@ -1,9 +1,9 @@
 import os
 import time
 from Tools.CList import CList
-from Components.SystemInfo import SystemInfo
+from SystemInfo import SystemInfo
 from Components.Console import Console
-from Components import Task
+import Task
 
 def readFile(filename):
 	file = open(filename)

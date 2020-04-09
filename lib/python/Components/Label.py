@@ -1,7 +1,7 @@
-from Components.GUIComponent import GUIComponent
-from Components.VariableText import VariableText
+from GUIComponent import GUIComponent
+from VariableText import VariableText
 from skin import parseColor
-from Components.ConditionalWidget import ConditionalWidget, BlinkingWidget, BlinkingWidgetConditional
+from ConditionalWidget import ConditionalWidget, BlinkingWidget, BlinkingWidgetConditional
 
 from enigma import eLabel
 

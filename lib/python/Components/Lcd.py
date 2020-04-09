@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-from Components.config import config, ConfigSubsection, ConfigSlider, ConfigYesNo, ConfigNothing, ConfigSelection
+from config import config, ConfigSubsection, ConfigSlider, ConfigYesNo, ConfigNothing, ConfigSelection
 from enigma import eDBoxLCD
 from Components.SystemInfo import SystemInfo
 from Screens.InfoBar import InfoBar

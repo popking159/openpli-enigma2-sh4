@@ -1,8 +1,8 @@
-from Components.GUIComponent import GUIComponent
-from Components.config import config
+from GUIComponent import GUIComponent
+from config import config
 from skin import applyAllAttributes
 from Tools.CList import CList
-from Components.Sources.StaticText import StaticText
+from Sources.StaticText import StaticText
 
 class screenPath():
 	def __init__(self):

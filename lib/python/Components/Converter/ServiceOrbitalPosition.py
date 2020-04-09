@@ -44,7 +44,7 @@ class ServiceOrbitalPosition(Converter, object):
 				if pos > 1800:
 					pos = 3600 - pos
 					direction = 'W'
-				if self.type is self.SHORT:
+				if self.type == self.SHORT:
 					return "%d.%d%s" % (pos/10, pos%10, direction)
 				else:
 					return "%d.%d° %s" % (pos/10, pos%10, direction)
@@ -53,7 +53,7 @@ class ServiceOrbitalPosition(Converter, object):
 			refString = ref.toString().lower()
 			if "%3a//" in refString:
 				return _("Stream")
-			if refString[:6] == "1:134:":
+			if refString.startswith("1:134:"):
 				return _("Alternative")
 		return ""
 

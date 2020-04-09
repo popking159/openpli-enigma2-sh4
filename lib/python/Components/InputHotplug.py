@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-from Components import Netlink
+import Netlink
 import enigma
 import os
 

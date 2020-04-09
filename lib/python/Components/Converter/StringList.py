@@ -1,4 +1,4 @@
-from Components.Converter.Converter import Converter
+from Converter import Converter
 from enigma import eListboxPythonStringContent
 from Components.Element import cached
 

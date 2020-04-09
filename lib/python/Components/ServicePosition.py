@@ -1,4 +1,4 @@
-from Components.PerServiceDisplay import PerServiceDisplay, PerServiceBase
+from PerServiceDisplay import PerServiceDisplay, PerServiceBase
 from Components.GUIComponent import GUIComponent
 from enigma import eTimer, iPlayableService, ePositionGauge
 import time

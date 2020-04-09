@@ -11,7 +11,7 @@ def getImageVersionString():
 		if os.path.isfile('/var/lib/opkg/status'):
 			st = os.stat('/var/lib/opkg/status')
 		tm = time.localtime(st.st_mtime)
-		if tm.tm_year >= 2018:
+		if tm.tm_year >= 2011:
 			return time.strftime("%Y-%m-%d %H:%M:%S", tm)
 	except:
 		pass

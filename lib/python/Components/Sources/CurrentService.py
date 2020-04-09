@@ -1,6 +1,6 @@
 from Components.PerServiceDisplay import PerServiceBase
 from enigma import iPlayableService
-from Components.Sources.Source import Source
+from Source import Source
 from Components.Element import cached
 import NavigationInstance
 

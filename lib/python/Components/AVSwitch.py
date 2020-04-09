@@ -1,6 +1,6 @@
-from Components.config import config, ConfigSlider, ConfigSelection, ConfigYesNo, ConfigEnableDisable, ConfigSubsection, ConfigBoolean, ConfigSelectionNumber, ConfigNothing, NoSave
+from config import config, ConfigSlider, ConfigSelection, ConfigYesNo, ConfigEnableDisable, ConfigSubsection, ConfigBoolean, ConfigSelectionNumber, ConfigNothing, NoSave
 from enigma import eAVSwitch, eDVBVolumecontrol, getDesktop
-from Components.SystemInfo import SystemInfo
+from SystemInfo import SystemInfo
 import os
 
 class AVSwitch:
@@ -111,7 +111,7 @@ def InitAVSwitch():
 			policy2_choices.update({"auto": _("Auto")})
 	except:
 		pass
-	config.av.policy_169 = ConfigSelection(choices=policy2_choices, default = "scale")
+	config.av.policy_169 = ConfigSelection(choices=policy2_choices, default = "letterbox")
 	policy_choices = {
 	# TRANSLATORS: (aspect ratio policy: black bars on left/right) in doubt, keep english term.
 	"pillarbox": _("Pillarbox"),
@@ -137,7 +137,7 @@ def InitAVSwitch():
 			policy_choices.update({"auto": _("Auto")})
 	except:
 		pass
-	config.av.policy_43 = ConfigSelection(choices=policy_choices, default = "scale")
+	config.av.policy_43 = ConfigSelection(choices=policy_choices, default = "pillarbox")
 	config.av.tvsystem = ConfigSelection(choices = {"pal": _("PAL"), "ntsc": _("NTSC"), "multinorm": _("multinorm")}, default="pal")
 	config.av.wss = ConfigEnableDisable(default = True)
 	config.av.generalAC3delay = ConfigSelectionNumber(-1000, 1000, 5, default = 0)
@@ -188,21 +188,26 @@ def InitAVSwitch():
 		config.av.downmix_aac = ConfigYesNo(default = True)
 		config.av.downmix_aac.addNotifier(setAACDownmix)
 
+	try:
+		SystemInfo["CanChangeOsdAlpha"] = open("/proc/stb/video/alpha", "r") and True or False
+	except:
+		SystemInfo["CanChangeOsdAlpha"] = False
+
 	if SystemInfo["CanChangeOsdAlpha"]:
 		def setAlpha(config):
 			open("/proc/stb/video/alpha", "w").write(str(config.value))
 		config.av.osd_alpha = ConfigSlider(default=255, limits=(0,255))
 		config.av.osd_alpha.addNotifier(setAlpha)
 
-	if SystemInfo["ScalerSharpness"]:
+	if os.path.exists("/proc/stb/vmpeg/0/pep_scaler_sharpness"):
 		def setScaler_sharpness(config):
 			myval = int(config.value)
 			try:
-				print("--> setting scaler_sharpness to: %0.8X" % myval)
+				print "--> setting scaler_sharpness to: %0.8X" % myval
 				open("/proc/stb/vmpeg/0/pep_scaler_sharpness", "w").write("%0.8X" % myval)
 				open("/proc/stb/vmpeg/0/pep_apply", "w").write("1")
 			except IOError:
-				print("[AVSwitch] couldn't write pep_scaler_sharpness")
+				print "couldn't write pep_scaler_sharpness"
 
 		config.av.scaler_sharpness = ConfigSlider(default=13, limits=(0,26))
 		config.av.scaler_sharpness.addNotifier(setScaler_sharpness)

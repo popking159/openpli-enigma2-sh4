@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-from Components.Converter.Converter import Converter
+from Converter import Converter
 from Components.Element import cached
 from Components.config import config
 from Tools.Transponder import orbpos

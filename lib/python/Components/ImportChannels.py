@@ -2,7 +2,7 @@ import threading, urllib2, os, shutil
 from json import loads
 from enigma import eDVBDB, eEPGCache
 from Screens.MessageBox import MessageBox
-from Components.config import config, ConfigText
+from config import config, ConfigText
 from Tools import Notifications
 from base64 import encodestring
 import xml.etree.ElementTree as et
