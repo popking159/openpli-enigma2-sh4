@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-03-22 22:37+0100\n"
+"POT-Creation-Date: 2020-04-09 13:48+0200\n"
 "PO-Revision-Date: \n"
 "Last-Translator: 王彪 <satfan@163.com>\n"
 "Language-Team: 中國\n"
@@ -83,10 +83,6 @@ msgstr ""
 msgid " extensions."
 msgstr " 擴展."
 
-#, fuzzy
-msgid " min"
-msgstr "%d 分鐘"
-
 msgid " ms"
 msgstr ""
 
@@ -121,25 +117,11 @@ msgid "%.2f GB"
 msgstr ""
 
 #, python-format
-msgid "%02d:%02d"
-msgstr ""
-
-#, python-format
 msgid "%03d MB"
 msgstr ""
 
 #, python-format
 msgid "%2.1f sec"
-msgstr ""
-
-#. TRANSLATORS: short time representation hour:minute
-#, python-format
-msgid "%2d:%02d"
-msgstr ""
-
-#. TRANSLATORS: full time representation hour:minute:seconds
-#, python-format
-msgid "%2d:%02d:%02d"
 msgstr ""
 
 #, python-format
@@ -149,29 +131,8 @@ msgstr ""
 msgid "%A %d %B"
 msgstr ""
 
-#. TRANSLATORS: long date representations dayname daynum monthname in strftime() format! See 'man strftime'
-msgid "%A %e %B"
-msgstr ""
-
-#. TRANSLATORS: full date representation dayname daynum monthname year in strftime() format! See 'man strftime'
-msgid "%A %e %B %Y"
-msgstr ""
-
 msgid "%H:%M"
 msgstr "%H:%M"
-
-#. TRANSLATORS: full date representations short dayname daynum monthname long year in strftime() format! See 'man strftime'
-#, fuzzy
-msgid "%a %e %B %Y"
-msgstr "%d.%B %Y"
-
-#. TRANSLATORS: short date representation short dayname daynum short monthname in strftime() format! See 'man strftime'
-msgid "%a %e/%m"
-msgstr ""
-
-#. TRANSLATORS: long date representation short dayname daynum short monthname hour:minute in strftime() format! See 'man strftime'
-msgid "%a %e/%m  %-H:%M"
-msgstr ""
 
 #, python-format
 msgid "%d B"
@@ -184,6 +145,29 @@ msgstr ""
 #, python-format
 msgid "%d MB"
 msgstr ""
+
+#. TRANSLATORS: full date representation dayname daynum monthname year in strftime() format! See 'man strftime'
+#. _("%A %e %B %Y")
+#. TRANSLATORS: short time representation hour:minute in strftime() format! See 'man strftime'
+#. _("%R")
+#. TRANSLATORS: short time representation hour:minute in strftime() format! See 'man strftime'
+#. _("%R")
+#. TRANSLATORS: short date representation daynum short monthname in strftime() format! See 'man strftime'
+#. _("%e %b")
+#. TRANSLATORS: short date representation daynum short monthname in strftime() format! See 'man strftime'
+#. _("%a %e %b")
+#. TRANSLATORS: short time representation hour:minute in strftime() format! See 'man strftime'
+#. _("%R")
+#. TRANSLATORS: long date representation short dayname daynum short monthname hour:minute in strftime() format! See 'man strftime'
+#. _("%a %e %b %R")
+#. TRANSLATORS: full date representations short dayname daynum monthname long year in strftime() format! See 'man strftime'
+#. _("%a %e %B %Y")
+#.
+#, python-format
+msgid "%d Min"
+msgid_plural "%d Mins"
+msgstr[0] ""
+msgstr[1] ""
 
 #. TRANSLATORS: Intermediate scanning result, '%d' channel(s) have been found so far
 #, python-format
@@ -278,10 +262,6 @@ msgid "%d-%m"
 msgstr ""
 
 #, python-format
-msgid "%d.%02d. %02d:%02d"
-msgstr ""
-
-#, python-format
 msgid "%d.%03d GB"
 msgstr ""
 
@@ -298,10 +278,6 @@ msgstr "%d.%B %Y"
 
 #, python-format
 msgid "%d:%02d"
-msgstr ""
-
-#. TRANSLATORS: VFD hour:minute daynum short monthname in strftime() format! See 'man strftime'
-msgid "%k:%M %e/%m"
 msgstr ""
 
 #, fuzzy, python-format
@@ -481,6 +457,10 @@ msgstr "3"
 msgid "30"
 msgstr ""
 
+#, fuzzy
+msgid "3D Mode"
+msgstr "型號:"
+
 msgid "3D surround"
 msgstr ""
 
@@ -505,6 +485,10 @@ msgstr ""
 msgid "444"
 msgstr ""
 
+#, fuzzy
+msgid "450 (default)"
+msgstr "預設"
+
 msgid "4:3"
 msgstr "4:3"
 
@@ -523,6 +507,10 @@ msgstr "5"
 
 msgid "50 MB/s"
 msgstr ""
+
+#, fuzzy
+msgid "540 (default)"
+msgstr "預設"
 
 msgid "6"
 msgstr "6"
@@ -840,6 +828,9 @@ msgstr ""
 msgid "Adjust the color settings so that all the color shades are distinguishable, but appear as saturated as possible. If you are happy with the result, press OK to close the video fine-tuning, or use the number keys to select other test screens."
 msgstr "調整顏色設定以使所有的顏色深淺可以辨識出來，使之看起來盡可能飽和。如果您對結果感到滿意，按OK關閉視頻微調，或者用數位鍵選擇畫面上的其他測驗。 "
 
+msgid "Adult Audience, Strong Violence 15+"
+msgstr ""
+
 msgid "Advanced"
 msgstr "高級"
 
@@ -892,6 +883,9 @@ msgid "All"
 msgstr "全部"
 
 msgid "All ages"
+msgstr ""
+
+msgid "All caps"
 msgstr ""
 
 msgid "All frequency"
@@ -1054,6 +1048,14 @@ msgstr ""
 msgid "Are you sure to remove this entry?"
 msgstr ""
 
+#, fuzzy
+msgid ""
+"Are you sure to save the current configuration and reboot your receiver?\n"
+"\n"
+msgstr ""
+"確定要啟動此網路配置？\n"
+"\n"
+
 msgid ""
 "Are you sure you want to activate this network configuration?\n"
 "\n"
@@ -1148,6 +1150,9 @@ msgid "Audio PID%s, codec & lang"
 msgstr ""
 
 msgid "Audio PID, codec & lang"
+msgstr ""
+
+msgid "Audio Source"
 msgstr ""
 
 msgid "Audio auto volume level"
@@ -1267,6 +1272,10 @@ msgstr ""
 
 msgid "B"
 msgstr "B"
+
+#, python-format
+msgid "BC%d"
+msgstr ""
 
 msgid "BER"
 msgstr "BER"
@@ -1404,6 +1413,10 @@ msgstr "塊狀雜訊控制"
 msgid "Blue"
 msgstr ""
 
+#, fuzzy
+msgid "Blue LED brightness"
+msgstr "亮度"
+
 msgid "Bolivia (Plurinational State of)"
 msgstr ""
 
@@ -1419,6 +1432,9 @@ msgstr ""
 #, fuzzy
 msgid "Boost green"
 msgstr "最新"
+
+msgid "Booster Control"
+msgstr ""
 
 msgid "Boot to Android image"
 msgstr ""
@@ -1634,6 +1650,9 @@ msgstr ""
 msgid "Center DVB subtitles"
 msgstr ""
 
+msgid "Center text"
+msgstr ""
+
 msgid "Center time-labels and remove date"
 msgstr ""
 
@@ -1748,6 +1767,9 @@ msgid ""
 "DiSEqC port %s for %s"
 msgstr ""
 
+msgid "Children"
+msgstr ""
+
 msgid "Children/Youth"
 msgstr ""
 
@@ -1842,6 +1864,10 @@ msgstr "收藏設定"
 #, fuzzy
 msgid "Colombia"
 msgstr "色彩"
+
+#, fuzzy
+msgid "Color Format"
+msgstr "格式化"
 
 msgid "Color format"
 msgstr ""
@@ -2370,6 +2396,10 @@ msgstr "克羅地亞"
 msgid "Croatian"
 msgstr "克羅地亞"
 
+#, fuzzy
+msgid "Cross brightness"
+msgstr "亮度"
+
 msgid "Cuba"
 msgstr ""
 
@@ -2546,6 +2576,9 @@ msgid "Deep Standby LED"
 msgstr "待機"
 
 msgid "Deep standby"
+msgstr ""
+
+msgid "Deepstby LED brightness"
 msgstr ""
 
 msgid "Default"
@@ -2814,6 +2847,10 @@ msgstr ""
 
 msgid "Display and userinterface"
 msgstr ""
+
+#, fuzzy
+msgid "Display brightness"
+msgstr "亮度"
 
 msgid "Display message before playing next movie"
 msgstr ""
@@ -3167,6 +3204,9 @@ msgstr ""
 msgid "Enable OpenTV EPG"
 msgstr ""
 
+msgid "Enable VFD display"
+msgstr ""
+
 msgid "Enable ViaSat EPG"
 msgstr ""
 
@@ -3411,9 +3451,6 @@ msgstr "愛沙尼亞語"
 msgid "Estonian"
 msgstr "愛沙尼亞語"
 
-msgid "EtPortal"
-msgstr ""
-
 msgid "Ethernet network interface"
 msgstr ""
 
@@ -3563,12 +3600,6 @@ msgstr ""
 msgid "Extra start time to ignore inactivity sleeptimer"
 msgstr ""
 
-msgid "F"
-msgstr ""
-
-msgid "F1/F3/F4/F4-TURBO"
-msgstr ""
-
 msgid "FAILED"
 msgstr ""
 
@@ -3599,6 +3630,10 @@ msgstr "FEC"
 
 msgid "FEC:"
 msgstr ""
+
+#, fuzzy
+msgid "FFmpeg version: "
+msgstr "反向:"
 
 msgid "FHD"
 msgstr ""
@@ -3663,14 +3698,6 @@ msgstr ""
 #, python-format
 msgid "Fan %d"
 msgstr "風扇 %d"
-
-#, python-format
-msgid "Fan %d PWM"
-msgstr "Fan %d PWM"
-
-#, python-format
-msgid "Fan %d voltage"
-msgstr ""
 
 msgid "Fan operation"
 msgstr ""
@@ -3832,6 +3859,16 @@ msgstr "星期五"
 msgid "From:"
 msgstr ""
 
+msgid "Front panel display"
+msgstr ""
+
+#, fuzzy
+msgid "Front panel display configuration"
+msgstr "打開DNS設定"
+
+msgid "Front panel display configuration for ADB ITI-5800S(X)"
+msgstr ""
+
 #, python-format
 msgid "Frontprocessor version: %s"
 msgstr ""
@@ -3853,9 +3890,6 @@ msgid "Further Options"
 msgstr ""
 
 msgid "Further options"
-msgstr ""
-
-msgid "G"
 msgstr ""
 
 #, fuzzy
@@ -3883,6 +3917,9 @@ msgstr ""
 
 msgid "Gateway"
 msgstr "閘道"
+
+msgid "General"
+msgstr ""
 
 msgid "General AC3 delay"
 msgstr ""
@@ -4032,20 +4069,11 @@ msgstr ""
 msgid "Guyana"
 msgstr ""
 
-msgid "H"
-msgstr ""
-
 #, fuzzy
 msgid "HD"
 msgstr "D"
 
 msgid "HD list"
-msgstr ""
-
-msgid "HD2400"
-msgstr ""
-
-msgid "HD60"
 msgstr ""
 
 msgid "HDMI"
@@ -4076,9 +4104,6 @@ msgid "HDR10"
 msgstr ""
 
 msgid "HDR10 support"
-msgstr ""
-
-msgid "HDx1/HD1xxx/HD5x0C/VS1x00/et7x00/et8500/et7000mini"
 msgstr ""
 
 msgid "HELP"
@@ -4126,6 +4151,9 @@ msgid "Hebrew"
 msgstr ""
 
 msgid "Helps setting up your antenna"
+msgstr ""
+
+msgid "Here you can change the screen positions with the arrow buttons on your remote control!"
 msgstr ""
 
 msgid "Hidden network"
@@ -4222,9 +4250,6 @@ msgstr "匈牙利語"
 #, fuzzy
 msgid "Hungary"
 msgstr "匈牙利語"
-
-msgid "I"
-msgstr ""
 
 #, fuzzy
 msgid "I do not want to perform any service scans"
@@ -4570,9 +4595,6 @@ msgstr ""
 msgid "Items per page for list screen"
 msgstr ""
 
-msgid "J"
-msgstr ""
-
 msgid "Jamaica"
 msgstr ""
 
@@ -4658,6 +4680,39 @@ msgstr ""
 msgid "LAN connection"
 msgstr ""
 
+#, fuzzy
+msgid "LED brightness"
+msgstr "亮度"
+
+#, fuzzy
+msgid "LED configuration"
+msgstr "調諧器配置"
+
+msgid "LED control"
+msgstr ""
+
+msgid "LED control for Fortis HS7110"
+msgstr ""
+
+msgid "LED control for Fortis HS7119/HS7810A/HS7819"
+msgstr ""
+
+msgid "LED display"
+msgstr ""
+
+#, fuzzy
+msgid "LED display configuration"
+msgstr "調諧器配置"
+
+msgid "LED display configuration for Fortis HS7119/HS7810A/HS7819"
+msgstr ""
+
+msgid "LED display configuration for Spark"
+msgstr ""
+
+msgid "LED display control Spark"
+msgstr ""
+
 msgid "LNB"
 msgstr "LNB"
 
@@ -4680,6 +4735,10 @@ msgid "Last speed"
 msgstr "最快速度"
 
 msgid "Last update: "
+msgstr ""
+
+msgctxt "third event: 'third' event label"
+msgid "Later"
 msgstr ""
 
 msgid "Latest Commits"
@@ -4842,6 +4901,10 @@ msgstr ""
 msgid "Logfile does not exist anymore"
 msgstr ""
 
+#, fuzzy
+msgid "Logo brightness"
+msgstr "亮度"
+
 msgid "Long filenames"
 msgstr ""
 
@@ -4961,6 +5024,12 @@ msgstr ""
 msgid "Martinique"
 msgstr ""
 
+msgid "Mature Adult Audience 15+"
+msgstr ""
+
+msgid "Mature Audience 15+"
+msgstr ""
+
 #, fuzzy
 msgid "Mauritania"
 msgstr "立陶宛語"
@@ -5030,6 +5099,9 @@ msgid "Minimum age %d years"
 msgstr ""
 
 msgid "Minimum send interval"
+msgstr ""
+
+msgid "Mins"
 msgstr ""
 
 msgid "Missing "
@@ -5564,6 +5636,9 @@ msgstr "格式化"
 msgid "Normal mode"
 msgstr ""
 
+msgid "Normal running frequency"
+msgstr ""
+
 msgid "North"
 msgstr "北"
 
@@ -5576,6 +5651,9 @@ msgstr "挪威語"
 
 msgid "Norwegian"
 msgstr "挪威語"
+
+msgid "Not Classified"
+msgstr ""
 
 #, fuzzy
 msgid "Not Installed"
@@ -5593,6 +5671,10 @@ msgstr ""
 #, python-format
 msgid "Not enough disk space. Please free up some disk space and try again. (%d MB required, %d MB available)"
 msgstr ""
+
+#, fuzzy
+msgid "Not running"
+msgstr "正在恢復"
 
 msgid "Not tested:"
 msgstr ""
@@ -5623,6 +5705,12 @@ msgstr ""
 msgid "Now playing"
 msgstr ""
 
+msgid "Now you can change the position of the lower and right side. Press blue button to switch..."
+msgstr ""
+
+msgid "Now you can change the position of the upper and left side. Press blue button to switch..."
+msgstr ""
+
 msgid "Now, use the contrast setting to turn up the brightness of the background as much as possible, but make sure that you can still see the difference between the two brightest levels of shades.If you have done that, press OK."
 msgstr "現在，盡可能使用對比度設定出現的亮度背景，但是請確保您仍然可以看到色調的兩個最亮等級之間的不同。如果您已經完成了，按OK。"
 
@@ -5643,6 +5731,13 @@ msgstr ""
 
 msgid "OSD 3D setup"
 msgstr ""
+
+msgid "OSD Adjustment"
+msgstr ""
+
+#, fuzzy
+msgid "OSD Position setup"
+msgstr "極軸設定(DiSEqC 1.2)"
 
 msgid "OSD name request"
 msgstr ""
@@ -5841,6 +5936,9 @@ msgstr ""
 msgid "Parent directory"
 msgstr ""
 
+msgid "Parental Guidance Recommended"
+msgstr ""
+
 msgid "Parental control"
 msgstr "家長控制"
 
@@ -5865,6 +5963,10 @@ msgstr ""
 #, fuzzy
 msgid "Pause/Continue playback"
 msgstr "繼續播放"
+
+#, fuzzy
+msgid "Pausing"
+msgstr "暫停"
 
 msgid "Percentage left"
 msgstr ""
@@ -6261,6 +6363,9 @@ msgstr ""
 msgid "Power LED"
 msgstr ""
 
+msgid "Power LED colour"
+msgstr ""
+
 msgid "Power management. Consult your receiver's manual for more information."
 msgstr ""
 
@@ -6329,6 +6434,9 @@ msgstr ""
 
 msgid "Preparing... Please wait"
 msgstr "準備中... 請稍候!"
+
+msgid "Preschool"
+msgstr ""
 
 msgid "Press '0' to toggle PiP mode"
 msgstr ""
@@ -6525,8 +6633,9 @@ msgstr "快速"
 msgid "Quick zap"
 msgstr ""
 
-msgid "REC"
-msgstr ""
+#, fuzzy
+msgid "RC command set"
+msgstr "命令順序"
 
 msgid "RF output"
 msgstr "RF-輸出"
@@ -6591,6 +6700,10 @@ msgstr "重新啟動"
 msgid "Rec"
 msgstr ""
 
+#, fuzzy
+msgid "Rec LED brightness"
+msgstr "亮度"
+
 msgid "Recall to previous service"
 msgstr ""
 
@@ -6632,6 +6745,16 @@ msgid "Recordings always have priority"
 msgstr "總是優先錄製"
 
 msgid "Red"
+msgstr ""
+
+msgid "Red LED during recording"
+msgstr ""
+
+#, fuzzy
+msgid "Red LED on in deep standby"
+msgstr "深度休眠"
+
+msgid "Red LED on in standby"
 msgstr ""
 
 msgid "Red button..."
@@ -6827,6 +6950,9 @@ msgstr ""
 msgid "Reserved"
 msgstr ""
 
+msgid "Reserved for future use"
+msgstr ""
+
 msgid "Reset"
 msgstr "重定"
 
@@ -6912,6 +7038,9 @@ msgstr ""
 msgid "Restoring..."
 msgstr ""
 
+msgid "Restricted 18+"
+msgstr ""
+
 msgid "Resume from last position"
 msgstr "從最後位置恢復"
 
@@ -6990,6 +7119,10 @@ msgstr ""
 
 msgid "Round start time on"
 msgstr ""
+
+#, fuzzy
+msgid "Running"
+msgstr "正在運行"
 
 msgid "Russian"
 msgstr "俄語"
@@ -7251,7 +7384,17 @@ msgstr ""
 msgid "Scroll delay"
 msgstr ""
 
+#, fuzzy
+msgid "Scroll long strings"
+msgstr "收藏設定"
+
+msgid "Scroll pause"
+msgstr ""
+
 msgid "Scroll repeats"
+msgstr ""
+
+msgid "Scroll text"
 msgstr ""
 
 #, fuzzy
@@ -7708,6 +7851,10 @@ msgstr ""
 "頻道未找到!\n"
 "(在PAT中找不以SID)"
 
+#, fuzzy
+msgid "Service off-air"
+msgstr "頻道密碼"
+
 msgid "Service reference"
 msgstr ""
 
@@ -7757,6 +7904,9 @@ msgstr ""
 msgid "Set end time"
 msgstr ""
 
+msgid "Set fan"
+msgstr ""
+
 msgid "Set fixed"
 msgstr ""
 
@@ -7768,6 +7918,9 @@ msgstr ""
 
 msgid "Set interface as default Interface"
 msgstr "將網卡設為預設"
+
+msgid "Set led"
+msgstr ""
 
 msgid "Set limits"
 msgstr "設定極限"
@@ -7876,7 +8029,14 @@ msgstr ""
 msgid "Show EPG..."
 msgstr ""
 
+#, fuzzy
+msgid "Show Ethernet activity"
+msgstr "顯示選項"
+
 msgid "Show Games show"
+msgstr ""
+
+msgid "Show HDD icons"
 msgstr ""
 
 msgid "Show InfoBar"
@@ -7918,6 +8078,10 @@ msgstr ""
 msgid "Show channel numbers in channel selection"
 msgstr ""
 
+#, fuzzy
+msgid "Show clock"
+msgstr "無信號"
+
 msgid "Show columns"
 msgstr ""
 
@@ -7955,6 +8119,9 @@ msgid "Show help"
 msgstr ""
 
 msgid "Show icon for new/unseen items"
+msgstr ""
+
+msgid "Show icons"
 msgstr ""
 
 msgid "Show in extensions menu"
@@ -8013,6 +8180,28 @@ msgstr ""
 
 msgid "Show notification when import channels was successful"
 msgstr ""
+
+#, fuzzy
+msgid "Show on LED display"
+msgstr "無視頻輸出"
+
+msgid "Show on LED display in standby"
+msgstr ""
+
+#, fuzzy
+msgid "Show on VFD display"
+msgstr "無視頻輸出"
+
+msgid "Show on VFD display in standby"
+msgstr ""
+
+#, fuzzy
+msgid "Show on display"
+msgstr "無視頻輸出"
+
+#, fuzzy
+msgid "Show on display in standby"
+msgstr "深度休眠"
 
 msgid "Show packages to be updated"
 msgstr ""
@@ -8081,6 +8270,9 @@ msgstr "廣播重播模式下..."
 msgid "Show the tv player..."
 msgstr "電視重播模式下..."
 
+msgid "Show this plugin in plugin menu"
+msgstr ""
+
 msgid "Show transponder info"
 msgstr "顯示轉發器資訊"
 
@@ -8112,6 +8304,9 @@ msgid "Shutdown"
 msgstr "關機"
 
 msgid "Shutdown when in Standby"
+msgstr ""
+
+msgid "Side by Side"
 msgstr ""
 
 msgid "Side by side"
@@ -8373,6 +8568,9 @@ msgstr "西班牙"
 msgid "Spanish"
 msgstr "西班牙語"
 
+msgid "Spark7162 select tuner mode"
+msgstr ""
+
 msgid "Special 1"
 msgstr ""
 
@@ -8437,18 +8635,32 @@ msgstr ""
 msgid "Standby LED"
 msgstr "待機"
 
+#, fuzzy
+msgid "Standby LED brightness"
+msgstr "待機"
+
+#, fuzzy
+msgid "Standby LED colour"
+msgstr "待機"
+
 msgid "Standby after current event"
 msgstr ""
 
-#, python-format
-msgid "Standby fan %d PWM"
-msgstr ""
-
-#, python-format
-msgid "Standby fan %d voltage"
-msgstr ""
+#, fuzzy
+msgid "Standby brightness"
+msgstr "亮度"
 
 msgid "Standby in "
+msgstr ""
+
+msgid "Standby saver frequency"
+msgstr ""
+
+#, fuzzy
+msgid "Start Boot Frequency"
+msgstr "頻率"
+
+msgid "Start boot frequency"
 msgstr ""
 
 msgid "Start directory"
@@ -8490,11 +8702,19 @@ msgstr ""
 msgid "Starting on"
 msgstr "開始"
 
+#, fuzzy
+msgid "Starts in a few seconds"
+msgstr "超時(秒)"
+
 msgid "Startup the set top box in standby"
 msgstr ""
 
 msgid "Startup to Standby"
 msgstr ""
+
+#, fuzzy
+msgid "Stby LED brightness"
+msgstr "亮度"
 
 msgid "Step east"
 msgstr "向東步進"
@@ -8817,9 +9037,6 @@ msgstr "TS文件太大！"
 msgid "TSID"
 msgstr ""
 
-msgid "TUNER:"
-msgstr ""
-
 msgid "TUNING"
 msgstr ""
 
@@ -8850,11 +9067,12 @@ msgstr ""
 msgid "Teletext subtitle color"
 msgstr ""
 
-msgid "Temperature and fan control"
-msgstr ""
-
 msgid "Terrestrial"
 msgstr "地面波"
+
+#, fuzzy
+msgid "Test"
+msgstr "測驗模式"
 
 msgid "Test DiSEqC settings"
 msgstr "測驗DiSEqC設定"
@@ -9265,6 +9483,10 @@ msgstr "星期四"
 msgid "Time"
 msgstr "時間"
 
+#, fuzzy
+msgid "Time mode"
+msgstr "22K模式"
+
 msgid "Time scale"
 msgstr ""
 
@@ -9418,6 +9640,9 @@ msgstr "Toneburst A/B"
 msgid "Tonga"
 msgstr ""
 
+msgid "Top and Bottom"
+msgstr ""
+
 msgid "Top and bottom"
 msgstr ""
 
@@ -9568,6 +9793,12 @@ msgstr "掃描類型"
 msgid "Type of scan"
 msgstr "掃描類型"
 
+msgid "Typematic delay"
+msgstr ""
+
+msgid "Typematic rate"
+msgstr ""
+
 msgid "UNKNOWN"
 msgstr ""
 
@@ -9647,6 +9878,13 @@ msgstr ""
 
 msgid "Uninstall"
 msgstr "反安裝"
+
+msgid "UnionTunerType"
+msgstr ""
+
+#, fuzzy
+msgid "UnionTunerType config"
+msgstr "調諧器配置"
 
 #, fuzzy
 msgid "United Arab Emirates"
@@ -9730,6 +9968,9 @@ msgid "Updating software catalog"
 msgstr "更新軟體目錄"
 
 msgid "Upper case"
+msgstr ""
+
+msgid "Uppercase letters only"
 msgstr ""
 
 msgid "Uruguay"
@@ -9881,6 +10122,53 @@ msgid "VCR scart"
 msgstr "錄影機"
 
 #, fuzzy
+msgid "VFD brightness"
+msgstr "亮度"
+
+msgid "VFD configuration for Fortis FS9000/9200"
+msgstr ""
+
+msgid "VFD configuration for Fortis HS8200"
+msgstr ""
+
+msgid "VFD display"
+msgstr ""
+
+#, fuzzy
+msgid "VFD display configuration"
+msgstr "調諧器配置"
+
+msgid "VFD display configuration for Fortis HS742X"
+msgstr ""
+
+msgid "VFD display configuration for Fortis HS9510"
+msgstr ""
+
+msgid "VFD display configuration for Spark 7162"
+msgstr ""
+
+msgid "VFD-Icons"
+msgstr ""
+
+msgid "VFD-Icons for ADB ITI-5800S(X)"
+msgstr ""
+
+msgid "VFD-Icons for Fortis FS9000/9200"
+msgstr ""
+
+msgid "VFD-Icons for Fortis HS7420 & HS7429"
+msgstr ""
+
+msgid "VFD-Icons for Fortis HS8200"
+msgstr ""
+
+msgid "VFD-Icons for Fortis HS9510"
+msgstr ""
+
+msgid "VFD-Icons for spark 7162"
+msgstr ""
+
+#, fuzzy
 msgid "VLAN connection"
 msgstr "未連接"
 
@@ -9891,9 +10179,6 @@ msgid "VOB File"
 msgstr ""
 
 msgid "VOB file"
-msgstr ""
-
-msgid "VU+"
 msgstr ""
 
 #, fuzzy
@@ -10455,6 +10740,9 @@ msgstr ""
 msgid "YPbPr"
 msgstr "YPbPr"
 
+msgid "YUV"
+msgstr ""
+
 msgid "Year"
 msgstr "年"
 
@@ -10590,6 +10878,9 @@ msgstr "您必須等待 %s !"
 msgid "You must switch to the service %s (%s - '%s')!\n"
 msgstr ""
 
+msgid "You seem to be in timeshift!"
+msgstr ""
+
 msgid "Your collection exceeds the size of a single layer medium, you will need a blank dual layer DVD!"
 msgstr "您的收藏超過單層DVD大小,您將需要一個空白雙層DVD！！！"
 
@@ -10719,22 +11010,7 @@ msgstr ""
 msgid "Zapped to timer service %s!"
 msgstr "編輯自動計時器服務"
 
-msgid "Zgemma H.S/H.2S/H.2H/H5/H7(old model)"
-msgstr ""
-
-msgid "Zgemma H7(new model)/H9(new model)/H9COMBO/H9TWIN/H10"
-msgstr ""
-
-msgid "Zgemma H9(old model)/I55Plus"
-msgstr ""
-
-msgid "Zgemma Star S/2S/H1/H2"
-msgstr ""
-
 msgid "Zimbabwe"
-msgstr ""
-
-msgid "[REC]"
 msgstr ""
 
 msgid "[alternative edit]"
@@ -10843,7 +11119,7 @@ msgid "ballet"
 msgstr ""
 
 #, python-format
-msgid "bc%s"
+msgid "bc%d"
 msgstr ""
 
 msgid "better"
@@ -10858,6 +11134,12 @@ msgstr ""
 msgid "blacklist"
 msgstr "黑名單"
 
+msgid "blank"
+msgstr ""
+
+msgid "blink"
+msgstr ""
+
 msgid "blue"
 msgstr "藍色"
 
@@ -10870,6 +11152,14 @@ msgstr ""
 msgid "by date"
 msgstr ""
 
+#, fuzzy
+msgid "cable"
+msgstr "有線"
+
+#, fuzzy
+msgid "cancel"
+msgstr "取消"
+
 msgid "cartoon/puppets"
 msgstr ""
 
@@ -10880,6 +11170,25 @@ msgid "centered"
 msgstr ""
 
 msgid "centered, wrapped"
+msgstr ""
+
+#, fuzzy
+msgid "change sides"
+msgstr "調整"
+
+#, fuzzy
+msgid "change the OSD screen size"
+msgstr "調整"
+
+#, fuzzy
+msgid "channel name"
+msgstr "頻道列表功能表"
+
+#, fuzzy
+msgid "channel number"
+msgstr "頻道列表功能表"
+
+msgid "channel number and name"
 msgstr ""
 
 msgid "chapters"
@@ -10912,6 +11221,9 @@ msgstr "測驗通過"
 msgid "connected"
 msgstr "已連接"
 
+msgid "continuous"
+msgstr ""
+
 msgid "controlled by HDMI"
 msgstr ""
 
@@ -10921,8 +11233,15 @@ msgstr ""
 msgid "daily"
 msgstr "每天"
 
+#, fuzzy
+msgid "date"
+msgstr "更新"
+
 msgid "day"
 msgstr "天"
+
+msgid "day and date"
+msgstr ""
 
 msgid "default"
 msgstr "預設"
@@ -11008,21 +11327,6 @@ msgstr ""
 msgid "error while scanning"
 msgstr ""
 
-msgid "et4000"
-msgstr ""
-
-msgid "et5000/et6000"
-msgstr ""
-
-msgid "et8000/et10000"
-msgstr ""
-
-msgid "et9000/et9100"
-msgstr ""
-
-msgid "et9200/et9500/et6500"
-msgstr ""
-
 msgid "execute cuts (requires MovieCut plugin)"
 msgstr ""
 
@@ -11098,6 +11402,9 @@ msgstr "空閒"
 msgid "from"
 msgstr "來自"
 
+msgid "fs9000"
+msgstr ""
+
 msgid "further education"
 msgstr ""
 
@@ -11130,6 +11437,12 @@ msgstr "説明..."
 
 msgid "horizontal"
 msgstr "水準"
+
+msgid "hs7110"
+msgstr ""
+
+msgid "hs9510"
+msgstr ""
 
 #, fuzzy
 msgid "in menu and plugins"
@@ -11175,6 +11488,9 @@ msgstr ""
 
 msgid "leave movie player..."
 msgstr "退出電影播放..."
+
+msgid "leddisplay.png"
+msgstr ""
 
 msgid "left"
 msgstr "左"
@@ -11326,10 +11642,6 @@ msgstr ""
 msgid "not locked"
 msgstr "無信號"
 
-#, fuzzy
-msgid "not running"
-msgstr "正在恢復"
-
 msgid "not supported"
 msgstr ""
 
@@ -11338,6 +11650,10 @@ msgstr ""
 
 msgid "not_tested"
 msgstr ""
+
+#, fuzzy
+msgid "nothing"
+msgstr "什麼都不做"
 
 msgid "nothing connected"
 msgstr "從未連接"
@@ -11363,6 +11679,13 @@ msgstr "開"
 msgid "on READ ONLY medium."
 msgstr "唯讀介質."
 
+#, fuzzy
+msgid "on all mounts"
+msgstr "解除安裝(Unmount)"
+
+msgid "on hdd"
+msgstr ""
+
 msgid "once"
 msgstr "一次"
 
@@ -11372,8 +11695,14 @@ msgstr ""
 msgid "only from standby"
 msgstr ""
 
+msgid "open Info..."
+msgstr ""
+
 msgid "open nameserver configuration"
 msgstr "打開DNS設定"
+
+msgid "orange"
+msgstr ""
 
 msgid "original"
 msgstr ""
@@ -11381,12 +11710,11 @@ msgstr ""
 msgid "original language"
 msgstr ""
 
+msgid "partial"
+msgstr ""
+
 msgid "pass"
 msgstr "通過"
-
-#, fuzzy
-msgid "pausing"
-msgstr "暫停"
 
 msgid "performing arts"
 msgstr ""
@@ -11433,9 +11761,6 @@ msgstr "移除這個標記"
 msgid "repeated"
 msgstr "重複"
 
-msgid "reserved for future use"
-msgstr ""
-
 msgid "reverse by date"
 msgstr ""
 
@@ -11457,9 +11782,8 @@ msgstr ""
 msgid "romance"
 msgstr ""
 
-#, fuzzy
-msgid "running"
-msgstr "正在運行"
+msgid "save"
+msgstr ""
 
 msgid "scan state"
 msgstr "掃描狀態"
@@ -11473,6 +11797,9 @@ msgstr "秒"
 msgid "select CAId's"
 msgstr "選擇 CAId's"
 
+msgid "select Info..."
+msgstr ""
+
 msgid "select menu entry"
 msgstr "選擇功能表專案"
 
@@ -11483,8 +11810,8 @@ msgid "serious/classical/religious/historical movie/drama"
 msgstr ""
 
 #, fuzzy
-msgid "service off-air"
-msgstr "頻道密碼"
+msgid "set default"
+msgstr "預設"
 
 msgid "show DVD main menu"
 msgstr "顯示DVD主功能表"
@@ -11509,6 +11836,9 @@ msgstr ""
 
 msgid "shut down"
 msgstr "關機"
+
+msgid "signal quality"
+msgstr ""
 
 msgid "simple"
 msgstr "簡單"
@@ -11568,6 +11898,9 @@ msgstr ""
 msgid "social/spiritual science"
 msgstr ""
 
+msgid "spark"
+msgstr ""
+
 msgid "special events"
 msgstr ""
 
@@ -11585,10 +11918,6 @@ msgstr "標準"
 
 msgid "start cut here"
 msgstr "從這裏開始剪輯"
-
-#, fuzzy
-msgid "starts in a few seconds"
-msgstr "超時(秒)"
 
 msgid "stepsize"
 msgstr ""
@@ -11623,7 +11952,14 @@ msgstr ""
 msgid "tennis/squash"
 msgstr ""
 
+#, fuzzy
+msgid "terrestrial"
+msgstr "地面波"
+
 msgid "testing"
+msgstr ""
+
+msgid "tf7700"
 msgstr ""
 
 msgid "this bouquet is protected by a parental control pin"
@@ -11634,6 +11970,22 @@ msgstr "這個錄影"
 
 msgid "this service is protected by a parental control pin"
 msgstr "此頻道受家長控制."
+
+#, fuzzy
+msgid "time"
+msgstr "結束時間"
+
+msgid "time (with seconds)"
+msgstr ""
+
+msgid "time (without seconds)"
+msgstr ""
+
+msgid "time and date"
+msgstr ""
+
+msgid "time, day and date"
+msgstr ""
 
 msgid "toggle time, chapter, audio, subtitle info"
 msgstr "切換時間, 章節, 音頻,字幕資訊"
@@ -11648,6 +12000,9 @@ msgid "true"
 msgstr ""
 
 msgid "type"
+msgstr ""
+
+msgid "ufs912"
 msgstr ""
 
 msgid "unavailable"
@@ -11689,6 +12044,9 @@ msgstr ""
 
 msgid "vertical"
 msgstr "垂直"
+
+msgid "vfddisplay.png"
+msgstr ""
 
 msgid "violet"
 msgstr ""
@@ -11750,9 +12108,6 @@ msgstr ""
 msgid "with_errors"
 msgstr ""
 
-msgid "xp1000"
-msgstr ""
-
 msgid "yellow"
 msgstr "黃色"
 
@@ -11773,6 +12128,3 @@ msgstr ""
 
 msgid "zapped"
 msgstr "轉自"
-
-msgid "®"
-msgstr ""

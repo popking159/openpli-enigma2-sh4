@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: tuxbox-enigma 0.0.1-En-Th\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-03-22 22:37+0100\n"
+"POT-Creation-Date: 2020-04-09 13:48+0200\n"
 "PO-Revision-Date: 2010-04-08 18:13+0700\n"
 "Last-Translator: Tony - Thaidreambox\n"
 "Language-Team: Tony @ Thai Dreambox <tonyboyth@gmail.com>\n"
@@ -90,10 +90,6 @@ msgstr ""
 msgid " extensions."
 msgstr " ส่วนเพิ่มเติม"
 
-#, fuzzy
-msgid " min"
-msgstr "%d นาที"
-
 msgid " ms"
 msgstr ""
 
@@ -128,25 +124,11 @@ msgid "%.2f GB"
 msgstr ""
 
 #, python-format
-msgid "%02d:%02d"
-msgstr ""
-
-#, python-format
 msgid "%03d MB"
 msgstr ""
 
 #, python-format
 msgid "%2.1f sec"
-msgstr ""
-
-#. TRANSLATORS: short time representation hour:minute
-#, python-format
-msgid "%2d:%02d"
-msgstr ""
-
-#. TRANSLATORS: full time representation hour:minute:seconds
-#, python-format
-msgid "%2d:%02d:%02d"
 msgstr ""
 
 #, python-format
@@ -156,29 +138,8 @@ msgstr ""
 msgid "%A %d %B"
 msgstr ""
 
-#. TRANSLATORS: long date representations dayname daynum monthname in strftime() format! See 'man strftime'
-msgid "%A %e %B"
-msgstr ""
-
-#. TRANSLATORS: full date representation dayname daynum monthname year in strftime() format! See 'man strftime'
-msgid "%A %e %B %Y"
-msgstr ""
-
 msgid "%H:%M"
 msgstr "%H:%M"
-
-#. TRANSLATORS: full date representations short dayname daynum monthname long year in strftime() format! See 'man strftime'
-#, fuzzy
-msgid "%a %e %B %Y"
-msgstr "%d.%B %Y"
-
-#. TRANSLATORS: short date representation short dayname daynum short monthname in strftime() format! See 'man strftime'
-msgid "%a %e/%m"
-msgstr ""
-
-#. TRANSLATORS: long date representation short dayname daynum short monthname hour:minute in strftime() format! See 'man strftime'
-msgid "%a %e/%m  %-H:%M"
-msgstr ""
 
 #, python-format
 msgid "%d B"
@@ -191,6 +152,29 @@ msgstr ""
 #, python-format
 msgid "%d MB"
 msgstr ""
+
+#. TRANSLATORS: full date representation dayname daynum monthname year in strftime() format! See 'man strftime'
+#. _("%A %e %B %Y")
+#. TRANSLATORS: short time representation hour:minute in strftime() format! See 'man strftime'
+#. _("%R")
+#. TRANSLATORS: short time representation hour:minute in strftime() format! See 'man strftime'
+#. _("%R")
+#. TRANSLATORS: short date representation daynum short monthname in strftime() format! See 'man strftime'
+#. _("%e %b")
+#. TRANSLATORS: short date representation daynum short monthname in strftime() format! See 'man strftime'
+#. _("%a %e %b")
+#. TRANSLATORS: short time representation hour:minute in strftime() format! See 'man strftime'
+#. _("%R")
+#. TRANSLATORS: long date representation short dayname daynum short monthname hour:minute in strftime() format! See 'man strftime'
+#. _("%a %e %b %R")
+#. TRANSLATORS: full date representations short dayname daynum monthname long year in strftime() format! See 'man strftime'
+#. _("%a %e %B %Y")
+#.
+#, python-format
+msgid "%d Min"
+msgid_plural "%d Mins"
+msgstr[0] ""
+msgstr[1] ""
 
 #. TRANSLATORS: Intermediate scanning result, '%d' channel(s) have been found so far
 #, fuzzy, python-format
@@ -285,10 +269,6 @@ msgid "%d-%m"
 msgstr ""
 
 #, python-format
-msgid "%d.%02d. %02d:%02d"
-msgstr ""
-
-#, python-format
 msgid "%d.%03d GB"
 msgstr ""
 
@@ -305,10 +285,6 @@ msgstr "%d.%B %Y"
 
 #, python-format
 msgid "%d:%02d"
-msgstr ""
-
-#. TRANSLATORS: VFD hour:minute daynum short monthname in strftime() format! See 'man strftime'
-msgid "%k:%M %e/%m"
 msgstr ""
 
 #, fuzzy, python-format
@@ -488,6 +464,10 @@ msgstr "3"
 msgid "30"
 msgstr ""
 
+#, fuzzy
+msgid "3D Mode"
+msgstr "โหมด"
+
 msgid "3D surround"
 msgstr ""
 
@@ -512,6 +492,10 @@ msgstr ""
 msgid "444"
 msgstr ""
 
+#, fuzzy
+msgid "450 (default)"
+msgstr "ค่าเริ่มต้น"
+
 msgid "4:3"
 msgstr "4:3"
 
@@ -530,6 +514,10 @@ msgstr "5"
 
 msgid "50 MB/s"
 msgstr ""
+
+#, fuzzy
+msgid "540 (default)"
+msgstr "ค่าเริ่มต้น"
 
 msgid "6"
 msgstr "6"
@@ -860,6 +848,9 @@ msgstr ""
 msgid "Adjust the color settings so that all the color shades are distinguishable, but appear as saturated as possible. If you are happy with the result, press OK to close the video fine-tuning, or use the number keys to select other test screens."
 msgstr "ตั้งค่าสีเพื่อแสดงความต่างของสี แต่ยังคงมีความอิ่มตัวอยู่ ถ้าพอใจกับการตั้งค่านี้ให้กดปุ่ม OK เพื่อออกจากตั้งค่าหรือกดปุ่มตัวเลขเพื่อตั้งค่าส่วนอื่นๆ ของหน้าจอ"
 
+msgid "Adult Audience, Strong Violence 15+"
+msgstr ""
+
 msgid "Advanced"
 msgstr ""
 
@@ -917,6 +908,9 @@ msgid "All"
 msgstr "ทั้งหมด"
 
 msgid "All ages"
+msgstr ""
+
+msgid "All caps"
 msgstr ""
 
 msgid "All frequency"
@@ -1082,6 +1076,12 @@ msgstr ""
 msgid "Are you sure to remove this entry?"
 msgstr ""
 
+#, fuzzy
+msgid ""
+"Are you sure to save the current configuration and reboot your receiver?\n"
+"\n"
+msgstr "ออกจากการตั้งค่า Nameserver"
+
 msgid ""
 "Are you sure you want to activate this network configuration?\n"
 "\n"
@@ -1187,6 +1187,9 @@ msgid "Audio PID%s, codec & lang"
 msgstr ""
 
 msgid "Audio PID, codec & lang"
+msgstr ""
+
+msgid "Audio Source"
 msgstr ""
 
 msgid "Audio auto volume level"
@@ -1309,6 +1312,10 @@ msgstr ""
 
 msgid "B"
 msgstr "B"
+
+#, python-format
+msgid "BC%d"
+msgstr ""
 
 msgid "BER"
 msgstr "BER"
@@ -1447,6 +1454,10 @@ msgstr "Block noise reduction"
 msgid "Blue"
 msgstr ""
 
+#, fuzzy
+msgid "Blue LED brightness"
+msgstr "ความสว่าง"
+
 msgid "Bolivia (Plurinational State of)"
 msgstr ""
 
@@ -1462,6 +1473,9 @@ msgstr ""
 #, fuzzy
 msgid "Boost green"
 msgstr "เขียว"
+
+msgid "Booster Control"
+msgstr ""
 
 msgid "Boot to Android image"
 msgstr ""
@@ -1679,6 +1693,9 @@ msgstr ""
 msgid "Center DVB subtitles"
 msgstr ""
 
+msgid "Center text"
+msgstr ""
+
 msgid "Center time-labels and remove date"
 msgstr ""
 
@@ -1797,6 +1814,9 @@ msgid ""
 "DiSEqC port %s for %s"
 msgstr ""
 
+msgid "Children"
+msgstr ""
+
 msgid "Children/Youth"
 msgstr ""
 
@@ -1890,6 +1910,10 @@ msgstr "ตั้งค่าคอลเลคชั่น"
 
 #, fuzzy
 msgid "Colombia"
+msgstr "ระบบสี"
+
+#, fuzzy
+msgid "Color Format"
 msgstr "ระบบสี"
 
 #, fuzzy
@@ -2440,6 +2464,10 @@ msgstr "ภาษาโคเอเชีย"
 msgid "Croatian"
 msgstr "ภาษาโคเอเชีย"
 
+#, fuzzy
+msgid "Cross brightness"
+msgstr "ความสว่าง"
+
 msgid "Cuba"
 msgstr ""
 
@@ -2628,6 +2656,9 @@ msgstr "Deep Standby"
 #, fuzzy
 msgid "Deep standby"
 msgstr "Deep Standby"
+
+msgid "Deepstby LED brightness"
+msgstr ""
 
 msgid "Default"
 msgstr "ค่าเริ่มต้น"
@@ -2902,6 +2933,10 @@ msgstr "ตั้งค่าการแสดงผล"
 #, fuzzy
 msgid "Display and userinterface"
 msgstr "การแสดงผลและส่วนติดต่อผู้ใช้"
+
+#, fuzzy
+msgid "Display brightness"
+msgstr "ตั้งค่าการแสดงผล"
 
 msgid "Display message before playing next movie"
 msgstr ""
@@ -3266,6 +3301,9 @@ msgstr ""
 msgid "Enable OpenTV EPG"
 msgstr ""
 
+msgid "Enable VFD display"
+msgstr ""
+
 msgid "Enable ViaSat EPG"
 msgstr ""
 
@@ -3513,9 +3551,6 @@ msgstr "ภาษาเอสโตเนี่ยน"
 msgid "Estonian"
 msgstr "ภาษาเอสโตเนี่ยน"
 
-msgid "EtPortal"
-msgstr ""
-
 msgid "Ethernet network interface"
 msgstr ""
 
@@ -3675,12 +3710,6 @@ msgstr ""
 msgid "Extra start time to ignore inactivity sleeptimer"
 msgstr ""
 
-msgid "F"
-msgstr ""
-
-msgid "F1/F3/F4/F4-TURBO"
-msgstr ""
-
 msgid "FAILED"
 msgstr ""
 
@@ -3711,6 +3740,10 @@ msgstr "FEC"
 
 msgid "FEC:"
 msgstr ""
+
+#, fuzzy
+msgid "FFmpeg version: "
+msgstr "เวอร์ชั่นใหม่:"
 
 msgid "FHD"
 msgstr ""
@@ -3775,14 +3808,6 @@ msgstr ""
 #, python-format
 msgid "Fan %d"
 msgstr ""
-
-#, python-format
-msgid "Fan %d PWM"
-msgstr ""
-
-#, fuzzy, python-format
-msgid "Fan %d voltage"
-msgstr "เพิ่ม Voltage"
 
 msgid "Fan operation"
 msgstr ""
@@ -3943,6 +3968,16 @@ msgstr "วันศุกร์"
 msgid "From:"
 msgstr ""
 
+msgid "Front panel display"
+msgstr ""
+
+#, fuzzy
+msgid "Front panel display configuration"
+msgstr "ตั้งค่า Tuner"
+
+msgid "Front panel display configuration for ADB ITI-5800S(X)"
+msgstr ""
+
 #, python-format
 msgid "Frontprocessor version: %s"
 msgstr ""
@@ -3964,9 +3999,6 @@ msgid "Further Options"
 msgstr ""
 
 msgid "Further options"
-msgstr ""
-
-msgid "G"
 msgstr ""
 
 #, fuzzy
@@ -3994,6 +4026,9 @@ msgstr ""
 
 msgid "Gateway"
 msgstr "Gateway"
+
+msgid "General"
+msgstr ""
 
 #, fuzzy
 msgid "General AC3 delay"
@@ -4149,20 +4184,11 @@ msgstr ""
 msgid "Guyana"
 msgstr ""
 
-msgid "H"
-msgstr ""
-
 #, fuzzy
 msgid "HD"
 msgstr "D"
 
 msgid "HD list"
-msgstr ""
-
-msgid "HD2400"
-msgstr ""
-
-msgid "HD60"
 msgstr ""
 
 msgid "HDMI"
@@ -4193,9 +4219,6 @@ msgid "HDR10"
 msgstr ""
 
 msgid "HDR10 support"
-msgstr ""
-
-msgid "HDx1/HD1xxx/HD5x0C/VS1x00/et7x00/et8500/et7000mini"
 msgstr ""
 
 msgid "HELP"
@@ -4246,6 +4269,9 @@ msgid "Hebrew"
 msgstr ""
 
 msgid "Helps setting up your antenna"
+msgstr ""
+
+msgid "Here you can change the screen positions with the arrow buttons on your remote control!"
 msgstr ""
 
 msgid "Hidden network"
@@ -4343,9 +4369,6 @@ msgstr "ภาษาฮังการี่"
 #, fuzzy
 msgid "Hungary"
 msgstr "ภาษาฮังการี่"
-
-msgid "I"
-msgstr ""
 
 #, fuzzy
 msgid "I do not want to perform any service scans"
@@ -4710,9 +4733,6 @@ msgstr ""
 msgid "Items per page for list screen"
 msgstr ""
 
-msgid "J"
-msgstr ""
-
 msgid "Jamaica"
 msgstr ""
 
@@ -4806,6 +4826,40 @@ msgstr "แลนอะแด๊ปเตอร์"
 msgid "LAN connection"
 msgstr ""
 
+#, fuzzy
+msgid "LED brightness"
+msgstr "ความสว่าง"
+
+#, fuzzy
+msgid "LED configuration"
+msgstr "ตั้งค่าเครือข่าย"
+
+msgid "LED control"
+msgstr ""
+
+msgid "LED control for Fortis HS7110"
+msgstr ""
+
+msgid "LED control for Fortis HS7119/HS7810A/HS7819"
+msgstr ""
+
+#, fuzzy
+msgid "LED display"
+msgstr "ตั้งค่าการแสดงผล"
+
+#, fuzzy
+msgid "LED display configuration"
+msgstr "ตั้งค่า Tuner"
+
+msgid "LED display configuration for Fortis HS7119/HS7810A/HS7819"
+msgstr ""
+
+msgid "LED display configuration for Spark"
+msgstr ""
+
+msgid "LED display control Spark"
+msgstr ""
+
 msgid "LNB"
 msgstr "LNB"
 
@@ -4828,6 +4882,10 @@ msgid "Last speed"
 msgstr "ความเร็วล่าสุด"
 
 msgid "Last update: "
+msgstr ""
+
+msgctxt "third event: 'third' event label"
+msgid "Later"
 msgstr ""
 
 msgid "Latest Commits"
@@ -4999,6 +5057,10 @@ msgstr ""
 msgid "Logfile does not exist anymore"
 msgstr ""
 
+#, fuzzy
+msgid "Logo brightness"
+msgstr "ความสว่าง"
+
 msgid "Long filenames"
 msgstr ""
 
@@ -5123,6 +5185,12 @@ msgstr ""
 msgid "Martinique"
 msgstr ""
 
+msgid "Mature Adult Audience 15+"
+msgstr ""
+
+msgid "Mature Audience 15+"
+msgstr ""
+
 #, fuzzy
 msgid "Mauritania"
 msgstr "ภาษาลิธูเนี่ยน"
@@ -5194,6 +5262,9 @@ msgid "Minimum age %d years"
 msgstr ""
 
 msgid "Minimum send interval"
+msgstr ""
+
+msgid "Mins"
 msgstr ""
 
 msgid "Missing "
@@ -5740,6 +5811,9 @@ msgstr "ฟอร์แมท"
 msgid "Normal mode"
 msgstr ""
 
+msgid "Normal running frequency"
+msgstr ""
+
 msgid "North"
 msgstr "เหนือ"
 
@@ -5752,6 +5826,9 @@ msgstr "ภาษานอร์เว"
 
 msgid "Norwegian"
 msgstr "ภาษานอร์เว"
+
+msgid "Not Classified"
+msgstr ""
 
 #, fuzzy
 msgid "Not Installed"
@@ -5769,6 +5846,10 @@ msgstr ""
 #, fuzzy, python-format
 msgid "Not enough disk space. Please free up some disk space and try again. (%d MB required, %d MB available)"
 msgstr "เนื้อที่ไม่เพียงพอ ลบไฟล์ที่ไม่ต้องการออกแล้วลองใหม่ (ต้องการ %d MB แต่เหลืออยู่ %d)"
+
+#, fuzzy
+msgid "Not running"
+msgstr "เริ่มตั้งแต่ต้น"
 
 msgid "Not tested:"
 msgstr ""
@@ -5800,6 +5881,12 @@ msgstr ""
 msgid "Now playing"
 msgstr "กำลังเล่น"
 
+msgid "Now you can change the position of the lower and right side. Press blue button to switch..."
+msgstr ""
+
+msgid "Now you can change the position of the upper and left side. Press blue button to switch..."
+msgstr ""
+
 msgid "Now, use the contrast setting to turn up the brightness of the background as much as possible, but make sure that you can still see the difference between the two brightest levels of shades.If you have done that, press OK."
 msgstr "ตอนนี้.. ให้ปรับความชัดของหน้าจอโดยการเพิ่มความสว่างให้มากที่สุด แต่ต้องแน่ใจว่าเห็นความแตกต่างของสีที่สว่างที่สุด หากจบกระบวนการแล้วให้กดปุ่ม OK"
 
@@ -5820,6 +5907,13 @@ msgstr ""
 
 msgid "OSD 3D setup"
 msgstr ""
+
+msgid "OSD Adjustment"
+msgstr ""
+
+#, fuzzy
+msgid "OSD Position setup"
+msgstr "ตั้งค่าตัวขับจาน"
 
 msgid "OSD name request"
 msgstr ""
@@ -6026,6 +6120,9 @@ msgstr ""
 msgid "Parent directory"
 msgstr "โฟล์เดอร์ก่อนหน้า"
 
+msgid "Parental Guidance Recommended"
+msgstr ""
+
 msgid "Parental control"
 msgstr "ควบคุมอายุ"
 
@@ -6053,6 +6150,10 @@ msgstr "กำลังกลับมาเล่นที่เดิม"
 #, fuzzy
 msgid "Pause/Continue playback"
 msgstr "เล่นต่อเนื่อง"
+
+#, fuzzy
+msgid "Pausing"
+msgstr "หยุดชั่วคราว"
 
 msgid "Percentage left"
 msgstr ""
@@ -6463,6 +6564,9 @@ msgstr ""
 msgid "Power LED"
 msgstr ""
 
+msgid "Power LED colour"
+msgstr ""
+
 msgid "Power management. Consult your receiver's manual for more information."
 msgstr ""
 
@@ -6531,6 +6635,9 @@ msgstr ""
 
 msgid "Preparing... Please wait"
 msgstr "กำลังเตรียมงาน... รอสักครู่"
+
+msgid "Preschool"
+msgstr ""
 
 msgid "Press '0' to toggle PiP mode"
 msgstr ""
@@ -6729,8 +6836,9 @@ msgstr "เร็ว"
 msgid "Quick zap"
 msgstr "เปลี่ยนช่องเร็ว (Quickzap)"
 
-msgid "REC"
-msgstr ""
+#, fuzzy
+msgid "RC command set"
+msgstr "เรียงลำดับคำสั่ง"
 
 msgid "RF output"
 msgstr "RF output"
@@ -6796,6 +6904,10 @@ msgstr "เริ่มระบบใหม่ (Reboot)"
 msgid "Rec"
 msgstr ""
 
+#, fuzzy
+msgid "Rec LED brightness"
+msgstr "ความสว่าง"
+
 msgid "Recall to previous service"
 msgstr ""
 
@@ -6838,6 +6950,16 @@ msgid "Recordings always have priority"
 msgstr "บันทึกรายการสำคัญมากกว่า"
 
 msgid "Red"
+msgstr ""
+
+msgid "Red LED during recording"
+msgstr ""
+
+#, fuzzy
+msgid "Red LED on in deep standby"
+msgstr "เข้าสู่โหมด Deep standby"
+
+msgid "Red LED on in standby"
 msgstr ""
 
 msgid "Red button..."
@@ -7038,6 +7160,9 @@ msgstr ""
 msgid "Reserved"
 msgstr ""
 
+msgid "Reserved for future use"
+msgstr ""
+
 msgid "Reset"
 msgstr "ตั้งค่าใหม่"
 
@@ -7124,6 +7249,9 @@ msgstr ""
 msgid "Restoring..."
 msgstr "กำลังบันทึกรายการ..."
 
+msgid "Restricted 18+"
+msgstr ""
+
 msgid "Resume from last position"
 msgstr "เล่นต่อจากตำแหน่งเดิม"
 
@@ -7202,6 +7330,10 @@ msgstr ""
 
 msgid "Round start time on"
 msgstr ""
+
+#, fuzzy
+msgid "Running"
+msgstr "เริ่มตั้งแต่ต้น"
 
 msgid "Russian"
 msgstr "ภาษารัสเซีย"
@@ -7469,7 +7601,17 @@ msgstr "ค้นหาจาก Lamedbs และโดยเรียงดา
 msgid "Scroll delay"
 msgstr ""
 
+#, fuzzy
+msgid "Scroll long strings"
+msgstr "ตั้งค่าคอลเลคชั่น"
+
+msgid "Scroll pause"
+msgstr ""
+
 msgid "Scroll repeats"
+msgstr ""
+
+msgid "Scroll text"
 msgstr ""
 
 #, fuzzy
@@ -7941,6 +8083,10 @@ msgstr ""
 "ไม่พบบริการใดๆ !\n"
 "(ไม่พบ SID ใน PAT)"
 
+#, fuzzy
+msgid "Service off-air"
+msgstr "เพิ่มบริการเข้าสู่รายการโปรด"
+
 msgid "Service reference"
 msgstr ""
 
@@ -7993,6 +8139,9 @@ msgstr ""
 msgid "Set end time"
 msgstr "เวลาสิ้นสุด"
 
+msgid "Set fan"
+msgstr ""
+
 msgid "Set fixed"
 msgstr ""
 
@@ -8004,6 +8153,10 @@ msgstr ""
 
 msgid "Set interface as default Interface"
 msgstr "ตั้งให้อินเตอร์เฟซนี้เป็นค่าเริ่มต้น"
+
+#, fuzzy
+msgid "Set led"
+msgstr "เวลาสิ้นสุด"
 
 msgid "Set limits"
 msgstr ""
@@ -8118,8 +8271,16 @@ msgstr "แสดงแถบรายการเมื่อมีการเ
 msgid "Show EPG..."
 msgstr "แสดงผังรายการ (EPG)"
 
+#, fuzzy
+msgid "Show Ethernet activity"
+msgstr "แสดงทางเลือกอื่น"
+
 msgid "Show Games show"
 msgstr ""
+
+#, fuzzy
+msgid "Show HDD icons"
+msgstr "แสดงข้อมูล"
 
 msgid "Show InfoBar"
 msgstr ""
@@ -8162,6 +8323,10 @@ msgstr ""
 msgid "Show channel numbers in channel selection"
 msgstr ""
 
+#, fuzzy
+msgid "Show clock"
+msgstr "แสดงข้อมูล"
+
 msgid "Show columns"
 msgstr ""
 
@@ -8203,6 +8368,10 @@ msgstr ""
 
 msgid "Show icon for new/unseen items"
 msgstr ""
+
+#, fuzzy
+msgid "Show icons"
+msgstr "แสดงข้อมูล"
 
 msgid "Show in extensions menu"
 msgstr ""
@@ -8264,6 +8433,26 @@ msgstr ""
 
 msgid "Show notification when import channels was successful"
 msgstr ""
+
+msgid "Show on LED display"
+msgstr ""
+
+msgid "Show on LED display in standby"
+msgstr ""
+
+msgid "Show on VFD display"
+msgstr ""
+
+msgid "Show on VFD display in standby"
+msgstr ""
+
+#, fuzzy
+msgid "Show on display"
+msgstr "แสดงเครื่องเล่นวิทยุ..."
+
+#, fuzzy
+msgid "Show on display in standby"
+msgstr "เข้าสู่โหมด Deep standby"
 
 msgid "Show packages to be updated"
 msgstr ""
@@ -8331,6 +8520,9 @@ msgstr "แสดงเครื่องเล่นวิทยุ..."
 msgid "Show the tv player..."
 msgstr "แสดงเครื่องเล่นโทรทัศน์..."
 
+msgid "Show this plugin in plugin menu"
+msgstr ""
+
 msgid "Show transponder info"
 msgstr "แสดงข้อมูล Transponder"
 
@@ -8364,6 +8556,9 @@ msgid "Shutdown"
 msgstr ""
 
 msgid "Shutdown when in Standby"
+msgstr ""
+
+msgid "Side by Side"
 msgstr ""
 
 msgid "Side by side"
@@ -8639,6 +8834,9 @@ msgstr ""
 msgid "Spanish"
 msgstr "ภาษาสเปน"
 
+msgid "Spark7162 select tuner mode"
+msgstr ""
+
 msgid "Special 1"
 msgstr ""
 
@@ -8705,18 +8903,32 @@ msgstr "ปิดเครื่อง"
 msgid "Standby LED"
 msgstr "Standby"
 
+#, fuzzy
+msgid "Standby LED brightness"
+msgstr "Standby"
+
+#, fuzzy
+msgid "Standby LED colour"
+msgstr "Standby"
+
 msgid "Standby after current event"
 msgstr ""
 
-#, python-format
-msgid "Standby fan %d PWM"
-msgstr ""
-
-#, python-format
-msgid "Standby fan %d voltage"
-msgstr ""
+#, fuzzy
+msgid "Standby brightness"
+msgstr "ความสว่าง"
 
 msgid "Standby in "
+msgstr ""
+
+msgid "Standby saver frequency"
+msgstr ""
+
+#, fuzzy
+msgid "Start Boot Frequency"
+msgstr "ความถี่"
+
+msgid "Start boot frequency"
 msgstr ""
 
 msgid "Start directory"
@@ -8760,11 +8972,18 @@ msgstr ""
 msgid "Starting on"
 msgstr "เริ่มตอน"
 
+msgid "Starts in a few seconds"
+msgstr ""
+
 msgid "Startup the set top box in standby"
 msgstr ""
 
 msgid "Startup to Standby"
 msgstr ""
+
+#, fuzzy
+msgid "Stby LED brightness"
+msgstr "ความสว่าง"
 
 msgid "Step east"
 msgstr "ไปทางทิศตะวันออก"
@@ -9103,9 +9322,6 @@ msgstr "ชื่อไฟล์ TS ยาวเกินไปสำหรั�
 msgid "TSID"
 msgstr ""
 
-msgid "TUNER:"
-msgstr ""
-
 msgid "TUNING"
 msgstr ""
 
@@ -9138,12 +9354,12 @@ msgstr ""
 msgid "Teletext subtitle color"
 msgstr ""
 
-#, fuzzy
-msgid "Temperature and fan control"
-msgstr "ควบคุมอายุ"
-
 msgid "Terrestrial"
 msgstr "ภาคพื้นดิน"
+
+#, fuzzy
+msgid "Test"
+msgstr "โหมดทดสอบ"
 
 msgid "Test DiSEqC settings"
 msgstr "ทดสอบการตั้งค่า DiSEqC"
@@ -9576,6 +9792,10 @@ msgid "Time"
 msgstr "เวลา"
 
 #, fuzzy
+msgid "Time mode"
+msgstr "Tone mode"
+
+#, fuzzy
 msgid "Time scale"
 msgstr "เลือกการตั้งเวลา"
 
@@ -9735,6 +9955,9 @@ msgstr "Toneburst A/B"
 msgid "Tonga"
 msgstr ""
 
+msgid "Top and Bottom"
+msgstr ""
+
 msgid "Top and bottom"
 msgstr ""
 
@@ -9887,6 +10110,12 @@ msgstr "ประเภทการค้นหา"
 msgid "Type of scan"
 msgstr "ประเภทการค้นหา"
 
+msgid "Typematic delay"
+msgstr ""
+
+msgid "Typematic rate"
+msgstr ""
+
 msgid "UNKNOWN"
 msgstr ""
 
@@ -9966,6 +10195,13 @@ msgstr ""
 
 msgid "Uninstall"
 msgstr ""
+
+msgid "UnionTunerType"
+msgstr ""
+
+#, fuzzy
+msgid "UnionTunerType config"
+msgstr "ตั้งค่า Tuner"
 
 msgid "United Arab Emirates"
 msgstr ""
@@ -10047,6 +10283,10 @@ msgstr ""
 
 msgid "Upper case"
 msgstr ""
+
+#, fuzzy
+msgid "Uppercase letters only"
+msgstr "รายการต่อไปในหน่วยความจำ"
 
 msgid "Uruguay"
 msgstr ""
@@ -10206,6 +10446,54 @@ msgid "VCR scart"
 msgstr "VCR scart"
 
 #, fuzzy
+msgid "VFD brightness"
+msgstr "ความสว่าง"
+
+msgid "VFD configuration for Fortis FS9000/9200"
+msgstr ""
+
+msgid "VFD configuration for Fortis HS8200"
+msgstr ""
+
+#, fuzzy
+msgid "VFD display"
+msgstr "เครื่องเล่นดีวีดี"
+
+#, fuzzy
+msgid "VFD display configuration"
+msgstr "ตั้งค่า Tuner"
+
+msgid "VFD display configuration for Fortis HS742X"
+msgstr ""
+
+msgid "VFD display configuration for Fortis HS9510"
+msgstr ""
+
+msgid "VFD display configuration for Spark 7162"
+msgstr ""
+
+msgid "VFD-Icons"
+msgstr ""
+
+msgid "VFD-Icons for ADB ITI-5800S(X)"
+msgstr ""
+
+msgid "VFD-Icons for Fortis FS9000/9200"
+msgstr ""
+
+msgid "VFD-Icons for Fortis HS7420 & HS7429"
+msgstr ""
+
+msgid "VFD-Icons for Fortis HS8200"
+msgstr ""
+
+msgid "VFD-Icons for Fortis HS9510"
+msgstr ""
+
+msgid "VFD-Icons for spark 7162"
+msgstr ""
+
+#, fuzzy
 msgid "VLAN connection"
 msgstr "ไม่พบการเชื่อมต่อ"
 
@@ -10216,9 +10504,6 @@ msgid "VOB File"
 msgstr ""
 
 msgid "VOB file"
-msgstr ""
-
-msgid "VU+"
 msgstr ""
 
 #, fuzzy
@@ -10808,6 +11093,9 @@ msgstr ""
 msgid "YPbPr"
 msgstr "YPbPr"
 
+msgid "YUV"
+msgstr ""
+
 msgid "Year"
 msgstr "ปี"
 
@@ -10944,6 +11232,9 @@ msgstr "ต้องรอประมาณ %s!"
 msgid "You must switch to the service %s (%s - '%s')!\n"
 msgstr ""
 
+msgid "You seem to be in timeshift!"
+msgstr ""
+
 msgid "Your collection exceeds the size of a single layer medium, you will need a blank dual layer DVD!"
 msgstr "ข้อมูลที่เลือกใหญ่กว่าดีวีดีแบบชั้นเดียว ท่านต้องใช้ดีวีดีแบบ 2 ชั้น"
 
@@ -11073,22 +11364,7 @@ msgstr ""
 msgid "Zapped to timer service %s!"
 msgstr "ย้ายไปบนสุด"
 
-msgid "Zgemma H.S/H.2S/H.2H/H5/H7(old model)"
-msgstr ""
-
-msgid "Zgemma H7(new model)/H9(new model)/H9COMBO/H9TWIN/H10"
-msgstr ""
-
-msgid "Zgemma H9(old model)/I55Plus"
-msgstr ""
-
-msgid "Zgemma Star S/2S/H1/H2"
-msgstr ""
-
 msgid "Zimbabwe"
-msgstr ""
-
-msgid "[REC]"
 msgstr ""
 
 msgid "[alternative edit]"
@@ -11199,7 +11475,7 @@ msgid "ballet"
 msgstr ""
 
 #, python-format
-msgid "bc%s"
+msgid "bc%d"
 msgstr ""
 
 msgid "better"
@@ -11214,6 +11490,12 @@ msgstr ""
 msgid "blacklist"
 msgstr "รายการต้องห้าม"
 
+msgid "blank"
+msgstr ""
+
+msgid "blink"
+msgstr ""
+
 msgid "blue"
 msgstr "น้ำเงิน"
 
@@ -11227,6 +11509,14 @@ msgstr ""
 msgid "by date"
 msgstr "เรียงตามวันที่"
 
+#, fuzzy
+msgid "cable"
+msgstr "เคเบิ้ล"
+
+#, fuzzy
+msgid "cancel"
+msgstr "ยกเลิก"
+
 msgid "cartoon/puppets"
 msgstr ""
 
@@ -11237,6 +11527,25 @@ msgid "centered"
 msgstr ""
 
 msgid "centered, wrapped"
+msgstr ""
+
+#, fuzzy
+msgid "change sides"
+msgstr "เปลี่ยน Step"
+
+#, fuzzy
+msgid "change the OSD screen size"
+msgstr "เปลี่ยน Step"
+
+#, fuzzy
+msgid "channel name"
+msgstr "บริการนี้ %d ไม่มี!"
+
+#, fuzzy
+msgid "channel number"
+msgstr "บริการนี้ %d ไม่มี!"
+
+msgid "channel number and name"
 msgstr ""
 
 msgid "chapters"
@@ -11269,6 +11578,10 @@ msgstr "ยืนยันแล้ว"
 msgid "connected"
 msgstr "เชื่อมต่อแล้ว"
 
+#, fuzzy
+msgid "continuous"
+msgstr "ทำต่อ"
+
 msgid "controlled by HDMI"
 msgstr ""
 
@@ -11278,8 +11591,16 @@ msgstr ""
 msgid "daily"
 msgstr "รายวัน"
 
+#, fuzzy
+msgid "date"
+msgstr "ปรุบปรุง"
+
 msgid "day"
 msgstr "วัน"
+
+#, fuzzy
+msgid "day and date"
+msgstr "เรียงตามวันที่"
 
 #, fuzzy
 msgid "default"
@@ -11366,21 +11687,6 @@ msgstr ""
 msgid "error while scanning"
 msgstr ""
 
-msgid "et4000"
-msgstr ""
-
-msgid "et5000/et6000"
-msgstr ""
-
-msgid "et8000/et10000"
-msgstr ""
-
-msgid "et9000/et9100"
-msgstr ""
-
-msgid "et9200/et9500/et6500"
-msgstr ""
-
 msgid "execute cuts (requires MovieCut plugin)"
 msgstr ""
 
@@ -11457,6 +11763,9 @@ msgstr "เหลืออยู่"
 msgid "from"
 msgstr ""
 
+msgid "fs9000"
+msgstr ""
+
 msgid "further education"
 msgstr ""
 
@@ -11489,6 +11798,12 @@ msgstr "ช่วยเหลือ..."
 
 msgid "horizontal"
 msgstr "แนวนอน (H)"
+
+msgid "hs7110"
+msgstr ""
+
+msgid "hs9510"
+msgstr ""
 
 #, fuzzy
 msgid "in menu and plugins"
@@ -11534,6 +11849,9 @@ msgstr ""
 
 msgid "leave movie player..."
 msgstr "ออกจากส่วนเล่นภาพยนต์..."
+
+msgid "leddisplay.png"
+msgstr ""
 
 msgid "left"
 msgstr "ซ้าย"
@@ -11685,10 +12003,6 @@ msgstr ""
 msgid "not locked"
 msgstr "ไม่ล๊อค"
 
-#, fuzzy
-msgid "not running"
-msgstr "เริ่มตั้งแต่ต้น"
-
 msgid "not supported"
 msgstr ""
 
@@ -11697,6 +12011,10 @@ msgstr ""
 
 msgid "not_tested"
 msgstr ""
+
+#, fuzzy
+msgid "nothing"
+msgstr "ไม่ต้องทำอะไร"
 
 msgid "nothing connected"
 msgstr "ไม่พบการเชื่อมต่อ"
@@ -11722,6 +12040,12 @@ msgstr "เปิด"
 msgid "on READ ONLY medium."
 msgstr "บนสื่อบันทึกอ่านได้อย่างเดียว"
 
+msgid "on all mounts"
+msgstr ""
+
+msgid "on hdd"
+msgstr ""
+
 msgid "once"
 msgstr "ครั้งเดียว"
 
@@ -11731,8 +12055,14 @@ msgstr ""
 msgid "only from standby"
 msgstr ""
 
+msgid "open Info..."
+msgstr ""
+
 msgid "open nameserver configuration"
 msgstr "ตั้งค่า Nameserver"
+
+msgid "orange"
+msgstr ""
 
 msgid "original"
 msgstr ""
@@ -11740,11 +12070,11 @@ msgstr ""
 msgid "original language"
 msgstr ""
 
+msgid "partial"
+msgstr ""
+
 msgid "pass"
 msgstr "ผ่าน"
-
-msgid "pausing"
-msgstr ""
 
 msgid "performing arts"
 msgstr ""
@@ -11791,9 +12121,6 @@ msgstr "ลบรายการนี้ออก"
 msgid "repeated"
 msgstr "เล่นซ้ำ"
 
-msgid "reserved for future use"
-msgstr ""
-
 msgid "reverse by date"
 msgstr ""
 
@@ -11815,7 +12142,7 @@ msgstr ""
 msgid "romance"
 msgstr ""
 
-msgid "running"
+msgid "save"
 msgstr ""
 
 msgid "scan state"
@@ -11830,6 +12157,9 @@ msgstr "วินาที"
 msgid "select CAId's"
 msgstr "เลือก CAId's"
 
+msgid "select Info..."
+msgstr ""
+
 msgid "select menu entry"
 msgstr "เลือกเมนูจากรายการ"
 
@@ -11840,8 +12170,8 @@ msgid "serious/classical/religious/historical movie/drama"
 msgstr ""
 
 #, fuzzy
-msgid "service off-air"
-msgstr "เพิ่มบริการเข้าสู่รายการโปรด"
+msgid "set default"
+msgstr "ค่าเริ่มต้น"
 
 msgid "show DVD main menu"
 msgstr "แสดงเมนูหลักของดีวีดี"
@@ -11866,6 +12196,10 @@ msgstr ""
 
 msgid "shut down"
 msgstr ""
+
+#, fuzzy
+msgid "signal quality"
+msgstr "คุณภาพการเชื่อมต่อ:"
 
 msgid "simple"
 msgstr "แบบง่าย"
@@ -11925,6 +12259,9 @@ msgstr ""
 msgid "social/spiritual science"
 msgstr ""
 
+msgid "spark"
+msgstr ""
+
 msgid "special events"
 msgstr ""
 
@@ -11942,9 +12279,6 @@ msgstr "มาตรฐาน"
 
 msgid "start cut here"
 msgstr "ตัดตรงนี้"
-
-msgid "starts in a few seconds"
-msgstr ""
 
 msgid "stepsize"
 msgstr ""
@@ -11979,8 +12313,15 @@ msgstr "ไฟล์ต้นฉบับ"
 msgid "tennis/squash"
 msgstr ""
 
+#, fuzzy
+msgid "terrestrial"
+msgstr "ภาคพื้นดิน"
+
 msgid "testing"
 msgstr "กำลังทำงาน"
+
+msgid "tf7700"
+msgstr ""
 
 msgid "this bouquet is protected by a parental control pin"
 msgstr ""
@@ -11990,6 +12331,22 @@ msgstr "กำลังถูกบันทึก"
 
 msgid "this service is protected by a parental control pin"
 msgstr "บริการนี้ถูกควบคุมอายุรับชม"
+
+#, fuzzy
+msgid "time"
+msgstr "เวลาสิ้นสุด"
+
+msgid "time (with seconds)"
+msgstr ""
+
+msgid "time (without seconds)"
+msgstr ""
+
+msgid "time and date"
+msgstr ""
+
+msgid "time, day and date"
+msgstr ""
 
 msgid "toggle time, chapter, audio, subtitle info"
 msgstr "สลับช่วงเวลา ตอนที่ เสียง หรือซับไตเติ้ล"
@@ -12006,6 +12363,9 @@ msgstr ""
 #, fuzzy
 msgid "type"
 msgstr "ประเภทการทดสอบ"
+
+msgid "ufs912"
+msgstr ""
 
 msgid "unavailable"
 msgstr "ไม่สามารถใช้ได้"
@@ -12046,6 +12406,9 @@ msgstr ""
 
 msgid "vertical"
 msgstr "แนวตั้ง (V)"
+
+msgid "vfddisplay.png"
+msgstr ""
 
 msgid "violet"
 msgstr ""
@@ -12107,9 +12470,6 @@ msgstr ""
 msgid "with_errors"
 msgstr ""
 
-msgid "xp1000"
-msgstr ""
-
 msgid "yellow"
 msgstr "เหลือง"
 
@@ -12130,6 +12490,3 @@ msgstr ""
 
 msgid "zapped"
 msgstr "เปลี่ยนช่องแล้ว"
-
-msgid "®"
-msgstr ""

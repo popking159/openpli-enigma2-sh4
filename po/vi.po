@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: enigma 2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-03-22 22:37+0100\n"
+"POT-Creation-Date: 2020-04-09 13:48+0200\n"
 "PO-Revision-Date: 2019-11-19 08:58+0700\n"
 "Last-Translator: krong\n"
 "Language-Team: none\n"
@@ -91,9 +91,6 @@ msgstr " (thấp hơn bất kỳ ô tô nào)"
 msgid " extensions."
 msgstr " phần mở rộng."
 
-msgid " min"
-msgstr " min"
-
 msgid " ms"
 msgstr " ms"
 
@@ -128,26 +125,12 @@ msgid "%.2f GB"
 msgstr "%.2f GB"
 
 #, python-format
-msgid "%02d:%02d"
-msgstr "%02d:%02d"
-
-#, python-format
 msgid "%03d MB"
 msgstr "%03d MB"
 
 #, python-format
 msgid "%2.1f sec"
 msgstr "%2.1f sec"
-
-#. TRANSLATORS: short time representation hour:minute
-#, python-format
-msgid "%2d:%02d"
-msgstr "%2d:%02d"
-
-#. TRANSLATORS: full time representation hour:minute:seconds
-#, python-format
-msgid "%2d:%02d:%02d"
-msgstr "%2d:%02d:%02d"
 
 #, python-format
 msgid "%3.01f dB"
@@ -156,28 +139,8 @@ msgstr "%3.01f dB"
 msgid "%A %d %B"
 msgstr "%A %d %B"
 
-#. TRANSLATORS: long date representations dayname daynum monthname in strftime() format! See 'man strftime'
-msgid "%A %e %B"
-msgstr "%A %e %B"
-
-#. TRANSLATORS: full date representation dayname daynum monthname year in strftime() format! See 'man strftime'
-msgid "%A %e %B %Y"
-msgstr "%A %e %B %Y"
-
 msgid "%H:%M"
 msgstr "%H:%M"
-
-#. TRANSLATORS: full date representations short dayname daynum monthname long year in strftime() format! See 'man strftime'
-msgid "%a %e %B %Y"
-msgstr "%a %e %B %Y"
-
-#. TRANSLATORS: short date representation short dayname daynum short monthname in strftime() format! See 'man strftime'
-msgid "%a %e/%m"
-msgstr "%a %e/%m"
-
-#. TRANSLATORS: long date representation short dayname daynum short monthname hour:minute in strftime() format! See 'man strftime'
-msgid "%a %e/%m  %-H:%M"
-msgstr "%a %e/%m  %-H:%M"
 
 #, python-format
 msgid "%d B"
@@ -190,6 +153,29 @@ msgstr "%d GB"
 #, python-format
 msgid "%d MB"
 msgstr "%d MB"
+
+#. TRANSLATORS: full date representation dayname daynum monthname year in strftime() format! See 'man strftime'
+#. _("%A %e %B %Y")
+#. TRANSLATORS: short time representation hour:minute in strftime() format! See 'man strftime'
+#. _("%R")
+#. TRANSLATORS: short time representation hour:minute in strftime() format! See 'man strftime'
+#. _("%R")
+#. TRANSLATORS: short date representation daynum short monthname in strftime() format! See 'man strftime'
+#. _("%e %b")
+#. TRANSLATORS: short date representation daynum short monthname in strftime() format! See 'man strftime'
+#. _("%a %e %b")
+#. TRANSLATORS: short time representation hour:minute in strftime() format! See 'man strftime'
+#. _("%R")
+#. TRANSLATORS: long date representation short dayname daynum short monthname hour:minute in strftime() format! See 'man strftime'
+#. _("%a %e %b %R")
+#. TRANSLATORS: full date representations short dayname daynum monthname long year in strftime() format! See 'man strftime'
+#. _("%a %e %B %Y")
+#.
+#, fuzzy, python-format
+msgid "%d Min"
+msgid_plural "%d Mins"
+msgstr[0] "%d MB"
+msgstr[1] "%d MB"
 
 #. TRANSLATORS: Intermediate scanning result, '%d' channel(s) have been found so far
 #, python-format
@@ -284,10 +270,6 @@ msgid "%d-%m"
 msgstr "%d-%m"
 
 #, python-format
-msgid "%d.%02d. %02d:%02d"
-msgstr "%d.%02d. %02d:%02d"
-
-#, python-format
 msgid "%d.%03d GB"
 msgstr "%d.%03d GB"
 
@@ -305,10 +287,6 @@ msgstr "%d.%d.%d"
 #, python-format
 msgid "%d:%02d"
 msgstr "%d:%02d"
-
-#. TRANSLATORS: VFD hour:minute daynum short monthname in strftime() format! See 'man strftime'
-msgid "%k:%M %e/%m"
-msgstr "%k:%M %e/%m"
 
 #, python-format
 msgid ""
@@ -492,6 +470,10 @@ msgstr "3"
 msgid "30"
 msgstr "30"
 
+#, fuzzy
+msgid "3D Mode"
+msgstr "Chế độ"
+
 msgid "3D surround"
 msgstr "Vòm 3D"
 
@@ -516,6 +498,10 @@ msgstr "422"
 msgid "444"
 msgstr "444"
 
+#, fuzzy
+msgid "450 (default)"
+msgstr "mặc định"
+
 msgid "4:3"
 msgstr "4:3"
 
@@ -534,6 +520,10 @@ msgstr "5"
 
 msgid "50 MB/s"
 msgstr "50 MB/s"
+
+#, fuzzy
+msgid "540 (default)"
+msgstr "mặc định"
 
 msgid "6"
 msgstr "6"
@@ -858,6 +848,9 @@ msgstr "Điều chỉnh cài đặt 3D"
 msgid "Adjust the color settings so that all the color shades are distinguishable, but appear as saturated as possible. If you are happy with the result, press OK to close the video fine-tuning, or use the number keys to select other test screens."
 msgstr "Điều chỉnh cài đặt màu sao cho tất cả các sắc thái màu có thể phân biệt được, nhưng xuất hiện càng bão hòa càng tốt. Nếu bạn hài lòng với kết quả này, nhấn OK để đóng tinh chỉnh video hoặc sử dụng các phím số để chọn các màn hình kiểm tra khác."
 
+msgid "Adult Audience, Strong Violence 15+"
+msgstr ""
+
 msgid "Advanced"
 msgstr "Nâng cao"
 
@@ -910,6 +903,10 @@ msgid "All"
 msgstr "Mọi lứa tuổi"
 
 msgid "All ages"
+msgstr "Mọi lứa tuổi"
+
+#, fuzzy
+msgid "All caps"
 msgstr "Mọi lứa tuổi"
 
 msgid "All frequency"
@@ -1069,6 +1066,12 @@ msgstr "Bạn có chắc chắn loại bỏ tất cả các dịch vụ trên m�
 msgid "Are you sure to remove this entry?"
 msgstr "Bạn có chắc chắn để loại bỏ mục này?"
 
+#, fuzzy
+msgid ""
+"Are you sure to save the current configuration and reboot your receiver?\n"
+"\n"
+msgstr "Kiểm tra cấu hình mạng của máy thu của bạn.\n"
+
 msgid ""
 "Are you sure you want to activate this network configuration?\n"
 "\n"
@@ -1169,6 +1172,9 @@ msgstr "Âm thanh PID%s, codec & lang"
 
 msgid "Audio PID, codec & lang"
 msgstr "Âm thanh PID, codec & lang"
+
+msgid "Audio Source"
+msgstr ""
 
 msgid "Audio auto volume level"
 msgstr "Mức âm lượng tự động"
@@ -1283,6 +1289,10 @@ msgstr "Ailen"
 
 msgid "B"
 msgstr "B"
+
+#, python-format
+msgid "BC%d"
+msgstr ""
 
 msgid "BER"
 msgstr "BER"
@@ -1417,6 +1427,10 @@ msgstr "Giảm tiếng ồn"
 msgid "Blue"
 msgstr "Màu xanh da trời"
 
+#, fuzzy
+msgid "Blue LED brightness"
+msgstr "Độ sáng"
+
 msgid "Bolivia (Plurinational State of)"
 msgstr "Bôlivia (Nhà nước đa nguyên)"
 
@@ -1431,6 +1445,9 @@ msgstr "Tăng màu xanh"
 
 msgid "Boost green"
 msgstr "Tăng màu xanh"
+
+msgid "Booster Control"
+msgstr ""
 
 msgid "Boot to Android image"
 msgstr "Khởi động hình ảnh Android"
@@ -1659,6 +1676,10 @@ msgstr "Quần đảo Cayman"
 msgid "Center DVB subtitles"
 msgstr "Phụ đề DVB trung tâm"
 
+#, fuzzy
+msgid "Center text"
+msgstr "trung tâm"
+
 msgid "Center time-labels and remove date"
 msgstr "Nhãn thời gian trung tâm và xóa ngày"
 
@@ -1769,6 +1790,10 @@ msgstr ""
 "Kiểm tra bộ chỉnh%s\n"
 "Cổng DiSEqC%s cho%s"
 
+#, fuzzy
+msgid "Children"
+msgstr "Chile"
+
 msgid "Children/Youth"
 msgstr "Trẻ em / Thanh niên"
 
@@ -1861,6 +1886,10 @@ msgstr "Cài đặt bộ sưu tập"
 
 msgid "Colombia"
 msgstr "Colombia"
+
+#, fuzzy
+msgid "Color Format"
+msgstr "Định dạng màu"
 
 msgid "Color format"
 msgstr "Định dạng màu"
@@ -2380,6 +2409,10 @@ msgstr "Croatia"
 msgid "Croatian"
 msgstr "Tiếng Croatia"
 
+#, fuzzy
+msgid "Cross brightness"
+msgstr "Độ sáng"
+
 msgid "Cuba"
 msgstr "Cuba"
 
@@ -2555,6 +2588,9 @@ msgstr "Đèn LED chờ sâu"
 
 msgid "Deep standby"
 msgstr "Chế độ chờ sâu"
+
+msgid "Deepstby LED brightness"
+msgstr ""
 
 msgid "Default"
 msgstr "Mặc định"
@@ -2821,6 +2857,10 @@ msgstr "Thiết lập hiển thị"
 
 msgid "Display and userinterface"
 msgstr "Giao diện hiển thị và người dùng"
+
+#, fuzzy
+msgid "Display brightness"
+msgstr "Thiết lập hiển thị"
 
 msgid "Display message before playing next movie"
 msgstr "Hiển thị thông báo trước khi phát phim tiếp theo"
@@ -3170,6 +3210,9 @@ msgstr "Cho phép OK để chọn kênh"
 msgid "Enable OpenTV EPG"
 msgstr "Kích hoạt OpenTV EPG"
 
+msgid "Enable VFD display"
+msgstr ""
+
 msgid "Enable ViaSat EPG"
 msgstr "Kích hoạt ViaSat EPG"
 
@@ -3426,9 +3469,6 @@ msgstr "Estonia"
 msgid "Estonian"
 msgstr "Tiếng Estonia"
 
-msgid "EtPortal"
-msgstr "Cổng thông tin"
-
 msgid "Ethernet network interface"
 msgstr "Giao diện mạng Ethernet"
 
@@ -3578,12 +3618,6 @@ msgstr "Tùy chọn động cơ bổ sung"
 msgid "Extra start time to ignore inactivity sleeptimer"
 msgstr "Thêm thời gian bắt đầu để bỏ qua sleeptimer không hoạt động"
 
-msgid "F"
-msgstr "F"
-
-msgid "F1/F3/F4/F4-TURBO"
-msgstr "F1/F3/F4/F4-TURBO"
-
 msgid "FAILED"
 msgstr "THẤT BẠI"
 
@@ -3620,6 +3654,10 @@ msgstr "FEC"
 
 msgid "FEC:"
 msgstr "FEC:"
+
+#, fuzzy
+msgid "FFmpeg version: "
+msgstr "Phiên bản Enigma: "
 
 msgid "FHD"
 msgstr ""
@@ -3687,14 +3725,6 @@ msgstr "Sai trái"
 #, python-format
 msgid "Fan %d"
 msgstr "Quạt %d"
-
-#, python-format
-msgid "Fan %d PWM"
-msgstr "Quạt%d PWM"
-
-#, python-format
-msgid "Fan %d voltage"
-msgstr "Quạt%d điện áp"
 
 msgid "Fan operation"
 msgstr "Quạt hoạt động"
@@ -3851,6 +3881,17 @@ msgstr "Thứ sáu"
 msgid "From:"
 msgstr "Từ:"
 
+#, fuzzy
+msgid "Front panel display"
+msgstr "Năng lượng hiển thị"
+
+#, fuzzy
+msgid "Front panel display configuration"
+msgstr "Cấu hình danh sách phim"
+
+msgid "Front panel display configuration for ADB ITI-5800S(X)"
+msgstr ""
+
 #, python-format
 msgid "Frontprocessor version: %s"
 msgstr "Phiên bản tiền xử lý:%s"
@@ -3873,9 +3914,6 @@ msgstr "Tùy chọn khác"
 
 msgid "Further options"
 msgstr "Tùy chọn khác"
-
-msgid "G"
-msgstr "G"
 
 msgid "GStreamer version: "
 msgstr "Phiên bản GStreamer: "
@@ -3902,6 +3940,9 @@ msgstr "Gambia"
 
 msgid "Gateway"
 msgstr "Cổng"
+
+msgid "General"
+msgstr ""
 
 msgid "General AC3 delay"
 msgstr "Độ trễ AC3 chung"
@@ -4047,21 +4088,12 @@ msgstr "Guinea-Bissau"
 msgid "Guyana"
 msgstr "Guyana"
 
-msgid "H"
-msgstr "H"
-
 #, fuzzy
 msgid "HD"
 msgstr "D"
 
 msgid "HD list"
 msgstr "Danh sách HD"
-
-msgid "HD2400"
-msgstr "HD2400"
-
-msgid "HD60"
-msgstr ""
 
 msgid "HDMI"
 msgstr "HDMI"
@@ -4092,9 +4124,6 @@ msgstr "HDR10"
 
 msgid "HDR10 support"
 msgstr "Hỗ trợ HDR10"
-
-msgid "HDx1/HD1xxx/HD5x0C/VS1x00/et7x00/et8500/et7000mini"
-msgstr "HDx1/HD1xxx/HD5x0C/VS1x00/et7x00/et8500/et7000mini"
 
 msgid "HELP"
 msgstr "CỨU GIÚP"
@@ -4140,6 +4169,9 @@ msgstr "Tiếng Do Thái"
 
 msgid "Helps setting up your antenna"
 msgstr "Giúp thiết lập ăng-ten của bạn"
+
+msgid "Here you can change the screen positions with the arrow buttons on your remote control!"
+msgstr ""
 
 msgid "Hidden network"
 msgstr "Mạng ẩn"
@@ -4233,9 +4265,6 @@ msgstr "Tiếng Hungary"
 
 msgid "Hungary"
 msgstr "Hungary"
-
-msgid "I"
-msgstr "I"
 
 msgid "I do not want to perform any service scans"
 msgstr "Tôi không muốn thực hiện bất kỳ quét dịch vụ nào"
@@ -4584,9 +4613,6 @@ msgstr "Mục trên mỗi trang "
 msgid "Items per page for list screen"
 msgstr "Các mục trên mỗi trang cho màn hình danh sách"
 
-msgid "J"
-msgstr "J"
-
 msgid "Jamaica"
 msgstr "Jamaica"
 
@@ -4669,6 +4695,40 @@ msgstr "Bộ điều hợp mạng LAN"
 msgid "LAN connection"
 msgstr "Kết nối mạng nội bộ"
 
+#, fuzzy
+msgid "LED brightness"
+msgstr "Độ sáng"
+
+#, fuzzy
+msgid "LED configuration"
+msgstr "Cấu hình"
+
+msgid "LED control"
+msgstr ""
+
+msgid "LED control for Fortis HS7110"
+msgstr ""
+
+msgid "LED control for Fortis HS7119/HS7810A/HS7819"
+msgstr ""
+
+#, fuzzy
+msgid "LED display"
+msgstr "Thiết lập hiển thị"
+
+#, fuzzy
+msgid "LED display configuration"
+msgstr "Cấu hình danh sách phim"
+
+msgid "LED display configuration for Fortis HS7119/HS7810A/HS7819"
+msgstr ""
+
+msgid "LED display configuration for Spark"
+msgstr ""
+
+msgid "LED display control Spark"
+msgstr ""
+
 msgid "LNB"
 msgstr "LNB"
 
@@ -4692,6 +4752,10 @@ msgstr "Tốc độ cuối"
 
 msgid "Last update: "
 msgstr "Nâng cấp lần cuối: "
+
+msgctxt "third event: 'third' event label"
+msgid "Later"
+msgstr ""
 
 msgid "Latest Commits"
 msgstr "Cam kết mới nhất"
@@ -4850,6 +4914,10 @@ msgstr "Đăng nhập kết quả vào / tmp"
 msgid "Logfile does not exist anymore"
 msgstr "Logfile không tồn tại nữa"
 
+#, fuzzy
+msgid "Logo brightness"
+msgstr "Độ sáng"
+
 msgid "Long filenames"
 msgstr "Tên tập tin dài"
 
@@ -4969,6 +5037,12 @@ msgstr "Đảo Marshall"
 msgid "Martinique"
 msgstr "Martinique"
 
+msgid "Mature Adult Audience 15+"
+msgstr ""
+
+msgid "Mature Audience 15+"
+msgstr ""
+
 msgid "Mauritania"
 msgstr "Mauritania"
 
@@ -5036,6 +5110,9 @@ msgstr "Tuổi tối thiểu%d năm"
 
 msgid "Minimum send interval"
 msgstr "Khoảng thời gian gửi tối thiểu"
+
+msgid "Mins"
+msgstr ""
 
 msgid "Missing "
 msgstr "Còn thiếu "
@@ -5558,6 +5635,9 @@ msgstr "Bình thường"
 msgid "Normal mode"
 msgstr "Chế độ bình thường"
 
+msgid "Normal running frequency"
+msgstr ""
+
 msgid "North"
 msgstr "Bắc"
 
@@ -5569,6 +5649,10 @@ msgstr "Na Uy"
 
 msgid "Norwegian"
 msgstr "Na Uy"
+
+#, fuzzy
+msgid "Not Classified"
+msgstr "Không liên quan"
 
 msgid "Not Installed"
 msgstr "Chưa cài đặt"
@@ -5585,6 +5669,10 @@ msgstr "Không xác định"
 #, python-format
 msgid "Not enough disk space. Please free up some disk space and try again. (%d MB required, %d MB available)"
 msgstr "Không đủ dung lượng đĩa. Vui lòng giải phóng không gian đĩa và thử lại. (Yêu cầu%d MB,%d MB khả dụng)"
+
+#, fuzzy
+msgid "Not running"
+msgstr "không chạy"
 
 msgid "Not tested:"
 msgstr "Không được kiểm tra:"
@@ -5612,6 +5700,12 @@ msgstr "Hiện nay"
 msgid "Now playing"
 msgstr "Đang chơi"
 
+msgid "Now you can change the position of the lower and right side. Press blue button to switch..."
+msgstr ""
+
+msgid "Now you can change the position of the upper and left side. Press blue button to switch..."
+msgstr ""
+
 msgid "Now, use the contrast setting to turn up the brightness of the background as much as possible, but make sure that you can still see the difference between the two brightest levels of shades.If you have done that, press OK."
 msgstr "Bây giờ, sử dụng cài đặt độ tương phản để tăng độ sáng của nền càng nhiều càng tốt, nhưng hãy đảm bảo rằng bạn vẫn có thể thấy sự khác biệt giữa hai mức độ sáng nhất. Nếu bạn đã thực hiện điều đó, hãy nhấn OK."
 
@@ -5632,6 +5726,13 @@ msgstr "ONID"
 
 msgid "OSD 3D setup"
 msgstr "Thiết lập OSD 3D"
+
+msgid "OSD Adjustment"
+msgstr ""
+
+#, fuzzy
+msgid "OSD Position setup"
+msgstr "Thiết lập định vị"
 
 msgid "OSD name request"
 msgstr "Yêu cầu tên OSD"
@@ -5829,6 +5930,9 @@ msgstr "Paraguay"
 msgid "Parent directory"
 msgstr "Thư mục phụ huynh"
 
+msgid "Parental Guidance Recommended"
+msgstr ""
+
 msgid "Parental control"
 msgstr "Kiểm soát của cha mẹ"
 
@@ -5852,6 +5956,10 @@ msgstr "Tạm dừng phát lại"
 
 msgid "Pause/Continue playback"
 msgstr "Tạm dừng / Tiếp tục phát lại"
+
+#, fuzzy
+msgid "Pausing"
+msgstr "tạm dừng"
 
 msgid "Percentage left"
 msgstr "Tỷ lệ còn lại"
@@ -6240,6 +6348,10 @@ msgstr "Nhật ký thiết lập định vị"
 msgid "Power LED"
 msgstr "Đèn LED nguồn"
 
+#, fuzzy
+msgid "Power LED colour"
+msgstr "Đèn LED nguồn"
+
 msgid "Power management. Consult your receiver's manual for more information."
 msgstr "Quản lý năng lượng. Tham khảo hướng dẫn sử dụng của người nhận để biết thêm thông tin."
 
@@ -6308,6 +6420,9 @@ msgstr "Bộ chỉnh ưu tiên cho bản ghi"
 
 msgid "Preparing... Please wait"
 msgstr "Chuẩn bị ... Xin vui lòng chờ"
+
+msgid "Preschool"
+msgstr ""
 
 msgid "Press '0' to toggle PiP mode"
 msgstr "Nhấn '0' để chuyển chế độ PiP"
@@ -6502,8 +6617,9 @@ msgstr "Nhanh chóng"
 msgid "Quick zap"
 msgstr "Nhanh chóng"
 
-msgid "REC"
-msgstr "GHI"
+#, fuzzy
+msgid "RC command set"
+msgstr "Lệnh"
 
 msgid "RF output"
 msgstr "Đầu ra RF"
@@ -6568,6 +6684,10 @@ msgstr "Khởi động lại"
 msgid "Rec"
 msgstr "Ghi"
 
+#, fuzzy
+msgid "Rec LED brightness"
+msgstr "Độ sáng"
+
 msgid "Recall to previous service"
 msgstr "Nhớ lại dịch vụ trước"
 
@@ -6610,6 +6730,17 @@ msgstr "Ghi chép luôGhi chép luôn được ưu tiênn được ưu tiên"
 
 msgid "Red"
 msgstr "Màu đỏ"
+
+msgid "Red LED during recording"
+msgstr ""
+
+#, fuzzy
+msgid "Red LED on in deep standby"
+msgstr "đi đến chế độ chờ sâu"
+
+#, fuzzy
+msgid "Red LED on in standby"
+msgstr "Đặt TV ở chế độ chờ"
 
 msgid "Red button..."
 msgstr "Nút màu đỏ ..."
@@ -6802,6 +6933,10 @@ msgstr "Bảng phân vùng đọc lại"
 msgid "Reserved"
 msgstr "Kín đáo"
 
+#, fuzzy
+msgid "Reserved for future use"
+msgstr "để dành mai sau dùng"
+
 msgid "Reset"
 msgstr "Cài lại"
 
@@ -6884,6 +7019,9 @@ msgstr "Khôi phục cài đặt máy thu của bạn."
 msgid "Restoring..."
 msgstr "Khôi phục ..."
 
+msgid "Restricted 18+"
+msgstr ""
+
 msgid "Resume from last position"
 msgstr "Tiếp tục từ vị trí cuối cùng"
 
@@ -6960,6 +7098,10 @@ msgstr "Cánh quạt: "
 
 msgid "Round start time on"
 msgstr "Thời gian bắt đầu vòng"
+
+#, fuzzy
+msgid "Running"
+msgstr "đang chạy"
 
 msgid "Russian"
 msgstr "Tiếng nga"
@@ -7217,7 +7359,19 @@ msgstr "Quét lamebs mặc định được sắp xếp theo vệ tinh với b�
 msgid "Scroll delay"
 msgstr "Độ trễ cuộn"
 
+#, fuzzy
+msgid "Scroll long strings"
+msgstr "Cài đặt bộ sưu tập"
+
+#, fuzzy
+msgid "Scroll pause"
+msgstr "Cuộn lặp lại"
+
 msgid "Scroll repeats"
+msgstr "Cuộn lặp lại"
+
+#, fuzzy
+msgid "Scroll text"
 msgstr "Cuộn lặp lại"
 
 msgid "Search"
@@ -7661,6 +7815,10 @@ msgstr ""
 "Không tìm thấy dịch vụ!\n"
 "(Không tìm thấy SID trong PAT)"
 
+#, fuzzy
+msgid "Service off-air"
+msgstr "dịch vụ ngoài không khí"
+
 msgid "Service reference"
 msgstr "Tham khảo dịch vụ"
 
@@ -7710,6 +7868,10 @@ msgstr "Đặt mặc định"
 msgid "Set end time"
 msgstr "Đặt thời gian kết thúc"
 
+#, fuzzy
+msgid "Set fan"
+msgstr "Đặt mặc định"
+
 msgid "Set fixed"
 msgstr "Đặt cố định"
 
@@ -7721,6 +7883,10 @@ msgstr "Đặt nếu bạn muốn xem biểu tượng trạng thái, thanh tiế
 
 msgid "Set interface as default Interface"
 msgstr "Đặt giao diện làm Giao diện mặc định"
+
+#, fuzzy
+msgid "Set led"
+msgstr "Đặt cố định"
 
 msgid "Set limits"
 msgstr "Đặt giới hạn"
@@ -7827,8 +7993,16 @@ msgstr "Hiển thị EPG cho kênh hiện tại ..."
 msgid "Show EPG..."
 msgstr "Hiển thị EPG ..."
 
+#, fuzzy
+msgid "Show Ethernet activity"
+msgstr "Hiển thị thay thế"
+
 msgid "Show Games show"
 msgstr "Chương trình trò chơi"
+
+#, fuzzy
+msgid "Show HDD icons"
+msgstr "Hiển thị biểu tượng  điện tử"
 
 msgid "Show InfoBar"
 msgstr "Hiển thị thông tin"
@@ -7869,6 +8043,10 @@ msgstr "Hiển thị chỉ báo bận khi hệ thống bận."
 msgid "Show channel numbers in channel selection"
 msgstr "Hiển thị số kênh trong lựa chọn kênh"
 
+#, fuzzy
+msgid "Show clock"
+msgstr "Hiển thị cột"
+
 msgid "Show columns"
 msgstr "Hiển thị cột"
 
@@ -7907,6 +8085,10 @@ msgstr "Hiển thị trợ giúp"
 
 msgid "Show icon for new/unseen items"
 msgstr "Hiển thị biểu tượng cho các mục mới / chưa thấy"
+
+#, fuzzy
+msgid "Show icons"
+msgstr "Hiển thị cột"
 
 msgid "Show in extensions menu"
 msgstr "Hiển thị trong menu tiện ích mở rộng"
@@ -7964,6 +8146,30 @@ msgstr "Hiển thị thông báo khi các kênh nhập không thành công"
 
 msgid "Show notification when import channels was successful"
 msgstr "Hiển thị thông báo khi các kênh nhập khẩu thành công"
+
+#, fuzzy
+msgid "Show on LED display"
+msgstr "Hiển thị picons trong màn hình"
+
+#, fuzzy
+msgid "Show on LED display in standby"
+msgstr "Hiển thị picons trong màn hình"
+
+#, fuzzy
+msgid "Show on VFD display"
+msgstr "Hiển thị picons trong màn hình"
+
+#, fuzzy
+msgid "Show on VFD display in standby"
+msgstr "Hiển thị picons trong màn hình"
+
+#, fuzzy
+msgid "Show on display"
+msgstr "Năng lượng hiển thị"
+
+#, fuzzy
+msgid "Show on display in standby"
+msgstr "Tắt máy khi ở chế độ chờ"
 
 msgid "Show packages to be updated"
 msgstr "Hiển thị các gói sẽ được nâng cấp"
@@ -8031,6 +8237,10 @@ msgstr "Hiển thị trình phát radio ..."
 msgid "Show the tv player..."
 msgstr "Hiển thị trình phát tv ..."
 
+#, fuzzy
+msgid "Show this plugin in plugin menu"
+msgstr "Hiển thị trình phát đa phương tiện trên menu chính"
+
 msgid "Show transponder info"
 msgstr "Hiển thị thông tin transponder"
 
@@ -8063,6 +8273,10 @@ msgstr "Tắt"
 
 msgid "Shutdown when in Standby"
 msgstr "Tắt máy khi ở chế độ chờ"
+
+#, fuzzy
+msgid "Side by Side"
+msgstr "Cạnh bên nhau"
 
 msgid "Side by side"
 msgstr "Cạnh bên nhau"
@@ -8317,6 +8531,9 @@ msgstr "Tây Ban Nha"
 msgid "Spanish"
 msgstr "Người Tây Ban Nha"
 
+msgid "Spark7162 select tuner mode"
+msgstr ""
+
 msgid "Special 1"
 msgstr "Đặc biệt 1"
 
@@ -8380,19 +8597,35 @@ msgstr "Chờ / khởi động lại"
 msgid "Standby LED"
 msgstr "Đèn LED chờ"
 
+#, fuzzy
+msgid "Standby LED brightness"
+msgstr "Đèn LED chờ"
+
+#, fuzzy
+msgid "Standby LED colour"
+msgstr "Đèn LED chờ"
+
 msgid "Standby after current event"
 msgstr "Chờ sau sự kiện hiện tại"
 
-#, python-format
-msgid "Standby fan %d PWM"
-msgstr "Quạt chờ%d PWM"
-
-#, python-format
-msgid "Standby fan %d voltage"
-msgstr "Quạt chờ%d điện áp"
+#, fuzzy
+msgid "Standby brightness"
+msgstr "Chờ trong "
 
 msgid "Standby in "
 msgstr "Chờ trong "
+
+#, fuzzy
+msgid "Standby saver frequency"
+msgstr "Chờ sau sự kiện hiện tại"
+
+#, fuzzy
+msgid "Start Boot Frequency"
+msgstr "Tần số"
+
+#, fuzzy
+msgid "Start boot frequency"
+msgstr "Tất cả tần số"
 
 msgid "Start directory"
 msgstr "Bắt đầu thư mục"
@@ -8433,11 +8666,19 @@ msgstr "Bắt đầu với màn hình danh sách"
 msgid "Starting on"
 msgstr "Bắt đầu vào"
 
+#, fuzzy
+msgid "Starts in a few seconds"
+msgstr "bắt đầu trong vài giây"
+
 msgid "Startup the set top box in standby"
 msgstr "Khởi động đầu thu ở chế độ chờ"
 
 msgid "Startup to Standby"
 msgstr "Khởi động để chờ"
+
+#, fuzzy
+msgid "Stby LED brightness"
+msgstr "Độ sáng"
 
 msgid "Step east"
 msgstr "Bước về phía đông"
@@ -8756,9 +8997,6 @@ msgstr "Tệp TS quá lớn so với ISO9660 cấp 1!"
 msgid "TSID"
 msgstr "TSID"
 
-msgid "TUNER:"
-msgstr "BỘ CHỈNH:"
-
 msgid "TUNING"
 msgstr "CHẠY"
 
@@ -8789,11 +9027,12 @@ msgstr "Tanzania, Cộng hòa Hoa Kỳ"
 msgid "Teletext subtitle color"
 msgstr "Màu phụ đề Teletext"
 
-msgid "Temperature and fan control"
-msgstr "Kiểm soát nhiệt độ và quạt"
-
 msgid "Terrestrial"
 msgstr "TH mặt đất"
+
+#, fuzzy
+msgid "Test"
+msgstr "Chế độ kiểm tra"
 
 msgid "Test DiSEqC settings"
 msgstr "Kiểm tra cài đặt DiSEqC"
@@ -9245,6 +9484,10 @@ msgstr "Thứ năm"
 msgid "Time"
 msgstr "Thời gian"
 
+#, fuzzy
+msgid "Time mode"
+msgstr "Chế độ tone"
+
 msgid "Time scale"
 msgstr "Quy mô thời gian"
 
@@ -9398,6 +9641,10 @@ msgstr "Toneburst A/B"
 msgid "Tonga"
 msgstr "Lưỡi"
 
+#, fuzzy
+msgid "Top and Bottom"
+msgstr "Trên và dưới"
+
 msgid "Top and bottom"
 msgstr "Trên và dưới"
 
@@ -9543,6 +9790,12 @@ msgstr "Loại LNB / thiết bị"
 msgid "Type of scan"
 msgstr "Loại quét"
 
+msgid "Typematic delay"
+msgstr ""
+
+msgid "Typematic rate"
+msgstr ""
+
 msgid "UNKNOWN"
 msgstr "KHÔNG XÁC ĐỊNH"
 
@@ -9624,6 +9877,14 @@ msgstr "Độ trễ không thể tin được sau lệnh diseqc cuối cùng"
 msgid "Uninstall"
 msgstr "Gỡ cài đặt"
 
+#, fuzzy
+msgid "UnionTunerType"
+msgstr "Loại điều chỉnh"
+
+#, fuzzy
+msgid "UnionTunerType config"
+msgstr "Cấu hình bộ chỉnh"
+
 msgid "United Arab Emirates"
 msgstr "Các Tiểu Vương Quốc Ả Rập Thống Nhất"
 
@@ -9701,6 +9962,10 @@ msgstr "Cập nhật danh mục phần mềm"
 
 msgid "Upper case"
 msgstr "Chữ hoa"
+
+#, fuzzy
+msgid "Uppercase letters only"
+msgstr "Chỉ cập nhật danh sách kênh"
 
 msgid "Uruguay"
 msgstr "Uruguay"
@@ -9848,6 +10113,55 @@ msgstr "Uzbekistan"
 msgid "VCR scart"
 msgstr "VCR scart"
 
+#, fuzzy
+msgid "VFD brightness"
+msgstr "Độ sáng"
+
+msgid "VFD configuration for Fortis FS9000/9200"
+msgstr ""
+
+msgid "VFD configuration for Fortis HS8200"
+msgstr ""
+
+#, fuzzy
+msgid "VFD display"
+msgstr "Đâu đia DVD"
+
+#, fuzzy
+msgid "VFD display configuration"
+msgstr "Cấu hình danh sách phim"
+
+msgid "VFD display configuration for Fortis HS742X"
+msgstr ""
+
+msgid "VFD display configuration for Fortis HS9510"
+msgstr ""
+
+msgid "VFD display configuration for Spark 7162"
+msgstr ""
+
+#, fuzzy
+msgid "VFD-Icons"
+msgstr "Biểu tượng"
+
+msgid "VFD-Icons for ADB ITI-5800S(X)"
+msgstr ""
+
+msgid "VFD-Icons for Fortis FS9000/9200"
+msgstr ""
+
+msgid "VFD-Icons for Fortis HS7420 & HS7429"
+msgstr ""
+
+msgid "VFD-Icons for Fortis HS8200"
+msgstr ""
+
+msgid "VFD-Icons for Fortis HS9510"
+msgstr ""
+
+msgid "VFD-Icons for spark 7162"
+msgstr ""
+
 msgid "VLAN connection"
 msgstr "Kết nối Vlan"
 
@@ -9859,9 +10173,6 @@ msgstr "Tập tin VOB"
 
 msgid "VOB file"
 msgstr "Tập tin VOB"
-
-msgid "VU+"
-msgstr "VU+"
 
 msgid "Vanuatu"
 msgstr "Vanuatu"
@@ -10445,6 +10756,9 @@ msgstr "VÂNG"
 msgid "YPbPr"
 msgstr "YPbPr"
 
+msgid "YUV"
+msgstr ""
+
 msgid "Year"
 msgstr "Năm"
 
@@ -10594,6 +10908,9 @@ msgstr "Bạn phải đợi%s!"
 msgid "You must switch to the service %s (%s - '%s')!\n"
 msgstr "Bạn phải chuyển sang dịch vụ%s (%s - '%s')!\n"
 
+msgid "You seem to be in timeshift!"
+msgstr ""
+
 msgid "Your collection exceeds the size of a single layer medium, you will need a blank dual layer DVD!"
 msgstr "Bộ sưu tập của bạn vượt quá kích thước của một phương tiện một lớp, bạn sẽ cần một đĩa DVD hai lớp trống!"
 
@@ -10734,25 +11051,8 @@ msgstr "Được chuyển sang dịch vụ hẹn giờ%s dưới dạng PiP!"
 msgid "Zapped to timer service %s!"
 msgstr "Chuyển sang dịch vụ hẹn giờ%s!"
 
-#, fuzzy
-msgid "Zgemma H.S/H.2S/H.2H/H5/H7(old model)"
-msgstr "Zgemma H.S/H.2S/H.2H/H5/H7"
-
-msgid "Zgemma H7(new model)/H9(new model)/H9COMBO/H9TWIN/H10"
-msgstr ""
-
-#, fuzzy
-msgid "Zgemma H9(old model)/I55Plus"
-msgstr "Zgemma H9/i55 Plus"
-
-msgid "Zgemma Star S/2S/H1/H2"
-msgstr "Zgemma Star S/2S/H1/H2"
-
 msgid "Zimbabwe"
 msgstr "Zimbabwe"
-
-msgid "[REC]"
-msgstr "[GHI]"
 
 msgid "[alternative edit]"
 msgstr "[chỉnh sửa thay thế]"
@@ -10860,8 +11160,8 @@ msgid "ballet"
 msgstr "vở ballet"
 
 #, python-format
-msgid "bc%s"
-msgstr "bc%s"
+msgid "bc%d"
+msgstr ""
 
 msgid "better"
 msgstr "tốt hơn"
@@ -10875,6 +11175,12 @@ msgstr "đen trắng"
 msgid "blacklist"
 msgstr "danh sách đen"
 
+msgid "blank"
+msgstr ""
+
+msgid "blink"
+msgstr ""
+
 msgid "blue"
 msgstr "màu xanh da trời"
 
@@ -10887,6 +11193,14 @@ msgstr "phát thanh / báo chí"
 msgid "by date"
 msgstr "theo ngày"
 
+#, fuzzy
+msgid "cable"
+msgstr "Cáp"
+
+#, fuzzy
+msgid "cancel"
+msgstr "Hủy bỏ"
+
 msgid "cartoon/puppets"
 msgstr "phim hoạt hình / con rối"
 
@@ -10898,6 +11212,26 @@ msgstr "trung tâm"
 
 msgid "centered, wrapped"
 msgstr "trung tâm, bao bọc"
+
+#, fuzzy
+msgid "change sides"
+msgstr "Thay đổi bộ đếm thời gian"
+
+#, fuzzy
+msgid "change the OSD screen size"
+msgstr "Thay đổi kích thước bước"
+
+#, fuzzy
+msgid "channel name"
+msgstr "Thông tin kênh"
+
+#, fuzzy
+msgid "channel number"
+msgstr "Số kênh và picon"
+
+#, fuzzy
+msgid "channel number and name"
+msgstr "Số kênh và tên dịch vụ"
 
 msgid "chapters"
 msgstr "chương"
@@ -10929,6 +11263,10 @@ msgstr "xác nhận"
 msgid "connected"
 msgstr "đã kết nối"
 
+#, fuzzy
+msgid "continuous"
+msgstr "Tiếp tục"
+
 msgid "controlled by HDMI"
 msgstr "được điều khiển bởi HDMI"
 
@@ -10938,8 +11276,16 @@ msgstr "nấu ăn"
 msgid "daily"
 msgstr "hằng ngày"
 
+#, fuzzy
+msgid "date"
+msgstr "Cập nhật"
+
 msgid "day"
 msgstr "ngày"
+
+#, fuzzy
+msgid "day and date"
+msgstr "theo ngày"
 
 msgid "default"
 msgstr "mặc định"
@@ -11025,23 +11371,6 @@ msgstr "lỗi bắt đầu quét"
 msgid "error while scanning"
 msgstr "lỗi trong khi quét"
 
-msgid "et4000"
-msgstr "et4000"
-
-#, fuzzy
-msgid "et5000/et6000"
-msgstr "et5000/6000"
-
-msgid "et8000/et10000"
-msgstr "et8000/et10000"
-
-msgid "et9000/et9100"
-msgstr "et9000/et9100"
-
-#, fuzzy
-msgid "et9200/et9500/et6500"
-msgstr "et9200/9500/6500"
-
 msgid "execute cuts (requires MovieCut plugin)"
 msgstr "thực hiện cắt giảm (yêu cầu plugin MovieCut)"
 
@@ -11114,6 +11443,9 @@ msgstr "miễn phí"
 msgid "from"
 msgstr "từ"
 
+msgid "fs9000"
+msgstr ""
+
 msgid "further education"
 msgstr "giáo dục nâng cao"
 
@@ -11146,6 +11478,12 @@ msgstr "cứu giúp..."
 
 msgid "horizontal"
 msgstr "ngang"
+
+msgid "hs7110"
+msgstr ""
+
+msgid "hs9510"
+msgstr ""
 
 msgid "in menu and plugins"
 msgstr "trong menu và plugin"
@@ -11188,6 +11526,9 @@ msgstr "ngôn ngữ"
 
 msgid "leave movie player..."
 msgstr "rời khỏi máy nghe nhạc ..."
+
+msgid "leddisplay.png"
+msgstr ""
 
 msgid "left"
 msgstr "trái"
@@ -11339,9 +11680,6 @@ msgstr "không được cấu hình"
 msgid "not locked"
 msgstr "không bị khóa"
 
-msgid "not running"
-msgstr "không chạy"
-
 msgid "not supported"
 msgstr "không được hỗ trợ"
 
@@ -11350,6 +11688,10 @@ msgstr "không được kiểm tra"
 
 msgid "not_tested"
 msgstr "chưa được kiểm tra"
+
+#, fuzzy
+msgid "nothing"
+msgstr "Không làm gì cả"
 
 msgid "nothing connected"
 msgstr "không có gì kết nối"
@@ -11375,6 +11717,13 @@ msgstr "trên"
 msgid "on READ ONLY medium."
 msgstr "trên phương tiện ĐỌC CHỈ."
 
+#, fuzzy
+msgid "on all mounts"
+msgstr "hiển thị tất cả các thẻ"
+
+msgid "on hdd"
+msgstr ""
+
 msgid "once"
 msgstr "một lần"
 
@@ -11384,8 +11733,14 @@ msgstr "chỉ từ chế độ chờ sâu"
 msgid "only from standby"
 msgstr "chỉ từ chế độ chờ"
 
+msgid "open Info..."
+msgstr ""
+
 msgid "open nameserver configuration"
 msgstr "mở cấu hình máy chủ tên"
+
+msgid "orange"
+msgstr ""
 
 msgid "original"
 msgstr "nguyên"
@@ -11393,11 +11748,11 @@ msgstr "nguyên"
 msgid "original language"
 msgstr "ngôn ngữ gốc"
 
+msgid "partial"
+msgstr ""
+
 msgid "pass"
 msgstr "vượt qua"
-
-msgid "pausing"
-msgstr "tạm dừng"
 
 msgid "performing arts"
 msgstr "biểu diễn nghệ thuật"
@@ -11444,9 +11799,6 @@ msgstr "xóa dấu này"
 msgid "repeated"
 msgstr "lặp đi lặp lại"
 
-msgid "reserved for future use"
-msgstr "để dành mai sau dùng"
-
 msgid "reverse by date"
 msgstr "đảo ngược theo ngày"
 
@@ -11468,8 +11820,8 @@ msgstr "nhạc rock / pop"
 msgid "romance"
 msgstr "lãng mạn"
 
-msgid "running"
-msgstr "đang chạy"
+msgid "save"
+msgstr ""
 
 msgid "scan state"
 msgstr "trạng thái quét"
@@ -11483,6 +11835,10 @@ msgstr "giây"
 msgid "select CAId's"
 msgstr "chọn CAId"
 
+#, fuzzy
+msgid "select Info..."
+msgstr "Lựa chọn hẹn giờ ..."
+
 msgid "select menu entry"
 msgstr "chọn mục nhập"
 
@@ -11492,8 +11848,9 @@ msgstr "nhạc nghiêm túc / nhạc cổ điển"
 msgid "serious/classical/religious/historical movie/drama"
 msgstr "nghiêm túc / cổ điển / tôn giáo / lịch sử phim / kịch"
 
-msgid "service off-air"
-msgstr "dịch vụ ngoài không khí"
+#, fuzzy
+msgid "set default"
+msgstr "Đặt mặc định"
 
 msgid "show DVD main menu"
 msgstr "hiển thị menu chính DVD"
@@ -11518,6 +11875,10 @@ msgstr "xáo trộn"
 
 msgid "shut down"
 msgstr "tắt"
+
+#, fuzzy
+msgid "signal quality"
+msgstr "Chất lượng tín hiệu"
 
 msgid "simple"
 msgstr "đơn giản"
@@ -11577,6 +11938,9 @@ msgstr "các vấn đề xã hội / chính trị / kinh tế (nói chung)"
 msgid "social/spiritual science"
 msgstr "khoa học xã hội / tâm linh"
 
+msgid "spark"
+msgstr ""
+
 msgid "special events"
 msgstr "sự kiện đặc biệt"
 
@@ -11594,9 +11958,6 @@ msgstr "tiêu chuẩn"
 
 msgid "start cut here"
 msgstr "bắt đầu cắt ở đây"
-
-msgid "starts in a few seconds"
-msgstr "bắt đầu trong vài giây"
 
 msgid "stepsize"
 msgstr "kích cỡ"
@@ -11631,8 +11992,15 @@ msgstr "tệp mẫu"
 msgid "tennis/squash"
 msgstr "quần vợt / bóng quần"
 
+#, fuzzy
+msgid "terrestrial"
+msgstr "TH mặt đất"
+
 msgid "testing"
 msgstr "đang làm việc"
+
+msgid "tf7700"
+msgstr ""
 
 msgid "this bouquet is protected by a parental control pin"
 msgstr "gói kênh này được bảo vệ bởi một chốt kiểm soát của cha mẹ"
@@ -11642,6 +12010,23 @@ msgstr "bản ghi âm này"
 
 msgid "this service is protected by a parental control pin"
 msgstr "dịch vụ này được bảo vệ bởi pin kiểm soát của phụ huynh"
+
+#, fuzzy
+msgid "time"
+msgstr "Thời gian kết thúc"
+
+msgid "time (with seconds)"
+msgstr ""
+
+msgid "time (without seconds)"
+msgstr ""
+
+#, fuzzy
+msgid "time and date"
+msgstr "Có và  lưu lại"
+
+msgid "time, day and date"
+msgstr ""
 
 msgid "toggle time, chapter, audio, subtitle info"
 msgstr "chuyển thời gian, chương, âm thanh, thông tin phụ đề"
@@ -11657,6 +12042,9 @@ msgstr "thật"
 
 msgid "type"
 msgstr "kiểu"
+
+msgid "ufs912"
+msgstr ""
 
 msgid "unavailable"
 msgstr "không có sẵn"
@@ -11696,6 +12084,9 @@ msgstr "chương trình tạp kỹ"
 
 msgid "vertical"
 msgstr "theo chiều dọc"
+
+msgid "vfddisplay.png"
+msgstr ""
 
 msgid "violet"
 msgstr ""
@@ -11757,9 +12148,6 @@ msgstr "với tên bộ chỉnh"
 msgid "with_errors"
 msgstr "có -nỗi"
 
-msgid "xp1000"
-msgstr "xp1000"
-
 msgid "yellow"
 msgstr "màu vàng"
 
@@ -11780,6 +12168,3 @@ msgstr "zap và ghi lại"
 
 msgid "zapped"
 msgstr "hạ gục"
-
-msgid "®"
-msgstr "®"
