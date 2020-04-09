@@ -1,8 +1,7 @@
 # -*- coding: utf-8 -*-
 from Plugins.Plugin import PluginDescriptor
 import ServiceReference
-from enigma import iPlayableService, eTimer, eServiceCenter, iServiceInformation
-from enigma import evfd
+from enigma import iPlayableService, eTimer, eServiceCenter, iServiceInformation, evfd
 import time
 from Components.ServiceEventTracker import ServiceEventTracker, InfoBarBase
 

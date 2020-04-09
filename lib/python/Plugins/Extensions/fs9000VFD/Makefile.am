@@ -1,6 +1,6 @@
 installdir = $(pkglibdir)/python/Plugins/Extensions/fs9000VFD
 
-SUBDIRS = locale meta
+SUBDIRS = meta
 
 install_PYTHON = \
 	__init__.py \

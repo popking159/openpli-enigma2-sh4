@@ -1,6 +1,6 @@
 installdir = $(pkglibdir)/python/Plugins/Extensions/hs9510VFD
 
-SUBDIRS = locale meta
+SUBDIRS = meta
 
 install_PYTHON = \
 	__init__.py \

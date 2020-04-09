@@ -6,12 +6,11 @@ from enigma import iPlayableService, iServiceInformation, iTimeshiftServicePtr, 
 from time import localtime, strftime, sleep
 from Components.ServiceEventTracker import ServiceEventTracker
 from Components.Console import Console
-from Tools.Directories import fileExists, resolveFilename, SCOPE_LANGUAGE, SCOPE_PLUGINS
-from os import environ, statvfs
+from Tools.Directories import fileExists, resolveFilename, SCOPE_PLUGINS
+from os import statvfs
 from Components.ActionMap import ActionMap
 from Components.config import *
 from Components.ConfigList import ConfigList, ConfigListScreen
-from Components.Language import language
 from Components.Sources.StaticText import StaticText
 from Tools.HardwareInfo import HardwareInfo
 from Screens.Screen import Screen
