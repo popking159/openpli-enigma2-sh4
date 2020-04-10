@@ -44,7 +44,7 @@ public:
 	void vfd_write_string_scrollText(char* text);
 	void vfd_clear_string();
 
-	void vfd_set_brightness(unsigned char setting);
+	void vfd_set_brightness(unsigned int setting);
 	void vfd_set_light(bool onoff);
 	void vfd_set_fan(bool onoff);
 };
