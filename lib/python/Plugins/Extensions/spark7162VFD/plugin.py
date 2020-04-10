@@ -6,7 +6,7 @@ from enigma import iPlayableService, iServiceInformation, iTimeshiftServicePtr, 
 from time import localtime, strftime, sleep
 from Components.ServiceEventTracker import ServiceEventTracker
 from Components.Console import Console
-from Tools.Directories import fileExists, resolveFilename, SCOPE_PLUGINS
+from Tools.Directories import fileExists
 from os import statvfs
 from Components.ActionMap import ActionMap
 from Components.config import *
@@ -14,28 +14,8 @@ from Components.ConfigList import ConfigList, ConfigListScreen
 from Components.Sources.StaticText import StaticText
 from Tools.HardwareInfo import HardwareInfo
 from Screens.Screen import Screen
-import gettext
 import os
-#Version 191204.1
-#TODO: test other display type values
-stb = HardwareInfo().get_device_name()
-lang = language.getLanguage()
-environ['LANGUAGE'] = lang[:2]
-gettext.bindtextdomain('enigma2', resolveFilename(SCOPE_LANGUAGE))
-gettext.textdomain('enigma2')
-gettext.bindtextdomain('VFD-Icons', '%s%s' % (resolveFilename(SCOPE_PLUGINS)))
 
-def _(txt):
-	t = gettext.dgettext('VFD-Icons', txt)
-	if t == txt:
-		t = gettext.gettext(txt)
-	return t
-
-def translateBlock(block):
-	for x in TranslationHelper:
-		if block.__contains__(x[0]):
-			block = block.replace(x[0], x[1])
-	return block
 
 try:
 	DisplayType = evfd.getInstance().getVfdType()

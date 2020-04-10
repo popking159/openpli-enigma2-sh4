@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: enigma2\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-04-09 13:48+0200\n"
-"PO-Revision-Date: 2020-04-09 15:13+0200\n"
+"PO-Revision-Date: 2020-04-10 21:54+0200\n"
 "Last-Translator: Pike_Bishop <alfredzngr023@gmail.com>\n"
 "Language-Team: Sfteam  angelo2807@hotmail.com\n"
 "Language: de\n"
@@ -40,7 +40,7 @@ msgid ""
 "Press OK or Exit to abort!"
 msgstr ""
 "\n"
-"Drücken Sie OK oder Exit um abzubrechen"
+"Drücken Sie OK oder Exit um abzubrechen!"
 
 msgid ""
 "\n"
@@ -58,15 +58,15 @@ msgstr ""
 "Timer '%s' deaktiviert!"
 
 msgid " (0 - all networks)"
-msgstr "(0 - alle Netzwerke)"
+msgstr " (0 - alle Netzwerke)"
 
 #, python-format
 msgid " (Channel %s)"
-msgstr "(Kanal %s)"
+msgstr " (Kanal %s)"
 
 #, python-format
 msgid " (Partition %d)"
-msgstr "(Partition %d)"
+msgstr " (Partition %d)"
 
 msgid " (PiP)"
 msgstr " (PiP)"
@@ -78,13 +78,13 @@ msgid " (TV)"
 msgstr " (TV)"
 
 msgid " (disabled)"
-msgstr "(deaktiviert)"
+msgstr " (deaktiviert)"
 
 msgid " (higher than any auto)"
-msgstr "(höher als jedes auto)"
+msgstr " (höher als jedes auto)"
 
 msgid " (higher than rotor any auto)"
-msgstr "(höher als Rotor kein auto)"
+msgstr " (höher als Rotor kein auto)"
 
 msgid " (lower than any auto)"
 msgstr " (geringer als in jedem auto)"
@@ -297,7 +297,7 @@ msgid ""
 msgstr ""
 "%s\n"
 "Wollen Sie das Image flashen?\n"
-"% s"
+"% s?"
 
 #, python-format
 msgid ""
@@ -442,7 +442,7 @@ msgid "16:9 always"
 msgstr "immer 16:9"
 
 msgid "16K"
-msgstr ""
+msgstr "16K"
 
 msgid "18 V"
 msgstr "18 V"
@@ -596,7 +596,7 @@ msgstr ""
 "Wollen Sie diese Version behalten?"
 
 msgid "A file from media is in use!"
-msgstr "Eine Media-Datei ist aktiv"
+msgstr " Eine Media-Datei ist aktiv"
 
 msgid ""
 "A finished record timer wants to set your\n"
@@ -737,7 +737,7 @@ msgid "Activate network settings"
 msgstr "Aktiviere Netzwerkeinstellungen"
 
 msgid "Activate the configured network settings."
-msgstr "Aktiviere Netzwerkeinstellungen"
+msgstr "Aktiviere Netzwerkeinstellungen."
 
 msgid "Activate timeshift End"
 msgstr "Aktiviere TimeShift-Ende"
@@ -842,7 +842,7 @@ msgid "Adjust the color settings so that all the color shades are distinguishabl
 msgstr "Verändern Sie die Farbeinstellungen, sodass Sie alle Farbabstufungen voneinander unterscheiden können, diese aber so gesättigt wie möglich dargestellt werden. Wenn Sie mit dem Ergebnis zufrieden sind, drücken Sie OK, um die Feineinstellungen zu beenden. Mit den Zifferntasten können Sie weitere Testbilder auswählen."
 
 msgid "Adult Audience, Strong Violence 15+"
-msgstr ""
+msgstr "Zu laut"
 
 msgid "Advanced"
 msgstr "Erweitert"
@@ -977,7 +977,7 @@ msgid "Alternative 2"
 msgstr "Alternative Zwei"
 
 msgid "Alternative URL for images listed on FlashImage"
-msgstr "Alternative URL für Images gelistet in \"Flashe Image\""
+msgstr "Alternative URL für Images gelistet in FlasheImage"
 
 msgid "Alternative URLs for DVB-T/C or ATSC"
 msgstr "Alternative URLs für DVB-T / C oder ATSC"
@@ -1286,7 +1286,7 @@ msgstr "B"
 
 #, python-format
 msgid "BC%d"
-msgstr ""
+msgstr "BC%d"
 
 msgid "BER"
 msgstr "BER"
@@ -1440,7 +1440,7 @@ msgid "Boost green"
 msgstr "Boost grün"
 
 msgid "Booster Control"
-msgstr "Prozessor Geschwindkeitskontrolle"
+msgstr "Prozessorgeschwindigkeit"
 
 msgid "Boot to Android image"
 msgstr "Android Booten (Hochfahren)"
@@ -1605,7 +1605,7 @@ msgstr ""
 "gelb\n"
 "\n"
 "Bildschirm wechseln mit links / rechts Tasten oder mit den Tasten rot, grün, blau umschalten.\n"
-"Mit Taste gelb zurück zur Einführung."
+"Mit Taste gelb zurück zur Einführung"
 
 msgid "Can only find a network drive to store the backup this means after the flash the autorestore will not work. Alternativaly you can mount the network drive after the flash and perform a manufacurer reset to autorestore"
 msgstr "Für das Backup wurde nur eine Netzwerkfestplatte gefunden, daher ist ein automatischer Restore der Einstellungen nach dem Flash nicht möglich. Alternativ kann nach dem Flash die Netzwerkfestplatte erneut eingebunden und dann die Box auf Werkseinstellungen zurückgesetzt werden um Autorestore zu nutzen."
@@ -1617,10 +1617,10 @@ msgid "Cancel"
 msgstr "Abbrechen"
 
 msgid "Cancel any changes to the currently active skin"
-msgstr "ohne speichern zurück zum aktuellen Skin"
+msgstr "Ohne speichern zurück zum aktuellen Skin"
 
 msgid "Cancel any changes to the currently active skin and exit all menus"
-msgstr "ohne speichern zurück zum aktuellen Skin"
+msgstr "Ohne speichern zurück zum aktuellen Skin"
 
 msgid "Cancel any text changes and exit"
 msgstr "Brechen Sie alle Textänderungen ab und beenden Sie sie"
@@ -2400,9 +2400,8 @@ msgstr "Kroatien"
 msgid "Croatian"
 msgstr "Kroatisch"
 
-#, fuzzy
 msgid "Cross brightness"
-msgstr "Helligkeit"
+msgstr "Übergangshelligkeit"
 
 msgid "Cuba"
 msgstr "Kuba"
@@ -2500,7 +2499,7 @@ msgid "DTS downmix"
 msgstr "DTS downmix"
 
 msgid "DUAL LAYER DVD"
-msgstr "Doppelschicht DVD (DUAL LAYER)"
+msgstr "DVD (DUAL LAYER)"
 
 msgid "DVB CI Delay"
 msgstr "DVB CI-Verzögerung"
@@ -2575,13 +2574,13 @@ msgid "Debug to file"
 msgstr "Debuggen in Datei"
 
 msgid "Deep Standby LED"
-msgstr "Tiefschlaf / Ausschalten"
+msgstr "LED im Ausschalt-Modus"
 
 msgid "Deep standby"
-msgstr "Tiefschlaf / Ausschalten"
+msgstr "Ausschalten"
 
 msgid "Deepstby LED brightness"
-msgstr "Helligkeit des LED im Tiefschlaf des Receivers"
+msgstr "Helligkeit des LED im Ausschalt-Modus"
 
 msgid "Default"
 msgstr "Standard"
@@ -3308,7 +3307,7 @@ msgstr "Englisch"
 
 #, python-format
 msgid "Enigma (re)starts: %d\n"
-msgstr "Benutzeroberfläche (Enigma) startet neu: %d\n"
+msgstr "Neustarts von Enigma : %d\n"
 
 #, python-format
 msgid "Enigma debug level: %d\n"
@@ -3635,9 +3634,8 @@ msgstr "FEC"
 msgid "FEC:"
 msgstr "FEC:"
 
-#, fuzzy
 msgid "FFmpeg version: "
-msgstr "Enigma-Version:"
+msgstr "FFmpeg-Version"
 
 msgid "FHD"
 msgstr "FHD"
@@ -3761,7 +3759,7 @@ msgid "Fine movement"
 msgstr "Fein-Steuerung"
 
 msgid "Finetune"
-msgstr "Feineinst."
+msgstr "Feineinstellung"
 
 msgid "Finished"
 msgstr "Beendet"
@@ -3894,7 +3892,7 @@ msgid "Further options"
 msgstr "Weitere Optionen"
 
 msgid "GStreamer version: "
-msgstr "GStreamer-Version:"
+msgstr "GStreamer-Version"
 
 msgid "GUI Settings"
 msgstr "GUI-Einstellungen"
@@ -4682,25 +4680,25 @@ msgid "LED control"
 msgstr "LED Konfiguration"
 
 msgid "LED control for Fortis HS7110"
-msgstr "LED control for Fortis HS7110"
+msgstr "LED Konfiguration"
 
 msgid "LED control for Fortis HS7119/HS7810A/HS7819"
-msgstr "LED control for Fortis HS7119/HS7810A/HS7819"
+msgstr "LED Konfiguration"
 
 msgid "LED display"
 msgstr "LED Konfiguration"
 
 msgid "LED display configuration"
-msgstr "Front Display Einstellungen"
+msgstr "LED Konfiguration"
 
 msgid "LED display configuration for Fortis HS7119/HS7810A/HS7819"
-msgstr "LED display configuration for Fortis HS7119/HS7810A/HS7819"
+msgstr "LED Konfiguration"
 
 msgid "LED display configuration for Spark"
-msgstr "LED display configuration for Spark"
+msgstr "LED Konfiguration"
 
 msgid "LED display control Spark"
-msgstr "LED display control Spark"
+msgstr "LED Konfiguration"
 
 msgid "LNB"
 msgstr "LNB"
@@ -4993,6 +4991,8 @@ msgid ""
 "Manufacturer reset in progress\n"
 "Please wait until enigma2 restarts"
 msgstr ""
+"Wiederherstellen der Einstellung in Arbeit\n"
+"Bitte warten bis Enigma2 neu gestartet ist"
 
 msgid "Margin after recording (minutes)"
 msgstr "Nachlauf hinter Aufnahme (in Minuten)"
@@ -5638,9 +5638,8 @@ msgstr "Nicht definiert"
 msgid "Not enough disk space. Please free up some disk space and try again. (%d MB required, %d MB available)"
 msgstr "Nicht genügend freier Speicherplatz. Bitte löschen Sie nicht mehr benötigte Dateien und versuchen es erneut. (%d MB benötigt, %d MB verfügbar)"
 
-#, fuzzy
 msgid "Not running"
-msgstr "nicht laufen"
+msgstr "funktioniert nicht"
 
 msgid "Not tested:"
 msgstr "Nicht getestet:"
@@ -5666,13 +5665,13 @@ msgid "Now"
 msgstr "Jetzt"
 
 msgid "Now playing"
-msgstr "Wiedergabe läuft"
+msgstr "aktuell läuft"
 
 msgid "Now you can change the position of the lower and right side. Press blue button to switch..."
-msgstr ""
+msgstr "Veränderung nach unten und rechts ist möglich. Blaue Taste zum Wechsel"
 
 msgid "Now you can change the position of the upper and left side. Press blue button to switch..."
-msgstr ""
+msgstr "Veränderung nach oben und links ist möglich. Blaue Taste zum Wechsel"
 
 msgid "Now, use the contrast setting to turn up the brightness of the background as much as possible, but make sure that you can still see the difference between the two brightest levels of shades.If you have done that, press OK."
 msgstr "Benutzen Sie jetzt die Kontrastregelung, um die Helligkeit des Hintergrunds so weit wie möglich zu erhöhen. Achten Sie darauf, dass der Unterschied zwischen den beiden hellsten Schattierungen erkennbar bleibt. Drücken Sie anschließend OK."
@@ -5924,7 +5923,6 @@ msgstr "Wiedergabe pausieren"
 msgid "Pause/Continue playback"
 msgstr "Pause / Wiedergabe fortsetzen"
 
-#, fuzzy
 msgid "Pausing"
 msgstr "pausiert"
 
@@ -6389,7 +6387,7 @@ msgid "Preparing... Please wait"
 msgstr "Vorbereitung läuft… Bitte warten"
 
 msgid "Preschool"
-msgstr ""
+msgstr "Vorlauf"
 
 msgid "Press '0' to toggle PiP mode"
 msgstr "Drücke '0' zum Umschalten des PiP-Modus"
@@ -6618,9 +6616,8 @@ msgstr "Vollendete Timer wirklich löschen?"
 msgid "Really exit the subservices quickzap?"
 msgstr "Den Subservices-Schnellumschalter wirklich beenden?"
 
-#, fuzzy
 msgid "Really perform a manufacturer reset now?"
-msgstr "Werkseinstellungen (zurück)setzen schützen"
+msgstr "Wirklich auf Werkseinstellungen zurücksetzen?"
 
 msgid "Really reboot now?"
 msgstr "Wollen Sie trotzdem neu booten?"
@@ -7063,9 +7060,8 @@ msgstr "Rotor: "
 msgid "Round start time on"
 msgstr "Runde Startzeit auf"
 
-#, fuzzy
 msgid "Running"
-msgstr "Laufen"
+msgstr "in Funktion"
 
 msgid "Russian"
 msgstr "Russisch"
@@ -7196,9 +7192,8 @@ msgstr "Speichern"
 msgid "Save / Enter text and exit"
 msgstr "Text eingeben und speichern, danach beenden."
 
-#, fuzzy
 msgid "Save and activate the currently selected skin"
-msgstr "OK drücken, um den markierten Skin zu aktivieren."
+msgstr "Speichere den aktuell gewählten Skin "
 
 msgid "Save and exit"
 msgstr "Speichern und beenden"
@@ -7465,7 +7460,7 @@ msgid "Select a network adapter"
 msgstr "Netzwerkadapter auswählen"
 
 msgid "Select a skin"
-msgstr "Benutzeroberfläche wählen"
+msgstr "Skin wählen"
 
 msgid "Select a tuner"
 msgstr "Tuner auswählen"
@@ -7609,9 +7604,8 @@ msgstr "Wählen Sie den Satelliten aus, den Sie konfigurieren wollen. Sobald die
 msgid "Select the satellite your dish receives from. If you are unsure select 'automatic' and the receiver will attempt to determine this for you."
 msgstr "Wählen Sie den Satelliten, von dem Ihr Gerät empfängt. Wenn Sie sich nicht sicher sind, wählen Sie “automatisch” und der Empfänger wird versuchen, dies für Sie zu ermitteln."
 
-#, fuzzy
 msgid "Select the time zone within the area or region."
-msgstr "Wählen Sie die horizontale Auflösung:"
+msgstr "Wähle die Zeitzone nach Bereich und Region"
 
 msgid "Select the tuner that controls the motorised dish."
 msgstr "Wählen Sie den Tuner, der die motorisierte Schüssel steuert."
@@ -7650,7 +7644,7 @@ msgid "Select video mode"
 msgstr "Wählen Sie den Video-Modus"
 
 msgid "Select whether your SCR device is externally powered."
-msgstr ""
+msgstr "Wähle die Art der externen Stromzufuhr deines SCR"
 
 msgid "Select wireless network"
 msgstr "Funk-Netzwerk auswählen"
@@ -7677,9 +7671,8 @@ msgstr "Bitte wählen Sie den Anbieter aus und bestätigen Sie mit OK, um die Su
 msgid "Select your region. If not available change 'Country' to 'all' and select one of the default alternatives."
 msgstr "Wählen Sie Ihre Region. Wenn nicht verfügbar, ändern Sie “Land” in “alle” und wählen Sie eine der Standardalternativen."
 
-#, fuzzy
 msgid "Select your time zone area or region."
-msgstr "Wählen Sie die horizontale Auflösung:"
+msgstr "Wähle die Zeitzone (Bereich oder Regio)"
 
 msgid "Selecting satellites 1 (USALS)"
 msgstr "Wähle Satelliten 1 (USALS)"
@@ -7776,9 +7769,8 @@ msgstr ""
 "Kanal nicht gefunden!\n"
 "(SID nicht in PAT gefunden)"
 
-#, fuzzy
 msgid "Service off-air"
-msgstr "Service außerhalb der Luft"
+msgstr "Kein Service verfügbar"
 
 msgid "Service reference"
 msgstr "Kanal-Referenz"
@@ -8293,7 +8285,7 @@ msgid "Skin Selection Actions"
 msgstr "Display-Einstellungen"
 
 msgid "SkinSelector: Restart GUI"
-msgstr "Benutzeroberfläche jetzt neu starten?"
+msgstr "Skinauswahl; jetzt Enigma2 neu starten?"
 
 msgid "Skins"
 msgstr "Skins"
@@ -8610,7 +8602,6 @@ msgstr "Mit Liste beginnen"
 msgid "Starting on"
 msgstr "Beginnend ab"
 
-#, fuzzy
 msgid "Starts in a few seconds"
 msgstr "startet in wenigen Sekunden"
 
@@ -8958,7 +8949,7 @@ msgid "Tags"
 msgstr "Tags"
 
 msgid "Taiwan"
-msgstr ""
+msgstr "Taiwan"
 
 msgid "Tajikistan"
 msgstr "Tadschikistan"
@@ -10695,7 +10686,7 @@ msgid "YPbPr"
 msgstr "YPbPr"
 
 msgid "YUV"
-msgstr ""
+msgstr "YUV"
 
 msgid "Year"
 msgstr "Jahr"
@@ -10849,7 +10840,7 @@ msgid "You seem to be in timeshift!"
 msgstr "Du befindest dich im Timeshift Modus"
 
 msgid "Your collection exceeds the size of a single layer medium, you will need a blank dual layer DVD!"
-msgstr "Die Zusammenstellung überschreitet die Größe eines einfachen Mediums, Sie werden einen Doppelschicht-Rohling (Dual Layer) benötigen!"
+msgstr "Die Zusammenstellung überschreitet die Größe eines einfachen Mediums, Sie werden eine Dual LayerDVD benötigen!"
 
 msgid "Your current collection will get lost!"
 msgstr "Ihre aktuelle Zusammenstellung geht dabei verloren!"
@@ -11101,7 +11092,7 @@ msgstr "Ballett"
 
 #, python-format
 msgid "bc%d"
-msgstr ""
+msgstr "bc%d"
 
 msgid "better"
 msgstr "Besser"
@@ -11116,7 +11107,7 @@ msgid "blacklist"
 msgstr "Negativliste"
 
 msgid "blank"
-msgstr "blank"
+msgstr "ohne"
 
 msgid "blink"
 msgstr "blink"
@@ -11154,9 +11145,8 @@ msgstr "zentriert, umgebrochen"
 msgid "change sides"
 msgstr "Seite ändern"
 
-#, fuzzy
 msgid "change the OSD screen size"
-msgstr "Schrittweite ändern."
+msgstr "Bildschirmgröße anpassen"
 
 msgid "channel name"
 msgstr "Kanalname"
@@ -11377,7 +11367,7 @@ msgid "from"
 msgstr "Von"
 
 msgid "fs9000"
-msgstr ""
+msgstr "fs9000"
 
 msgid "further education"
 msgstr "Weiterbildung"
@@ -11461,7 +11451,7 @@ msgid "leave movie player..."
 msgstr "Medienplayer verlassen…"
 
 msgid "leddisplay.png"
-msgstr ""
+msgstr "leddisplay.png"
 
 msgid "left"
 msgstr "Links"
@@ -11936,7 +11926,7 @@ msgid "this recording"
 msgstr "Diese Aufnahme"
 
 msgid "this service is protected by a parental control pin"
-msgstr "Dieser Kanal ist durch einen Jugendschutz-PIN-Code geschützt."
+msgstr "Dieser Kanal ist durch einen Jugendschutz-PIN-Code geschützt"
 
 msgid "time"
 msgstr "Zeit"
@@ -12011,7 +12001,7 @@ msgid "vertical"
 msgstr "Vertikal"
 
 msgid "vfddisplay.png"
-msgstr ""
+msgstr "vfddisplay.png"
 
 msgid "violet"
 msgstr "violet"
