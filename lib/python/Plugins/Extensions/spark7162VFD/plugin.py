@@ -2,7 +2,7 @@
 from Plugins.Plugin import PluginDescriptor
 from ServiceReference import ServiceReference
 from Components.ServiceList import ServiceList
-from enigma import iPlayableService, iServiceInformation, iTimeshiftServicePtr, iRecordableService, eTimer, evfd, eActionMap, iFrontendInformation
+from enigma import iPlayableService, iServiceInformation, iTimeshiftServicePtr, iRecordableService, eTimer, evfd, eDVBVolumecontrol, eActionMap, iFrontendInformation
 from time import localtime, strftime, ctime, time, sleep
 from Components.ServiceEventTracker import ServiceEventTracker
 from Components.Console import Console
