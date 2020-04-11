@@ -1,8 +1,10 @@
 # -*- coding: utf-8 -*-
 from Plugins.Plugin import PluginDescriptor
 import ServiceReference
-from enigma import iPlayableService, eTimer, eServiceCenter, iServiceInformation, evfd
+from enigma import iPlayableService, eTimer, eServiceCenter, iServiceInformation
+from enigma import evfd
 import time
+from time import localtime, strftime, ctime, time
 from Components.ServiceEventTracker import ServiceEventTracker, InfoBarBase
 
 class VFDIcons:
