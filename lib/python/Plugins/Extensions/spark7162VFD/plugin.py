@@ -3,13 +3,13 @@ from Plugins.Plugin import PluginDescriptor
 from ServiceReference import ServiceReference
 from Components.ServiceList import ServiceList
 from enigma import iPlayableService, iServiceInformation, iTimeshiftServicePtr, iRecordableService, eTimer, evfd, eActionMap, iFrontendInformation
-from time import localtime, strftime, ctime, time
+from time import localtime, strftime, ctime, time, sleep
 from Components.ServiceEventTracker import ServiceEventTracker
 from Components.Console import Console
 from Tools.Directories import fileExists
 from os import statvfs
 from Components.ActionMap import ActionMap
-from Components.config import config, configfile, ConfigSubsection, getConfigListEntry, ConfigSelection
+from Components.config import *
 from Components.ConfigList import ConfigList, ConfigListScreen
 from Components.Sources.StaticText import StaticText
 from Tools.HardwareInfo import HardwareInfo
