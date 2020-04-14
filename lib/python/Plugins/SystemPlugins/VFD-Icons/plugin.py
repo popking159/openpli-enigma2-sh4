@@ -1,4 +1,6 @@
-# -*- coding: utf-8 -*-
+# for localized messages
+
+from Screens.Screen import Screen
 from Plugins.Plugin import PluginDescriptor
 import ServiceReference
 from enigma import iPlayableService, eTimer, eServiceCenter, iServiceInformation
