@@ -134,7 +134,7 @@ AC_ARG_ENABLE(spark7162,
 
 AM_CONDITIONAL(ENABLE_SPARK7162, test "$enable_spark7162" = "yes")
 if test "$enable_spark7162" = "yes"; then
-	AC_DEFINE(ENABLE_SPARK7162, 1, [enable spark stuff])
+	AC_DEFINE(ENABLE_SPARK7162, 1, [enable spark7162 stuff])
 fi
 
 AC_ARG_ENABLE(octagon1008,
@@ -453,6 +453,15 @@ AC_ARG_WITH(lcddev,
 if test x"$with_lcddev" != xno ; then
 	AC_DEFINE_UNQUOTED(LCD_DEV, "$withval", [Defines which device to use for lcd (e.g. /dev/fb1)])
 fi
+
+AC_ARG_ENABLE([sh],
+        [AS_HELP_STRING(--enable-sh,    enable sh patches)],
+        [case "${enableval}" in
+                yes) enable_sh=true ;;
+                no) enable_sh=false ;;
+                *) AC_MSG_ERROR([bad value ${enableval} for --enable-sh]) ;;
+        esac])
+AM_CONDITIONAL([ENABLE_SH], [test x$enable_sh = xtrue])
 
 AC_ARG_WITH(alphablendingacceleration,
 	AC_HELP_STRING([--with-alphablendingacceleration=never/always/auto], [alphablending acceleration strategy: never accelerate / always accelerate / automatically decide when to accelerate (default)]),
