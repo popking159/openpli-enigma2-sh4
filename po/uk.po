@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: enigma2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-04-09 13:48+0200\n"
+"POT-Creation-Date: 2020-04-15 00:05+0200\n"
 "PO-Revision-Date: 2016-11-17 12:51+0200\n"
 "Last-Translator: vovan43<vovan43@ex.ua>, sety <tim1065@mail.ru>, Irkoff <irkoff@gmail.com>\n"
 "Language-Team: gisclub.tv <http://gisclub.tv/>\n"
@@ -90,6 +90,10 @@ msgstr "(нижче будь-якого авто)"
 msgid " extensions."
 msgstr " доповнень."
 
+#, fuzzy
+msgid " min"
+msgstr "%d хв"
+
 msgid " ms"
 msgstr " мс"
 
@@ -123,6 +127,10 @@ msgstr ""
 msgid "%.2f GB"
 msgstr ""
 
+#, fuzzy, python-format
+msgid "%02d:%02d"
+msgstr "%2d:%02d"
+
 #, python-format
 msgid "%03d MB"
 msgstr ""
@@ -131,6 +139,16 @@ msgstr ""
 msgid "%2.1f sec"
 msgstr ""
 
+#. TRANSLATORS: short time representation hour:minute
+#, fuzzy, python-format
+msgid "%2d:%02d"
+msgstr "%2d:%02d"
+
+#. TRANSLATORS: full time representation hour:minute:seconds
+#, fuzzy, python-format
+msgid "%2d:%02d:%02d"
+msgstr "%2d:%02d"
+
 #, python-format
 msgid "%3.01f dB"
 msgstr ""
@@ -138,8 +156,31 @@ msgstr ""
 msgid "%A %d %B"
 msgstr "%A %d %B"
 
+#. TRANSLATORS: long date representations dayname daynum monthname in strftime() format! See 'man strftime'
+#, fuzzy
+msgid "%A %e %B"
+msgstr "%A %d %B"
+
+#. TRANSLATORS: full date representation dayname daynum monthname year in strftime() format! See 'man strftime'
+#, fuzzy
+msgid "%A %e %B %Y"
+msgstr "%A %d %B"
+
 msgid "%H:%M"
 msgstr "%H:%M"
+
+#. TRANSLATORS: full date representations short dayname daynum monthname long year in strftime() format! See 'man strftime'
+#, fuzzy
+msgid "%a %e %B %Y"
+msgstr "%d.%B %Y"
+
+#. TRANSLATORS: short date representation short dayname daynum short monthname in strftime() format! See 'man strftime'
+msgid "%a %e/%m"
+msgstr ""
+
+#. TRANSLATORS: long date representation short dayname daynum short monthname hour:minute in strftime() format! See 'man strftime'
+msgid "%a %e/%m  %-H:%M"
+msgstr ""
 
 #, python-format
 msgid "%d B"
@@ -152,30 +193,6 @@ msgstr ""
 #, python-format
 msgid "%d MB"
 msgstr ""
-
-#. TRANSLATORS: full date representation dayname daynum monthname year in strftime() format! See 'man strftime'
-#. _("%A %e %B %Y")
-#. TRANSLATORS: short time representation hour:minute in strftime() format! See 'man strftime'
-#. _("%R")
-#. TRANSLATORS: short time representation hour:minute in strftime() format! See 'man strftime'
-#. _("%R")
-#. TRANSLATORS: short date representation daynum short monthname in strftime() format! See 'man strftime'
-#. _("%e %b")
-#. TRANSLATORS: short date representation daynum short monthname in strftime() format! See 'man strftime'
-#. _("%a %e %b")
-#. TRANSLATORS: short time representation hour:minute in strftime() format! See 'man strftime'
-#. _("%R")
-#. TRANSLATORS: long date representation short dayname daynum short monthname hour:minute in strftime() format! See 'man strftime'
-#. _("%a %e %b %R")
-#. TRANSLATORS: full date representations short dayname daynum monthname long year in strftime() format! See 'man strftime'
-#. _("%a %e %B %Y")
-#.
-#, python-format
-msgid "%d Min"
-msgid_plural "%d Mins"
-msgstr[0] ""
-msgstr[1] ""
-msgstr[2] ""
 
 #. TRANSLATORS: Intermediate scanning result, '%d' channel(s) have been found so far
 #, python-format
@@ -279,6 +296,10 @@ msgstr[2] "%d бездротових мереж знайдено!"
 msgid "%d-%m"
 msgstr "%d-%m"
 
+#, fuzzy, python-format
+msgid "%d.%02d. %02d:%02d"
+msgstr "%d.%B %Y"
+
 #, python-format
 msgid "%d.%03d GB"
 msgstr ""
@@ -297,6 +318,10 @@ msgstr "%d.%B %Y"
 #, fuzzy, python-format
 msgid "%d:%02d"
 msgstr "%2d:%02d"
+
+#. TRANSLATORS: VFD hour:minute daynum short monthname in strftime() format! See 'man strftime'
+msgid "%k:%M %e/%m"
+msgstr ""
 
 #, fuzzy, python-format
 msgid ""
@@ -476,10 +501,6 @@ msgstr "3"
 
 msgid "30"
 msgstr "30"
-
-#, fuzzy
-msgid "3D Mode"
-msgstr "Режим"
 
 msgid "3D surround"
 msgstr ""
@@ -859,9 +880,6 @@ msgstr "Встановіть налаштування 3D"
 msgid "Adjust the color settings so that all the color shades are distinguishable, but appear as saturated as possible. If you are happy with the result, press OK to close the video fine-tuning, or use the number keys to select other test screens."
 msgstr "Налаштуйте параметри кольору, так щоб всі відтінки кольорів були максимально видно, наскільки це можливо. Якщо ви задоволені результатом, натисніть кнопку ОК для закриття відео налаштувань, або використовуйте цифрові клавіші для вибору  інших тестів екрану "
 
-msgid "Adult Audience, Strong Violence 15+"
-msgstr ""
-
 msgid "Advanced"
 msgstr "Розширений"
 
@@ -1195,9 +1213,6 @@ msgstr ""
 msgid "Audio PID, codec & lang"
 msgstr ""
 
-msgid "Audio Source"
-msgstr ""
-
 msgid "Audio auto volume level"
 msgstr ""
 
@@ -1318,10 +1333,6 @@ msgstr ""
 
 msgid "B"
 msgstr "B"
-
-#, python-format
-msgid "BC%d"
-msgstr ""
 
 msgid "BER"
 msgstr "BER"
@@ -1816,10 +1827,6 @@ msgstr ""
 "Перевірка налаштуватися тюнера %s\n"
 "DiSEqC порт %s для %s"
 
-#, fuzzy
-msgid "Children"
-msgstr "Діти / Молодь"
-
 msgid "Children/Youth"
 msgstr "Діти / Молодь"
 
@@ -1913,10 +1920,6 @@ msgstr "Налаштування колекції"
 
 #, fuzzy
 msgid "Colombia"
-msgstr "Формат кольору"
-
-#, fuzzy
-msgid "Color Format"
 msgstr "Формат кольору"
 
 msgid "Color format"
@@ -4006,9 +4009,6 @@ msgstr ""
 msgid "Gateway"
 msgstr "Шлюз"
 
-msgid "General"
-msgstr ""
-
 msgid "General AC3 delay"
 msgstr "Загальна затримка AC3"
 
@@ -4848,10 +4848,6 @@ msgstr "Остання швидкість"
 msgid "Last update: "
 msgstr "Останнє оновлення: "
 
-msgctxt "third event: 'third' event label"
-msgid "Later"
-msgstr ""
-
 msgid "Latest Commits"
 msgstr "Зміни"
 
@@ -5138,12 +5134,6 @@ msgstr ""
 msgid "Martinique"
 msgstr ""
 
-msgid "Mature Adult Audience 15+"
-msgstr ""
-
-msgid "Mature Audience 15+"
-msgstr ""
-
 #, fuzzy
 msgid "Mauritania"
 msgstr "Литовський"
@@ -5214,9 +5204,6 @@ msgstr "Категорія мінімум %d років"
 
 msgid "Minimum send interval"
 msgstr "Мінімальний інтервал відправки"
-
-msgid "Mins"
-msgstr ""
 
 msgid "Missing "
 msgstr "Відсутній "
@@ -5766,10 +5753,6 @@ msgid "Norwegian"
 msgstr "Норвезька"
 
 #, fuzzy
-msgid "Not Classified"
-msgstr "Немає асоціацій"
-
-#, fuzzy
 msgid "Not Installed"
 msgstr "Встановити"
 
@@ -5786,10 +5769,6 @@ msgstr "Не визначений"
 #, python-format
 msgid "Not enough disk space. Please free up some disk space and try again. (%d MB required, %d MB available)"
 msgstr "Немає місця на диску. Будь ласка звільніть трохи місця і спробуйте знову. (%d MB потрібно, %d MB доступно)"
-
-#, fuzzy
-msgid "Not running"
-msgstr "Швидкість обертання мотора"
 
 msgid "Not tested:"
 msgstr "Не випробувано:"
@@ -6054,9 +6033,6 @@ msgstr ""
 msgid "Parent directory"
 msgstr "Батьківський каталог"
 
-msgid "Parental Guidance Recommended"
-msgstr ""
-
 msgid "Parental control"
 msgstr "Батьківський контроль"
 
@@ -6081,10 +6057,6 @@ msgstr "Пауза відтворення"
 #, fuzzy
 msgid "Pause/Continue playback"
 msgstr "Пауза / Продовжити відтворення"
-
-#, fuzzy
-msgid "Pausing"
-msgstr "Пауза"
 
 msgid "Percentage left"
 msgstr "Відсотки зліва"
@@ -6556,9 +6528,6 @@ msgstr "Віддається перевага тюнеру для запису"
 
 msgid "Preparing... Please wait"
 msgstr "Підготовка ... Будь ласка, почекайте"
-
-msgid "Preschool"
-msgstr ""
 
 msgid "Press '0' to toggle PiP mode"
 msgstr "Натисніть '0' щоб перейти до режиму PiP"
@@ -7076,9 +7045,6 @@ msgstr "Не вдалося створити розділ"
 msgid "Reserved"
 msgstr "Зарезервовано"
 
-msgid "Reserved for future use"
-msgstr ""
-
 msgid "Reset"
 msgstr "Скидання"
 
@@ -7166,9 +7132,6 @@ msgstr "Відновити налаштування вашого ресивер�
 msgid "Restoring..."
 msgstr "Відновлення..."
 
-msgid "Restricted 18+"
-msgstr ""
-
 msgid "Resume from last position"
 msgstr "Відновити з останньої позиції"
 
@@ -7248,10 +7211,6 @@ msgstr "Ротор: "
 
 msgid "Round start time on"
 msgstr "Круглий час початку на"
-
-#, fuzzy
-msgid "Running"
-msgstr "Увага"
 
 msgid "Russian"
 msgstr "Російський"
@@ -7989,10 +7948,6 @@ msgstr ""
 "Сервіс не знайдений!\n"
 "(SID не знайдено в PAT)"
 
-#, fuzzy
-msgid "Service off-air"
-msgstr "Всі постачальники послуг"
-
 msgid "Service reference"
 msgstr "Референс"
 
@@ -8451,10 +8406,6 @@ msgstr "Виключити"
 msgid "Shutdown when in Standby"
 msgstr "Виключення в режимі очікування"
 
-#, fuzzy
-msgid "Side by Side"
-msgstr "Пліч-о-пліч"
-
 msgid "Side by side"
 msgstr "Пліч-о-пліч"
 
@@ -8853,10 +8804,6 @@ msgstr "Початок з режиму списку"
 
 msgid "Starting on"
 msgstr "Починаючи з"
-
-#, fuzzy
-msgid "Starts in a few seconds"
-msgstr "Старт відкладеного декодування"
 
 msgid "Startup the set top box in standby"
 msgstr "Ініціювання ресивера в режимі очікування"
@@ -9862,10 +9809,6 @@ msgstr "Тоновий сигнал A/B"
 
 msgid "Tonga"
 msgstr ""
-
-#, fuzzy
-msgid "Top and Bottom"
-msgstr "Вверх і вниз"
 
 msgid "Top and bottom"
 msgstr "Вверх і вниз"
@@ -11019,9 +10962,6 @@ msgstr "ТАК"
 msgid "YPbPr"
 msgstr "YPbPr"
 
-msgid "YUV"
-msgstr ""
-
 msgid "Year"
 msgstr "Рік"
 
@@ -11433,7 +11373,7 @@ msgid "ballet"
 msgstr "балет"
 
 #, python-format
-msgid "bc%d"
+msgid "bc%s"
 msgstr ""
 
 msgid "better"
@@ -11959,6 +11899,10 @@ msgstr "немає конфігурації"
 msgid "not locked"
 msgstr "не захоплено"
 
+#, fuzzy
+msgid "not running"
+msgstr "Швидкість обертання мотора"
+
 msgid "not supported"
 msgstr "невідома"
 
@@ -12033,6 +11977,10 @@ msgstr ""
 msgid "pass"
 msgstr "передати"
 
+#, fuzzy
+msgid "pausing"
+msgstr "Пауза"
+
 msgid "performing arts"
 msgstr "виконавчі види мистецтва"
 
@@ -12078,6 +12026,9 @@ msgstr "видалити мітку"
 msgid "repeated"
 msgstr "повторний"
 
+msgid "reserved for future use"
+msgstr ""
+
 msgid "reverse by date"
 msgstr "повторний"
 
@@ -12098,6 +12049,10 @@ msgstr "рок/поп"
 
 msgid "romance"
 msgstr "романс"
+
+#, fuzzy
+msgid "running"
+msgstr "Увага"
 
 msgid "save"
 msgstr ""
@@ -12126,6 +12081,10 @@ msgstr "класична музика"
 
 msgid "serious/classical/religious/historical movie/drama"
 msgstr "серйозний/класичний/релігійний/історичний фільм/драма"
+
+#, fuzzy
+msgid "service off-air"
+msgstr "Всі постачальники послуг"
 
 #, fuzzy
 msgid "set default"
@@ -12237,6 +12196,10 @@ msgstr "стандарт"
 
 msgid "start cut here"
 msgstr "початок редагування"
+
+#, fuzzy
+msgid "starts in a few seconds"
+msgstr "Старт відкладеного декодування"
 
 msgid "stepsize"
 msgstr "розмір кроку"

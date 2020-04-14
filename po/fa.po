@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: enigma2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-04-09 13:48+0200\n"
+"POT-Creation-Date: 2020-04-15 00:05+0200\n"
 "PO-Revision-Date: 2018-02-14 16:51+0330\n"
 "Last-Translator: Persian Prince <persianprince@pe4k.com>\n"
 "Language-Team: Persian Professionals <persianpros@yahoo.com>\n"
@@ -87,6 +87,10 @@ msgstr ""
 msgid " extensions."
 msgstr "بسته ها"
 
+#, fuzzy
+msgid " min"
+msgstr "%d دقیقه"
+
 msgid " ms"
 msgstr "میلی ثانیه"
 
@@ -121,6 +125,10 @@ msgstr ""
 msgid "%.2f GB"
 msgstr "%.2f گیگابایت"
 
+#, fuzzy, python-format
+msgid "%02d:%02d"
+msgstr "%d:%02d"
+
 #, python-format
 msgid "%03d MB"
 msgstr "%03d مگابایت"
@@ -129,6 +137,16 @@ msgstr "%03d مگابایت"
 msgid "%2.1f sec"
 msgstr "%2.1f ثانیه"
 
+#. TRANSLATORS: short time representation hour:minute
+#, fuzzy, python-format
+msgid "%2d:%02d"
+msgstr "%d:%02d"
+
+#. TRANSLATORS: full time representation hour:minute:seconds
+#, fuzzy, python-format
+msgid "%2d:%02d:%02d"
+msgstr "%d:%02d"
+
 #, python-format
 msgid "%3.01f dB"
 msgstr "%3.01f دسی بل"
@@ -136,8 +154,31 @@ msgstr "%3.01f دسی بل"
 msgid "%A %d %B"
 msgstr "%A %d %B"
 
+#. TRANSLATORS: long date representations dayname daynum monthname in strftime() format! See 'man strftime'
+#, fuzzy
+msgid "%A %e %B"
+msgstr "%A %d %B"
+
+#. TRANSLATORS: full date representation dayname daynum monthname year in strftime() format! See 'man strftime'
+#, fuzzy
+msgid "%A %e %B %Y"
+msgstr "%A %d %B"
+
 msgid "%H:%M"
 msgstr "%ساعت:%دقیقه"
+
+#. TRANSLATORS: full date representations short dayname daynum monthname long year in strftime() format! See 'man strftime'
+#, fuzzy
+msgid "%a %e %B %Y"
+msgstr "%d.%B %Y"
+
+#. TRANSLATORS: short date representation short dayname daynum short monthname in strftime() format! See 'man strftime'
+msgid "%a %e/%m"
+msgstr ""
+
+#. TRANSLATORS: long date representation short dayname daynum short monthname hour:minute in strftime() format! See 'man strftime'
+msgid "%a %e/%m  %-H:%M"
+msgstr ""
 
 #, python-format
 msgid "%d B"
@@ -150,28 +191,6 @@ msgstr "%d گیگابایت"
 #, python-format
 msgid "%d MB"
 msgstr "%d مگابایت"
-
-#. TRANSLATORS: full date representation dayname daynum monthname year in strftime() format! See 'man strftime'
-#. _("%A %e %B %Y")
-#. TRANSLATORS: short time representation hour:minute in strftime() format! See 'man strftime'
-#. _("%R")
-#. TRANSLATORS: short time representation hour:minute in strftime() format! See 'man strftime'
-#. _("%R")
-#. TRANSLATORS: short date representation daynum short monthname in strftime() format! See 'man strftime'
-#. _("%e %b")
-#. TRANSLATORS: short date representation daynum short monthname in strftime() format! See 'man strftime'
-#. _("%a %e %b")
-#. TRANSLATORS: short time representation hour:minute in strftime() format! See 'man strftime'
-#. _("%R")
-#. TRANSLATORS: long date representation short dayname daynum short monthname hour:minute in strftime() format! See 'man strftime'
-#. _("%a %e %b %R")
-#. TRANSLATORS: full date representations short dayname daynum monthname long year in strftime() format! See 'man strftime'
-#. _("%a %e %B %Y")
-#.
-#, fuzzy, python-format
-msgid "%d Min"
-msgid_plural "%d Mins"
-msgstr[0] "%d مگابایت"
 
 #. TRANSLATORS: Intermediate scanning result, '%d' channel(s) have been found so far
 #, python-format
@@ -255,6 +274,10 @@ msgstr[0] "1 شبکه بدون سیم یافت شد"
 msgid "%d-%m"
 msgstr "%d-%m"
 
+#, fuzzy, python-format
+msgid "%d.%02d. %02d:%02d"
+msgstr "%d.%d.%d"
+
 #, python-format
 msgid "%d.%03d GB"
 msgstr "%d.%03d گیگابایت"
@@ -273,6 +296,10 @@ msgstr "%d.%d.%d"
 #, python-format
 msgid "%d:%02d"
 msgstr "%d:%02d"
+
+#. TRANSLATORS: VFD hour:minute daynum short monthname in strftime() format! See 'man strftime'
+msgid "%k:%M %e/%m"
+msgstr ""
 
 #, fuzzy, python-format
 msgid ""
@@ -450,10 +477,6 @@ msgstr "3"
 
 msgid "30"
 msgstr "30"
-
-#, fuzzy
-msgid "3D Mode"
-msgstr "حالت"
 
 msgid "3D surround"
 msgstr "فراگیر 3 بعدی"
@@ -836,9 +859,6 @@ msgstr "تنظیمات 3 بعدی"
 msgid "Adjust the color settings so that all the color shades are distinguishable, but appear as saturated as possible. If you are happy with the result, press OK to close the video fine-tuning, or use the number keys to select other test screens."
 msgstr "تنظیم کردن تنظیمات رنگ طوری که سایه های رنگ ها مشخص باشد ، اما تا حد امکان به صورت اشباع شده نمایان شود ، اگر شما از نتیجه راضی هستید دکمه OK را برای بستن \"میزان مناسب تصویر\" فشار دهید و یا از اعداد ریموت کنترل برای تست های دیگر صفحه نمایش استفاده کنید"
 
-msgid "Adult Audience, Strong Violence 15+"
-msgstr ""
-
 msgid "Advanced"
 msgstr ""
 
@@ -1183,9 +1203,6 @@ msgstr ""
 msgid "Audio PID, codec & lang"
 msgstr ""
 
-msgid "Audio Source"
-msgstr ""
-
 msgid "Audio auto volume level"
 msgstr ""
 
@@ -1307,10 +1324,6 @@ msgstr ""
 
 msgid "B"
 msgstr "B"
-
-#, python-format
-msgid "BC%d"
-msgstr ""
 
 msgid "BER"
 msgstr "مقدار خطا"
@@ -1813,9 +1826,6 @@ msgid ""
 "DiSEqC port %s for %s"
 msgstr ""
 
-msgid "Children"
-msgstr ""
-
 msgid "Children/Youth"
 msgstr ""
 
@@ -1909,10 +1919,6 @@ msgstr "تنظیمات مجموعه"
 
 #, fuzzy
 msgid "Colombia"
-msgstr "فرمت رنگ"
-
-#, fuzzy
-msgid "Color Format"
 msgstr "فرمت رنگ"
 
 #, fuzzy
@@ -4011,9 +4017,6 @@ msgstr ""
 msgid "Gateway"
 msgstr "دروازه"
 
-msgid "General"
-msgstr ""
-
 #
 #, fuzzy
 msgid "General AC3 delay"
@@ -4859,10 +4862,6 @@ msgstr "آخرین سرعت"
 msgid "Last update: "
 msgstr "آخرین به روز رسانی: "
 
-msgctxt "third event: 'third' event label"
-msgid "Later"
-msgstr ""
-
 msgid "Latest Commits"
 msgstr "جدیدترین فعالیت"
 
@@ -5152,12 +5151,6 @@ msgstr ""
 msgid "Martinique"
 msgstr ""
 
-msgid "Mature Adult Audience 15+"
-msgstr ""
-
-msgid "Mature Audience 15+"
-msgstr ""
-
 #, fuzzy
 msgid "Mauritania"
 msgstr "لیتوانی"
@@ -5231,9 +5224,6 @@ msgstr ""
 #, fuzzy
 msgid "Minimum send interval"
 msgstr "فاصله گارد"
-
-msgid "Mins"
-msgstr ""
 
 msgid "Missing "
 msgstr "مفقود"
@@ -5796,9 +5786,6 @@ msgstr "نروژی"
 msgid "Norwegian"
 msgstr "نروژی"
 
-msgid "Not Classified"
-msgstr ""
-
 #, fuzzy
 msgid "Not Installed"
 msgstr "نصب"
@@ -5815,10 +5802,6 @@ msgstr ""
 #, fuzzy, python-format
 msgid "Not enough disk space. Please free up some disk space and try again. (%d MB required, %d MB available)"
 msgstr "فضای کافی وجود ندارد ، لطفا مقداری فضا خالی و دوباره تلاش کنید . (%d مگابایت نیاز است و %d مگابایت در دسترس است)"
-
-#, fuzzy
-msgid "Not running"
-msgstr "در حال اجرا نیست"
 
 msgid "Not tested:"
 msgstr ""
@@ -6081,9 +6064,6 @@ msgstr ""
 msgid "Parent directory"
 msgstr "شاخه اصلی"
 
-msgid "Parental Guidance Recommended"
-msgstr ""
-
 msgid "Parental control"
 msgstr "کنترل والدین"
 
@@ -6109,9 +6089,6 @@ msgstr "ادامه پخش"
 #, fuzzy
 msgid "Pause/Continue playback"
 msgstr "ادامه پخش کردن"
-
-msgid "Pausing"
-msgstr ""
 
 msgid "Percentage left"
 msgstr ""
@@ -6583,9 +6560,6 @@ msgstr "تیونر ارجح برای ضبط"
 
 msgid "Preparing... Please wait"
 msgstr "در حال آماده سازی - لطفا صبر کنید"
-
-msgid "Preschool"
-msgstr ""
 
 msgid "Press '0' to toggle PiP mode"
 msgstr ""
@@ -7114,9 +7088,6 @@ msgstr "بازخوانی جدول پارتیشن"
 msgid "Reserved"
 msgstr ""
 
-msgid "Reserved for future use"
-msgstr ""
-
 msgid "Reset"
 msgstr "بازنشانی"
 
@@ -7209,9 +7180,6 @@ msgstr ""
 msgid "Restoring..."
 msgstr "بازگردانی در حال اجرا است"
 
-msgid "Restricted 18+"
-msgstr ""
-
 msgid "Resume from last position"
 msgstr "ادامه از مکان قبلی"
 
@@ -7292,10 +7260,6 @@ msgstr ""
 
 msgid "Round start time on"
 msgstr ""
-
-#, fuzzy
-msgid "Running"
-msgstr "در حال اجرا"
 
 msgid "Russian"
 msgstr "روسی"
@@ -8037,10 +8001,6 @@ msgstr ""
 "کانال یافت نشد\n"
 "(SID در PAT یافت نشد)"
 
-#, fuzzy
-msgid "Service off-air"
-msgstr "اطلاعات کانال"
-
 msgid "Service reference"
 msgstr "ارجاع کانال"
 
@@ -8510,10 +8470,6 @@ msgstr "خاموش کردن"
 msgid "Shutdown when in Standby"
 msgstr ""
 
-#, fuzzy
-msgid "Side by Side"
-msgstr "پهلو به پهلو"
-
 msgid "Side by side"
 msgstr "پهلو به پهلو"
 
@@ -8921,10 +8877,6 @@ msgstr ""
 
 msgid "Starting on"
 msgstr "شروع در"
-
-#, fuzzy
-msgid "Starts in a few seconds"
-msgstr "شروع رمز گشایی آفلاین"
 
 msgid "Startup the set top box in standby"
 msgstr ""
@@ -9875,9 +9827,6 @@ msgid "Toneburst A/B"
 msgstr ""
 
 msgid "Tonga"
-msgstr ""
-
-msgid "Top and Bottom"
 msgstr ""
 
 msgid "Top and bottom"
@@ -10967,9 +10916,6 @@ msgstr "بله"
 msgid "YPbPr"
 msgstr "YPbPr"
 
-msgid "YUV"
-msgstr ""
-
 msgid "Year"
 msgstr "سال"
 
@@ -11338,7 +11284,7 @@ msgid "ballet"
 msgstr ""
 
 #, python-format
-msgid "bc%d"
+msgid "bc%s"
 msgstr ""
 
 msgid "better"
@@ -11859,6 +11805,10 @@ msgstr ""
 msgid "not locked"
 msgstr ""
 
+#, fuzzy
+msgid "not running"
+msgstr "در حال اجرا نیست"
+
 msgid "not supported"
 msgstr ""
 
@@ -11932,6 +11882,9 @@ msgstr ""
 msgid "pass"
 msgstr ""
 
+msgid "pausing"
+msgstr ""
+
 msgid "performing arts"
 msgstr ""
 
@@ -11977,6 +11930,9 @@ msgstr ""
 msgid "repeated"
 msgstr ""
 
+msgid "reserved for future use"
+msgstr ""
+
 msgid "reverse by date"
 msgstr ""
 
@@ -11997,6 +11953,10 @@ msgstr ""
 
 msgid "romance"
 msgstr "رمانتیک"
+
+#, fuzzy
+msgid "running"
+msgstr "در حال اجرا"
 
 msgid "save"
 msgstr ""
@@ -12024,6 +11984,10 @@ msgstr ""
 
 msgid "serious/classical/religious/historical movie/drama"
 msgstr ""
+
+#, fuzzy
+msgid "service off-air"
+msgstr "اطلاعات کانال"
 
 #, fuzzy
 msgid "set default"
@@ -12135,6 +12099,10 @@ msgstr "استاندارد"
 
 msgid "start cut here"
 msgstr ""
+
+#, fuzzy
+msgid "starts in a few seconds"
+msgstr "شروع رمز گشایی آفلاین"
 
 msgid "stepsize"
 msgstr ""

@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: enigma2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-04-09 13:48+0200\n"
+"POT-Creation-Date: 2020-04-15 00:05+0200\n"
 "PO-Revision-Date: \n"
 "Last-Translator: Budiarno Pedode\n"
 "Language-Team: \n"
@@ -88,6 +88,10 @@ msgstr " (lebih rendah dari auto)"
 msgid " extensions."
 msgstr " ekstensi."
 
+#, fuzzy
+msgid " min"
+msgstr "%d mnt"
+
 msgid " ms"
 msgstr " md"
 
@@ -121,6 +125,10 @@ msgstr ""
 msgid "%.2f GB"
 msgstr "%.2f GB"
 
+#, fuzzy, python-format
+msgid "%02d:%02d"
+msgstr "%2d:%02d"
+
 #, python-format
 msgid "%03d MB"
 msgstr "%03d MB"
@@ -129,6 +137,16 @@ msgstr "%03d MB"
 msgid "%2.1f sec"
 msgstr "%d dtk"
 
+#. TRANSLATORS: short time representation hour:minute
+#, fuzzy, python-format
+msgid "%2d:%02d"
+msgstr "%2d:%02d"
+
+#. TRANSLATORS: full time representation hour:minute:seconds
+#, fuzzy, python-format
+msgid "%2d:%02d:%02d"
+msgstr "%2d:%02d"
+
 #, python-format
 msgid "%3.01f dB"
 msgstr "%3.01f dB"
@@ -136,8 +154,31 @@ msgstr "%3.01f dB"
 msgid "%A %d %B"
 msgstr "%A %d %B"
 
+#. TRANSLATORS: long date representations dayname daynum monthname in strftime() format! See 'man strftime'
+#, fuzzy
+msgid "%A %e %B"
+msgstr "%A %d %B"
+
+#. TRANSLATORS: full date representation dayname daynum monthname year in strftime() format! See 'man strftime'
+#, fuzzy
+msgid "%A %e %B %Y"
+msgstr "%A %d %B"
+
 msgid "%H:%M"
 msgstr "%H:%M"
+
+#. TRANSLATORS: full date representations short dayname daynum monthname long year in strftime() format! See 'man strftime'
+#, fuzzy
+msgid "%a %e %B %Y"
+msgstr "%d.%B %Y"
+
+#. TRANSLATORS: short date representation short dayname daynum short monthname in strftime() format! See 'man strftime'
+msgid "%a %e/%m"
+msgstr ""
+
+#. TRANSLATORS: long date representation short dayname daynum short monthname hour:minute in strftime() format! See 'man strftime'
+msgid "%a %e/%m  %-H:%M"
+msgstr ""
 
 #, python-format
 msgid "%d B"
@@ -150,29 +191,6 @@ msgstr "%d B"
 #, python-format
 msgid "%d MB"
 msgstr "%d MB"
-
-#. TRANSLATORS: full date representation dayname daynum monthname year in strftime() format! See 'man strftime'
-#. _("%A %e %B %Y")
-#. TRANSLATORS: short time representation hour:minute in strftime() format! See 'man strftime'
-#. _("%R")
-#. TRANSLATORS: short time representation hour:minute in strftime() format! See 'man strftime'
-#. _("%R")
-#. TRANSLATORS: short date representation daynum short monthname in strftime() format! See 'man strftime'
-#. _("%e %b")
-#. TRANSLATORS: short date representation daynum short monthname in strftime() format! See 'man strftime'
-#. _("%a %e %b")
-#. TRANSLATORS: short time representation hour:minute in strftime() format! See 'man strftime'
-#. _("%R")
-#. TRANSLATORS: long date representation short dayname daynum short monthname hour:minute in strftime() format! See 'man strftime'
-#. _("%a %e %b %R")
-#. TRANSLATORS: full date representations short dayname daynum monthname long year in strftime() format! See 'man strftime'
-#. _("%a %e %B %Y")
-#.
-#, fuzzy, python-format
-msgid "%d Min"
-msgid_plural "%d Mins"
-msgstr[0] "%d MB"
-msgstr[1] "%d MB"
 
 #. TRANSLATORS: Intermediate scanning result, '%d' channel(s) have been found so far
 #, python-format
@@ -266,6 +284,10 @@ msgstr[1] "%d jaringan nirkabel ditemukan!"
 msgid "%d-%m"
 msgstr "%d-%m"
 
+#, fuzzy, python-format
+msgid "%d.%02d. %02d:%02d"
+msgstr "%d.%B %Y"
+
 #, python-format
 msgid "%d.%03d GB"
 msgstr "%d.%03d GB"
@@ -284,6 +306,10 @@ msgstr "%d.%B %Y"
 #, fuzzy, python-format
 msgid "%d:%02d"
 msgstr "%2d:%02d"
+
+#. TRANSLATORS: VFD hour:minute daynum short monthname in strftime() format! See 'man strftime'
+msgid "%k:%M %e/%m"
+msgstr ""
 
 #, fuzzy, python-format
 msgid ""
@@ -468,10 +494,6 @@ msgstr "3"
 
 msgid "30"
 msgstr "30"
-
-#, fuzzy
-msgid "3D Mode"
-msgstr "Mode"
 
 msgid "3D surround"
 msgstr "surround 3D"
@@ -851,9 +873,6 @@ msgstr "Sesuaikan setelan 3D"
 msgid "Adjust the color settings so that all the color shades are distinguishable, but appear as saturated as possible. If you are happy with the result, press OK to close the video fine-tuning, or use the number keys to select other test screens."
 msgstr "Sesuaikan setelah warna sehingga semua nuansa warna mudah dibedakan, tapi terlihat sepenuh mungkin. Jika anda senang dengan hasilnya, tekan OK untuk menutup pengaturan video, atau gunakan tombol angka untuk memilih test layar lainnya."
 
-msgid "Adult Audience, Strong Violence 15+"
-msgstr ""
-
 msgid "Advanced"
 msgstr "Tingkat mahir"
 
@@ -1190,9 +1209,6 @@ msgstr "PID Audio%s, codec & bhs"
 msgid "Audio PID, codec & lang"
 msgstr "PID Audio, codec & bhs"
 
-msgid "Audio Source"
-msgstr ""
-
 msgid "Audio auto volume level"
 msgstr "level suara audio otomatis"
 
@@ -1312,10 +1328,6 @@ msgstr ""
 
 msgid "B"
 msgstr "B"
-
-#, python-format
-msgid "BC%d"
-msgstr ""
 
 msgid "BER"
 msgstr "BER"
@@ -1809,10 +1821,6 @@ msgstr ""
 "Memeriksa penala %s\n"
 "DiSEqC port %s untuk %s"
 
-#, fuzzy
-msgid "Children"
-msgstr "Anak-anak/Pemuda"
-
 msgid "Children/Youth"
 msgstr "Anak-anak/Pemuda"
 
@@ -1908,10 +1916,6 @@ msgstr "Penyetelan koleksi"
 #, fuzzy
 msgid "Colombia"
 msgstr "Kolombia"
-
-#, fuzzy
-msgid "Color Format"
-msgstr "Format warna"
 
 msgid "Color format"
 msgstr "Format warna"
@@ -4024,9 +4028,6 @@ msgstr ""
 msgid "Gateway"
 msgstr "Gateway"
 
-msgid "General"
-msgstr ""
-
 msgid "General AC3 delay"
 msgstr "Tunda AC3 umum"
 
@@ -4857,10 +4858,6 @@ msgstr "Kecepatan terakhir"
 msgid "Last update: "
 msgstr "Peningkatan terakhir: "
 
-msgctxt "third event: 'third' event label"
-msgid "Later"
-msgstr ""
-
 msgid "Latest Commits"
 msgstr "Pengerjaan Terbaru"
 
@@ -5149,12 +5146,6 @@ msgstr ""
 msgid "Martinique"
 msgstr ""
 
-msgid "Mature Adult Audience 15+"
-msgstr ""
-
-msgid "Mature Audience 15+"
-msgstr ""
-
 #, fuzzy
 msgid "Mauritania"
 msgstr "Mauritania"
@@ -5225,9 +5216,6 @@ msgstr "Umur minimum %d tahun"
 
 msgid "Minimum send interval"
 msgstr "Selang waktu kirim minimum"
-
-msgid "Mins"
-msgstr ""
 
 msgid "Missing "
 msgstr "Hilang "
@@ -5777,10 +5765,6 @@ msgid "Norwegian"
 msgstr "Norwegia"
 
 #, fuzzy
-msgid "Not Classified"
-msgstr "Tak diasosiasikan"
-
-#, fuzzy
 msgid "Not Installed"
 msgstr "Pasang"
 
@@ -5797,10 +5781,6 @@ msgstr "Tak ditetapkan"
 #, python-format
 msgid "Not enough disk space. Please free up some disk space and try again. (%d MB required, %d MB available)"
 msgstr "Tidak cukup ruang simpan disk. Mohon kosongkan beberapa ruang disk dan coba lagi. (%d MB diperlukan, %d MB tersedia)"
-
-#, fuzzy
-msgid "Not running"
-msgstr "Di awal"
 
 msgid "Not tested:"
 msgstr "Tidak teruji:"
@@ -6062,9 +6042,6 @@ msgstr ""
 msgid "Parent directory"
 msgstr "Direktori induk"
 
-msgid "Parental Guidance Recommended"
-msgstr ""
-
 msgid "Parental control"
 msgstr "Pengawasan Orangtua"
 
@@ -6089,10 +6066,6 @@ msgstr "Jeda pemutaran"
 #, fuzzy
 msgid "Pause/Continue playback"
 msgstr "Lanjut mainkan"
-
-#, fuzzy
-msgid "Pausing"
-msgstr "jeda"
 
 msgid "Percentage left"
 msgstr "Persentase di kiri"
@@ -6564,9 +6537,6 @@ msgstr "Penala diutamakan untuk merekam"
 
 msgid "Preparing... Please wait"
 msgstr "Mempersiapkan... Silakan tunggu"
-
-msgid "Preschool"
-msgstr ""
 
 msgid "Press '0' to toggle PiP mode"
 msgstr "Tekan '0' untuk alihkan mode PiP"
@@ -7083,10 +7053,6 @@ msgstr "Baca ulang tabel partisi"
 msgid "Reserved"
 msgstr "Dialokasikan"
 
-#, fuzzy
-msgid "Reserved for future use"
-msgstr "tandai untuk kegunaan di masa mendatang"
-
 msgid "Reset"
 msgstr "Atur ulang"
 
@@ -7174,9 +7140,6 @@ msgstr "Pulihkan penyetelan Rx anda."
 msgid "Restoring..."
 msgstr "Memulihkan..."
 
-msgid "Restricted 18+"
-msgstr ""
-
 msgid "Resume from last position"
 msgstr "Mulai dari posisi terakhir"
 
@@ -7256,10 +7219,6 @@ msgstr "Rotor:"
 
 msgid "Round start time on"
 msgstr "Putaran waktu mulai"
-
-#, fuzzy
-msgid "Running"
-msgstr "Peringatan"
 
 msgid "Russian"
 msgstr "Rusia"
@@ -7991,10 +7950,6 @@ msgstr ""
 "Kanal tidak ditemukan\n"
 "(SID tidak ditemukan di PAT)"
 
-#, fuzzy
-msgid "Service off-air"
-msgstr "Semua penyedia layanan"
-
 msgid "Service reference"
 msgstr "Referensi layanan"
 
@@ -8456,10 +8411,6 @@ msgstr "Matikan"
 msgid "Shutdown when in Standby"
 msgstr "Matikan saat Standby"
 
-#, fuzzy
-msgid "Side by Side"
-msgstr "Berdampingan"
-
 msgid "Side by side"
 msgstr "Berdampingan"
 
@@ -8857,10 +8808,6 @@ msgstr "Mulai dgn layar daftar"
 
 msgid "Starting on"
 msgstr "Mulai dari"
-
-#, fuzzy
-msgid "Starts in a few seconds"
-msgstr "mulai dalam beberap detik"
 
 msgid "Startup the set top box in standby"
 msgstr "Saat dihidupkan, rx akan masuk ke posisi standby"
@@ -9847,10 +9794,6 @@ msgstr "Toneburst A/B"
 
 msgid "Tonga"
 msgstr ""
-
-#, fuzzy
-msgid "Top and Bottom"
-msgstr "Atas dan bawah"
 
 msgid "Top and bottom"
 msgstr "Atas dan bawah"
@@ -10989,9 +10932,6 @@ msgstr "YA"
 msgid "YPbPr"
 msgstr "YPbPr"
 
-msgid "YUV"
-msgstr ""
-
 msgid "Year"
 msgstr "Tahun"
 
@@ -11405,7 +11345,7 @@ msgid "ballet"
 msgstr "ballet"
 
 #, python-format
-msgid "bc%d"
+msgid "bc%s"
 msgstr ""
 
 msgid "better"
@@ -11931,6 +11871,10 @@ msgstr "tidak dikonfigurasi"
 msgid "not locked"
 msgstr "tidak dikunci"
 
+#, fuzzy
+msgid "not running"
+msgstr "Di awal"
+
 msgid "not supported"
 msgstr "tidak didukung"
 
@@ -12005,6 +11949,10 @@ msgstr ""
 msgid "pass"
 msgstr "lewatkan"
 
+#, fuzzy
+msgid "pausing"
+msgstr "jeda"
+
 msgid "performing arts"
 msgstr "seni pertunjukan"
 
@@ -12050,6 +11998,10 @@ msgstr "hapus penanda ini"
 msgid "repeated"
 msgstr "diulang"
 
+#, fuzzy
+msgid "reserved for future use"
+msgstr "tandai untuk kegunaan di masa mendatang"
+
 msgid "reverse by date"
 msgstr "putarbalik berdasarkan tanggal"
 
@@ -12070,6 +12022,10 @@ msgstr "rock/pop"
 
 msgid "romance"
 msgstr "romansa"
+
+#, fuzzy
+msgid "running"
+msgstr "Peringatan"
 
 msgid "save"
 msgstr ""
@@ -12098,6 +12054,10 @@ msgstr "serious music/classic music"
 
 msgid "serious/classical/religious/historical movie/drama"
 msgstr "serious/classical/religious/historical movie/drama"
+
+#, fuzzy
+msgid "service off-air"
+msgstr "Semua penyedia layanan"
 
 #, fuzzy
 msgid "set default"
@@ -12209,6 +12169,10 @@ msgstr "standar"
 
 msgid "start cut here"
 msgstr "mulai potong di sini"
+
+#, fuzzy
+msgid "starts in a few seconds"
+msgstr "mulai dalam beberap detik"
 
 msgid "stepsize"
 msgstr "ukuranjangka"

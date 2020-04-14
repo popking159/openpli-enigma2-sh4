@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: enigma2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-04-09 13:48+0200\n"
+"POT-Creation-Date: 2020-04-15 00:05+0200\n"
 "PO-Revision-Date: 2017-01-18 16:38+0100\n"
 "Last-Translator: lupine <a_ecklon@hotmail.com>\n"
 "Language-Team: \n"
@@ -95,6 +95,11 @@ msgstr "(lavere end andet auto)"
 msgid " extensions."
 msgstr " filendelser."
 
+#
+#, fuzzy
+msgid " min"
+msgstr "%d min"
+
 msgid " ms"
 msgstr "ms"
 
@@ -128,6 +133,10 @@ msgstr ""
 msgid "%.2f GB"
 msgstr ""
 
+#, fuzzy, python-format
+msgid "%02d:%02d"
+msgstr "%2d:%02d"
+
 #, python-format
 msgid "%03d MB"
 msgstr ""
@@ -136,6 +145,16 @@ msgstr ""
 msgid "%2.1f sec"
 msgstr ""
 
+#. TRANSLATORS: short time representation hour:minute
+#, fuzzy, python-format
+msgid "%2d:%02d"
+msgstr "%2d:%02d"
+
+#. TRANSLATORS: full time representation hour:minute:seconds
+#, fuzzy, python-format
+msgid "%2d:%02d:%02d"
+msgstr "%2d:%02d"
+
 #, python-format
 msgid "%3.01f dB"
 msgstr ""
@@ -143,9 +162,33 @@ msgstr ""
 msgid "%A %d %B"
 msgstr "%A %d %B"
 
+#. TRANSLATORS: long date representations dayname daynum monthname in strftime() format! See 'man strftime'
+#, fuzzy
+msgid "%A %e %B"
+msgstr "%A %d %B"
+
+#. TRANSLATORS: full date representation dayname daynum monthname year in strftime() format! See 'man strftime'
+#, fuzzy
+msgid "%A %e %B %Y"
+msgstr "%A %d %B"
+
 #
 msgid "%H:%M"
 msgstr "%T:%M"
+
+#
+#. TRANSLATORS: full date representations short dayname daynum monthname long year in strftime() format! See 'man strftime'
+#, fuzzy
+msgid "%a %e %B %Y"
+msgstr "%d.%B %Y"
+
+#. TRANSLATORS: short date representation short dayname daynum short monthname in strftime() format! See 'man strftime'
+msgid "%a %e/%m"
+msgstr ""
+
+#. TRANSLATORS: long date representation short dayname daynum short monthname hour:minute in strftime() format! See 'man strftime'
+msgid "%a %e/%m  %-H:%M"
+msgstr ""
 
 #, python-format
 msgid "%d B"
@@ -158,29 +201,6 @@ msgstr ""
 #, python-format
 msgid "%d MB"
 msgstr ""
-
-#. TRANSLATORS: full date representation dayname daynum monthname year in strftime() format! See 'man strftime'
-#. _("%A %e %B %Y")
-#. TRANSLATORS: short time representation hour:minute in strftime() format! See 'man strftime'
-#. _("%R")
-#. TRANSLATORS: short time representation hour:minute in strftime() format! See 'man strftime'
-#. _("%R")
-#. TRANSLATORS: short date representation daynum short monthname in strftime() format! See 'man strftime'
-#. _("%e %b")
-#. TRANSLATORS: short date representation daynum short monthname in strftime() format! See 'man strftime'
-#. _("%a %e %b")
-#. TRANSLATORS: short time representation hour:minute in strftime() format! See 'man strftime'
-#. _("%R")
-#. TRANSLATORS: long date representation short dayname daynum short monthname hour:minute in strftime() format! See 'man strftime'
-#. _("%a %e %b %R")
-#. TRANSLATORS: full date representations short dayname daynum monthname long year in strftime() format! See 'man strftime'
-#. _("%a %e %B %Y")
-#.
-#, python-format
-msgid "%d Min"
-msgid_plural "%d Mins"
-msgstr[0] ""
-msgstr[1] ""
 
 #
 #. TRANSLATORS: Intermediate scanning result, '%d' channel(s) have been found so far
@@ -278,6 +298,11 @@ msgstr[1] "%d trådløse netværk fundet!"
 msgid "%d-%m"
 msgstr "%d-%m"
 
+#
+#, fuzzy, python-format
+msgid "%d.%02d. %02d:%02d"
+msgstr "%d.%B %Y"
+
 #, python-format
 msgid "%d.%03d GB"
 msgstr ""
@@ -299,6 +324,10 @@ msgstr "%d.%B %Y"
 #, fuzzy, python-format
 msgid "%d:%02d"
 msgstr "%2d:%02d"
+
+#. TRANSLATORS: VFD hour:minute daynum short monthname in strftime() format! See 'man strftime'
+msgid "%k:%M %e/%m"
+msgstr ""
 
 #, fuzzy, python-format
 msgid ""
@@ -494,11 +523,6 @@ msgstr "3"
 
 msgid "30"
 msgstr "30"
-
-#
-#, fuzzy
-msgid "3D Mode"
-msgstr "Modus [ Satellit konfigurations modus]"
 
 msgid "3D surround"
 msgstr ""
@@ -945,9 +969,6 @@ msgstr "Juster 3D indstillinger"
 msgid "Adjust the color settings so that all the color shades are distinguishable, but appear as saturated as possible. If you are happy with the result, press OK to close the video fine-tuning, or use the number keys to select other test screens."
 msgstr "Juster alle farver, så alle farvebjælker kan næsten tydes, men optræder så gennemtrængende som muligt. Er du tilfreds med resultatet, tryk OK for at lukke Video-Finjustering, eller brug nummer knapper, for at vælge andre testbilleder."
 
-msgid "Adult Audience, Strong Violence 15+"
-msgstr ""
-
 msgid "Advanced"
 msgstr "Advanceret"
 
@@ -1313,9 +1334,6 @@ msgstr ""
 msgid "Audio PID, codec & lang"
 msgstr ""
 
-msgid "Audio Source"
-msgstr ""
-
 msgid "Audio auto volume level"
 msgstr ""
 
@@ -1452,10 +1470,6 @@ msgstr ""
 #
 msgid "B"
 msgstr "B"
-
-#, python-format
-msgid "BC%d"
-msgstr ""
 
 #
 msgid "BER"
@@ -2011,10 +2025,6 @@ msgstr ""
 "Tjekker tuner %s\n"
 "DiSEqC port %s for %s"
 
-#, fuzzy
-msgid "Children"
-msgstr "Børn/Ungdom"
-
 msgid "Children/Youth"
 msgstr "Børn/Ungdom"
 
@@ -2119,11 +2129,6 @@ msgstr "Kollektions indstillinger"
 #
 #, fuzzy
 msgid "Colombia"
-msgstr "Farve format"
-
-#
-#, fuzzy
-msgid "Color Format"
 msgstr "Farve format"
 
 #
@@ -4464,9 +4469,6 @@ msgstr ""
 msgid "Gateway"
 msgstr "Gateway"
 
-msgid "General"
-msgstr ""
-
 #
 msgid "General AC3 delay"
 msgstr "Standard AC3 forsinkelse"
@@ -5383,10 +5385,6 @@ msgstr "Sidste hastighed"
 msgid "Last update: "
 msgstr "Seneste opdatering"
 
-msgctxt "third event: 'third' event label"
-msgid "Later"
-msgstr ""
-
 msgid "Latest Commits"
 msgstr "Seneste commit"
 
@@ -5715,12 +5713,6 @@ msgstr ""
 msgid "Martinique"
 msgstr ""
 
-msgid "Mature Adult Audience 15+"
-msgstr ""
-
-msgid "Mature Audience 15+"
-msgstr ""
-
 #
 #, fuzzy
 msgid "Mauritania"
@@ -5802,9 +5794,6 @@ msgstr "Minimumsalder %d år"
 
 msgid "Minimum send interval"
 msgstr "Minimum afsendelses interval"
-
-msgid "Mins"
-msgstr ""
 
 msgid "Missing "
 msgstr "Mangler"
@@ -6437,10 +6426,6 @@ msgstr "Norsk"
 msgid "Norwegian"
 msgstr "Norsk"
 
-#, fuzzy
-msgid "Not Classified"
-msgstr "Ikke tilknyttet"
-
 #
 #, fuzzy
 msgid "Not Installed"
@@ -6460,10 +6445,6 @@ msgstr "Ikke defineret"
 #, python-format
 msgid "Not enough disk space. Please free up some disk space and try again. (%d MB required, %d MB available)"
 msgstr "Ikke diskplads nok. Venligst skab mere plads på disken og prøv igen. (%d MB nødvendig, %d MB ledig)"
-
-#, fuzzy
-msgid "Not running"
-msgstr "Ved begyndelsen"
 
 msgid "Not tested:"
 msgstr "Ikke testet: "
@@ -6750,9 +6731,6 @@ msgstr ""
 msgid "Parent directory"
 msgstr "Øvre mappe"
 
-msgid "Parental Guidance Recommended"
-msgstr ""
-
 #
 msgid "Parental control"
 msgstr "Forældre Kontrol"
@@ -6783,11 +6761,6 @@ msgstr "Pause afspilning"
 #, fuzzy
 msgid "Pause/Continue playback"
 msgstr "Pause/Fortsæt afspilning"
-
-#
-#, fuzzy
-msgid "Pausing"
-msgstr "Pause"
 
 msgid "Percentage left"
 msgstr "Procent til venstre"
@@ -7338,9 +7311,6 @@ msgstr "Foretrukken tuner til optagelser"
 #
 msgid "Preparing... Please wait"
 msgstr "Forbereder... Vent venligst"
-
-msgid "Preschool"
-msgstr ""
 
 msgid "Press '0' to toggle PiP mode"
 msgstr "Tryk '0' for at skifte BiB modus."
@@ -7937,9 +7907,6 @@ msgstr "Genlæs partitionstabel"
 msgid "Reserved"
 msgstr "Reserveret"
 
-msgid "Reserved for future use"
-msgstr ""
-
 #
 msgid "Reset"
 msgstr "Genstart"
@@ -8044,9 +8011,6 @@ msgstr "Genetabler receiverens indstillinger."
 msgid "Restoring..."
 msgstr "Genetablerer..."
 
-msgid "Restricted 18+"
-msgstr ""
-
 #
 msgid "Resume from last position"
 msgstr "Genoptag fra sidste position"
@@ -8136,10 +8100,6 @@ msgstr "Rotor:"
 
 msgid "Round start time on"
 msgstr "start tid på"
-
-#, fuzzy
-msgid "Running"
-msgstr "Advarsel"
 
 #
 msgid "Russian"
@@ -8962,10 +8922,6 @@ msgstr ""
 "Kanal ikke fundet!\n"
 "(SID ikke fundet i PAT)"
 
-#, fuzzy
-msgid "Service off-air"
-msgstr "Alle services udbyder"
-
 msgid "Service reference"
 msgstr "Kanal reference"
 
@@ -9463,10 +9419,6 @@ msgstr "Luk ned"
 msgid "Shutdown when in Standby"
 msgstr "Luk ned når standby er aktiv"
 
-#, fuzzy
-msgid "Side by Side"
-msgstr "Side om side"
-
 msgid "Side by side"
 msgstr "Side om side"
 
@@ -9916,10 +9868,6 @@ msgstr "Start ved liste skærm"
 #
 msgid "Starting on"
 msgstr "Starter på"
-
-#, fuzzy
-msgid "Starts in a few seconds"
-msgstr "Start offline dekodning"
 
 msgid "Startup the set top box in standby"
 msgstr "Start set top boxen i standby"
@@ -11026,10 +10974,6 @@ msgstr "Toneburst A/B"
 
 msgid "Tonga"
 msgstr ""
-
-#, fuzzy
-msgid "Top and Bottom"
-msgstr "Top og bund"
 
 msgid "Top and bottom"
 msgstr "Top og bund"
@@ -12289,9 +12233,6 @@ msgstr "JA"
 msgid "YPbPr"
 msgstr "Komponent"
 
-msgid "YUV"
-msgstr ""
-
 #
 msgid "Year"
 msgstr "År"
@@ -12727,7 +12668,7 @@ msgid "ballet"
 msgstr "ballet"
 
 #, python-format
-msgid "bc%d"
+msgid "bc%s"
 msgstr ""
 
 #
@@ -13332,6 +13273,10 @@ msgstr "ikke konfigureret"
 msgid "not locked"
 msgstr "ikke låst"
 
+#, fuzzy
+msgid "not running"
+msgstr "Ved begyndelsen"
+
 msgid "not supported"
 msgstr "ikke supporteret"
 
@@ -13416,6 +13361,11 @@ msgstr ""
 msgid "pass"
 msgstr "OK"
 
+#
+#, fuzzy
+msgid "pausing"
+msgstr "Pause"
+
 msgid "performing arts"
 msgstr "udøvende kunst"
 
@@ -13470,6 +13420,9 @@ msgstr "fjern dette mærke"
 msgid "repeated"
 msgstr "gentaget"
 
+msgid "reserved for future use"
+msgstr ""
+
 msgid "reverse by date"
 msgstr "omvendt dato"
 
@@ -13492,6 +13445,10 @@ msgstr "rock/pop"
 
 msgid "romance"
 msgstr "romantik"
+
+#, fuzzy
+msgid "running"
+msgstr "Advarsel"
 
 msgid "save"
 msgstr ""
@@ -13524,6 +13481,10 @@ msgstr "serøst musik/klassisk musik"
 
 msgid "serious/classical/religious/historical movie/drama"
 msgstr "serøst/klassisk/religiøst/historisk film/drama"
+
+#, fuzzy
+msgid "service off-air"
+msgstr "Alle services udbyder"
 
 #, fuzzy
 msgid "set default"
@@ -13643,6 +13604,10 @@ msgstr "standard"
 #
 msgid "start cut here"
 msgstr "start klip her"
+
+#, fuzzy
+msgid "starts in a few seconds"
+msgstr "Start offline dekodning"
 
 msgid "stepsize"
 msgstr "trinstørrelse"

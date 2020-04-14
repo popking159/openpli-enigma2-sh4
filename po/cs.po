@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: OpenPLi enigma2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-04-09 13:48+0200\n"
+"POT-Creation-Date: 2020-04-15 00:05+0200\n"
 "PO-Revision-Date: \n"
 "Last-Translator: ims <ims21@users.sourceforge.net>\n"
 "Language-Team: PLi <ims@openpli.org>\n"
@@ -97,6 +97,11 @@ msgstr " (nižší než jakékoliv auto)"
 msgid " extensions."
 msgstr "rozšíření."
 
+#
+#, fuzzy
+msgid " min"
+msgstr "%d min"
+
 msgid " ms"
 msgstr "ms"
 
@@ -132,6 +137,10 @@ msgstr "%.1f° W"
 msgid "%.2f GB"
 msgstr "%.2f GB"
 
+#, fuzzy, python-format
+msgid "%02d:%02d"
+msgstr "%d:%02d"
+
 #, python-format
 msgid "%03d MB"
 msgstr "%03d MB"
@@ -140,6 +149,16 @@ msgstr "%03d MB"
 msgid "%2.1f sec"
 msgstr "%2.1f sec"
 
+#. TRANSLATORS: short time representation hour:minute
+#, fuzzy, python-format
+msgid "%2d:%02d"
+msgstr "%d:%02d"
+
+#. TRANSLATORS: full time representation hour:minute:seconds
+#, fuzzy, python-format
+msgid "%2d:%02d:%02d"
+msgstr "%d:%02d"
+
 #, python-format
 msgid "%3.01f dB"
 msgstr "%3.01f dB"
@@ -147,9 +166,33 @@ msgstr "%3.01f dB"
 msgid "%A %d %B"
 msgstr "%A %d %B"
 
+#. TRANSLATORS: long date representations dayname daynum monthname in strftime() format! See 'man strftime'
+#, fuzzy
+msgid "%A %e %B"
+msgstr "%A %d %B"
+
+#. TRANSLATORS: full date representation dayname daynum monthname year in strftime() format! See 'man strftime'
+#, fuzzy
+msgid "%A %e %B %Y"
+msgstr "%A %d %B"
+
 #
 msgid "%H:%M"
 msgstr "%H:%M"
+
+#
+#. TRANSLATORS: full date representations short dayname daynum monthname long year in strftime() format! See 'man strftime'
+#, fuzzy
+msgid "%a %e %B %Y"
+msgstr "%d. %B %Y"
+
+#. TRANSLATORS: short date representation short dayname daynum short monthname in strftime() format! See 'man strftime'
+msgid "%a %e/%m"
+msgstr ""
+
+#. TRANSLATORS: long date representation short dayname daynum short monthname hour:minute in strftime() format! See 'man strftime'
+msgid "%a %e/%m  %-H:%M"
+msgstr ""
 
 #, python-format
 msgid "%d B"
@@ -162,30 +205,6 @@ msgstr "%d GB"
 #, python-format
 msgid "%d MB"
 msgstr "%d MB"
-
-#. TRANSLATORS: full date representation dayname daynum monthname year in strftime() format! See 'man strftime'
-#. _("%A %e %B %Y")
-#. TRANSLATORS: short time representation hour:minute in strftime() format! See 'man strftime'
-#. _("%R")
-#. TRANSLATORS: short time representation hour:minute in strftime() format! See 'man strftime'
-#. _("%R")
-#. TRANSLATORS: short date representation daynum short monthname in strftime() format! See 'man strftime'
-#. _("%e %b")
-#. TRANSLATORS: short date representation daynum short monthname in strftime() format! See 'man strftime'
-#. _("%a %e %b")
-#. TRANSLATORS: short time representation hour:minute in strftime() format! See 'man strftime'
-#. _("%R")
-#. TRANSLATORS: long date representation short dayname daynum short monthname hour:minute in strftime() format! See 'man strftime'
-#. _("%a %e %b %R")
-#. TRANSLATORS: full date representations short dayname daynum monthname long year in strftime() format! See 'man strftime'
-#. _("%a %e %B %Y")
-#.
-#, fuzzy, python-format
-msgid "%d Min"
-msgid_plural "%d Mins"
-msgstr[0] "%d MB"
-msgstr[1] "%d MB"
-msgstr[2] "%d MB"
 
 #. TRANSLATORS: Intermediate scanning result, '%d' channel(s) have been found so far
 #, python-format
@@ -294,6 +313,11 @@ msgstr[2] "nalezeno %d bezdrátových sítí!"
 msgid "%d-%m"
 msgstr "%d-%m"
 
+#
+#, fuzzy, python-format
+msgid "%d.%02d. %02d:%02d"
+msgstr "%d.%d.%d"
+
 #, python-format
 msgid "%d.%03d GB"
 msgstr "%d.%03d GB"
@@ -315,6 +339,10 @@ msgstr "%d.%d.%d"
 #, python-format
 msgid "%d:%02d"
 msgstr "%d:%02d"
+
+#. TRANSLATORS: VFD hour:minute daynum short monthname in strftime() format! See 'man strftime'
+msgid "%k:%M %e/%m"
+msgstr ""
 
 #, python-format
 msgid ""
@@ -523,11 +551,6 @@ msgstr "3"
 
 msgid "30"
 msgstr "30"
-
-#
-#, fuzzy
-msgid "3D Mode"
-msgstr "Režim"
 
 msgid "3D surround"
 msgstr "3D surround"
@@ -973,9 +996,6 @@ msgstr "Seřídit 3D nastavení"
 msgid "Adjust the color settings so that all the color shades are distinguishable, but appear as saturated as possible. If you are happy with the result, press OK to close the video fine-tuning, or use the number keys to select other test screens."
 msgstr "Upravte barevné nastavení tak, aby všechny barevné odstíny byly rozpoznatelné, ale zároveň aby byly co nejvíce nasycené. Pokud jste spokojeni s výsledkem, stiskněte OK pro zavření průvodce nebo použijte numerické klávesy pro výběr jiné testovací scény."
 
-msgid "Adult Audience, Strong Violence 15+"
-msgstr ""
-
 #
 msgid "Advanced"
 msgstr "Rozšířený"
@@ -1345,9 +1365,6 @@ msgstr "Audio PID%s, kodek & jazyk"
 msgid "Audio PID, codec & lang"
 msgstr "Audio PID, kodek & jazyk"
 
-msgid "Audio Source"
-msgstr ""
-
 msgid "Audio auto volume level"
 msgstr "Automatická úroveň hlasitosti"
 
@@ -1484,10 +1501,6 @@ msgstr "Ázerbájdžán"
 #
 msgid "B"
 msgstr "B"
-
-#, python-format
-msgid "BC%d"
-msgstr ""
 
 #
 msgid "BER"
@@ -2049,10 +2062,6 @@ msgstr ""
 "Kontrola tuneru %s\n"
 "DiSEqC port %s pro %s"
 
-#, fuzzy
-msgid "Children"
-msgstr "Chile"
-
 msgid "Children/Youth"
 msgstr "děti/mládež"
 
@@ -2156,11 +2165,6 @@ msgstr "Nastavení kompilace"
 #
 msgid "Colombia"
 msgstr "Kolumbie"
-
-#
-#, fuzzy
-msgid "Color Format"
-msgstr "Formát barev"
 
 #
 msgid "Color format"
@@ -4512,9 +4516,6 @@ msgstr "Gambie"
 msgid "Gateway"
 msgstr "Brána"
 
-msgid "General"
-msgstr ""
-
 #
 msgid "General AC3 delay"
 msgstr "Hlavní AC3 zpoždění"
@@ -5431,10 +5432,6 @@ msgstr "Poslední rychlost"
 msgid "Last update: "
 msgstr "Poslední aktualizace: "
 
-msgctxt "third event: 'third' event label"
-msgid "Later"
-msgstr ""
-
 #
 msgid "Latest Commits"
 msgstr "Poslední změny"
@@ -5765,12 +5762,6 @@ msgstr "Marshallovy ostrovy"
 msgid "Martinique"
 msgstr "Martinik"
 
-msgid "Mature Adult Audience 15+"
-msgstr ""
-
-msgid "Mature Audience 15+"
-msgstr ""
-
 #
 msgid "Mauritania"
 msgstr "Mauretánie"
@@ -5850,9 +5841,6 @@ msgstr "minimální věk %d roků"
 
 msgid "Minimum send interval"
 msgstr "Minimální interval posílání"
-
-msgid "Mins"
-msgstr ""
 
 msgid "Missing "
 msgstr "Chybí "
@@ -6479,10 +6467,6 @@ msgstr "Norsko"
 msgid "Norwegian"
 msgstr "Norsky"
 
-#, fuzzy
-msgid "Not Classified"
-msgstr "Neasociováno"
-
 #
 msgid "Not Installed"
 msgstr "Neinstalováno"
@@ -6500,11 +6484,6 @@ msgstr "Nedefinován"
 #, python-format
 msgid "Not enough disk space. Please free up some disk space and try again. (%d MB required, %d MB available)"
 msgstr "Nedostatek místa na disku. Uvolněte prostor na disku a zkuste znovu. (%d MB požadováno, %d MB k dispozici)"
-
-#
-#, fuzzy
-msgid "Not running"
-msgstr "neprobíhá"
 
 msgid "Not tested:"
 msgstr "Netestováno:"
@@ -6792,9 +6771,6 @@ msgstr "Paraguay"
 msgid "Parent directory"
 msgstr "Rodičovský adresář"
 
-msgid "Parental Guidance Recommended"
-msgstr ""
-
 #
 msgid "Parental control"
 msgstr "Rodičovský zámek"
@@ -6824,10 +6800,6 @@ msgstr "Pauza/přehrávání"
 
 msgid "Pause/Continue playback"
 msgstr "Pozastavit/Pokračovat v přehrávání"
-
-#, fuzzy
-msgid "Pausing"
-msgstr "pozastavení"
 
 msgid "Percentage left"
 msgstr "Procenta vlevo"
@@ -7385,9 +7357,6 @@ msgstr "Preferovaný tuner pro nahrávání"
 #
 msgid "Preparing... Please wait"
 msgstr "Připravuji... Prosím čekejte"
-
-msgid "Preschool"
-msgstr ""
 
 msgid "Press '0' to toggle PiP mode"
 msgstr "K přepnutí PiP módu stiskněte '0'"
@@ -7986,10 +7955,6 @@ msgstr "Opětovné načítání tabulky rozdělení disku"
 msgid "Reserved"
 msgstr "rezervováno"
 
-#, fuzzy
-msgid "Reserved for future use"
-msgstr "vyhrazeno pro budoucí použití"
-
 #
 msgid "Reset"
 msgstr "Reset"
@@ -8091,9 +8056,6 @@ msgstr "Obnova nastavení Vašeho přijímače."
 msgid "Restoring..."
 msgstr "Obnovuje se..."
 
-msgid "Restricted 18+"
-msgstr ""
-
 #
 msgid "Resume from last position"
 msgstr "Pokračovat z poslední pozice"
@@ -8184,10 +8146,6 @@ msgstr "Rotor: "
 
 msgid "Round start time on"
 msgstr "Zarovnat začátek na"
-
-#, fuzzy
-msgid "Running"
-msgstr "probíhá"
 
 #
 msgid "Russian"
@@ -9002,11 +8960,6 @@ msgstr ""
 "Služba nebyla nalezena!\n"
 "(SID nebyl nalezen v PAT)"
 
-#
-#, fuzzy
-msgid "Service off-air"
-msgstr "service off-air"
-
 msgid "Service reference"
 msgstr "Service reference"
 
@@ -9518,10 +9471,6 @@ msgstr "Vypnout"
 msgid "Shutdown when in Standby"
 msgstr "Vypínat přijímač ve Standby"
 
-#, fuzzy
-msgid "Side by Side"
-msgstr "Vedle sebe"
-
 msgid "Side by side"
 msgstr "Vedle sebe"
 
@@ -9973,11 +9922,6 @@ msgstr "Start se seznamem"
 #
 msgid "Starting on"
 msgstr "Začíná"
-
-#
-#, fuzzy
-msgid "Starts in a few seconds"
-msgstr "začne během několika vteřin"
 
 #
 msgid "Startup the set top box in standby"
@@ -11067,10 +11011,6 @@ msgstr "Toneburst A/B"
 
 msgid "Tonga"
 msgstr "Tonga"
-
-#, fuzzy
-msgid "Top and Bottom"
-msgstr "Nahoru a dolů"
 
 msgid "Top and bottom"
 msgstr "Nahoru a dolů"
@@ -12316,9 +12256,6 @@ msgstr "ANO"
 msgid "YPbPr"
 msgstr "YPbPr"
 
-msgid "YUV"
-msgstr ""
-
 #
 msgid "Year"
 msgstr "Rok"
@@ -12769,7 +12706,7 @@ msgid "ballet"
 msgstr "balet"
 
 #, python-format
-msgid "bc%d"
+msgid "bc%s"
 msgstr ""
 
 #
@@ -13375,6 +13312,11 @@ msgstr "Nenakonfigurováno"
 msgid "not locked"
 msgstr "nezamknuto"
 
+#
+#, fuzzy
+msgid "not running"
+msgstr "neprobíhá"
+
 msgid "not supported"
 msgstr "nepodporováno"
 
@@ -13463,6 +13405,10 @@ msgstr ""
 msgid "pass"
 msgstr "Průchod"
 
+#, fuzzy
+msgid "pausing"
+msgstr "pozastavení"
+
 msgid "performing arts"
 msgstr "scénické umění"
 
@@ -13517,6 +13463,10 @@ msgstr "odebrat tuto značku"
 msgid "repeated"
 msgstr "Opakování"
 
+#, fuzzy
+msgid "reserved for future use"
+msgstr "vyhrazeno pro budoucí použití"
+
 #
 msgid "reverse by date"
 msgstr "Podle data v opačném pořadí"
@@ -13540,6 +13490,10 @@ msgstr "rock/pop"
 
 msgid "romance"
 msgstr "romance"
+
+#, fuzzy
+msgid "running"
+msgstr "probíhá"
 
 msgid "save"
 msgstr ""
@@ -13572,6 +13526,11 @@ msgstr "vážná hudba/klasická muzika"
 
 msgid "serious/classical/religious/historical movie/drama"
 msgstr "závažný/klasický/náboženský/historický film/drama"
+
+#
+#, fuzzy
+msgid "service off-air"
+msgstr "service off-air"
 
 #
 #, fuzzy
@@ -13694,6 +13653,11 @@ msgstr "Standardní"
 #
 msgid "start cut here"
 msgstr "začátek střihu zde"
+
+#
+#, fuzzy
+msgid "starts in a few seconds"
+msgstr "začne během několika vteřin"
 
 msgid "stepsize"
 msgstr "krok"

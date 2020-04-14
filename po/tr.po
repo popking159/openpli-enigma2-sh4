@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: OPENPLi\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-04-09 13:48+0200\n"
+"POT-Creation-Date: 2020-04-15 00:05+0200\n"
 "PO-Revision-Date: 2015-12-18 21:05+0200\n"
 "Last-Translator: Yetkin AYDIN <yetkina@gmail.com>\n"
 "Language-Team: http://www.hurforum.com <yetkina@gmail.com>\n"
@@ -94,6 +94,10 @@ msgstr " (otomatikten daha yavaş)"
 msgid " extensions."
 msgstr "Eklentiler."
 
+#, fuzzy
+msgid " min"
+msgstr "%d dk"
+
 msgid " ms"
 msgstr " ms"
 
@@ -127,6 +131,10 @@ msgstr ""
 msgid "%.2f GB"
 msgstr ""
 
+#, fuzzy, python-format
+msgid "%02d:%02d"
+msgstr "%2d:%02d"
+
 #, python-format
 msgid "%03d MB"
 msgstr ""
@@ -135,6 +143,16 @@ msgstr ""
 msgid "%2.1f sec"
 msgstr ""
 
+#. TRANSLATORS: short time representation hour:minute
+#, fuzzy, python-format
+msgid "%2d:%02d"
+msgstr "%2d:%02d"
+
+#. TRANSLATORS: full time representation hour:minute:seconds
+#, fuzzy, python-format
+msgid "%2d:%02d:%02d"
+msgstr "%2d:%02d"
+
 #, python-format
 msgid "%3.01f dB"
 msgstr ""
@@ -142,8 +160,31 @@ msgstr ""
 msgid "%A %d %B"
 msgstr "%A %d %B"
 
+#. TRANSLATORS: long date representations dayname daynum monthname in strftime() format! See 'man strftime'
+#, fuzzy
+msgid "%A %e %B"
+msgstr "%A %d %B"
+
+#. TRANSLATORS: full date representation dayname daynum monthname year in strftime() format! See 'man strftime'
+#, fuzzy
+msgid "%A %e %B %Y"
+msgstr "%A %d %B"
+
 msgid "%H:%M"
 msgstr "%H:%M"
+
+#. TRANSLATORS: full date representations short dayname daynum monthname long year in strftime() format! See 'man strftime'
+#, fuzzy
+msgid "%a %e %B %Y"
+msgstr "%d.%B %Y"
+
+#. TRANSLATORS: short date representation short dayname daynum short monthname in strftime() format! See 'man strftime'
+msgid "%a %e/%m"
+msgstr ""
+
+#. TRANSLATORS: long date representation short dayname daynum short monthname hour:minute in strftime() format! See 'man strftime'
+msgid "%a %e/%m  %-H:%M"
+msgstr ""
 
 #, python-format
 msgid "%d B"
@@ -156,28 +197,6 @@ msgstr ""
 #, python-format
 msgid "%d MB"
 msgstr ""
-
-#. TRANSLATORS: full date representation dayname daynum monthname year in strftime() format! See 'man strftime'
-#. _("%A %e %B %Y")
-#. TRANSLATORS: short time representation hour:minute in strftime() format! See 'man strftime'
-#. _("%R")
-#. TRANSLATORS: short time representation hour:minute in strftime() format! See 'man strftime'
-#. _("%R")
-#. TRANSLATORS: short date representation daynum short monthname in strftime() format! See 'man strftime'
-#. _("%e %b")
-#. TRANSLATORS: short date representation daynum short monthname in strftime() format! See 'man strftime'
-#. _("%a %e %b")
-#. TRANSLATORS: short time representation hour:minute in strftime() format! See 'man strftime'
-#. _("%R")
-#. TRANSLATORS: long date representation short dayname daynum short monthname hour:minute in strftime() format! See 'man strftime'
-#. _("%a %e %b %R")
-#. TRANSLATORS: full date representations short dayname daynum monthname long year in strftime() format! See 'man strftime'
-#. _("%a %e %B %Y")
-#.
-#, python-format
-msgid "%d Min"
-msgid_plural "%d Mins"
-msgstr[0] ""
 
 #. TRANSLATORS: Intermediate scanning result, '%d' channel(s) have been found so far
 #, python-format
@@ -261,6 +280,10 @@ msgstr[0] "%d kablosuz ağ bulundu!"
 msgid "%d-%m"
 msgstr "%d-%m"
 
+#, fuzzy, python-format
+msgid "%d.%02d. %02d:%02d"
+msgstr "%d.%B %Y"
+
 #, python-format
 msgid "%d.%03d GB"
 msgstr ""
@@ -279,6 +302,10 @@ msgstr "%d.%B %Y"
 #, fuzzy, python-format
 msgid "%d:%02d"
 msgstr "%2d:%02d"
+
+#. TRANSLATORS: VFD hour:minute daynum short monthname in strftime() format! See 'man strftime'
+msgid "%k:%M %e/%m"
+msgstr ""
 
 #, fuzzy, python-format
 msgid ""
@@ -455,10 +482,6 @@ msgstr "3"
 
 msgid "30"
 msgstr "30"
-
-#, fuzzy
-msgid "3D Mode"
-msgstr "Tipi"
 
 msgid "3D surround"
 msgstr ""
@@ -837,9 +860,6 @@ msgstr "3D Ayarları"
 msgid "Adjust the color settings so that all the color shades are distinguishable, but appear as saturated as possible. If you are happy with the result, press OK to close the video fine-tuning, or use the number keys to select other test screens."
 msgstr "Tüm renk tonları ayırt edilebilir, ama mümkün olduğunca doymuş görünür böylece renk ayarlarını yapın. Eğer sonuçtan memnun değilseniz, video ince ayarını kapatmak için OK tuşuna basın, ya da diğer test ekranlarını seçmek için sayı tuşlarını kullanın."
 
-msgid "Adult Audience, Strong Violence 15+"
-msgstr ""
-
 msgid "Advanced"
 msgstr "Gelişmiş"
 
@@ -1172,9 +1192,6 @@ msgstr ""
 msgid "Audio PID, codec & lang"
 msgstr ""
 
-msgid "Audio Source"
-msgstr ""
-
 msgid "Audio auto volume level"
 msgstr ""
 
@@ -1295,10 +1312,6 @@ msgstr ""
 
 msgid "B"
 msgstr "B"
-
-#, python-format
-msgid "BC%d"
-msgstr ""
 
 msgid "BER"
 msgstr "BER"
@@ -1790,10 +1803,6 @@ msgid ""
 "DiSEqC port %s for %s"
 msgstr ""
 
-#, fuzzy
-msgid "Children"
-msgstr "Çocuk/Genç"
-
 msgid "Children/Youth"
 msgstr "Çocuk/Genç"
 
@@ -1887,10 +1896,6 @@ msgstr "Koleksiyon ayarları"
 
 #, fuzzy
 msgid "Colombia"
-msgstr "Renk formatı"
-
-#, fuzzy
-msgid "Color Format"
 msgstr "Renk formatı"
 
 msgid "Color format"
@@ -3976,9 +3981,6 @@ msgstr ""
 msgid "Gateway"
 msgstr "Ağ geçidi"
 
-msgid "General"
-msgstr ""
-
 msgid "General AC3 delay"
 msgstr "Genel AC3 gecikmesi"
 
@@ -4805,10 +4807,6 @@ msgstr "Son hız"
 msgid "Last update: "
 msgstr "Son güncelleme: "
 
-msgctxt "third event: 'third' event label"
-msgid "Later"
-msgstr ""
-
 msgid "Latest Commits"
 msgstr "Son Eklenen"
 
@@ -5093,12 +5091,6 @@ msgstr ""
 msgid "Martinique"
 msgstr ""
 
-msgid "Mature Adult Audience 15+"
-msgstr ""
-
-msgid "Mature Audience 15+"
-msgstr ""
-
 #, fuzzy
 msgid "Mauritania"
 msgstr "Litvanyaca"
@@ -5169,9 +5161,6 @@ msgstr "Yaş sınırı: %d Yaş"
 
 msgid "Minimum send interval"
 msgstr "Asgari gönderme aralığı"
-
-msgid "Mins"
-msgstr ""
 
 msgid "Missing "
 msgstr "Kayıp "
@@ -5721,10 +5710,6 @@ msgid "Norwegian"
 msgstr "Norveççe"
 
 #, fuzzy
-msgid "Not Classified"
-msgstr "İlişkili değil"
-
-#, fuzzy
 msgid "Not Installed"
 msgstr "Yükle"
 
@@ -5741,10 +5726,6 @@ msgstr "Tanımlanmamış"
 #, python-format
 msgid "Not enough disk space. Please free up some disk space and try again. (%d MB required, %d MB available)"
 msgstr "Yetersiz disk alanı. Disk alanı boşaltarak tekrar deneyin. (%d MB gerekli, kullanılabilir %d MB)"
-
-#, fuzzy
-msgid "Not running"
-msgstr "Motor çalışma zaman aşımı"
 
 msgid "Not tested:"
 msgstr ""
@@ -6008,9 +5989,6 @@ msgstr ""
 msgid "Parent directory"
 msgstr "Üst Dizin"
 
-msgid "Parental Guidance Recommended"
-msgstr ""
-
 msgid "Parental control"
 msgstr "Aile Koruması"
 
@@ -6035,10 +6013,6 @@ msgstr "Yürütmeyi duraklat"
 #, fuzzy
 msgid "Pause/Continue playback"
 msgstr "Dur/Devam "
-
-#, fuzzy
-msgid "Pausing"
-msgstr "Duraklat"
 
 msgid "Percentage left"
 msgstr "Sol oran"
@@ -6510,9 +6484,6 @@ msgstr "Kayıtlar için tercih edilen tuner"
 
 msgid "Preparing... Please wait"
 msgstr "Hazırlanıyor... Lütfen bekleyin"
-
-msgid "Preschool"
-msgstr ""
 
 msgid "Press '0' to toggle PiP mode"
 msgstr "RiR geçiş yapmak için '0'a bas"
@@ -7030,9 +7001,6 @@ msgstr "Bölümleme tablosu okunuyor"
 msgid "Reserved"
 msgstr "Ayrılmış"
 
-msgid "Reserved for future use"
-msgstr ""
-
 msgid "Reset"
 msgstr "Sıfırla"
 
@@ -7119,9 +7087,6 @@ msgstr "Alıcının ayarlarını geri yükle."
 msgid "Restoring..."
 msgstr "Geri yükleniyor ..."
 
-msgid "Restricted 18+"
-msgstr ""
-
 msgid "Resume from last position"
 msgstr "Kaldığı yerden devam et"
 
@@ -7201,10 +7166,6 @@ msgstr "Rotor: "
 
 msgid "Round start time on"
 msgstr "Zamanında dön"
-
-#, fuzzy
-msgid "Running"
-msgstr "Uyarı"
 
 msgid "Russian"
 msgstr "Rusça"
@@ -7933,10 +7894,6 @@ msgstr ""
 "Kanal bulunamadı!\n"
 "(SID, PAT içerisinde bulunamadı)"
 
-#, fuzzy
-msgid "Service off-air"
-msgstr "Kanalı Favorilere Ekle"
-
 msgid "Service reference"
 msgstr "Kanal referansı"
 
@@ -8394,10 +8351,6 @@ msgstr "Kapat"
 msgid "Shutdown when in Standby"
 msgstr "Kapat. Bekleme Modunda"
 
-#, fuzzy
-msgid "Side by Side"
-msgstr "Yan yana"
-
 msgid "Side by side"
 msgstr "Yan yana"
 
@@ -8794,10 +8747,6 @@ msgstr "Listesi ekranıyla başla"
 
 msgid "Starting on"
 msgstr "Başlangıç"
-
-#, fuzzy
-msgid "Starts in a few seconds"
-msgstr "Çevrimdışı kod çözmeyi başlat"
 
 msgid "Startup the set top box in standby"
 msgstr "H.Bekle olarak çalıştır"
@@ -9779,10 +9728,6 @@ msgstr "Toneburst A/B"
 
 msgid "Tonga"
 msgstr ""
-
-#, fuzzy
-msgid "Top and Bottom"
-msgstr "Üst ve alt"
 
 msgid "Top and bottom"
 msgstr "Üst ve alt"
@@ -10918,9 +10863,6 @@ msgstr ""
 msgid "YPbPr"
 msgstr "YPbPr"
 
-msgid "YUV"
-msgstr ""
-
 msgid "Year"
 msgstr "Yıl"
 
@@ -11317,7 +11259,7 @@ msgid "ballet"
 msgstr "Balet"
 
 #, python-format
-msgid "bc%d"
+msgid "bc%s"
 msgstr ""
 
 msgid "better"
@@ -11842,6 +11784,10 @@ msgstr "Henüz yapılandırılmamış"
 msgid "not locked"
 msgstr "Kilitlenmedi"
 
+#, fuzzy
+msgid "not running"
+msgstr "Motor çalışma zaman aşımı"
+
 msgid "not supported"
 msgstr "Desteklenmiyor"
 
@@ -11916,6 +11862,10 @@ msgstr ""
 msgid "pass"
 msgstr "Geç"
 
+#, fuzzy
+msgid "pausing"
+msgstr "Duraklat"
+
 msgid "performing arts"
 msgstr "Sahne Sanatları"
 
@@ -11961,6 +11911,9 @@ msgstr "Sil"
 msgid "repeated"
 msgstr "Tekrarla"
 
+msgid "reserved for future use"
+msgstr ""
+
 msgid "reverse by date"
 msgstr "Tarihe Göre, Tersine"
 
@@ -11981,6 +11934,10 @@ msgstr "Rok/Pop"
 
 msgid "romance"
 msgstr "Romantik"
+
+#, fuzzy
+msgid "running"
+msgstr "Uyarı"
 
 msgid "save"
 msgstr ""
@@ -12009,6 +11966,10 @@ msgstr "Müzik/Klasik Müzik"
 
 msgid "serious/classical/religious/historical movie/drama"
 msgstr "Seri/Klasik/Dini/Tarihi/Dram"
+
+#, fuzzy
+msgid "service off-air"
+msgstr "Kanalı Favorilere Ekle"
 
 #, fuzzy
 msgid "set default"
@@ -12120,6 +12081,10 @@ msgstr "Standart"
 
 msgid "start cut here"
 msgstr "Buradan kes"
+
+#, fuzzy
+msgid "starts in a few seconds"
+msgstr "Çevrimdışı kod çözmeyi başlat"
 
 msgid "stepsize"
 msgstr "Adım sayısı"

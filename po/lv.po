@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: enigma2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-04-09 13:48+0200\n"
+"POT-Creation-Date: 2020-04-15 00:05+0200\n"
 "PO-Revision-Date: 2014-11-12 00:49+0200\n"
 "Last-Translator: Taapat <taapat@gmail.com>\n"
 "Language-Team: Taapat <taapat@gmail.com>\n"
@@ -93,6 +93,10 @@ msgstr " (mazāks kā jebkurš auto)"
 msgid " extensions."
 msgstr " paplašinājumiem."
 
+#, fuzzy
+msgid " min"
+msgstr "%d min"
+
 msgid " ms"
 msgstr " ms"
 
@@ -126,6 +130,10 @@ msgstr ""
 msgid "%.2f GB"
 msgstr "%.2f GB"
 
+#, fuzzy, python-format
+msgid "%02d:%02d"
+msgstr "%d:%02d"
+
 #, python-format
 msgid "%03d MB"
 msgstr "%03d MB"
@@ -134,6 +142,16 @@ msgstr "%03d MB"
 msgid "%2.1f sec"
 msgstr "%2.1f sek"
 
+#. TRANSLATORS: short time representation hour:minute
+#, fuzzy, python-format
+msgid "%2d:%02d"
+msgstr "%d:%02d"
+
+#. TRANSLATORS: full time representation hour:minute:seconds
+#, fuzzy, python-format
+msgid "%2d:%02d:%02d"
+msgstr "%d:%02d"
+
 #, python-format
 msgid "%3.01f dB"
 msgstr "%3.01f dB"
@@ -141,8 +159,31 @@ msgstr "%3.01f dB"
 msgid "%A %d %B"
 msgstr "%A %d %B"
 
+#. TRANSLATORS: long date representations dayname daynum monthname in strftime() format! See 'man strftime'
+#, fuzzy
+msgid "%A %e %B"
+msgstr "%A %d %B"
+
+#. TRANSLATORS: full date representation dayname daynum monthname year in strftime() format! See 'man strftime'
+#, fuzzy
+msgid "%A %e %B %Y"
+msgstr "%A %d %B"
+
 msgid "%H:%M"
 msgstr "%H:%M"
+
+#. TRANSLATORS: full date representations short dayname daynum monthname long year in strftime() format! See 'man strftime'
+#, fuzzy
+msgid "%a %e %B %Y"
+msgstr "%d.%B %Y"
+
+#. TRANSLATORS: short date representation short dayname daynum short monthname in strftime() format! See 'man strftime'
+msgid "%a %e/%m"
+msgstr ""
+
+#. TRANSLATORS: long date representation short dayname daynum short monthname hour:minute in strftime() format! See 'man strftime'
+msgid "%a %e/%m  %-H:%M"
+msgstr ""
 
 #, python-format
 msgid "%d B"
@@ -155,30 +196,6 @@ msgstr "%d GB"
 #, python-format
 msgid "%d MB"
 msgstr "%d MB"
-
-#. TRANSLATORS: full date representation dayname daynum monthname year in strftime() format! See 'man strftime'
-#. _("%A %e %B %Y")
-#. TRANSLATORS: short time representation hour:minute in strftime() format! See 'man strftime'
-#. _("%R")
-#. TRANSLATORS: short time representation hour:minute in strftime() format! See 'man strftime'
-#. _("%R")
-#. TRANSLATORS: short date representation daynum short monthname in strftime() format! See 'man strftime'
-#. _("%e %b")
-#. TRANSLATORS: short date representation daynum short monthname in strftime() format! See 'man strftime'
-#. _("%a %e %b")
-#. TRANSLATORS: short time representation hour:minute in strftime() format! See 'man strftime'
-#. _("%R")
-#. TRANSLATORS: long date representation short dayname daynum short monthname hour:minute in strftime() format! See 'man strftime'
-#. _("%a %e %b %R")
-#. TRANSLATORS: full date representations short dayname daynum monthname long year in strftime() format! See 'man strftime'
-#. _("%a %e %B %Y")
-#.
-#, fuzzy, python-format
-msgid "%d Min"
-msgid_plural "%d Mins"
-msgstr[0] "%d MB"
-msgstr[1] "%d MB"
-msgstr[2] "%d MB"
 
 #. TRANSLATORS: Intermediate scanning result, '%d' channel(s) have been found so far
 #, python-format
@@ -282,6 +299,10 @@ msgstr[2] "%d bezvadu tīkli atrasti!"
 msgid "%d-%m"
 msgstr "%d-%m"
 
+#, fuzzy, python-format
+msgid "%d.%02d. %02d:%02d"
+msgstr "%d.%d.%d"
+
 #, python-format
 msgid "%d.%03d GB"
 msgstr "%d.%03d GB"
@@ -300,6 +321,10 @@ msgstr "%d.%d.%d"
 #, python-format
 msgid "%d:%02d"
 msgstr "%d:%02d"
+
+#. TRANSLATORS: VFD hour:minute daynum short monthname in strftime() format! See 'man strftime'
+msgid "%k:%M %e/%m"
+msgstr ""
 
 #, python-format
 msgid ""
@@ -483,10 +508,6 @@ msgstr "3"
 
 msgid "30"
 msgstr "30"
-
-#, fuzzy
-msgid "3D Mode"
-msgstr "Režīms"
 
 msgid "3D surround"
 msgstr "3D surround"
@@ -863,9 +884,6 @@ msgstr "Pielāgo 3D iestatījumus"
 msgid "Adjust the color settings so that all the color shades are distinguishable, but appear as saturated as possible. If you are happy with the result, press OK to close the video fine-tuning, or use the number keys to select other test screens."
 msgstr "Regulēt krāsu iestatījumus tā, lai visi krāsu toņi ir izšķirami bet, cik iespējams, piesātināti. Ja esat apmierināti ar rezultātu tad spiediet OK, lai aizvērtu video precizēšanu vai izmantojiet ciparu taustiņus, lai izvēlētos citus testēšanas attēlus."
 
-msgid "Adult Audience, Strong Violence 15+"
-msgstr ""
-
 msgid "Advanced"
 msgstr "Papildus"
 
@@ -1196,9 +1214,6 @@ msgstr "Audio PID%s informācija"
 msgid "Audio PID, codec & lang"
 msgstr "Audio informācija"
 
-msgid "Audio Source"
-msgstr ""
-
 msgid "Audio auto volume level"
 msgstr "Automātiskā skaļuma līmenis"
 
@@ -1312,10 +1327,6 @@ msgstr "Azerbaidžāna"
 
 msgid "B"
 msgstr "B"
-
-#, python-format
-msgid "BC%d"
-msgstr ""
 
 msgid "BER"
 msgstr "BER"
@@ -1800,10 +1811,6 @@ msgstr ""
 "Pārbauda uztvērēju %s\n"
 "DiSEqC ieeja %s no %s"
 
-#, fuzzy
-msgid "Children"
-msgstr "Čīle"
-
 msgid "Children/Youth"
 msgstr "Bērni/Jaunieši"
 
@@ -1896,10 +1903,6 @@ msgstr "Kolekcijas iestatījumi"
 
 msgid "Colombia"
 msgstr "Kolumbija"
-
-#, fuzzy
-msgid "Color Format"
-msgstr "Krāsu formāts"
 
 msgid "Color format"
 msgstr "Krāsu formāts"
@@ -3963,9 +3966,6 @@ msgstr "Gambija"
 msgid "Gateway"
 msgstr "Vārteja"
 
-msgid "General"
-msgstr ""
-
 msgid "General AC3 delay"
 msgstr "Vispārējā AC3 aizture"
 
@@ -4775,10 +4775,6 @@ msgstr "Pēdējais ātrums"
 msgid "Last update: "
 msgstr "Pēdējā atjaunošana: "
 
-msgctxt "third event: 'third' event label"
-msgid "Later"
-msgstr ""
-
 msgid "Latest Commits"
 msgstr "Izmaiņas"
 
@@ -5061,12 +5057,6 @@ msgstr "Māršala salas"
 msgid "Martinique"
 msgstr "Martinika"
 
-msgid "Mature Adult Audience 15+"
-msgstr ""
-
-msgid "Mature Audience 15+"
-msgstr ""
-
 msgid "Mauritania"
 msgstr "Mauritānija"
 
@@ -5134,9 +5124,6 @@ msgstr "Minimālais vecums %d gadi"
 
 msgid "Minimum send interval"
 msgstr "Minimālais sūtīšanas intervāls"
-
-msgid "Mins"
-msgstr ""
 
 msgid "Missing "
 msgstr "Trūkst"
@@ -5677,10 +5664,6 @@ msgid "Norwegian"
 msgstr "Norvēģu"
 
 #, fuzzy
-msgid "Not Classified"
-msgstr "Nav piešķirts"
-
-#, fuzzy
 msgid "Not Installed"
 msgstr "Instalēt"
 
@@ -5697,10 +5680,6 @@ msgstr "Nav definēts"
 #, python-format
 msgid "Not enough disk space. Please free up some disk space and try again. (%d MB required, %d MB available)"
 msgstr "Nav pietiekami vietas uz diska. Lūdzu atbrīvot vietu uz diska un mēģināt vēlreiz. (%d MB ir nepieciešami, bet %d MB pieejami)"
-
-#, fuzzy
-msgid "Not running"
-msgstr "nenotiek"
 
 msgid "Not tested:"
 msgstr "Nav pārbaudīts:"
@@ -5958,9 +5937,6 @@ msgstr "Paragvaja"
 msgid "Parent directory"
 msgstr "Iepriekšējā mape"
 
-msgid "Parental Guidance Recommended"
-msgstr ""
-
 msgid "Parental control"
 msgstr "Vecāku kontrole"
 
@@ -5984,10 +5960,6 @@ msgstr "Nopauzēt atskaņošanu"
 
 msgid "Pause/Continue playback"
 msgstr "Nopauzēt/Turpināt atskaņošanu"
-
-#, fuzzy
-msgid "Pausing"
-msgstr "nopauzēts"
 
 msgid "Percentage left"
 msgstr "Procenti kreisā pusē"
@@ -6450,9 +6422,6 @@ msgstr "Ieteicamais uztvērējs ierakstam"
 
 msgid "Preparing... Please wait"
 msgstr "Sagatavo... Lūdzu uzgaidiet"
-
-msgid "Preschool"
-msgstr ""
 
 msgid "Press '0' to toggle PiP mode"
 msgstr "Nospiediet '0' lai pārslēgtu PiP režīmu"
@@ -6963,10 +6932,6 @@ msgstr "Lasa partīciju tabulu"
 msgid "Reserved"
 msgstr "Rezervēts"
 
-#, fuzzy
-msgid "Reserved for future use"
-msgstr "rezervēts nākotnei"
-
 msgid "Reset"
 msgstr "Atstatīt"
 
@@ -7049,9 +7014,6 @@ msgstr "Atjaunot uztvērēja iestatījumus."
 msgid "Restoring..."
 msgstr "Atjauno..."
 
-msgid "Restricted 18+"
-msgstr ""
-
 msgid "Resume from last position"
 msgstr "Turpina no pēdējā stāvokļa"
 
@@ -7128,10 +7090,6 @@ msgstr "Rotors: "
 
 msgid "Round start time on"
 msgstr "Raunda sākuma laiks"
-
-#, fuzzy
-msgid "Running"
-msgstr "notiek"
 
 msgid "Russian"
 msgstr "Krievu"
@@ -7850,10 +7808,6 @@ msgstr ""
 "Kanāls nav atrasts!\n"
 "(SID nav atrasts iekš PAT)"
 
-#, fuzzy
-msgid "Service off-air"
-msgstr "kanāls nedarbojas"
-
 msgid "Service reference"
 msgstr "Kanāla atsauce"
 
@@ -8310,10 +8264,6 @@ msgstr "Izslēgt"
 msgid "Shutdown when in Standby"
 msgstr "Izslēgt kad ir gaidstāvē"
 
-#, fuzzy
-msgid "Side by Side"
-msgstr "Horizontāli"
-
 msgid "Side by side"
 msgstr "Horizontāli"
 
@@ -8701,10 +8651,6 @@ msgstr "Sākt ar saraksta logu"
 
 msgid "Starting on"
 msgstr "Sākot ar"
-
-#, fuzzy
-msgid "Starts in a few seconds"
-msgstr "tūlīt sāksies"
 
 msgid "Startup the set top box in standby"
 msgstr "Ieslēdzot uztvērēju pāriet gaidstāvē"
@@ -9677,10 +9623,6 @@ msgstr "Toņsignāls A/B"
 
 msgid "Tonga"
 msgstr "Tonga"
-
-#, fuzzy
-msgid "Top and Bottom"
-msgstr "Vertikāli"
 
 msgid "Top and bottom"
 msgstr "Vertikāli"
@@ -10796,9 +10738,6 @@ msgstr "JĀ"
 msgid "YPbPr"
 msgstr "YPbPr"
 
-msgid "YUV"
-msgstr ""
-
 msgid "Year"
 msgstr "Gads"
 
@@ -11203,7 +11142,7 @@ msgid "ballet"
 msgstr "balets"
 
 #, python-format
-msgid "bc%d"
+msgid "bc%s"
 msgstr ""
 
 msgid "better"
@@ -11724,6 +11663,10 @@ msgstr "nav konfigurēts"
 msgid "not locked"
 msgstr "nav noenkurojies"
 
+#, fuzzy
+msgid "not running"
+msgstr "nenotiek"
+
 msgid "not supported"
 msgstr "nav atbalstīts"
 
@@ -11798,6 +11741,10 @@ msgstr ""
 msgid "pass"
 msgstr "šobrīd"
 
+#, fuzzy
+msgid "pausing"
+msgstr "nopauzēts"
+
 msgid "performing arts"
 msgstr "skatuves māksla"
 
@@ -11843,6 +11790,10 @@ msgstr "dzēst iezīmi"
 msgid "repeated"
 msgstr "atkārtots"
 
+#, fuzzy
+msgid "reserved for future use"
+msgstr "rezervēts nākotnei"
+
 msgid "reverse by date"
 msgstr "otrādi pēc datuma"
 
@@ -11863,6 +11814,10 @@ msgstr "roks/pops"
 
 msgid "romance"
 msgstr "romance"
+
+#, fuzzy
+msgid "running"
+msgstr "notiek"
 
 msgid "save"
 msgstr ""
@@ -11891,6 +11846,10 @@ msgstr "nopietnā mūzika/klasiskā mūzika"
 
 msgid "serious/classical/religious/historical movie/drama"
 msgstr "nopietnā/klasiskā/reliģiskā/vēsturiskā filma/drāma"
+
+#, fuzzy
+msgid "service off-air"
+msgstr "kanāls nedarbojas"
 
 #, fuzzy
 msgid "set default"
@@ -12002,6 +11961,10 @@ msgstr "standarta"
 
 msgid "start cut here"
 msgstr "sākt griešanu šeit"
+
+#, fuzzy
+msgid "starts in a few seconds"
+msgstr "tūlīt sāksies"
 
 msgid "stepsize"
 msgstr "soļa lielums"

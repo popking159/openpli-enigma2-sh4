@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: OpenPLI Enigma2 Official Greek Translation\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-04-09 13:48+0200\n"
+"POT-Creation-Date: 2020-04-15 00:05+0200\n"
 "PO-Revision-Date: \n"
 "Last-Translator: MCelliotG <mcelliotg@gmail.com>\n"
 "Language-Team: MCelliotG <mcelliotg@gmail.com>\n"
@@ -92,6 +92,10 @@ msgstr " (χαμηλότερα όλων των αυτόματων)"
 msgid " extensions."
 msgstr " επεκτάσεις."
 
+#, fuzzy
+msgid " min"
+msgstr "%d λεπτά"
+
 msgid " ms"
 msgstr " ms"
 
@@ -125,6 +129,10 @@ msgstr "%.1f° Δ"
 msgid "%.2f GB"
 msgstr "%.2f GB"
 
+#, fuzzy, python-format
+msgid "%02d:%02d"
+msgstr "%d:%02d"
+
 #, python-format
 msgid "%03d MB"
 msgstr "%03d MB"
@@ -133,6 +141,16 @@ msgstr "%03d MB"
 msgid "%2.1f sec"
 msgstr "%2.1f δευτ."
 
+#. TRANSLATORS: short time representation hour:minute
+#, fuzzy, python-format
+msgid "%2d:%02d"
+msgstr "%d:%02d"
+
+#. TRANSLATORS: full time representation hour:minute:seconds
+#, fuzzy, python-format
+msgid "%2d:%02d:%02d"
+msgstr "%d:%02d"
+
 #, python-format
 msgid "%3.01f dB"
 msgstr "%3.01f dB"
@@ -140,8 +158,31 @@ msgstr "%3.01f dB"
 msgid "%A %d %B"
 msgstr "%A %d %B"
 
+#. TRANSLATORS: long date representations dayname daynum monthname in strftime() format! See 'man strftime'
+#, fuzzy
+msgid "%A %e %B"
+msgstr "%A %d %B"
+
+#. TRANSLATORS: full date representation dayname daynum monthname year in strftime() format! See 'man strftime'
+#, fuzzy
+msgid "%A %e %B %Y"
+msgstr "%A %d %B"
+
 msgid "%H:%M"
 msgstr "%H:%M"
+
+#. TRANSLATORS: full date representations short dayname daynum monthname long year in strftime() format! See 'man strftime'
+#, fuzzy
+msgid "%a %e %B %Y"
+msgstr "%d.%B %Y"
+
+#. TRANSLATORS: short date representation short dayname daynum short monthname in strftime() format! See 'man strftime'
+msgid "%a %e/%m"
+msgstr ""
+
+#. TRANSLATORS: long date representation short dayname daynum short monthname hour:minute in strftime() format! See 'man strftime'
+msgid "%a %e/%m  %-H:%M"
+msgstr ""
 
 #, python-format
 msgid "%d B"
@@ -154,29 +195,6 @@ msgstr "%d GB"
 #, python-format
 msgid "%d MB"
 msgstr "%d MB"
-
-#. TRANSLATORS: full date representation dayname daynum monthname year in strftime() format! See 'man strftime'
-#. _("%A %e %B %Y")
-#. TRANSLATORS: short time representation hour:minute in strftime() format! See 'man strftime'
-#. _("%R")
-#. TRANSLATORS: short time representation hour:minute in strftime() format! See 'man strftime'
-#. _("%R")
-#. TRANSLATORS: short date representation daynum short monthname in strftime() format! See 'man strftime'
-#. _("%e %b")
-#. TRANSLATORS: short date representation daynum short monthname in strftime() format! See 'man strftime'
-#. _("%a %e %b")
-#. TRANSLATORS: short time representation hour:minute in strftime() format! See 'man strftime'
-#. _("%R")
-#. TRANSLATORS: long date representation short dayname daynum short monthname hour:minute in strftime() format! See 'man strftime'
-#. _("%a %e %b %R")
-#. TRANSLATORS: full date representations short dayname daynum monthname long year in strftime() format! See 'man strftime'
-#. _("%a %e %B %Y")
-#.
-#, fuzzy, python-format
-msgid "%d Min"
-msgid_plural "%d Mins"
-msgstr[0] "%d MB"
-msgstr[1] "%d MB"
 
 #. TRANSLATORS: Intermediate scanning result, '%d' channel(s) have been found so far
 #, python-format
@@ -270,6 +288,10 @@ msgstr[1] "Βρέθηκαν %d ασύρματα δίκτυα!"
 msgid "%d-%m"
 msgstr "%d-%m"
 
+#, fuzzy, python-format
+msgid "%d.%02d. %02d:%02d"
+msgstr "%d.%d.%d"
+
 #, python-format
 msgid "%d.%03d GB"
 msgstr "%d.%03d GB"
@@ -288,6 +310,10 @@ msgstr "%d.%d.%d"
 #, python-format
 msgid "%d:%02d"
 msgstr "%d:%02d"
+
+#. TRANSLATORS: VFD hour:minute daynum short monthname in strftime() format! See 'man strftime'
+msgid "%k:%M %e/%m"
+msgstr ""
 
 #, python-format
 msgid ""
@@ -470,10 +496,6 @@ msgstr "3"
 
 msgid "30"
 msgstr "30"
-
-#, fuzzy
-msgid "3D Mode"
-msgstr "Λειτουργία"
 
 msgid "3D surround"
 msgstr "3D περιφερικό"
@@ -844,9 +866,6 @@ msgstr "Αλλαγή ρυθμίσεων 3D"
 msgid "Adjust the color settings so that all the color shades are distinguishable, but appear as saturated as possible. If you are happy with the result, press OK to close the video fine-tuning, or use the number keys to select other test screens."
 msgstr "Ρυθμίστε την ένταση των χρωμάτων έτσι ώστε να διαφέρουν οι χρωματισμοί με τη μέγιστη φωτεινότητα. Όταν τελειώσετε, πιέστε ΟΚ για να κλείσετε τη μικρορύθμιση ή πιέστε ένα νούμερο για να δείτε και άλλες οθόνες δοκιμών."
 
-msgid "Adult Audience, Strong Violence 15+"
-msgstr ""
-
 msgid "Advanced"
 msgstr "Προχωρημένο"
 
@@ -1168,9 +1187,6 @@ msgstr "PID ήχου%s, κωδικοποιητής & γλώσσα"
 msgid "Audio PID, codec & lang"
 msgstr "PID ήχου, κωδικοποιητής & γλώσσα"
 
-msgid "Audio Source"
-msgstr ""
-
 msgid "Audio auto volume level"
 msgstr "Αυτόματο επίπεδο έντασης ήχου"
 
@@ -1284,10 +1300,6 @@ msgstr "Αζερμπαϊτζάν"
 
 msgid "B"
 msgstr "B"
-
-#, python-format
-msgid "BC%d"
-msgstr ""
 
 msgid "BER"
 msgstr "BER"
@@ -1783,10 +1795,6 @@ msgstr ""
 "Έλεγχος tuner %s\n"
 "Πόρτα DiSEqC %s για το %s"
 
-#, fuzzy
-msgid "Children"
-msgstr "Χιλή"
-
 msgid "Children/Youth"
 msgstr "Παιδικά/Εφηβικά"
 
@@ -1879,10 +1887,6 @@ msgstr "Επιλογές συλλογής"
 
 msgid "Colombia"
 msgstr "Κολομβία"
-
-#, fuzzy
-msgid "Color Format"
-msgstr "Φορμά χρώματος"
 
 msgid "Color format"
 msgstr "Φορμά χρώματος"
@@ -3929,9 +3933,6 @@ msgstr "Γκάμπια"
 msgid "Gateway"
 msgstr "Πύλη δικτύου"
 
-msgid "General"
-msgstr ""
-
 msgid "General AC3 delay"
 msgstr "Γενική καθυστέρηση AC3"
 
@@ -4741,10 +4742,6 @@ msgstr "Τελευταία ταχύτητα"
 msgid "Last update: "
 msgstr "Τελευταία ενημέρωση: "
 
-msgctxt "third event: 'third' event label"
-msgid "Later"
-msgstr ""
-
 msgid "Latest Commits"
 msgstr "Τελευταίες αλλαγές"
 
@@ -5027,12 +5024,6 @@ msgstr "Νησιά Μάρσαλ"
 msgid "Martinique"
 msgstr "Μαρτινίκα"
 
-msgid "Mature Adult Audience 15+"
-msgstr ""
-
-msgid "Mature Audience 15+"
-msgstr ""
-
 msgid "Mauritania"
 msgstr "Μαυριτανία"
 
@@ -5100,9 +5091,6 @@ msgstr "Ελάχιστη ηλικία %d"
 
 msgid "Minimum send interval"
 msgstr "Ελάχιστο διάστημα αποστολής"
-
-msgid "Mins"
-msgstr ""
 
 msgid "Missing "
 msgstr "Λείπει "
@@ -5635,10 +5623,6 @@ msgstr "Νορβηγία"
 msgid "Norwegian"
 msgstr "Νορβηγικά"
 
-#, fuzzy
-msgid "Not Classified"
-msgstr "Χωρίς συσχέτιση"
-
 msgid "Not Installed"
 msgstr "Μη εγκατεστημένο"
 
@@ -5654,10 +5638,6 @@ msgstr "Απροσδιόριστο"
 #, python-format
 msgid "Not enough disk space. Please free up some disk space and try again. (%d MB required, %d MB available)"
 msgstr "Μη επαρκής χώρος δίσκου. Ελευθερώστε χώρο και προσπαθήστε ξανά. (%d MB απαιτούνται, %d MB διαθέσιμα)"
-
-#, fuzzy
-msgid "Not running"
-msgstr "δεν εκτελείται"
 
 msgid "Not tested:"
 msgstr "Μη ελεγμένα:"
@@ -5915,9 +5895,6 @@ msgstr "Παραγουάη"
 msgid "Parent directory"
 msgstr "Γονικός φάκελος"
 
-msgid "Parental Guidance Recommended"
-msgstr ""
-
 msgid "Parental control"
 msgstr "Γονικός έλεγχος"
 
@@ -5941,10 +5918,6 @@ msgstr "Παύση αναπαραγωγής"
 
 msgid "Pause/Continue playback"
 msgstr "Παύση/Συνέχιση αναπαραγωγής"
-
-#, fuzzy
-msgid "Pausing"
-msgstr "σε παύση"
 
 msgid "Percentage left"
 msgstr "Ποσοστό αριστερά"
@@ -6405,9 +6378,6 @@ msgstr "Προτιμώμενο tuner για εγγραφές"
 
 msgid "Preparing... Please wait"
 msgstr "Γίνεται προετοιμασία... Παρακαλώ περιμένετε."
-
-msgid "Preschool"
-msgstr ""
 
 msgid "Press '0' to toggle PiP mode"
 msgstr "Πιέστε '0' για εναλλαγή λειτουργίας PiP"
@@ -6917,10 +6887,6 @@ msgstr "Επανάγνωση πίνακα κατατμήσεων"
 msgid "Reserved"
 msgstr "Ρεζερβέ"
 
-#, fuzzy
-msgid "Reserved for future use"
-msgstr "δεσμευμένο για μελλοντική χρήση"
-
 msgid "Reset"
 msgstr "Μηδενισμός"
 
@@ -7002,9 +6968,6 @@ msgstr "Επαναφορά των ρυθμίσεων του δέκτη σας."
 msgid "Restoring..."
 msgstr "Επαναφορά..."
 
-msgid "Restricted 18+"
-msgstr ""
-
 msgid "Resume from last position"
 msgstr "Συνέχιση από το τελευταίο σημείο"
 
@@ -7081,10 +7044,6 @@ msgstr "Μοτέρ: "
 
 msgid "Round start time on"
 msgstr "Στρογγυλοποίηση της ώρας έναρξης σε"
-
-#, fuzzy
-msgid "Running"
-msgstr "εκτελείται"
 
 msgid "Russian"
 msgstr "Ρωσικά"
@@ -7797,10 +7756,6 @@ msgstr ""
 "Η υπηρεσία δεν βρέθηκε!\n"
 "(το SID δεν βρέθηκε στο PAT)"
 
-#, fuzzy
-msgid "Service off-air"
-msgstr "υπηρεσία εκτός λειτουργίας"
-
 msgid "Service reference"
 msgstr "Αναφορά υπηρεσίας"
 
@@ -8256,10 +8211,6 @@ msgstr "Τερματισμός"
 msgid "Shutdown when in Standby"
 msgstr "Τερματισμός σε κατάσταση αναμονής"
 
-#, fuzzy
-msgid "Side by Side"
-msgstr "Σε παράθεση"
-
 msgid "Side by side"
 msgstr "Σε παράθεση"
 
@@ -8646,10 +8597,6 @@ msgstr "Έναρξη με την οθόνη λίστας"
 
 msgid "Starting on"
 msgstr "Έναρξη από το"
-
-#, fuzzy
-msgid "Starts in a few seconds"
-msgstr "ξεκινά σε λίγα δευτερόλεπτα"
 
 msgid "Startup the set top box in standby"
 msgstr "Εκκίνηση του δέκτη σε κατάσταση αναμονής"
@@ -9622,10 +9569,6 @@ msgstr "Ριπή τόνου A/B"
 
 msgid "Tonga"
 msgstr "Τόγκα"
-
-#, fuzzy
-msgid "Top and Bottom"
-msgstr "Πάνω και Κάτω"
 
 msgid "Top and bottom"
 msgstr "Πάνω και Κάτω"
@@ -10738,9 +10681,6 @@ msgstr "ΝΑΙ"
 msgid "YPbPr"
 msgstr "YPbPr"
 
-msgid "YUV"
-msgstr ""
-
 msgid "Year"
 msgstr "Έτος"
 
@@ -11142,7 +11082,7 @@ msgid "ballet"
 msgstr "μπαλέτο"
 
 #, python-format
-msgid "bc%d"
+msgid "bc%s"
 msgstr ""
 
 msgid "better"
@@ -11662,6 +11602,10 @@ msgstr "μη ρυθμισμένο"
 msgid "not locked"
 msgstr "μη κλειδωμένο"
 
+#, fuzzy
+msgid "not running"
+msgstr "δεν εκτελείται"
+
 msgid "not supported"
 msgstr "δεν υποστηρίζεται"
 
@@ -11736,6 +11680,10 @@ msgstr ""
 msgid "pass"
 msgstr "πέρασμα"
 
+#, fuzzy
+msgid "pausing"
+msgstr "σε παύση"
+
 msgid "performing arts"
 msgstr "τέχνες και θεάματα"
 
@@ -11781,6 +11729,10 @@ msgstr "διαγραφή αυτού του σημειωτή"
 msgid "repeated"
 msgstr "επαναλαμβανόμενο"
 
+#, fuzzy
+msgid "reserved for future use"
+msgstr "δεσμευμένο για μελλοντική χρήση"
+
 msgid "reverse by date"
 msgstr "αντιστροφή κατά ημερομηνία"
 
@@ -11801,6 +11753,10 @@ msgstr "ροκ/ποπ"
 
 msgid "romance"
 msgstr "ρομάντζο"
+
+#, fuzzy
+msgid "running"
+msgstr "εκτελείται"
 
 msgid "save"
 msgstr ""
@@ -11829,6 +11785,10 @@ msgstr "σοβαρή μουσική/κλασική μουσική"
 
 msgid "serious/classical/religious/historical movie/drama"
 msgstr "σοβαρή/κλασική/θρησκευτική/ιστορική ταινία/δράμα"
+
+#, fuzzy
+msgid "service off-air"
+msgstr "υπηρεσία εκτός λειτουργίας"
 
 #, fuzzy
 msgid "set default"
@@ -11940,6 +11900,10 @@ msgstr "στάνταρ"
 
 msgid "start cut here"
 msgstr "εκκίνηση αποκοπής εδώ"
+
+#, fuzzy
+msgid "starts in a few seconds"
+msgstr "ξεκινά σε λίγα δευτερόλεπτα"
 
 msgid "stepsize"
 msgstr "μέγεθος βήματος"

@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: enigma2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-04-09 13:48+0200\n"
+"POT-Creation-Date: 2020-04-15 00:05+0200\n"
 "PO-Revision-Date: 2011-04-14 00:02+0200\n"
 "Last-Translator: majevica <jovanovic@gmx.ch>\n"
 "Language-Team: veselin & majevica CRNABERZA <jovanovic@gmx.ch>\n"
@@ -93,6 +93,11 @@ msgstr ""
 msgid " extensions."
 msgstr "proširenja."
 
+#
+#, fuzzy
+msgid " min"
+msgstr "%d min"
+
 msgid " ms"
 msgstr "ms"
 
@@ -129,11 +134,25 @@ msgid "%.2f GB"
 msgstr ""
 
 #, python-format
+msgid "%02d:%02d"
+msgstr ""
+
+#, python-format
 msgid "%03d MB"
 msgstr ""
 
 #, python-format
 msgid "%2.1f sec"
+msgstr ""
+
+#. TRANSLATORS: short time representation hour:minute
+#, python-format
+msgid "%2d:%02d"
+msgstr ""
+
+#. TRANSLATORS: full time representation hour:minute:seconds
+#, python-format
+msgid "%2d:%02d:%02d"
 msgstr ""
 
 #, python-format
@@ -143,9 +162,33 @@ msgstr ""
 msgid "%A %d %B"
 msgstr ""
 
+#. TRANSLATORS: long date representations dayname daynum monthname in strftime() format! See 'man strftime'
+msgid "%A %e %B"
+msgstr ""
+
+#
+#. TRANSLATORS: full date representation dayname daynum monthname year in strftime() format! See 'man strftime'
+#, fuzzy
+msgid "%A %e %B %Y"
+msgstr "%d.%B %Y"
+
 #
 msgid "%H:%M"
 msgstr "%H:%M"
+
+#
+#. TRANSLATORS: full date representations short dayname daynum monthname long year in strftime() format! See 'man strftime'
+#, fuzzy
+msgid "%a %e %B %Y"
+msgstr "%d.%B %Y"
+
+#. TRANSLATORS: short date representation short dayname daynum short monthname in strftime() format! See 'man strftime'
+msgid "%a %e/%m"
+msgstr ""
+
+#. TRANSLATORS: long date representation short dayname daynum short monthname hour:minute in strftime() format! See 'man strftime'
+msgid "%a %e/%m  %-H:%M"
+msgstr ""
 
 #, python-format
 msgid "%d B"
@@ -158,30 +201,6 @@ msgstr ""
 #, python-format
 msgid "%d MB"
 msgstr ""
-
-#. TRANSLATORS: full date representation dayname daynum monthname year in strftime() format! See 'man strftime'
-#. _("%A %e %B %Y")
-#. TRANSLATORS: short time representation hour:minute in strftime() format! See 'man strftime'
-#. _("%R")
-#. TRANSLATORS: short time representation hour:minute in strftime() format! See 'man strftime'
-#. _("%R")
-#. TRANSLATORS: short date representation daynum short monthname in strftime() format! See 'man strftime'
-#. _("%e %b")
-#. TRANSLATORS: short date representation daynum short monthname in strftime() format! See 'man strftime'
-#. _("%a %e %b")
-#. TRANSLATORS: short time representation hour:minute in strftime() format! See 'man strftime'
-#. _("%R")
-#. TRANSLATORS: long date representation short dayname daynum short monthname hour:minute in strftime() format! See 'man strftime'
-#. _("%a %e %b %R")
-#. TRANSLATORS: full date representations short dayname daynum monthname long year in strftime() format! See 'man strftime'
-#. _("%a %e %B %Y")
-#.
-#, python-format
-msgid "%d Min"
-msgid_plural "%d Mins"
-msgstr[0] ""
-msgstr[1] ""
-msgstr[2] ""
 
 #
 #. TRANSLATORS: Intermediate scanning result, '%d' channel(s) have been found so far
@@ -290,6 +309,11 @@ msgstr[2] "1 bežična mreža pronađena!"
 msgid "%d-%m"
 msgstr ""
 
+#
+#, fuzzy, python-format
+msgid "%d.%02d. %02d:%02d"
+msgstr "%d.%B %Y"
+
 #, python-format
 msgid "%d.%03d GB"
 msgstr ""
@@ -310,6 +334,10 @@ msgstr "%d.%B %Y"
 
 #, python-format
 msgid "%d:%02d"
+msgstr ""
+
+#. TRANSLATORS: VFD hour:minute daynum short monthname in strftime() format! See 'man strftime'
+msgid "%k:%M %e/%m"
 msgstr ""
 
 #, fuzzy, python-format
@@ -514,11 +542,6 @@ msgstr "3"
 
 msgid "30"
 msgstr ""
-
-#
-#, fuzzy
-msgid "3D Mode"
-msgstr "Način"
 
 msgid "3D surround"
 msgstr ""
@@ -970,9 +993,6 @@ msgstr ""
 msgid "Adjust the color settings so that all the color shades are distinguishable, but appear as saturated as possible. If you are happy with the result, press OK to close the video fine-tuning, or use the number keys to select other test screens."
 msgstr "Podesi postavke boje,tako da su sve senke boja raspoznatljive,ali izgledaju maksimalno zasićene.Ako ste zadovoljni rezultatom,pritisnite OK da zatvorite fino video-podešavanje,ili koristite numeričke tipke da izaberete druge test ekrane. "
 
-msgid "Adult Audience, Strong Violence 15+"
-msgstr ""
-
 msgid "Advanced"
 msgstr ""
 
@@ -1347,9 +1367,6 @@ msgstr ""
 msgid "Audio PID, codec & lang"
 msgstr ""
 
-msgid "Audio Source"
-msgstr ""
-
 msgid "Audio auto volume level"
 msgstr ""
 
@@ -1488,10 +1505,6 @@ msgstr ""
 #
 msgid "B"
 msgstr "B"
-
-#, python-format
-msgid "BC%d"
-msgstr ""
 
 #
 msgid "BER"
@@ -2052,9 +2065,6 @@ msgid ""
 "DiSEqC port %s for %s"
 msgstr ""
 
-msgid "Children"
-msgstr ""
-
 msgid "Children/Youth"
 msgstr ""
 
@@ -2159,11 +2169,6 @@ msgstr "Postavke kolekcije"
 #
 #, fuzzy
 msgid "Colombia"
-msgstr "Kolor format"
-
-#
-#, fuzzy
-msgid "Color Format"
 msgstr "Kolor format"
 
 #
@@ -4545,9 +4550,6 @@ msgstr ""
 msgid "Gateway"
 msgstr "Mrežni čvor"
 
-msgid "General"
-msgstr ""
-
 #
 #, fuzzy
 msgid "General AC3 delay"
@@ -5495,10 +5497,6 @@ msgstr "Poslednja brzina"
 msgid "Last update: "
 msgstr ""
 
-msgctxt "third event: 'third' event label"
-msgid "Later"
-msgstr ""
-
 msgid "Latest Commits"
 msgstr ""
 
@@ -5841,12 +5839,6 @@ msgstr ""
 msgid "Martinique"
 msgstr ""
 
-msgid "Mature Adult Audience 15+"
-msgstr ""
-
-msgid "Mature Audience 15+"
-msgstr ""
-
 #
 #, fuzzy
 msgid "Mauritania"
@@ -5931,9 +5923,6 @@ msgstr ""
 #, fuzzy
 msgid "Minimum send interval"
 msgstr "Zaštitni interval"
-
-msgid "Mins"
-msgstr ""
 
 msgid "Missing "
 msgstr ""
@@ -6583,9 +6572,6 @@ msgstr "Norveški"
 msgid "Norwegian"
 msgstr "Norveški"
 
-msgid "Not Classified"
-msgstr ""
-
 #
 #, fuzzy
 msgid "Not Installed"
@@ -6604,10 +6590,6 @@ msgstr ""
 #, fuzzy, python-format
 msgid "Not enough disk space. Please free up some disk space and try again. (%d MB required, %d MB available)"
 msgstr "Nedovoljno prostora na disku. Molimo oslobodite nešto prostora i probajte ponovo. (%d MB potrebno,%d MB omogućeno)"
-
-#, fuzzy
-msgid "Not running"
-msgstr "na početku"
 
 msgid "Not tested:"
 msgstr ""
@@ -6900,9 +6882,6 @@ msgstr ""
 msgid "Parent directory"
 msgstr "Polazni direktorijum"
 
-msgid "Parental Guidance Recommended"
-msgstr ""
-
 #
 msgid "Parental control"
 msgstr "Roditeljska zaštita"
@@ -6937,11 +6916,6 @@ msgstr "Nastavite reprodukciju"
 #, fuzzy
 msgid "Pause/Continue playback"
 msgstr "Nastaviti reprodukciju"
-
-#
-#, fuzzy
-msgid "Pausing"
-msgstr "pauza"
 
 msgid "Percentage left"
 msgstr ""
@@ -7504,9 +7478,6 @@ msgstr ""
 #
 msgid "Preparing... Please wait"
 msgstr "Pripremam... Molim pričekajte"
-
-msgid "Preschool"
-msgstr ""
 
 msgid "Press '0' to toggle PiP mode"
 msgstr ""
@@ -8108,9 +8079,6 @@ msgstr ""
 msgid "Reserved"
 msgstr ""
 
-msgid "Reserved for future use"
-msgstr ""
-
 #
 msgid "Reset"
 msgstr "Resetujte"
@@ -8216,9 +8184,6 @@ msgstr ""
 msgid "Restoring..."
 msgstr "snimanje..."
 
-msgid "Restricted 18+"
-msgstr ""
-
 #
 msgid "Resume from last position"
 msgstr "Nastavite sa poslednje pozicije"
@@ -8307,10 +8272,6 @@ msgstr ""
 
 msgid "Round start time on"
 msgstr ""
-
-#, fuzzy
-msgid "Running"
-msgstr "na početku"
 
 #
 msgid "Russian"
@@ -9159,11 +9120,6 @@ msgstr ""
 "Kanal nije pronađen!\n"
 "(SID nije pronađen u PAT)"
 
-#
-#, fuzzy
-msgid "Service off-air"
-msgstr "dodaj kanal u favorite"
-
 msgid "Service reference"
 msgstr "Kanal referenca"
 
@@ -9684,9 +9640,6 @@ msgstr "Isključivanje"
 msgid "Shutdown when in Standby"
 msgstr ""
 
-msgid "Side by Side"
-msgstr ""
-
 msgid "Side by side"
 msgstr ""
 
@@ -10155,9 +10108,6 @@ msgstr ""
 #
 msgid "Starting on"
 msgstr "Pokrećem"
-
-msgid "Starts in a few seconds"
-msgstr ""
 
 msgid "Startup the set top box in standby"
 msgstr ""
@@ -11265,9 +11215,6 @@ msgid "Toneburst A/B"
 msgstr "Toneburst A/B"
 
 msgid "Tonga"
-msgstr ""
-
-msgid "Top and Bottom"
 msgstr ""
 
 msgid "Top and bottom"
@@ -12533,9 +12480,6 @@ msgstr ""
 msgid "YPbPr"
 msgstr "YPbPr"
 
-msgid "YUV"
-msgstr ""
-
 #
 msgid "Year"
 msgstr "Godina"
@@ -12959,7 +12903,7 @@ msgid "ballet"
 msgstr ""
 
 #, python-format
-msgid "bc%d"
+msgid "bc%s"
 msgstr ""
 
 #
@@ -13570,6 +13514,10 @@ msgstr "nije konfigurisano"
 msgid "not locked"
 msgstr "nije prihvaćen"
 
+#, fuzzy
+msgid "not running"
+msgstr "na početku"
+
 msgid "not supported"
 msgstr "nije podržano"
 
@@ -13653,6 +13601,11 @@ msgstr ""
 msgid "pass"
 msgstr "lozinka"
 
+#
+#, fuzzy
+msgid "pausing"
+msgstr "pauza"
+
 msgid "performing arts"
 msgstr ""
 
@@ -13707,6 +13660,9 @@ msgstr "obriši ovu oznaku"
 msgid "repeated"
 msgstr "ponavljam"
 
+msgid "reserved for future use"
+msgstr ""
+
 msgid "reverse by date"
 msgstr ""
 
@@ -13729,6 +13685,10 @@ msgstr ""
 
 msgid "romance"
 msgstr ""
+
+#, fuzzy
+msgid "running"
+msgstr "na početku"
 
 msgid "save"
 msgstr ""
@@ -13760,6 +13720,11 @@ msgstr ""
 
 msgid "serious/classical/religious/historical movie/drama"
 msgstr ""
+
+#
+#, fuzzy
+msgid "service off-air"
+msgstr "dodaj kanal u favorite"
 
 #, fuzzy
 msgid "set default"
@@ -13879,6 +13844,9 @@ msgstr "standardno"
 #
 msgid "start cut here"
 msgstr "počni rez ovde"
+
+msgid "starts in a few seconds"
+msgstr ""
 
 msgid "stepsize"
 msgstr ""

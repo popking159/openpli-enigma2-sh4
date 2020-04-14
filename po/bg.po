@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: enigma2 3.0.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-04-09 13:48+0200\n"
+"POT-Creation-Date: 2020-04-15 00:05+0200\n"
 "PO-Revision-Date: 2018-11-12 20:51+0200\n"
 "Last-Translator: Мартин Петков <marto74bg@yahoo.co.uk>\n"
 "Language-Team: Bulgarian\n"
@@ -88,6 +88,10 @@ msgstr " (по-нисък от всеки авто)"
 msgid " extensions."
 msgstr " разширения."
 
+#, fuzzy
+msgid " min"
+msgstr "%d мин"
+
 msgid " ms"
 msgstr " ms"
 
@@ -121,6 +125,10 @@ msgstr ""
 msgid "%.2f GB"
 msgstr "%.2f ГБ"
 
+#, fuzzy, python-format
+msgid "%02d:%02d"
+msgstr "%2d:%02d"
+
 #, python-format
 msgid "%03d MB"
 msgstr ""
@@ -129,6 +137,16 @@ msgstr ""
 msgid "%2.1f sec"
 msgstr "%d сек"
 
+#. TRANSLATORS: short time representation hour:minute
+#, fuzzy, python-format
+msgid "%2d:%02d"
+msgstr "%2d:%02d"
+
+#. TRANSLATORS: full time representation hour:minute:seconds
+#, fuzzy, python-format
+msgid "%2d:%02d:%02d"
+msgstr "%2d:%02d"
+
 #, python-format
 msgid "%3.01f dB"
 msgstr ""
@@ -136,8 +154,31 @@ msgstr ""
 msgid "%A %d %B"
 msgstr "%A %d %B"
 
+#. TRANSLATORS: long date representations dayname daynum monthname in strftime() format! See 'man strftime'
+#, fuzzy
+msgid "%A %e %B"
+msgstr "%A %d %B"
+
+#. TRANSLATORS: full date representation dayname daynum monthname year in strftime() format! See 'man strftime'
+#, fuzzy
+msgid "%A %e %B %Y"
+msgstr "%A %d %B"
+
 msgid "%H:%M"
 msgstr "%Ч:%М"
+
+#. TRANSLATORS: full date representations short dayname daynum monthname long year in strftime() format! See 'man strftime'
+#, fuzzy
+msgid "%a %e %B %Y"
+msgstr "%d.%B %Y"
+
+#. TRANSLATORS: short date representation short dayname daynum short monthname in strftime() format! See 'man strftime'
+msgid "%a %e/%m"
+msgstr ""
+
+#. TRANSLATORS: long date representation short dayname daynum short monthname hour:minute in strftime() format! See 'man strftime'
+msgid "%a %e/%m  %-H:%M"
+msgstr ""
 
 #, python-format
 msgid "%d B"
@@ -150,29 +191,6 @@ msgstr ""
 #, python-format
 msgid "%d MB"
 msgstr ""
-
-#. TRANSLATORS: full date representation dayname daynum monthname year in strftime() format! See 'man strftime'
-#. _("%A %e %B %Y")
-#. TRANSLATORS: short time representation hour:minute in strftime() format! See 'man strftime'
-#. _("%R")
-#. TRANSLATORS: short time representation hour:minute in strftime() format! See 'man strftime'
-#. _("%R")
-#. TRANSLATORS: short date representation daynum short monthname in strftime() format! See 'man strftime'
-#. _("%e %b")
-#. TRANSLATORS: short date representation daynum short monthname in strftime() format! See 'man strftime'
-#. _("%a %e %b")
-#. TRANSLATORS: short time representation hour:minute in strftime() format! See 'man strftime'
-#. _("%R")
-#. TRANSLATORS: long date representation short dayname daynum short monthname hour:minute in strftime() format! See 'man strftime'
-#. _("%a %e %b %R")
-#. TRANSLATORS: full date representations short dayname daynum monthname long year in strftime() format! See 'man strftime'
-#. _("%a %e %B %Y")
-#.
-#, python-format
-msgid "%d Min"
-msgid_plural "%d Mins"
-msgstr[0] ""
-msgstr[1] ""
 
 #. TRANSLATORS: Intermediate scanning result, '%d' channel(s) have been found so far
 #, python-format
@@ -266,6 +284,10 @@ msgstr[1] "%d безжични мрежи са открити!"
 msgid "%d-%m"
 msgstr "%d-%m"
 
+#, fuzzy, python-format
+msgid "%d.%02d. %02d:%02d"
+msgstr "%d.%B %Y"
+
 #, python-format
 msgid "%d.%03d GB"
 msgstr ""
@@ -284,6 +306,10 @@ msgstr "%d.%B %Y"
 #, fuzzy, python-format
 msgid "%d:%02d"
 msgstr "%2d:%02d"
+
+#. TRANSLATORS: VFD hour:minute daynum short monthname in strftime() format! See 'man strftime'
+msgid "%k:%M %e/%m"
+msgstr ""
 
 #, fuzzy, python-format
 msgid ""
@@ -460,10 +486,6 @@ msgstr "3"
 
 msgid "30"
 msgstr "30"
-
-#, fuzzy
-msgid "3D Mode"
-msgstr "Режим"
 
 msgid "3D surround"
 msgstr "3D съраунд звук"
@@ -842,9 +864,6 @@ msgstr "3D настройки"
 msgid "Adjust the color settings so that all the color shades are distinguishable, but appear as saturated as possible. If you are happy with the result, press OK to close the video fine-tuning, or use the number keys to select other test screens."
 msgstr "Настройте цветовете така, че всички цветови нюанса да са различимии и максимално наситени. Ако сте доволни от резултата, натиснете OK за да затворите фината настройка на картината, или използвайте цифровите бутони за да изберете друг тест екран."
 
-msgid "Adult Audience, Strong Violence 15+"
-msgstr ""
-
 msgid "Advanced"
 msgstr "Разширено"
 
@@ -1177,9 +1196,6 @@ msgstr ""
 msgid "Audio PID, codec & lang"
 msgstr "Аудио PID, кодек и език"
 
-msgid "Audio Source"
-msgstr ""
-
 msgid "Audio auto volume level"
 msgstr "Автоматично ниво за силата на звука"
 
@@ -1297,10 +1313,6 @@ msgstr "Азербайджан"
 
 msgid "B"
 msgstr "B"
-
-#, python-format
-msgid "BC%d"
-msgstr ""
 
 msgid "BER"
 msgstr "BER"
@@ -1788,10 +1800,6 @@ msgstr ""
 "Проверка на тунера %s\n"
 "DiSEqC порт %s за %s"
 
-#, fuzzy
-msgid "Children"
-msgstr "Чили"
-
 msgid "Children/Youth"
 msgstr "Деца/Младежи"
 
@@ -1884,10 +1892,6 @@ msgstr "Настройки на Колекция"
 
 msgid "Colombia"
 msgstr "Колумбия"
-
-#, fuzzy
-msgid "Color Format"
-msgstr "Цветови формат"
 
 msgid "Color format"
 msgstr "Цветови формат"
@@ -3967,9 +3971,6 @@ msgstr "Гамбия"
 msgid "Gateway"
 msgstr "Шлюз"
 
-msgid "General"
-msgstr ""
-
 msgid "General AC3 delay"
 msgstr "Общо AC3 закъснение"
 
@@ -4789,10 +4790,6 @@ msgstr "Последна скорост"
 msgid "Last update: "
 msgstr "Последна актуализация: "
 
-msgctxt "third event: 'third' event label"
-msgid "Later"
-msgstr ""
-
 msgid "Latest Commits"
 msgstr "Последни Изменения"
 
@@ -5076,12 +5073,6 @@ msgstr "Маршалски Острови"
 msgid "Martinique"
 msgstr "Мартиник"
 
-msgid "Mature Adult Audience 15+"
-msgstr ""
-
-msgid "Mature Audience 15+"
-msgstr ""
-
 msgid "Mauritania"
 msgstr "Мавритания"
 
@@ -5149,9 +5140,6 @@ msgstr "Категория минимум %d години"
 
 msgid "Minimum send interval"
 msgstr "Минимален интервал за изпращане на команда"
-
-msgid "Mins"
-msgstr ""
 
 msgid "Missing "
 msgstr "Липсва "
@@ -5695,10 +5683,6 @@ msgid "Norwegian"
 msgstr "Норвежки"
 
 #, fuzzy
-msgid "Not Classified"
-msgstr "Няма асоциации"
-
-#, fuzzy
 msgid "Not Installed"
 msgstr "Инсталирай"
 
@@ -5715,10 +5699,6 @@ msgstr "Не определен"
 #, python-format
 msgid "Not enough disk space. Please free up some disk space and try again. (%d MB required, %d MB available)"
 msgstr "Няма достатъчно място на диска. Моля освободете място на диска и опитайте отново. (%d MB трябват, %d MB налични)"
-
-#, fuzzy
-msgid "Not running"
-msgstr "не се извършва"
 
 msgid "Not tested:"
 msgstr "Не е тестван:"
@@ -5979,9 +5959,6 @@ msgstr "Парагвай"
 msgid "Parent directory"
 msgstr "Главна Директория"
 
-msgid "Parental Guidance Recommended"
-msgstr ""
-
 msgid "Parental control"
 msgstr "Родителски контрол"
 
@@ -6005,10 +5982,6 @@ msgstr "Пауза на възпроизвеждането"
 
 msgid "Pause/Continue playback"
 msgstr "Пауза/Продължение на възпроизвеждането"
-
-#, fuzzy
-msgid "Pausing"
-msgstr "на пауза"
 
 msgid "Percentage left"
 msgstr "Процента отляво"
@@ -6472,9 +6445,6 @@ msgstr "Приоритетен тунер за записи"
 
 msgid "Preparing... Please wait"
 msgstr "Подготовка...Моля изчакайте"
-
-msgid "Preschool"
-msgstr ""
 
 msgid "Press '0' to toggle PiP mode"
 msgstr "Натиснете '0', за смяна на режима PiP."
@@ -6988,10 +6958,6 @@ msgstr "Препрочитане на дяловите таблици"
 msgid "Reserved"
 msgstr "Запазено"
 
-#, fuzzy
-msgid "Reserved for future use"
-msgstr "запазени за бъдеща употреба"
-
 msgid "Reset"
 msgstr "Нулиране"
 
@@ -7075,9 +7041,6 @@ msgstr "Възстановяване настройките на вашия пр
 msgid "Restoring..."
 msgstr "Възстановяване..."
 
-msgid "Restricted 18+"
-msgstr ""
-
 msgid "Resume from last position"
 msgstr "Възобнови от последното място"
 
@@ -7154,10 +7117,6 @@ msgstr "Мотор: "
 
 msgid "Round start time on"
 msgstr "Кръгъл начален час"
-
-#, fuzzy
-msgid "Running"
-msgstr "тече"
 
 msgid "Russian"
 msgstr "Руски"
@@ -7883,10 +7842,6 @@ msgstr ""
 "Не е открит канал!\n"
 "(SID не е открит в PAT)"
 
-#, fuzzy
-msgid "Service off-air"
-msgstr "канала не се излъчва"
-
 msgid "Service reference"
 msgstr "Референс на канала"
 
@@ -8346,10 +8301,6 @@ msgstr "Изключване"
 msgid "Shutdown when in Standby"
 msgstr "Изключване от режим готовност"
 
-#, fuzzy
-msgid "Side by Side"
-msgstr "Ляво и Дясно"
-
 msgid "Side by side"
 msgstr "Ляво и Дясно"
 
@@ -8740,10 +8691,6 @@ msgstr "Започни с последния екран"
 
 msgid "Starting on"
 msgstr "Стартиране"
-
-#, fuzzy
-msgid "Starts in a few seconds"
-msgstr "започва след няколко секунди"
 
 msgid "Startup the set top box in standby"
 msgstr "Преход в режим готовност при включване на приемника"
@@ -9715,10 +9662,6 @@ msgstr "Тонов импулс (Tone Burst) A/B"
 
 msgid "Tonga"
 msgstr "Тонга"
-
-#, fuzzy
-msgid "Top and Bottom"
-msgstr "Горе и долу"
 
 msgid "Top and bottom"
 msgstr "Горе и долу"
@@ -10846,9 +10789,6 @@ msgstr "ДА"
 msgid "YPbPr"
 msgstr "YPbPr"
 
-msgid "YUV"
-msgstr ""
-
 msgid "Year"
 msgstr "Година"
 
@@ -11239,7 +11179,7 @@ msgid "ballet"
 msgstr "балет"
 
 #, python-format
-msgid "bc%d"
+msgid "bc%s"
 msgstr ""
 
 msgid "better"
@@ -11762,6 +11702,10 @@ msgstr "не е конфигуриран"
 msgid "not locked"
 msgstr "не е заключен"
 
+#, fuzzy
+msgid "not running"
+msgstr "не се извършва"
+
 msgid "not supported"
 msgstr "не се поддържа"
 
@@ -11836,6 +11780,10 @@ msgstr ""
 msgid "pass"
 msgstr "преминаващ"
 
+#, fuzzy
+msgid "pausing"
+msgstr "на пауза"
+
 msgid "performing arts"
 msgstr "сценични изкуства"
 
@@ -11881,6 +11829,10 @@ msgstr "премахни отметката"
 msgid "repeated"
 msgstr "повторен"
 
+#, fuzzy
+msgid "reserved for future use"
+msgstr "запазени за бъдеща употреба"
+
 msgid "reverse by date"
 msgstr "по обратна дата"
 
@@ -11901,6 +11853,10 @@ msgstr "рок/поп"
 
 msgid "romance"
 msgstr "романс"
+
+#, fuzzy
+msgid "running"
+msgstr "тече"
 
 msgid "save"
 msgstr ""
@@ -11929,6 +11885,10 @@ msgstr "сериозна/класическа музика"
 
 msgid "serious/classical/religious/historical movie/drama"
 msgstr "сериозен/класически/религиозен/исторически филм/драма"
+
+#, fuzzy
+msgid "service off-air"
+msgstr "канала не се излъчва"
 
 #, fuzzy
 msgid "set default"
@@ -12040,6 +12000,10 @@ msgstr "стандарт"
 
 msgid "start cut here"
 msgstr "изрежи тук"
+
+#, fuzzy
+msgid "starts in a few seconds"
+msgstr "започва след няколко секунди"
 
 msgid "stepsize"
 msgstr "размер на стъпка"

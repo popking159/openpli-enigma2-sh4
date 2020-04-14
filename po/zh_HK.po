@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-04-09 13:48+0200\n"
+"POT-Creation-Date: 2020-04-15 00:05+0200\n"
 "PO-Revision-Date: \n"
 "Last-Translator: 王彪 <satfan@163.com>\n"
 "Language-Team: 中國\n"
@@ -83,6 +83,10 @@ msgstr ""
 msgid " extensions."
 msgstr " 擴展."
 
+#, fuzzy
+msgid " min"
+msgstr "%d 分鐘"
+
 msgid " ms"
 msgstr ""
 
@@ -117,11 +121,25 @@ msgid "%.2f GB"
 msgstr ""
 
 #, python-format
+msgid "%02d:%02d"
+msgstr ""
+
+#, python-format
 msgid "%03d MB"
 msgstr ""
 
 #, python-format
 msgid "%2.1f sec"
+msgstr ""
+
+#. TRANSLATORS: short time representation hour:minute
+#, python-format
+msgid "%2d:%02d"
+msgstr ""
+
+#. TRANSLATORS: full time representation hour:minute:seconds
+#, python-format
+msgid "%2d:%02d:%02d"
 msgstr ""
 
 #, python-format
@@ -131,8 +149,30 @@ msgstr ""
 msgid "%A %d %B"
 msgstr ""
 
+#. TRANSLATORS: long date representations dayname daynum monthname in strftime() format! See 'man strftime'
+msgid "%A %e %B"
+msgstr ""
+
+#. TRANSLATORS: full date representation dayname daynum monthname year in strftime() format! See 'man strftime'
+#, fuzzy
+msgid "%A %e %B %Y"
+msgstr "%d.%B %Y"
+
 msgid "%H:%M"
 msgstr "%H:%M"
+
+#. TRANSLATORS: full date representations short dayname daynum monthname long year in strftime() format! See 'man strftime'
+#, fuzzy
+msgid "%a %e %B %Y"
+msgstr "%d.%B %Y"
+
+#. TRANSLATORS: short date representation short dayname daynum short monthname in strftime() format! See 'man strftime'
+msgid "%a %e/%m"
+msgstr ""
+
+#. TRANSLATORS: long date representation short dayname daynum short monthname hour:minute in strftime() format! See 'man strftime'
+msgid "%a %e/%m  %-H:%M"
+msgstr ""
 
 #, python-format
 msgid "%d B"
@@ -145,29 +185,6 @@ msgstr ""
 #, python-format
 msgid "%d MB"
 msgstr ""
-
-#. TRANSLATORS: full date representation dayname daynum monthname year in strftime() format! See 'man strftime'
-#. _("%A %e %B %Y")
-#. TRANSLATORS: short time representation hour:minute in strftime() format! See 'man strftime'
-#. _("%R")
-#. TRANSLATORS: short time representation hour:minute in strftime() format! See 'man strftime'
-#. _("%R")
-#. TRANSLATORS: short date representation daynum short monthname in strftime() format! See 'man strftime'
-#. _("%e %b")
-#. TRANSLATORS: short date representation daynum short monthname in strftime() format! See 'man strftime'
-#. _("%a %e %b")
-#. TRANSLATORS: short time representation hour:minute in strftime() format! See 'man strftime'
-#. _("%R")
-#. TRANSLATORS: long date representation short dayname daynum short monthname hour:minute in strftime() format! See 'man strftime'
-#. _("%a %e %b %R")
-#. TRANSLATORS: full date representations short dayname daynum monthname long year in strftime() format! See 'man strftime'
-#. _("%a %e %B %Y")
-#.
-#, python-format
-msgid "%d Min"
-msgid_plural "%d Mins"
-msgstr[0] ""
-msgstr[1] ""
 
 #. TRANSLATORS: Intermediate scanning result, '%d' channel(s) have been found so far
 #, python-format
@@ -261,6 +278,10 @@ msgstr[1] "%d beberapa jaringan nirkabel ditemukan!"
 msgid "%d-%m"
 msgstr ""
 
+#, fuzzy, python-format
+msgid "%d.%02d. %02d:%02d"
+msgstr "%d.%B %Y"
+
 #, python-format
 msgid "%d.%03d GB"
 msgstr ""
@@ -278,6 +299,10 @@ msgstr "%d.%B %Y"
 
 #, python-format
 msgid "%d:%02d"
+msgstr ""
+
+#. TRANSLATORS: VFD hour:minute daynum short monthname in strftime() format! See 'man strftime'
+msgid "%k:%M %e/%m"
 msgstr ""
 
 #, fuzzy, python-format
@@ -456,10 +481,6 @@ msgstr "3"
 
 msgid "30"
 msgstr ""
-
-#, fuzzy
-msgid "3D Mode"
-msgstr "型號:"
 
 msgid "3D surround"
 msgstr ""
@@ -828,9 +849,6 @@ msgstr ""
 msgid "Adjust the color settings so that all the color shades are distinguishable, but appear as saturated as possible. If you are happy with the result, press OK to close the video fine-tuning, or use the number keys to select other test screens."
 msgstr "調整顏色設定以使所有的顏色深淺可以辨識出來，使之看起來盡可能飽和。如果您對結果感到滿意，按OK關閉視頻微調，或者用數位鍵選擇畫面上的其他測驗。 "
 
-msgid "Adult Audience, Strong Violence 15+"
-msgstr ""
-
 msgid "Advanced"
 msgstr "高級"
 
@@ -1152,9 +1170,6 @@ msgstr ""
 msgid "Audio PID, codec & lang"
 msgstr ""
 
-msgid "Audio Source"
-msgstr ""
-
 msgid "Audio auto volume level"
 msgstr ""
 
@@ -1272,10 +1287,6 @@ msgstr ""
 
 msgid "B"
 msgstr "B"
-
-#, python-format
-msgid "BC%d"
-msgstr ""
 
 msgid "BER"
 msgstr "BER"
@@ -1767,9 +1778,6 @@ msgid ""
 "DiSEqC port %s for %s"
 msgstr ""
 
-msgid "Children"
-msgstr ""
-
 msgid "Children/Youth"
 msgstr ""
 
@@ -1864,10 +1872,6 @@ msgstr "收藏設定"
 #, fuzzy
 msgid "Colombia"
 msgstr "色彩"
-
-#, fuzzy
-msgid "Color Format"
-msgstr "格式化"
 
 msgid "Color format"
 msgstr ""
@@ -3918,9 +3922,6 @@ msgstr ""
 msgid "Gateway"
 msgstr "閘道"
 
-msgid "General"
-msgstr ""
-
 msgid "General AC3 delay"
 msgstr ""
 
@@ -4737,10 +4738,6 @@ msgstr "最快速度"
 msgid "Last update: "
 msgstr ""
 
-msgctxt "third event: 'third' event label"
-msgid "Later"
-msgstr ""
-
 msgid "Latest Commits"
 msgstr ""
 
@@ -5024,12 +5021,6 @@ msgstr ""
 msgid "Martinique"
 msgstr ""
 
-msgid "Mature Adult Audience 15+"
-msgstr ""
-
-msgid "Mature Audience 15+"
-msgstr ""
-
 #, fuzzy
 msgid "Mauritania"
 msgstr "立陶宛語"
@@ -5099,9 +5090,6 @@ msgid "Minimum age %d years"
 msgstr ""
 
 msgid "Minimum send interval"
-msgstr ""
-
-msgid "Mins"
 msgstr ""
 
 msgid "Missing "
@@ -5652,9 +5640,6 @@ msgstr "挪威語"
 msgid "Norwegian"
 msgstr "挪威語"
 
-msgid "Not Classified"
-msgstr ""
-
 #, fuzzy
 msgid "Not Installed"
 msgstr "安裝"
@@ -5671,10 +5656,6 @@ msgstr ""
 #, python-format
 msgid "Not enough disk space. Please free up some disk space and try again. (%d MB required, %d MB available)"
 msgstr ""
-
-#, fuzzy
-msgid "Not running"
-msgstr "正在恢復"
 
 msgid "Not tested:"
 msgstr ""
@@ -5936,9 +5917,6 @@ msgstr ""
 msgid "Parent directory"
 msgstr ""
 
-msgid "Parental Guidance Recommended"
-msgstr ""
-
 msgid "Parental control"
 msgstr "家長控制"
 
@@ -5963,10 +5941,6 @@ msgstr ""
 #, fuzzy
 msgid "Pause/Continue playback"
 msgstr "繼續播放"
-
-#, fuzzy
-msgid "Pausing"
-msgstr "暫停"
 
 msgid "Percentage left"
 msgstr ""
@@ -6434,9 +6408,6 @@ msgstr ""
 
 msgid "Preparing... Please wait"
 msgstr "準備中... 請稍候!"
-
-msgid "Preschool"
-msgstr ""
 
 msgid "Press '0' to toggle PiP mode"
 msgstr ""
@@ -6950,9 +6921,6 @@ msgstr ""
 msgid "Reserved"
 msgstr ""
 
-msgid "Reserved for future use"
-msgstr ""
-
 msgid "Reset"
 msgstr "重定"
 
@@ -7038,9 +7006,6 @@ msgstr ""
 msgid "Restoring..."
 msgstr ""
 
-msgid "Restricted 18+"
-msgstr ""
-
 msgid "Resume from last position"
 msgstr "從最後位置恢復"
 
@@ -7119,10 +7084,6 @@ msgstr ""
 
 msgid "Round start time on"
 msgstr ""
-
-#, fuzzy
-msgid "Running"
-msgstr "正在運行"
 
 msgid "Russian"
 msgstr "俄語"
@@ -7851,10 +7812,6 @@ msgstr ""
 "頻道未找到!\n"
 "(在PAT中找不以SID)"
 
-#, fuzzy
-msgid "Service off-air"
-msgstr "頻道密碼"
-
 msgid "Service reference"
 msgstr ""
 
@@ -8306,9 +8263,6 @@ msgstr "關機"
 msgid "Shutdown when in Standby"
 msgstr ""
 
-msgid "Side by Side"
-msgstr ""
-
 msgid "Side by side"
 msgstr ""
 
@@ -8701,10 +8655,6 @@ msgstr ""
 
 msgid "Starting on"
 msgstr "開始"
-
-#, fuzzy
-msgid "Starts in a few seconds"
-msgstr "超時(秒)"
 
 msgid "Startup the set top box in standby"
 msgstr ""
@@ -9638,9 +9588,6 @@ msgid "Toneburst A/B"
 msgstr "Toneburst A/B"
 
 msgid "Tonga"
-msgstr ""
-
-msgid "Top and Bottom"
 msgstr ""
 
 msgid "Top and bottom"
@@ -10740,9 +10687,6 @@ msgstr ""
 msgid "YPbPr"
 msgstr "YPbPr"
 
-msgid "YUV"
-msgstr ""
-
 msgid "Year"
 msgstr "年"
 
@@ -11119,7 +11063,7 @@ msgid "ballet"
 msgstr ""
 
 #, python-format
-msgid "bc%d"
+msgid "bc%s"
 msgstr ""
 
 msgid "better"
@@ -11642,6 +11586,10 @@ msgstr ""
 msgid "not locked"
 msgstr "無信號"
 
+#, fuzzy
+msgid "not running"
+msgstr "正在恢復"
+
 msgid "not supported"
 msgstr ""
 
@@ -11716,6 +11664,10 @@ msgstr ""
 msgid "pass"
 msgstr "通過"
 
+#, fuzzy
+msgid "pausing"
+msgstr "暫停"
+
 msgid "performing arts"
 msgstr ""
 
@@ -11761,6 +11713,9 @@ msgstr "移除這個標記"
 msgid "repeated"
 msgstr "重複"
 
+msgid "reserved for future use"
+msgstr ""
+
 msgid "reverse by date"
 msgstr ""
 
@@ -11781,6 +11736,10 @@ msgstr ""
 
 msgid "romance"
 msgstr ""
+
+#, fuzzy
+msgid "running"
+msgstr "正在運行"
 
 msgid "save"
 msgstr ""
@@ -11808,6 +11767,10 @@ msgstr ""
 
 msgid "serious/classical/religious/historical movie/drama"
 msgstr ""
+
+#, fuzzy
+msgid "service off-air"
+msgstr "頻道密碼"
 
 #, fuzzy
 msgid "set default"
@@ -11918,6 +11881,10 @@ msgstr "標準"
 
 msgid "start cut here"
 msgstr "從這裏開始剪輯"
+
+#, fuzzy
+msgid "starts in a few seconds"
+msgstr "超時(秒)"
 
 msgid "stepsize"
 msgstr ""

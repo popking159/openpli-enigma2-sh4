@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: enigma 2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-04-09 13:48+0200\n"
+"POT-Creation-Date: 2020-04-15 00:05+0200\n"
 "PO-Revision-Date: 2019-11-19 08:58+0700\n"
 "Last-Translator: krong\n"
 "Language-Team: none\n"
@@ -91,6 +91,10 @@ msgstr " (thấp hơn bất kỳ ô tô nào)"
 msgid " extensions."
 msgstr " phần mở rộng."
 
+#, fuzzy
+msgid " min"
+msgstr "%d phút"
+
 msgid " ms"
 msgstr " ms"
 
@@ -124,6 +128,10 @@ msgstr "%.1f° W"
 msgid "%.2f GB"
 msgstr "%.2f GB"
 
+#, fuzzy, python-format
+msgid "%02d:%02d"
+msgstr "%d:%02d"
+
 #, python-format
 msgid "%03d MB"
 msgstr "%03d MB"
@@ -132,6 +140,16 @@ msgstr "%03d MB"
 msgid "%2.1f sec"
 msgstr "%2.1f sec"
 
+#. TRANSLATORS: short time representation hour:minute
+#, fuzzy, python-format
+msgid "%2d:%02d"
+msgstr "%d:%02d"
+
+#. TRANSLATORS: full time representation hour:minute:seconds
+#, fuzzy, python-format
+msgid "%2d:%02d:%02d"
+msgstr "%d:%02d"
+
 #, python-format
 msgid "%3.01f dB"
 msgstr "%3.01f dB"
@@ -139,8 +157,31 @@ msgstr "%3.01f dB"
 msgid "%A %d %B"
 msgstr "%A %d %B"
 
+#. TRANSLATORS: long date representations dayname daynum monthname in strftime() format! See 'man strftime'
+#, fuzzy
+msgid "%A %e %B"
+msgstr "%A %d %B"
+
+#. TRANSLATORS: full date representation dayname daynum monthname year in strftime() format! See 'man strftime'
+#, fuzzy
+msgid "%A %e %B %Y"
+msgstr "%A %d %B"
+
 msgid "%H:%M"
 msgstr "%H:%M"
+
+#. TRANSLATORS: full date representations short dayname daynum monthname long year in strftime() format! See 'man strftime'
+#, fuzzy
+msgid "%a %e %B %Y"
+msgstr "%d.%B %Y"
+
+#. TRANSLATORS: short date representation short dayname daynum short monthname in strftime() format! See 'man strftime'
+msgid "%a %e/%m"
+msgstr ""
+
+#. TRANSLATORS: long date representation short dayname daynum short monthname hour:minute in strftime() format! See 'man strftime'
+msgid "%a %e/%m  %-H:%M"
+msgstr ""
 
 #, python-format
 msgid "%d B"
@@ -153,29 +194,6 @@ msgstr "%d GB"
 #, python-format
 msgid "%d MB"
 msgstr "%d MB"
-
-#. TRANSLATORS: full date representation dayname daynum monthname year in strftime() format! See 'man strftime'
-#. _("%A %e %B %Y")
-#. TRANSLATORS: short time representation hour:minute in strftime() format! See 'man strftime'
-#. _("%R")
-#. TRANSLATORS: short time representation hour:minute in strftime() format! See 'man strftime'
-#. _("%R")
-#. TRANSLATORS: short date representation daynum short monthname in strftime() format! See 'man strftime'
-#. _("%e %b")
-#. TRANSLATORS: short date representation daynum short monthname in strftime() format! See 'man strftime'
-#. _("%a %e %b")
-#. TRANSLATORS: short time representation hour:minute in strftime() format! See 'man strftime'
-#. _("%R")
-#. TRANSLATORS: long date representation short dayname daynum short monthname hour:minute in strftime() format! See 'man strftime'
-#. _("%a %e %b %R")
-#. TRANSLATORS: full date representations short dayname daynum monthname long year in strftime() format! See 'man strftime'
-#. _("%a %e %B %Y")
-#.
-#, fuzzy, python-format
-msgid "%d Min"
-msgid_plural "%d Mins"
-msgstr[0] "%d MB"
-msgstr[1] "%d MB"
 
 #. TRANSLATORS: Intermediate scanning result, '%d' channel(s) have been found so far
 #, python-format
@@ -269,6 +287,10 @@ msgstr[1] "Tìm thấy%d mạng không dây!"
 msgid "%d-%m"
 msgstr "%d-%m"
 
+#, fuzzy, python-format
+msgid "%d.%02d. %02d:%02d"
+msgstr "%d.%d.%d"
+
 #, python-format
 msgid "%d.%03d GB"
 msgstr "%d.%03d GB"
@@ -287,6 +309,10 @@ msgstr "%d.%d.%d"
 #, python-format
 msgid "%d:%02d"
 msgstr "%d:%02d"
+
+#. TRANSLATORS: VFD hour:minute daynum short monthname in strftime() format! See 'man strftime'
+msgid "%k:%M %e/%m"
+msgstr ""
 
 #, python-format
 msgid ""
@@ -469,10 +495,6 @@ msgstr "3"
 
 msgid "30"
 msgstr "30"
-
-#, fuzzy
-msgid "3D Mode"
-msgstr "Chế độ"
 
 msgid "3D surround"
 msgstr "Vòm 3D"
@@ -848,9 +870,6 @@ msgstr "Điều chỉnh cài đặt 3D"
 msgid "Adjust the color settings so that all the color shades are distinguishable, but appear as saturated as possible. If you are happy with the result, press OK to close the video fine-tuning, or use the number keys to select other test screens."
 msgstr "Điều chỉnh cài đặt màu sao cho tất cả các sắc thái màu có thể phân biệt được, nhưng xuất hiện càng bão hòa càng tốt. Nếu bạn hài lòng với kết quả này, nhấn OK để đóng tinh chỉnh video hoặc sử dụng các phím số để chọn các màn hình kiểm tra khác."
 
-msgid "Adult Audience, Strong Violence 15+"
-msgstr ""
-
 msgid "Advanced"
 msgstr "Nâng cao"
 
@@ -1173,9 +1192,6 @@ msgstr "Âm thanh PID%s, codec & lang"
 msgid "Audio PID, codec & lang"
 msgstr "Âm thanh PID, codec & lang"
 
-msgid "Audio Source"
-msgstr ""
-
 msgid "Audio auto volume level"
 msgstr "Mức âm lượng tự động"
 
@@ -1289,10 +1305,6 @@ msgstr "Ailen"
 
 msgid "B"
 msgstr "B"
-
-#, python-format
-msgid "BC%d"
-msgstr ""
 
 msgid "BER"
 msgstr "BER"
@@ -1790,10 +1802,6 @@ msgstr ""
 "Kiểm tra bộ chỉnh%s\n"
 "Cổng DiSEqC%s cho%s"
 
-#, fuzzy
-msgid "Children"
-msgstr "Chile"
-
 msgid "Children/Youth"
 msgstr "Trẻ em / Thanh niên"
 
@@ -1886,10 +1894,6 @@ msgstr "Cài đặt bộ sưu tập"
 
 msgid "Colombia"
 msgstr "Colombia"
-
-#, fuzzy
-msgid "Color Format"
-msgstr "Định dạng màu"
 
 msgid "Color format"
 msgstr "Định dạng màu"
@@ -3941,9 +3945,6 @@ msgstr "Gambia"
 msgid "Gateway"
 msgstr "Cổng"
 
-msgid "General"
-msgstr ""
-
 msgid "General AC3 delay"
 msgstr "Độ trễ AC3 chung"
 
@@ -4753,10 +4754,6 @@ msgstr "Tốc độ cuối"
 msgid "Last update: "
 msgstr "Nâng cấp lần cuối: "
 
-msgctxt "third event: 'third' event label"
-msgid "Later"
-msgstr ""
-
 msgid "Latest Commits"
 msgstr "Cam kết mới nhất"
 
@@ -5037,12 +5034,6 @@ msgstr "Đảo Marshall"
 msgid "Martinique"
 msgstr "Martinique"
 
-msgid "Mature Adult Audience 15+"
-msgstr ""
-
-msgid "Mature Audience 15+"
-msgstr ""
-
 msgid "Mauritania"
 msgstr "Mauritania"
 
@@ -5110,9 +5101,6 @@ msgstr "Tuổi tối thiểu%d năm"
 
 msgid "Minimum send interval"
 msgstr "Khoảng thời gian gửi tối thiểu"
-
-msgid "Mins"
-msgstr ""
 
 msgid "Missing "
 msgstr "Còn thiếu "
@@ -5650,10 +5638,6 @@ msgstr "Na Uy"
 msgid "Norwegian"
 msgstr "Na Uy"
 
-#, fuzzy
-msgid "Not Classified"
-msgstr "Không liên quan"
-
 msgid "Not Installed"
 msgstr "Chưa cài đặt"
 
@@ -5669,10 +5653,6 @@ msgstr "Không xác định"
 #, python-format
 msgid "Not enough disk space. Please free up some disk space and try again. (%d MB required, %d MB available)"
 msgstr "Không đủ dung lượng đĩa. Vui lòng giải phóng không gian đĩa và thử lại. (Yêu cầu%d MB,%d MB khả dụng)"
-
-#, fuzzy
-msgid "Not running"
-msgstr "không chạy"
 
 msgid "Not tested:"
 msgstr "Không được kiểm tra:"
@@ -5930,9 +5910,6 @@ msgstr "Paraguay"
 msgid "Parent directory"
 msgstr "Thư mục phụ huynh"
 
-msgid "Parental Guidance Recommended"
-msgstr ""
-
 msgid "Parental control"
 msgstr "Kiểm soát của cha mẹ"
 
@@ -5956,10 +5933,6 @@ msgstr "Tạm dừng phát lại"
 
 msgid "Pause/Continue playback"
 msgstr "Tạm dừng / Tiếp tục phát lại"
-
-#, fuzzy
-msgid "Pausing"
-msgstr "tạm dừng"
 
 msgid "Percentage left"
 msgstr "Tỷ lệ còn lại"
@@ -6420,9 +6393,6 @@ msgstr "Bộ chỉnh ưu tiên cho bản ghi"
 
 msgid "Preparing... Please wait"
 msgstr "Chuẩn bị ... Xin vui lòng chờ"
-
-msgid "Preschool"
-msgstr ""
 
 msgid "Press '0' to toggle PiP mode"
 msgstr "Nhấn '0' để chuyển chế độ PiP"
@@ -6933,10 +6903,6 @@ msgstr "Bảng phân vùng đọc lại"
 msgid "Reserved"
 msgstr "Kín đáo"
 
-#, fuzzy
-msgid "Reserved for future use"
-msgstr "để dành mai sau dùng"
-
 msgid "Reset"
 msgstr "Cài lại"
 
@@ -7019,9 +6985,6 @@ msgstr "Khôi phục cài đặt máy thu của bạn."
 msgid "Restoring..."
 msgstr "Khôi phục ..."
 
-msgid "Restricted 18+"
-msgstr ""
-
 msgid "Resume from last position"
 msgstr "Tiếp tục từ vị trí cuối cùng"
 
@@ -7098,10 +7061,6 @@ msgstr "Cánh quạt: "
 
 msgid "Round start time on"
 msgstr "Thời gian bắt đầu vòng"
-
-#, fuzzy
-msgid "Running"
-msgstr "đang chạy"
 
 msgid "Russian"
 msgstr "Tiếng nga"
@@ -7815,10 +7774,6 @@ msgstr ""
 "Không tìm thấy dịch vụ!\n"
 "(Không tìm thấy SID trong PAT)"
 
-#, fuzzy
-msgid "Service off-air"
-msgstr "dịch vụ ngoài không khí"
-
 msgid "Service reference"
 msgstr "Tham khảo dịch vụ"
 
@@ -8274,10 +8229,6 @@ msgstr "Tắt"
 msgid "Shutdown when in Standby"
 msgstr "Tắt máy khi ở chế độ chờ"
 
-#, fuzzy
-msgid "Side by Side"
-msgstr "Cạnh bên nhau"
-
 msgid "Side by side"
 msgstr "Cạnh bên nhau"
 
@@ -8665,10 +8616,6 @@ msgstr "Bắt đầu với màn hình danh sách"
 
 msgid "Starting on"
 msgstr "Bắt đầu vào"
-
-#, fuzzy
-msgid "Starts in a few seconds"
-msgstr "bắt đầu trong vài giây"
 
 msgid "Startup the set top box in standby"
 msgstr "Khởi động đầu thu ở chế độ chờ"
@@ -9640,10 +9587,6 @@ msgstr "Toneburst A/B"
 
 msgid "Tonga"
 msgstr "Lưỡi"
-
-#, fuzzy
-msgid "Top and Bottom"
-msgstr "Trên và dưới"
 
 msgid "Top and bottom"
 msgstr "Trên và dưới"
@@ -10756,9 +10699,6 @@ msgstr "VÂNG"
 msgid "YPbPr"
 msgstr "YPbPr"
 
-msgid "YUV"
-msgstr ""
-
 msgid "Year"
 msgstr "Năm"
 
@@ -11160,7 +11100,7 @@ msgid "ballet"
 msgstr "vở ballet"
 
 #, python-format
-msgid "bc%d"
+msgid "bc%s"
 msgstr ""
 
 msgid "better"
@@ -11680,6 +11620,10 @@ msgstr "không được cấu hình"
 msgid "not locked"
 msgstr "không bị khóa"
 
+#, fuzzy
+msgid "not running"
+msgstr "không chạy"
+
 msgid "not supported"
 msgstr "không được hỗ trợ"
 
@@ -11754,6 +11698,10 @@ msgstr ""
 msgid "pass"
 msgstr "vượt qua"
 
+#, fuzzy
+msgid "pausing"
+msgstr "tạm dừng"
+
 msgid "performing arts"
 msgstr "biểu diễn nghệ thuật"
 
@@ -11799,6 +11747,10 @@ msgstr "xóa dấu này"
 msgid "repeated"
 msgstr "lặp đi lặp lại"
 
+#, fuzzy
+msgid "reserved for future use"
+msgstr "để dành mai sau dùng"
+
 msgid "reverse by date"
 msgstr "đảo ngược theo ngày"
 
@@ -11819,6 +11771,10 @@ msgstr "nhạc rock / pop"
 
 msgid "romance"
 msgstr "lãng mạn"
+
+#, fuzzy
+msgid "running"
+msgstr "đang chạy"
 
 msgid "save"
 msgstr ""
@@ -11847,6 +11803,10 @@ msgstr "nhạc nghiêm túc / nhạc cổ điển"
 
 msgid "serious/classical/religious/historical movie/drama"
 msgstr "nghiêm túc / cổ điển / tôn giáo / lịch sử phim / kịch"
+
+#, fuzzy
+msgid "service off-air"
+msgstr "dịch vụ ngoài không khí"
 
 #, fuzzy
 msgid "set default"
@@ -11958,6 +11918,10 @@ msgstr "tiêu chuẩn"
 
 msgid "start cut here"
 msgstr "bắt đầu cắt ở đây"
+
+#, fuzzy
+msgid "starts in a few seconds"
+msgstr "bắt đầu trong vài giây"
 
 msgid "stepsize"
 msgstr "kích cỡ"
