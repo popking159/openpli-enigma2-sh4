@@ -5,8 +5,7 @@ from Plugins.Plugin import PluginDescriptor
 import ServiceReference
 from enigma import iPlayableService, eTimer, eServiceCenter, iServiceInformation
 from enigma import evfd
-import time
-from time import localtime, strftime, ctime, time
+from time import localtime, strftime, ctime, time, sleep
 from Components.ServiceEventTracker import ServiceEventTracker, InfoBarBase
 
 class VFDIcons:

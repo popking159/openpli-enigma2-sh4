@@ -137,9 +137,9 @@ class ConfigVFDDisplay(Screen, ConfigListScreen):
 		global DisplayType
 		if DisplayType == 8:
 			if self["config"].getCurrent()[1] == config.plugins.vfdicon.stbcontrast:
-				Console().ePopen("fp_control -b " + str(config.plugins.vfdicon.stbcontrast.value))
+				Console().ePopen("/usr/bin/fp_control -b " + str(config.plugins.vfdicon.stbcontrast.value))
 			else:
-				Console().ePopen("fp_control -b " + str(config.plugins.vfdicon.contrast.value))
+				Console().ePopen("/usr/bin/fp_control -b " + str(config.plugins.vfdicon.contrast.value))
 		print "newConfig", self["config"].getCurrent()
 		self.createSetup()
 
@@ -150,7 +150,7 @@ class ConfigVFDDisplay(Screen, ConfigListScreen):
 	def keySave(self):
 		global DisplayType
 		if DisplayType == 8:
-			Console().ePopen("fp_control -b " + str(config.plugins.vfdicon.contrast.value))
+			Console().ePopen("/usr/bin/fp_control -b " + str(config.plugins.vfdicon.contrast.value))
 			print "[VFD-Icons] set brightness", config.plugins.vfdicon.contrast.value
 		if config.plugins.vfdicon.textscroll.value is not None:
 			evfd.getInstance().vfd_set_SCROLL(int(config.plugins.vfdicon.textscroll.value))
@@ -211,7 +211,7 @@ class VFDIcons:
 		self.timer = eTimer()
 		self.timer.callback.append(self.timerEvent)
 		self.timer.start(60000, False) # start one minute timer
-		Console().ePopen("fp_control -i 46 0")
+		Console().ePopen("/usr/bin/fp_control -i 46 0")
 		global DisplayType
 		print '[VFD-Icons] Hardware displaytype:', DisplayType
 		print '[VFD-Icons] VFD displaytype     :', DisplayTypevfd
@@ -294,14 +294,14 @@ class VFDIcons:
 						currPlay = self.session.nav.getCurrentService()
 						if currPlay != None and self.mp3Available: # show the MP3 tag
 							servicename = currPlay.info().getInfoString(iServiceInformation.sTagTitle) + " - " + currPlay.info().getInfoString(iServiceInformation.sTagArtist)
-							Console().ePopen("fp_control -i 28 1 -i 27 0") #Radio icon on, TV off
+							Console().ePopen("/usr/bin/fp_control -i 28 1 -i 27 0") #Radio icon on, TV off
 						else: # show the file name
 							self.service = self.session.nav.getCurrentlyPlayingServiceReference()
 							if not self.service is None:
 								service = self.service.toCompareString()
 								servicename = ServiceReference(service).getServiceName().replace('\xc2\x87', '').replace('\xc2\x86', '').ljust(16)
-								Console().ePopen("fp_control -i 27 1 -i 28 0") #TV icon on, Radio off
-						Console().ePopen("fp_control -i 3 1") #play
+								Console().ePopen("/usr/bin/fp_control -i 27 1 -i 28 0") #TV icon on, Radio off
+						Console().ePopen("/usr/bin/fp_control -i 3 1") #play
 						if config.plugins.vfdicon.hddicons.value == "no":
 							self.displayHddUsedOff() #switch off signal strength						
 					else:
@@ -317,14 +317,14 @@ class VFDIcons:
 							servicename = str(service.getChannelNum()) + ' ' + ServiceReference(service).getServiceName()
 						else:
 							servicename = ServiceReference(service).getServiceName() #show the channel name
-						Console().ePopen("fp_control -i 3 0") #play
+						Console().ePopen("/usr/bin/fp_control -i 3 0") #play
 						self.play = False
 						#evaluate radio or tv
 						if config.plugins.vfdicon.showicons.value == "all":
 							if config.servicelist.lastmode.value == 'tv':
-								Console().ePopen("fp_control -i 27 1 -i 28 0") #TV icon on, Radio off
+								Console().ePopen("/usr/bin/fp_control -i 27 1 -i 28 0") #TV icon on, Radio off
 							else:
-								Console().ePopen("fp_control -i 28 1 -i 27 0") #Radio icon on, TV off
+								Console().ePopen("/usr/bin/fp_control -i 28 1 -i 27 0") #Radio icon on, TV off
 			if config.plugins.vfdicon.uppercase.value is not None:
 				servicename = servicename.upper()
 			evfd.getInstance().vfd_write_string(servicename[0:63])
@@ -336,9 +336,9 @@ class VFDIcons:
 				info = service.info()
 				crypted = info.getInfo(iServiceInformation.sIsCrypted)
 				if crypted == 1:
-					Console().ePopen("fp_control -i 11 1") #Crypt
+					Console().ePopen("/usr/bin/fp_control -i 11 1") #Crypt
 				else:
-					Console().ePopen("fp_control -i 11 0")
+					Console().ePopen("/usr/bin/fp_control -i 11 0")
 
 	def checkAudioTracks(self):
 		self.mp3Available = False
@@ -362,21 +362,21 @@ class VFDIcons:
 
 	def showDolby(self):
 		if self.dolbyAvailable:
-			Console().ePopen("fp_control -i 26 1") #AC-3
+			Console().ePopen("/usr/bin/fp_control -i 26 1") #AC-3
 		else:
-			Console().ePopen("fp_control -i 26 0")
+			Console().ePopen("/usr/bin/fp_control -i 26 0")
 
 	def showMP3(self):
 		if self.mp3Available:
-			Console().ePopen("fp_control -i 25 1") #MP3
+			Console().ePopen("/usr/bin/fp_control -i 25 1") #MP3
 		else:
-			Console().ePopen("fp_control -i 25 0")
+			Console().ePopen("/usr/bin/fp_control -i 25 0")
 
 	def showDTS(self):
 		if self.DTSAvailable or self.dolbyAvailable:
-			Console().ePopen("fp_control -i 10 1") #Dolby
+			Console().ePopen("/usr/bin/fp_control -i 10 1") #Dolby
 		else:
-			Console().ePopen("fp_control -i 10 0")
+			Console().ePopen("/usr/bin/fp_control -i 10 0")
 
 	def showTuned(self):
 		if config.plugins.vfdicon.showicons.value == "all":
@@ -387,37 +387,37 @@ class VFDIcons:
 					TPdata = info and info.getInfoObject(iServiceInformation.sTransponderData)
 					tunerType = TPdata.get("tuner_type")
 					if tunerType == "DVB-S":
-						Console().ePopen("fp_control -i 42 1 -i 37 0 -i 29 0") #SAT on, TER, Alert off
+						Console().ePopen("/usr/bin/fp_control -i 42 1 -i 37 0 -i 29 0") #SAT on, TER, Alert off
 						feinfo = service.frontendInfo()
 						FEdata = feinfo and feinfo.getAll(True)
 						tunerNumber = FEdata and FEdata.get("tuner_number")
 						print "[VFD-Icons] Set SAT icon; tuner number", tunerNumber
 						if tunerNumber == 0:
-							Console().ePopen("fp_control -i 44 1 -i 45 0") #dot1 on, dot2 off
+							Console().ePopen("/usr/bin/fp_control -i 44 1 -i 45 0") #dot1 on, dot2 off
 						else:
-							Console().ePopen("fp_control -i 45 1 -i 44 0") #dot1 off, dot2 on
+							Console().ePopen("/usr/bin/fp_control -i 45 1 -i 44 0") #dot1 off, dot2 on
 					elif tunerType == "DVB-T" or tunerType == "DVB-C":
 						print "[VFD-Icons] Set TER icon"
-						Console().ePopen("fp_control -i 37 1 -i 42 0 -i 44 0 -i 45 0 -i 29 0") #TER on, SAT, dot1, dot2, Alert off
+						Console().ePopen("/usr/bin/fp_control -i 37 1 -i 42 0 -i 44 0 -i 45 0 -i 29 0") #TER on, SAT, dot1, dot2, Alert off
 				else:
 					print "[VFD-Icons] No TER or SAT icon"
-					Console().ePopen("fp_control -i 37 0 -i 42 0 -i 44 0 -i 45 0 -i 29 0") #TER, SAT, dot1, dot2, Alert off
+					Console().ePopen("/usr/bin/fp_control -i 37 0 -i 42 0 -i 44 0 -i 45 0 -i 29 0") #TER, SAT, dot1, dot2, Alert off
 				self.showSignal()
 			else:
 				                             #TER,    SAT,    HD,     Timeshift,Dolby,MP3,    AC-3,   TS_DOT1 TS_CAB off, Alert on
-				Console().ePopen("fp_control -i 37 0 -i 42 0 -i 14 0 -i 43 0 -i 10 0 -i 25 0 -i 26 0 -i 44 0 -i 45 0 -i 29 1")
+				Console().ePopen("/usr/bin/fp_control -i 37 0 -i 42 0 -i 14 0 -i 43 0 -i 10 0 -i 25 0 -i 26 0 -i 44 0 -i 45 0 -i 29 1")
 
 	def showMute(self):
 		if config.plugins.vfdicon.showicons.value != "none":
 			self.isMuted = eDVBVolumecontrol.getInstance().isMuted()
 			if self.isMuted:
-				Console().ePopen("fp_control -i 8 1") #Mute
+				Console().ePopen("/usr/bin/fp_control -i 8 1") #Mute
 			else:
-				Console().ePopen("fp_control -i 8 0")
+				Console().ePopen("/usr/bin/fp_control -i 8 0")
 
 	def showSignal(self):
 		if (config.plugins.vfdicon.hddicons.value == "no" and config.plugins.vfdicon.showicons.value == "all" and self.play == False and self.standby == False):
-			Console().ePopen("fp_control -i 30 0") #HDD grid off
+			Console().ePopen("/usr/bin/fp_control -i 30 0") #HDD grid off
 			service = self.session.nav.getCurrentService()
 			if service:
 				info = service.info()
@@ -434,9 +434,9 @@ class VFDIcons:
 			next_rec_time = -1
 			next_rec_time = self.session.nav.RecordTimer.getNextRecordingTime()
 			if next_rec_time > 0:
-				Console().ePopen("fp_control -i 33 1") #Timer
+				Console().ePopen("/usr/bin/fp_control -i 33 1") #Timer
 			else:
-				Console().ePopen("fp_control -i 33 0")
+				Console().ePopen("/usr/bin/fp_control -i 33 0")
 
 	def timerEvent(self):
 		if self.standby == False:
@@ -444,22 +444,22 @@ class VFDIcons:
 			self.showMute() #update mute icon
 			self.showTimer() #update timer icon
 			if (self.record == True and config.plugins.vfdicon.recredledon.value):
-				Console().ePopen("fp_control -l 0 " + str(config.plugins.vfdicon.recredledon.value))
+				Console().ePopen("/usr/bin/fp_control -l 0 " + str(config.plugins.vfdicon.recredledon.value))
 			if config.plugins.vfdicon.showicons.value == "all":
 				if (self.record == True or self.timeshift == True): # if recording or timeshifting, display a rotating disc
 					self.displayHddUsed() # update HDD display
 					if self.disc == 1:
-						Console().ePopen("fp_control -i 40 0")
+						Console().ePopen("/usr/bin/fp_control -i 40 0")
 					if self.disc == 2:
-						Console().ePopen("fp_control -i 39 0")
+						Console().ePopen("/usr/bin/fp_control -i 39 0")
 					if self.disc == 3:
-						Console().ePopen("fp_control -i 38 0 -i 40 1")
+						Console().ePopen("/usr/bin/fp_control -i 38 0 -i 40 1")
 	#				if self.disc == 4:
-	#					Console().ePopen("fp_control -i 40 1")
+	#					Console().ePopen("/usr/bin/fp_control -i 40 1")
 					if self.disc == 4:
-						Console().ePopen("fp_control -i 39 1")
+						Console().ePopen("/usr/bin/fp_control -i 39 1")
 					if self.disc == 5:
-						Console().ePopen("fp_control -i 38 1")
+						Console().ePopen("/usr/bin/fp_control -i 38 1")
 					self.disc += 1 # indicate next state
 					if self.disc == 6:
 						self.disc = 1
@@ -479,13 +479,13 @@ class VFDIcons:
 				if config.plugins.vfdicon.showicons.value == "all":
 					if config.plugins.vfdicon.hddicons.value == "no":
 						if height > 720: #set FULL symbol
-							Console().ePopen("fp_control -i 22 1")
+							Console().ePopen("/usr/bin/fp_control -i 22 1")
 						else:
-							Console().ePopen("fp_control -i 22 0")
+							Console().ePopen("/usr/bin/fp_control -i 22 0")
 				if height > 576: #set HD icon
-					Console().ePopen("fp_control -i 14 1")
+					Console().ePopen("/usr/bin/fp_control -i 14 1")
 				else:
-					Console().ePopen("fp_control -i 14 0")
+					Console().ePopen("/usr/bin/fp_control -i 14 0")
 
 	def __evSeekableStatusChanged(self):
 		if config.plugins.vfdicon.showicons.value == "all":
@@ -497,11 +497,11 @@ class VFDIcons:
 #						if ts and ts.isTimeshiftEnabled() > 0:
 						if ts and ts.isTimeshiftActive() > 0:
 							self.timeshift = True
-							Console().ePopen("fp_control -i 43 1") #Timeshift
+							Console().ePopen("/usr/bin/fp_control -i 43 1") #Timeshift
 							self.discOn()
 						else:
 							self.timeshift = False
-							Console().ePopen("fp_control -i 43 0") #Timeshift icon off
+							Console().ePopen("/usr/bin/fp_control -i 43 0") #Timeshift icon off
 							if self.record == False:
 								self.discOff()
 
@@ -512,13 +512,13 @@ class VFDIcons:
 				nrecs = len(recs)
 				if nrecs > 1: #two or more recordings active
 					self.record = True
-					Console().ePopen("fp_control -i 7 1 -i 15 1") #REC1+2 on
+					Console().ePopen("/usr/bin/fp_control -i 7 1 -i 15 1") #REC1+2 on
 				elif nrecs > 0: #one recording active
 					self.record = True
-					Console().ePopen("fp_control -i 7 1 -i 15 0") #REC1 on, REC2 off
+					Console().ePopen("/usr/bin/fp_control -i 7 1 -i 15 0") #REC1 on, REC2 off
 					self.discOn()
 				else: # no recording active
-					Console().ePopen("fp_control -i 7 0 -i 15 0 -l 0 0") #REC1, REC2 & LED off
+					Console().ePopen("/usr/bin/fp_control -i 7 0 -i 15 0 -l 0 0") #REC1, REC2 & LED off
 					if self.timeshift == False:
 						self.discOff()
 					self.RecordEnd()
@@ -532,7 +532,7 @@ class VFDIcons:
 	def discOn(self):
 		if config.plugins.vfdicon.showicons.value == "all":
 			self.timer.stop() # stop minute timer
-			Console().ePopen("fp_control -i 40 1 -i 39 1 -i 38 1 -i 41 1")
+			Console().ePopen("/usr/bin/fp_control -i 40 1 -i 39 1 -i 38 1 -i 41 1")
 			self.disc = 1 #start rotating the display disc
 			self.timer.start(2000, False) # start two second timer
 
@@ -540,7 +540,7 @@ class VFDIcons:
 		if config.plugins.vfdicon.showicons.value == "all":
 			self.timer.stop() # stop two second timer
 			self.disc = 0 #stop rotating the display disc
-			Console().ePopen("fp_control -i 40 0 -i 39 0 -i 38 0 -i 41 0")
+			Console().ePopen("/usr/bin/fp_control -i 40 0 -i 39 0 -i 38 0 -i 41 0")
 			self.timer.start(60000, False) # start minute timer
 
 	def writeDate(self, disp):
@@ -554,7 +554,7 @@ class VFDIcons:
 
 	def __evTunedIn(self):
 		self.tuned = True
-		Console().ePopen("fp_control -i 42 0 -i 37 0 -i 29 0") #SAT, TER + Alert off
+		Console().ePopen("/usr/bin/fp_control -i 42 0 -i 37 0 -i 29 0") #SAT, TER + Alert off
 		if config.plugins.vfdicon.hddicons.value == "no":
 			self.displayHddUsedOff()
 
@@ -570,15 +570,15 @@ class VFDIcons:
 			evfd.getInstance().vfd_set_brightness(config.plugins.vfdicon.contrast.value)
 			print "[VFD-Icons] set brightness", config.plugins.vfdicon.contrast.value
 			self.timerEvent()
-			Console().ePopen("fp_control -i 36 0 -l 0 0") #Standby & Red LED off
+			Console().ePopen("/usr/bin/fp_control -i 36 0 -l 0 0") #Standby & Red LED off
 			if config.plugins.vfdicon.showicons.value == "all":
 				global hddUsed
 				hddUsed = -1 #force hdd display
 				self.displayHddUsed()
 				if self.usb == 1:
-					Console().ePopen("fp_control -i 13 1") #USB
+					Console().ePopen("/usr/bin/fp_control -i 13 1") #USB
 				else:
-					Console().ePopen("fp_control -i 13 0")
+					Console().ePopen("/usr/bin/fp_control -i 13 0")
 			print "[VFD-Icons] set icons on Leave Standby"
 
 	def onEnterStandby(self, configElement):
@@ -586,16 +586,16 @@ class VFDIcons:
 		inStandby.onClose.append(self.onLeaveStandby)
 		global DisplayType
 		if DisplayType == 8:
-			Console().ePopen("fp_control -i 46 0") #clear all VFD icons
-			Console().ePopen("fp_control -i 36 1") #Standby
+			Console().ePopen("/usr/bin/fp_control -i 46 0") #clear all VFD icons
+			Console().ePopen("/usr/bin/fp_control -i 36 1") #Standby
 			if config.plugins.vfdicon.stbdisplayshow.value == "nothing":
 				evfd.getInstance().vfd_set_light(0)
-#				Console().ePopen("fp_control -L 0")
+#				Console().ePopen("/usr/bin/fp_control -L 0")
 			else:
 				evfd.getInstance().vfd_set_brightness(config.plugins.vfdicon.stbcontrast.value)
 			print "[VFD-Icons] set standby brightness", config.plugins.vfdicon.stbcontrast.value
 			if config.plugins.vfdicon.standbyredledon.value:
-				Console().ePopen("fp_control -l 0 1") #Red LED on
+				Console().ePopen("/usr/bin/fp_control -l 0 1") #Red LED on
 		if config.plugins.vfdicon.stbdisplayshow.value == "date" or config.plugins.vfdicon.stbdisplayshow.value == "day_date":
 			self.writeDate(config.plugins.vfdicon.stbdisplayshow.value)
 		else:
@@ -608,7 +608,7 @@ class VFDIcons:
 			if dev.__contains__('sda') or dev.__contains__('sdb') or dev.__contains__('sdc'):
 #				if media_state == "add" or media_state == "change":
 				if media_state == "add":
-					Console().ePopen("fp_control -i 13 1")
+					Console().ePopen("/usr/bin/fp_control -i 13 1")
 					self.usb = 1
 					if config.plugins.vfdicon.hddicons.value == "all mounts":
 						self.displayHddUsedOff() # signal hot plug
@@ -618,7 +618,7 @@ class VFDIcons:
 								self.firstmount = self.mount
 						self.displayHddUsed() # and display size
 				if media_state == "remove":
-					Console().ePopen("fp_control -i 13 0")
+					Console().ePopen("/usr/bin/fp_control -i 13 0")
 					self.usb = 0
 					if config.plugins.vfdicon.hddicons.value == "all mounts":
 						if self.firstmount != -1:
@@ -712,7 +712,7 @@ class VFDIcons:
 					used = self.CheckUsed()
 					if hddUsed != used: # if previous size different 
 						hddUsed = used # save current size
-						Console().ePopen("fp_control -i 30 1") #HDD grid on
+						Console().ePopen("/usr/bin/fp_control -i 30 1") #HDD grid on
 						self.showSize(used) #and show HDD
 						print "[VFD-Icons] HDD mount point:", self.mount, ", used icons:", used/10
 		else:
@@ -720,47 +720,47 @@ class VFDIcons:
 
 	def showSize(self, size):
 		if size >= 10:
-			Console().ePopen("fp_control -i 24 1") #HDD1
+			Console().ePopen("/usr/bin/fp_control -i 24 1") #HDD1
 		else:
-			Console().ePopen("fp_control -i 24 0")
+			Console().ePopen("/usr/bin/fp_control -i 24 0")
 		if size >= 20:
-			Console().ePopen("fp_control -i 23 1") #HDD2
+			Console().ePopen("/usr/bin/fp_control -i 23 1") #HDD2
 		else:
-			Console().ePopen("fp_control -i 23 0")
+			Console().ePopen("/usr/bin/fp_control -i 23 0")
 		if size >= 30:
-			Console().ePopen("fp_control -i 21 1") #HDD3
+			Console().ePopen("/usr/bin/fp_control -i 21 1") #HDD3
 		else:
-			Console().ePopen("fp_control -i 21 0")
+			Console().ePopen("/usr/bin/fp_control -i 21 0")
 		if size >= 40:
-			Console().ePopen("fp_control -i 20 1") #HDD4
+			Console().ePopen("/usr/bin/fp_control -i 20 1") #HDD4
 		else:
-			Console().ePopen("fp_control -i 20 0")
+			Console().ePopen("/usr/bin/fp_control -i 20 0")
 		if size >= 50:
-			Console().ePopen("fp_control -i 19 1") #HDD5
+			Console().ePopen("/usr/bin/fp_control -i 19 1") #HDD5
 		else:
-			Console().ePopen("fp_control -i 19 0")
+			Console().ePopen("/usr/bin/fp_control -i 19 0")
 		if size >= 60:
-			Console().ePopen("fp_control -i 18 1") #HDD6
+			Console().ePopen("/usr/bin/fp_control -i 18 1") #HDD6
 		else:
-			Console().ePopen("fp_control -i 18 0")
+			Console().ePopen("/usr/bin/fp_control -i 18 0")
 		if size >= 70:
-			Console().ePopen("fp_control -i 17 1") #HDD7
+			Console().ePopen("/usr/bin/fp_control -i 17 1") #HDD7
 		else:
-			Console().ePopen("fp_control -i 17 0")
+			Console().ePopen("/usr/bin/fp_control -i 17 0")
 		if size >= 80:
-			Console().ePopen("fp_control -i 16 1") #HDD8
+			Console().ePopen("/usr/bin/fp_control -i 16 1") #HDD8
 		else:
-			Console().ePopen("fp_control -i 16 0")
+			Console().ePopen("/usr/bin/fp_control -i 16 0")
 		if config.plugins.vfdicon.hddicons.value != "no":
 			if size < 87:
-				Console().ePopen("fp_control -i 22 0 -i 29 0")
+				Console().ePopen("/usr/bin/fp_control -i 22 0 -i 29 0")
 			else:
-				Console().ePopen("fp_control -i 22 1 -i 29 1") #HDD full (+ Alert)
+				Console().ePopen("/usr/bin/fp_control -i 22 1 -i 29 1") #HDD full (+ Alert)
 
 	def displayHddUsedOff(self): #switch off hdd display
-		Console().ePopen("fp_control -i 16 0 -i 17 0 -i 18 0 -i 19 0 -i 20 0 -i 21 0 -i 23 0 -i 24 0 -i 30 0")
+		Console().ePopen("/usr/bin/fp_control -i 16 0 -i 17 0 -i 18 0 -i 19 0 -i 20 0 -i 21 0 -i 23 0 -i 24 0 -i 30 0")
 		if config.plugins.vfdicon.hddicons.value != "no":
-			Console().ePopen("fp_control -i 22 0 -i 29 0") #HDD Full, Alert off
+			Console().ePopen("/usr/bin/fp_control -i 22 0 -i 29 0") #HDD Full, Alert off
 
 VFDIconsInstance = None
 
@@ -776,7 +776,7 @@ def main(session, **kwargs):
 			VFDIconsInstance.timerEvent()
 		else:
 			if config.plugins.vfdicon.showicons.value == "none":
-				Console().ePopen("fp_control -i 46 0")		
+				Console().ePopen("/usr/bin/fp_control -i 46 0")		
 			elif config.plugins.vfdicon.hddicons.value != "no":
 				hddUsed = -1
 				VFDIconsInstance.displayHddUsed()
