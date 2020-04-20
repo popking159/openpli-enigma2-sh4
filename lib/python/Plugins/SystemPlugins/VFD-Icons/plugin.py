@@ -1,11 +1,7 @@
-# for localized messages
-
-from Screens.Screen import Screen
 from Plugins.Plugin import PluginDescriptor
 import ServiceReference
-from enigma import iPlayableService, eTimer, eServiceCenter, iServiceInformation
-from enigma import evfd
-from time import localtime, strftime, ctime, time, sleep
+from enigma import iPlayableService, eTimer, eServiceCenter, iServiceInformation, evfd
+import time
 from Components.ServiceEventTracker import ServiceEventTracker, InfoBarBase
 
 class VFDIcons:
