@@ -1,21 +1,13 @@
 from Screens.Screen import Screen
-from Screens.MessageBox import MessageBox
 from Plugins.Plugin import PluginDescriptor
-import ServiceReference
-from Tools import Notifications
-from Components.Pixmap import Pixmap, MovingPixmap
 from ServiceReference import ServiceReference
 from Components.ServiceList import ServiceList
 from Screens.InfoBar import InfoBar
 from enigma import iPlayableService, iServiceInformation, iTimeshiftServicePtr, iRecordableService, eTimer, evfd, eDVBVolumecontrol, eActionMap, iFrontendInformation, pNavigation
-import time, fcntl, struct
-from time import localtime, strftime, ctime, sleep
+from time import localtime, strftime, ctime, time, sleep
 from Components.ServiceEventTracker import ServiceEventTracker
 from Components.Console import Console
 from Tools.Directories import fileExists
-from Components.ActionMap import ActionMap, NumberActionMap
-from Components.ServiceEventTracker import ServiceEventTracker, InfoBarBase
-from Components.UsageConfig import defaultMoviePath
 from os import statvfs
 from Components.Button import Button
 from Components.ActionMap import ActionMap
