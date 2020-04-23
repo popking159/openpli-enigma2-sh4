@@ -1,12 +1,11 @@
 # for localized messages
-from . import _
 from Screens.Screen import Screen
 from Plugins.Plugin import PluginDescriptor
 from ServiceReference import ServiceReference
 from Components.ServiceList import ServiceList
 from Screens.InfoBar import InfoBar
-from enigma import iPlayableService, iServiceInformation, iTimeshiftServicePtr, iRecordableService, eTimer, evfd, eDVBVolumecontrol, eActionMap, iFrontendInformation, eTimer, eDVBLocalTimeHandler, getDesktop
-from time import localtime
+from enigma import iPlayableService, iServiceInformation, iTimeshiftServicePtr, iRecordableService, eTimer, evfd, eDVBVolumecontrol, eActionMap, iFrontendInformation, eTimer, eDVBLocalTimeHandler
+from time import localtime, strftime
 from Components.ServiceEventTracker import ServiceEventTracker
 from Components.Console import Console
 from Tools.Directories import fileExists
@@ -16,8 +15,6 @@ from Components.config import *
 from Components.ConfigList import ConfigList, ConfigListScreen
 from Components.Sources.StaticText import StaticText
 from Tools.HardwareInfo import HardwareInfo
-from Screens.MessageBox import MessageBox
-import NavigationInstance
 import os
 
 
