@@ -118,7 +118,7 @@ class ConfigVFDDisplay(Screen, ConfigListScreen):
 			evfd.getInstance().vfd_set_SCROLL(int(config.plugins.vfdicon.textscroll.value))
 		else:
 			evfd.getInstance().vfd_set_SCROLL(1)
-		print "[VFD-Icons] set text scroll", config.plugins.vfdicon.textscroll.value
+		print "[SparkVfd] set text scroll", config.plugins.vfdicon.textscroll.value
 		main(self)
 		ConfigListScreen.keySave(self)
 
@@ -152,7 +152,7 @@ class VFDIcons:
 	def __init__(self, session):
 		self.session = session
 		self.onClose = []
-		print '[VFD-Icons] Start'
+		print '[SparkVfd] Start'
 		self.play = False
 		self.record = False
 		self.mp3Available = False
@@ -163,8 +163,8 @@ class VFDIcons:
 		global DisplayType
 		global dot
 		dot = 0
-		print '[VFD-Icons] Hardware displaytype:', DisplayType
-		print '[VFD-Icons] VFD displaytype     :', DisplayTypevfd
+		print '[SparkVfd] Hardware displaytype:', DisplayType
+		print '[SparkVfd] VFD displaytype     :', DisplayTypevfd
 		if DisplayType == 4:
 			self.__event_tracker = ServiceEventTracker(screen = self,eventmap =
 				{
@@ -179,23 +179,23 @@ class VFDIcons:
 				{
 					iPlayableService.evStart: self.writeName,
 				})
-		print '[VFD-Icons] Set text scrolling option'
+		print '[SparkVfd] Set text scrolling option'
 		if config.plugins.vfdicon.textscroll.value is not None:
 			evfd.getInstance().vfd_set_SCROLL(int(config.plugins.vfdicon.textscroll.value))
 		else:
 			evfd.getInstance().vfd_set_SCROLL(1)
-		print '[VFD-Icons] End initialisation'
+		print '[SparkVfd] End initialisation'
 
 	def __evStart(self):
-		print '[VFD-Icons] __evStart'
+		print '[SparkVfd] __evStart'
 #		... and do nothing else
 
 	def __evUpdatedEventInfo(self):
-		print '[VFD-Icons] __evUpdatedEventInfo'
+		print '[SparkVfd] __evUpdatedEventInfo'
 #		... and do nothing else
 
 	def UpdatedInfo(self):
-		print '[VFD-Icons] __evUpdatedInfo'
+		print '[SparkVfd] __evUpdatedInfo'
 		self.checkAudioTracks()
 		self.writeName()
 
@@ -256,21 +256,21 @@ class VFDIcons:
 			if nrecs > 0: #one or more recordings active
 				self.record = True
 				if (self.record == True and config.plugins.vfdicon.recredledon.value):
-					Console().ePopen("fp_control -l 0 " + str(config.plugins.vfdicon.recredledon.value))
+					Console().ePopen("/usr/bin/fp_control -l 0 " + str(config.plugins.vfdicon.recredledon.value))
 					if led == "2":
 						self.timer.stop() # stop minute timer
 						self.timer.start(2000, False) # start two second timer
 					if led == "1":
-						Console().ePopen("fp_control -l 0 1") #Red LED on
+						Console().ePopen("/usr/bin/fp_control -l 0 1") #Red LED on
 			else:
 				self.timer.stop() # stop 2 second timer
 				if self.standby == True:
 					if config.plugins.vfdicon.standbyredledon.value:
-						Console().ePopen("fp_control -l 0 1") #Red LED on
+						Console().ePopen("/usr/bin/fp_control -l 0 1") #Red LED on
 					if stbdisplayshow == "time":
 						self.timer.start(1000, False) # start second timer
 				else:
-					Console().ePopen("fp_control -l 0 0") # red LED off
+					Console().ePopen("/usr/bin/fp_control -l 0 0") # red LED off
 					self.timer.start(59998, False) # start minute timer
 				self.record = False
 				self.session.nav.record_event.remove(self.gotRecordEvent)
@@ -287,7 +287,7 @@ class VFDIcons:
 				else:
 					dot = 0
 		if self.record == True and config.plugins.vfdicon.recredledon.value:
-			Console().ePopen("fp_control -l 0 " + str(config.plugins.vfdicon.recredledon.value))
+			Console().ePopen("/usr/bin/fp_control -l 0 " + str(config.plugins.vfdicon.recredledon.value))
 		self.writeDate(disptype)
 
 	def writeDate(self, disp):
@@ -304,13 +304,13 @@ class VFDIcons:
 				date = strftime("%H.%M", tm)
 				if self.standby == True and dot == 0:
 					date = time
-			Console().ePopen("fp_control -t " + date[0:8])
+			Console().ePopen("/usr/bin/fp_control -t " + date[0:8])
  
 	def onLeaveStandby(self):
 		if config.plugins.vfdicon.stbdisplayshow.value == "time":
 			self.timer.stop() # stop second timer
 			self.timer.start(59998, False) # start minute timer
-			Console().ePopen("fp_control -l 0 0") #Red LED off
+			Console().ePopen("/usr/bin/fp_control -l 0 0") #Red LED off
 		self.standby = False
 
 	def onEnterStandby(self, configElement):
@@ -319,7 +319,7 @@ class VFDIcons:
 		global DisplayType
 		if DisplayType == 4:
 			if config.plugins.vfdicon.standbyredledon.value:
-				Console().ePopen("fp_control -l 0 1") #Red LED on
+				Console().ePopen("/usr/bin/fp_control -l 0 1") #Red LED on
 			stbdisplayshow = config.plugins.vfdicon.stbdisplayshow.value
 		if stbdisplayshow == "time" and self.record == False:
 			self.timer.stop() # stop minute timer
@@ -330,7 +330,7 @@ class VFDIcons:
 		else:
 			evfd.getInstance().vfd_clear_string()
 		self.standby = True
-		print "[VFD-Icons] set display on Enter Standby"
+		print "[SparkVfd] set display on Enter Standby"
 
 
 VFDIconsInstance = None
@@ -350,20 +350,19 @@ def main(session, **kwargs):
 
 def Plugins(**kwargs):
 	l = [PluginDescriptor(
-		name = _("LED display"),
+		name = _("SparkVfd"),
 		description = _("LED display configuration"),
 		where = PluginDescriptor.WHERE_MENU,
 		fnc = LEDdisplaymenu),
 		PluginDescriptor(
-		name = _("VFD-Icons"),
+		name = _("SparkVfd"),
 		description = _("LED display control Spark"),
 		where = PluginDescriptor.WHERE_SESSIONSTART,
 		fnc = main)]
 	if config.plugins.vfdicon.extMenu.value:
 		l.append(PluginDescriptor(
-			name = _("LED display"),
+			name = _("SparkVfd"),
 			description = _("LED display configuration for Spark"),
 			where = PluginDescriptor.WHERE_PLUGINMENU,
-			icon = _("leddisplay.png"),
 			fnc = opencfg))
 	return l
